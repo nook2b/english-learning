@@ -158,13 +158,14 @@ main { flex: 1; padding: 12px 16px 88px; }
 .stage-compact.stage-3 { --h: min(22vh, calc((min(100vw, 640px) - 32px) / 1.8)); }
 /* Knee crop: the 1024×1536 sprite shows its top 66% and middle 60% (the figure). */
 .sprite-knee { position: relative; height: var(--h); width: calc(var(--h) * 0.6 * 1024 / (0.66 * 1536)); overflow: hidden; flex-shrink: 0; transition: filter 0.15s, opacity 0.15s; }
-.sprite-knee .sprite-frame { position: absolute; top: 0; height: calc(var(--h) / 0.66); left: 50%; transform: translateX(-50%); }
+.sprite-knee .sprite-frame { --fh: calc(var(--h) / 0.66); position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
 .sprite-knee.dim { filter: brightness(0.75) saturate(0.85); opacity: 0.9; }
-.sprite-stage { height: min(46vh, 420px); transition: filter 0.15s, opacity 0.15s; }
+.sprite-stage { --fh: min(46vh, 420px); transition: filter 0.15s, opacity 0.15s; }
 /* A sprite with its mouth patch: the patch is positioned in % of the 1024×1536 frame. */
-.sprite-frame { position: relative; aspect-ratio: 1024 / 1536; }
-.sprite-frame > .sprite { display: block; width: 100%; height: 100%; }
-.sprite-mouth { position: absolute; height: auto; pointer-events: none; }
+.sprite-frame { position: relative; height: var(--fh); width: calc(var(--fh) * 2 / 3); flex-shrink: 0; }
+/* Explicit width and height, not aspect-ratio: iOS Safari mis-sizes absolutely positioned boxes with aspect-ratio, which squeezed the sprite and misplaced the mouth. */
+.sprite-frame > .sprite { display: block; width: 100%; height: 100%; object-fit: contain; }
+.sprite-mouth { position: absolute; pointer-events: none; }
 .sprite-frame.talking { animation: talk-bob 0.6s ease-in-out infinite; }
 @keyframes talk-bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 -3px; } }
 @media (prefers-reduced-motion: reduce) { .sprite-frame.talking { animation: none; } }
@@ -177,7 +178,7 @@ main { flex: 1; padding: 12px 16px 88px; }
 .heroine-card { display: flex; gap: 12px; align-items: center; text-align: left; color: var(--text); font: inherit; cursor: pointer; width: 100%; }
 .heroine-hero { display: flex; justify-content: center; }
 .heroine-tap { background: none; border: 0; padding: 0; cursor: pointer; }
-.heroine-hero .sprite-stage { height: min(44vh, 400px); width: auto; }
+.heroine-hero .sprite-stage { --fh: min(44vh, 400px); }
 .list { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
 .memories li, .quests li { display: flex; flex-direction: column; }
 .quests { list-style: none; padding-left: 0; }

@@ -5,6 +5,7 @@ import { addMistake } from '../data/db'
 import { useClub } from '../data/store'
 import { navigate } from '../app/router'
 import { Button, Card, LearnPanel, ProgressBar } from '../ui/kit'
+import { playSfx } from '../speech/sfx'
 import { stop as stopVoice } from '../speech/voice'
 import { castAt } from '../story/cast'
 import { isHeroine } from '../story/sprites'
@@ -77,7 +78,10 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const stepCast = voice && isHeroine(voice) && !(voice in cast) ? { ...cast, [voice]: 'neutral' } : cast
   const isLast = i === steps.length - 1
 
+  const sounds = useClub((s) => s.settings.sounds)
+
   const answer = (answered: Outcome) => {
+    if (sounds && answered.correct !== null) playSfx(answered.correct ? 'right' : 'wrong')
     const o = answered.correct === false ? { ...answered, shown: mistakeText(step, answered.expected) } : answered
     setOutcome(o)
     // Accuracy and mistakes count the first attempt only.
@@ -116,6 +120,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       mistakes: [...new Set(results.filter((r) => r.correct === false).map((r) => r.shown ?? r.expected))].map((expected) => ({ given: '', expected })),
     })
     setSaving(false)
+    if (sounds) playSfx('done')
     if (session.wrap) setPhase('wrap')
   }
 

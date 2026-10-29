@@ -11,6 +11,8 @@ export interface Settings {
   voice: boolean
   /** Testing aid: every session of every written unit is open. */
   unlockAll: boolean
+  /** Short sounds for right and wrong answers. */
+  sounds: boolean
 }
 
 export type UnitStatus = 'done' | 'tested_out'
@@ -64,6 +66,7 @@ export const DEFAULT_SETTINGS: Settings = {
   translation: 'tap',
   voice: true,
   unlockAll: false,
+  sounds: true,
 }
 
 export class ClubDB extends Dexie {
