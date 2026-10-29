@@ -1,0 +1,1321 @@
+{
+  "id": "001",
+  "title": "Представиться",
+  "goal": "Представиться, сказать, откуда ты и чем занят сейчас, и не притворяться, что всё понял.",
+  "focus": "Present Simple и Present Continuous, глаголы состояния, вопросы с do и be.",
+  "outcome": "Твоя строчка попала в аудиогид. На стене комнаты 17 появился листок «New voices» — и на нём твоё имя.",
+  "expressions": [
+    {
+      "en": "Nice to meet you",
+      "ru": "Приятно познакомиться"
+    },
+    {
+      "en": "I'm new here",
+      "ru": "Я здесь новенький"
+    },
+    {
+      "en": "exchange program",
+      "ru": "программа обмена"
+    },
+    {
+      "en": "Where are you from?",
+      "ru": "Откуда ты?"
+    },
+    {
+      "en": "What do you study?",
+      "ru": "Что ты изучаешь?"
+    },
+    {
+      "en": "I'm looking for",
+      "ru": "Я ищу"
+    },
+    {
+      "en": "Could you say that again",
+      "ru": "Можешь повторить"
+    },
+    {
+      "en": "I didn't catch that",
+      "ru": "Я не расслышал"
+    },
+    {
+      "en": "I don't understand everything yet",
+      "ru": "Я пока не всё понимаю"
+    },
+    {
+      "en": "by the way",
+      "ru": "кстати"
+    },
+    {
+      "en": "usually",
+      "ru": "обычно"
+    },
+    {
+      "en": "right now",
+      "ru": "прямо сейчас"
+    }
+  ],
+  "glossary": [
+    {
+      "en": "exchange student",
+      "ru": "студент по обмену"
+    },
+    {
+      "en": "placement check",
+      "ru": "вступительная проверка уровня"
+    },
+    {
+      "en": "student card",
+      "ru": "студенческий билет"
+    },
+    {
+      "en": "dining hall",
+      "ru": "столовая"
+    },
+    {
+      "en": "dorm",
+      "ru": "общежитие"
+    },
+    {
+      "en": "except",
+      "ru": "кроме"
+    },
+    {
+      "en": "International Office",
+      "ru": "международный отдел"
+    },
+    {
+      "en": "Best wishes",
+      "ru": "с наилучшими пожеланиями"
+    },
+    {
+      "en": "prep program",
+      "ru": "подготовительная программа"
+    },
+    {
+      "en": "audio guide",
+      "ru": "аудиогид"
+    },
+    {
+      "en": "record",
+      "ru": "записывать"
+    },
+    {
+      "en": "cables",
+      "ru": "кабели"
+    },
+    {
+      "en": "microphone",
+      "ru": "микрофон"
+    },
+    {
+      "en": "mic",
+      "ru": "микрофон"
+    },
+    {
+      "en": "library",
+      "ru": "библиотека"
+    },
+    {
+      "en": "levels",
+      "ru": "уровни громкости"
+    },
+    {
+      "en": "introduce yourself",
+      "ru": "представиться"
+    },
+    {
+      "en": "Honest",
+      "ru": "честно"
+    },
+    {
+      "en": "spend",
+      "ru": "проводить (время)"
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Письмо академии",
+      "intro": "Прочитай письмо и ответь на вопросы. Подчёркнутые слова можно нажать: появится перевод. Сплошной линией выделены выражения юнита.",
+      "exercises": [
+        {
+          "id": "u001-s1-e1",
+          "type": "reading",
+          "title": "Welcome to Bellwether Academy",
+          "text": "Dear exchange student,\nWelcome to Bellwether Academy! Your English placement check is on Monday at 10 a.m. in Room 70, New Building. Please bring this letter and your student card.\nClasses start on Tuesday. Most exchange students live in the East Dorm. The dining hall opens at 7:30 every morning.\nThe International Office is open every day except Sunday. If you have a question, just ask us!\nBest wishes,\nInternational Office",
+          "ru": "Дорогой студент по обмену! Добро пожаловать в академию Bellwether! Вступительная проверка по английскому — в понедельник в 10 утра в кабинете 70 нового корпуса. Возьми это письмо и студенческий билет. Занятия начинаются во вторник. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел",
+          "questions": [
+            {
+              "prompt": "Where is the placement check?",
+              "options": [
+                "Room 70, New Building",
+                "Room 17, Old Building",
+                "Room 70, Old Building"
+              ],
+              "answer": "Room 70, New Building"
+            },
+            {
+              "prompt": "When do classes start?",
+              "options": [
+                "On Monday",
+                "On Tuesday",
+                "On Sunday"
+              ],
+              "answer": "On Tuesday"
+            },
+            {
+              "prompt": "What do you need to bring?",
+              "options": [
+                "Your passport and a photo",
+                "The letter and your student card",
+                "A pen and a notebook"
+              ],
+              "answer": "The letter and your student card"
+            },
+            {
+              "prompt": "When is the International Office closed?",
+              "options": [
+                "On Sunday",
+                "On Monday",
+                "Every evening"
+              ],
+              "answer": "On Sunday"
+            }
+          ],
+          "tags": [
+            "reading",
+            "vocab_u001"
+          ]
+        },
+        {
+          "id": "u001-s1-e2",
+          "type": "choice",
+          "prompt": "The dining hall ___ at 7:30 every morning.",
+          "options": [
+            "opens",
+            "is opening"
+          ],
+          "answer": "opens",
+          "explain": "Расписание и то, что повторяется каждый день → Present Simple.",
+          "tags": [
+            "present_simple",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u001-s1-e3",
+          "type": "choice",
+          "prompt": "Most exchange students ___ in the East Dorm.",
+          "options": [
+            "live",
+            "lives",
+            "are live"
+          ],
+          "answer": "live",
+          "explain": "Students — «они», поэтому без -s. Постоянное положение дел → Present Simple.",
+          "tags": [
+            "present_simple",
+            "third_person"
+          ]
+        },
+        {
+          "id": "u001-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "placement check",
+              "ru": "проверка уровня"
+            },
+            {
+              "en": "student card",
+              "ru": "студенческий билет"
+            },
+            {
+              "en": "dining hall",
+              "ru": "столовая"
+            },
+            {
+              "en": "dorm",
+              "ru": "общежитие"
+            },
+            {
+              "en": "except",
+              "ru": "кроме"
+            }
+          ],
+          "tags": [
+            "vocab_u001"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Голоса комнаты 17",
+      "intro": "Слушай без текста. Можно включать запись сколько угодно раз и замедлять. Текст появится после ответов.",
+      "exercises": [
+        {
+          "id": "u001-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "Hi again! So, I'm Mika. I'm in the prep program, like you. I usually spend my mornings in Room 17. We make radio shows there. Right now we're working on an audio guide for new students, so I'm asking everyone the same question: what's your first day like?",
+          "ru": "Ещё раз привет! Итак, я Мика. Я в подготовительной программе, как и ты. Обычно я провожу утро в комнате 17 — мы делаем там радиопередачи. Сейчас мы работаем над аудиогидом для новичков, поэтому я задаю всем один вопрос: каким получается твой первый день?",
+          "questions": [
+            {
+              "prompt": "What is Mika's team working on right now?",
+              "options": [
+                "A radio quiz",
+                "An audio guide for new students",
+                "A placement test"
+              ],
+              "answer": "An audio guide for new students"
+            },
+            {
+              "prompt": "Where does Mika usually spend her mornings?",
+              "options": [
+                "In the dining hall",
+                "In the New Building",
+                "In Room 17"
+              ],
+              "answer": "In Room 17"
+            },
+            {
+              "prompt": "What does she ask everyone?",
+              "options": [
+                "What their first day is like",
+                "Where Room 70 is",
+                "When classes start"
+              ],
+              "answer": "What their first day is like"
+            }
+          ],
+          "tags": [
+            "listening",
+            "present_simple",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u001-s2-e2",
+          "type": "listening",
+          "speaker": "rei",
+          "audio": "I'm Rei. I record sound for the guide. I don't talk much when the microphone is on. And please, don't touch the cables.",
+          "ru": "Я Рэй. Я записываю звук для гида. Когда микрофон включён, я мало говорю. И пожалуйста, не трогай кабели.",
+          "questions": [
+            {
+              "prompt": "What does Rei do for the guide?",
+              "options": [
+                "She writes the texts",
+                "She records sound",
+                "She takes photos"
+              ],
+              "answer": "She records sound"
+            },
+            {
+              "prompt": "What does she ask you not to do?",
+              "options": [
+                "Touch the cables",
+                "Talk to Mika",
+                "Open the door"
+              ],
+              "answer": "Touch the cables"
+            }
+          ],
+          "tags": [
+            "listening",
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u001-s2-e3",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "Hello. I'm Iris. I write and check the texts for the guide. If something isn't clear, just ask me. I'm usually in the library after four.",
+          "ru": "Привет. Я Айрис. Я пишу и проверяю тексты для гида. Если что-то непонятно, просто спроси меня. После четырёх я обычно в библиотеке.",
+          "questions": [
+            {
+              "prompt": "What does Iris do for the guide?",
+              "options": [
+                "She writes and checks the texts",
+                "She records sound",
+                "She plans the shows"
+              ],
+              "answer": "She writes and checks the texts"
+            },
+            {
+              "prompt": "Where is Iris usually after four?",
+              "options": [
+                "In Room 70",
+                "In the library",
+                "In the dorm"
+              ],
+              "answer": "In the library"
+            }
+          ],
+          "tags": [
+            "listening",
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u001-s2-e4",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "I'm in the prep program, like you.",
+          "answers": [
+            "I'm in the prep program, like you."
+          ],
+          "tiles": [
+            "I'm",
+            "in",
+            "the",
+            "prep",
+            "program,",
+            "like",
+            "you.",
+            "am",
+            "at"
+          ],
+          "tags": [
+            "dictation"
+          ]
+        },
+        {
+          "id": "u001-s2-e5",
+          "type": "dictation",
+          "speaker": "rei",
+          "audio": "Please don't touch the cables.",
+          "answers": [
+            "Please don't touch the cables.",
+            "Please do not touch the cables."
+          ],
+          "tags": [
+            "dictation"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Обычно или сейчас",
+      "intro": "Present Simple — то, что бывает обычно или верно всегда: I live in the East Dorm. Present Continuous — то, что происходит прямо сейчас: I'm looking for Room 70. Глаголы состояния (know, like, need, want, understand) обычно не ставятся в Continuous: I understand, а не I'm understanding.",
+      "exercises": [
+        {
+          "id": "u001-s3-e1",
+          "type": "timeline",
+          "sentence": "I'm looking for Room 70.",
+          "options": [
+            "habit",
+            "now",
+            "state"
+          ],
+          "answer": "now",
+          "explain": "Действие идёт прямо сейчас → Present Continuous.",
+          "tags": [
+            "present_continuous",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u001-s3-e2",
+          "type": "timeline",
+          "sentence": "Mika usually spends her mornings in Room 17.",
+          "options": [
+            "now",
+            "habit",
+            "state"
+          ],
+          "answer": "habit",
+          "explain": "Usually — повторяется регулярно → Present Simple.",
+          "tags": [
+            "present_simple",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u001-s3-e3",
+          "type": "timeline",
+          "sentence": "I live in the East Dorm.",
+          "options": [
+            "now",
+            "habit",
+            "state"
+          ],
+          "answer": "state",
+          "explain": "Постоянное положение дел → Present Simple.",
+          "tags": [
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u001-s3-e4",
+          "type": "choice",
+          "prompt": "Look! Rei ___ the cables again.",
+          "options": [
+            "checks",
+            "is checking"
+          ],
+          "answer": "is checking",
+          "explain": "Look! — происходит прямо сейчас → Present Continuous.",
+          "tags": [
+            "present_continuous",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u001-s3-e5",
+          "type": "choice",
+          "prompt": "I ___ what you mean.",
+          "options": [
+            "understand",
+            "am understanding"
+          ],
+          "answer": "understand",
+          "explain": "Understand — глагол состояния, в Continuous обычно не ставится.",
+          "tags": [
+            "state_verbs"
+          ]
+        },
+        {
+          "id": "u001-s3-e6",
+          "type": "choice",
+          "prompt": "We usually ___ radio shows in Room 17.",
+          "options": [
+            "make",
+            "are making"
+          ],
+          "answer": "make",
+          "explain": "Usually → Present Simple.",
+          "tags": [
+            "present_simple",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u001-s3-e7",
+          "type": "fill",
+          "prompt": "Right now, Iris ___ the text for the guide.",
+          "hint": "check",
+          "answers": [
+            "is checking"
+          ],
+          "explain": "Right now → Present Continuous: is + checking.",
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u001-s3-e8",
+          "type": "fill",
+          "prompt": "She ___ in the library after four.",
+          "hint": "usually / be",
+          "answers": [
+            "is usually"
+          ],
+          "explain": "Usually стоит после be: is usually.",
+          "tags": [
+            "present_simple",
+            "word_order"
+          ]
+        },
+        {
+          "id": "u001-s3-e9",
+          "type": "sort",
+          "instruction": "Разложи слова: что подсказывает «обычно», а что — «прямо сейчас»?",
+          "categories": [
+            {
+              "id": "habit",
+              "label": "Обычно"
+            },
+            {
+              "id": "now",
+              "label": "Сейчас"
+            }
+          ],
+          "items": [
+            {
+              "text": "usually",
+              "category": "habit"
+            },
+            {
+              "text": "right now",
+              "category": "now"
+            },
+            {
+              "text": "every morning",
+              "category": "habit"
+            },
+            {
+              "text": "at the moment",
+              "category": "now"
+            },
+            {
+              "text": "Look!",
+              "category": "now"
+            },
+            {
+              "text": "on Mondays",
+              "category": "habit"
+            }
+          ],
+          "explain": "Сигнальные слова помогают, но главное — смысл: регулярно или прямо сейчас.",
+          "tags": [
+            "signal_words",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u001-s3-e10",
+          "type": "fix",
+          "sentence": "I am needing a map.",
+          "answers": [
+            "I need a map."
+          ],
+          "explain": "Need — глагол состояния: I need, а не I am needing.",
+          "tags": [
+            "state_verbs"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Как задать вопрос",
+      "intro": "С обычными глаголами в Present Simple вопрос строится с do/does: Where do you live? Does Rei record sound? С be меняем порядок слов: Where are you from? Are you new here? В Continuous тоже начинаем с be: What are you doing?",
+      "exercises": [
+        {
+          "id": "u001-s4-e1",
+          "type": "choice",
+          "prompt": "Where ___ you from?",
+          "options": [
+            "are",
+            "do",
+            "is"
+          ],
+          "answer": "are",
+          "explain": "From — с глаголом be: Where are you from?",
+          "tags": [
+            "questions_be"
+          ]
+        },
+        {
+          "id": "u001-s4-e2",
+          "type": "choice",
+          "prompt": "What ___ you study?",
+          "options": [
+            "are",
+            "do",
+            "does"
+          ],
+          "answer": "do",
+          "explain": "Study — обычный глагол → вопрос с do.",
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u001-s4-e3",
+          "type": "choice",
+          "prompt": "___ Rei record sound for the guide?",
+          "options": [
+            "Is",
+            "Do",
+            "Does"
+          ],
+          "answer": "Does",
+          "explain": "Rei — «она», обычный глагол → Does.",
+          "tags": [
+            "questions_do",
+            "third_person"
+          ]
+        },
+        {
+          "id": "u001-s4-e4",
+          "type": "choice",
+          "prompt": "What ___ you doing here?",
+          "options": [
+            "do",
+            "are",
+            "does"
+          ],
+          "answer": "are",
+          "explain": "Doing — Continuous, вопрос с be.",
+          "tags": [
+            "questions_be",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u001-s4-e5",
+          "type": "transform",
+          "instruction": "Сделай вопрос",
+          "sentence": "You live in the East Dorm.",
+          "answers": [
+            "Do you live in the East Dorm?"
+          ],
+          "explain": "Do + подлежащее + глагол.",
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u001-s4-e6",
+          "type": "transform",
+          "instruction": "Сделай вопрос",
+          "sentence": "She is new here.",
+          "answers": [
+            "Is she new here?"
+          ],
+          "explain": "С be — просто меняем порядок: Is she…?",
+          "tags": [
+            "questions_be"
+          ]
+        },
+        {
+          "id": "u001-s4-e7",
+          "type": "transform",
+          "instruction": "Спроси, откуда он, начиная с Where",
+          "sentence": "Your roommate is from Spain.",
+          "answers": [
+            "Where is your roommate from?",
+            "Where's your roommate from?"
+          ],
+          "explain": "Where + is + подлежащее + from?",
+          "tags": [
+            "questions_be",
+            "word_order"
+          ]
+        },
+        {
+          "id": "u001-s4-e8",
+          "type": "fix",
+          "sentence": "Where you are from?",
+          "answers": [
+            "Where are you from?"
+          ],
+          "explain": "В вопросе be стоит перед подлежащим.",
+          "tags": [
+            "questions_be",
+            "word_order"
+          ]
+        },
+        {
+          "id": "u001-s4-e9",
+          "type": "fix",
+          "sentence": "Do you are new here?",
+          "answers": [
+            "Are you new here?"
+          ],
+          "explain": "Do и be вместе не нужны: Are you…?",
+          "tags": [
+            "questions_be"
+          ]
+        },
+        {
+          "id": "u001-s4-e10",
+          "type": "fix",
+          "sentence": "What you study?",
+          "answers": [
+            "What do you study?",
+            "What are you studying?"
+          ],
+          "explain": "Нужен вспомогательный глагол: What do you study?",
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u001-s4-e11",
+          "type": "fill",
+          "prompt": "How long ___ you staying here?",
+          "hint": "be",
+          "answers": [
+            "are"
+          ],
+          "explain": "Staying — Continuous: How long are you staying?",
+          "tags": [
+            "questions_be",
+            "present_continuous"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Скажи о себе",
+      "intro": "Собирай фразы из слов или пиши сам. Сокращения засчитываются: I'm = I am. Регистр и точки не важны.",
+      "exercises": [
+        {
+          "id": "u001-s5-e1",
+          "type": "translate",
+          "ru": "Приятно познакомиться.",
+          "answers": [
+            "Nice to meet you."
+          ],
+          "tiles": [
+            "Nice",
+            "to",
+            "meet",
+            "you.",
+            "see",
+            "for"
+          ],
+          "tags": [
+            "function_greeting"
+          ]
+        },
+        {
+          "id": "u001-s5-e2",
+          "type": "translate",
+          "ru": "Я здесь новенький.",
+          "answers": [
+            "I'm new here.",
+            "I am new here."
+          ],
+          "tiles": [
+            "I'm",
+            "new",
+            "here.",
+            "am",
+            "there."
+          ],
+          "tags": [
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u001-s5-e3",
+          "type": "translate",
+          "ru": "Я здесь по программе обмена.",
+          "answers": [
+            "I'm here on an exchange program.",
+            "I am here on an exchange program."
+          ],
+          "tiles": [
+            "I'm",
+            "here",
+            "on",
+            "an",
+            "exchange",
+            "program.",
+            "in",
+            "a"
+          ],
+          "explain": "On an exchange program — устойчивое выражение; перед exchange — an.",
+          "tags": [
+            "vocab_u001",
+            "articles"
+          ]
+        },
+        {
+          "id": "u001-s5-e4",
+          "type": "translate",
+          "ru": "Я ищу кабинет 70.",
+          "answers": [
+            "I'm looking for Room 70.",
+            "I am looking for Room 70."
+          ],
+          "explain": "Ищу прямо сейчас → Present Continuous: I'm looking for.",
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u001-s5-e5",
+          "type": "translate",
+          "ru": "Откуда ты?",
+          "answers": [
+            "Where are you from?"
+          ],
+          "tags": [
+            "questions_be"
+          ]
+        },
+        {
+          "id": "u001-s5-e6",
+          "type": "translate",
+          "ru": "Что ты изучаешь?",
+          "answers": [
+            "What do you study?",
+            "What are you studying?"
+          ],
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u001-s5-e7",
+          "type": "write",
+          "situation": "Мика спрашивает, где ты живёшь. Ответь, что живёшь в Восточном общежитии (East Dorm).",
+          "answers": [
+            "I live in the East Dorm.",
+            "I live in East Dorm.",
+            "I'm living in the East Dorm.",
+            "I am living in the East Dorm.",
+            "In the East Dorm."
+          ],
+          "tags": [
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u001-s5-e8",
+          "type": "write",
+          "situation": "Ты не расслышал вопрос. Попроси повторить.",
+          "answers": [
+            "Could you say that again?",
+            "Could you say that again, please?",
+            "Sorry, could you say that again?",
+            "Could you repeat that?",
+            "Could you repeat that, please?",
+            "Can you say that again?",
+            "Can you repeat that?",
+            "Sorry, I didn't catch that.",
+            "Sorry, I didn't catch that. Could you say that again?",
+            "Pardon?",
+            "Sorry?"
+          ],
+          "explain": "Варианты: Could you say that again? / Sorry, I didn't catch that.",
+          "tags": [
+            "function_clarify"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом",
+      "intro": "Нажми «Сказать» и произнеси фразу. Если сейчас неудобно говорить, нажми «Сейчас не могу говорить» — это не ошибка.",
+      "exercises": [
+        {
+          "id": "u001-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "text": "Nice to meet you.",
+          "answers": [
+            "Nice to meet you."
+          ],
+          "tags": [
+            "speaking"
+          ]
+        },
+        {
+          "id": "u001-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "text": "Could you say that again, please?",
+          "answers": [
+            "Could you say that again, please?",
+            "Could you say that again?"
+          ],
+          "tags": [
+            "speaking",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u001-s6-e3",
+          "type": "speak",
+          "show": "ru",
+          "text": "Я здесь новенький.",
+          "answers": [
+            "I'm new here."
+          ],
+          "tags": [
+            "speaking"
+          ]
+        },
+        {
+          "id": "u001-s6-e4",
+          "type": "speak",
+          "show": "ru",
+          "text": "Я ищу кабинет семьдесят.",
+          "answers": [
+            "I'm looking for Room 70."
+          ],
+          "tags": [
+            "speaking",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u001-s6-e5",
+          "type": "speak",
+          "show": "ru",
+          "text": "Откуда ты?",
+          "answers": [
+            "Where are you from?"
+          ],
+          "tags": [
+            "speaking",
+            "questions_be"
+          ]
+        },
+        {
+          "id": "u001-s6-e6",
+          "type": "write",
+          "situation": "Айрис спрашивает, понятно ли тебе расписание. Ответь, что ты пока не всё понимаешь.",
+          "answers": [
+            "I don't understand everything yet.",
+            "I do not understand everything yet.",
+            "I don't understand everything.",
+            "I don't understand all of it yet.",
+            "Not everything yet."
+          ],
+          "explain": "Understand — глагол состояния: I don't understand, а не I'm not understanding.",
+          "tags": [
+            "state_verbs"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг",
+      "intro": "Всё знакомое — отвечай без подсказок, в своём темпе.",
+      "exercises": [
+        {
+          "id": "u001-s7-e1",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "Nice to meet you",
+              "ru": "Приятно познакомиться"
+            },
+            {
+              "en": "I'm new here",
+              "ru": "Я здесь новенький"
+            },
+            {
+              "en": "Could you say that again?",
+              "ru": "Можешь повторить?"
+            },
+            {
+              "en": "I'm looking for…",
+              "ru": "Я ищу…"
+            },
+            {
+              "en": "by the way",
+              "ru": "кстати"
+            }
+          ],
+          "tags": [
+            "vocab_u001"
+          ]
+        },
+        {
+          "id": "u001-s7-e2",
+          "type": "choice",
+          "prompt": "Sorry, I didn't ___ that.",
+          "options": [
+            "catch",
+            "caught",
+            "catching"
+          ],
+          "answer": "catch",
+          "explain": "После didn't — начальная форма глагола.",
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u001-s7-e3",
+          "type": "choice",
+          "prompt": "Rei ___ talk much when the mic is on.",
+          "options": [
+            "isn't",
+            "don't",
+            "doesn't"
+          ],
+          "answer": "doesn't",
+          "explain": "Rei — «она», обычный глагол → doesn't.",
+          "tags": [
+            "present_simple",
+            "third_person"
+          ]
+        },
+        {
+          "id": "u001-s7-e4",
+          "type": "fill",
+          "prompt": "What ___ Mika doing right now?",
+          "hint": "be",
+          "answers": [
+            "is"
+          ],
+          "tags": [
+            "present_continuous",
+            "questions_be"
+          ]
+        },
+        {
+          "id": "u001-s7-e5",
+          "type": "fill",
+          "prompt": "I ___ where Room 70 is.",
+          "hint": "not / know",
+          "answers": [
+            "don't know",
+            "do not know"
+          ],
+          "explain": "Know — глагол состояния: I don't know.",
+          "tags": [
+            "state_verbs",
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u001-s7-e6",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "What's your first day like?",
+          "answers": [
+            "What's your first day like?",
+            "What is your first day like?"
+          ],
+          "tiles": [
+            "What's",
+            "your",
+            "first",
+            "day",
+            "like?",
+            "How",
+            "is"
+          ],
+          "tags": [
+            "dictation"
+          ]
+        },
+        {
+          "id": "u001-s7-e7",
+          "type": "translate",
+          "ru": "Кстати, я живу в Восточном общежитии.",
+          "answers": [
+            "By the way, I live in the East Dorm."
+          ],
+          "tiles": [
+            "By",
+            "the",
+            "way,",
+            "I",
+            "live",
+            "in",
+            "the",
+            "East",
+            "Dorm.",
+            "lives",
+            "at"
+          ],
+          "tags": [
+            "present_simple",
+            "vocab_u001"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: строчка для гида",
+      "intro": "Мика записывает голоса новичков для аудиогида. Выбери, что хочешь сказать, и скажи это по-английски.",
+      "exercises": [
+        {
+          "id": "u001-s8-e1",
+          "type": "scene",
+          "setting": "Комната 17. Красная лампочка над дверью горит.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "Okay, the mic is on. Can you introduce yourself for the guide? Just a few words.",
+              "ru": "Так, микрофон включён. Можешь представиться для гида? Пару слов.",
+              "expr": "excited"
+            },
+            {
+              "speaker": "rei",
+              "text": "Speak normally. The mic hears everything.",
+              "ru": "Говори как обычно. Микрофон всё слышит.",
+              "expr": "recorder/focused"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Сказать, что ты новенький и ищешь кабинет 70",
+              "answers": [
+                "I'm new here, and I'm looking for Room 70.",
+                "I'm new here and I'm looking for Room 70.",
+                "I am new here and I am looking for Room 70.",
+                "I'm new here. I'm looking for Room 70."
+              ],
+              "tiles": [
+                "I'm",
+                "new",
+                "here,",
+                "and",
+                "I'm",
+                "looking",
+                "for",
+                "Room",
+                "70.",
+                "am",
+                "look"
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Perfect. That's exactly what new students need to hear.",
+                "ru": "Идеально. Именно это новичкам и нужно услышать.",
+                "expr": "happy"
+              }
+            },
+            {
+              "label": "Сказать, что ты здесь по обмену и пока не всё понимаешь",
+              "answers": [
+                "I'm here on an exchange program, and I don't understand everything yet.",
+                "I'm here on an exchange program and I don't understand everything yet.",
+                "I am here on an exchange program and I do not understand everything yet."
+              ],
+              "tiles": [
+                "I'm",
+                "here",
+                "on",
+                "an",
+                "exchange",
+                "program,",
+                "and",
+                "I",
+                "don't",
+                "understand",
+                "everything",
+                "yet.",
+                "am",
+                "understanding"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Honest. I like that. Let's keep it.",
+                "ru": "Честно. Мне нравится. Оставим.",
+                "expr": "dry_smile"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Sorry, one more time? Slowly is fine.",
+            "ru": "Прости, ещё раз? Можно медленно.",
+            "expr": "listening"
+          },
+          "tags": [
+            "present_simple",
+            "present_continuous",
+            "state_verbs"
+          ]
+        },
+        {
+          "id": "u001-s8-e2",
+          "type": "scene",
+          "setting": "Мика не выключает микрофон.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "And now one question for us. Ask us anything!",
+              "ru": "А теперь один вопрос нам. Спрашивай что угодно!",
+              "expr": "excited"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Спросить Рэй, что она сейчас делает",
+              "answers": [
+                "What are you doing?",
+                "Rei, what are you doing?",
+                "What are you doing now?",
+                "What are you doing right now?",
+                "Rei, what are you doing right now?"
+              ],
+              "tiles": [
+                "What",
+                "are",
+                "you",
+                "doing",
+                "right",
+                "now?",
+                "do",
+                "does"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Checking the levels. You sound fine, by the way.",
+                "ru": "Проверяю уровни. Кстати, звучишь нормально.",
+                "expr": "recorder/focused"
+              }
+            },
+            {
+              "label": "Спросить Айрис, где она обычно бывает после четырёх",
+              "answers": [
+                "Where are you usually after four?",
+                "Iris, where are you usually after four?"
+              ],
+              "tiles": [
+                "Where",
+                "are",
+                "you",
+                "usually",
+                "after",
+                "four?",
+                "do",
+                "is"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "In the library. Second floor, by the window.",
+                "ru": "В библиотеке. Второй этаж, у окна.",
+                "expr": "dry_smile"
+              }
+            },
+            {
+              "label": "Спросить Мику, что она изучает",
+              "answers": [
+                "What do you study?",
+                "Mika, what do you study?",
+                "What are you studying?"
+              ],
+              "tiles": [
+                "What",
+                "do",
+                "you",
+                "study?",
+                "are",
+                "does"
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Event production! Well, I want to study it. Right now I study everything.",
+                "ru": "Продюсирование событий! Ну, хочу изучать. Пока изучаю всё подряд.",
+                "expr": "laugh"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Sorry? Can you say it again?",
+            "ru": "Что-что? Можешь повторить?",
+            "expr": "listening"
+          },
+          "tags": [
+            "questions_do",
+            "questions_be"
+          ]
+        },
+        {
+          "id": "u001-s8-e3",
+          "type": "speak",
+          "show": "en",
+          "text": "I'm new here, and I'm looking for Room 70.",
+          "answers": [
+            "I'm new here, and I'm looking for Room 70.",
+            "I'm new here. I'm looking for Room 70."
+          ],
+          "tags": [
+            "speaking"
+          ]
+        }
+      ]
+    }
+  ]
+}

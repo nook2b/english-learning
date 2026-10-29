@@ -8,6 +8,8 @@ const base = process.env.BASE_PATH ?? '/'
 
 export default defineConfig({
   base,
+  // Course content lives in /content, outside the app folder.
+  server: { fs: { allow: ['..'] } },
   plugins: [
     react(),
     VitePWA({

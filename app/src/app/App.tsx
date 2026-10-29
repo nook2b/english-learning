@@ -1,22 +1,37 @@
-import { type ComponentType, useEffect } from 'react'
+import { useEffect } from 'react'
+import { getUnit } from '../content/course'
 import { useClub } from '../data/store'
 import { HeroinesScreen } from '../features/heroines/HeroinesScreen'
-import { LessonScreen } from '../features/lesson/LessonScreen'
+import { UnitScreen } from '../features/lesson/UnitScreen'
 import { PathScreen } from '../features/path/PathScreen'
 import { ProfileScreen } from '../features/profile/ProfileScreen'
 import { ReviewScreen } from '../features/review/ReviewScreen'
 import { StoryScreen } from '../features/story/StoryScreen'
+import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
 import { type Route, useRoute } from './router'
 import { TopBar } from './TopBar'
 
-const SCREENS: Record<Route, ComponentType> = {
-  path: PathScreen,
-  lesson: LessonScreen,
-  review: ReviewScreen,
-  story: StoryScreen,
-  heroines: HeroinesScreen,
-  profile: ProfileScreen,
+function Screen({ route }: { route: Route }) {
+  switch (route.name) {
+    case 'path':
+      return <PathScreen />
+    case 'unit':
+      return <UnitScreen unitId={route.unitId} />
+    case 'session': {
+      const unit = getUnit(route.unitId)
+      if (!unit) return <UnitScreen unitId={route.unitId} />
+      return <SessionPlayer key={`${route.unitId}-${route.index}`} unit={unit} index={route.index} />
+    }
+    case 'review':
+      return <ReviewScreen />
+    case 'story':
+      return <StoryScreen />
+    case 'heroines':
+      return <HeroinesScreen />
+    case 'profile':
+      return <ProfileScreen />
+  }
 }
 
 export function App() {
@@ -29,14 +44,13 @@ export function App() {
 
   if (!ready) return <div className="loading">Загрузка…</div>
 
-  const Screen = SCREENS[route]
   return (
     <div className="app">
-      <TopBar />
+      {route.name !== 'session' && <TopBar />}
       <main>
-        <Screen />
+        <Screen route={route} />
       </main>
-      {route !== 'lesson' && <BottomNav current={route} />}
+      {route.name !== 'session' && <BottomNav current={route.name} />}
     </div>
   )
 }

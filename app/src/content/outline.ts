@@ -1,5 +1,5 @@
-// Arc 1 outline from docs/07-learning-path.md, section 7. Real unit content
-// and its JSON schema arrive in stage 2; this only feeds the placeholder path.
+// Arc 1 outline from docs/07-learning-path.md, section 7. Units with written
+// content live in /content/course; the rest show on the path as "coming".
 
 export interface UnitOutline {
   id: string
@@ -34,7 +34,3 @@ export const ARC1 = {
 
 export const ARC1_UNITS = ARC1.modules.flatMap((m) => m.units)
 
-/** First unit of arc 1 that is neither done nor tested out. */
-export function nextUnitId(progress: Record<string, unknown>): string | undefined {
-  return ARC1_UNITS.find((u) => !progress[u.id])?.id
-}
