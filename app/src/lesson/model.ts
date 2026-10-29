@@ -18,6 +18,8 @@ export interface Outcome {
   lines?: Line[]
   /** Story choice to remember. */
   flag?: string
+  /** Counted as right, but the spelling differs (a missing apostrophe): the right way to write it. */
+  spelling?: string
 }
 
 export function toSteps(exercises: readonly Exercise[]): Step[] {

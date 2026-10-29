@@ -5,7 +5,7 @@ import { canRecognize, type ListenError, listen } from '../speech/recognition'
 import { canSpeak } from '../speech/tts'
 import { AudioControls, LineVoice } from '../speech/AudioControls'
 import { Button, DialogueBox } from '../ui/kit'
-import { matches, matchesSpeech } from './check'
+import { checkTyped, matchesSpeech } from './check'
 import { Options, TextAnswer, TileAnswer } from './inputs'
 import { Gloss, Translation } from './Gloss'
 import { Timeline } from './Timeline'
@@ -121,7 +121,7 @@ function TimelineView({ exercise, locked, onAnswer }: ViewProps<'timeline'>) {
 }
 
 function TextView({ step, exercise, locked, onAnswer }: ViewProps<'fill' | 'translate' | 'fix' | 'transform' | 'write'>) {
-  const submit = (text: string) => onAnswer({ correct: matches(text, exercise.answers), given: text, expected: exercise.answers[0]! })
+  const submit = (text: string) => onAnswer({ ...checkTyped(text, exercise.answers), given: text, expected: exercise.answers[0]! })
   let head: ReactNode
   switch (exercise.type) {
     case 'fill':
@@ -289,9 +289,9 @@ function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
   const chosen = intent === undefined ? undefined : exercise.intents[intent]
   const submit = (text: string) => {
     if (!chosen) return
-    const ok = matches(text, chosen.answers)
+    const { correct: ok, spelling } = checkTyped(text, chosen.answers)
     // The story choice counts even after a language slip: the heroine clarifies and the scene goes on.
-    onAnswer({ correct: ok, given: text, expected: chosen.answers[0]!, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction], flag: chosen.flag })
+    onAnswer({ correct: ok, spelling, given: text, expected: chosen.answers[0]!, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction], flag: chosen.flag })
   }
   return (
     <div className="exercise">
@@ -368,7 +368,7 @@ function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
 }
 
 function DictationView({ step, exercise, locked, onAnswer }: ViewProps<'dictation'>) {
-  const submit = (text: string) => onAnswer({ correct: matches(text, exercise.answers), given: text, expected: exercise.answers[0]! })
+  const submit = (text: string) => onAnswer({ ...checkTyped(text, exercise.answers), given: text, expected: exercise.answers[0]! })
   return (
     <div className="exercise">
       <p className="task">Напиши, что услышал</p>

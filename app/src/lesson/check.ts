@@ -94,6 +94,27 @@ export function matches(given: string, accepted: readonly string[]): boolean {
   return accepted.some((a) => [...variants(a)].some((v) => mine.has(v)))
 }
 
+/** Words without apostrophes: "don't" and "dont" read the same. */
+const loose = (text: string) => tokens(text).map((t) => t.replace(/'/g, '')).join(' ')
+
+export interface TypedCheck {
+  correct: boolean
+  /** Accepted, but spelled with a missing or extra apostrophe: show the right spelling. */
+  spelling?: string
+}
+
+/**
+ * Typed answers. Punctuation and case never matter. A missing apostrophe
+ * ("dont", "im", "its") still counts, with a note on the spelling, as in
+ * Duolingo; grammar mistakes do not.
+ */
+export function checkTyped(given: string, accepted: readonly string[]): TypedCheck {
+  if (matches(given, accepted)) return { correct: true }
+  const mine = loose(given)
+  const close = accepted.find((a) => loose(a) === mine)
+  return close ? { correct: true, spelling: close } : { correct: false }
+}
+
 function wordDistance(a: string[], b: string[]): number {
   const row = Array.from({ length: b.length + 1 }, (_, i) => i)
   for (let i = 1; i <= a.length; i++) {
