@@ -47,6 +47,8 @@ test('right and wrong answers, feedback, mistakes and summary', async () => {
   fireEvent.click(screen.getByRole('button', { name: 'Проверить' }))
   fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
   expect(await screen.findByText(/Точность: 50%/)).toBeInTheDocument()
+  // The summary shows the whole sentence, not the bare answer.
+  expect(screen.getByText('She lives here.')).toBeInTheDocument()
 
   expect(await db.sessions.get('999-1')).toMatchObject({ correct: 1, total: 2 })
   expect(await db.mistakes.where('tags').equals('third_person').count()).toBe(1)

@@ -22,6 +22,8 @@ export interface Outcome {
   spelling?: string
   /** For multi-item tasks: only the items that went wrong, to repeat instead of the whole task. */
   retry?: Exercise
+  /** The mistake as the summary and the review deck show it: the full sentence with the right answer. */
+  shown?: string
 }
 
 export function toSteps(exercises: readonly Exercise[]): Step[] {
@@ -56,3 +58,26 @@ export const TIMELINE_LABELS: Record<TimelineKind, string> = {
   past_to_now: 'С прошлого до сейчас',
   future_plan: 'План на будущее',
 }
+
+/**
+ * A mistake as the learner should see it later: the whole sentence with the
+ * right answer in place, not a bare "is checking" that could belong to any task.
+ */
+export function mistakeText(step: Step, expected: string): string {
+  const ex = step.exercise
+  switch (ex.type) {
+    case 'choice':
+    case 'fill':
+      return ex.prompt.replace('___', expected)
+    case 'timeline':
+      return `${ex.sentence} — ${expected}`
+    case 'reading':
+    case 'listening':
+      return `${ex.questions[step.question ?? 0]!.prompt} — ${expected}`
+    case 'translate':
+      return `${ex.ru} — ${expected}`
+    default:
+      return expected
+  }
+}
+
