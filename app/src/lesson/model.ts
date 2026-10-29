@@ -20,6 +20,8 @@ export interface Outcome {
   flag?: string
   /** Counted as right, but the spelling differs (a missing apostrophe): the right way to write it. */
   spelling?: string
+  /** For multi-item tasks: only the items that went wrong, to repeat instead of the whole task. */
+  retry?: Exercise
 }
 
 export function toSteps(exercises: readonly Exercise[]): Step[] {

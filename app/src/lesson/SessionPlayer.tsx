@@ -63,7 +63,8 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
     if (o.correct === false) {
       if (!step.retry) void addMistake({ exerciseId: step.exercise.id, tags: step.exercise.tags, given: o.given, expected: o.expected, at: Date.now() })
       retries.current += 1
-      setSteps((s) => [...s, { ...step, key: `${step.key.split('~')[0]}~${retries.current}`, retry: true }])
+      // Multi-item tasks (sorting, pairs) come back with only the items that went wrong.
+      setSteps((s) => [...s, { ...step, exercise: o.retry ?? step.exercise, key: `${step.key.split('~')[0]}~${retries.current}`, retry: true }])
     }
   }
 
