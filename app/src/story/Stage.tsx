@@ -39,7 +39,12 @@ export function Sprite({ heroine, expr, dim = false, size = 'stage' }: { heroine
           src={talk.url}
           alt=""
           draggable={false}
-          style={{ left: `${(talk.x / SPRITE_W) * 100}%`, top: `${(talk.y / SPRITE_H) * 100}%`, width: `${(talk.w / SPRITE_W) * 100}%` }}
+          style={{
+            left: `${(talk.x / SPRITE_W) * 100}%`,
+            top: `${(talk.y / SPRITE_H) * 100}%`,
+            width: `${(talk.w / SPRITE_W) * 100}%`,
+            height: `${(talk.h / SPRITE_H) * 100}%`,
+          }}
         />
       )}
     </div>

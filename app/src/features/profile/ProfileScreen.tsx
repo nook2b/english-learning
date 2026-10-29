@@ -51,6 +51,10 @@ export function ProfileScreen() {
           Озвучка
         </label>
         <label className="field-inline">
+          <input type="checkbox" checked={settings.sounds} onChange={(e) => updateSettings({ sounds: e.target.checked })} />
+          Звуки ответов
+        </label>
+        <label className="field-inline">
           <input
             type="checkbox"
             checked={settings.translation === 'always'}
