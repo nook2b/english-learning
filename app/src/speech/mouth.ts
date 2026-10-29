@@ -23,7 +23,12 @@ function loudnessDriver(audio: HTMLAudioElement): () => void {
   const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
   if (!AC) return flapDriver()
   ctx ??= new AC()
-  void ctx.resume()
+  // Routing a clip through a suspended context mutes it (iOS before the first
+  // user gesture). Until audio is unlocked, keep the clip direct and flap instead.
+  if (ctx.state !== 'running') {
+    void ctx.resume()
+    return flapDriver()
+  }
   const source = ctx.createMediaElementSource(audio)
   const analyser = ctx.createAnalyser()
   analyser.fftSize = 512

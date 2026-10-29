@@ -73,6 +73,7 @@ export function ProfileScreen() {
             Сбросить всё, включая настройки
           </Button>
         </div>
+        <p className="muted">Версия приложения: {__BUILD__}</p>
       </Card>
     </div>
   )
