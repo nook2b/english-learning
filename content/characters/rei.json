@@ -1,0 +1,90 @@
+{
+  "id": "rei",
+  "name": "Рэй",
+  "about": "Звук и музыка. Знает город по акустике дворов и остановок.",
+  "facts": [
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "ru": "Записывает звук для гида. Когда микрофон включён, говорит мало."
+    },
+    {
+      "unlock": {
+        "flag": "u001_asked_rei"
+      },
+      "ru": "Проверяет уровни звука даже посреди разговора."
+    }
+  ],
+  "memories": [
+    {
+      "unlock": {
+        "flag": "u001_asked_rei"
+      },
+      "en": "You asked Rei what she was doing. “Checking the levels. You sound fine, by the way.”",
+      "ru": "Ты спросил Рэй, что она делает. «Проверяю уровни. Кстати, звучишь нормально»."
+    }
+  ],
+  "lines": [
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "text": "Don't touch the cables. I'm saying it nicely.",
+      "ru": "Не трогай кабели. Я прошу вежливо.",
+      "expr": "smirk"
+    },
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "text": "Every room has its own sound. This one hums.",
+      "ru": "У каждой комнаты свой звук. Эта гудит.",
+      "expr": "neutral"
+    }
+  ],
+  "quests": [
+    {
+      "id": "REI-01",
+      "title": "Чехол с красной молнией",
+      "window": "033–036",
+      "change": "Принимает конкретную помощь и замечает надёжность",
+      "flag": "rei01_case_returned"
+    },
+    {
+      "id": "REI-02",
+      "title": "Пять секунд дождя",
+      "window": "053–056",
+      "change": "Доверяет маленькое творческое решение",
+      "flag": "rei02_sound_choice"
+    },
+    {
+      "id": "REI-03",
+      "title": "Место для имени",
+      "window": "093–096",
+      "change": "Сама определяет атрибуцию и разрешённый показ",
+      "flag": "rei03_credit_agreed"
+    },
+    {
+      "id": "REI-04",
+      "title": "После кнопки Stop",
+      "window": "097–100",
+      "change": "Отличает рабочую прогулку от личной встречи",
+      "flag": "rei04_walk_shared"
+    },
+    {
+      "id": "REI-05",
+      "title": "Не твоя любимая песня",
+      "window": "129–132",
+      "change": "Принимает конкретный отзыв без смешения работы и чувств",
+      "flag": "rei05_feedback_trusted"
+    },
+    {
+      "id": "REI-06",
+      "title": "Перед дверью",
+      "window": "213–216",
+      "change": "Просит сопровождения и сама выбирает профессиональный шаг",
+      "flag": "rei06_next_step_chosen"
+    }
+  ]
+}

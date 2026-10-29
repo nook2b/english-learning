@@ -1,0 +1,104 @@
+#!/usr/bin/env python3
+"""Generate voice clips for course content with ElevenLabs.
+
+Collects every line a heroine speaks (story frames and wraps, scene lines,
+reactions, clarifications, chat lines on the heroine pages), listening and dictation audio and English
+read-aloud samples, and writes assets/audio/{speaker}/{key}.mp3. The key is
+the same FNV-1a hash the app computes (app/src/speech/clips.ts), so clips
+follow their text. Existing files are skipped.
+
+    python3 scripts/generate_audio.py --dry-run      # what would be generated
+    python3 scripts/generate_audio.py [--unit 001]   # generate
+
+Needs access to api.elevenlabs.io/v1/text-to-speech; the key comes from
+ELEVENLABS_API_KEY or is injected by the environment's proxy.
+"""
+import argparse
+import json
+import os
+import pathlib
+import sys
+import urllib.request
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+
+
+def clip_key(speaker: str, text: str) -> str:
+    h = 0x811C9DC5
+    for b in f"{speaker}|{text.strip()}".encode("utf-8"):
+        h ^= b
+        h = (h * 0x01000193) & 0xFFFFFFFF
+    return f"{h:08x}"
+
+
+def lines_of(unit: dict):
+    for s in unit["sessions"]:
+        for line in (s.get("frame") or {}).get("lines", []) + s.get("wrap", []):
+            yield line["speaker"], line["text"]
+        for e in s["exercises"]:
+            t = e["type"]
+            if t == "scene":
+                for line in e["lines"] + [i["reaction"] for i in e["intents"]] + [e["clarify"]]:
+                    yield line["speaker"], line["text"]
+            elif t in ("listening", "dictation"):
+                yield e["speaker"], e["audio"]
+            elif t == "speak" and e["show"] == "en" and e.get("voice"):
+                yield e["voice"], e["text"]
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--unit", help="only this unit id, e.g. 001")
+    args = ap.parse_args()
+
+    config = json.loads((ROOT / "content/voices.json").read_text())
+    voices = config["voices"]
+    todo = {}
+    for path in sorted((ROOT / "content/course").rglob("unit-*.json")):
+        unit = json.loads(path.read_text())
+        if args.unit and unit["id"] != args.unit:
+            continue
+        for speaker, text in lines_of(unit):
+            if speaker not in voices:
+                continue
+            out = ROOT / "assets/audio" / speaker / f"{clip_key(speaker, text)}.mp3"
+            if not out.exists():
+                todo[out] = (speaker, text)
+
+    if not args.unit:
+        for path in sorted((ROOT / "content/characters").glob("*.json")):
+            ch = json.loads(path.read_text())
+            for line in ch.get("lines", []):
+                out = ROOT / "assets/audio" / ch["id"] / f"{clip_key(ch['id'], line['text'])}.mp3"
+                if not out.exists():
+                    todo[out] = (ch["id"], line["text"])
+
+    chars = sum(len(t) for _, t in todo.values())
+    print(f"{len(todo)} clips to generate, {chars} characters")
+    if args.dry_run:
+        for out, (speaker, text) in todo.items():
+            print(f"  {speaker:5} {out.name}  {text}")
+        return 0
+
+    key = os.environ.get("ELEVENLABS_API_KEY", "injected-by-proxy")
+    for n, (out, (speaker, text)) in enumerate(todo.items(), 1):
+        req = urllib.request.Request(
+            f"https://api.elevenlabs.io/v1/text-to-speech/{voices[speaker]}?output_format={config['format']}",
+            data=json.dumps({"text": text, "model_id": config["model"]}).encode(),
+            headers={"xi-api-key": key, "content-type": "application/json", "accept": "audio/mpeg"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                data = resp.read()
+        except urllib.error.HTTPError as e:
+            print(f"failed on {speaker}: {text!r}: HTTP {e.code} {e.read()[:300]!r}", file=sys.stderr)
+            return 1
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_bytes(data)
+        print(f"[{n}/{len(todo)}] {speaker} {out.name} {len(data) // 1024} KB")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

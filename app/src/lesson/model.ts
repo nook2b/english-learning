@@ -3,6 +3,8 @@ import type { Exercise, Line, Speaker, TimelineKind } from '../content/schema'
 /** One screen of a session; reading and listening exercises give one step per question. */
 export interface Step {
   key: string
+  /** A repeat of a step answered wrongly earlier in the session. */
+  retry?: boolean
   exercise: Exercise
   question?: number
 }

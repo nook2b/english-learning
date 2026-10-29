@@ -5,7 +5,9 @@ import { addMistake } from '../data/db'
 import { useClub } from '../data/store'
 import { navigate } from '../app/router'
 import { Button, Card, LearnPanel, ProgressBar } from '../ui/kit'
-import { Beat } from '../story/Stage'
+import { stop as stopVoice } from '../speech/voice'
+import { castAt } from '../story/cast'
+import { Beat, Stage } from '../story/Stage'
 import { ExerciseView, SceneLines } from './ExerciseView'
 import { GlossaryContext } from './glossary'
 import { type Outcome, toSteps } from './model'
@@ -23,7 +25,11 @@ interface Summary {
 
 export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const session = unit.sessions[index - 1]!
-  const steps = useMemo(() => toSteps(session.exercises), [session])
+  // Wrong answers come back at the end of the queue until answered right, as in Duolingo.
+  const [steps, setSteps] = useState(() => toSteps(session.exercises))
+  const retries = useRef(0)
+  const remembered = useRef(new Set<string>())
+  const cast = useMemo(() => (session.frame ? castAt(session.frame.lines, session.frame.lines.length - 1) : {}), [session])
   const finishSession = useClub((s) => s.finishSession)
   const remember = useClub((s) => s.remember)
   const glossary = useMemo(
@@ -44,14 +50,21 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
 
   const answer = (o: Outcome) => {
     setOutcome(o)
-    setResults((r) => [...r, o])
-    if (o.flag) void remember(o.flag)
+    // Accuracy and mistakes count the first attempt only.
+    if (!step.retry) setResults((r) => [...r, o])
+    if (o.flag && !remembered.current.has(o.flag)) {
+      remembered.current.add(o.flag)
+      void remember(o.flag)
+    }
     if (o.correct === false) {
-      void addMistake({ exerciseId: step.exercise.id, tags: step.exercise.tags, given: o.given, expected: o.expected, at: Date.now() })
+      if (!step.retry) void addMistake({ exerciseId: step.exercise.id, tags: step.exercise.tags, given: o.given, expected: o.expected, at: Date.now() })
+      retries.current += 1
+      setSteps((s) => [...s, { ...step, key: `${step.key.split('~')[0]}~${retries.current}`, retry: true }])
     }
   }
 
   const next = async () => {
+    stopVoice()
     if (!isLast) {
       setOutcome(undefined)
       setI(i + 1)
@@ -116,6 +129,10 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
 
         {i === 0 && !outcome && session.intro && <LearnPanel title="Перед началом">{session.intro}</LearnPanel>}
 
+        {step.exercise.type !== 'scene' && Object.keys(cast).length > 0 && (
+          <Stage cast={cast} compact speaking={'speaker' in step.exercise ? step.exercise.speaker : undefined} />
+        )}
+        {step.retry && <p className="context">Ещё раз: исправим ошибку</p>}
         <ExerciseView key={step.key} step={step} locked={!!outcome} onAnswer={answer} />
 
         {outcome && (

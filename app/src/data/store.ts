@@ -38,6 +38,7 @@ interface ClubState {
   units: Record<string, UnitProgress>
   sessions: Record<string, SessionResult>
   days: ActivityDay[]
+  flags: Record<string, true>
   init: () => Promise<void>
   updateSettings: (patch: Partial<Omit<Settings, 'id'>>) => Promise<void>
   recordSession: (minutes: number, xp: number) => Promise<void>
@@ -60,10 +61,12 @@ export const useClub = create<ClubState>((set, get) => ({
   units: {},
   sessions: {},
   days: [],
+  flags: {},
 
   init: async () => {
-    const [settings, units, sessions, days] = await Promise.all([loadSettings(), db.units.toArray(), db.sessions.toArray(), db.days.toArray()])
+    const [settings, units, sessions, days, flags] = await Promise.all([loadSettings(), db.units.toArray(), db.sessions.toArray(), db.days.toArray(), db.flags.toArray()])
     set({
+      flags: Object.fromEntries(flags.map((f) => [f.id, true as const])),
       ready: true,
       settings,
       units: Object.fromEntries(units.map((u) => [u.unitId, u])),
@@ -103,15 +106,16 @@ export const useClub = create<ClubState>((set, get) => ({
 
   reset: async () => {
     await resetProgress()
-    set({ units: {}, sessions: {}, days: [] })
+    set({ units: {}, sessions: {}, days: [], flags: {} })
   },
 
   resetAll: async () => {
     await resetEverything()
-    set({ units: {}, sessions: {}, days: [], settings: DEFAULT_SETTINGS })
+    set({ units: {}, sessions: {}, days: [], flags: {}, settings: DEFAULT_SETTINGS })
   },
 
   remember: async (flag) => {
     await db.flags.put({ id: flag, at: Date.now() })
+    set((s) => ({ flags: { ...s.flags, [flag]: true } }))
   },
 }))

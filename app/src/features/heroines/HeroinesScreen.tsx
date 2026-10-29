@@ -1,27 +1,35 @@
+import { navigate } from '../../app/router'
+import { CHARACTERS, isOpen, stageOf } from '../../content/characters'
+import { useClub } from '../../data/store'
 import { Sprite } from '../../story/Stage'
-import type { HeroineId } from '../../story/sprites'
+import { HEROINE_IDS } from '../../story/sprites'
 import { Card } from '../../ui/kit'
 
-const HEROINES: { id: HeroineId; name: string; about: string }[] = [
-  { id: 'mika', name: 'Мика', about: 'Организует, договаривается, считает бюджет. Хочет стать продюсером культурных событий.' },
-  { id: 'rei', name: 'Рэй', about: 'Звук и музыка. Знает город по акустике дворов и остановок.' },
-  { id: 'iris', name: 'Айрис', about: 'Тексты и редактура. Хочет писать прозу и подать рассказ на конкурс.' },
-]
-
 export function HeroinesScreen() {
+  const { units, flags } = useClub()
+  const stage = stageOf(Object.keys(units).length)
   return (
     <div className="screen">
-      {HEROINES.map((h) => (
-        <Card key={h.id} title={h.name}>
-          <div className="heroine">
-            <Sprite heroine={h.id} expr="happy" size="avatar" />
+      {HEROINE_IDS.map((id) => {
+        const c = CHARACTERS[id]!
+        const memories = c.memories.filter((m) => isOpen(m.unlock, units, flags)).length
+        const quests = c.quests.filter((q) => flags[q.flag]).length
+        return (
+          <button key={id} className="card heroine-card" onClick={() => navigate({ name: 'heroine', id })}>
+            <Sprite heroine={id} expr="happy" size="avatar" />
             <div>
-              <p>{h.about}</p>
-              <p className="muted">Этап: знакомые</p>
+              <h2 className="card-title">{c.name}</h2>
+              <p>{c.about}</p>
+              <p className="muted">
+                {stage} · воспоминаний: {memories} · квестов: {quests}/{c.quests.length}
+              </p>
             </div>
-          </div>
-        </Card>
-      ))}
+          </button>
+        )
+      })}
+      <Card>
+        <p className="muted">Нажми на героиню: там то, что ты о ней узнал, общие воспоминания, личные квесты и можно поболтать.</p>
+      </Card>
     </div>
   )
 }
