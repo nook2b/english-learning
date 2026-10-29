@@ -40,6 +40,11 @@ test('right and wrong answers, feedback, mistakes and summary', async () => {
   expect(screen.getByText('Правильно так')).toBeInTheDocument()
   expect(screen.getByText('She → -s.')).toBeInTheDocument()
 
+  // The wrong answer comes back at the end until it is right.
+  fireEvent.click(screen.getByRole('button', { name: 'Дальше' }))
+  expect(screen.getByText('Ещё раз: исправим ошибку')).toBeInTheDocument()
+  fireEvent.change(screen.getByRole('textbox', { name: 'Ответ' }), { target: { value: 'lives' } })
+  fireEvent.click(screen.getByRole('button', { name: 'Проверить' }))
   fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
   expect(await screen.findByText(/Точность: 50%/)).toBeInTheDocument()
 

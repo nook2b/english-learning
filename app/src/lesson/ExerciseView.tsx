@@ -1,8 +1,9 @@
 import { type ReactNode, useMemo, useState } from 'react'
-import type { Exercise, ExerciseOf, Line, Speaker } from '../content/schema'
+import type { Exercise, ExerciseOf, Line } from '../content/schema'
 import { type Outcome, SPEAKER_NAMES, type Step, TIMELINE_LABELS, shuffled } from './model'
 import { canRecognize, type ListenError, listen } from '../speech/recognition'
-import { canSpeak, speak } from '../speech/tts'
+import { canSpeak } from '../speech/tts'
+import { AudioControls, LineVoice } from '../speech/AudioControls'
 import { Button, DialogueBox } from '../ui/kit'
 import { matches, matchesSpeech } from './check'
 import { Options, TextAnswer, TileAnswer } from './inputs'
@@ -241,7 +242,7 @@ function QuestionView({ step, exercise, locked, onAnswer }: ViewProps<'reading' 
       ) : (
         <div className="passage">
           <p className="task">Послушай{SPEAKER_NAMES[exercise.speaker] ? `: ${SPEAKER_NAMES[exercise.speaker]}` : ''}</p>
-          <ListenButtons text={exercise.audio} speaker={exercise.speaker} />
+          <AudioControls text={exercise.audio} speaker={exercise.speaker} />
           {(!canSpeak() || (locked && last)) && (
             <p className="transcript">
               <Gloss text={exercise.audio} />
@@ -274,6 +275,7 @@ export function SceneLines({ lines }: { lines: readonly Line[] }) {
       <Stage cast={castAt(lines, lines.length - 1)} speaking={lines[lines.length - 1]?.speaker} />
       {lines.map((l, i) => (
         <DialogueBox key={i} speaker={SPEAKER_NAMES[l.speaker] || undefined}>
+          <LineVoice text={l.text} speaker={l.speaker} />
           <Gloss text={l.text} />
           <Translation ru={l.ru} always={always} />
         </DialogueBox>
@@ -346,9 +348,7 @@ function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
       <p className="task">{exercise.show === 'ru' ? 'Скажи по-английски' : 'Прочитай вслух'}</p>
       <p className="prompt">{exercise.show === 'en' ? <Gloss text={exercise.text} /> : exercise.text}</p>
       {exercise.show === 'en' && canSpeak() && (
-        <Button variant="secondary" onClick={() => speak(exercise.text)}>
-          ▶ Как звучит
-        </Button>
+        <AudioControls text={exercise.text} speaker={exercise.voice ?? 'narrator'} label="▶ Как звучит" />
       )}
       {!locked && (
         <div className="actions">
@@ -367,26 +367,12 @@ function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
   )
 }
 
-function ListenButtons({ text, speaker }: { text: string; speaker: Speaker }) {
-  if (!canSpeak()) return <p className="muted">Браузер не умеет озвучивать текст.</p>
-  return (
-    <div className="actions-row">
-      <Button variant="secondary" onClick={() => speak(text, speaker)}>
-        ▶ Слушать
-      </Button>
-      <Button variant="secondary" onClick={() => speak(text, speaker, true)}>
-        Медленнее
-      </Button>
-    </div>
-  )
-}
-
 function DictationView({ step, exercise, locked, onAnswer }: ViewProps<'dictation'>) {
   const submit = (text: string) => onAnswer({ correct: matches(text, exercise.answers), given: text, expected: exercise.answers[0]! })
   return (
     <div className="exercise">
       <p className="task">Напиши, что услышал</p>
-      <ListenButtons text={exercise.audio} speaker={exercise.speaker} />
+      <AudioControls text={exercise.audio} speaker={exercise.speaker} />
       {!canSpeak() && (
         <p className="transcript" lang="en">
           {exercise.audio}

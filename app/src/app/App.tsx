@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { getUnit } from '../content/course'
 import { useClub } from '../data/store'
+import { HeroineScreen } from '../features/heroines/HeroineScreen'
 import { HeroinesScreen } from '../features/heroines/HeroinesScreen'
 import { UnitScreen } from '../features/lesson/UnitScreen'
 import { PathScreen } from '../features/path/PathScreen'
@@ -29,6 +30,8 @@ function Screen({ route }: { route: Route }) {
       return <StoryScreen />
     case 'heroines':
       return <HeroinesScreen />
+    case 'heroine':
+      return <HeroineScreen key={route.id} id={route.id} />
     case 'profile':
       return <ProfileScreen />
   }
@@ -50,7 +53,7 @@ export function App() {
       <main>
         <Screen route={route} />
       </main>
-      {route.name !== 'session' && <BottomNav current={route.name} />}
+      {route.name !== 'session' && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
     </div>
   )
 }

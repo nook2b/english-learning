@@ -1,0 +1,97 @@
+{
+  "id": "mika",
+  "name": "Мика",
+  "about": "Организует, договаривается, считает бюджет. Хочет стать продюсером культурных событий.",
+  "facts": [
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "ru": "В подготовительной программе, как и ты. Утро обычно проводит в комнате 17."
+    },
+    {
+      "unlock": {
+        "flag": "u001_asked_mika"
+      },
+      "ru": "Хочет изучать продюсирование событий. «Пока изучаю всё подряд»."
+    }
+  ],
+  "memories": [
+    {
+      "unlock": {
+        "flag": "u001_intro_looking_for_room"
+      },
+      "en": "Your first line for the guide: “I'm new here, and I'm looking for Room 70.”",
+      "ru": "Твоя первая строчка для гида: «Я здесь новенький и ищу кабинет 70»."
+    },
+    {
+      "unlock": {
+        "flag": "u001_intro_exchange_honest"
+      },
+      "en": "Your first line for the guide: honest about not understanding everything yet.",
+      "ru": "Твоя первая строчка для гида — честно о том, что пока не всё понимаешь."
+    }
+  ],
+  "lines": [
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "text": "Room 17 is the best room in the building. Don't tell the others.",
+      "ru": "Комната 17 — лучшая в здании. Только другим не говори.",
+      "expr": "happy"
+    },
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "text": "I have a plan for today. Actually, I have three.",
+      "ru": "У меня есть план на сегодня. Вообще-то три.",
+      "expr": "excited"
+    }
+  ],
+  "quests": [
+    {
+      "id": "MIK-01",
+      "title": "Четыре обеда и один лишний план",
+      "window": "009–012",
+      "change": "Спрашивает предпочтения, помнит конкретную деталь",
+      "flag": "mik01_shared_lunch"
+    },
+    {
+      "id": "MIK-02",
+      "title": "Самая бесполезная вещь на рынке",
+      "window": "057–060",
+      "change": "Разделяет с тобой удовольствие без программы",
+      "flag": "mik02_market_memory"
+    },
+    {
+      "id": "MIK-03",
+      "title": "Тридцать секунд без чужих аплодисментов",
+      "window": "093–096",
+      "change": "Показывает собственный вклад и сама отправляет заявку",
+      "flag": "mik03_application_sent"
+    },
+    {
+      "id": "MIK-04",
+      "title": "Вечер без программы",
+      "window": "097–100",
+      "change": "Прямо обозначает личное приглашение",
+      "flag": "mik04_evening_shared"
+    },
+    {
+      "id": "MIK-05",
+      "title": "Завтрак в двух городах",
+      "window": "149–152",
+      "change": "Согласовывает контакт без постоянной доступности",
+      "flag": "mik05_distance_ritual"
+    },
+    {
+      "id": "MIK-06",
+      "title": "Ключ от шкафа",
+      "window": "205–208",
+      "change": "Делегирует и остаётся рядом без роли организатора",
+      "flag": "mik06_handover_done"
+    }
+  ]
+}

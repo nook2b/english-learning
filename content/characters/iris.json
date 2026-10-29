@@ -1,0 +1,97 @@
+{
+  "id": "iris",
+  "name": "Айрис",
+  "about": "Тексты и редактура. Хочет писать прозу и подать рассказ на конкурс.",
+  "facts": [
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "ru": "Пишет и проверяет тексты для гида. После четырёх обычно в библиотеке."
+    },
+    {
+      "unlock": {
+        "flag": "u001_asked_iris"
+      },
+      "ru": "Её место в библиотеке — второй этаж, у окна."
+    }
+  ],
+  "memories": [
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "en": "Iris gave you the letter you dropped. “The important parts are short.”",
+      "ru": "Айрис вернула тебе потерянное письмо. «Важное там короткое»."
+    },
+    {
+      "unlock": {
+        "flag": "u001_asked_iris"
+      },
+      "en": "Iris told you where to find her: second floor, by the window.",
+      "ru": "Айрис сказала, где её найти: второй этаж, у окна."
+    }
+  ],
+  "lines": [
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "text": "If something isn't clear, ask. That's the whole rule.",
+      "ru": "Если что-то непонятно — спрашивай. Вот и всё правило.",
+      "expr": "dry_smile"
+    },
+    {
+      "unlock": {
+        "unit": "001"
+      },
+      "text": "I'm reading three books at once. It's going well. Mostly.",
+      "ru": "Я читаю три книги одновременно. Всё идёт хорошо. В основном.",
+      "expr": "happy"
+    }
+  ],
+  "quests": [
+    {
+      "id": "IRIS-01",
+      "title": "Граф, который потерял свой замок",
+      "window": "025–028",
+      "change": "Общается как читательница со вкусом и юмором",
+      "flag": "iris01_book_joke"
+    },
+    {
+      "id": "IRIS-02",
+      "title": "Слишком хорошее письмо",
+      "window": "061–064",
+      "change": "Принимает непонимание как полезный сигнал",
+      "flag": "iris02_question_clear"
+    },
+    {
+      "id": "IRIS-03",
+      "title": "Две страницы, один вопрос",
+      "window": "093–096",
+      "change": "Допускает развёрнутый отзыв на свой текст",
+      "flag": "iris03_draft_feedback"
+    },
+    {
+      "id": "IRIS-04",
+      "title": "Книжный без списка",
+      "window": "097–100",
+      "change": "Выбирает личную встречу без редакторского задания",
+      "flag": "iris04_books_shared"
+    },
+    {
+      "id": "IRIS-05",
+      "title": "Мне не понравился финал",
+      "window": "181–184",
+      "change": "Сохраняет близость и свой замысел при разных мнениях",
+      "flag": "iris05_disagreement_safe"
+    },
+    {
+      "id": "IRIS-06",
+      "title": "Три строки ответа",
+      "window": "193–196",
+      "change": "Сама решает, какие редакторские условия принять",
+      "flag": "iris06_reply_sent"
+    }
+  ]
+}

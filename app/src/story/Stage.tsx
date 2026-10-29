@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { LineVoice } from '../speech/AudioControls'
+import { play, stop } from '../speech/voice'
 import type { Line } from '../content/schema'
 import { useClub } from '../data/store'
 import { Gloss, Translation } from '../lesson/Gloss'
 import { SPEAKER_NAMES } from '../lesson/model'
 import { Button, DialogueBox } from '../ui/kit'
 import { castAt } from './cast'
-import { type HeroineId, HEROINE_IDS, parseExpr, resolveSprite } from './sprites'
+import { type HeroineId, HEROINE_IDS, isHeroine, parseExpr, resolveSprite } from './sprites'
 
 export function Sprite({ heroine, expr, dim = false, size = 'stage' }: { heroine: HeroineId; expr?: string; dim?: boolean; size?: 'stage' | 'avatar' }) {
   const ref = parseExpr(heroine, expr)
@@ -18,16 +20,16 @@ export function Sprite({ heroine, expr, dim = false, size = 'stage' }: { heroine
 }
 
 /** Heroines on screen, ordered as on the references: Rei left, Mika centre, Iris right. */
-export function Stage({ cast, speaking }: { cast: Partial<Record<HeroineId, string>>; speaking?: string }) {
+export function Stage({ cast, speaking, compact = false }: { cast: Partial<Record<HeroineId, string>>; speaking?: string; compact?: boolean }) {
   const present = HEROINE_IDS.filter((h) => h in cast)
   if (present.length === 0) return null
   const order: HeroineId[] = ['rei', 'mika', 'iris']
   return (
-    <div className={`stage stage-${present.length}`}>
+    <div className={`stage stage-${present.length} ${compact ? 'stage-compact' : ''}`}>
       {order
         .filter((h) => present.includes(h))
         .map((h) => (
-          <Sprite key={h} heroine={h} expr={cast[h]} dim={!!speaking && speaking !== h} />
+          <Sprite key={h} heroine={h} expr={cast[h]} dim={!!speaking && isHeroine(speaking as HeroineId) && speaking !== h} />
         ))}
     </div>
   )
@@ -37,13 +39,20 @@ export function Stage({ cast, speaking }: { cast: Partial<Record<HeroineId, stri
 export function Beat({ setting, lines, doneLabel, onDone }: { setting?: string; lines: readonly Line[]; doneLabel: string; onDone: () => void }) {
   const [i, setI] = useState(0)
   const always = useClub((s) => s.settings.translation === 'always')
+  const voiceOn = useClub((s) => s.settings.voice)
   const line = lines[i]!
+  // Read each line aloud as it appears when voice is on; stop when leaving the beat.
+  useEffect(() => {
+    if (voiceOn) play(line.text, line.speaker)
+  }, [voiceOn, line])
+  useEffect(() => () => stop(), [])
   const last = i === lines.length - 1
   return (
     <div className="beat">
       {setting && <p className="muted">{setting}</p>}
       <Stage cast={castAt(lines, i)} speaking={line.speaker} />
       <DialogueBox speaker={SPEAKER_NAMES[line.speaker] || undefined}>
+        <LineVoice text={line.text} speaker={line.speaker} />
         <Gloss key={i} text={line.text} />
         <Translation key={`t${i}`} ru={line.ru} always={always} />
       </DialogueBox>

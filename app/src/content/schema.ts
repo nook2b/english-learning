@@ -143,6 +143,8 @@ const Speak = z.object({
   /** What the learner sees: a Russian meaning to express, or English to read aloud. */
   show: z.enum(['ru', 'en']),
   text: z.string(),
+  /** Whose voice reads the English sample aloud. */
+  voice: Speaker.optional(),
   answers,
 })
 

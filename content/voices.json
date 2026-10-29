@@ -1,0 +1,9 @@
+{
+  "model": "eleven_multilingual_v2",
+  "format": "mp3_44100_64",
+  "voices": {
+    "rei": "tWbuddD9YFdBqLHumjE2",
+    "mika": "zy9WSTvdBJgqZRZ8JJF2",
+    "iris": "MTtyIHkOaoPnvpzwLU3Z"
+  }
+}

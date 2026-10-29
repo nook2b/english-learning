@@ -80,7 +80,7 @@ main { flex: 1; padding: 12px 16px 88px; }
 .learn-panel { border-left: 4px solid var(--accent); background: var(--surface); padding: 8px 12px; border-radius: 4px; }
 .learn-panel-title { font-weight: 600; margin-bottom: 4px; }
 
-.stage { display: flex; justify-content: space-around; align-items: flex-end; gap: 8px; min-height: 260px; }
+
 .sprite-stub {
   width: 30%; max-width: 140px; aspect-ratio: 2 / 3; border-radius: 60px 60px 8px 8px;
   display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px;
@@ -159,3 +159,14 @@ main { flex: 1; padding: 12px 16px 88px; }
 .sprite-avatar { width: 84px; height: 84px; border-radius: 50%; flex-shrink: 0; background-color: var(--bg); background-repeat: no-repeat; background-size: 330%; background-position: 50% 4%; }
 .beat { display: flex; flex-direction: column; gap: 10px; }
 .context { margin: 0; font-size: 0.85rem; color: var(--accent); font-weight: 600; text-transform: none; }
+.stage-compact .sprite-stage { height: min(24vh, 200px); }
+.audio-controls .btn { flex: 1; }
+.line-voice { float: right; background: none; border: 0; font-size: 1.1rem; cursor: pointer; padding: 0 0 4px 8px; }
+.heroine-card { display: flex; gap: 12px; align-items: center; text-align: left; color: var(--text); font: inherit; cursor: pointer; width: 100%; }
+.heroine-hero { display: flex; justify-content: center; }
+.heroine-tap { background: none; border: 0; padding: 0; cursor: pointer; }
+.heroine-hero .sprite-stage { height: min(44vh, 400px); width: auto; }
+.list { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.memories li, .quests li { display: flex; flex-direction: column; }
+.quests { list-style: none; padding-left: 0; }
+.quest-locked { color: var(--muted); }

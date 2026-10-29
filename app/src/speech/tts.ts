@@ -13,7 +13,7 @@ function pickVoice(lang: string): SpeechSynthesisVoice | undefined {
   return voices.find((v) => v.lang === lang) ?? voices.find((v) => v.lang.startsWith('en'))
 }
 
-export function speak(text: string, speaker: Speaker = 'narrator', slow = false): void {
+export function speak(text: string, speaker: Speaker = 'narrator', slow = false, onEnd?: () => void): void {
   if (!canSpeak()) return
   const lang = LANG[speaker] ?? 'en-US'
   const u = new SpeechSynthesisUtterance(text)
@@ -21,6 +21,7 @@ export function speak(text: string, speaker: Speaker = 'narrator', slow = false)
   u.rate = slow ? 0.7 : 1
   const voice = pickVoice(lang)
   if (voice) u.voice = voice
+  if (onEnd) u.onend = onEnd
   window.speechSynthesis.cancel()
   window.speechSynthesis.speak(u)
 }
