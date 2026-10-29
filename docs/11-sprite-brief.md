@@ -420,16 +420,21 @@ backpack strap.
 
 Нужен **один дополнительный кадр на каждую эмоцию**: то же самое изображение, у которого изменён только рот.
 
+> **Главное правило (с 29.10.2026):** у спрайтов эмоций рот закрыт, открытый рот бывает только в кадре речи. Иначе при разговоре нет контраста. Подробно и с промптами — в [`17-closed-mouth-sprites-brief.md`](17-closed-mouth-sprites-brief.md).
+
 ### Правила
 
 - Имя файла: `{эмоция}_talk.png` в той же папке. Например, `rei/base/recorder/smirk_talk.png`.
 - Исходник — готовый спрайт этой эмоции, а не база позы. Глаза, брови, румянец и всё остальное должны совпадать попиксельно.
 - **Маска только на рот:** от кончика носа до подбородка, по ширине щёк. Глаза и брови в маску не попадают.
-- Если у эмоции рот закрыт или почти закрыт — в кадре он **приоткрыт на середине слова** (мягкая «а»/«э»). Если рот уже широко открыт (`laugh`, `excited`, `surprised`) — в кадре он **наполовину прикрыт**. Тогда при смене кадров губы двигаются в обе стороны.
-- Характер улыбки сохраняется: у `smirk` уголок рта остаётся приподнятым с одной стороны, у `forced_smile` улыбка остаётся натянутой, у `dry_smile` — сдержанной.
-- Амплитуда как в эмоциях: у Мики рот открыт заметнее, у Рэй и Айрис — меньше.
+- **Рот закрыт или почти закрыт** (`neutral`, `happy`, `thinking`, `smirk` и т. п.): в кадре он **приоткрыт на середине слова** — мягкая «а»/«э».
+- **Рот уже открыт** (`laugh`, `excited`, `surprised`, а также `forced_smile` со сжатыми зубами): кадр — **тот же рот на другом слоге**, а не маленький рот. Ширина рта, уголки и форма улыбки остаются прежними. Меняется только раскрытие: нижняя губа и челюсть поднимаются примерно на треть, верхняя губа остаётся на месте. Круглое «о» у `surprised` остаётся круглым, просто чуть меньше. У `forced_smile` зубы чуть разжимаются, улыбка остаётся натянутой и такой же широкой.
+- Характер улыбки сохраняется: у `smirk` уголок рта остаётся приподнятым с одной стороны, у `forced_smile` улыбка натянутая, у `dry_smile` сдержанная.
+- Амплитуда как в эмоциях: у Мики рот открыт заметнее, у Рэй и Айрис меньше.
 
-### Промпт редактирования
+> Ошибка первой версии брифа: для открытых ртов было написано «наполовину прикрыть», и генератор рисовал маленький узкий рот. При речи широкая улыбка сменялась крошечной. Что перегенерировать и готовые промпты — в отдельном брифе [`16-talk-frames-redo-brief.md`](16-talk-frames-redo-brief.md).
+
+### Промпт редактирования: рот закрыт
 
 ```
 Edit only the selected mouth area. Keep the same character, the same art style,
@@ -441,11 +446,34 @@ The character is in the middle of speaking a word: mouth slightly open in a soft
 visible, natural for talking.
 ```
 
-Для `laugh`, `excited`, `surprised` вместо второго абзаца:
+### Промпт редактирования: рот уже открыт
 
+Общая часть та же, второй абзац — по эмоции:
+
+**`excited`, `laugh` (широкая открытая улыбка):**
 ```
-The character is in the middle of speaking: the mouth is half closed compared to
-the original, the same emotion as before (<ЭМОЦИЯ>), natural for talking.
+The character is in the middle of speaking with the SAME wide open smile:
+keep exactly the same mouth width, the same smile corners turned up and the same
+upper lip and upper teeth. Only the jaw is raised a little: the lower lip moves up
+so the mouth is about two thirds as open as before, the tongue is less visible.
+Do NOT make the mouth smaller or narrower. Same cheerful emotion.
+```
+
+**`surprised` (круглое «о»):**
+```
+The character is in the middle of speaking while surprised: the mouth stays a
+small ROUND "oo" shape, the same position and roundness, just slightly smaller
+and a little taller, as when saying "oo". Do NOT turn it into a flat line or a
+slit. Same surprised emotion.
+```
+
+**`forced_smile` (натянутая улыбка, зубы сжаты):**
+```
+The character is talking through the SAME tense forced grin: keep the same wide
+mouth width, the same stretched corners and the same visible upper teeth; the
+teeth part slightly, showing a thin dark gap between upper and lower teeth, as
+when saying "eh". Do NOT turn it into a relaxed open mouth. The smile must still
+look strained.
 ```
 
 ### Проверка

@@ -33,6 +33,11 @@ test.each(exercises.map((e) => [e.id, e] as [string, Exercise]))('%s is answerab
   switch (e.type) {
     case 'choice':
       expect(e.options).toContain(e.answer)
+      expect(e.prompt.split('___')).toHaveLength(2)
+      break
+    case 'fill':
+      // One gap per sentence: feedback and the review deck fill exactly one.
+      expect(e.prompt.split('___')).toHaveLength(2)
       break
     case 'timeline':
       expect(e.options).toContain(e.answer)

@@ -14,6 +14,18 @@
         "flag": "u001_asked_mika"
       },
       "ru": "Хочет изучать продюсирование событий. «Пока изучаю всё подряд»."
+    },
+    {
+      "unlock": {
+        "unit": "003"
+      },
+      "ru": "Встречи клубов — в понедельник и четверг вечером. В среду свободна после двенадцати."
+    },
+    {
+      "unlock": {
+        "unit": "004"
+      },
+      "ru": "Встаёт в шесть, первым делом проверяет сообщения и никогда не ложится до полуночи."
     }
   ],
   "memories": [
@@ -30,6 +42,27 @@
       },
       "en": "Your first line for the guide: honest about not understanding everything yet.",
       "ru": "Твоя первая строчка для гида — честно о том, что пока не всё понимаешь."
+    },
+    {
+      "unlock": {
+        "flag": "u002_slowed_mika"
+      },
+      "en": "You asked Mika to speak more slowly in the first real interview. She laughed — and slowed down.",
+      "ru": "Ты попросил Мику говорить медленнее на первом настоящем интервью. Она рассмеялась — и замедлилась."
+    },
+    {
+      "unlock": {
+        "flag": "u002_helped_newcomer"
+      },
+      "en": "You helped a newcomer with one simple question. \"One question at a time\" is now Mika's rule.",
+      "ru": "Ты помог новичку одним простым вопросом. «По одному вопросу» — теперь правило Мики."
+    },
+    {
+      "unlock": {
+        "flag": "u003_confirmed_slot"
+      },
+      "en": "Mika sent the team's first real plan: Wednesday, one o'clock, the courtyard.",
+      "ru": "Мика отправила первый настоящий план команды: среда, час дня, двор."
     }
   ],
   "lines": [
@@ -47,6 +80,22 @@
       },
       "text": "I have a plan for today. Actually, I have three.",
       "ru": "У меня есть план на сегодня. Вообще-то три.",
+      "expr": "excited"
+    },
+    {
+      "unlock": {
+        "unit": "002"
+      },
+      "text": "One question at a time. I'm writing it on my hand.",
+      "ru": "По одному вопросу. Пишу это себе на руке.",
+      "expr": "laugh"
+    },
+    {
+      "unlock": {
+        "unit": "004"
+      },
+      "text": "Lunch, all four of us. I already have a plan. Two plans.",
+      "ru": "Обед, вчетвером. У меня уже есть план. Два плана.",
       "expr": "excited"
     }
   ],

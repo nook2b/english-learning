@@ -14,6 +14,18 @@
         "flag": "u001_asked_iris"
       },
       "ru": "Её место в библиотеке — второй этаж, у окна."
+    },
+    {
+      "unlock": {
+        "unit": "003"
+      },
+      "ru": "Работает в библиотеке в понедельник, среду и пятницу с трёх до семи. Во вторник и четверг утром — семинары."
+    },
+    {
+      "unlock": {
+        "unit": "004"
+      },
+      "ru": "Любит, когда каждое наречие стоит на своём месте."
     }
   ],
   "memories": [
@@ -30,6 +42,27 @@
       },
       "en": "Iris told you where to find her: second floor, by the window.",
       "ru": "Айрис сказала, где её найти: второй этаж, у окна."
+    },
+    {
+      "unlock": {
+        "unit": "002"
+      },
+      "en": "Iris added a page to the guide: \"How to ask again\". It was your idea.",
+      "ru": "Айрис добавила в гид страницу «Как переспросить». Это была твоя идея."
+    },
+    {
+      "unlock": {
+        "flag": "u003_proposed_wednesday"
+      },
+      "en": "You suggested Wednesday at one. Iris checked it twice. It worked.",
+      "ru": "Ты предложил среду в час. Айрис проверила дважды. Подошло."
+    },
+    {
+      "unlock": {
+        "unit": "004"
+      },
+      "en": "Iris didn't change a single word of your page. \"That's a compliment.\"",
+      "ru": "Айрис не изменила ни слова на твоей странице. «Это комплимент»."
     }
   ],
   "lines": [
@@ -48,6 +81,22 @@
       "text": "I'm reading three books at once. It's going well. Mostly.",
       "ru": "Я читаю три книги одновременно. Всё идёт хорошо. В основном.",
       "expr": "happy"
+    },
+    {
+      "unlock": {
+        "unit": "003"
+      },
+      "text": "At, on, in. Three small words, a hundred small mistakes.",
+      "ru": "At, on, in. Три маленьких слова, сто маленьких ошибок.",
+      "expr": "dry_smile"
+    },
+    {
+      "unlock": {
+        "unit": "004"
+      },
+      "text": "Your page is still my favourite. Don't let it go to your head.",
+      "ru": "Твоя страница всё ещё моя любимая. Только не зазнавайся.",
+      "expr": "notebook/dry_smile"
     }
   ],
   "quests": [

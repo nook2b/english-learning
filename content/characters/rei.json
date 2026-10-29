@@ -14,6 +14,18 @@
         "flag": "u001_asked_rei"
       },
       "ru": "Проверяет уровни звука даже посреди разговора."
+    },
+    {
+      "unlock": {
+        "unit": "003"
+      },
+      "ru": "В звуковой лаборатории каждый день с двух до пяти. Кроме среды."
+    },
+    {
+      "unlock": {
+        "unit": "004"
+      },
+      "ru": "Встаёт поздно. Иногда записывает ночной автобус."
     }
   ],
   "memories": [
@@ -23,6 +35,27 @@
       },
       "en": "You asked Rei what she was doing. “Checking the levels. You sound fine, by the way.”",
       "ru": "Ты спросил Рэй, что она делает. «Проверяю уровни. Кстати, звучишь нормально»."
+    },
+    {
+      "unlock": {
+        "flag": "u002_asked_gain"
+      },
+      "en": "You asked Rei what \"gain\" means. She let you hold the recorder.",
+      "ru": "Ты спросил Рэй, что значит «gain». Она дала тебе подержать рекордер."
+    },
+    {
+      "unlock": {
+        "flag": "u002_asked_button"
+      },
+      "en": "You asked Rei which button she meant. She let you hold the recorder.",
+      "ru": "Ты уточнил у Рэй, о какой кнопке речь. Она дала тебе подержать рекордер."
+    },
+    {
+      "unlock": {
+        "flag": "u004_honest_morning"
+      },
+      "en": "You admitted your mornings are chaos. Rei kept it in the guide.",
+      "ru": "Ты признался, что утро у тебя — хаос. Рэй оставила это в гиде."
     }
   ],
   "lines": [
@@ -41,6 +74,22 @@
       "text": "Every room has its own sound. This one hums.",
       "ru": "У каждой комнаты свой звук. Эта гудит.",
       "expr": "neutral"
+    },
+    {
+      "unlock": {
+        "unit": "002"
+      },
+      "text": "Gain at eight. Remember that and we can work together.",
+      "ru": "Gain на восьми. Запомни — и мы сработаемся.",
+      "expr": "recorder/smirk"
+    },
+    {
+      "unlock": {
+        "unit": "004"
+      },
+      "text": "The night bus sounds better than most music. Don't tell Mika.",
+      "ru": "Ночной автобус звучит лучше большинства музыки. Мике не говори.",
+      "expr": "smirk"
     }
   ],
   "quests": [

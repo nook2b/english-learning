@@ -1,0 +1,1278 @@
+{
+  "id": "004",
+  "title": "Объяснить свой день",
+  "goal": "Рассказать про свой обычный день по порядку и сказать, чем сегодня отличается от обычного.",
+  "focus": "Present Simple для распорядка, наречия частоты, слова порядка, контраст Simple и Continuous. В конце — проверка модуля 001–004.",
+  "outcome": "Первая целая страница гида записана: «A day of a new student». Модуль 001–004 закрыт, и Мика уже зовёт всех на общий обед.",
+  "expressions": [
+    {
+      "en": "get up",
+      "ru": "вставать"
+    },
+    {
+      "en": "have breakfast",
+      "ru": "завтракать"
+    },
+    {
+      "en": "usually",
+      "ru": "обычно"
+    },
+    {
+      "en": "always",
+      "ru": "всегда"
+    },
+    {
+      "en": "sometimes",
+      "ru": "иногда"
+    },
+    {
+      "en": "never",
+      "ru": "никогда"
+    },
+    {
+      "en": "First",
+      "ru": "Сначала"
+    },
+    {
+      "en": "then",
+      "ru": "потом"
+    },
+    {
+      "en": "after that",
+      "ru": "после этого"
+    },
+    {
+      "en": "Finally",
+      "ru": "Наконец"
+    },
+    {
+      "en": "but today",
+      "ru": "но сегодня"
+    },
+    {
+      "en": "take the bus",
+      "ru": "ехать на автобусе"
+    }
+  ],
+  "glossary": [
+    {
+      "en": "typical",
+      "ru": "обычный"
+    },
+    {
+      "en": "dining hall",
+      "ru": "столовая"
+    },
+    {
+      "en": "miss",
+      "ru": "пропускать"
+    },
+    {
+      "en": "midnight",
+      "ru": "полночь"
+    },
+    {
+      "en": "sound lab",
+      "ru": "звуковая лаборатория"
+    },
+    {
+      "en": "record",
+      "ru": "записывать"
+    },
+    {
+      "en": "borrow",
+      "ru": "брать (на время)"
+    },
+    {
+      "en": "repairs",
+      "ru": "ремонт"
+    },
+    {
+      "en": "panic",
+      "ru": "паника"
+    },
+    {
+      "en": "celebrate",
+      "ru": "отметить"
+    },
+    {
+      "en": "Balance",
+      "ru": "баланс"
+    },
+    {
+      "en": "adverb",
+      "ru": "наречие"
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Обычный день новичка",
+      "intro": "Айрис написала черновик страницы для гида. Прочитай и ответь.",
+      "frame": {
+        "setting": "Библиотека, второй этаж, у окна. Айрис протягивает тебе лист.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "I wrote a page about a typical day here. Is it true for you?",
+            "ru": "Я написала страницу про обычный день здесь. Это правда про тебя?",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "So the bus part is wrong. Good to know before we record it.",
+          "ru": "Значит, часть про автобус неправильная. Хорошо, что узнали до записи.",
+          "expr": "notebook/skeptical"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u004-s1-e1",
+          "type": "reading",
+          "title": "A typical day at Bellwether",
+          "text": "Most new students get up at about seven. They usually have breakfast in the dining hall, and then they take the bus to the New Building. Classes start at nine. At one o'clock everyone has lunch, and in the afternoon students often go to the library or to a club. In the evening they sometimes go to the city, but they never miss the last bus.",
+          "ru": "Большинство новичков встают около семи. Обычно они завтракают в столовой, а потом едут на автобусе в новый корпус. Занятия начинаются в девять. В час все обедают, а днём студенты часто ходят в библиотеку или в клуб. Вечером они иногда ездят в город, но никогда не пропускают последний автобус.",
+          "questions": [
+            {
+              "prompt": "What time do most new students get up?",
+              "options": [
+                "At about seven",
+                "At nine",
+                "At one"
+              ],
+              "answer": "At about seven"
+            },
+            {
+              "prompt": "Where do they usually have breakfast?",
+              "options": [
+                "In the dining hall",
+                "In the library",
+                "In the city"
+              ],
+              "answer": "In the dining hall"
+            },
+            {
+              "prompt": "What do students often do in the afternoon?",
+              "options": [
+                "Go to the library or a club",
+                "Take the last bus",
+                "Have breakfast"
+              ],
+              "answer": "Go to the library or a club"
+            }
+          ],
+          "tags": [
+            "reading",
+            "present_simple",
+            "frequency"
+          ]
+        },
+        {
+          "id": "u004-s1-e2",
+          "type": "choice",
+          "prompt": "Students ___ go to the city in the evening.",
+          "options": [
+            "sometimes",
+            "are sometimes",
+            "sometime"
+          ],
+          "answer": "sometimes",
+          "explain": "Наречие частоты стоит перед обычным глаголом: sometimes go.",
+          "tags": [
+            "frequency",
+            "word_order"
+          ]
+        },
+        {
+          "id": "u004-s1-e3",
+          "type": "choice",
+          "prompt": "They never ___ the last bus.",
+          "options": [
+            "miss",
+            "misses",
+            "missing"
+          ],
+          "answer": "miss",
+          "explain": "They → глагол без -s; never не меняет форму.",
+          "tags": [
+            "present_simple",
+            "frequency"
+          ]
+        },
+        {
+          "id": "u004-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "get up",
+              "ru": "вставать"
+            },
+            {
+              "en": "have breakfast",
+              "ru": "завтракать"
+            },
+            {
+              "en": "typical",
+              "ru": "обычный, типичный"
+            },
+            {
+              "en": "miss",
+              "ru": "пропускать, опаздывать на"
+            },
+            {
+              "en": "take the bus",
+              "ru": "ехать на автобусе"
+            }
+          ],
+          "tags": [
+            "vocab_u004"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Их дни",
+      "intro": "Героини рассказывают про свой обычный день. Слушай без текста.",
+      "frame": {
+        "setting": "Комната 17. Рэй включает запись: «Расскажите про свой день».",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "For the guide. Everyone describes their day. Mika, short version, please.",
+            "ru": "Для гида. Каждый описывает свой день. Мика, короткую версию, пожалуйста.",
+            "expr": "recorder/neutral"
+          },
+          {
+            "speaker": "mika",
+            "text": "I don't have a short version.",
+            "ru": "У меня нет короткой версии.",
+            "expr": "pout"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Mika's day took four minutes. Mine took ten seconds. Balance.",
+          "ru": "День Мики занял четыре минуты. Мой — десять секунд. Баланс.",
+          "expr": "smirk"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u004-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "delivery": "[cheerful, fast, a little out of breath]",
+          "audio": "Okay! I get up at six, I always check my messages first, then I run to the student office. I usually have lunch with the club people, and after that I go to Room 17. I never go to bed before midnight. I know, I know.",
+          "ru": "Так! Я встаю в шесть, всегда сначала проверяю сообщения, потом бегу в студенческий офис. Обычно обедаю с ребятами из клуба, а после этого иду в комнату 17. Я никогда не ложусь спать до полуночи. Знаю, знаю.",
+          "questions": [
+            {
+              "prompt": "What does Mika always do first?",
+              "options": [
+                "She checks her messages",
+                "She has breakfast",
+                "She runs to Room 17"
+              ],
+              "answer": "She checks her messages"
+            },
+            {
+              "prompt": "When does she go to bed?",
+              "options": [
+                "After midnight",
+                "At ten",
+                "Before midnight"
+              ],
+              "answer": "After midnight"
+            }
+          ],
+          "tags": [
+            "listening",
+            "frequency"
+          ]
+        },
+        {
+          "id": "u004-s2-e2",
+          "type": "listening",
+          "speaker": "rei",
+          "delivery": "[flat, quiet]",
+          "audio": "I get up late. I go to the sound lab. I listen to things. I go home. Sometimes I record the night bus.",
+          "ru": "Я встаю поздно. Иду в звуковую лабораторию. Слушаю всякое. Иду домой. Иногда записываю ночной автобус.",
+          "questions": [
+            {
+              "prompt": "What does Rei sometimes record?",
+              "options": [
+                "The night bus",
+                "The morning news",
+                "Her classes"
+              ],
+              "answer": "The night bus"
+            },
+            {
+              "prompt": "How is Rei's description?",
+              "options": [
+                "Very short",
+                "Very long",
+                "Very funny"
+              ],
+              "answer": "Very short"
+            }
+          ],
+          "tags": [
+            "listening",
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u004-s2-e3",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "I always check my messages first.",
+          "answers": [
+            "I always check my messages first."
+          ],
+          "tiles": [
+            "I",
+            "always",
+            "check",
+            "my",
+            "messages",
+            "first.",
+            "checks",
+            "am"
+          ],
+          "tags": [
+            "dictation",
+            "frequency"
+          ]
+        },
+        {
+          "id": "u004-s2-e4",
+          "type": "dictation",
+          "speaker": "rei",
+          "delivery": "[deadpan]",
+          "audio": "Sometimes I record the night bus.",
+          "answers": [
+            "Sometimes I record the night bus.",
+            "I sometimes record the night bus."
+          ],
+          "tags": [
+            "dictation",
+            "frequency"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Как часто",
+      "intro": "Наречия частоты: always (всегда), usually (обычно), often (часто), sometimes (иногда), never (никогда). Они стоят перед обычным глаголом (I usually walk), но после be (I'm usually late). Sometimes можно поставить и в начало: Sometimes I record the bus.",
+      "frame": {
+        "setting": "Айрис правит черновик «Обычный день» и показывает тебе карточки.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Where does \"usually\" go? People put it everywhere.",
+            "ru": "Куда ставится «usually»? Люди ставят его куда попало.",
+            "expr": "notebook/skeptical"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Every adverb in its place. This is my favourite kind of order.",
+          "ru": "Каждое наречие на своём месте. Мой любимый вид порядка.",
+          "expr": "notebook/dry_smile"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u004-s3-e1",
+          "type": "choice",
+          "prompt": "I ___ to the library after lunch.",
+          "options": [
+            "usually go",
+            "go usually",
+            "am usually go"
+          ],
+          "answer": "usually go",
+          "explain": "Usually — перед обычным глаголом.",
+          "tags": [
+            "frequency",
+            "word_order"
+          ],
+          "context": "Карточка Айрис"
+        },
+        {
+          "id": "u004-s3-e2",
+          "type": "choice",
+          "prompt": "Mika is ___ busy.",
+          "options": [
+            "always",
+            "always is",
+            "is always"
+          ],
+          "answer": "always",
+          "explain": "После be: is always busy.",
+          "tags": [
+            "frequency",
+            "word_order"
+          ],
+          "context": "Карточка Айрис"
+        },
+        {
+          "id": "u004-s3-e3",
+          "type": "choice",
+          "prompt": "Rei ___ talks before noon.",
+          "options": [
+            "never",
+            "not never",
+            "doesn't never"
+          ],
+          "answer": "never",
+          "explain": "Never уже отрицание: Rei never talks.",
+          "tags": [
+            "frequency"
+          ],
+          "context": "Карточка Айрис"
+        },
+        {
+          "id": "u004-s3-e4",
+          "type": "timeline",
+          "sentence": "I often study in the library.",
+          "options": [
+            "now",
+            "habit",
+            "state"
+          ],
+          "answer": "habit",
+          "explain": "Often — регулярно → Present Simple.",
+          "tags": [
+            "frequency",
+            "contrast_ps_pc"
+          ],
+          "context": "Карточка Айрис"
+        },
+        {
+          "id": "u004-s3-e5",
+          "type": "fill",
+          "prompt": "We ___ have lunch at one.",
+          "hint": "usually",
+          "answers": [
+            "usually"
+          ],
+          "tags": [
+            "frequency",
+            "word_order"
+          ],
+          "context": "Карточка Айрис"
+        },
+        {
+          "id": "u004-s3-e6",
+          "type": "transform",
+          "instruction": "Добавь «often» на правильное место",
+          "sentence": "Students go to the city in the evening.",
+          "answers": [
+            "Students often go to the city in the evening."
+          ],
+          "tags": [
+            "frequency",
+            "word_order"
+          ]
+        },
+        {
+          "id": "u004-s3-e7",
+          "type": "transform",
+          "instruction": "Добавь «usually» на правильное место",
+          "sentence": "I am tired after classes.",
+          "answers": [
+            "I am usually tired after classes.",
+            "I'm usually tired after classes."
+          ],
+          "tags": [
+            "frequency",
+            "word_order"
+          ]
+        },
+        {
+          "id": "u004-s3-e8",
+          "type": "fix",
+          "sentence": "I go always to bed late.",
+          "answers": [
+            "I always go to bed late."
+          ],
+          "explain": "Always — перед глаголом go.",
+          "tags": [
+            "frequency",
+            "word_order"
+          ],
+          "context": "Черновик — что не так?"
+        },
+        {
+          "id": "u004-s3-e9",
+          "type": "fix",
+          "sentence": "She usually is late.",
+          "answers": [
+            "She is usually late.",
+            "She's usually late."
+          ],
+          "explain": "С be наречие стоит после: is usually.",
+          "tags": [
+            "frequency",
+            "word_order"
+          ],
+          "context": "Черновик — что не так?"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Обычно — и сегодня",
+      "intro": "Чтобы рассказ о дне был понятным, помогают слова порядка: first (сначала), then (потом), after that (после этого), finally (наконец). А если сегодня всё иначе, чем обычно, сравни: I usually walk, but today I'm taking the bus.",
+      "frame": {
+        "setting": "Мика читает твой черновик рассказа о дне.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Your day is a list. Let's make it a story! First, then, after that…",
+            "ru": "Твой день — это список. Давай сделаем из него историю! Сначала, потом, после этого…",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Now it's a story. A short one. But a story!",
+          "ru": "Теперь это история. Короткая. Но история!",
+          "expr": "phone/happy"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u004-s4-e1",
+          "type": "choice",
+          "prompt": "First I have breakfast, ___ I take the bus.",
+          "options": [
+            "then",
+            "finally",
+            "first"
+          ],
+          "answer": "then",
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u004-s4-e2",
+          "type": "choice",
+          "prompt": "___, I go to bed at midnight.",
+          "options": [
+            "Finally",
+            "First",
+            "Then first"
+          ],
+          "answer": "Finally",
+          "explain": "Последнее событие дня — finally.",
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u004-s4-e3",
+          "type": "choice",
+          "prompt": "I usually walk, but today I ___ the bus.",
+          "options": [
+            "'m taking",
+            "take",
+            "takes"
+          ],
+          "answer": "'m taking",
+          "explain": "Today, в отличие от «обычно», → Present Continuous.",
+          "tags": [
+            "contrast_ps_pc",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u004-s4-e4",
+          "type": "choice",
+          "prompt": "Iris usually ___ in the library, but today she's in Room 17.",
+          "options": [
+            "works",
+            "is working",
+            "work"
+          ],
+          "answer": "works",
+          "explain": "Usually → Present Simple.",
+          "tags": [
+            "contrast_ps_pc",
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u004-s4-e5",
+          "type": "fill",
+          "prompt": "Rei usually comes late, but today she ___ early.",
+          "hint": "arrive",
+          "answers": [
+            "is arriving",
+            "'s arriving"
+          ],
+          "explain": "Today, необычно → Present Continuous.",
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u004-s4-e6",
+          "type": "timeline",
+          "sentence": "Today I'm having lunch in the courtyard.",
+          "options": [
+            "now",
+            "habit",
+            "state"
+          ],
+          "answer": "now",
+          "tags": [
+            "present_continuous",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u004-s4-e7",
+          "type": "sort",
+          "instruction": "Что начинает рассказ, а что его заканчивает?",
+          "categories": [
+            {
+              "id": "start",
+              "label": "Начало"
+            },
+            {
+              "id": "end",
+              "label": "Конец"
+            }
+          ],
+          "items": [
+            {
+              "text": "First",
+              "category": "start"
+            },
+            {
+              "text": "Finally",
+              "category": "end"
+            },
+            {
+              "text": "In the morning",
+              "category": "start"
+            },
+            {
+              "text": "At the end of the day",
+              "category": "end"
+            }
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u004-s4-e8",
+          "type": "fix",
+          "sentence": "Usually I am walking to class.",
+          "answers": [
+            "Usually I walk to class.",
+            "I usually walk to class."
+          ],
+          "explain": "Usually → Present Simple: I walk.",
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "context": "Черновик — что не так?"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Мой день",
+      "intro": "Расскажи про свой день: собирай из плиток или пиши сам.",
+      "frame": {
+        "setting": "Айрис открывает пустую страницу «A day of a new student».",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "This page is yours. Your day, your words. I'll only check the grammar.",
+            "ru": "Эта страница — твоя. Твой день, твои слова. Я проверю только грамматику.",
+            "expr": "dry_smile"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "I didn't change a single word. That's a compliment, by the way.",
+          "ru": "Я не изменила ни слова. Это комплимент, между прочим.",
+          "expr": "dry_smile"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u004-s5-e1",
+          "type": "translate",
+          "ru": "Я обычно встаю в семь.",
+          "answers": [
+            "I usually get up at seven.",
+            "I usually get up at 7."
+          ],
+          "tiles": [
+            "I",
+            "usually",
+            "get",
+            "up",
+            "at",
+            "seven.",
+            "gets",
+            "in"
+          ],
+          "tags": [
+            "frequency",
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u004-s5-e2",
+          "type": "translate",
+          "ru": "Сначала я завтракаю, потом еду на автобусе.",
+          "answers": [
+            "First I have breakfast, then I take the bus.",
+            "First, I have breakfast, then I take the bus.",
+            "First I have breakfast and then I take the bus."
+          ],
+          "tiles": [
+            "First",
+            "I",
+            "have",
+            "breakfast,",
+            "then",
+            "I",
+            "take",
+            "the",
+            "bus.",
+            "finally",
+            "takes"
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u004-s5-e3",
+          "type": "translate",
+          "ru": "Я никогда не пропускаю последний автобус.",
+          "answers": [
+            "I never miss the last bus."
+          ],
+          "tags": [
+            "frequency"
+          ]
+        },
+        {
+          "id": "u004-s5-e4",
+          "type": "translate",
+          "ru": "Обычно я хожу пешком, но сегодня еду на автобусе.",
+          "answers": [
+            "I usually walk, but today I'm taking the bus.",
+            "Usually I walk, but today I'm taking the bus.",
+            "I usually walk, but today I am taking the bus."
+          ],
+          "explain": "Usually → Present Simple, today → Present Continuous.",
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u004-s5-e5",
+          "type": "write",
+          "situation": "Напиши, что ты обычно делаешь после обеда. Например: хожу в библиотеку.",
+          "answers": [
+            "I usually go to the library after lunch.",
+            "After lunch I usually go to the library.",
+            "I usually go to the library.",
+            "After lunch, I usually go to the library."
+          ],
+          "tags": [
+            "frequency"
+          ]
+        },
+        {
+          "id": "u004-s5-e6",
+          "type": "write",
+          "situation": "Напиши, что сегодня ты в комнате 17, а не в библиотеке.",
+          "answers": [
+            "Today I'm in Room 17.",
+            "Today I am in Room 17.",
+            "Today I'm in Room 17, not in the library.",
+            "I'm in Room 17 today."
+          ],
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом",
+      "intro": "Прочитай и скажи фразы о своём дне.",
+      "frame": {
+        "setting": "Рэй готовит запись для страницы «A day of a new student».",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Read your day to the mic. Normal speed. I can fix noise, not panic.",
+            "ru": "Прочитай свой день в микрофон. Обычная скорость. Шум я исправлю, панику — нет.",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "No panic detected. Good take.",
+          "ru": "Паники не обнаружено. Хороший дубль.",
+          "expr": "recorder/happy"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u004-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I usually get up at seven.",
+          "answers": [
+            "I usually get up at seven."
+          ],
+          "tags": [
+            "speaking"
+          ]
+        },
+        {
+          "id": "u004-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "First I have breakfast, then I take the bus.",
+          "answers": [
+            "First I have breakfast, then I take the bus."
+          ],
+          "tags": [
+            "speaking",
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u004-s6-e3",
+          "type": "speak",
+          "show": "ru",
+          "text": "Я никогда не пропускаю последний автобус.",
+          "answers": [
+            "I never miss the last bus."
+          ],
+          "tags": [
+            "speaking",
+            "frequency"
+          ]
+        },
+        {
+          "id": "u004-s6-e4",
+          "type": "speak",
+          "show": "ru",
+          "text": "Сегодня я в комнате семнадцать.",
+          "answers": [
+            "Today I'm in Room 17.",
+            "I'm in Room 17 today."
+          ],
+          "tags": [
+            "speaking"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Проверка модуля 001–004",
+      "intro": "Проверка всего модуля на новом материале: чтение, аудирование, вопросы, время, «обычно — сейчас», переспрос. Ошибки вернутся в конце, как обычно. Это не экзамен — это способ увидеть, что уже получается.",
+      "frame": {
+        "setting": "Комната 17. Айрис кладёт на стол чистый лист и чашку чая.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Small check before the recording. New texts, same English. You know all of it.",
+            "ru": "Небольшая проверка перед записью. Тексты новые, английский тот же. Ты всё это знаешь.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "You understood texts you've never seen. That's the whole point.",
+          "ru": "Ты понял тексты, которых раньше не видел. В этом весь смысл.",
+          "expr": "dry_smile"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u004-s7-e1",
+          "type": "reading",
+          "title": "Notice: Library hours",
+          "text": "The library is open from Monday to Friday, from 8:00 to 22:00. On Saturday it opens at 10:00 and closes at 18:00. It is closed on Sunday. Students usually need a student card to borrow books. Right now, the second floor is closed for repairs.",
+          "ru": "Библиотека открыта с понедельника по пятницу с 8:00 до 22:00. В субботу открывается в 10:00 и закрывается в 18:00. В воскресенье закрыта. Чтобы брать книги, студентам обычно нужен студенческий билет. Сейчас второй этаж закрыт на ремонт.",
+          "questions": [
+            {
+              "prompt": "When does the library close on Saturday?",
+              "options": [
+                "At 18:00",
+                "At 22:00",
+                "At 10:00"
+              ],
+              "answer": "At 18:00"
+            },
+            {
+              "prompt": "What is happening right now?",
+              "options": [
+                "The second floor is closed for repairs",
+                "The library is closed all week",
+                "Students are borrowing books without cards"
+              ],
+              "answer": "The second floor is closed for repairs"
+            }
+          ],
+          "tags": [
+            "reading",
+            "timetable",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u004-s7-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "delivery": "[calm, clear]",
+          "audio": "Hi, it's Iris. I'm not in the library today, I'm working in Room 17. Can we meet there at four? If that's a problem, send me a message.",
+          "ru": "Привет, это Айрис. Сегодня я не в библиотеке, я работаю в комнате 17. Можем встретиться там в четыре? Если неудобно, напиши мне.",
+          "questions": [
+            {
+              "prompt": "Where is Iris today?",
+              "options": [
+                "In Room 17",
+                "In the library",
+                "At home"
+              ],
+              "answer": "In Room 17"
+            },
+            {
+              "prompt": "What time does she want to meet?",
+              "options": [
+                "At four",
+                "At one",
+                "At nine"
+              ],
+              "answer": "At four"
+            }
+          ],
+          "tags": [
+            "listening",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u004-s7-e3",
+          "type": "choice",
+          "prompt": "Where ___ your sister live?",
+          "options": [
+            "does",
+            "do",
+            "is"
+          ],
+          "answer": "does",
+          "tags": [
+            "questions_do",
+            "module_check"
+          ]
+        },
+        {
+          "id": "u004-s7-e4",
+          "type": "choice",
+          "prompt": "Look! Mika ___ to us.",
+          "options": [
+            "is waving",
+            "waves",
+            "wave"
+          ],
+          "answer": "is waving",
+          "tags": [
+            "present_continuous",
+            "module_check"
+          ]
+        },
+        {
+          "id": "u004-s7-e5",
+          "type": "choice",
+          "prompt": "The festival starts ___ Friday.",
+          "options": [
+            "on",
+            "in",
+            "at"
+          ],
+          "answer": "on",
+          "tags": [
+            "time_prepositions",
+            "module_check"
+          ]
+        },
+        {
+          "id": "u004-s7-e6",
+          "type": "fill",
+          "prompt": "I ___ late for class.",
+          "hint": "never / be",
+          "answers": [
+            "am never",
+            "'m never"
+          ],
+          "explain": "С be наречие стоит после: am never late.",
+          "tags": [
+            "frequency",
+            "module_check"
+          ]
+        },
+        {
+          "id": "u004-s7-e7",
+          "type": "fix",
+          "sentence": "What does mean \"repairs\"?",
+          "answers": [
+            "What does \"repairs\" mean?",
+            "What does repairs mean?"
+          ],
+          "tags": [
+            "function_clarify",
+            "module_check"
+          ]
+        },
+        {
+          "id": "u004-s7-e8",
+          "type": "write",
+          "situation": "Ты не расслышал время встречи. Попроси повторить.",
+          "answers": [
+            "Could you say that again?",
+            "Sorry, what time?",
+            "Sorry, could you say that again?",
+            "Could you repeat that?",
+            "Sorry, what time is the meeting?",
+            "What time, sorry?",
+            "Sorry, I didn't catch that."
+          ],
+          "tags": [
+            "function_clarify",
+            "module_check"
+          ]
+        },
+        {
+          "id": "u004-s7-e9",
+          "type": "speak",
+          "show": "ru",
+          "text": "Обычно я в библиотеке, но сегодня я в комнате семнадцать.",
+          "answers": [
+            "Usually I'm in the library, but today I'm in Room 17.",
+            "I'm usually in the library, but today I'm in Room 17."
+          ],
+          "tags": [
+            "speaking",
+            "module_check"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: день новичка",
+      "intro": "Записываем страницу гида «A day of a new student». Расскажи свой день так, чтобы его понял тот, кто приехал вчера.",
+      "exercises": [
+        {
+          "id": "u004-s8-e1",
+          "type": "scene",
+          "setting": "Комната 17. Красная лампочка горит. Мика держит лист с вопросами.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "So, tell us about a normal day. What do you usually do in the morning?",
+              "ru": "Итак, расскажи про обычный день. Что ты обычно делаешь утром?",
+              "expr": "listening",
+              "delivery": "[warmly, keeping her voice down]"
+            },
+            {
+              "speaker": "rei",
+              "text": "Mic's on. Take your time.",
+              "ru": "Микрофон включён. Не торопись.",
+              "expr": "recorder/listening",
+              "delivery": "[whispers]"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Рассказать утро по порядку: встаю, завтракаю, еду на занятия",
+              "answers": [
+                "I get up at seven, then I have breakfast and take the bus.",
+                "I get up at seven. Then I have breakfast and take the bus.",
+                "First I get up at seven, then I have breakfast and take the bus."
+              ],
+              "tiles": [
+                "I",
+                "get",
+                "up",
+                "at",
+                "seven,",
+                "then",
+                "I",
+                "have",
+                "breakfast",
+                "and",
+                "take",
+                "the",
+                "bus.",
+                "gets",
+                "finally"
+              ],
+              "flag": "u004_morning_story",
+              "reaction": {
+                "speaker": "mika",
+                "text": "Clear and simple. New students will love it.",
+                "ru": "Понятно и просто. Новичкам понравится.",
+                "expr": "happy"
+              }
+            },
+            {
+              "label": "Признаться, что утро обычно хаотичное",
+              "answers": [
+                "I usually get up late and run to class.",
+                "Usually I get up late and run to class.",
+                "I usually wake up late and run to class."
+              ],
+              "tiles": [
+                "I",
+                "usually",
+                "get",
+                "up",
+                "late",
+                "and",
+                "run",
+                "to",
+                "class.",
+                "runs",
+                "am"
+              ],
+              "flag": "u004_honest_morning",
+              "reaction": {
+                "speaker": "rei",
+                "text": "Honest. Half of the guide's listeners will feel better.",
+                "ru": "Честно. Половине слушателей гида станет легче.",
+                "expr": "recorder/smirk"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Sorry, a bit slower? It's for new students.",
+            "ru": "Прости, чуть медленнее? Это для новичков.",
+            "expr": "listening",
+            "delivery": "[gently, keeping her voice down]"
+          },
+          "tags": [
+            "present_simple",
+            "sequencing",
+            "frequency"
+          ]
+        },
+        {
+          "id": "u004-s8-e2",
+          "type": "scene",
+          "setting": "Айрис поднимает лист с последним вопросом.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "Last question. Is today a normal day for you?",
+              "ru": "Последний вопрос. Сегодня для тебя обычный день?",
+              "expr": "notebook/focused",
+              "delivery": "[quietly]"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Сказать, что сегодня необычный день: ты записываешь гид",
+              "answers": [
+                "No. Today I'm recording an audio guide.",
+                "No, today I'm recording a guide.",
+                "No, today I am recording an audio guide.",
+                "Not really. Today I'm recording an audio guide."
+              ],
+              "tiles": [
+                "No.",
+                "Today",
+                "I'm",
+                "recording",
+                "an",
+                "audio",
+                "guide.",
+                "record",
+                "am"
+              ],
+              "flag": "u004_not_normal_day",
+              "reaction": {
+                "speaker": "iris",
+                "text": "Good answer. Keep it in the final version.",
+                "ru": "Хороший ответ. Оставим в финальной версии.",
+                "expr": "dry_smile"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Sorry? Just one sentence.",
+            "ru": "Что? Всего одно предложение.",
+            "expr": "listening"
+          },
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "That's the first full page. Saved twice.",
+          "ru": "Это первая целая страница. Сохранено дважды.",
+          "expr": "recorder/happy"
+        },
+        {
+          "speaker": "mika",
+          "text": "Module one is done! We should celebrate. With lunch. All four of us.",
+          "ru": "Первый модуль готов! Надо отметить. Обедом. Вчетвером.",
+          "expr": "excited"
+        },
+        {
+          "speaker": "iris",
+          "text": "She's already planning the order. Run.",
+          "ru": "Она уже планирует заказ. Беги.",
+          "expr": "dry_smile"
+        }
+      ]
+    }
+  ]
+}

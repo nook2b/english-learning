@@ -1,0 +1,1217 @@
+{
+  "id": "003",
+  "title": "Прочитать расписание",
+  "goal": "Прочитать расписание, спросить и сказать, когда что начинается, и договориться о времени.",
+  "focus": "Present Simple для расписаний, предлоги at/on/in, from … to, вопросы о времени.",
+  "outcome": "У команды есть общий час: среда, час дня, двор. На доске в комнате 17 появилась первая общая таблица.",
+  "expressions": [
+    {
+      "en": "timetable",
+      "ru": "расписание"
+    },
+    {
+      "en": "free",
+      "ru": "свободный"
+    },
+    {
+      "en": "What time does",
+      "ru": "Во сколько"
+    },
+    {
+      "en": "How about",
+      "ru": "Как насчёт"
+    },
+    {
+      "en": "from one to three",
+      "ru": "с часу до трёх"
+    },
+    {
+      "en": "on Wednesday",
+      "ru": "в среду"
+    },
+    {
+      "en": "in the morning",
+      "ru": "утром"
+    },
+    {
+      "en": "at one",
+      "ru": "в час"
+    },
+    {
+      "en": "leaves",
+      "ru": "отправляется"
+    },
+    {
+      "en": "That works for everyone",
+      "ru": "Это подходит всем"
+    }
+  ],
+  "glossary": [
+    {
+      "en": "City Studies",
+      "ru": "городоведение"
+    },
+    {
+      "en": "Media Lab",
+      "ru": "медиалаборатория"
+    },
+    {
+      "en": "Writing Workshop",
+      "ru": "письменный практикум"
+    },
+    {
+      "en": "Club Fair",
+      "ru": "ярмарка клубов"
+    },
+    {
+      "en": "Main Hall",
+      "ru": "главный зал"
+    },
+    {
+      "en": "Gate B",
+      "ru": "ворота B"
+    },
+    {
+      "en": "sound lab",
+      "ru": "звуковая лаборатория"
+    },
+    {
+      "en": "seminars",
+      "ru": "семинары"
+    },
+    {
+      "en": "courtyard",
+      "ru": "внутренний двор"
+    },
+    {
+      "en": "slot",
+      "ru": "окно, свободное время"
+    },
+    {
+      "en": "Except",
+      "ru": "кроме"
+    },
+    {
+      "en": "crazy",
+      "ru": "безумный"
+    },
+    {
+      "en": "snacks",
+      "ru": "перекус"
+    },
+    {
+      "en": "Noted",
+      "ru": "записала"
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Твоё расписание",
+      "intro": "Прочитай своё расписание на неделю и ответь на вопросы.",
+      "frame": {
+        "setting": "Комната 17. Мика рисует на доске четыре колонки.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "We need one hour when all four of us are free. Let's start with your timetable!",
+            "ru": "Нам нужен один час, когда свободны все четверо. Начнём с твоего расписания!",
+            "expr": "excited"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "So you're free on Wednesday afternoon. Noted!",
+          "ru": "Значит, в среду днём ты свободен. Записала!",
+          "expr": "phone/happy"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u003-s1-e1",
+          "type": "reading",
+          "title": "Your timetable — Week 1",
+          "text": "Monday: English 9:00–12:00, Room 70\nTuesday: City Studies 10:00–11:30, Room 12; Media Lab 14:00–16:00\nWednesday: English 9:00–11:00; free afternoon\nThursday: Writing Workshop 13:00–15:00, Library\nFriday: English 9:00–12:00; Club Fair 16:00 in the Main Hall\nThe bus to the city leaves every 20 minutes from Gate B. The last bus leaves at 23:10.",
+          "ru": "Понедельник: английский 9:00–12:00, кабинет 70. Вторник: городоведение 10:00–11:30, кабинет 12; медиалаборатория 14:00–16:00. Среда: английский 9:00–11:00; свободная вторая половина дня. Четверг: письменный практикум 13:00–15:00, библиотека. Пятница: английский 9:00–12:00; ярмарка клубов в 16:00 в главном зале. Автобус в город отходит каждые 20 минут от ворот B. Последний автобус — в 23:10.",
+          "questions": [
+            {
+              "prompt": "When are you free all afternoon?",
+              "options": [
+                "On Wednesday",
+                "On Monday",
+                "On Thursday"
+              ],
+              "answer": "On Wednesday"
+            },
+            {
+              "prompt": "Where is the Writing Workshop?",
+              "options": [
+                "In the Library",
+                "In Room 70",
+                "In the Main Hall"
+              ],
+              "answer": "In the Library"
+            },
+            {
+              "prompt": "What time does the last bus leave?",
+              "options": [
+                "At 23:10",
+                "At 20:00",
+                "Every 20 minutes"
+              ],
+              "answer": "At 23:10"
+            },
+            {
+              "prompt": "When is the Club Fair?",
+              "options": [
+                "On Friday at 4 p.m.",
+                "On Tuesday at 2 p.m.",
+                "On Monday at 9 a.m."
+              ],
+              "answer": "On Friday at 4 p.m."
+            }
+          ],
+          "tags": [
+            "reading",
+            "present_simple",
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u003-s1-e2",
+          "type": "choice",
+          "prompt": "The bus to the city ___ every 20 minutes.",
+          "options": [
+            "leaves",
+            "is leaving",
+            "leave"
+          ],
+          "answer": "leaves",
+          "explain": "Расписание → Present Simple. The bus — «он» → leaves.",
+          "tags": [
+            "present_simple",
+            "timetable"
+          ]
+        },
+        {
+          "id": "u003-s1-e3",
+          "type": "choice",
+          "prompt": "The Writing Workshop ___ at one o'clock.",
+          "options": [
+            "starts",
+            "is starting",
+            "start"
+          ],
+          "answer": "starts",
+          "explain": "Расписание → Present Simple.",
+          "tags": [
+            "present_simple",
+            "timetable"
+          ]
+        },
+        {
+          "id": "u003-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "timetable",
+              "ru": "расписание"
+            },
+            {
+              "en": "free",
+              "ru": "свободный"
+            },
+            {
+              "en": "leave",
+              "ru": "отправляться"
+            },
+            {
+              "en": "workshop",
+              "ru": "практикум"
+            },
+            {
+              "en": "afternoon",
+              "ru": "вторая половина дня"
+            }
+          ],
+          "tags": [
+            "vocab_u003"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Голосовые сообщения",
+      "intro": "Героини прислали голосовые сообщения о своём расписании. Слушай без текста.",
+      "frame": {
+        "setting": "Вечер. На телефоне три голосовых сообщения.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "I asked everyone to send their timetable by voice message. Listen and find our free hour!",
+            "ru": "Я попросила всех прислать расписание голосовыми. Послушай и найди наш свободный час!",
+            "expr": "phone/happy"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Wednesday at one. It's the only hour that works.",
+          "ru": "Среда, час дня. Это единственный час, который подходит.",
+          "expr": "notebook/focused"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u003-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "delivery": "[cheerful, a little rushed]",
+          "audio": "Hi! My timetable is crazy. Club meetings on Monday and Thursday evenings, the student office on Tuesday morning, and on Wednesday I'm free after twelve. Friday is the Club Fair, so don't even ask!",
+          "ru": "Привет! У меня безумное расписание. Встречи клубов в понедельник и четверг вечером, студенческий офис во вторник утром, а в среду я свободна после двенадцати. В пятницу ярмарка клубов, так что даже не спрашивай!",
+          "questions": [
+            {
+              "prompt": "When is Mika free on Wednesday?",
+              "options": [
+                "After twelve",
+                "Before nine",
+                "In the evening"
+              ],
+              "answer": "After twelve"
+            },
+            {
+              "prompt": "Why is Friday a bad day for Mika?",
+              "options": [
+                "Because of the Club Fair",
+                "Because of English",
+                "Because she works"
+              ],
+              "answer": "Because of the Club Fair"
+            }
+          ],
+          "tags": [
+            "listening",
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u003-s2-e2",
+          "type": "listening",
+          "speaker": "rei",
+          "delivery": "[flat, quiet]",
+          "audio": "Rei here. I'm in the sound lab every day from two to five. Except Wednesday. On Wednesday the lab closes at one, so I'm free from one to three.",
+          "ru": "Это Рэй. Я в звуковой лаборатории каждый день с двух до пяти. Кроме среды. В среду лаборатория закрывается в час, так что я свободна с часу до трёх.",
+          "questions": [
+            {
+              "prompt": "When is Rei usually in the sound lab?",
+              "options": [
+                "From two to five",
+                "From nine to twelve",
+                "In the evening"
+              ],
+              "answer": "From two to five"
+            },
+            {
+              "prompt": "When is Rei free on Wednesday?",
+              "options": [
+                "From one to three",
+                "After five",
+                "Before twelve"
+              ],
+              "answer": "From one to three"
+            }
+          ],
+          "tags": [
+            "listening",
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u003-s2-e3",
+          "type": "listening",
+          "speaker": "iris",
+          "delivery": "[calm, clear]",
+          "audio": "Hello, it's Iris. I work in the library on Monday, Wednesday and Friday, from three to seven. On Tuesday and Thursday I have seminars in the morning. So Wednesday before three is fine for me.",
+          "ru": "Привет, это Айрис. Я работаю в библиотеке в понедельник, среду и пятницу с трёх до семи. Во вторник и четверг у меня утром семинары. Так что среда до трёх мне подходит.",
+          "questions": [
+            {
+              "prompt": "When does Iris work in the library?",
+              "options": [
+                "On Monday, Wednesday and Friday",
+                "Every day",
+                "Only on Wednesday"
+              ],
+              "answer": "On Monday, Wednesday and Friday"
+            },
+            {
+              "prompt": "Which hour works for all four people?",
+              "options": [
+                "Wednesday from one to two",
+                "Monday at nine",
+                "Friday at four"
+              ],
+              "answer": "Wednesday from one to two"
+            }
+          ],
+          "tags": [
+            "listening",
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u003-s2-e4",
+          "type": "dictation",
+          "speaker": "rei",
+          "delivery": "[deadpan]",
+          "audio": "On Wednesday the lab closes at one.",
+          "answers": [
+            "On Wednesday the lab closes at one.",
+            "On Wednesday, the lab closes at one.",
+            "On Wednesday the lab closes at 1."
+          ],
+          "tiles": [
+            "On",
+            "Wednesday",
+            "the",
+            "lab",
+            "closes",
+            "at",
+            "one.",
+            "close",
+            "in"
+          ],
+          "tags": [
+            "dictation",
+            "time_prepositions"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "At, on, in",
+      "intro": "Время: at three, at noon, at night. Дни и даты: on Monday, on Friday morning, on 5 May. Части дня, месяцы, годы: in the morning, in the afternoon, in October. Исключение: at the weekend (британский вариант) и on the weekend (американский).",
+      "frame": {
+        "setting": "Айрис составляет общую таблицу для доски.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Before I write it on the board: at, on or in? Let's not make mistakes in public.",
+            "ru": "Прежде чем писать на доске: at, on или in? Давай не ошибаться у всех на виду.",
+            "expr": "notebook/skeptical"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "No mistakes. The board looks almost professional.",
+          "ru": "Ни одной ошибки. Доска выглядит почти профессионально.",
+          "expr": "notebook/dry_smile"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u003-s3-e1",
+          "type": "choice",
+          "prompt": "The lab closes ___ one o'clock.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": "at",
+          "explain": "Точное время → at.",
+          "tags": [
+            "time_prepositions"
+          ],
+          "context": "Строчка для таблицы"
+        },
+        {
+          "id": "u003-s3-e2",
+          "type": "choice",
+          "prompt": "I have English ___ Monday.",
+          "options": [
+            "on",
+            "at",
+            "in"
+          ],
+          "answer": "on",
+          "explain": "День недели → on.",
+          "tags": [
+            "time_prepositions"
+          ],
+          "context": "Строчка для таблицы"
+        },
+        {
+          "id": "u003-s3-e3",
+          "type": "choice",
+          "prompt": "Iris has seminars ___ the morning.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": "in",
+          "explain": "Часть дня → in the morning.",
+          "tags": [
+            "time_prepositions"
+          ],
+          "context": "Строчка для таблицы"
+        },
+        {
+          "id": "u003-s3-e4",
+          "type": "choice",
+          "prompt": "The Club Fair is ___ Friday afternoon.",
+          "options": [
+            "on",
+            "in",
+            "at"
+          ],
+          "answer": "on",
+          "explain": "Конкретный день, даже с частью дня → on Friday afternoon.",
+          "tags": [
+            "time_prepositions"
+          ],
+          "context": "Строчка для таблицы"
+        },
+        {
+          "id": "u003-s3-e5",
+          "type": "fill",
+          "prompt": "The festival is ___ October.",
+          "hint": "at / on / in",
+          "answers": [
+            "in"
+          ],
+          "explain": "Месяц → in.",
+          "tags": [
+            "time_prepositions"
+          ],
+          "context": "Строчка для таблицы"
+        },
+        {
+          "id": "u003-s3-e6",
+          "type": "fill",
+          "prompt": "We meet ___ noon.",
+          "hint": "at / on / in",
+          "answers": [
+            "at"
+          ],
+          "tags": [
+            "time_prepositions"
+          ],
+          "context": "Строчка для таблицы"
+        },
+        {
+          "id": "u003-s3-e7",
+          "type": "sort",
+          "instruction": "Разложи: at, on или in?",
+          "categories": [
+            {
+              "id": "at",
+              "label": "at"
+            },
+            {
+              "id": "on",
+              "label": "on"
+            },
+            {
+              "id": "in",
+              "label": "in"
+            }
+          ],
+          "items": [
+            {
+              "text": "three o'clock",
+              "category": "at"
+            },
+            {
+              "text": "Tuesday",
+              "category": "on"
+            },
+            {
+              "text": "the evening",
+              "category": "in"
+            },
+            {
+              "text": "night",
+              "category": "at"
+            },
+            {
+              "text": "May",
+              "category": "in"
+            },
+            {
+              "text": "Friday morning",
+              "category": "on"
+            }
+          ],
+          "tags": [
+            "time_prepositions"
+          ],
+          "context": "Айрис раскладывает карточки"
+        },
+        {
+          "id": "u003-s3-e8",
+          "type": "fix",
+          "sentence": "See you in Wednesday at one.",
+          "answers": [
+            "See you on Wednesday at one.",
+            "See you on Wednesday at 1."
+          ],
+          "explain": "День недели → on Wednesday.",
+          "tags": [
+            "time_prepositions"
+          ],
+          "context": "Сообщение Мики — что не так?"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Когда начинается?",
+      "intro": "Про расписание и время спрашиваем в Present Simple: What time does the lab close? When does the bus leave? Are you free on Wednesday? Отвечаем: It closes at one. I'm free from one to three.",
+      "frame": {
+        "setting": "Мика звонит в студенческий офис узнать, свободен ли двор.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "I need to ask the office about the courtyard. Can you help me with the questions?",
+            "ru": "Мне нужно спросить в офисе про двор. Поможешь с вопросами?",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "The courtyard is free on Wednesday from one to two. We have a slot!",
+          "ru": "Двор свободен в среду с часу до двух. У нас есть окно!",
+          "expr": "excited"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u003-s4-e1",
+          "type": "choice",
+          "prompt": "What time ___ the office open?",
+          "options": [
+            "does",
+            "do",
+            "is"
+          ],
+          "answer": "does",
+          "tags": [
+            "questions_do",
+            "timetable"
+          ],
+          "context": "Вопрос Мики в офис"
+        },
+        {
+          "id": "u003-s4-e2",
+          "type": "choice",
+          "prompt": "When ___ the courtyard free?",
+          "options": [
+            "is",
+            "does",
+            "do"
+          ],
+          "answer": "is",
+          "explain": "Free — прилагательное, нужен be: When is…",
+          "tags": [
+            "questions_be"
+          ],
+          "context": "Вопрос Мики в офис"
+        },
+        {
+          "id": "u003-s4-e3",
+          "type": "choice",
+          "prompt": "___ you free on Wednesday?",
+          "options": [
+            "Are",
+            "Do",
+            "Does"
+          ],
+          "answer": "Are",
+          "explain": "Free → be: Are you free?",
+          "tags": [
+            "questions_be"
+          ],
+          "context": "Вопрос Мики команде"
+        },
+        {
+          "id": "u003-s4-e4",
+          "type": "transform",
+          "instruction": "Спроси, когда закрывается лаборатория (When)",
+          "sentence": "The lab closes at one.",
+          "answers": [
+            "When does the lab close?",
+            "What time does the lab close?"
+          ],
+          "tags": [
+            "questions_do",
+            "timetable"
+          ]
+        },
+        {
+          "id": "u003-s4-e5",
+          "type": "transform",
+          "instruction": "Сделай вопрос",
+          "sentence": "The bus leaves from Gate B.",
+          "answers": [
+            "Does the bus leave from Gate B?",
+            "Where does the bus leave from?"
+          ],
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u003-s4-e6",
+          "type": "fix",
+          "sentence": "What time the library opens?",
+          "answers": [
+            "What time does the library open?"
+          ],
+          "explain": "Нужен does, а глагол без -s.",
+          "tags": [
+            "questions_do",
+            "word_order"
+          ]
+        },
+        {
+          "id": "u003-s4-e7",
+          "type": "fix",
+          "sentence": "Do you free on Wednesday?",
+          "answers": [
+            "Are you free on Wednesday?"
+          ],
+          "explain": "Free — прилагательное: Are you free?",
+          "tags": [
+            "questions_be"
+          ]
+        },
+        {
+          "id": "u003-s4-e8",
+          "type": "fill",
+          "prompt": "I'm free ___ one to three.",
+          "hint": "from / at / in",
+          "answers": [
+            "from"
+          ],
+          "explain": "Промежуток времени: from one to three.",
+          "tags": [
+            "time_prepositions"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Договориться о времени",
+      "intro": "Собирай фразы из плиток или пиши сам.",
+      "frame": {
+        "setting": "Общий чат команды. Пора предложить время.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Someone has to write the message. Mika's messages have twelve exclamation marks.",
+            "ru": "Кто-то должен написать сообщение. У Мики в сообщениях по двенадцать восклицательных знаков.",
+            "expr": "dry_smile"
+          },
+          {
+            "speaker": "mika",
+            "text": "Only eleven!",
+            "ru": "Всего одиннадцать!",
+            "expr": "pout"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Clear and short. And only one exclamation mark. I'm learning!",
+          "ru": "Коротко и ясно. И всего один восклицательный знак. Я учусь!",
+          "expr": "happy"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u003-s5-e1",
+          "type": "translate",
+          "ru": "Ты свободна в среду?",
+          "answers": [
+            "Are you free on Wednesday?"
+          ],
+          "tiles": [
+            "Are",
+            "you",
+            "free",
+            "on",
+            "Wednesday?",
+            "Do",
+            "in"
+          ],
+          "tags": [
+            "questions_be",
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u003-s5-e2",
+          "type": "translate",
+          "ru": "Во сколько закрывается лаборатория?",
+          "answers": [
+            "What time does the lab close?",
+            "When does the lab close?"
+          ],
+          "tiles": [
+            "What",
+            "time",
+            "does",
+            "the",
+            "lab",
+            "close?",
+            "closes",
+            "do"
+          ],
+          "tags": [
+            "questions_do",
+            "timetable"
+          ]
+        },
+        {
+          "id": "u003-s5-e3",
+          "type": "translate",
+          "ru": "Я свободен с часу до трёх.",
+          "answers": [
+            "I'm free from one to three.",
+            "I am free from one to three.",
+            "I'm free from 1 to 3."
+          ],
+          "tiles": [
+            "I'm",
+            "free",
+            "from",
+            "one",
+            "to",
+            "three.",
+            "at",
+            "in"
+          ],
+          "tags": [
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u003-s5-e4",
+          "type": "translate",
+          "ru": "Автобус отходит в 23:10.",
+          "answers": [
+            "The bus leaves at 23:10.",
+            "The bus leaves at 11:10 p.m.",
+            "The bus leaves at ten past eleven."
+          ],
+          "explain": "Расписание → Present Simple: leaves.",
+          "tags": [
+            "present_simple",
+            "timetable"
+          ]
+        },
+        {
+          "id": "u003-s5-e5",
+          "type": "write",
+          "situation": "Предложи команде встретиться в среду в час дня.",
+          "answers": [
+            "Let's meet on Wednesday at one.",
+            "Let's meet on Wednesday at 1.",
+            "How about Wednesday at one?",
+            "How about Wednesday at 1?",
+            "Can we meet on Wednesday at one?",
+            "Shall we meet on Wednesday at one?"
+          ],
+          "tags": [
+            "time_prepositions",
+            "function_suggest"
+          ]
+        },
+        {
+          "id": "u003-s5-e6",
+          "type": "write",
+          "situation": "Спроси Рэй, во сколько у неё заканчивается лаборатория в пятницу.",
+          "answers": [
+            "What time does your lab finish on Friday?",
+            "When does your lab finish on Friday?",
+            "What time does the lab finish on Friday?",
+            "When does the lab end on Friday?",
+            "What time does your lab end on Friday?"
+          ],
+          "tags": [
+            "questions_do",
+            "timetable"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом",
+      "intro": "Скажи фразы вслух.",
+      "frame": {
+        "setting": "Мика записывает голосовое сообщение для команды и просит тебя.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "You record the message this time. I always talk too long.",
+            "ru": "В этот раз сообщение запишешь ты. Я всегда говорю слишком долго.",
+            "expr": "phone/embarrassed"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Eight seconds! My record is two minutes.",
+          "ru": "Восемь секунд! Мой рекорд — две минуты.",
+          "expr": "laugh"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u003-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Are you free on Wednesday?",
+          "answers": [
+            "Are you free on Wednesday?"
+          ],
+          "tags": [
+            "speaking"
+          ]
+        },
+        {
+          "id": "u003-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "The lab closes at one.",
+          "answers": [
+            "The lab closes at one."
+          ],
+          "tags": [
+            "speaking"
+          ]
+        },
+        {
+          "id": "u003-s6-e3",
+          "type": "speak",
+          "show": "ru",
+          "text": "Давай встретимся в среду в час.",
+          "answers": [
+            "Let's meet on Wednesday at one.",
+            "How about Wednesday at one?"
+          ],
+          "tags": [
+            "speaking",
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u003-s6-e4",
+          "type": "speak",
+          "show": "ru",
+          "text": "Во сколько отходит автобус?",
+          "answers": [
+            "What time does the bus leave?",
+            "When does the bus leave?"
+          ],
+          "tags": [
+            "speaking",
+            "questions_do"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг",
+      "intro": "Знакомое — в своём темпе.",
+      "frame": {
+        "setting": "Рэй проверяет, не перепутал ли ты время.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "If you come at the wrong time, I record the silence without you. Quick check.",
+            "ru": "Если придёшь не вовремя, я запишу тишину без тебя. Быстрая проверка.",
+            "expr": "deadpan"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Wednesday. One. Courtyard. Don't be late.",
+          "ru": "Среда. Час. Двор. Не опаздывай.",
+          "expr": "smirk"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u003-s7-e1",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "at one",
+              "ru": "в час"
+            },
+            {
+              "en": "on Wednesday",
+              "ru": "в среду"
+            },
+            {
+              "en": "in the morning",
+              "ru": "утром"
+            },
+            {
+              "en": "from one to three",
+              "ru": "с часу до трёх"
+            }
+          ],
+          "tags": [
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u003-s7-e2",
+          "type": "choice",
+          "prompt": "Iris ___ in the library on Fridays.",
+          "options": [
+            "works",
+            "is working",
+            "work"
+          ],
+          "answer": "works",
+          "tags": [
+            "present_simple",
+            "third_person"
+          ]
+        },
+        {
+          "id": "u003-s7-e3",
+          "type": "choice",
+          "prompt": "See you ___ the afternoon.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": "in",
+          "tags": [
+            "time_prepositions"
+          ]
+        },
+        {
+          "id": "u003-s7-e4",
+          "type": "fill",
+          "prompt": "What time ___ the Club Fair start?",
+          "hint": "do / does",
+          "answers": [
+            "does"
+          ],
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u003-s7-e5",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "I'm free after twelve on Wednesday.",
+          "answers": [
+            "I'm free after twelve on Wednesday.",
+            "I am free after twelve on Wednesday.",
+            "I'm free after 12 on Wednesday."
+          ],
+          "tiles": [
+            "I'm",
+            "free",
+            "after",
+            "twelve",
+            "on",
+            "Wednesday.",
+            "in",
+            "at"
+          ],
+          "tags": [
+            "dictation"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: общий час",
+      "intro": "Команда спорит, когда записывать двор. Ты знаешь все четыре расписания — помоги договориться.",
+      "exercises": [
+        {
+          "id": "u003-s8-e1",
+          "type": "scene",
+          "setting": "Комната 17. На доске четыре колонки расписаний.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "Monday evening! Everyone loves Monday evening.",
+              "ru": "Понедельник вечером! Все любят понедельник вечером.",
+              "expr": "excited"
+            },
+            {
+              "speaker": "iris",
+              "text": "I work until seven on Monday.",
+              "ru": "Я работаю до семи в понедельник.",
+              "expr": "annoyed"
+            },
+            {
+              "speaker": "rei",
+              "text": "And I'm in the lab. Next idea.",
+              "ru": "А я в лаборатории. Следующая идея.",
+              "expr": "deadpan"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Предложить среду в час",
+              "answers": [
+                "How about Wednesday at one?",
+                "How about Wednesday at 1?",
+                "Let's meet on Wednesday at one.",
+                "What about Wednesday at one?"
+              ],
+              "tiles": [
+                "How",
+                "about",
+                "Wednesday",
+                "at",
+                "one?",
+                "on",
+                "in"
+              ],
+              "flag": "u003_proposed_wednesday",
+              "reaction": {
+                "speaker": "iris",
+                "text": "Wednesday at one. That works for everyone. I checked twice.",
+                "ru": "Среда, час. Подходит всем. Я проверила дважды.",
+                "expr": "dry_smile"
+              }
+            },
+            {
+              "label": "Спросить, кто свободен в среду днём",
+              "answers": [
+                "Who is free on Wednesday afternoon?",
+                "Who's free on Wednesday afternoon?",
+                "Are you free on Wednesday afternoon?"
+              ],
+              "tiles": [
+                "Who",
+                "is",
+                "free",
+                "on",
+                "Wednesday",
+                "afternoon?",
+                "in",
+                "are"
+              ],
+              "flag": "u003_asked_who_free",
+              "reaction": {
+                "speaker": "rei",
+                "text": "Me. From one. Iris until three. Mika after twelve. So… one o'clock.",
+                "ru": "Я. С часу. Айрис до трёх. Мика после двенадцати. Значит… в час.",
+                "expr": "focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Sorry, which day?",
+            "ru": "Прости, какой день?",
+            "expr": "listening"
+          },
+          "tags": [
+            "time_prepositions",
+            "function_suggest"
+          ]
+        },
+        {
+          "id": "u003-s8-e2",
+          "type": "scene",
+          "setting": "Мика уже пишет в общий чат.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "Okay, I'm writing it in the chat. Wednesday… at… what time again?",
+              "ru": "Так, пишу в чат. Среда… в… во сколько, ещё раз?",
+              "expr": "phone/focused"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Подтвердить время и место",
+              "answers": [
+                "Wednesday at one, in the courtyard.",
+                "On Wednesday at one in the courtyard.",
+                "At one, in the courtyard.",
+                "Wednesday at 1, in the courtyard."
+              ],
+              "tiles": [
+                "Wednesday",
+                "at",
+                "one,",
+                "in",
+                "the",
+                "courtyard.",
+                "on",
+                "at"
+              ],
+              "flag": "u003_confirmed_slot",
+              "reaction": {
+                "speaker": "mika",
+                "text": "Sent! Our first real plan. I'm a little emotional.",
+                "ru": "Отправила! Наш первый настоящий план. Я немного растрогана.",
+                "expr": "happy"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Sorry? Day and time, please.",
+            "ru": "Что? День и время, пожалуйста.",
+            "expr": "phone/thinking"
+          },
+          "tags": [
+            "time_prepositions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Wednesday, one o'clock. I'll bring the recorder.",
+          "ru": "Среда, час. Я возьму рекордер.",
+          "expr": "recorder/neutral"
+        },
+        {
+          "speaker": "mika",
+          "text": "And I'll bring snacks. Recording is hungry work.",
+          "ru": "А я возьму перекус. Запись — дело голодное.",
+          "expr": "laugh"
+        }
+      ]
+    }
+  ]
+}
