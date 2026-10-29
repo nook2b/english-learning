@@ -26,6 +26,29 @@ export interface ActivityDay {
   xp: number
 }
 
+/** One finished session of a unit; id is `${unitId}-${index}`, index 1–8. */
+export interface SessionResult {
+  id: string
+  unitId: string
+  index: number
+  correct: number
+  total: number
+  seconds: number
+  completedAt: number
+}
+
+/** A wrong answer, kept for the review deck (stage 4) and error stats by tag. */
+export interface Mistake {
+  id?: number
+  exerciseId: string
+  tags: string[]
+  given: string
+  expected: string
+  at: number
+}
+
+export const sessionId = (unitId: string, index: number) => `${unitId}-${index}`
+
 export const DEFAULT_SETTINGS: Settings = {
   id: 'settings',
   name: '',
@@ -38,6 +61,8 @@ export class ClubDB extends Dexie {
   settings!: Table<Settings, 'settings'>
   units!: Table<UnitProgress, string>
   days!: Table<ActivityDay, string>
+  sessions!: Table<SessionResult, string>
+  mistakes!: Table<Mistake, number>
 
   constructor(name = 'english-club') {
     super(name)
@@ -45,6 +70,10 @@ export class ClubDB extends Dexie {
       settings: 'id',
       units: 'unitId, status',
       days: 'date',
+    })
+    this.version(2).stores({
+      sessions: 'id, unitId',
+      mistakes: '++id, exerciseId, *tags, at',
     })
   }
 }
@@ -75,10 +104,17 @@ export async function addActivity(date: string, minutes: number, xp: number, dat
   })
 }
 
+export async function saveSessionResult(result: SessionResult, database: ClubDB = db): Promise<void> {
+  await database.sessions.put(result)
+}
+
+export async function addMistake(mistake: Omit<Mistake, 'id'>, database: ClubDB = db): Promise<void> {
+  await database.mistakes.add(mistake)
+}
+
 /** Clears progress but keeps settings, so the name and goal survive a reset. */
 export async function resetProgress(database: ClubDB = db): Promise<void> {
-  await database.transaction('rw', database.units, database.days, async () => {
-    await database.units.clear()
-    await database.days.clear()
+  await database.transaction('rw', [database.units, database.days, database.sessions, database.mistakes], async () => {
+    await Promise.all([database.units.clear(), database.days.clear(), database.sessions.clear(), database.mistakes.clear()])
   })
 }

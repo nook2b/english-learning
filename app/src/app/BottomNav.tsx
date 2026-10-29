@@ -1,6 +1,6 @@
-import { type Route, navigate } from './router'
+import { type TabName, navigate } from './router'
 
-const TABS: { route: Route; label: string }[] = [
+const TABS: { route: TabName; label: string }[] = [
   { route: 'path', label: 'Путь' },
   { route: 'review', label: 'Повторение' },
   { route: 'story', label: 'История' },
@@ -8,11 +8,11 @@ const TABS: { route: Route; label: string }[] = [
   { route: 'profile', label: 'Профиль' },
 ]
 
-export function BottomNav({ current }: { current: Route }) {
+export function BottomNav({ current }: { current: string }) {
   return (
     <nav className="bottomnav">
       {TABS.map((t) => (
-        <button key={t.route} className={current === t.route ? 'active' : ''} aria-current={current === t.route ? 'page' : undefined} onClick={() => navigate(t.route)}>
+        <button key={t.route} className={current === t.route ? 'active' : ''} aria-current={current === t.route ? 'page' : undefined} onClick={() => navigate({ name: t.route })}>
           {t.label}
         </button>
       ))}
