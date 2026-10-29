@@ -7,6 +7,7 @@ import { navigate } from '../app/router'
 import { Button, Card, LearnPanel, ProgressBar } from '../ui/kit'
 import { stop as stopVoice } from '../speech/voice'
 import { castAt } from '../story/cast'
+import { isHeroine } from '../story/sprites'
 import { Beat, Stage } from '../story/Stage'
 import { ExerciseView, SceneLines } from './ExerciseView'
 import { GlossaryContext } from './glossary'
@@ -46,6 +47,9 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const [phase, setPhase] = useState<'frame' | 'exercises' | 'wrap' | 'done'>(session.frame ? 'frame' : 'exercises')
 
   const step = steps[i]!
+  // Whoever speaks in a listening, dictation or read-aloud task joins the heroines on screen.
+  const voice = step.exercise.type === 'listening' || step.exercise.type === 'dictation' ? step.exercise.speaker : step.exercise.type === 'speak' ? step.exercise.voice : undefined
+  const stepCast = voice && isHeroine(voice) && !(voice in cast) ? { ...cast, [voice]: 'neutral' } : cast
   const isLast = i === steps.length - 1
 
   const answer = (o: Outcome) => {
@@ -129,9 +133,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
 
         {i === 0 && !outcome && session.intro && <LearnPanel title="Перед началом">{session.intro}</LearnPanel>}
 
-        {step.exercise.type !== 'scene' && Object.keys(cast).length > 0 && (
-          <Stage cast={cast} compact speaking={'speaker' in step.exercise ? step.exercise.speaker : undefined} />
-        )}
+        {step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} compact speaking={voice} />}
         {step.retry && <p className="context">Ещё раз: исправим ошибку</p>}
         <ExerciseView key={step.key} step={step} locked={!!outcome} onAnswer={answer} />
 

@@ -148,3 +148,27 @@ test('a scene choice is remembered for later scenes', async () => {
   await new Promise((r) => setTimeout(r, 20))
   expect(await db.flags.get('asked_rei')).toBeTruthy()
 })
+
+test('a heroine speaking in a listening task appears on screen even if not in the frame', () => {
+  const unit = Unit.parse({
+    id: '997',
+    title: 'Voices',
+    goal: 'g',
+    focus: 'f',
+    outcome: 'o',
+    expressions: [],
+    sessions: [
+      {
+        kind: 'comprehension',
+        title: 'Voices',
+        frame: { setting: 'Room 17', lines: [{ speaker: 'mika', text: 'Listen!', expr: 'excited' }] },
+        exercises: [{ id: 'v-1', type: 'listening', speaker: 'iris', audio: 'Hello. I am Iris.', questions: [{ prompt: 'Who?', options: ['Iris', 'Rei'], answer: 'Iris' }] }],
+      },
+      ...Array(7).fill(filler),
+    ],
+  })
+  render(<SessionPlayer unit={unit} index={1} />)
+  fireEvent.click(screen.getByRole('button', { name: 'Начать' }))
+  expect(screen.getByAltText('iris stand/neutral')).toBeInTheDocument()
+  expect(screen.getByAltText('mika stand/excited')).toBeInTheDocument()
+})
