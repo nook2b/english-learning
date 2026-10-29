@@ -141,6 +141,11 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
           <div className={`feedback ${outcome.correct === false ? 'bad' : 'good'}`} role="status">
             {outcome.lines && <SceneLines lines={outcome.lines} />}
             {outcome.correct === true && <p className="verdict">Верно</p>}
+          {outcome.spelling && (
+            <p className="muted">
+              Засчитано. Обрати внимание на написание: <span lang="en">{outcome.spelling}</span>
+            </p>
+          )}
             {outcome.correct === null && <p className="verdict">Пропущено, вернёмся к этому позже</p>}
             {outcome.correct === false && (
               <LearnPanel title="Правильно так">

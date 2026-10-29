@@ -1,4 +1,4 @@
-import { matches, matchesSpeech, normalize, numberToWords } from './check'
+import { checkTyped, matches, matchesSpeech, normalize, numberToWords } from './check'
 
 test('ignores case, punctuation and curly apostrophes', () => {
   expect(matches('  i’m NEW here!! ', ["I'm new here."])).toBe(true)
@@ -31,4 +31,19 @@ test('speech allows one misheard word in five', () => {
   expect(matchesSpeech(["i'm looking for the room seventy"], ["I'm looking for Room 70"])).toBe(true)
   expect(matchesSpeech(['nice to meet', 'nice to meet you'], ['Nice to meet you'])).toBe(true)
   expect(matchesSpeech(['i like pizza'], ["I'm looking for Room 70"])).toBe(false)
+})
+
+test('a missing apostrophe still counts, with a spelling note', () => {
+  expect(checkTyped('please dont touch the cables', ["Please don't touch the cables."])).toEqual({ correct: true, spelling: "Please don't touch the cables." })
+  expect(checkTyped('im new here', ["I'm new here."])).toMatchObject({ correct: true })
+  expect(checkTyped("Please don't touch the cables", ["Please don't touch the cables."])).toEqual({ correct: true })
+})
+
+test('missing commas and full stops need no note at all', () => {
+  expect(checkTyped('By the way I live in the East Dorm', ['By the way, I live in the East Dorm.'])).toEqual({ correct: true })
+})
+
+test('grammar is still checked', () => {
+  expect(checkTyped('please dont touches the cables', ["Please don't touch the cables."])).toEqual({ correct: false })
+  expect(checkTyped('he dont like it', ["He doesn't like it."])).toEqual({ correct: false })
 })
