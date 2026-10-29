@@ -63,19 +63,3 @@ export function LearnPanel({ title, children }: { title: string; children: React
     </aside>
   )
 }
-
-const HEROINE_COLORS = { rei: '#5b3a6b', mika: '#e58fb0', iris: '#7a5a3c' } as const
-export type HeroineId = keyof typeof HEROINE_COLORS
-
-/** Stand-in for a sprite until art exists: a silhouette labelled with heroine/pose/expression. */
-export function SpriteStub({ heroine, pose = 'stand', expr = 'neutral' }: { heroine: HeroineId; pose?: string; expr?: string }) {
-  return (
-    <div className="sprite-stub" style={{ background: HEROINE_COLORS[heroine] }} aria-label={`${heroine} ${pose} ${expr}`}>
-      <span>
-        {heroine}
-        <br />
-        {pose} / {expr}
-      </span>
-    </div>
-  )
-}

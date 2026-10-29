@@ -200,7 +200,8 @@
           "tags": [
             "present_simple",
             "contrast_ps_pc"
-          ]
+          ],
+          "context": "Строчка из письма"
         },
         {
           "id": "u001-s1-e3",
@@ -216,7 +217,8 @@
           "tags": [
             "present_simple",
             "third_person"
-          ]
+          ],
+          "context": "Строчка из письма"
         },
         {
           "id": "u001-s1-e4",
@@ -245,7 +247,33 @@
           ],
           "tags": [
             "vocab_u001"
-          ]
+          ],
+          "context": "Слова из письма"
+        }
+      ],
+      "frame": {
+        "setting": "Утро. Коридор старого корпуса, доска объявлений.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "You dropped this. It's from the International Office.",
+            "ru": "Ты уронил. Это из международного отдела.",
+            "expr": "stand/neutral"
+          },
+          {
+            "speaker": "iris",
+            "text": "Read it before Monday. The important parts are short.",
+            "ru": "Прочитай до понедельника. Важное там короткое.",
+            "expr": "dry_smile"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Room 70, New Building. Not Room 17. Now you know.",
+          "ru": "Кабинет 70, новый корпус. Не 17-й. Теперь ты знаешь.",
+          "expr": "dry_smile"
         }
       ]
     },
@@ -378,7 +406,8 @@
           ],
           "tags": [
             "dictation"
-          ]
+          ],
+          "context": "Расшифровка записи для гида"
         },
         {
           "id": "u001-s2-e5",
@@ -391,7 +420,33 @@
           ],
           "tags": [
             "dictation"
-          ]
+          ],
+          "context": "Расшифровка записи для гида"
+        }
+      ],
+      "frame": {
+        "setting": "Комната 17. На столе рекордер и три телефона.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "We're testing our intros for the guide. Listen and tell me if we sound clear!",
+            "ru": "Мы проверяем наши представления для гида. Послушай и скажи, понятно ли звучим!",
+            "expr": "excited"
+          },
+          {
+            "speaker": "rei",
+            "text": "Headphones are on the table. Don't drop them.",
+            "ru": "Наушники на столе. Не урони.",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "You understood all three of us. That's more than the mic does.",
+          "ru": "Ты понял нас всех троих. Это больше, чем удаётся микрофону.",
+          "expr": "recorder/smirk"
         }
       ]
     },
@@ -414,7 +469,8 @@
           "tags": [
             "present_continuous",
             "contrast_ps_pc"
-          ]
+          ],
+          "context": "Карточка из заметок Айрис"
         },
         {
           "id": "u001-s3-e2",
@@ -430,7 +486,8 @@
           "tags": [
             "present_simple",
             "contrast_ps_pc"
-          ]
+          ],
+          "context": "Карточка из заметок Айрис"
         },
         {
           "id": "u001-s3-e3",
@@ -445,7 +502,8 @@
           "explain": "Постоянное положение дел → Present Simple.",
           "tags": [
             "present_simple"
-          ]
+          ],
+          "context": "Карточка из заметок Айрис"
         },
         {
           "id": "u001-s3-e4",
@@ -460,7 +518,8 @@
           "tags": [
             "present_continuous",
             "contrast_ps_pc"
-          ]
+          ],
+          "context": "Карточка из заметок Айрис"
         },
         {
           "id": "u001-s3-e5",
@@ -474,7 +533,8 @@
           "explain": "Understand — глагол состояния, в Continuous обычно не ставится.",
           "tags": [
             "state_verbs"
-          ]
+          ],
+          "context": "Карточка из заметок Айрис"
         },
         {
           "id": "u001-s3-e6",
@@ -489,7 +549,8 @@
           "tags": [
             "present_simple",
             "contrast_ps_pc"
-          ]
+          ],
+          "context": "Карточка из заметок Айрис"
         },
         {
           "id": "u001-s3-e7",
@@ -502,7 +563,8 @@
           "explain": "Right now → Present Continuous: is + checking.",
           "tags": [
             "present_continuous"
-          ]
+          ],
+          "context": "Карточка из заметок Айрис"
         },
         {
           "id": "u001-s3-e8",
@@ -516,7 +578,8 @@
           "tags": [
             "present_simple",
             "word_order"
-          ]
+          ],
+          "context": "Карточка из заметок Айрис"
         },
         {
           "id": "u001-s3-e9",
@@ -562,7 +625,8 @@
           "tags": [
             "signal_words",
             "contrast_ps_pc"
-          ]
+          ],
+          "context": "Айрис раскладывает карточки"
         },
         {
           "id": "u001-s3-e10",
@@ -574,7 +638,27 @@
           "explain": "Need — глагол состояния: I need, а не I am needing.",
           "tags": [
             "state_verbs"
-          ]
+          ],
+          "context": "Правка Айрис в тексте гида"
+        }
+      ],
+      "frame": {
+        "setting": "Айрис раскладывает по столу карточки с заметками для гида.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "These are notes for the guide. Some are about every day, some are about right now. Help me sort them?",
+            "ru": "Это заметки для гида. Одни — про каждый день, другие — про прямо сейчас. Поможешь разобрать?",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Good. Now the guide knows the difference too.",
+          "ru": "Хорошо. Теперь и гид знает разницу.",
+          "expr": "notebook/dry_smile"
         }
       ]
     },
@@ -596,7 +680,8 @@
           "explain": "From — с глаголом be: Where are you from?",
           "tags": [
             "questions_be"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e2",
@@ -611,7 +696,8 @@
           "explain": "Study — обычный глагол → вопрос с do.",
           "tags": [
             "questions_do"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e3",
@@ -627,7 +713,8 @@
           "tags": [
             "questions_do",
             "third_person"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e4",
@@ -643,7 +730,8 @@
           "tags": [
             "questions_be",
             "present_continuous"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e5",
@@ -656,7 +744,8 @@
           "explain": "Do + подлежащее + глагол.",
           "tags": [
             "questions_do"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e6",
@@ -669,7 +758,8 @@
           "explain": "С be — просто меняем порядок: Is she…?",
           "tags": [
             "questions_be"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e7",
@@ -684,7 +774,8 @@
           "tags": [
             "questions_be",
             "word_order"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e8",
@@ -697,7 +788,8 @@
           "tags": [
             "questions_be",
             "word_order"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e9",
@@ -709,7 +801,8 @@
           "explain": "Do и be вместе не нужны: Are you…?",
           "tags": [
             "questions_be"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e10",
@@ -722,7 +815,8 @@
           "explain": "Нужен вспомогательный глагол: What do you study?",
           "tags": [
             "questions_do"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
         },
         {
           "id": "u001-s4-e11",
@@ -736,7 +830,27 @@
           "tags": [
             "questions_be",
             "present_continuous"
-          ]
+          ],
+          "context": "Вопрос из списка Мики"
+        }
+      ],
+      "frame": {
+        "setting": "Мика готовит вопросы для интервью с новичками.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "I have questions for the newcomers, but some of them look… strange. Can you check them?",
+            "ru": "У меня есть вопросы для новичков, но некоторые выглядят… странно. Проверишь?",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Fixed! Now nobody will laugh at my questions. Probably.",
+          "ru": "Исправлено! Теперь никто не будет смеяться над моими вопросами. Наверное.",
+          "expr": "phone/happy"
         }
       ]
     },
@@ -762,7 +876,8 @@
           ],
           "tags": [
             "function_greeting"
-          ]
+          ],
+          "context": "Твои фразы для записи"
         },
         {
           "id": "u001-s5-e2",
@@ -781,7 +896,8 @@
           ],
           "tags": [
             "present_simple"
-          ]
+          ],
+          "context": "Твои фразы для записи"
         },
         {
           "id": "u001-s5-e3",
@@ -805,7 +921,8 @@
           "tags": [
             "vocab_u001",
             "articles"
-          ]
+          ],
+          "context": "Твои фразы для записи"
         },
         {
           "id": "u001-s5-e4",
@@ -818,7 +935,8 @@
           "explain": "Ищу прямо сейчас → Present Continuous: I'm looking for.",
           "tags": [
             "present_continuous"
-          ]
+          ],
+          "context": "Твои фразы для записи"
         },
         {
           "id": "u001-s5-e5",
@@ -829,7 +947,8 @@
           ],
           "tags": [
             "questions_be"
-          ]
+          ],
+          "context": "Твои фразы для записи"
         },
         {
           "id": "u001-s5-e6",
@@ -841,7 +960,8 @@
           ],
           "tags": [
             "questions_do"
-          ]
+          ],
+          "context": "Твои фразы для записи"
         },
         {
           "id": "u001-s5-e7",
@@ -856,7 +976,8 @@
           ],
           "tags": [
             "present_simple"
-          ]
+          ],
+          "context": "Мика спрашивает"
         },
         {
           "id": "u001-s5-e8",
@@ -878,7 +999,27 @@
           "explain": "Варианты: Could you say that again? / Sorry, I didn't catch that.",
           "tags": [
             "function_clarify"
-          ]
+          ],
+          "context": "Мика спрашивает"
+        }
+      ],
+      "frame": {
+        "setting": "Рэй проверяет микрофон перед записью.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Before we record you, practise your lines. Short and clear.",
+            "ru": "Прежде чем записывать, отрепетируй свои фразы. Коротко и понятно.",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Okay. That I can record.",
+          "ru": "Ладно. Такое я могу записать.",
+          "expr": "recorder/happy"
         }
       ]
     },
@@ -897,7 +1038,8 @@
           ],
           "tags": [
             "speaking"
-          ]
+          ],
+          "context": "Запись для гида"
         },
         {
           "id": "u001-s6-e2",
@@ -911,7 +1053,8 @@
           "tags": [
             "speaking",
             "function_clarify"
-          ]
+          ],
+          "context": "Запись для гида"
         },
         {
           "id": "u001-s6-e3",
@@ -923,7 +1066,8 @@
           ],
           "tags": [
             "speaking"
-          ]
+          ],
+          "context": "Запись для гида"
         },
         {
           "id": "u001-s6-e4",
@@ -936,7 +1080,8 @@
           "tags": [
             "speaking",
             "present_continuous"
-          ]
+          ],
+          "context": "Запись для гида"
         },
         {
           "id": "u001-s6-e5",
@@ -949,7 +1094,8 @@
           "tags": [
             "speaking",
             "questions_be"
-          ]
+          ],
+          "context": "Запись для гида"
         },
         {
           "id": "u001-s6-e6",
@@ -965,7 +1111,27 @@
           "explain": "Understand — глагол состояния: I don't understand, а не I'm not understanding.",
           "tags": [
             "state_verbs"
-          ]
+          ],
+          "context": "Айрис спрашивает"
+        }
+      ],
+      "frame": {
+        "setting": "Рэй включает запись.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Your turn. Say it to the mic, not to me.",
+            "ru": "Твоя очередь. Говори в микрофон, а не мне.",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "The mic likes you. Don't let it go to your head.",
+          "ru": "Ты нравишься микрофону. Только не зазнавайся.",
+          "expr": "smirk"
         }
       ]
     },
@@ -1001,7 +1167,8 @@
           ],
           "tags": [
             "vocab_u001"
-          ]
+          ],
+          "context": "Слова для гида"
         },
         {
           "id": "u001-s7-e2",
@@ -1082,7 +1249,8 @@
           ],
           "tags": [
             "dictation"
-          ]
+          ],
+          "context": "Расшифровка записи для гида"
         },
         {
           "id": "u001-s7-e7",
@@ -1108,6 +1276,25 @@
             "present_simple",
             "vocab_u001"
           ]
+        }
+      ],
+      "frame": {
+        "setting": "Перерыв. Мика достаёт из сумки печенье.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Quick round before the real recording! No pressure. Well, a little pressure.",
+            "ru": "Быстрый круг перед настоящей записью! Без давления. Ну, чуть-чуть давления.",
+            "expr": "happy"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "You're ready. I'm a little scared for us.",
+          "ru": "Ты готов. Мне даже немного страшно за нас.",
+          "expr": "laugh"
         }
       ]
     },
@@ -1161,7 +1348,8 @@
                 "text": "Perfect. That's exactly what new students need to hear.",
                 "ru": "Идеально. Именно это новичкам и нужно услышать.",
                 "expr": "happy"
-              }
+              },
+              "flag": "u001_intro_looking_for_room"
             },
             {
               "label": "Сказать, что ты здесь по обмену и пока не всё понимаешь",
@@ -1191,7 +1379,8 @@
                 "text": "Honest. I like that. Let's keep it.",
                 "ru": "Честно. Мне нравится. Оставим.",
                 "expr": "dry_smile"
-              }
+              },
+              "flag": "u001_intro_exchange_honest"
             }
           ],
           "clarify": {
@@ -1243,7 +1432,8 @@
                 "text": "Checking the levels. You sound fine, by the way.",
                 "ru": "Проверяю уровни. Кстати, звучишь нормально.",
                 "expr": "recorder/focused"
-              }
+              },
+              "flag": "u001_asked_rei"
             },
             {
               "label": "Спросить Айрис, где она обычно бывает после четырёх",
@@ -1266,7 +1456,8 @@
                 "text": "In the library. Second floor, by the window.",
                 "ru": "В библиотеке. Второй этаж, у окна.",
                 "expr": "dry_smile"
-              }
+              },
+              "flag": "u001_asked_iris"
             },
             {
               "label": "Спросить Мику, что она изучает",
@@ -1288,7 +1479,8 @@
                 "text": "Event production! Well, I want to study it. Right now I study everything.",
                 "ru": "Продюсирование событий! Ну, хочу изучать. Пока изучаю всё подряд.",
                 "expr": "laugh"
-              }
+              },
+              "flag": "u001_asked_mika"
             }
           ],
           "clarify": {
@@ -1313,7 +1505,22 @@
           ],
           "tags": [
             "speaking"
-          ]
+          ],
+          "context": "Финальная запись твоей строчки"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "That's it! You're officially in the guide.",
+          "ru": "Всё! Ты официально в гиде.",
+          "expr": "happy"
+        },
+        {
+          "speaker": "iris",
+          "text": "I'll put your name on the wall. Spelled correctly.",
+          "ru": "Я напишу твоё имя на стене. Без ошибок.",
+          "expr": "dry_smile"
         }
       ]
     }

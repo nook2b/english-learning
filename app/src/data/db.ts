@@ -9,6 +9,8 @@ export interface Settings {
   dailyGoalMinutes: DailyGoal
   translation: 'tap' | 'always'
   voice: boolean
+  /** Testing aid: every session of every written unit is open. */
+  unlockAll: boolean
 }
 
 export type UnitStatus = 'done' | 'tested_out'
@@ -47,6 +49,12 @@ export interface Mistake {
   at: number
 }
 
+/** A remembered story choice, e.g. which question the player asked in a scene. */
+export interface StoryFlag {
+  id: string
+  at: number
+}
+
 export const sessionId = (unitId: string, index: number) => `${unitId}-${index}`
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -55,6 +63,7 @@ export const DEFAULT_SETTINGS: Settings = {
   dailyGoalMinutes: 10,
   translation: 'tap',
   voice: true,
+  unlockAll: false,
 }
 
 export class ClubDB extends Dexie {
@@ -63,6 +72,7 @@ export class ClubDB extends Dexie {
   days!: Table<ActivityDay, string>
   sessions!: Table<SessionResult, string>
   mistakes!: Table<Mistake, number>
+  flags!: Table<StoryFlag, string>
 
   constructor(name = 'english-club') {
     super(name)
@@ -75,6 +85,7 @@ export class ClubDB extends Dexie {
       sessions: 'id, unitId',
       mistakes: '++id, exerciseId, *tags, at',
     })
+    this.version(3).stores({ flags: 'id' })
   }
 }
 
@@ -114,7 +125,13 @@ export async function addMistake(mistake: Omit<Mistake, 'id'>, database: ClubDB 
 
 /** Clears progress but keeps settings, so the name and goal survive a reset. */
 export async function resetProgress(database: ClubDB = db): Promise<void> {
-  await database.transaction('rw', [database.units, database.days, database.sessions, database.mistakes], async () => {
-    await Promise.all([database.units.clear(), database.days.clear(), database.sessions.clear(), database.mistakes.clear()])
+  await database.transaction('rw', [database.units, database.days, database.sessions, database.mistakes, database.flags], async () => {
+    await Promise.all([database.units.clear(), database.days.clear(), database.sessions.clear(), database.mistakes.clear(), database.flags.clear()])
   })
+}
+
+/** Full reset for testing: progress and settings. */
+export async function resetEverything(database: ClubDB = db): Promise<void> {
+  await resetProgress(database)
+  await database.settings.clear()
 }

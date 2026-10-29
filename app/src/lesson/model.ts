@@ -14,6 +14,8 @@ export interface Outcome {
   expected: string
   /** Scene lines to show with the feedback: a reaction, or a clarification first. */
   lines?: Line[]
+  /** Story choice to remember. */
+  flag?: string
 }
 
 export function toSteps(exercises: readonly Exercise[]): Step[] {

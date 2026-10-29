@@ -99,3 +99,47 @@ test('tapping a highlighted expression shows its translation', () => {
   fireEvent.click(screen.getByRole('button', { name: 'Перевод' }))
   expect(screen.getByText('Кстати, звучишь нормально.')).toBeInTheDocument()
 })
+
+test('a session opens with its story frame and ends with what changed', async () => {
+  const unit = Unit.parse({
+    id: '998',
+    title: 'Frame',
+    goal: 'g',
+    focus: 'f',
+    outcome: 'o',
+    expressions: [],
+    sessions: [
+      {
+        kind: 'form',
+        title: 'Framed',
+        frame: { setting: 'Room 17', lines: [{ speaker: 'iris', text: 'Help me sort these?', expr: 'notebook/focused' }] },
+        wrap: [{ speaker: 'iris', text: 'Good. Now the guide knows.', expr: 'notebook/dry_smile' }],
+        exercises: [{ id: 'fr-1', type: 'choice', prompt: 'a ___', options: ['a', 'b'], answer: 'a', context: 'Карточка Айрис' }],
+      },
+      ...Array(7).fill(filler),
+    ],
+  })
+  render(<SessionPlayer unit={unit} index={1} />)
+  expect(screen.getByText('Help me sort these?')).toBeInTheDocument()
+  expect(screen.getByAltText('iris notebook/focused')).toBeInTheDocument()
+  fireEvent.click(screen.getByRole('button', { name: 'Начать' }))
+  expect(screen.getByText('Карточка Айрис')).toBeInTheDocument()
+  fireEvent.click(screen.getByRole('button', { name: 'a' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
+  expect(await screen.findByText('Good. Now the guide knows.')).toBeInTheDocument()
+  fireEvent.click(screen.getByRole('button', { name: 'Итоги занятия' }))
+  expect(screen.getByText(/Точность: 100%/)).toBeInTheDocument()
+})
+
+test('a scene choice is remembered for later scenes', async () => {
+  const unit = unitWith([
+    { id: 't-8', type: 'scene', setting: 's', lines: [{ speaker: 'mika', text: 'Ask us anything!' }], intents: [{ label: 'Спросить Рэй', answers: ['What are you doing?'], flag: 'asked_rei', reaction: { speaker: 'rei', text: 'Checking levels.' } }], clarify: { speaker: 'mika', text: 'Sorry?' } },
+  ])
+  render(<SessionPlayer unit={unit} index={1} />)
+  fireEvent.click(screen.getByRole('button', { name: 'Спросить Рэй' }))
+  fireEvent.change(screen.getByRole('textbox', { name: 'Ответ' }), { target: { value: 'What are you doing?' } })
+  fireEvent.click(screen.getByRole('button', { name: 'Проверить' }))
+  await screen.findByText('Checking levels.')
+  await new Promise((r) => setTimeout(r, 20))
+  expect(await db.flags.get('asked_rei')).toBeTruthy()
+})

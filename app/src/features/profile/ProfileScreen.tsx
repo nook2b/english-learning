@@ -3,11 +3,15 @@ import { useClub } from '../../data/store'
 import { Button, Card } from '../../ui/kit'
 
 export function ProfileScreen() {
-  const { settings, days, units, updateSettings, reset } = useClub()
+  const { settings, days, units, updateSettings, reset, resetAll } = useClub()
   const totalMinutes = days.reduce((sum, d) => sum + d.minutes, 0)
 
   const onReset = async () => {
     if (window.confirm('Сбросить весь прогресс? Настройки останутся.')) await reset()
+  }
+
+  const onResetAll = async () => {
+    if (window.confirm('Сбросить всё: прогресс, имя и настройки? Приложение станет как при первом запуске.')) await resetAll()
   }
 
   return (
@@ -54,9 +58,21 @@ export function ProfileScreen() {
           />
           Перевод в истории всегда показан
         </label>
-        <Button variant="secondary" onClick={onReset}>
-          Сбросить прогресс
-        </Button>
+      </Card>
+
+      <Card title="Тестирование и сброс">
+        <label className="field-inline">
+          <input type="checkbox" checked={settings.unlockAll} onChange={(e) => updateSettings({ unlockAll: e.target.checked })} />
+          Открыть все занятия (можно проходить в любом порядке)
+        </label>
+        <div className="actions">
+          <Button variant="secondary" onClick={onReset}>
+            Сбросить прогресс
+          </Button>
+          <Button variant="secondary" onClick={onResetAll}>
+            Сбросить всё, включая настройки
+          </Button>
+        </div>
       </Card>
     </div>
   )
