@@ -252,13 +252,14 @@
         }
       ],
       "frame": {
-        "setting": "Утро. Коридор старого корпуса, доска объявлений.",
+        "setting": "Утро. Коридор старого корпуса. Айрис догоняет тебя у доски объявлений.",
         "lines": [
           {
             "speaker": "iris",
             "text": "You dropped this. It's from the International Office.",
             "ru": "Ты уронил. Это из международного отдела.",
-            "expr": "stand/neutral"
+            "expr": "stand/neutral",
+            "delivery": "[slightly out of breath]"
           },
           {
             "speaker": "iris",
@@ -321,7 +322,8 @@
             "listening",
             "present_simple",
             "present_continuous"
-          ]
+          ],
+          "delivery": "[slightly out of breath, cheerful]"
         },
         {
           "id": "u001-s2-e2",
@@ -352,7 +354,8 @@
           "tags": [
             "listening",
             "present_simple"
-          ]
+          ],
+          "delivery": "[flat, quiet]"
         },
         {
           "id": "u001-s2-e3",
@@ -383,7 +386,8 @@
           "tags": [
             "listening",
             "present_simple"
-          ]
+          ],
+          "delivery": "[calm, clear]"
         },
         {
           "id": "u001-s2-e4",
@@ -421,7 +425,8 @@
           "tags": [
             "dictation"
           ],
-          "context": "Расшифровка записи для гида"
+          "context": "Расшифровка записи для гида",
+          "delivery": "[deadpan]"
         }
       ],
       "frame": {
@@ -437,7 +442,8 @@
             "speaker": "rei",
             "text": "Headphones are on the table. Don't drop them.",
             "ru": "Наушники на столе. Не урони.",
-            "expr": "recorder/neutral"
+            "expr": "recorder/neutral",
+            "delivery": "[deadpan]"
           }
         ]
       },
@@ -841,7 +847,8 @@
             "speaker": "mika",
             "text": "I have questions for the newcomers, but some of them look… strange. Can you check them?",
             "ru": "У меня есть вопросы для новичков, но некоторые выглядят… странно. Проверишь?",
-            "expr": "phone/thinking"
+            "expr": "phone/thinking",
+            "delivery": "[hesitant]"
           }
         ]
       },
@@ -1040,7 +1047,8 @@
             "speaking"
           ],
           "context": "Запись для гида",
-          "voice": "iris"
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]"
         },
         {
           "id": "u001-s6-e2",
@@ -1056,7 +1064,8 @@
             "function_clarify"
           ],
           "context": "Запись для гида",
-          "voice": "iris"
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]"
         },
         {
           "id": "u001-s6-e3",
@@ -1287,7 +1296,8 @@
             "speaker": "mika",
             "text": "Quick round before the real recording! No pressure. Well, a little pressure.",
             "ru": "Быстрый круг перед настоящей записью! Без давления. Ну, чуть-чуть давления.",
-            "expr": "happy"
+            "expr": "happy",
+            "delivery": "[playfully]"
           }
         ]
       },
@@ -1314,13 +1324,15 @@
               "speaker": "mika",
               "text": "Okay, the mic is on. Can you introduce yourself for the guide? Just a few words.",
               "ru": "Так, микрофон включён. Можешь представиться для гида? Пару слов.",
-              "expr": "excited"
+              "expr": "excited",
+              "delivery": "[excited, keeping her voice down]"
             },
             {
               "speaker": "rei",
               "text": "Speak normally. The mic hears everything.",
               "ru": "Говори как обычно. Микрофон всё слышит.",
-              "expr": "recorder/focused"
+              "expr": "recorder/focused",
+              "delivery": "[whispers]"
             }
           ],
           "intents": [
@@ -1389,7 +1401,8 @@
             "speaker": "mika",
             "text": "Sorry, one more time? Slowly is fine.",
             "ru": "Прости, ещё раз? Можно медленно.",
-            "expr": "listening"
+            "expr": "listening",
+            "delivery": "[gently, keeping her voice down]"
           },
           "tags": [
             "present_simple",
@@ -1509,7 +1522,8 @@
             "speaking"
           ],
           "context": "Финальная запись твоей строчки",
-          "voice": "iris"
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]"
         }
       ],
       "wrap": [

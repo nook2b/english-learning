@@ -26,7 +26,7 @@ export function PathScreen() {
           <Sprite heroine={hostId} expr={host.greeting.expr} size="knee" />
         </button>
         <DialogueBox speaker={host.name}>
-          <LineVoice text={host.greeting.text} speaker={hostId} />
+          <LineVoice text={host.greeting.text} speaker={hostId} expr={host.greeting.expr} delivery={host.greeting.delivery} />
           <Gloss text={host.greeting.text} />
           <Translation ru={host.greeting.ru} always={settings.translation === 'always'} />
         </DialogueBox>

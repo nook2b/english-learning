@@ -24,7 +24,7 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
     if (lines.length === 0) return
     const next = lines.length === 1 ? 0 : (((said ?? -1) + 1 + Math.floor(Math.random() * (lines.length - 1))) % lines.length)
     setSaid(next)
-    if (settings.voice) play(lines[next]!.text, id)
+    if (settings.voice) play(lines[next]!.text, id, false, lines[next]!)
   }
 
   return (
@@ -39,7 +39,7 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
       </div>
       {line ? (
         <DialogueBox speaker={c.name}>
-          <LineVoice text={line.text} speaker={id} />
+          <LineVoice text={line.text} speaker={id} expr={line.expr} delivery={line.delivery} />
           <Gloss text={line.text} />
           <Translation key={said} ru={line.ru} always={settings.translation === 'always'} />
         </DialogueBox>

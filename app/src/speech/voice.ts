@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from 'react'
 import type { Speaker } from '../content/schema'
 import { clipUrl } from './clips'
+import { type Delivery, voicedText } from './delivery'
 import { mouthPause, mouthStart, mouthStop } from './mouth'
 import { canSpeak, speak as synth } from './tts'
 
@@ -31,16 +32,18 @@ export function stop() {
   set('idle')
 }
 
-export function play(text: string, speaker: Speaker = 'narrator', slow = false) {
+export function play(text: string, speaker: Speaker = 'narrator', slow = false, delivery: Delivery = {}) {
   stop()
   const id = `${speaker}|${text}`
-  const url = clipUrl(speaker, text)
+  // Clips are keyed by the voiced text (with audio tags); browser speech reads the plain text.
+  const url = clipUrl(speaker, voicedText(text, delivery))
   if (url) {
     const audio = new Audio(url)
     audio.playbackRate = slow ? 0.75 : 1
     audio.onended = () => current?.audio === audio && set('idle')
     current = { id, audio }
-    void audio.play().catch(() => set('idle'))
+    // Older browsers return undefined instead of a promise from play().
+    audio.play()?.catch(() => set('idle'))
     mouthStart(speaker, audio)
   } else {
     if (!canSpeak()) return
@@ -64,7 +67,7 @@ export function pause() {
 
 export function resume() {
   if (state !== 'paused') return
-  if (current?.audio) void current.audio.play()
+  if (current?.audio) current.audio.play()?.catch(() => set('idle'))
   else if (current) {
     window.speechSynthesis.resume()
     mouthStart(current.id.split('|')[0]!)
