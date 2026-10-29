@@ -1,5 +1,6 @@
 import { UNITS } from './course'
 import { ARC1_UNITS } from './outline'
+import { type HeroineId, isHeroine, parseExpr, resolveSprite } from '../story/sprites'
 import type { Exercise } from './schema'
 
 const units = Object.values(UNITS)
@@ -54,4 +55,29 @@ test.each(exercises.map((e) => [e.id, e] as [string, Exercise]))('%s is answerab
       for (const it of e.intents) if (it.tiles) expect(buildable(it.tiles, it.answers)).toBe(true)
       break
   }
+})
+
+const linesOf = (e: Exercise) => (e.type === 'scene' ? [...e.lines, ...e.intents.map((i) => i.reaction), e.clarify] : [])
+const allLines = units.flatMap((u) =>
+  u.sessions.flatMap((s) => [...(s.frame?.lines ?? []), ...(s.wrap ?? []), ...s.exercises.flatMap(linesOf)].map((l) => ({ unit: u.id, line: l }))),
+)
+
+test('every heroine line points at a drawn sprite (no fallback)', () => {
+  const missing = allLines
+    .filter(({ line }) => isHeroine(line.speaker))
+    .map(({ line }) => resolveSprite(parseExpr(line.speaker as HeroineId, line.expr)))
+    .filter((r) => !r?.exact)
+  expect(missing).toEqual([])
+})
+
+test('a clarification after a language slip never looks annoyed (docs/10-sprites.md, section 8)', () => {
+  const bad = units.flatMap((u) =>
+    u.sessions.flatMap((s) => s.exercises.flatMap((e) => (e.type === 'scene' ? [e.clarify] : []))).filter((l) => /annoyed|sad|guarded|deadpan/.test(l.expr ?? '')),
+  )
+  expect(bad).toEqual([])
+})
+
+test('romantic emotions stay off screen before unit 081', () => {
+  const early = allLines.filter(({ unit, line }) => Number(unit) < 81 && /blush|tender|teary/.test(line.expr ?? ''))
+  expect(early).toEqual([])
 })

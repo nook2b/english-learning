@@ -14,7 +14,13 @@ export const Speaker = z.enum([...HEROINES, 'newcomer', 'narrator'])
 export const TIMELINE_KINDS = ['now', 'habit', 'state', 'schedule', 'past_point', 'past_to_now', 'future_plan'] as const
 export const TimelineKind = z.enum(TIMELINE_KINDS)
 
-const base = { id, explain: z.string().optional(), tags }
+const base = {
+  id,
+  explain: z.string().optional(),
+  tags,
+  /** In-story label of what this is: "Карточка из заметок Айрис", "Вопрос из списка Мики". */
+  context: z.string().optional(),
+}
 
 /** T1: pick the right form in context. */
 const Choice = z.object({
@@ -156,6 +162,8 @@ const Scene = z.object({
         answers,
         tiles: z.array(z.string()).optional(),
         reaction: Line,
+        /** Remembered story choice, used by later scenes. */
+        flag: z.string().optional(),
       }),
     )
     .min(1),
@@ -172,6 +180,10 @@ export const Session = z.object({
   title: z.string(),
   /** Short note for the learning panel before the first exercise. */
   intro: z.string().optional(),
+  /** Story beat before the exercises: where we are and why this practice matters. */
+  frame: z.object({ setting: z.string(), lines: z.array(Line).min(1) }).optional(),
+  /** Story beat after the session: what changed. */
+  wrap: z.array(Line).min(1).optional(),
   exercises: z.array(Exercise).min(1),
 })
 

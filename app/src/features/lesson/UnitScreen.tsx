@@ -9,6 +9,7 @@ const KIND_LABELS = { comprehension: 'понимание', form: 'форма', p
 
 export function UnitScreen({ unitId }: { unitId: string }) {
   const sessions = useClub((s) => s.sessions)
+  const unlockAll = useClub((s) => s.settings.unlockAll)
   const unit = getUnit(unitId)
   const outline = ARC1_UNITS.find((u) => u.id === unitId)
 
@@ -40,7 +41,7 @@ export function UnitScreen({ unitId }: { unitId: string }) {
         <ul className="unit-list">
           {unit.sessions.map((s, i) => {
             // Sessions open in order; finished ones can be replayed.
-            const open = i === 0 || done[i - 1] || done[i]
+            const open = unlockAll || i === 0 || done[i - 1] || done[i]
             return (
               <li key={i} className={`unit ${done[i] ? 'unit-done' : open ? 'unit-open' : 'unit-locked'}`}>
                 <button className="link" disabled={!open} onClick={() => navigate({ name: 'session', unitId: unit.id, index: i + 1 })}>

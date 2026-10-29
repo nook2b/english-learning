@@ -9,6 +9,8 @@ import { Options, TextAnswer, TileAnswer } from './inputs'
 import { Gloss, Translation } from './Gloss'
 import { Timeline } from './Timeline'
 import { useClub } from '../data/store'
+import { castAt } from '../story/cast'
+import { Stage } from '../story/Stage'
 
 interface ViewProps<T extends Exercise['type']> {
   step: Step
@@ -18,6 +20,15 @@ interface ViewProps<T extends Exercise['type']> {
 }
 
 export function ExerciseView({ step, locked, onAnswer }: { step: Step; locked: boolean; onAnswer: (o: Outcome) => void }) {
+  return (
+    <>
+      {step.exercise.context && <p className="context">{step.exercise.context}</p>}
+      <ExerciseBody step={step} locked={locked} onAnswer={onAnswer} />
+    </>
+  )
+}
+
+function ExerciseBody({ step, locked, onAnswer }: { step: Step; locked: boolean; onAnswer: (o: Outcome) => void }) {
   const ex = step.exercise
   switch (ex.type) {
     case 'choice':
@@ -260,6 +271,7 @@ export function SceneLines({ lines }: { lines: readonly Line[] }) {
   const always = useClub((s) => s.settings.translation === 'always')
   return (
     <>
+      <Stage cast={castAt(lines, lines.length - 1)} speaking={lines[lines.length - 1]?.speaker} />
       {lines.map((l, i) => (
         <DialogueBox key={i} speaker={SPEAKER_NAMES[l.speaker] || undefined}>
           <Gloss text={l.text} />
@@ -276,7 +288,8 @@ function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
   const submit = (text: string) => {
     if (!chosen) return
     const ok = matches(text, chosen.answers)
-    onAnswer({ correct: ok, given: text, expected: chosen.answers[0]!, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction] })
+    // The story choice counts even after a language slip: the heroine clarifies and the scene goes on.
+    onAnswer({ correct: ok, given: text, expected: chosen.answers[0]!, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction], flag: chosen.flag })
   }
   return (
     <div className="exercise">

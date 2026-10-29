@@ -15,6 +15,16 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg'],
+      workbox: {
+        // Sprites are large; cache them as they are first shown instead of precaching all.
+        runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.destination === 'image',
+            handler: 'CacheFirst',
+            options: { cacheName: 'images', expiration: { maxEntries: 400 } },
+          },
+        ],
+      },
       manifest: {
         name: 'English Club',
         short_name: 'English Club',

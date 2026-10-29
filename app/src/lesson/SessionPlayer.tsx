@@ -5,6 +5,7 @@ import { addMistake } from '../data/db'
 import { useClub } from '../data/store'
 import { navigate } from '../app/router'
 import { Button, Card, LearnPanel, ProgressBar } from '../ui/kit'
+import { Beat } from '../story/Stage'
 import { ExerciseView, SceneLines } from './ExerciseView'
 import { GlossaryContext } from './glossary'
 import { type Outcome, toSteps } from './model'
@@ -24,6 +25,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const session = unit.sessions[index - 1]!
   const steps = useMemo(() => toSteps(session.exercises), [session])
   const finishSession = useClub((s) => s.finishSession)
+  const remember = useClub((s) => s.remember)
   const glossary = useMemo(
     () => [...unit.expressions.map((e) => ({ ...e, target: true })), ...unit.glossary.map((e) => ({ ...e, target: false }))],
     [unit],
@@ -34,6 +36,8 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const [results, setResults] = useState<Outcome[]>([])
   const [summary, setSummary] = useState<Summary>()
   const [saving, setSaving] = useState(false)
+  // A session is a small story beat: frame → exercises → wrap → summary.
+  const [phase, setPhase] = useState<'frame' | 'exercises' | 'wrap' | 'done'>(session.frame ? 'frame' : 'exercises')
 
   const step = steps[i]!
   const isLast = i === steps.length - 1
@@ -41,6 +45,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const answer = (o: Outcome) => {
     setOutcome(o)
     setResults((r) => [...r, o])
+    if (o.flag) void remember(o.flag)
     if (o.correct === false) {
       void addMistake({ exerciseId: step.exercise.id, tags: step.exercise.tags, given: o.given, expected: o.expected, at: Date.now() })
     }
@@ -66,6 +71,34 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       mistakes: results.filter((r) => r.correct === false).map(({ given, expected }) => ({ given, expected })),
     })
     setSaving(false)
+    if (session.wrap) setPhase('wrap')
+  }
+
+  const exit = (
+    <button className="close" aria-label="Выйти из занятия" onClick={() => navigate({ name: 'unit', unitId: unit.id })}>
+      ✕
+    </button>
+  )
+
+  if (phase === 'frame' && session.frame) {
+    return (
+      <GlossaryContext.Provider value={glossary}>
+        <div className="screen">
+          <div className="session-head">{exit}</div>
+          <Beat setting={session.frame.setting} lines={session.frame.lines} doneLabel="Начать" onDone={() => setPhase('exercises')} />
+        </div>
+      </GlossaryContext.Provider>
+    )
+  }
+
+  if (phase === 'wrap' && session.wrap && summary) {
+    return (
+      <GlossaryContext.Provider value={glossary}>
+        <div className="screen">
+          <Beat lines={session.wrap} doneLabel="Итоги занятия" onDone={() => setPhase('done')} />
+        </div>
+      </GlossaryContext.Provider>
+    )
   }
 
   if (summary) return <SessionSummary unit={unit} index={index} summary={summary} />
@@ -74,9 +107,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
     <GlossaryContext.Provider value={glossary}>
       <div className="screen">
         <div className="session-head">
-          <button className="close" aria-label="Выйти из занятия" onClick={() => navigate({ name: 'unit', unitId: unit.id })}>
-            ✕
-          </button>
+          {exit}
           <ProgressBar value={i + (outcome ? 1 : 0)} max={steps.length} label="Прогресс занятия" />
         </div>
         <p className="muted">

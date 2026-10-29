@@ -9,6 +9,7 @@ import {
   addActivity,
   db,
   loadSettings,
+  resetEverything,
   resetProgress,
   saveSessionResult,
   saveSettings,
@@ -43,6 +44,8 @@ interface ClubState {
   finishSession: (s: FinishedSession) => Promise<{ minutes: number; xp: number }>
   markUnit: (unitId: string, status: UnitStatus) => Promise<void>
   reset: () => Promise<void>
+  resetAll: () => Promise<void>
+  remember: (flag: string) => Promise<void>
 }
 
 export function sessionsDone(sessions: Record<string, SessionResult>, unitId: string): number {
@@ -101,5 +104,14 @@ export const useClub = create<ClubState>((set, get) => ({
   reset: async () => {
     await resetProgress()
     set({ units: {}, sessions: {}, days: [] })
+  },
+
+  resetAll: async () => {
+    await resetEverything()
+    set({ units: {}, sessions: {}, days: [], settings: DEFAULT_SETTINGS })
+  },
+
+  remember: async (flag) => {
+    await db.flags.put({ id: flag, at: Date.now() })
   },
 }))

@@ -18,6 +18,9 @@ test('opens on the path screen with the first session', async () => {
 test('continue opens the session player', async () => {
   render(<App />)
   fireEvent.click(await screen.findByRole('button', { name: /Продолжить/ }))
+  expect(await screen.findByText(/You dropped this/)).toBeInTheDocument()
+  fireEvent.click(screen.getByRole('button', { name: 'Дальше' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Начать' }))
   expect(await screen.findByText(/Занятие 1\. Понимание/)).toBeInTheDocument()
   expect(screen.getByRole('button', { name: 'Выйти из занятия' })).toBeInTheDocument()
 })
