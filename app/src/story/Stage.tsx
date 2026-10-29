@@ -8,31 +8,43 @@ import { SPEAKER_NAMES } from '../lesson/model'
 import { Button, DialogueBox } from '../ui/kit'
 import { castAt } from './cast'
 import { useMouth } from '../speech/mouth'
-import { type HeroineId, HEROINE_IDS, SPRITES, isHeroine, parseExpr, resolveSprite } from './sprites'
+import { type HeroineId, HEROINE_IDS, SPRITE_H, SPRITE_W, TALK, isHeroine, parseExpr, resolveSprite } from './sprites'
 
 type SpriteSize = 'stage' | 'knee' | 'avatar'
 
 /**
  * A heroine sprite. 'stage' shows her full figure, 'knee' crops just above
  * the knees so she reads larger on a phone, 'avatar' is a round face crop.
- * While she speaks, her face alternates with the "{expr}_talk" frame
- * (mouth open) when one is drawn; otherwise she gently bobs.
+ * While she speaks, a mouth patch ("{expr}_talk") is laid over the face on
+ * each syllable when one is drawn; otherwise she gently bobs.
  */
 export function Sprite({ heroine, expr, dim = false, size = 'stage' }: { heroine: HeroineId; expr?: string; dim?: boolean; size?: SpriteSize }) {
   const ref = parseExpr(heroine, expr)
   const found = resolveSprite(ref)
-  const talk = found ? SPRITES[`${found.key}_talk`] : undefined
+  const talk = found ? TALK[found.key] : undefined
   const mouth = useMouth(heroine)
   useEffect(() => {
-    // Preload the talking frame so the first swap does not flicker.
-    if (talk) new Image().src = talk
+    // Preload the mouth patch so the first syllable does not flicker.
+    if (talk) new Image().src = talk.url
   }, [talk])
   const label = `${heroine} ${ref.pose}/${ref.expr}`
   if (!found) return <div className={`sprite sprite-missing sprite-${size}`} aria-label={label} />
   if (size === 'avatar') return <div className="sprite sprite-avatar" role="img" aria-label={label} style={{ backgroundImage: `url(${found.url})` }} />
-  const src = mouth === 'open' && talk ? talk : found.url
-  const img = <img className={`sprite sprite-${size} ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''}`} src={src} alt={label} title={found.exact ? undefined : `замена: ${found.key}`} draggable={false} />
-  return size === 'knee' ? <div className={`sprite-knee ${dim ? 'dim' : ''}`}>{img}</div> : img
+  const frame = (
+    <div className={`sprite-frame sprite-${size} ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''}`}>
+      <img className="sprite" src={found.url} alt={label} title={found.exact ? undefined : `замена: ${found.key}`} draggable={false} />
+      {talk && mouth === 'open' && (
+        <img
+          className="sprite-mouth"
+          src={talk.url}
+          alt=""
+          draggable={false}
+          style={{ left: `${(talk.x / SPRITE_W) * 100}%`, top: `${(talk.y / SPRITE_H) * 100}%`, width: `${(talk.w / SPRITE_W) * 100}%` }}
+        />
+      )}
+    </div>
+  )
+  return size === 'knee' ? <div className={`sprite-knee ${dim ? 'dim' : ''}`}>{frame}</div> : frame
 }
 
 /** Heroines on screen, ordered as on the references: Rei left, Mika centre, Iris right. */

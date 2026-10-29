@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 import { Unit } from '../content/schema'
 import { db } from '../data/db'
 import { useClub } from '../data/store'
@@ -47,6 +47,8 @@ test('right and wrong answers, feedback, mistakes and summary', async () => {
   fireEvent.click(screen.getByRole('button', { name: 'Проверить' }))
   fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
   expect(await screen.findByText(/Точность: 50%/)).toBeInTheDocument()
+  // The summary shows the whole sentence, not the bare answer.
+  expect(screen.getByText('She lives here.')).toBeInTheDocument()
 
   expect(await db.sessions.get('999-1')).toMatchObject({ correct: 1, total: 2 })
   expect(await db.mistakes.where('tags').equals('third_person').count()).toBe(1)
@@ -171,4 +173,36 @@ test('a heroine speaking in a listening task appears on screen even if not in th
   fireEvent.click(screen.getByRole('button', { name: 'Начать' }))
   expect(screen.getByAltText('iris stand/neutral')).toBeInTheDocument()
   expect(screen.getByAltText('mika stand/excited')).toBeInTheDocument()
+})
+
+test('a sorting task comes back with only the wrongly sorted words', () => {
+  const unit = unitWith([
+    {
+      id: 's-1',
+      type: 'sort',
+      instruction: 'Sort',
+      categories: [
+        { id: 'habit', label: 'Обычно' },
+        { id: 'now', label: 'Сейчас' },
+      ],
+      items: [
+        { text: 'usually', category: 'habit' },
+        { text: 'right now', category: 'now' },
+        { text: 'every morning', category: 'habit' },
+      ],
+    },
+  ])
+  render(<SessionPlayer unit={unit} index={1} />)
+  const rows = () => screen.getAllByText(/usually|right now|every morning/)
+  const pick = (word: string, label: string) => {
+    const row = screen.getByText(word).closest('.sort-row') as HTMLElement
+    fireEvent.click(within(row).getByRole('button', { name: label }))
+  }
+  pick('usually', 'Обычно')
+  pick('right now', 'Обычно')
+  pick('every morning', 'Обычно')
+  fireEvent.click(screen.getByRole('button', { name: 'Проверить' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Дальше' }))
+  expect(screen.getByText('Ещё раз: исправим ошибку')).toBeInTheDocument()
+  expect(rows().map((r) => r.textContent)).toEqual(['right now'])
 })

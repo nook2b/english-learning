@@ -11,7 +11,7 @@ import { isHeroine } from '../story/sprites'
 import { Beat, Stage } from '../story/Stage'
 import { ExerciseView, SceneLines } from './ExerciseView'
 import { GlossaryContext } from './glossary'
-import { type Outcome, toSteps } from './model'
+import { type Outcome, mistakeText, toSteps } from './model'
 
 const KIND_LABELS = { comprehension: 'Понимание', form: 'Форма', production: 'Продукция', fluency: 'Беглость и миссия' } as const
 
@@ -52,7 +52,8 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const stepCast = voice && isHeroine(voice) && !(voice in cast) ? { ...cast, [voice]: 'neutral' } : cast
   const isLast = i === steps.length - 1
 
-  const answer = (o: Outcome) => {
+  const answer = (answered: Outcome) => {
+    const o = answered.correct === false ? { ...answered, shown: mistakeText(step, answered.expected) } : answered
     setOutcome(o)
     // Accuracy and mistakes count the first attempt only.
     if (!step.retry) setResults((r) => [...r, o])
@@ -61,9 +62,10 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       void remember(o.flag)
     }
     if (o.correct === false) {
-      if (!step.retry) void addMistake({ exerciseId: step.exercise.id, tags: step.exercise.tags, given: o.given, expected: o.expected, at: Date.now() })
+      if (!step.retry) void addMistake({ exerciseId: step.exercise.id, tags: step.exercise.tags, given: o.given, expected: o.shown ?? o.expected, at: Date.now() })
       retries.current += 1
-      setSteps((s) => [...s, { ...step, key: `${step.key.split('~')[0]}~${retries.current}`, retry: true }])
+      // Multi-item tasks (sorting, pairs) come back with only the items that went wrong.
+      setSteps((s) => [...s, { ...step, exercise: o.retry ?? step.exercise, key: `${step.key.split('~')[0]}~${retries.current}`, retry: true }])
     }
   }
 
@@ -85,7 +87,8 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       skipped: results.length - answered.length,
       minutes,
       xp,
-      mistakes: results.filter((r) => r.correct === false).map(({ given, expected }) => ({ given, expected })),
+      // One line per distinct sentence: two tasks with the same answer should not look like a duplicate.
+      mistakes: [...new Set(results.filter((r) => r.correct === false).map((r) => r.shown ?? r.expected))].map((expected) => ({ given: '', expected })),
     })
     setSaving(false)
     if (session.wrap) setPhase('wrap')

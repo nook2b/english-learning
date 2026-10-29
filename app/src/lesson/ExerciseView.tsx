@@ -192,6 +192,7 @@ function SortView({ exercise, locked, onAnswer }: ViewProps<'sort'>) {
       correct: wrong.length === 0,
       given: wrong.map((w) => `${w.text}: ${label(choice[exercise.items.indexOf(w)]!)}`).join('; '),
       expected: wrong.map((w) => `${w.text}: ${label(w.category)}`).join('; '),
+      retry: { ...exercise, items: wrong },
     })
   }
   return (
@@ -404,11 +405,15 @@ function PairsView({ step, exercise, locked, onAnswer }: ViewProps<'pairs'>) {
       setDone(next)
       setActive(undefined)
       if (next.length === exercise.pairs.length) {
+        // Repeat only the pairs that slipped; matching needs at least two, so add one more if needed.
+        const slipped = exercise.pairs.filter((p) => slips.some((s) => s.startsWith(`${p.en} — `)))
+        const again = slipped.length > 1 ? slipped : [...slipped, exercise.pairs.find((p) => !slipped.includes(p))!]
         onAnswer({
+          retry: { ...exercise, pairs: again },
           correct: slips.length === 0,
           given: slips.join('; '),
           expected: exercise.pairs
-            .filter((p) => slips.some((s) => s.startsWith(p.en)))
+            .filter((p) => slips.some((s) => s.startsWith(`${p.en} — `)))
             .map((p) => `${p.en} — ${p.ru}`)
             .join('; '),
         })

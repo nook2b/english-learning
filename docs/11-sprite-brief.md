@@ -467,4 +467,6 @@ the original, the same emotion as before (<ЭМОЦИЯ>), natural for talking.
 | Айрис | `iris/base/notebook/` | `dry_smile`, `focused` | `skeptical`, `surprised`, `thinking` |
 | Айрис | `iris/base/stand/` | `dry_smile`, `happy`, `neutral` | `annoyed`, `embarrassed`, `focused`, `guilty`, `laugh`, `listening`, `skeptical`, `surprised`, `thinking` |
 
-PNG можно присылать как есть: я переведу их в WebP и положу рядом со спрайтами. Приложение подхватит кадр само, код уже готов.
+PNG можно присылать как есть. Скрипт `scripts/import_talk_frames.py` сравнивает кадр речи с исходным спрайтом и сохраняет только изменённый участок рта — маленький WebP без потерь `{эмоция}_talk@x,y,w,h.webp` рядом со спрайтом. Приложение накладывает его поверх лица на слогах. Поэтому кадр речи обязательно должен совпадать с исходником попиксельно везде, кроме рта.
+
+Готово: все три героини — по 17 кадров, вся арка 1.
