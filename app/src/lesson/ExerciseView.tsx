@@ -242,7 +242,7 @@ function QuestionView({ step, exercise, locked, onAnswer }: ViewProps<'reading' 
       ) : (
         <div className="passage">
           <p className="task">Послушай{SPEAKER_NAMES[exercise.speaker] ? `: ${SPEAKER_NAMES[exercise.speaker]}` : ''}</p>
-          <AudioControls text={exercise.audio} speaker={exercise.speaker} />
+          <AudioControls text={exercise.audio} speaker={exercise.speaker} delivery={exercise.delivery} />
           {(!canSpeak() || (locked && last)) && (
             <p className="transcript">
               <Gloss text={exercise.audio} />
@@ -275,7 +275,7 @@ export function SceneLines({ lines }: { lines: readonly Line[] }) {
       <Stage cast={castAt(lines, lines.length - 1)} speaking={lines[lines.length - 1]?.speaker} />
       {lines.map((l, i) => (
         <DialogueBox key={i} speaker={SPEAKER_NAMES[l.speaker] || undefined}>
-          <LineVoice text={l.text} speaker={l.speaker} />
+          <LineVoice text={l.text} speaker={l.speaker} expr={l.expr} delivery={l.delivery} />
           <Gloss text={l.text} />
           <Translation ru={l.ru} always={always} />
         </DialogueBox>
@@ -348,7 +348,7 @@ function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
       <p className="task">{exercise.show === 'ru' ? 'Скажи по-английски' : 'Прочитай вслух'}</p>
       <p className="prompt">{exercise.show === 'en' ? <Gloss text={exercise.text} /> : exercise.text}</p>
       {exercise.show === 'en' && canSpeak() && (
-        <AudioControls text={exercise.text} speaker={exercise.voice ?? 'narrator'} label="▶ Как звучит" />
+        <AudioControls text={exercise.text} speaker={exercise.voice ?? 'narrator'} delivery={exercise.delivery} label="▶ Как звучит" />
       )}
       {!locked && (
         <div className="actions">
@@ -372,7 +372,7 @@ function DictationView({ step, exercise, locked, onAnswer }: ViewProps<'dictatio
   return (
     <div className="exercise">
       <p className="task">Напиши, что услышал</p>
-      <AudioControls text={exercise.audio} speaker={exercise.speaker} />
+      <AudioControls text={exercise.audio} speaker={exercise.speaker} delivery={exercise.delivery} />
       {!canSpeak() && (
         <p className="transcript" lang="en">
           {exercise.audio}

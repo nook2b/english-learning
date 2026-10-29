@@ -59,7 +59,7 @@ export function Beat({ setting, lines, doneLabel, onDone }: { setting?: string; 
   const line = lines[i]!
   // Read each line aloud as it appears when voice is on; stop when leaving the beat.
   useEffect(() => {
-    if (voiceOn) play(line.text, line.speaker)
+    if (voiceOn) play(line.text, line.speaker, false, line)
   }, [voiceOn, line])
   useEffect(() => () => stop(), [])
   const last = i === lines.length - 1
@@ -68,7 +68,7 @@ export function Beat({ setting, lines, doneLabel, onDone }: { setting?: string; 
       {setting && <p className="muted">{setting}</p>}
       <Stage cast={castAt(lines, i)} speaking={line.speaker} />
       <DialogueBox speaker={SPEAKER_NAMES[line.speaker] || undefined}>
-        <LineVoice text={line.text} speaker={line.speaker} />
+        <LineVoice text={line.text} speaker={line.speaker} expr={line.expr} delivery={line.delivery} />
         <Gloss key={i} text={line.text} />
         <Translation key={`t${i}`} ru={line.ru} always={always} />
       </DialogueBox>

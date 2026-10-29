@@ -1,9 +1,42 @@
 {
-  "model": "eleven_multilingual_v2",
+  "model": "eleven_v4",
   "format": "mp3_44100_64",
+  "voice_settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true,
+    "speed": 1.0
+  },
   "voices": {
     "rei": "tWbuddD9YFdBqLHumjE2",
     "mika": "zy9WSTvdBJgqZRZ8JJF2",
     "iris": "MTtyIHkOaoPnvpzwLU3Z"
+  },
+  "_deliveryByExpr": "Audio tags added to a line by the sprite emotion when the line has no explicit delivery. Only for heroine lines; see docs/14-voice.md.",
+  "deliveryByExpr": {
+    "listening": "[curious]",
+    "happy": "[warmly]",
+    "laugh": "[laughing]",
+    "excited": "[excited]",
+    "surprised": "[surprised]",
+    "thinking": "[thoughtfully]",
+    "embarrassed": "[awkwardly]",
+    "annoyed": "[annoyed]",
+    "sad": "[sadly]",
+    "worried": "[worried]",
+    "focused": "[quietly, focused]",
+    "forced_smile": "[forced cheerfulness]",
+    "pout": "[mock offended]",
+    "smirk": "[dryly amused]",
+    "deadpan": "[deadpan]",
+    "guarded": "[guarded, curt]",
+    "dry_smile": "[dry, understated humor]",
+    "skeptical": "[skeptical]",
+    "guilty": "[apologetic]",
+    "blush": "[shyly]",
+    "tender": "[softly, tenderly]",
+    "teary": "[emotional, voice trembling]",
+    "playful": "[playfully]"
   }
 }

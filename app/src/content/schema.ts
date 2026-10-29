@@ -107,6 +107,7 @@ const Listening = z.object({
   type: z.literal('listening'),
   speaker: Speaker,
   audio: z.string(),
+  delivery: z.string().optional(),
   ru: z.string().optional(),
   questions: z.array(Question).min(1),
 })
@@ -117,6 +118,7 @@ const Dictation = z.object({
   type: z.literal('dictation'),
   speaker: Speaker,
   audio: z.string(),
+  delivery: z.string().optional(),
   answers,
   tiles: z.array(z.string()).optional(),
 })
@@ -145,11 +147,19 @@ const Speak = z.object({
   text: z.string(),
   /** Whose voice reads the English sample aloud. */
   voice: Speaker.optional(),
+  delivery: z.string().optional(),
   answers,
 })
 
 /** A spoken line; `ru` is the translation behind the "Перевод" button. */
-const Line = z.object({ speaker: Speaker, text: z.string(), ru: z.string().optional(), expr: z.string().optional() })
+const Line = z.object({
+  speaker: Speaker,
+  text: z.string(),
+  ru: z.string().optional(),
+  expr: z.string().optional(),
+  /** Audio tags for the voice when the story context needs them: "[whispers]", "[out of breath]". See docs/14-voice.md. */
+  delivery: z.string().optional(),
+})
 
 /** T9: a line in a scene — pick an intent, then build the English reply. */
 const Scene = z.object({
