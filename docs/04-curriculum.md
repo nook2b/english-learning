@@ -1,5 +1,7 @@
 # Учебная программа
 
+> **Статус: архив версии 1.** Курс на 3 арки до B2 заменён путём B1 → C1 на 240 юнитов: [`07-learning-path.md`](07-learning-path.md). Таблица типичных ошибок, принципы работы с временами и типы упражнений T1–T10 перенесены в [`00-full-plan.md`](00-full-plan.md), раздел 4. Диагностика заменена опросом и мини-тестом.
+
 **Исходные данные**: уровень примерно B1 или ниже, главная проблема — времена. Отсюда три решения:
 
 - Начинаем **не с A1, а с диагностики**. Первая арка курса — «система времён» (A2+ → B1), дальше «уверенный B1» и B1+.
@@ -21,7 +23,7 @@
 | When I will come, I'll call you. | When I come, I'll call you. | После when, if, as soon as будущее выражается настоящим временем |
 | If I will have time... | If I have time... | То же |
 | I was go to school. | I went / I was going to school. | Смешение be + глагол |
-| When he came, I watched TV. | When he came, I was watching TV. | Длительный фон, прерванный событием → Past Continuous |
+| When he came, I watched TV. *(если имелся в виду фон)* | When he came, I was watching TV. | Длительный фон, прерванный событием → Past Continuous. Фраза с watched грамматична, но значит «пришёл, и после этого я стал смотреть» |
 | I am agree. / I am knowing. | I agree. / I know. | agree — глагол; глаголы состояния не ставятся в Continuous |
 | He don't like it. | He doesn't like it. | 3-е лицо в Present Simple |
 
