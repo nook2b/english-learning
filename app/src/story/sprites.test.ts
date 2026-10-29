@@ -1,4 +1,4 @@
-import { parseExpr, resolveSprite } from './sprites'
+import { SPRITES, TALK, parseExpr, resolveSprite } from './sprites'
 
 const fake = {
   'rei/base/stand/neutral': 'n.webp',
@@ -27,4 +27,9 @@ test('never switches outfit while the outfit has a sprite', () => {
 
 test('an undrawn outfit falls back to base', () => {
   expect(resolveSprite(parseExpr('rei', 'annoyed', 'winter'), fake)?.url).toBe('a.webp')
+})
+
+test('talk frames load as mouth patches and are not sprites of their own', () => {
+  expect(TALK['mika/base/stand/neutral']).toMatchObject({ x: expect.any(Number), y: expect.any(Number), w: expect.any(Number) })
+  expect(Object.keys(SPRITES).some((k) => k.includes('_talk'))).toBe(false)
 })

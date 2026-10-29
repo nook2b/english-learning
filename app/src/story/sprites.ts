@@ -5,10 +5,30 @@ import type { Speaker } from '../content/schema'
 
 const files = import.meta.glob<string>('../../../assets/characters/**/*.webp', { eager: true, query: '?url', import: 'default' })
 
+const entries = Object.entries(files).map(([path, url]) => [path.replace(/^.*assets\/characters\//, '').replace(/\.webp$/, ''), url] as const)
+
 /** "rei/base/recorder/smirk" → URL */
-export const SPRITES: Record<string, string> = Object.fromEntries(
-  Object.entries(files).map(([path, url]) => [path.replace(/^.*assets\/characters\//, '').replace(/\.webp$/, ''), url]),
+export const SPRITES: Record<string, string> = Object.fromEntries(entries.filter(([key]) => !key.includes('_talk@')))
+
+/** Mouth patch shown over a sprite while she speaks; position in the 1024×1536 sprite. */
+export interface TalkPatch {
+  url: string
+  x: number
+  y: number
+  w: number
+  h: number
+}
+
+/** "rei/base/recorder/smirk" → patch, from files named "smirk_talk@x,y,w,h.webp". */
+export const TALK: Record<string, TalkPatch> = Object.fromEntries(
+  entries.flatMap(([key, url]) => {
+    const m = /^(.*)_talk@(\d+),(\d+),(\d+),(\d+)$/.exec(key)
+    return m ? [[m[1]!, { url, x: +m[2]!, y: +m[3]!, w: +m[4]!, h: +m[5]! }]] : []
+  }),
 )
+
+export const SPRITE_W = 1024
+export const SPRITE_H = 1536
 
 export const HEROINE_IDS = ['mika', 'rei', 'iris'] as const
 export type HeroineId = (typeof HEROINE_IDS)[number]
