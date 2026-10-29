@@ -69,7 +69,7 @@ def main() -> int:
     if not args.unit:
         for path in sorted((ROOT / "content/characters").glob("*.json")):
             ch = json.loads(path.read_text())
-            for line in ch.get("lines", []):
+            for line in ch.get("lines", []) + ([ch["greeting"]] if "greeting" in ch else []):
                 out = ROOT / "assets/audio" / ch["id"] / f"{clip_key(ch['id'], line['text'])}.mp3"
                 if not out.exists():
                     todo[out] = (ch["id"], line["text"])

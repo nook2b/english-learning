@@ -410,3 +410,61 @@ backpack strap.
 ```
 
 Остальные второстепенные персонажи (сосед по общежитию, работница кафе, Элли и Ноа, владелец магазина пластинок, музейный координатор) описываются по этому же шаблону, когда до них дойдёт сюжет.
+
+
+---
+
+## 12. Кадры речи (`_talk`)
+
+Пока героиня говорит, приложение переключает её лицо между обычной эмоцией и кадром «рот открыт». Для озвученных файлов рот открывается по громкости голоса (простой липсинк), для браузерного голоса — по таймеру. Пока кадра нет, героиня только слегка покачивается.
+
+Нужен **один дополнительный кадр на каждую эмоцию**: то же самое изображение, у которого изменён только рот.
+
+### Правила
+
+- Имя файла: `{эмоция}_talk.png` в той же папке. Например, `rei/base/recorder/smirk_talk.png`.
+- Исходник — готовый спрайт этой эмоции, а не база позы. Глаза, брови, румянец и всё остальное должны совпадать попиксельно.
+- **Маска только на рот:** от кончика носа до подбородка, по ширине щёк. Глаза и брови в маску не попадают.
+- Если у эмоции рот закрыт или почти закрыт — в кадре он **приоткрыт на середине слова** (мягкая «а»/«э»). Если рот уже широко открыт (`laugh`, `excited`, `surprised`) — в кадре он **наполовину прикрыт**. Тогда при смене кадров губы двигаются в обе стороны.
+- Характер улыбки сохраняется: у `smirk` уголок рта остаётся приподнятым с одной стороны, у `forced_smile` улыбка остаётся натянутой, у `dry_smile` — сдержанной.
+- Амплитуда как в эмоциях: у Мики рот открыт заметнее, у Рэй и Айрис — меньше.
+
+### Промпт редактирования
+
+```
+Edit only the selected mouth area. Keep the same character, the same art style,
+line weight and colors, the same eyes, eyebrows, blush and head position
+[for Iris: the same round black glasses]. Do not change anything outside the
+selected area.
+The character is in the middle of speaking a word: mouth slightly open in a soft
+"ah" shape, the same emotion as before (<ЭМОЦИЯ>), teeth barely visible or not
+visible, natural for talking.
+```
+
+Для `laugh`, `excited`, `surprised` вместо второго абзаца:
+
+```
+The character is in the middle of speaking: the mouth is half closed compared to
+the original, the same emotion as before (<ЭМОЦИЯ>), natural for talking.
+```
+
+### Проверка
+
+- Наложить `_talk` на исходный кадр и переключить: двигается только рот.
+- Размер 1024 × 1536, прозрачный фон, без белой каймы.
+- На маленьком экране рот читается как открытый, но не как крик.
+
+### Список: арка 1
+
+Первая колонка — эмоции, в которых героини уже говорят в юните 001 и на своих страницах. Их стоит сделать первыми (18 кадров). Остальные понадобятся по мере новых сцен. Всего 51 кадр — по одному на каждый готовый спрайт.
+
+| Героиня | Папка | Сначала (уже говорят) | Потом |
+|---|---|---|---|
+| Мика | `mika/base/phone/` | `happy`, `thinking` | `embarrassed`, `focused`, `neutral` |
+| Мика | `mika/base/stand/` | `excited`, `happy`, `laugh`, `listening` | `annoyed`, `embarrassed`, `focused`, `forced_smile`, `neutral`, `pout`, `surprised`, `thinking` |
+| Рэй | `rei/base/recorder/` | `focused`, `happy`, `listening`, `neutral`, `smirk` | — |
+| Рэй | `rei/base/stand/` | `neutral`, `smirk` | `annoyed`, `deadpan`, `embarrassed`, `focused`, `guarded`, `happy`, `laugh`, `listening`, `surprised`, `thinking` |
+| Айрис | `iris/base/notebook/` | `dry_smile`, `focused` | `skeptical`, `surprised`, `thinking` |
+| Айрис | `iris/base/stand/` | `dry_smile`, `happy`, `neutral` | `annoyed`, `embarrassed`, `focused`, `guilty`, `laugh`, `listening`, `skeptical`, `surprised`, `thinking` |
+
+PNG можно присылать как есть: я переведу их в WebP и положу рядом со спрайтами. Приложение подхватит кадр само, код уже готов.

@@ -13,6 +13,8 @@ export const Character = z.object({
   facts: z.array(z.object({ unlock: Unlock, ru: z.string() })),
   memories: z.array(z.object({ unlock: Unlock, en: z.string(), ru: z.string() })),
   lines: z.array(z.object({ unlock: Unlock, text: z.string(), ru: z.string(), expr: z.string() })),
+  /** Shown on the path screen when she is the heroine of the day. */
+  greeting: z.object({ text: z.string(), ru: z.string(), expr: z.string() }),
   quests: z.array(z.object({ id: z.string(), title: z.string(), window: z.string(), change: z.string(), flag: z.string() })),
 })
 export type Character = z.infer<typeof Character>

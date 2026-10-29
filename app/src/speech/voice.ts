@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from 'react'
 import type { Speaker } from '../content/schema'
 import { clipUrl } from './clips'
+import { mouthPause, mouthStart, mouthStop } from './mouth'
 import { canSpeak, speak as synth } from './tts'
 
 // One voice at a time for the whole app: a recorded clip when there is one,
@@ -14,7 +15,10 @@ const listeners = new Set<() => void>()
 
 function set(next: VoiceState, id?: string) {
   state = next
-  if (next === 'idle') current = undefined
+  if (next === 'idle') {
+    current = undefined
+    mouthStop()
+  }
   else if (id && current) current.id = id
   listeners.forEach((l) => l())
 }
@@ -37,25 +41,34 @@ export function play(text: string, speaker: Speaker = 'narrator', slow = false) 
     audio.onended = () => current?.audio === audio && set('idle')
     current = { id, audio }
     void audio.play().catch(() => set('idle'))
+    mouthStart(speaker, audio)
   } else {
     if (!canSpeak()) return
     current = { id }
     synth(text, speaker, slow, () => current?.id === id && !current.audio && set('idle'))
+    mouthStart(speaker)
   }
   set('playing', id)
 }
 
 export function pause() {
   if (state !== 'playing') return
+  // A paused clip is silent, so its loudness analyser closes the mouth by itself.
   if (current?.audio) current.audio.pause()
-  else window.speechSynthesis.pause()
+  else {
+    window.speechSynthesis.pause()
+    mouthPause()
+  }
   set('paused')
 }
 
 export function resume() {
   if (state !== 'paused') return
   if (current?.audio) void current.audio.play()
-  else window.speechSynthesis.resume()
+  else if (current) {
+    window.speechSynthesis.resume()
+    mouthStart(current.id.split('|')[0]!)
+  }
   set('playing')
 }
 
