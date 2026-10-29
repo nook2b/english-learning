@@ -1,0 +1,1276 @@
+{
+  "id": "002",
+  "title": "Уточнить вопрос",
+  "goal": "Переспросить, попросить говорить медленнее, уточнить значение слова и задать простой вопрос.",
+  "focus": "Вопросы с do и does, вопросительные слова, фразы для переспроса.",
+  "outcome": "В аудиогиде появилась страница «Как переспросить» — по твоей идее. А Рэй впервые дала тебе подержать рекордер.",
+  "expressions": [
+    {
+      "en": "Could you speak more slowly",
+      "ru": "Можешь говорить медленнее"
+    },
+    {
+      "en": "What does",
+      "ru": "Что значит"
+    },
+    {
+      "en": "Do you mean",
+      "ru": "Ты имеешь в виду"
+    },
+    {
+      "en": "How do you spell that",
+      "ru": "Как это пишется"
+    },
+    {
+      "en": "I'm not sure I understand",
+      "ru": "Не уверен, что понимаю"
+    },
+    {
+      "en": "One more time",
+      "ru": "Ещё раз"
+    },
+    {
+      "en": "slowly",
+      "ru": "медленно"
+    },
+    {
+      "en": "difficult",
+      "ru": "трудный"
+    },
+    {
+      "en": "check",
+      "ru": "проверять"
+    },
+    {
+      "en": "understand",
+      "ru": "понимать"
+    }
+  ],
+  "glossary": [
+    {
+      "en": "interview",
+      "ru": "интервью"
+    },
+    {
+      "en": "interviews",
+      "ru": "интервью"
+    },
+    {
+      "en": "transport",
+      "ru": "транспорт"
+    },
+    {
+      "en": "campus",
+      "ru": "кампус"
+    },
+    {
+      "en": "levels",
+      "ru": "уровни громкости"
+    },
+    {
+      "en": "gain",
+      "ru": "чувствительность микрофона"
+    },
+    {
+      "en": "clipping",
+      "ru": "перегруз (звук «режется»)"
+    },
+    {
+      "en": "input",
+      "ru": "вход"
+    },
+    {
+      "en": "button",
+      "ru": "кнопка"
+    },
+    {
+      "en": "loud",
+      "ru": "громкий"
+    },
+    {
+      "en": "wind",
+      "ru": "ветер"
+    },
+    {
+      "en": "Respect",
+      "ru": "уважаю"
+    },
+    {
+      "en": "nod",
+      "ru": "кивать"
+    },
+    {
+      "en": "interviewer",
+      "ru": "интервьюер"
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Вопросы для новичков",
+      "intro": "Это список вопросов, который Айрис подготовила для интервью. Прочитай и ответь. Подчёркнутые слова можно нажать.",
+      "frame": {
+        "setting": "Комната 17. Айрис кладёт перед тобой распечатку.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "These are the questions for today's interviews. Can you read them first?",
+            "ru": "Это вопросы для сегодняшних интервью. Можешь сначала их прочитать?",
+            "expr": "notebook/focused"
+          },
+          {
+            "speaker": "iris",
+            "text": "If a question isn't clear to you, it won't be clear to them.",
+            "ru": "Если вопрос непонятен тебе, он будет непонятен и им.",
+            "expr": "dry_smile"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Good. Two of these questions are too long. I'll fix them.",
+          "ru": "Хорошо. Два вопроса слишком длинные. Я их исправлю.",
+          "expr": "notebook/skeptical"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u002-s1-e1",
+          "type": "reading",
+          "title": "Interview questions for new students",
+          "text": "1. Where are you from?\n2. What do you study here?\n3. How do you usually get to the academy?\n4. What is the most difficult thing about your first week?\n5. Who do you ask when you don't understand something?\n6. What does \"home\" mean to you in a new city?\nNote for the team: speak slowly, and always check that the student understands the question.",
+          "ru": "1. Откуда ты? 2. Что ты здесь изучаешь? 3. Как ты обычно добираешься до академии? 4. Что самое трудное в твоей первой неделе? 5. К кому ты обращаешься, когда что-то не понимаешь? 6. Что для тебя значит «дом» в новом городе? Заметка для команды: говорите медленно и всегда проверяйте, понял ли студент вопрос.",
+          "questions": [
+            {
+              "prompt": "Which question is about transport?",
+              "options": [
+                "Question 3",
+                "Question 1",
+                "Question 6"
+              ],
+              "answer": "Question 3"
+            },
+            {
+              "prompt": "Which question asks for help strategies?",
+              "options": [
+                "Question 5",
+                "Question 2",
+                "Question 4"
+              ],
+              "answer": "Question 5"
+            },
+            {
+              "prompt": "What does the note ask the team to do?",
+              "options": [
+                "Speak slowly and check understanding",
+                "Ask only short questions",
+                "Record every answer twice"
+              ],
+              "answer": "Speak slowly and check understanding"
+            }
+          ],
+          "tags": [
+            "reading",
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u002-s1-e2",
+          "type": "choice",
+          "prompt": "How ___ you usually get to the academy?",
+          "options": [
+            "do",
+            "are",
+            "does"
+          ],
+          "answer": "do",
+          "explain": "Get — обычный глагол, you → do.",
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u002-s1-e3",
+          "type": "choice",
+          "prompt": "What ___ \"home\" mean to you?",
+          "options": [
+            "does",
+            "do",
+            "is"
+          ],
+          "answer": "does",
+          "explain": "\"Home\" — это «оно», обычный глагол → does.",
+          "tags": [
+            "questions_do",
+            "third_person"
+          ]
+        },
+        {
+          "id": "u002-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "difficult",
+              "ru": "трудный"
+            },
+            {
+              "en": "usually",
+              "ru": "обычно"
+            },
+            {
+              "en": "understand",
+              "ru": "понимать"
+            },
+            {
+              "en": "check",
+              "ru": "проверять"
+            },
+            {
+              "en": "slowly",
+              "ru": "медленно"
+            }
+          ],
+          "tags": [
+            "vocab_u002"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Слишком быстро",
+      "intro": "Мика говорит очень быстро. Слушай, замедляй, переслушивай. Текст появится после ответов.",
+      "frame": {
+        "setting": "Двор академии. Мика уже держит микрофон.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Okay, quick test before the real interviews! I'll ask you, you tell me if it's too fast.",
+            "ru": "Так, быстрая проверка перед настоящими интервью! Я спрашиваю — ты говоришь, если слишком быстро.",
+            "expr": "excited"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "You asked her to slow down. Nobody ever does that. Respect.",
+          "ru": "Ты попросил её говорить медленнее. Никто так не делает. Уважаю.",
+          "expr": "smirk"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u002-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "delivery": "[fast, excited, talking quickly]",
+          "audio": "Hi, welcome to the academy! So, where are you from, what do you study, and how do you like the campus so far? Oh, and do you live in the East Dorm or somewhere in town?",
+          "ru": "Привет, добро пожаловать в академию! Итак, откуда ты, что изучаешь и как тебе пока кампус? Ой, и ты живёшь в Восточном общежитии или где-то в городе?",
+          "questions": [
+            {
+              "prompt": "How many questions does Mika ask?",
+              "options": [
+                "Four",
+                "Two",
+                "One"
+              ],
+              "answer": "Four"
+            },
+            {
+              "prompt": "What does she ask at the end?",
+              "options": [
+                "Where you live",
+                "What time it is",
+                "Who your teacher is"
+              ],
+              "answer": "Where you live"
+            }
+          ],
+          "tags": [
+            "listening",
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u002-s2-e2",
+          "type": "listening",
+          "speaker": "rei",
+          "delivery": "[flat, matter-of-fact]",
+          "audio": "Before you speak, check the levels. If the green light jumps to red, you're too loud. Then turn the gain down. Gain means how much the microphone hears.",
+          "ru": "Перед тем как говорить, проверь уровни. Если зелёный индикатор прыгает в красный — ты слишком громко. Тогда убавь gain. Gain — это то, сколько слышит микрофон.",
+          "questions": [
+            {
+              "prompt": "What does red light mean?",
+              "options": [
+                "You're too loud",
+                "The recording is finished",
+                "The battery is low"
+              ],
+              "answer": "You're too loud"
+            },
+            {
+              "prompt": "What does \"gain\" mean, according to Rei?",
+              "options": [
+                "How much the microphone hears",
+                "How long the recording is",
+                "How fast you speak"
+              ],
+              "answer": "How much the microphone hears"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s2-e3",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "Could you speak more slowly?",
+          "answers": [
+            "Could you speak more slowly?"
+          ],
+          "tiles": [
+            "Could",
+            "you",
+            "speak",
+            "more",
+            "slowly?",
+            "slow",
+            "can"
+          ],
+          "tags": [
+            "dictation",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s2-e4",
+          "type": "dictation",
+          "speaker": "rei",
+          "delivery": "[deadpan]",
+          "audio": "Gain means how much the microphone hears.",
+          "answers": [
+            "Gain means how much the microphone hears."
+          ],
+          "tags": [
+            "dictation"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Вопросы с do и does",
+      "intro": "В вопросе с обычным глаголом нужен помощник: do (I, you, we, they) или does (he, she, it). После does глагол без -s: Does she live here? — не Does she lives. С вопросительным словом порядок тот же: Where do you live? What does it mean?",
+      "frame": {
+        "setting": "Мика переписывает свои вопросы на карточки.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "I want my questions to sound right. Help me with do and does?",
+            "ru": "Хочу, чтобы мои вопросы звучали правильно. Поможешь с do и does?",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Perfect! Now I sound like I know what I'm doing.",
+          "ru": "Идеально! Теперь звучу так, будто знаю, что делаю.",
+          "expr": "phone/happy"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u002-s3-e1",
+          "type": "choice",
+          "prompt": "___ she live in the East Dorm?",
+          "options": [
+            "Does",
+            "Do",
+            "Is"
+          ],
+          "answer": "Does",
+          "explain": "She → does.",
+          "tags": [
+            "questions_do",
+            "third_person"
+          ],
+          "context": "Карточка Мики"
+        },
+        {
+          "id": "u002-s3-e2",
+          "type": "choice",
+          "prompt": "Where ___ they usually have lunch?",
+          "options": [
+            "do",
+            "does",
+            "are"
+          ],
+          "answer": "do",
+          "explain": "They → do.",
+          "tags": [
+            "questions_do"
+          ],
+          "context": "Карточка Мики"
+        },
+        {
+          "id": "u002-s3-e3",
+          "type": "choice",
+          "prompt": "Does Rei ___ music?",
+          "options": [
+            "like",
+            "likes",
+            "liking"
+          ],
+          "answer": "like",
+          "explain": "После does глагол без -s.",
+          "tags": [
+            "questions_do",
+            "third_person"
+          ],
+          "context": "Карточка Мики"
+        },
+        {
+          "id": "u002-s3-e4",
+          "type": "choice",
+          "prompt": "What ___ this word mean?",
+          "options": [
+            "does",
+            "do",
+            "is"
+          ],
+          "answer": "does",
+          "explain": "This word — «оно» → does.",
+          "tags": [
+            "questions_do"
+          ],
+          "context": "Карточка Мики"
+        },
+        {
+          "id": "u002-s3-e5",
+          "type": "fill",
+          "prompt": "How often ___ you call your family?",
+          "hint": "do / does",
+          "answers": [
+            "do"
+          ],
+          "tags": [
+            "questions_do"
+          ],
+          "context": "Карточка Мики"
+        },
+        {
+          "id": "u002-s3-e6",
+          "type": "fill",
+          "prompt": "When ___ the library close?",
+          "hint": "do / does",
+          "answers": [
+            "does"
+          ],
+          "explain": "The library — «оно» → does.",
+          "tags": [
+            "questions_do"
+          ],
+          "context": "Карточка Мики"
+        },
+        {
+          "id": "u002-s3-e7",
+          "type": "transform",
+          "instruction": "Сделай вопрос",
+          "sentence": "Iris works in the library.",
+          "answers": [
+            "Does Iris work in the library?"
+          ],
+          "explain": "Does + подлежащее + глагол без -s.",
+          "tags": [
+            "questions_do",
+            "third_person"
+          ],
+          "context": "Карточка Мики"
+        },
+        {
+          "id": "u002-s3-e8",
+          "type": "transform",
+          "instruction": "Спроси, где они живут, начиная с Where",
+          "sentence": "They live in the city.",
+          "answers": [
+            "Where do they live?"
+          ],
+          "tags": [
+            "questions_do",
+            "word_order"
+          ],
+          "context": "Карточка Мики"
+        },
+        {
+          "id": "u002-s3-e9",
+          "type": "fix",
+          "sentence": "Does she lives here?",
+          "answers": [
+            "Does she live here?"
+          ],
+          "explain": "После does — live без -s.",
+          "tags": [
+            "questions_do",
+            "third_person"
+          ],
+          "context": "Карточка Мики — что не так?"
+        },
+        {
+          "id": "u002-s3-e10",
+          "type": "fix",
+          "sentence": "What means this word?",
+          "answers": [
+            "What does this word mean?"
+          ],
+          "explain": "Нужен does: What does this word mean?",
+          "tags": [
+            "questions_do",
+            "word_order"
+          ],
+          "context": "Карточка Мики — что не так?"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Как переспросить",
+      "intro": "Переспрашивать — нормально. Полезные фразы: Could you speak more slowly? — Можешь говорить медленнее? What does \"gain\" mean? — Что значит «gain»? Do you mean this button? — Ты имеешь в виду эту кнопку? How do you spell that? — Как это пишется?",
+      "frame": {
+        "setting": "Рэй показывает тебе рекордер. Слов много, и все технические.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Gain, levels, input, clipping. Questions?",
+            "ru": "Gain, уровни, вход, клиппинг. Вопросы?",
+            "expr": "recorder/neutral"
+          },
+          {
+            "speaker": "rei",
+            "text": "You can ask. I don't bite. Usually.",
+            "ru": "Можешь спрашивать. Я не кусаюсь. Обычно.",
+            "expr": "smirk"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Good questions. Most people just nod.",
+          "ru": "Хорошие вопросы. Большинство просто кивает.",
+          "expr": "recorder/happy"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u002-s4-e1",
+          "type": "choice",
+          "prompt": "Sorry, could you speak more ___?",
+          "options": [
+            "slowly",
+            "slow",
+            "slower"
+          ],
+          "answer": "slowly",
+          "explain": "Speak как? — slowly (наречие).",
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s4-e2",
+          "type": "choice",
+          "prompt": "What does \"clipping\" ___?",
+          "options": [
+            "mean",
+            "means",
+            "meaning"
+          ],
+          "answer": "mean",
+          "explain": "После does глагол без -s.",
+          "tags": [
+            "function_clarify",
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u002-s4-e3",
+          "type": "choice",
+          "prompt": "Do you ___ this button?",
+          "options": [
+            "mean",
+            "say",
+            "tell"
+          ],
+          "answer": "mean",
+          "explain": "Do you mean…? — «Ты имеешь в виду…?»",
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s4-e4",
+          "type": "choice",
+          "prompt": "How do you ___ that?",
+          "options": [
+            "spell",
+            "write",
+            "say"
+          ],
+          "answer": "spell",
+          "explain": "How do you spell that? — «Как это пишется (по буквам)?»",
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s4-e5",
+          "type": "sort",
+          "instruction": "Какая фраза для чего?",
+          "categories": [
+            {
+              "id": "repeat",
+              "label": "Повторить"
+            },
+            {
+              "id": "meaning",
+              "label": "Значение"
+            }
+          ],
+          "items": [
+            {
+              "text": "Could you say that again?",
+              "category": "repeat"
+            },
+            {
+              "text": "What does it mean?",
+              "category": "meaning"
+            },
+            {
+              "text": "Sorry, I didn't catch that.",
+              "category": "repeat"
+            },
+            {
+              "text": "What do you mean by \"input\"?",
+              "category": "meaning"
+            },
+            {
+              "text": "One more time, please.",
+              "category": "repeat"
+            }
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s4-e6",
+          "type": "fix",
+          "sentence": "What does mean \"gain\"?",
+          "answers": [
+            "What does \"gain\" mean?",
+            "What does gain mean?"
+          ],
+          "explain": "Порядок: What does + слово + mean?",
+          "tags": [
+            "function_clarify",
+            "word_order"
+          ]
+        },
+        {
+          "id": "u002-s4-e7",
+          "type": "fix",
+          "sentence": "Could you speak more slow?",
+          "answers": [
+            "Could you speak more slowly?"
+          ],
+          "explain": "Speak slowly — наречие с -ly.",
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s4-e8",
+          "type": "transform",
+          "instruction": "Попроси уточнить слово «levels»",
+          "sentence": "I don't understand \"levels\".",
+          "answers": [
+            "What does \"levels\" mean?",
+            "What do you mean by \"levels\"?",
+            "What does levels mean?",
+            "What do you mean by levels?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Свои вопросы",
+      "intro": "Собирай фразы из плиток или пиши сам. Сокращения засчитываются.",
+      "frame": {
+        "setting": "Мика репетирует интервью и просит тебя быть интервьюером.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "You ask, I answer. And you can stop me if I'm too fast.",
+            "ru": "Ты спрашиваешь, я отвечаю. И можешь остановить меня, если я слишком быстро.",
+            "expr": "happy"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "You're a good interviewer. Maybe better than me. Don't tell anyone.",
+          "ru": "Ты хороший интервьюер. Может, лучше меня. Никому не говори.",
+          "expr": "embarrassed"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u002-s5-e1",
+          "type": "translate",
+          "ru": "Можешь говорить медленнее?",
+          "answers": [
+            "Could you speak more slowly?",
+            "Can you speak more slowly?"
+          ],
+          "tiles": [
+            "Could",
+            "you",
+            "speak",
+            "more",
+            "slowly?",
+            "slow",
+            "much"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s5-e2",
+          "type": "translate",
+          "ru": "Что значит это слово?",
+          "answers": [
+            "What does this word mean?"
+          ],
+          "tiles": [
+            "What",
+            "does",
+            "this",
+            "word",
+            "mean?",
+            "means",
+            "do"
+          ],
+          "tags": [
+            "function_clarify",
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u002-s5-e3",
+          "type": "translate",
+          "ru": "Ты имеешь в виду эту кнопку?",
+          "answers": [
+            "Do you mean this button?"
+          ],
+          "tiles": [
+            "Do",
+            "you",
+            "mean",
+            "this",
+            "button?",
+            "means",
+            "say"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s5-e4",
+          "type": "translate",
+          "ru": "Где ты обычно обедаешь?",
+          "answers": [
+            "Where do you usually have lunch?",
+            "Where do you usually eat lunch?"
+          ],
+          "explain": "Usually стоит перед глаголом: do you usually have.",
+          "tags": [
+            "questions_do",
+            "word_order"
+          ]
+        },
+        {
+          "id": "u002-s5-e5",
+          "type": "translate",
+          "ru": "Она живёт в общежитии?",
+          "answers": [
+            "Does she live in the dorm?",
+            "Does she live in a dorm?"
+          ],
+          "tags": [
+            "questions_do",
+            "third_person"
+          ]
+        },
+        {
+          "id": "u002-s5-e6",
+          "type": "write",
+          "situation": "Рэй сказала слово «clipping», и ты его не знаешь. Спроси, что оно значит.",
+          "answers": [
+            "What does \"clipping\" mean?",
+            "What does clipping mean?",
+            "What do you mean by \"clipping\"?",
+            "What do you mean by clipping?",
+            "Sorry, what does clipping mean?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s5-e7",
+          "type": "write",
+          "situation": "Мика говорит слишком быстро. Попроси её говорить медленнее.",
+          "answers": [
+            "Could you speak more slowly?",
+            "Can you speak more slowly?",
+            "Could you speak more slowly, please?",
+            "Please speak more slowly.",
+            "Sorry, could you speak more slowly?",
+            "Slower, please."
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом",
+      "intro": "Скажи фразы в микрофон. Если сейчас неудобно — «Сейчас не могу говорить».",
+      "frame": {
+        "setting": "Рэй протягивает тебе микрофон.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Ask your questions to the mic. Clear and slow.",
+            "ru": "Задай свои вопросы микрофону. Чётко и медленно.",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Clean recording. No clipping.",
+          "ru": "Чистая запись. Без клиппинга.",
+          "expr": "recorder/smirk"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u002-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Could you speak more slowly?",
+          "answers": [
+            "Could you speak more slowly?"
+          ],
+          "tags": [
+            "speaking",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "What does this word mean?",
+          "answers": [
+            "What does this word mean?"
+          ],
+          "tags": [
+            "speaking"
+          ]
+        },
+        {
+          "id": "u002-s6-e3",
+          "type": "speak",
+          "show": "ru",
+          "text": "Ты имеешь в виду эту кнопку?",
+          "answers": [
+            "Do you mean this button?"
+          ],
+          "tags": [
+            "speaking",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s6-e4",
+          "type": "speak",
+          "show": "ru",
+          "text": "Где ты живёшь?",
+          "answers": [
+            "Where do you live?"
+          ],
+          "tags": [
+            "speaking",
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u002-s6-e5",
+          "type": "speak",
+          "show": "ru",
+          "text": "Как это пишется?",
+          "answers": [
+            "How do you spell that?",
+            "How do you spell it?"
+          ],
+          "tags": [
+            "speaking",
+            "function_clarify"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг",
+      "intro": "Всё знакомое — отвечай в своём темпе.",
+      "frame": {
+        "setting": "Перерыв во дворе. Айрис проверяет, что ты запомнил.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Five minutes, then the real interviews. Quick check?",
+            "ru": "Пять минут — и настоящие интервью. Быстрая проверка?",
+            "expr": "dry_smile"
+          }
+        ]
+      },
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "You're ready. More ready than Mika, honestly.",
+          "ru": "Ты готов. Честно говоря, готовее Мики.",
+          "expr": "dry_smile"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u002-s7-e1",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "Could you speak more slowly?",
+              "ru": "Можешь говорить медленнее?"
+            },
+            {
+              "en": "What does it mean?",
+              "ru": "Что это значит?"
+            },
+            {
+              "en": "Do you mean…?",
+              "ru": "Ты имеешь в виду…?"
+            },
+            {
+              "en": "How do you spell that?",
+              "ru": "Как это пишется?"
+            }
+          ],
+          "tags": [
+            "vocab_u002"
+          ]
+        },
+        {
+          "id": "u002-s7-e2",
+          "type": "choice",
+          "prompt": "___ Mika talk fast?",
+          "options": [
+            "Does",
+            "Do",
+            "Is"
+          ],
+          "answer": "Does",
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u002-s7-e3",
+          "type": "choice",
+          "prompt": "I ___ understand the question.",
+          "options": [
+            "don't",
+            "doesn't",
+            "am not"
+          ],
+          "answer": "don't",
+          "explain": "I → don't.",
+          "tags": [
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u002-s7-e4",
+          "type": "fill",
+          "prompt": "What ___ you mean?",
+          "hint": "do / does",
+          "answers": [
+            "do"
+          ],
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u002-s7-e5",
+          "type": "fill",
+          "prompt": "___ this bus go to the city?",
+          "hint": "do / does",
+          "answers": [
+            "Does",
+            "does"
+          ],
+          "tags": [
+            "questions_do"
+          ]
+        },
+        {
+          "id": "u002-s7-e6",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "How do you spell your name?",
+          "answers": [
+            "How do you spell your name?"
+          ],
+          "tiles": [
+            "How",
+            "do",
+            "you",
+            "spell",
+            "your",
+            "name?",
+            "does",
+            "write"
+          ],
+          "tags": [
+            "dictation"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: настоящее интервью",
+      "intro": "Первое настоящее интервью для гида. Мика спрашивает, ты помогаешь новичку понять вопрос. И не забывай переспрашивать сам.",
+      "exercises": [
+        {
+          "id": "u002-s8-e1",
+          "type": "scene",
+          "setting": "Двор. Рэй держит рекордер, Мика — список вопросов.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Before we start. Is your gain at eight or at ten?",
+              "ru": "Перед началом. У тебя gain на восьми или на десяти?",
+              "expr": "recorder/neutral"
+            },
+            {
+              "speaker": "rei",
+              "text": "…You don't know what gain is, do you?",
+              "ru": "…Ты ведь не знаешь, что такое gain?",
+              "expr": "recorder/smirk"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Честно спросить, что значит gain",
+              "answers": [
+                "What does \"gain\" mean?",
+                "What does gain mean?",
+                "Sorry, what does gain mean?",
+                "What do you mean by gain?"
+              ],
+              "tiles": [
+                "What",
+                "does",
+                "gain",
+                "mean?",
+                "means",
+                "do"
+              ],
+              "flag": "u002_asked_gain",
+              "reaction": {
+                "speaker": "rei",
+                "text": "How much the mic hears. Here, hold it. You're on eight.",
+                "ru": "Сколько слышит микрофон. Держи. У тебя восемь.",
+                "expr": "recorder/happy"
+              }
+            },
+            {
+              "label": "Уточнить, про какую кнопку она говорит",
+              "answers": [
+                "Do you mean this button?",
+                "Do you mean this one?"
+              ],
+              "tiles": [
+                "Do",
+                "you",
+                "mean",
+                "this",
+                "button?",
+                "means",
+                "say"
+              ],
+              "flag": "u002_asked_button",
+              "reaction": {
+                "speaker": "rei",
+                "text": "That one. Turn it slowly. Good. You can hold it today.",
+                "ru": "Эту. Крути медленно. Хорошо. Сегодня можешь подержать его ты.",
+                "expr": "recorder/happy"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Say it again? The wind is loud.",
+            "ru": "Повтори? Ветер громкий.",
+            "expr": "recorder/listening"
+          },
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u002-s8-e2",
+          "type": "scene",
+          "setting": "К вам подходит новичок с картой. Мика начинает интервью — очень быстро.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "Hi! Welcome! Where-are-you-from-what-do-you-study-and-do-you-like-it-here?",
+              "ru": "Привет! Добро пожаловать! Откуда-ты-что-изучаешь-и-тебе-здесь-нравится?",
+              "expr": "excited",
+              "delivery": "[very fast, excited, all in one breath]"
+            },
+            {
+              "speaker": "newcomer",
+              "text": "Sorry… what?",
+              "ru": "Извините… что?"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Попросить Мику говорить медленнее",
+              "answers": [
+                "Could you speak more slowly?",
+                "Mika, could you speak more slowly?",
+                "Can you speak more slowly?",
+                "Mika, slower, please."
+              ],
+              "tiles": [
+                "Could",
+                "you",
+                "speak",
+                "more",
+                "slowly?",
+                "slow",
+                "much"
+              ],
+              "flag": "u002_slowed_mika",
+              "reaction": {
+                "speaker": "mika",
+                "text": "Oops. Sorry! Okay. Where… are… you… from?",
+                "ru": "Ой. Прости! Так. Откуда… ты?",
+                "expr": "embarrassed"
+              }
+            },
+            {
+              "label": "Помочь новичку: задать один простой вопрос",
+              "answers": [
+                "Where are you from?",
+                "Hi, where are you from?"
+              ],
+              "tiles": [
+                "Where",
+                "are",
+                "you",
+                "from?",
+                "do",
+                "is"
+              ],
+              "flag": "u002_helped_newcomer",
+              "reaction": {
+                "speaker": "mika",
+                "text": "Yes! One question at a time. Why didn't I think of that?",
+                "ru": "Да! По одному вопросу. Почему я сама не догадалась?",
+                "expr": "laugh"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Sorry? One more time?",
+            "ru": "Что? Ещё раз?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_clarify",
+            "questions_be"
+          ]
+        },
+        {
+          "id": "u002-s8-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Sorry, could you speak more slowly?",
+          "answers": [
+            "Sorry, could you speak more slowly?",
+            "Could you speak more slowly?"
+          ],
+          "context": "Фраза для гида: как переспросить",
+          "tags": [
+            "speaking"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "First real interview! And nobody ran away.",
+          "ru": "Первое настоящее интервью! И никто не сбежал.",
+          "expr": "happy"
+        },
+        {
+          "speaker": "iris",
+          "text": "I'm adding a page to the guide: \"How to ask again\". Your idea.",
+          "ru": "Добавляю в гид страницу «Как переспросить». Твоя идея.",
+          "expr": "dry_smile"
+        }
+      ]
+    }
+  ]
+}
