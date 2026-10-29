@@ -8,12 +8,18 @@ const base = process.env.BASE_PATH ?? '/'
 
 export default defineConfig({
   base,
+  define: {
+    // Shown in the profile, so it is easy to tell which build a phone runs.
+    __BUILD__: JSON.stringify(new Date().toISOString().slice(0, 16).replace('T', ' ')),
+  },
   // Course content lives in /content, outside the app folder.
   server: { fs: { allow: ['..'] } },
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      // Registered in src/app/updates.ts, which also reloads onto a new build.
+      injectRegister: false,
       includeAssets: ['icon.svg'],
       workbox: {
         // Sprites are large; cache them as they are first shown instead of precaching all.

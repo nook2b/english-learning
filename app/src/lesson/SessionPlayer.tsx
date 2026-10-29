@@ -10,8 +10,33 @@ import { castAt } from '../story/cast'
 import { isHeroine } from '../story/sprites'
 import { Beat, Stage } from '../story/Stage'
 import { ExerciseView, SceneLines } from './ExerciseView'
+import { wordDiff } from './diff'
 import { GlossaryContext } from './glossary'
 import { type Outcome, mistakeText, toSteps } from './model'
+
+/** Tasks with a typed or spoken sentence, where a word-by-word comparison helps. */
+const TYPED = new Set(['fill', 'translate', 'fix', 'transform', 'write', 'dictation', 'scene', 'speak'])
+
+/** The right answer with the needed words highlighted, and the learner's answer with wrong words struck out. */
+function AnswerDiff({ given, expected }: { given: string; expected: string }) {
+  const d = wordDiff(given, expected)
+  const words = (ws: typeof d.given, cls: string) =>
+    ws.map((w, k) => (
+      <span key={k}>
+        {k > 0 && ' '}
+        <span className={w.changed ? cls : undefined}>{w.text}</span>
+      </span>
+    ))
+  return (
+    <>
+      <p lang="en">{words(d.expected, 'diff-need')}</p>
+      <p className="muted" lang="en">
+        Твой ответ: {words(d.given, 'diff-wrong')}
+      </p>
+      {d.given.every((w) => !w.changed) && d.expected.every((w) => !w.changed) && <p className="muted">Слова те же — проверь порядок.</p>}
+    </>
+  )
+}
 
 const KIND_LABELS = { comprehension: 'Понимание', form: 'Форма', production: 'Продукция', fluency: 'Беглость и миссия' } as const
 
@@ -152,8 +177,14 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
             {outcome.correct === null && <p className="verdict">Пропущено, вернёмся к этому позже</p>}
             {outcome.correct === false && (
               <LearnPanel title="Правильно так">
-                <p lang="en">{outcome.expected}</p>
-                {outcome.given && <p className="muted">Твой ответ: {outcome.given}</p>}
+                {outcome.given && TYPED.has(step.exercise.type) ? (
+                  <AnswerDiff given={outcome.given} expected={outcome.expected} />
+                ) : (
+                  <>
+                    <p lang="en">{outcome.expected}</p>
+                    {outcome.given && <p className="muted">Твой ответ: {outcome.given}</p>}
+                  </>
+                )}
                 {step.exercise.explain && <p>{step.exercise.explain}</p>}
               </LearnPanel>
             )}
