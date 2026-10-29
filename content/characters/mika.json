@@ -93,5 +93,10 @@
       "change": "Делегирует и остаётся рядом без роли организатора",
       "flag": "mik06_handover_done"
     }
-  ]
+  ],
+  "greeting": {
+    "text": "Morning! Room 17 is open. Shall we start?",
+    "ru": "Доброе утро! Комната 17 открыта. Начнём?",
+    "expr": "happy"
+  }
 }

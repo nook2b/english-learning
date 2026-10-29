@@ -10,7 +10,7 @@ test('all three heroines have a page with six personal quests', () => {
 })
 
 test('chat lines use drawn sprites', () => {
-  for (const c of all) for (const l of c.lines) expect(resolveSprite(parseExpr(c.id, l.expr))?.exact).toBe(true)
+  for (const c of all) for (const l of [...c.lines, c.greeting]) expect(resolveSprite(parseExpr(c.id, l.expr))?.exact).toBe(true)
 })
 
 test('unlocks point at existing units and scene flags', () => {
