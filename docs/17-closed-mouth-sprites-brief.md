@@ -1,4 +1,4 @@
-# English Club — бриф: спрайты с закрытым ртом и кадры речи к ним
+# English Club — бриф: Мика заново, спрайты с закрытым ртом и кадры речи
 
 Версия 1 · 29.10.2026. Заменяет [`16-talk-frames-redo-brief.md`](16-talk-frames-redo-brief.md). Общие требования к спрайтам — в [`11-sprite-brief.md`](11-sprite-brief.md).
 
@@ -6,11 +6,13 @@
 
 Во время речи приложение накладывает на лицо кадр «рот открыт». Если у основной эмоции рот уже открыт (широкая улыбка, смех, «о»), контраста нет: при речи одна открытая улыбка меняется на другую, и это выглядит странно.
 
-**Новое правило для всех героинь:**
+**Новое правило:**
 - **спрайт эмоции — рот закрыт** или губы едва разомкнуты: без зубов и без языка;
 - **открытый рот бывает только в кадре речи** `_talk`.
 
 Эмоцию передают глаза, брови, щёки и форма губ, а не открытый рот. Смех — закрытая улыбка с зажмуренными глазами, удивление — круглые глаза и поднятые брови с сомкнутыми губами.
+
+Переделываем **только Мику**: у неё открытый рот в 8 из 17 спрайтов, включая основные `happy` и `excited`. Спрайты Рэй и Айрис не трогаем. Для новых спрайтов всех героинь в будущих арках действует то же правило.
 
 ## 2. Как не допустить деградации картинки
 
@@ -27,7 +29,7 @@
 - **Только PNG, без сжатия, на всех шагах.** Не брать файлы из приложения или репозитория (`.webp`): они уже сжаты с потерями.
 - **После каждой правки — склейка.** Из результата генерации берём только область маски и накладываем её на исходник этого шага. Всё вне маски должно совпадать с исходником попиксельно. Так вы делали в прошлых пакетах (база + маска через ImageMagick) — так и оставить.
 - **Не править результат правки.** Если эмоция не получилась, повторить с уровня 1, а не исправлять неудачный вариант. Если не получился кадр речи — повторить с уровня 2.
-- Маска эмоции — лицо от бровей до подбородка, без волос и очков. Маска кадра речи — только рот: от кончика носа до подбородка, по ширине щёк.
+- Маска эмоции — лицо от бровей до подбородка, без волос. Маска кадра речи — только рот: от кончика носа до подбородка, по ширине щёк.
 
 ## 3. Что делать
 
@@ -42,32 +44,7 @@
 
 И к каждой из 17 эмоций — кадр речи `{эмоция}_talk.png`.
 
-### Рэй — только лица с открытым ртом (3 спрайта + 3 кадра речи)
-
-Тело и позы не меняются. Исходник уровня 1 — **оригинальный PNG базы позы из первого пакета Рэй**: `rei/base/stand/neutral.png`.
-
-| Файл | Было | Станет |
-|---|---|---|
-| `rei/base/stand/laugh.png` | смех с открытым ртом | закрытый смешок, глаза зажмурены |
-| `rei/base/stand/surprised.png` | рот «о» | широкие глаза, губы сомкнуты |
-| `rei/base/stand/embarrassed.png` | видны зубы | неловкая сомкнутая улыбка |
-
-И к ним три новых `_talk`.
-
-### Айрис — только лица с открытым ртом (4 спрайта + 4 кадра речи)
-
-Исходники уровня 1 — **оригинальные PNG баз из первого пакета Айрис**: `iris/base/stand/neutral.png` и `iris/base/notebook/focused.png`.
-
-| Файл | Было | Станет |
-|---|---|---|
-| `iris/base/stand/laugh.png` | смех с открытым ртом | закрытый смешок, глаза зажмурены |
-| `iris/base/stand/surprised.png` | рот «о» | широкие глаза, губы сомкнуты |
-| `iris/base/notebook/surprised.png` | рот «о» | то же |
-| `iris/base/stand/guilty.png` | гримаса с зубами | виноватая сжатая улыбка |
-
-И к ним четыре новых `_talk`.
-
-**Итого:** 24 спрайта и 24 кадра речи.
+**Итого:** 17 спрайтов и 17 кадров речи Мики.
 
 ## 4. Промпты
 
@@ -112,9 +89,8 @@ Pose: standing, holding a smartphone in her right hand at chest height, screen t
 Общая часть:
 ```
 Edit only the selected face area. Keep the same character, the same art style,
-line weight and colors, the same hair, the same head position and angle
-[for Iris: the same round black glasses]. Do not change anything outside the
-selected area. The MOUTH STAYS CLOSED: lips together or barely parted, no teeth,
+line weight and colors, the same hair, the same head position and angle.
+Do not change anything outside the selected area. The MOUTH STAYS CLOSED: lips together or barely parted, no teeth,
 no tongue visible.
 New facial expression: <ЭМОЦИЯ>.
 ```
@@ -133,18 +109,16 @@ New facial expression: <ЭМОЦИЯ>.
 | `excited` | `excited, sparkling wide eyes, eyebrows raised, a big beaming smile with closed lips, cheeks raised` |
 | `pout` | `playful mock pout, cheeks slightly puffed, lips pushed forward and closed, eyebrows mock-offended` |
 | `forced_smile` | `forced cheerful smile: wide stretched smile with closed lips, tense eyes and strained eyebrows; the smile does not reach the eyes` |
-| `guilty` (Айрис) | `guilty, eyes looking down and away, eyebrows tilted up, lips pressed into an apologetic tight smile` |
 
-Амплитуда — в конец строки эмоции: Мика `Expressive and big, like an energetic person.`; Рэй `Understated and restrained, small movements of the face.`; Айрис `Composed and subtle.`
+В конец каждой строки эмоции добавить: `Expressive and big, like an energetic person.`
 
 ### 4.3. Кадр речи (уровень 3)
 
 Общая часть:
 ```
 Edit only the selected mouth area. Keep the same character, the same art style,
-line weight and colors, the same eyes, eyebrows, blush and head position
-[for Iris: the same round black glasses]. Do not change anything outside the
-selected area.
+line weight and colors, the same eyes, eyebrows, blush and head position.
+Do not change anything outside the selected area.
 The character is in the middle of speaking: <РОТ>.
 ```
 
@@ -168,8 +142,6 @@ The character is in the middle of speaking: <РОТ>.
 
 ## 6. Как прислать
 
-Один архив на героиню с той же структурой папок: `mika/base/stand/neutral.png`, `mika/base/stand/neutral_talk.png` и т. д.
-- **Мика:** вся папка `mika/` — 17 спрайтов и 17 кадров речи. Старые файлы Мики я удалю целиком.
-- **Рэй и Айрис:** только изменённые спрайты и их `_talk`. Остальное у них остаётся как есть.
+Один архив `mika/` с той же структурой папок: `mika/base/stand/neutral.png`, `mika/base/stand/neutral_talk.png` и т. д. — 17 спрайтов и 17 кадров речи.
 
-Я переведу спрайты в WebP, скриптом вырежу кадры речи как участки рта и подключу всё в приложение. Менять код не нужно.
+Старые файлы Мики я удалю целиком, переведу новые спрайты в WebP, скриптом вырежу кадры речи как участки рта и подключу всё в приложение. Менять код не нужно.
