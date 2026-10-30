@@ -276,3 +276,5 @@ main { flex: 1; padding: 12px 16px 88px; }
 }
 .route-prologue { position: static; --road: #e8590c; }
 .route-prologue-new { box-shadow: 0 0 0 2px color-mix(in srgb, var(--road) 35%, transparent); }
+.route-invite { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px; border-radius: 12px; border: 2px dashed var(--road, var(--border)); }
+.route-invite p { margin: 0; }

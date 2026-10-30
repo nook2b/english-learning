@@ -5,7 +5,7 @@ import { canRecognize, type ListenError, listen } from '../speech/recognition'
 import { hasVoice } from '../speech/voice'
 import { AudioControls, LineVoice } from '../speech/AudioControls'
 import { Button, DialogueBox } from '../ui/kit'
-import { checkTyped, matchesSpeech } from './check'
+import { checkTyped, matchesSpeech, checkWithName, NAME } from './check'
 import { Options, TextAnswer, TileAnswer } from './inputs'
 import { Gloss, Translation } from './Gloss'
 import { Timeline } from './Timeline'
@@ -323,11 +323,16 @@ export function SceneLines({ lines }: { lines: readonly Line[] }) {
 function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
   const [intent, setIntent] = useState<number>()
   const chosen = intent === undefined ? undefined : exercise.intents[intent]
+  const playerName = useClub((s) => s.settings.name)
+  const updateSettings = useClub((s) => s.updateSettings)
   const submit = (text: string) => {
     if (!chosen) return
-    const { correct: ok, spelling } = checkTyped(text, chosen.answers)
+    const { correct: ok, spelling, name } = checkWithName(text, chosen.answers)
+    // The player's name from the survey or the profile; one typed here is kept when there is none yet.
+    if (name && !playerName) void updateSettings({ name })
+    const expected = chosen.answers[0]!.replace(NAME, name || playerName || '…')
     // The story choice counts even after a language slip: the heroine clarifies and the scene goes on.
-    onAnswer({ correct: ok, spelling, given: text, expected: chosen.answers[0]!, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction], flag: chosen.flag })
+    onAnswer({ correct: ok, spelling, given: text, expected, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction], flag: chosen.flag })
   }
   return (
     <div className="exercise">
@@ -347,6 +352,11 @@ function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
       ) : (
         <>
           <p className="task">{chosen.label}. Скажи это по-английски</p>
+          {chosen.answers[0]!.includes(NAME) && (
+            <p className="muted">
+              Например: <span lang="en">{chosen.answers[0]!.replace(NAME, playerName || 'Alex')}</span>
+            </p>
+          )}
           {chosen.tiles ? (
             <TileAnswer tiles={chosen.tiles} seed={`${step.key}-${intent}`} locked={locked} onSubmit={submit} />
           ) : (

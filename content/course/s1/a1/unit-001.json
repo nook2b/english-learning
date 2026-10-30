@@ -3,7 +3,7 @@
   "title": "Представиться",
   "goal": "Представиться, сказать, откуда ты и чем занят сейчас, и не притворяться, что всё понял.",
   "focus": "Present Simple и Present Continuous, глаголы состояния, вопросы с do и be.",
-  "outcome": "Твоя строчка попала в аудиогид. На стене комнаты 17 появился листок «New voices» — и на нём твоё имя.",
+  "outcome": "Твоя строчка сохранена в рабочей сборке аудиогида. На стене комнаты 17 появился листок «New voices» — и на нём твоё имя. Это первый небольшой вклад, а не автоматическое вступление в постоянную редакцию.",
   "expressions": [
     "Nice to meet you",
     "I'm new here",
@@ -42,27 +42,18 @@
   "sessions": [
     {
       "kind": "comprehension",
-      "title": "Письмо академии",
+      "title": "Памятка первой недели",
       "intro": "Прочитай письмо и ответь на вопросы. Подчёркнутые слова можно нажать: появится перевод. Сплошной линией выделены выражения юнита.",
       "exercises": [
         {
           "id": "u001-s1-e1",
           "type": "reading",
           "title": "Welcome to Bellwether Academy",
-          "text": "Dear exchange student,\nThank you for your placement check! Your English group is B1. Your English classes are in Room 70, New Building. Please bring your student card.\nClasses start on Tuesday. Most exchange students live in the East Dorm. The dining hall opens at 7:30 every morning.\nThe International Office is open every day except Sunday. If you have a question, just ask us!\nBest wishes,\nInternational Office",
+          "text": "Dear exchange student,\nWelcome to Bellwether Academy! Your placement check is complete. Classes start on Tuesday. Your timetable is in the student app. Please bring your student card to class.\nMost exchange students live in the East Dorm. The dining hall opens at 7:30 every morning. The library has quiet places to study.\nThe International Office is open every day except Sunday. If you have a question, just ask us!\nBest wishes,\nInternational Office",
           "look": "letter",
           "header": "Bellwether Academy · International Office",
-          "ru": "Дорогой студент по обмену! Спасибо, что прошёл вступительную проверку! Твоя группа по английскому — B1. Занятия по английскому — в кабинете 70 нового корпуса. Возьми студенческий билет. Занятия начинаются во вторник. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел",
+          "ru": "Дорогой студент по обмену! Добро пожаловать в академию Bellwether! Твоя вступительная проверка завершена. Занятия начинаются во вторник. Расписание находится в студенческом приложении. Пожалуйста, возьми студенческий билет на занятия. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. В библиотеке есть тихие места для учёбы. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел",
           "questions": [
-            {
-              "prompt": "Where are your English classes?",
-              "options": [
-                "Room 70, New Building",
-                "Room 17, Old Building",
-                "Room 70, Old Building"
-              ],
-              "answer": "Room 70, New Building"
-            },
             {
               "prompt": "When do classes start?",
               "options": [
@@ -73,13 +64,22 @@
               "answer": "On Tuesday"
             },
             {
-              "prompt": "What do you need to bring?",
+              "prompt": "Where is your timetable?",
               "options": [
-                "Your passport and a photo",
-                "The letter and your student card",
-                "A pen and a notebook"
+                "In the student app",
+                "On the library door",
+                "In Room 17"
               ],
-              "answer": "The letter and your student card"
+              "answer": "In the student app"
+            },
+            {
+              "prompt": "What do you bring to class?",
+              "options": [
+                "Your student card",
+                "The welcome note",
+                "A recorder"
+              ],
+              "answer": "Your student card"
             },
             {
               "prompt": "When is the International Office closed?",
@@ -158,18 +158,18 @@
         }
       ],
       "frame": {
-        "setting": "После вступительной проверки. Ты возвращаешься в комнату 17, как тебя и звали. Айрис ждёт у двери с конвертом.",
+        "setting": "Понедельник, после проверки. Ты возвращаешься в комнату 17. Листок Айрис всё ещё у тебя; на телефоне открыта новая памятка международного отдела. Результат проверки остаётся личным — его не нужно показывать команде.",
         "lines": [
           {
-            "speaker": "iris",
-            "text": "You came back. Good. The International Office sent you a letter.",
-            "ru": "Ты вернулся. Хорошо. Международный отдел прислал тебе письмо.",
-            "expr": "dry_smile"
+            "speaker": "mika",
+            "text": "You're back! How was the check?",
+            "ru": "Ты вернулся! Как прошла проверка?",
+            "expr": "happy"
           },
           {
             "speaker": "iris",
-            "text": "Read it first. The important parts are short.",
-            "ru": "Сначала прочитай. Важное там короткое.",
+            "text": "You can tell us later. First, check the welcome note on your phone. The important parts are short.",
+            "ru": "Расскажешь потом. Сначала посмотри памятку на телефоне. Важное там короткое.",
             "expr": "dry_smile"
           }
         ]
@@ -177,11 +177,23 @@
       "wrap": [
         {
           "speaker": "iris",
-          "text": "So: Room 70 for classes, Room 17 for the guide. Don't mix them up again.",
-          "ru": "Итак: кабинет 70 — для занятий, комната 17 — для гида. Больше не путай.",
-          "expr": "dry_smile"
+          "text": "Classes start on Tuesday. Your timetable is in the app. That's what you need next.",
+          "ru": "Занятия начинаются во вторник. Расписание в приложении. Вот что тебе понадобится дальше.",
+          "expr": "neutral"
+        },
+        {
+          "speaker": "mika",
+          "text": "Can you listen to our guide and record one short line? Just a draft for us.",
+          "ru": "Послушаешь наш гид и запишешь одну короткую фразу? Пока только черновик для нас.",
+          "expr": "happy"
         }
-      ]
+      ],
+      "invite": {
+        "flag": "u001_guide_trial_accepted",
+        "text": "Мика зовёт послушать черновики гида и записать одну короткую фразу. Это пока черновик для команды.",
+        "accept": "Попробовать",
+        "later": "Позже"
+      }
     },
     {
       "kind": "comprehension",
@@ -234,8 +246,8 @@
           "id": "u001-s2-e2",
           "type": "listening",
           "speaker": "rei",
-          "audio": "Hi. I'm Rei. I record sound for the guide. I don't talk much when the microphone is on. And please, don't touch the cables.",
-          "ru": "Привет. Я Рэй. Я записываю звук для гида. Когда микрофон включён, я мало говорю. И пожалуйста, не трогай кабели.",
+          "audio": "I'm Rei. I record sound for the guide. I don't talk much when the microphone is on. And please, don't touch the cables.",
+          "ru": "Я Рэй. Я записываю звук для гида. Когда микрофон включён, я мало говорю. И пожалуйста, не трогай кабели.",
           "questions": [
             {
               "prompt": "What does Rei do for the guide?",
@@ -266,8 +278,8 @@
           "id": "u001-s2-e3",
           "type": "listening",
           "speaker": "iris",
-          "audio": "Hello, new students. I'm Iris. I write and check the texts for the guide. If something isn't clear, just ask me. I'm usually in the library after four.",
-          "ru": "Здравствуйте, новички. Я Айрис. Я пишу и проверяю тексты для гида. Если что-то непонятно, просто спроси меня. После четырёх я обычно в библиотеке.",
+          "audio": "Hello. I'm Iris. I write and check the texts for the guide. If something isn't clear, just ask me. I'm usually in the library after four.",
+          "ru": "Привет. Я Айрис. Я пишу и проверяю тексты для гида. Если что-то непонятно, просто спроси меня. После четырёх я обычно в библиотеке.",
           "questions": [
             {
               "prompt": "What does Iris do for the guide?",
@@ -335,12 +347,12 @@
         }
       ],
       "frame": {
-        "setting": "Комната 17. На столе рекордер и три телефона.",
+        "setting": "Комната 17. На столе рекордер и три телефона. Ты согласился помочь. Мика объясняет: сейчас прозвучат пробные представления команды будущим слушателям, а не новое знакомство.",
         "lines": [
           {
             "speaker": "mika",
-            "text": "We're testing our intros for the guide. Listen and tell me if we sound clear!",
-            "ru": "Мы проверяем наши представления для гида. Послушай и скажи, понятно ли звучим!",
+            "text": "These are our intros for new students. Listen and tell me if we're clear!",
+            "ru": "Это наши представления для новых студентов. Послушай и скажи, понятно ли мы говорим!",
             "expr": "excited"
           },
           {
@@ -1220,7 +1232,7 @@
         {
           "id": "u001-s8-e1",
           "type": "scene",
-          "setting": "Комната 17. Красная лампочка над дверью горит.",
+          "setting": "Комната 17. Красная лампочка над дверью горит. Рэй пишет пробный фрагмент для внутренней сборки. Ты уже согласился записать короткое представление.",
           "lines": [
             {
               "speaker": "mika",
@@ -1239,12 +1251,12 @@
           ],
           "intents": [
             {
-              "label": "Сказать, что ты новенький и ищешь, где заниматься",
+              "label": "Сказать, что ты новенький и ищешь тихое место для учёбы",
               "answers": [
-                "I'm new here, and I'm looking for a good place to study.",
-                "I'm new here and I'm looking for a good place to study.",
-                "I am new here and I am looking for a good place to study.",
-                "I'm new here, and I'm looking for a place to study."
+                "I'm new here, and I'm looking for a quiet place to study.",
+                "I'm new here. I'm looking for a quiet place to study.",
+                "I'm new here and I'm looking for a quiet place to study.",
+                "I am new here and I am looking for a quiet place to study."
               ],
               "tiles": [
                 "I'm",
@@ -1255,7 +1267,7 @@
                 "looking",
                 "for",
                 "a",
-                "good",
+                "quiet",
                 "place",
                 "to",
                 "study.",
@@ -1264,11 +1276,11 @@
               ],
               "reaction": {
                 "speaker": "mika",
-                "text": "Perfect. Room 17 is a good place to study, by the way. Just saying.",
-                "ru": "Идеально. Кстати, комната 17 — хорошее место для учёбы. Просто к слову.",
+                "text": "Let's keep that. Other new students need a quiet place too.",
+                "ru": "Оставим. Другим новичкам тоже нужно тихое место.",
                 "expr": "happy"
               },
-              "flag": "u001_intro_looking_for_place"
+              "flag": "u001_intro_quiet_place"
             },
             {
               "label": "Сказать, что ты здесь по обмену и пока не всё понимаешь",
@@ -1318,7 +1330,7 @@
         {
           "id": "u001-s8-e2",
           "type": "scene",
-          "setting": "Мика не выключает микрофон.",
+          "setting": "Рэй оставляет запись включённой для следующего короткого фрагмента. Мика поворачивается к тебе.",
           "lines": [
             {
               "speaker": "mika",

@@ -10,24 +10,33 @@ beforeEach(async () => {
 })
 
 const click = (name: string | RegExp) => fireEvent.click(screen.getByRole('button', { name }))
+const next = () => screen.findByRole('button', { name: /^(Дальше|Завершить занятие)$/ })
 
-/** Picks the first intent of a scene and builds its first answer from the tiles. */
-async function answerScene(intent: string, words: string[]) {
-  click(intent)
-  // Tiles, not the same words in the heroines' lines above.
-  for (const w of words) fireEvent.click(within(document.querySelector<HTMLElement>('.tiles-bank')!).getAllByRole('button', { name: w }).find((b) => !b.hasAttribute('disabled'))!)
-  click('Проверить')
-  await screen.findByRole('button', { name: /^(Дальше|Завершить занятие)$/ })
-}
-
-test('the prologue: wrong door, ask the way again, introduce yourself; choices and the end are remembered', async () => {
+test('the prologue: wrong door, ask the way again, introduce yourself, then the check and the way back', async () => {
   render(<PrologueScreen />)
-  for (let i = 0; i < 4; i++) click('Дальше')
-  await answerScene('Честно переспросить', ['Could', 'you', 'say', 'that', 'again,', 'please?'])
-  click('Дальше')
-  await answerScene('Представиться и сказать, что ты новенький', ['Nice', 'to', 'meet', 'you.', "I'm", 'new', 'here.'])
+  for (let i = 0; i < 3; i++) click('Дальше')
+  // Ask for the way again, built from the tiles on the screen.
+  click('Попросить повторить маршрут')
+  const bank = within(document.querySelector<HTMLElement>('.tiles-bank')!)
+  for (const w of ['Could', 'you', 'say', 'that', 'again,', 'please?']) fireEvent.click(bank.getAllByRole('button', { name: w }).find((b) => !b.hasAttribute('disabled'))!)
+  click('Проверить')
+  fireEvent.click(await next())
+  // Introduce yourself with your own name: any name is fine and is kept for later.
+  click('Представиться')
+  fireEvent.change(screen.getByRole('textbox'), { target: { value: "Nice to meet you. I'm Ivan." } })
+  click('Проверить')
+  expect(await screen.findByText('Верно')).toBeInTheDocument()
   click('Завершить занятие')
   for (let i = 0; i < 3; i++) click('Дальше')
-  expect(await screen.findByText('Пролог пройден')).toBeInTheDocument()
-  expect(useClub.getState().flags).toMatchObject({ prologue_asked_again: true, prologue_intro_new: true, prologue_done: true })
+  expect(await screen.findByText('Кабинет 70, новый корпус')).toBeInTheDocument()
+  click('Завершить проверку')
+  expect(await screen.findByText('Проверка закончена')).toBeInTheDocument()
+  expect(useClub.getState().flags).toMatchObject({ prologue_asked_again: true, prologue_introduced: true, prologue_completed: true, placement_completed: true })
+  expect(useClub.getState().settings.name).toBe('Ivan')
+})
+
+test('coming back after the prologue resumes at the check, not at the meeting', async () => {
+  await useClub.getState().remember('prologue_completed')
+  render(<PrologueScreen />)
+  expect(screen.getByText('Кабинет 70, новый корпус')).toBeInTheDocument()
 })

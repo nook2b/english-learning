@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { navigate } from '../../app/router'
 import { UNITS, isSessionOpen, nextSession } from '../../content/course'
-import { PROLOGUE_FLAG } from '../../content/story'
+import { PLACEMENT_FLAG, PROLOGUE_FLAG } from '../../content/story'
 import { ARC1, ARC1_UNITS } from '../../content/outline'
 import type { Unit } from '../../content/schema'
 import { sessionId } from '../../data/db'
@@ -15,9 +15,10 @@ import { mapFigure, stopIcon } from './roadmap'
 export function PathScreen() {
   const { units, sessions, flags } = useClub()
   const next = nextSession(sessions, units)
-  // A newcomer starts with the prologue; someone already studying sees it as a separate card.
+  // A newcomer starts with the prologue and the placement check; someone already studying sees the prologue as a separate card.
   const prologueDone = !!flags[PROLOGUE_FLAG]
-  const prologueFirst = !prologueDone && Object.keys(sessions).length === 0
+  const placementDone = !!flags[PLACEMENT_FLAG]
+  const prologueFirst = !(prologueDone && placementDone) && Object.keys(sessions).length === 0
   const doneCount = ARC1_UNITS.filter((u) => units[u.id]).length
   const route = useRef<HTMLDivElement>(null)
   const away = useAwayFromCurrent()
@@ -31,7 +32,7 @@ export function PathScreen() {
   return (
     <div className="screen">
       {prologueFirst ? (
-        <Button onClick={() => navigate({ name: 'prologue' })}>Начать: пролог «Не тот кабинет»</Button>
+        <Button onClick={() => navigate({ name: 'prologue' })}>{prologueDone ? 'Дальше: вступительная проверка в кабинете 70' : 'Начать: пролог «Не тот кабинет»'}</Button>
       ) : (
         <Button onClick={() => next && navigate({ name: 'session', ...next })} disabled={!next}>
           {next ? `Продолжить: юнит ${next.unitId}, занятие ${next.index}` : 'Новые юниты скоро появятся'}
@@ -95,7 +96,10 @@ function useAwayFromCurrent(): 'up' | 'down' | undefined {
  * start their session on tap.
  */
 function UnitRoute({ unit, next, scroll }: { unit: Unit; next?: number; scroll: boolean }) {
-  const { sessions, units, settings } = useClub()
+  const { sessions, units, settings, flags, remember } = useClub()
+  // A story invitation after the previous session holds the next one until it is answered.
+  const invite = next ? unit.sessions[next - 2]?.invite : undefined
+  const pendingInvite = invite && !flags[invite.flag] && !settings.unlockAll ? invite : undefined
   const current = useRef<HTMLButtonElement>(null)
   const figure = mapFigure(unit)
   const done = unit.sessions.map((_, i) => !!sessions[sessionId(unit.id, i + 1)])
@@ -116,12 +120,18 @@ function UnitRoute({ unit, next, scroll }: { unit: Unit; next?: number; scroll: 
           📓
         </span>
       </button>
+      {pendingInvite && (
+        <div className="route-invite">
+          <p>{pendingInvite.text}</p>
+          <Button onClick={() => void remember(pendingInvite.flag)}>{pendingInvite.accept}</Button>
+        </div>
+      )}
       <div className="route-body">
         <ol className="route-stops">
           {unit.sessions.map((s, i) => {
             const index = i + 1
             const isNext = next === index
-            const open = isSessionOpen({ unitId: unit.id, index }, sessions, units, settings.unlockAll)
+            const open = isSessionOpen({ unitId: unit.id, index }, sessions, units, settings.unlockAll, flags)
             const state = isNext ? 'next' : done[i] ? 'done' : open ? 'open' : 'locked'
             return (
               <li key={i} className={`route-stop route-stop-${state} ${s.role ? `route-stop-${s.role}` : ''}`}>

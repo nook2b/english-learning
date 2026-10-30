@@ -38,7 +38,7 @@
       "title": "Обычный день новичка",
       "intro": "Айрис написала черновик страницы для гида. Прочитай и ответь.",
       "frame": {
-        "setting": "Библиотека, второй этаж, у окна. Айрис протягивает тебе лист.",
+        "setting": "Следующая неделя, до назначенной встречи в среду. Библиотека, второй этаж, у окна. После первых учебных дней ты уже можешь сравнить черновик с собственным опытом. Айрис протягивает тебе лист.",
         "lines": [
           {
             "speaker": "iris",
@@ -51,8 +51,8 @@
       "wrap": [
         {
           "speaker": "iris",
-          "text": "So the bus part is wrong. Good to know before we record it.",
-          "ru": "Значит, часть про автобус неправильная. Хорошо, что узнали до записи.",
+          "text": "That's a draft, not everyone's routine. We'll use your real day for the recording.",
+          "ru": "Это черновик, а не общий распорядок. Для записи возьмём твой настоящий день.",
           "expr": "notebook/skeptical"
         }
       ],
@@ -640,8 +640,8 @@
       "wrap": [
         {
           "speaker": "iris",
-          "text": "I didn't change a single word. That's a compliment, by the way.",
-          "ru": "Я не изменила ни слова. Это комплимент, между прочим.",
+          "text": "Your words stay. I only marked the grammar. That's a compliment, by the way.",
+          "ru": "Твои слова остаются. Я только отметила грамматику. Это комплимент, между прочим.",
           "expr": "dry_smile"
         }
       ],
@@ -1030,12 +1030,12 @@
         {
           "id": "u004-s8-e1",
           "type": "scene",
-          "setting": "Комната 17. Красная лампочка горит. Мика держит лист с вопросами.",
+          "setting": "Среда, час дня. Во дворе начался дождь, поэтому команда собралась в комнате 17. Все пришли на согласованную встречу; её время сохраняется. Красная лампочка горит. Мика держит лист с вопросами.",
           "lines": [
             {
               "speaker": "mika",
-              "text": "So, tell us about a normal day. What do you usually do in the morning?",
-              "ru": "Итак, расскажи про обычный день. Что ты обычно делаешь утром?",
+              "text": "Rain outside. Quiet in here. Tell us about a normal day. What do you usually do in the morning?",
+              "ru": "Снаружи дождь. Здесь тихо. Расскажи про обычный день. Что ты обычно делаешь утром?",
               "expr": "listening",
               "delivery": "[warmly, keeping her voice down]"
             },
@@ -1178,8 +1178,8 @@
       "wrap": [
         {
           "speaker": "rei",
-          "text": "That's the first full page. Saved twice.",
-          "ru": "Это первая целая страница. Сохранено дважды.",
+          "text": "First full story page. Saved twice.",
+          "ru": "Первая целая страница с историей. Сохранено дважды.",
           "expr": "recorder/happy"
         },
         {

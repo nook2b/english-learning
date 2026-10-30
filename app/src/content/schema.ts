@@ -204,6 +204,11 @@ export const Session = z.object({
   frame: z.object({ setting: z.string(), lines: z.array(Line).min(1) }).optional(),
   /** Story beat after the session: what changed. */
   wrap: z.array(Line).min(1).optional(),
+  /**
+   * A story invitation after the session, answered with a button, not English
+   * ("Попробовать" / "Позже"). The next session opens once it is accepted.
+   */
+  invite: z.object({ flag: z.string(), text: z.string(), accept: z.string(), later: z.string() }).optional(),
   exercises: z.array(Exercise).min(1),
 })
 

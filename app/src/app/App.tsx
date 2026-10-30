@@ -17,7 +17,7 @@ import { Button, Card } from '../ui/kit'
 import { TopBar } from './TopBar'
 
 function Screen({ route }: { route: Route }) {
-  const { sessions, units, settings } = useClub()
+  const { sessions, units, settings, flags } = useClub()
   const unlockAll = settings.unlockAll
   switch (route.name) {
     case 'path':
@@ -27,7 +27,7 @@ function Screen({ route }: { route: Route }) {
     case 'session': {
       const unit = getUnit(route.unitId)
       if (!unit) return <UnitScreen unitId={route.unitId} />
-      if (!isSessionOpen(route, sessions, units, unlockAll)) return <LockedSession unitId={unit.id} index={route.index} />
+      if (!isSessionOpen(route, sessions, units, unlockAll, flags)) return <LockedSession unitId={unit.id} index={route.index} />
       return <SessionPlayer key={`${route.unitId}-${route.index}`} unit={unit} index={route.index} />
     }
     case 'review':

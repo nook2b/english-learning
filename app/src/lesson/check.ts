@@ -149,3 +149,34 @@ export function matchesSpeech(alternatives: readonly string[], accepted: readonl
   }
   return false
 }
+
+/** Placeholder for the player's own name in accepted answers ("Nice to meet you. I'm {player_name}."). */
+export const NAME = '{player_name}'
+
+export interface NamedCheck extends TypedCheck {
+  /** The name the player typed, as written. */
+  name?: string
+}
+
+/**
+ * Like checkTyped, but an answer may hold the player's name: any one to three
+ * words stand for it, so an unusual name or spelling is never a mistake.
+ */
+export function checkWithName(given: string, accepted: readonly string[]): NamedCheck {
+  const plain = accepted.filter((a) => !a.includes(NAME))
+  const result = plain.length ? checkTyped(given, plain) : { correct: false }
+  if (result.correct) return result
+  const words = given.trim().split(/\s+/)
+  for (const a of accepted.filter((x) => x.includes(NAME))) {
+    const [before = '', after = ''] = a.split(NAME)
+    const nb = before.trim() ? before.trim().split(/\s+/).length : 0
+    const na = after.trim() ? after.trim().split(/\s+/).length : 0
+    for (let n = 1; n <= 3 && nb + n + na <= words.length + 1; n++) {
+      // The name can carry the following punctuation ("Ivan."), so the after part may be glued to it.
+      const name = words.slice(nb, nb + n).join(' ').replace(/[.,!?]+$/, '')
+      if (!name) continue
+      if (checkTyped(given, [a.replace(NAME, name)]).correct) return { correct: true, name }
+    }
+  }
+  return { correct: false }
+}

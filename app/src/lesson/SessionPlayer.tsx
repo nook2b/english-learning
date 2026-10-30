@@ -38,7 +38,8 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const [phase, setPhase] = useState<'frame' | 'exercises' | 'wrap' | 'done'>(session.frame ? 'frame' : 'exercises')
 
   const onAnswer = (exercise: Exercise, o: Outcome, retry: boolean) => {
-    if (o.flag && !remembered.current.has(o.flag)) {
+    // A story choice is remembered once its answer is accepted (a slip brings a clarification and a retry).
+    if (o.correct !== false && o.flag && !remembered.current.has(o.flag)) {
       remembered.current.add(o.flag)
       void remember(o.flag)
     }
@@ -111,8 +112,11 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
 }
 
 function SessionSummary({ unit, index, summary }: { unit: Unit; index: number; summary: Summary }) {
-  const { sessions, units } = useClub()
+  const { sessions, units, flags, remember } = useClub()
   const upcoming = nextSession(sessions, units)
+  // A story invitation waits for the player's answer; "later" keeps it and the current step.
+  const invite = unit.sessions[index - 1]?.invite
+  const pendingInvite = invite && !flags[invite.flag] ? invite : undefined
   const pct = summary.total ? Math.round((summary.correct / summary.total) * 100) : undefined
   return (
     <div className="screen">
@@ -141,16 +145,35 @@ function SessionSummary({ unit, index, summary }: { unit: Unit; index: number; s
         </LearnPanel>
       )}
       {summary.unitCompleted && <Card title="Юнит пройден">{unit.outcome}</Card>}
-      <div className="actions">
-        {upcoming && (
-          <Button onClick={() => navigate({ name: 'session', ...upcoming })}>
-            Дальше: юнит {upcoming.unitId}, занятие {upcoming.index}
+      {pendingInvite ? (
+        <Card title="Приглашение">
+          <p>{pendingInvite.text}</p>
+          <div className="actions">
+            <Button
+              onClick={async () => {
+                await remember(pendingInvite.flag)
+                if (upcoming) navigate({ name: 'session', ...upcoming })
+              }}
+            >
+              {pendingInvite.accept}
+            </Button>
+            <Button variant="secondary" onClick={() => navigate({ name: 'path' })}>
+              {pendingInvite.later}
+            </Button>
+          </div>
+        </Card>
+      ) : (
+        <div className="actions">
+          {upcoming && (
+            <Button onClick={() => navigate({ name: 'session', ...upcoming })}>
+              Дальше: юнит {upcoming.unitId}, занятие {upcoming.index}
+            </Button>
+          )}
+          <Button variant="secondary" onClick={() => navigate({ name: 'path' })}>
+            На путь
           </Button>
-        )}
-        <Button variant="secondary" onClick={() => navigate({ name: 'path' })}>
-          На путь
-        </Button>
-      </div>
+        </div>
+      )}
     </div>
   )
 }
