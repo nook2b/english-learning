@@ -1,0 +1,198 @@
+{
+ "tag": "contrast_ps_pc",
+ "items": [
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-01",
+    "type": "choice",
+    "prompt": "Iris usually ___ in the library after four.",
+    "options": [
+     "works",
+     "is working"
+    ],
+    "answer": "works",
+    "explain": "usually → Present Simple.",
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-02",
+    "type": "choice",
+    "prompt": "Iris ___ in Room 17 today.",
+    "options": [
+     "is working",
+     "works"
+    ],
+    "answer": "is working",
+    "explain": "today, необычно → Present Continuous.",
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-03",
+    "type": "choice",
+    "prompt": "Mika ___ radio shows every week.",
+    "options": [
+     "makes",
+     "is making"
+    ],
+    "answer": "makes",
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-04",
+    "type": "choice",
+    "prompt": "Mika ___ a show right now.",
+    "options": [
+     "is making",
+     "makes"
+    ],
+    "answer": "is making",
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-05",
+    "type": "fill",
+    "prompt": "I ___ English every day.",
+    "hint": "study",
+    "answers": [
+     "study"
+    ],
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-06",
+    "type": "fill",
+    "prompt": "At the moment I ___ a new page.",
+    "hint": "read",
+    "answers": [
+     "am reading",
+     "'m reading"
+    ],
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-07",
+    "type": "translate",
+    "ru": "Обычно я завтракаю в столовой, но сегодня я ем в комнате 17.",
+    "answers": [
+     "I usually have breakfast in the dining hall, but today I'm eating in Room 17.",
+     "I usually have breakfast in the dining hall, but today I am eating in Room 17.",
+     "Usually I have breakfast in the dining hall, but today I'm eating in Room 17."
+    ],
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-08",
+    "type": "fix",
+    "sentence": "Rei is recording sound for the guide every day.",
+    "answers": [
+     "Rei records sound for the guide every day."
+    ],
+    "explain": "every day → Present Simple.",
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-09",
+    "type": "fix",
+    "sentence": "Look, Mika waves at us!",
+    "answers": [
+     "Look, Mika is waving at us!",
+     "Look, Mika's waving at us!"
+    ],
+    "explain": "Look! → прямо сейчас.",
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-10",
+    "type": "transform",
+    "instruction": "Перепиши про «прямо сейчас»: right now",
+    "sentence": "Iris checks the texts.",
+    "answers": [
+     "Iris is checking the texts right now.",
+     "Right now Iris is checking the texts.",
+     "Iris's checking the texts right now."
+    ],
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-11",
+    "type": "choice",
+    "prompt": "We ___ to the courtyard now. Come with us!",
+    "options": [
+     "are going",
+     "go"
+    ],
+    "answer": "are going",
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-contrast_ps_pc-12",
+    "type": "choice",
+    "prompt": "The bus ___ every twenty minutes.",
+    "options": [
+     "leaves",
+     "is leaving"
+    ],
+    "answer": "leaves",
+    "tags": [
+     "contrast_ps_pc"
+    ]
+   }
+  }
+ ]
+}

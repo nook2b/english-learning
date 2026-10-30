@@ -7,6 +7,7 @@ import { UnitScreen } from '../features/lesson/UnitScreen'
 import { PathScreen } from '../features/path/PathScreen'
 import { ProfileScreen } from '../features/profile/ProfileScreen'
 import { ReviewScreen } from '../features/review/ReviewScreen'
+import { ReviewSession } from '../features/review/ReviewSession'
 import { QuestsScreen } from '../features/quests/QuestsScreen'
 import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
@@ -30,6 +31,8 @@ function Screen({ route }: { route: Route }) {
     }
     case 'review':
       return <ReviewScreen />
+    case 'practice':
+      return <ReviewSession />
     case 'quests':
       return <QuestsScreen />
     case 'heroines':
@@ -66,11 +69,12 @@ export function App() {
 
   return (
     <div className="app">
-      {route.name !== 'session' && <TopBar />}
+      {/* Sessions and review rounds take the whole screen. */}
+      {route.name !== 'session' && route.name !== 'practice' && <TopBar />}
       <main>
         <Screen route={route} />
       </main>
-      {route.name !== 'session' && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
+      {route.name !== 'session' && route.name !== 'practice' && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
     </div>
   )
 }

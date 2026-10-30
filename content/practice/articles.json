@@ -1,0 +1,203 @@
+{
+ "tag": "articles",
+ "items": [
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-01",
+    "type": "choice",
+    "prompt": "I'm here on ___ exchange program.",
+    "options": [
+     "an",
+     "a",
+     "the"
+    ],
+    "answer": "an",
+    "explain": "Перед гласным звуком — an.",
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-02",
+    "type": "choice",
+    "prompt": "Mika has ___ new idea.",
+    "options": [
+     "a",
+     "an",
+     "the"
+    ],
+    "answer": "a",
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-03",
+    "type": "choice",
+    "prompt": "Rei is ___ best sound person in the club.",
+    "options": [
+     "the",
+     "a",
+     "an"
+    ],
+    "answer": "the",
+    "explain": "Превосходная степень — the.",
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-04",
+    "type": "choice",
+    "prompt": "Can I borrow ___ recorder? The one on the table.",
+    "options": [
+     "the",
+     "a",
+     "an"
+    ],
+    "answer": "the",
+    "explain": "Конкретный предмет — the.",
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-05",
+    "type": "fill",
+    "prompt": "Iris has ___ old notebook.",
+    "answers": [
+     "an"
+    ],
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-06",
+    "type": "fill",
+    "prompt": "This is ___ audio guide for new students.",
+    "answers": [
+     "an"
+    ],
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-07",
+    "type": "fill",
+    "prompt": "Mika is ___ student in the prep program.",
+    "answers": [
+     "a"
+    ],
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-08",
+    "type": "fix",
+    "sentence": "I'm a exchange student.",
+    "answers": [
+     "I'm an exchange student.",
+     "I am an exchange student."
+    ],
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-09",
+    "type": "fix",
+    "sentence": "Rei has an recorder.",
+    "answers": [
+     "Rei has a recorder."
+    ],
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-10",
+    "type": "translate",
+    "ru": "Это интересная идея.",
+    "answers": [
+     "It's an interesting idea.",
+     "It is an interesting idea.",
+     "That's an interesting idea.",
+     "This is an interesting idea."
+    ],
+    "tiles": [
+     "It's",
+     "an",
+     "interesting",
+     "idea.",
+     "a"
+    ],
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-11",
+    "type": "choice",
+    "prompt": "The guide is for ___ new students.",
+    "options": [
+     "—",
+     "a",
+     "an"
+    ],
+    "answer": "—",
+    "explain": "Множественное число без конкретики — без артикля.",
+    "tags": [
+     "articles"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-articles-12",
+    "type": "fill",
+    "prompt": "Where is ___ dining hall?",
+    "answers": [
+     "the"
+    ],
+    "tags": [
+     "articles"
+    ]
+   }
+  }
+ ]
+}

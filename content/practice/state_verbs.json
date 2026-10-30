@@ -1,0 +1,206 @@
+{
+ "tag": "state_verbs",
+ "items": [
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-01",
+    "type": "choice",
+    "prompt": "I ___ what you mean.",
+    "options": [
+     "understand",
+     "am understanding"
+    ],
+    "answer": "understand",
+    "explain": "understand — глагол состояния, без -ing.",
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-02",
+    "type": "choice",
+    "prompt": "Mika ___ this song.",
+    "options": [
+     "loves",
+     "is loving"
+    ],
+    "answer": "loves",
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-03",
+    "type": "choice",
+    "prompt": "Rei ___ quiet rooms.",
+    "options": [
+     "likes",
+     "is liking"
+    ],
+    "answer": "likes",
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-04",
+    "type": "choice",
+    "prompt": "This ___ the right room.",
+    "options": [
+     "isn't",
+     "isn't being"
+    ],
+    "answer": "isn't",
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-05",
+    "type": "fill",
+    "prompt": "I ___ his name now. It's Leo.",
+    "hint": "know",
+    "answers": [
+     "know"
+    ],
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-06",
+    "type": "fill",
+    "prompt": "Iris ___ a new notebook.",
+    "hint": "need",
+    "answers": [
+     "needs"
+    ],
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-07",
+    "type": "fix",
+    "sentence": "I am knowing the answer.",
+    "answers": [
+     "I know the answer."
+    ],
+    "explain": "know без -ing.",
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-08",
+    "type": "fix",
+    "sentence": "Mika is wanting a snack.",
+    "answers": [
+     "Mika wants a snack."
+    ],
+    "explain": "want без -ing.",
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-09",
+    "type": "fix",
+    "sentence": "Are you understanding me?",
+    "answers": [
+     "Do you understand me?"
+    ],
+    "explain": "understand → do you understand.",
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-10",
+    "type": "translate",
+    "ru": "Я пока не всё понимаю.",
+    "answers": [
+     "I don't understand everything yet.",
+     "I do not understand everything yet."
+    ],
+    "tiles": [
+     "I",
+     "don't",
+     "understand",
+     "everything",
+     "yet.",
+     "am",
+     "understanding"
+    ],
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-11",
+    "type": "translate",
+    "ru": "Рэй нравится тишина.",
+    "answers": [
+     "Rei likes silence."
+    ],
+    "tiles": [
+     "Rei",
+     "likes",
+     "silence.",
+     "is",
+     "liking"
+    ],
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-state_verbs-12",
+    "type": "choice",
+    "prompt": "What ___ this word mean?",
+    "options": [
+     "does",
+     "is"
+    ],
+    "answer": "does",
+    "tags": [
+     "state_verbs"
+    ]
+   }
+  }
+ ]
+}

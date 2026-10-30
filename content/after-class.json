@@ -1,0 +1,71 @@
+{
+ "mika": {
+  "due": {
+   "text": "A few mistakes? That's nothing. Let's go!",
+   "ru": "Пара ошибок? Ерунда. Погнали!",
+   "expr": "excited"
+  },
+  "waiting": {
+   "text": "Not now, I'm busy. Very busy with my phone. Tomorrow!",
+   "ru": "Не сейчас, я занята. Очень занята телефоном. Завтра!",
+   "expr": "phone/happy",
+   "delivery": "[distracted, cheerful]"
+  },
+  "empty": {
+   "text": "No mistakes at all? Okay, now you're just showing off.",
+   "ru": "Совсем без ошибок? Ладно, это ты уже хвастаешься.",
+   "expr": "pout"
+  },
+  "done": {
+   "text": "Done! See? Mistakes are just practice in disguise.",
+   "ru": "Готово! Видишь? Ошибки — это просто тренировка под прикрытием.",
+   "expr": "happy"
+  }
+ },
+ "rei": {
+  "due": {
+   "text": "Wake me up when it's my turn. Or just start.",
+   "ru": "Разбуди, когда будет моя очередь. Или просто начинай.",
+   "expr": "smirk"
+  },
+  "waiting": {
+   "text": "Come back tomorrow. I'll still be here. Probably asleep.",
+   "ru": "Приходи завтра. Я буду здесь. Наверное, буду спать.",
+   "expr": "neutral",
+   "delivery": "[sleepily]"
+  },
+  "empty": {
+   "text": "No mistakes. Good. Then I'm sleeping.",
+   "ru": "Ошибок нет. Хорошо. Тогда я сплю.",
+   "expr": "deadpan",
+   "delivery": "[sleepily, deadpan]"
+  },
+  "done": {
+   "text": "Clean take. Not bad.",
+   "ru": "Чистый дубль. Неплохо.",
+   "expr": "smirk"
+  }
+ },
+ "iris": {
+  "due": {
+   "text": "Let's look at your mistakes. They're the most interesting part.",
+   "ru": "Давай посмотрим на твои ошибки. Это самое интересное.",
+   "expr": "notebook/focused"
+  },
+  "waiting": {
+   "text": "Not today. A mistake needs a day before you check it again.",
+   "ru": "Не сегодня. Ошибке нужен день, прежде чем проверять её снова.",
+   "expr": "thinking"
+  },
+  "empty": {
+   "text": "Nothing to fix today. I'm almost disappointed.",
+   "ru": "Сегодня нечего исправлять. Я почти разочарована.",
+   "expr": "notebook/dry_smile"
+  },
+  "done": {
+   "text": "Good. I'll write that down: fixed.",
+   "ru": "Хорошо. Так и запишу: исправлено.",
+   "expr": "happy"
+  }
+ }
+}

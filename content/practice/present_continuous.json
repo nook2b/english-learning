@@ -1,0 +1,222 @@
+{
+ "tag": "present_continuous",
+ "items": [
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-01",
+    "type": "choice",
+    "prompt": "Look! Mika ___ the recorder.",
+    "options": [
+     "is holding",
+     "holds",
+     "hold"
+    ],
+    "answer": "is holding",
+    "explain": "Прямо сейчас → am / is / are + -ing.",
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-02",
+    "type": "choice",
+    "prompt": "Right now we ___ on the audio guide.",
+    "options": [
+     "are working",
+     "work",
+     "is working"
+    ],
+    "answer": "are working",
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-03",
+    "type": "fill",
+    "prompt": "Shh! Rei ___ the levels.",
+    "hint": "check",
+    "answers": [
+     "is checking",
+     "'s checking"
+    ],
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-04",
+    "type": "fill",
+    "prompt": "I ___ for Room 70.",
+    "hint": "look",
+    "answers": [
+     "am looking",
+     "'m looking"
+    ],
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-05",
+    "type": "transform",
+    "instruction": "Сделай вопрос",
+    "sentence": "Iris is writing a page.",
+    "answers": [
+     "Is Iris writing a page?"
+    ],
+    "explain": "Вопрос: Is + she + -ing?",
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-06",
+    "type": "transform",
+    "instruction": "Сделай отрицание",
+    "sentence": "They are recording now.",
+    "answers": [
+     "They aren't recording now.",
+     "They are not recording now.",
+     "They're not recording now."
+    ],
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-07",
+    "type": "translate",
+    "ru": "Сейчас я читаю письмо.",
+    "answers": [
+     "I'm reading a letter now.",
+     "I am reading a letter now.",
+     "Now I'm reading a letter.",
+     "Now I am reading a letter."
+    ],
+    "tiles": [
+     "I'm",
+     "reading",
+     "a",
+     "letter",
+     "now.",
+     "read",
+     "am"
+    ],
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-08",
+    "type": "translate",
+    "ru": "Мика сейчас разговаривает с новичком.",
+    "answers": [
+     "Mika is talking to a newcomer now.",
+     "Mika is talking with a newcomer now.",
+     "Now Mika is talking to a newcomer."
+    ],
+    "tiles": [
+     "Mika",
+     "is",
+     "talking",
+     "to",
+     "a",
+     "newcomer",
+     "now.",
+     "talks"
+    ],
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-09",
+    "type": "fix",
+    "sentence": "Wait, I am read the letter.",
+    "answers": [
+     "Wait, I am reading the letter.",
+     "Wait, I'm reading the letter."
+    ],
+    "explain": "am + reading.",
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-10",
+    "type": "fix",
+    "sentence": "Rei checking the levels right now.",
+    "answers": [
+     "Rei is checking the levels right now.",
+     "Rei's checking the levels right now."
+    ],
+    "explain": "Нужен is.",
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-11",
+    "type": "choice",
+    "prompt": "What ___ you doing?",
+    "options": [
+     "are",
+     "do",
+     "is"
+    ],
+    "answer": "are",
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_continuous-12",
+    "type": "fill",
+    "prompt": "The mic ___ — be quiet!",
+    "hint": "record",
+    "answers": [
+     "is recording",
+     "'s recording"
+    ],
+    "tags": [
+     "present_continuous"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "tag": "sequencing",
+ "items": [
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-01",
+    "type": "choice",
+    "prompt": "___, I get up. Then I have breakfast.",
+    "options": [
+     "First",
+     "Finally",
+     "After"
+    ],
+    "answer": "First",
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-02",
+    "type": "choice",
+    "prompt": "I have breakfast. ___ I take the bus.",
+    "options": [
+     "Then",
+     "First",
+     "Before"
+    ],
+    "answer": "Then",
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-03",
+    "type": "choice",
+    "prompt": "We record the line, and ___ that we check it.",
+    "options": [
+     "after",
+     "then",
+     "first"
+    ],
+    "answer": "after",
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-04",
+    "type": "choice",
+    "prompt": "___, I go to bed at midnight.",
+    "options": [
+     "Finally",
+     "First",
+     "Then"
+    ],
+    "answer": "Finally",
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-05",
+    "type": "fill",
+    "prompt": "First we write the questions, ___ we ask them.",
+    "answers": [
+     "then"
+    ],
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-06",
+    "type": "fill",
+    "prompt": "After ___, Mika runs to the student office.",
+    "answers": [
+     "that"
+    ],
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-07",
+    "type": "translate",
+    "ru": "Сначала я проверяю сообщения.",
+    "answers": [
+     "First, I check my messages.",
+     "First I check my messages."
+    ],
+    "tiles": [
+     "First,",
+     "I",
+     "check",
+     "my",
+     "messages.",
+     "Finally,"
+    ],
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-08",
+    "type": "translate",
+    "ru": "Потом мы едем на автобусе.",
+    "answers": [
+     "Then we take the bus.",
+     "Then we go by bus."
+    ],
+    "tiles": [
+     "Then",
+     "we",
+     "take",
+     "the",
+     "bus.",
+     "First"
+    ],
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-09",
+    "type": "translate",
+    "ru": "Наконец, Рэй выключает микрофон.",
+    "answers": [
+     "Finally, Rei turns off the mic.",
+     "Finally Rei turns off the mic."
+    ],
+    "tiles": [
+     "Finally,",
+     "Rei",
+     "turns",
+     "off",
+     "the",
+     "mic.",
+     "First,"
+    ],
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-10",
+    "type": "fix",
+    "sentence": "After I have lunch.",
+    "answers": [
+     "After that, I have lunch.",
+     "After that I have lunch.",
+     "Then I have lunch."
+    ],
+    "explain": "After без продолжения — after that.",
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-11",
+    "type": "fix",
+    "sentence": "Finally, I get up at seven.",
+    "answers": [
+     "First, I get up at seven.",
+     "First I get up at seven."
+    ],
+    "explain": "Первое действие дня — first.",
+    "tags": [
+     "sequencing"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-sequencing-12",
+    "type": "choice",
+    "prompt": "Iris reads the page. ___ she gives it back.",
+    "options": [
+     "Then",
+     "First",
+     "Before"
+    ],
+    "answer": "Then",
+    "tags": [
+     "sequencing"
+    ]
+   }
+  }
+ ]
+}

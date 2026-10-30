@@ -17,6 +17,8 @@ export type Route =
   | { name: 'unit'; unitId: string }
   | { name: 'heroine'; id: (typeof HEROINES)[number] }
   | { name: 'session'; unitId: string; index: number }
+  /** An after-class review round. */
+  | { name: 'practice' }
 
 // Hash routing keeps deep links working on GitHub Pages without server rewrites.
 export function parse(hash: string): Route {
@@ -27,6 +29,7 @@ export function parse(hash: string): Route {
   if (name === 'session' && a && /^\d{3}$/.test(a) && Number.isInteger(index) && index >= 1 && index <= SESSIONS_PER_UNIT) return { name: 'session', unitId: a, index }
   const heroine = HEROINES.find((h) => h === a)
   if (name === 'heroine' && heroine) return { name: 'heroine', id: heroine }
+  if (name === 'practice') return { name: 'practice' }
   const tab = TABS.find((t) => t.route === name)
   if (tab) return { name: tab.route }
   return { name: 'path' }

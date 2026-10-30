@@ -1,0 +1,204 @@
+{
+ "tag": "time_prepositions",
+ "items": [
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-01",
+    "type": "choice",
+    "prompt": "The meeting is ___ Wednesday.",
+    "options": [
+     "on",
+     "at",
+     "in"
+    ],
+    "answer": "on",
+    "explain": "Дни недели — on.",
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-02",
+    "type": "choice",
+    "prompt": "Let's meet ___ one.",
+    "options": [
+     "at",
+     "on",
+     "in"
+    ],
+    "answer": "at",
+    "explain": "Время на часах — at.",
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-03",
+    "type": "choice",
+    "prompt": "I study ___ the morning.",
+    "options": [
+     "in",
+     "on",
+     "at"
+    ],
+    "answer": "in",
+    "explain": "Части дня — in the morning.",
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-04",
+    "type": "choice",
+    "prompt": "The library closes ___ night.",
+    "options": [
+     "at",
+     "in",
+     "on"
+    ],
+    "answer": "at",
+    "explain": "at night — исключение.",
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-05",
+    "type": "fill",
+    "prompt": "The bus leaves ___ 23:10.",
+    "answers": [
+     "at"
+    ],
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-06",
+    "type": "fill",
+    "prompt": "Classes start ___ Tuesday.",
+    "answers": [
+     "on"
+    ],
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-07",
+    "type": "fill",
+    "prompt": "Iris is free ___ the afternoon.",
+    "answers": [
+     "in"
+    ],
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-08",
+    "type": "fill",
+    "prompt": "The courtyard is free ___ one to two.",
+    "answers": [
+     "from"
+    ],
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-09",
+    "type": "fix",
+    "sentence": "See you in Friday!",
+    "answers": [
+     "See you on Friday!"
+    ],
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-10",
+    "type": "fix",
+    "sentence": "The show starts on seven.",
+    "answers": [
+     "The show starts at seven."
+    ],
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-11",
+    "type": "translate",
+    "ru": "Встречаемся в среду в час.",
+    "answers": [
+     "We meet on Wednesday at one.",
+     "Let's meet on Wednesday at one.",
+     "We're meeting on Wednesday at one."
+    ],
+    "tiles": [
+     "We",
+     "meet",
+     "on",
+     "Wednesday",
+     "at",
+     "one.",
+     "in"
+    ],
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-time_prepositions-12",
+    "type": "choice",
+    "prompt": "The guide is ready ___ Monday morning.",
+    "options": [
+     "on",
+     "in",
+     "at"
+    ],
+    "answer": "on",
+    "explain": "Конкретное утро дня — on Monday morning.",
+    "tags": [
+     "time_prepositions"
+    ]
+   }
+  }
+ ]
+}

@@ -90,6 +90,16 @@ def main() -> int:
                 if not out.exists():
                     todo[out] = (ch["id"], voiced)
 
+    if not args.unit:
+        # After-class review lines (content/after-class.json): heroine -> state -> line.
+        for hid, states in json.loads((ROOT / "content/after-class.json").read_text()).items():
+            for line in states.values():
+                voiced = voiced_text(line["text"], line.get("expr"), line.get("delivery"), by_expr)
+                out = ROOT / "assets/audio" / hid / f"{clip_key(hid, voiced)}.mp3"
+                needed.add(out)
+                if not out.exists():
+                    todo[out] = (hid, voiced)
+
     if args.prune and not args.unit:
         stale = [f for f in (ROOT / "assets/audio").rglob("*.mp3") if f not in needed]
         for f in stale:

@@ -1,0 +1,211 @@
+{
+ "tag": "timetable",
+ "items": [
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-01",
+    "type": "choice",
+    "prompt": "The last bus ___ at 23:10.",
+    "options": [
+     "leaves",
+     "is leaving",
+     "leave"
+    ],
+    "answer": "leaves",
+    "explain": "Расписание — Present Simple.",
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-02",
+    "type": "choice",
+    "prompt": "Media Lab ___ at two on Tuesday.",
+    "options": [
+     "starts",
+     "is starting",
+     "start"
+    ],
+    "answer": "starts",
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-03",
+    "type": "fill",
+    "prompt": "The library ___ at ten on Saturday.",
+    "hint": "open",
+    "answers": [
+     "opens"
+    ],
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-04",
+    "type": "fill",
+    "prompt": "The workshop ___ at three.",
+    "hint": "finish",
+    "answers": [
+     "finishes",
+     "ends"
+    ],
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-05",
+    "type": "transform",
+    "instruction": "Сделай вопрос с What time",
+    "sentence": "The bus leaves at eight.",
+    "answers": [
+     "What time does the bus leave?"
+    ],
+    "explain": "What time + does + the bus + leave?",
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-06",
+    "type": "transform",
+    "instruction": "Сделай вопрос",
+    "sentence": "The Club Fair starts at four.",
+    "answers": [
+     "Does the Club Fair start at four?"
+    ],
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-07",
+    "type": "translate",
+    "ru": "Во сколько открывается столовая?",
+    "answers": [
+     "What time does the dining hall open?",
+     "When does the dining hall open?"
+    ],
+    "tiles": [
+     "What",
+     "time",
+     "does",
+     "the",
+     "dining",
+     "hall",
+     "open?",
+     "opens"
+    ],
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-08",
+    "type": "translate",
+    "ru": "Занятия начинаются во вторник.",
+    "answers": [
+     "Classes start on Tuesday."
+    ],
+    "tiles": [
+     "Classes",
+     "start",
+     "on",
+     "Tuesday.",
+     "starts",
+     "in"
+    ],
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-09",
+    "type": "fix",
+    "sentence": "What time the bus leaves?",
+    "answers": [
+     "What time does the bus leave?"
+    ],
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-10",
+    "type": "fix",
+    "sentence": "The seminar is starting at nine every Monday.",
+    "answers": [
+     "The seminar starts at nine every Monday."
+    ],
+    "explain": "Расписание — Present Simple.",
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-11",
+    "type": "choice",
+    "prompt": "When ___ the library close?",
+    "options": [
+     "does",
+     "is",
+     "do"
+    ],
+    "answer": "does",
+    "tags": [
+     "timetable"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-timetable-12",
+    "type": "fill",
+    "prompt": "The bus to the city ___ every 20 minutes.",
+    "hint": "leave",
+    "answers": [
+     "leaves",
+     "goes"
+    ],
+    "tags": [
+     "timetable"
+    ]
+   }
+  }
+ ]
+}

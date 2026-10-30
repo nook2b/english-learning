@@ -1,0 +1,215 @@
+{
+ "tag": "function_suggest",
+ "items": [
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-01",
+    "type": "translate",
+    "ru": "Как насчёт среды?",
+    "answers": [
+     "How about Wednesday?",
+     "What about Wednesday?"
+    ],
+    "tiles": [
+     "How",
+     "about",
+     "Wednesday?",
+     "on"
+    ],
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-02",
+    "type": "translate",
+    "ru": "Как насчёт часа дня?",
+    "answers": [
+     "How about one?",
+     "How about one o'clock?",
+     "What about one?"
+    ],
+    "tiles": [
+     "How",
+     "about",
+     "one?",
+     "at"
+    ],
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-03",
+    "type": "choice",
+    "prompt": "Everyone is free on Wednesday. Mika says: ___",
+    "options": [
+     "How about Wednesday?",
+     "How about on Wednesday is?",
+     "How Wednesday about?"
+    ],
+    "answer": "How about Wednesday?",
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-04",
+    "type": "choice",
+    "prompt": "— How about three? — ___",
+    "options": [
+     "That works for me.",
+     "That works me.",
+     "It is works."
+    ],
+    "answer": "That works for me.",
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-05",
+    "type": "fix",
+    "sentence": "How about meet at one?",
+    "answers": [
+     "How about meeting at one?",
+     "How about one?"
+    ],
+    "explain": "How about + -ing или существительное.",
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-06",
+    "type": "fix",
+    "sentence": "That work for everyone.",
+    "answers": [
+     "That works for everyone."
+    ],
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-07",
+    "type": "translate",
+    "ru": "Это подходит всем.",
+    "answers": [
+     "That works for everyone.",
+     "It works for everyone."
+    ],
+    "tiles": [
+     "That",
+     "works",
+     "for",
+     "everyone.",
+     "work"
+    ],
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-08",
+    "type": "translate",
+    "ru": "Давай встретимся во дворе.",
+    "answers": [
+     "Let's meet in the courtyard."
+    ],
+    "tiles": [
+     "Let's",
+     "meet",
+     "in",
+     "the",
+     "courtyard.",
+     "on"
+    ],
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-09",
+    "type": "fill",
+    "prompt": "How ___ the library after four?",
+    "answers": [
+     "about"
+    ],
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-10",
+    "type": "fill",
+    "prompt": "___ meet on Wednesday!",
+    "answers": [
+     "Let's"
+    ],
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-11",
+    "type": "choice",
+    "prompt": "— Let's record at six. — Sorry, I'm busy. ___",
+    "options": [
+     "How about seven?",
+     "How about at seven is?",
+     "What seven?"
+    ],
+    "answer": "How about seven?",
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  },
+  {
+   "unit": "003",
+   "exercise": {
+    "id": "p-function_suggest-12",
+    "type": "fix",
+    "sentence": "Let's to meet at one.",
+    "answers": [
+     "Let's meet at one."
+    ],
+    "tags": [
+     "function_suggest"
+    ]
+   }
+  }
+ ]
+}

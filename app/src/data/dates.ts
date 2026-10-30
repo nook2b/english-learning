@@ -10,3 +10,12 @@ export function addDays(key: string, delta: number): string {
   const [y, m, d] = key.split('-').map(Number) as [number, number, number]
   return dayKey(new Date(y, m - 1, d + delta))
 }
+
+/** Whole days from one YYYY-MM-DD to another. */
+export function daysBetween(from: string, to: string): number {
+  const at = (key: string) => {
+    const [y, m, d] = key.split('-').map(Number) as [number, number, number]
+    return Date.UTC(y, m - 1, d)
+  }
+  return Math.round((at(to) - at(from)) / 86_400_000)
+}

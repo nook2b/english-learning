@@ -1,0 +1,223 @@
+{
+ "tag": "function_greeting",
+ "items": [
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-01",
+    "type": "translate",
+    "ru": "Приятно познакомиться.",
+    "answers": [
+     "Nice to meet you."
+    ],
+    "tiles": [
+     "Nice",
+     "to",
+     "meet",
+     "you.",
+     "see"
+    ],
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-02",
+    "type": "translate",
+    "ru": "Привет, я новенький.",
+    "answers": [
+     "Hi, I'm new here.",
+     "Hi, I'm new.",
+     "Hello, I'm new here."
+    ],
+    "tiles": [
+     "Hi,",
+     "I'm",
+     "new",
+     "here.",
+     "is"
+    ],
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-03",
+    "type": "choice",
+    "prompt": "— Nice to meet you. — ___",
+    "options": [
+     "Nice to meet you too.",
+     "Nice to see you.",
+     "I'm fine."
+    ],
+    "answer": "Nice to meet you too.",
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-04",
+    "type": "choice",
+    "prompt": "— Where are you from? — ___",
+    "options": [
+     "I'm from Russia.",
+     "I'm Russia.",
+     "From I'm Russia."
+    ],
+    "answer": "I'm from Russia.",
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-05",
+    "type": "choice",
+    "prompt": "— What do you study? — ___",
+    "options": [
+     "I study English.",
+     "I'm English.",
+     "Yes, I do."
+    ],
+    "answer": "I study English.",
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-06",
+    "type": "fix",
+    "sentence": "Nice meet you.",
+    "answers": [
+     "Nice to meet you."
+    ],
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-07",
+    "type": "fix",
+    "sentence": "I from Russia.",
+    "answers": [
+     "I'm from Russia.",
+     "I am from Russia."
+    ],
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-08",
+    "type": "translate",
+    "ru": "Меня зовут Лео.",
+    "answers": [
+     "My name is Leo.",
+     "I'm Leo.",
+     "My name's Leo."
+    ],
+    "tiles": [
+     "My",
+     "name",
+     "is",
+     "Leo.",
+     "I"
+    ],
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-09",
+    "type": "translate",
+    "ru": "Кстати, я живу в Восточном общежитии.",
+    "answers": [
+     "By the way, I live in the East Dorm."
+    ],
+    "tiles": [
+     "By",
+     "the",
+     "way,",
+     "I",
+     "live",
+     "in",
+     "the",
+     "East",
+     "Dorm.",
+     "lives"
+    ],
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-10",
+    "type": "fill",
+    "prompt": "Hi! I'm Mika. Nice to ___ you.",
+    "answers": [
+     "meet"
+    ],
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-11",
+    "type": "choice",
+    "prompt": "___ again! Good to see you.",
+    "options": [
+     "Hi",
+     "Nice to meet you",
+     "Goodbye"
+    ],
+    "answer": "Hi",
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-function_greeting-12",
+    "type": "fix",
+    "sentence": "Where you are from?",
+    "answers": [
+     "Where are you from?"
+    ],
+    "tags": [
+     "function_greeting"
+    ]
+   }
+  }
+ ]
+}
