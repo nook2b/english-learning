@@ -67,8 +67,13 @@ def main() -> int:
     by_expr = config["deliveryByExpr"]
     todo = {}
     needed = set()
-    for path in sorted((ROOT / "content/course").rglob("unit-*.json")):
-        unit = json.loads(path.read_text())
+    # Units, plus story scenes outside units (content/story/*.json, one session each, e.g. the prologue).
+    sources = [json.loads(p.read_text()) for p in sorted((ROOT / "content/course").rglob("unit-*.json"))]
+    sources += [{"id": p.stem, "sessions": [json.loads(p.read_text())]} for p in sorted((ROOT / "content/story").glob("*.json"))]
+    # The placement check (content/placement.json): the announcer's listening.
+    placement = json.loads((ROOT / "content/placement.json").read_text())
+    sources += [{"id": "placement", "sessions": [{"exercises": [i["exercise"] for part in placement["parts"] for i in part["items"]]}]}]
+    for unit in sources:
         if args.unit and unit["id"] != args.unit:
             continue
         for speaker, text, expr, delivery in lines_of(unit):

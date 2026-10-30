@@ -11,7 +11,8 @@
   "voices": {
     "rei": "tWbuddD9YFdBqLHumjE2",
     "mika": "zy9WSTvdBJgqZRZ8JJF2",
-    "iris": "MTtyIHkOaoPnvpzwLU3Z"
+    "iris": "MTtyIHkOaoPnvpzwLU3Z",
+    "announcer": "onwK4e9ZLuTAKqWW03F9"
   },
   "_deliveryByExpr": "Audio tags added to a line by the sprite emotion when the line has no explicit delivery. Only for heroine lines; see docs/14-voice.md.",
   "deliveryByExpr": {
@@ -38,5 +39,6 @@
     "tender": "[softly, tenderly]",
     "teary": "[emotional, voice trembling]",
     "playful": "[playfully]"
-  }
+  },
+  "_voices": "Heroines, and the announcer: the International Office voice in the placement check (no heroine runs the check)."
 }

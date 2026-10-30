@@ -13,6 +13,32 @@ export interface Settings {
   unlockAll: boolean
   /** Short sounds for right and wrong answers. */
   sounds: boolean
+  /** Support mode (plan 3.7.2): translations shown at once, word tiles instead of typing, slower voice by default. */
+  support: boolean
+  /** First-launch survey answers. */
+  survey?: SurveyAnswers
+  /** Placement check results, oldest first: the first one at the start, later ones on retakes. */
+  placements?: PlacementResult[]
+}
+
+export const SKILLS = ['reading', 'listening', 'speaking', 'writing'] as const
+export type Skill = (typeof SKILLS)[number]
+export type SelfRating = 'can' | 'hard' | 'cannot'
+export const STRUGGLES = ['tenses', 'listening', 'speaking', 'writing'] as const
+
+export interface SurveyAnswers {
+  self: Partial<Record<Skill, SelfRating>>
+  struggle?: (typeof STRUGGLES)[number]
+}
+
+/** A placement check: right answers per part, the grammar level reached and the topics with mistakes. */
+export interface PlacementResult {
+  at: number
+  parts: Record<'grammar' | 'reading' | 'listening' | 'writing', { correct: number; total: number }>
+  /** The highest level whose grammar items were mostly right, cumulatively: A2, B1 or B2. */
+  grammarLevel: 'below A2' | 'A2' | 'B1' | 'B2'
+  /** Topic tags with mistakes. */
+  weak: string[]
 }
 
 export type UnitStatus = 'done' | 'tested_out'
@@ -101,6 +127,7 @@ export const DEFAULT_SETTINGS: Settings = {
   voice: true,
   unlockAll: false,
   sounds: true,
+  support: false,
 }
 
 export class ClubDB extends Dexie {

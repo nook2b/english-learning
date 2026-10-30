@@ -37,7 +37,7 @@ export function toSteps(exercises: readonly Exercise[]): Step[] {
 /** Session kinds as the learner sees them (route, session header). */
 export const KIND_LABELS = { comprehension: 'Понимание', form: 'Форма', production: 'Продукция', fluency: 'Беглость' } as const
 
-export const SPEAKER_NAMES: Record<Speaker, string> = { mika: 'Mika', rei: 'Rei', iris: 'Iris', newcomer: 'Newcomer', narrator: '' }
+export const SPEAKER_NAMES: Record<Speaker, string> = { mika: 'Mika', rei: 'Rei', iris: 'Iris', newcomer: 'Newcomer', narrator: '', announcer: 'International Office' }
 
 /** Deterministic shuffle so a step looks the same after a re-render. */
 export function shuffled<T>(items: readonly T[], seed: string): T[] {
@@ -84,3 +84,15 @@ export function mistakeText(step: Step, expected: string): string {
   }
 }
 
+
+const DISTRACTORS = ['is', 'are', 'do', 'does', 'the', 'a', 'to', 'in', 'on', 'at']
+
+/**
+ * Word tiles for a task that has none, in support mode: the words of the
+ * first accepted answer plus two short distractors it does not use.
+ */
+export function supportTiles(answer: string, seed: string): string[] {
+  const words = answer.trim().split(/\s+/)
+  const lower = new Set(words.map((w) => w.toLowerCase().replace(/[.,!?]/g, '')))
+  return [...words, ...shuffled(DISTRACTORS.filter((d) => !lower.has(d)), seed).slice(0, 2)]
+}

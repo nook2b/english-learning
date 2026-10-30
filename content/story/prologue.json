@@ -1,0 +1,145 @@
+{
+ "kind": "comprehension",
+ "title": "Пролог. Не тот кабинет",
+ "intro": "Понедельник, около 9:40. В 10:00 у тебя вступительная проверка. Это вводная сцена с подсказками: переспросить и представиться ты как следует потренируешь в юнитах 001–002.",
+ "frame": {
+  "setting": "В сообщении международного отдела прозвучало «Room seventy, New Building». Ты расслышал «seventeen» и вошёл в старый корпус. На двери — 17. Здесь стоят микрофоны, на столе лежит спутанный кабель.",
+  "lines": [
+   {
+    "speaker": "rei",
+    "text": "The cable. Careful.",
+    "ru": "Кабель. Осторожно.",
+    "expr": "recorder/neutral"
+   },
+   {
+    "speaker": "mika",
+    "text": "Are you here for the guide? Great! We need someone who is new here.",
+    "ru": "Ты к нам насчёт гида? Отлично! Нам как раз нужен кто-то новенький.",
+    "expr": "excited"
+   },
+   {
+    "speaker": "iris",
+    "text": "One question first. Which room do you need?",
+    "ru": "Сначала один вопрос. Какой кабинет тебе нужен?",
+    "expr": "neutral"
+   }
+  ]
+ },
+ "exercises": [
+  {
+   "id": "pro-e1",
+   "type": "scene",
+   "setting": "Ты показываешь сообщение международного отдела на телефоне. Айрис прослушивает номер.",
+   "lines": [
+    {
+     "speaker": "iris",
+     "text": "Seventy. Your check is in Room 70, in the New Building. This is Room 17.",
+     "ru": "Семьдесят. Твоя проверка в кабинете 70 нового корпуса. Здесь комната 17.",
+     "expr": "neutral"
+    },
+    {
+     "speaker": "rei",
+     "text": "Through the courtyard. Then the glass doors.",
+     "ru": "Через двор. Потом стеклянные двери.",
+     "expr": "neutral"
+    }
+   ],
+   "intents": [
+    {
+     "label": "Попросить повторить маршрут",
+     "answers": [
+      "Could you say that again, please?",
+      "Could you repeat that, please?",
+      "Could you say that again?"
+     ],
+     "tiles": [
+      "Could",
+      "you",
+      "say",
+      "that",
+      "again,",
+      "please?",
+      "tell",
+      "it"
+     ],
+     "reaction": {
+      "speaker": "iris",
+      "text": "Of course. Cross the courtyard. Go through the glass doors. Room 70 is on the ground floor.",
+      "ru": "Конечно. Перейди двор. Пройди через стеклянные двери. Кабинет 70 на первом этаже.",
+      "expr": "neutral"
+     },
+     "flag": "prologue_asked_again"
+    }
+   ],
+   "clarify": {
+    "speaker": "iris",
+    "text": "Take your time. You can use the words on the screen.",
+    "ru": "Не торопись. Можешь использовать слова на экране.",
+    "expr": "listening"
+   },
+   "tags": [
+    "function_clarify"
+   ]
+  },
+  {
+   "id": "pro-e2",
+   "type": "scene",
+   "setting": "Айрис пишет маршрут на свободной стороне старого листа. На обороте — схема радиокомнаты и пометка «Before You Go». Ты замечаешь её, но расспрашивать некогда. Айрис отдаёт лист тебе.",
+   "lines": [
+    {
+     "speaker": "mika",
+     "text": "I'm Mika. This is Rei, and this is Iris. What's your name?",
+     "ru": "Я Мика. Это Рэй, а это Айрис. Как тебя зовут?",
+     "expr": "happy"
+    }
+   ],
+   "intents": [
+    {
+     "label": "Представиться",
+     "answers": [
+      "Nice to meet you. I'm {player_name}.",
+      "Hi, I'm {player_name}. I'm new here.",
+      "Nice to meet you, I'm {player_name}.",
+      "Hi, I'm {player_name}."
+     ],
+     "reaction": {
+      "speaker": "mika",
+      "text": "Nice to meet you! You have time. The New Building is five minutes away.",
+      "ru": "Рада познакомиться! Ты успеваешь. До нового корпуса пять минут.",
+      "expr": "happy"
+     },
+     "flag": "prologue_introduced"
+    }
+   ],
+   "clarify": {
+    "speaker": "iris",
+    "text": "Take your time. You can use the words on the screen.",
+    "ru": "Не торопись. Можешь использовать слова на экране.",
+    "expr": "listening"
+   },
+   "tags": [
+    "function_greeting"
+   ]
+  }
+ ],
+ "wrap": [
+  {
+   "speaker": "mika",
+   "text": "We're making an audio guide for new students. Come back after your check if you have time.",
+   "ru": "Мы делаем аудиогид для новых студентов. Возвращайся после проверки, если будет время.",
+   "expr": "happy"
+  },
+  {
+   "speaker": "iris",
+   "text": "You can tell us which parts aren't clear. That's useful.",
+   "ru": "Можешь сказать, что в нём непонятно. Это полезно.",
+   "expr": "neutral"
+  },
+  {
+   "speaker": "rei",
+   "text": "And the door will still say seventeen.",
+   "ru": "А на двери всё ещё будет семнадцать.",
+   "expr": "smirk"
+  }
+ ]
+}

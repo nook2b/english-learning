@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { logLookup } from '../data/db'
 import { keyOf, lookup, WORD } from './dictionary'
+import { useExam } from './exam'
 import { splitGloss, useGlossary } from './glossary'
 
 interface Note {
@@ -43,6 +44,7 @@ function Words({ text, onTap }: { text: string; onTap: (word: string) => void })
 export function Gloss({ text }: { text: string }) {
   const entries = useGlossary()
   const [open, setOpen] = useState<Note>()
+  const exam = useExam()
   const show = (note: Note) => {
     if (open?.key === note.key) return setOpen(undefined)
     setOpen(note)
@@ -50,6 +52,7 @@ export function Gloss({ text }: { text: string }) {
   }
   const tapWord = (word: string) => show({ key: keyOf(word), en: word, ...lookup(word) })
   const parts = splitGloss(text, entries)
+  if (exam) return <span lang="en">{text}</span>
   return (
     <>
       <span lang="en">

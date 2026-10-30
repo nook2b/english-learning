@@ -31,10 +31,17 @@
   "memories": [
     {
       "unlock": {
+        "flag": "u001_intro_quiet_place"
+      },
+      "en": "Your first line for the guide: “I'm new here, and I'm looking for a quiet place to study.”",
+      "ru": "Твоя первая строчка для гида: «Я здесь новенький и ищу тихое место для учёбы»."
+    },
+    {
+      "unlock": {
         "flag": "u001_intro_looking_for_room"
       },
-      "en": "Your first line for the guide: “I'm new here, and I'm looking for Room 70.”",
-      "ru": "Твоя первая строчка для гида: «Я здесь новенький и ищу кабинет 70»."
+      "en": "Your first line became part of the guide draft.",
+      "ru": "Твоя первая строчка стала частью черновика гида."
     },
     {
       "unlock": {

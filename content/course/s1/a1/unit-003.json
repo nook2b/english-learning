@@ -38,12 +38,12 @@
       "title": "Твоё расписание",
       "intro": "Прочитай своё расписание на неделю и ответь на вопросы.",
       "frame": {
-        "setting": "Комната 17. Мика рисует на доске четыре колонки.",
+        "setting": "Вторник, ближе к вечеру. Короткое интервью состоялось, но общую встречу команда пока не назначала. Мика рисует на доске четыре колонки: нужен постоянный час со следующей недели.",
         "lines": [
           {
             "speaker": "mika",
-            "text": "We need one hour when all four of us are free. Let's start with your timetable!",
-            "ru": "Нам нужен один час, когда свободны все четверо. Начнём с твоего расписания!",
+            "text": "We need a regular hour from next week. When are all four of us free? Let's check your timetable!",
+            "ru": "Со следующей недели нам нужен постоянный час. Когда свободны все четверо? Посмотрим твоё расписание!",
             "expr": "excited"
           }
         ]
@@ -60,7 +60,7 @@
         {
           "id": "u003-s1-e1",
           "type": "reading",
-          "title": "Your timetable — Week 1",
+          "title": "Your timetable — First full week",
           "text": "Monday: English 9:00–12:00, Room 70\nTuesday: City Studies 10:00–11:30, Room 12; Media Lab 14:00–16:00\nWednesday: English 9:00–11:00; free afternoon\nThursday: Writing Workshop 13:00–15:00, Library\nFriday: English 9:00–12:00; Club Fair 16:00 in the Main Hall\nThe bus to the city leaves every 20 minutes from Gate B. The last bus leaves at 23:10.",
           "ru": "Понедельник: английский 9:00–12:00, кабинет 70. Вторник: городоведение 10:00–11:30, кабинет 12; медиалаборатория 14:00–16:00. Среда: английский 9:00–11:00; свободная вторая половина дня. Четверг: письменный практикум 13:00–15:00, библиотека. Пятница: английский 9:00–12:00; ярмарка клубов в 16:00 в главном зале. Автобус в город отходит каждые 20 минут от ворот B. Последний автобус — в 23:10.",
           "questions": [
@@ -186,8 +186,8 @@
       "wrap": [
         {
           "speaker": "iris",
-          "text": "Wednesday at one. It's the only hour that works.",
-          "ru": "Среда, час дня. Это единственный час, который подходит.",
+          "text": "Wednesday from one to three works for everyone. Let's check the courtyard.",
+          "ru": "Среда с часу до трёх подходит всем. Проверим, свободен ли двор.",
           "expr": "notebook/focused"
         }
       ],
@@ -1006,8 +1006,8 @@
             },
             {
               "speaker": "rei",
-              "text": "And I'm in the lab. Next idea.",
-              "ru": "А я в лаборатории. Следующая идея.",
+              "text": "I can come after five, but Iris can't come before seven. Let's try another day.",
+              "ru": "Я могу после пяти, но Айрис не может до семи. Попробуем другой день.",
               "expr": "deadpan"
             }
           ],

@@ -8,6 +8,8 @@ import { PathScreen } from '../features/path/PathScreen'
 import { ProfileScreen } from '../features/profile/ProfileScreen'
 import { ReviewScreen } from '../features/review/ReviewScreen'
 import { ReviewSession } from '../features/review/ReviewSession'
+import { PlacementCheck } from '../features/story/PlacementCheck'
+import { PrologueScreen } from '../features/story/PrologueScreen'
 import { QuestsScreen } from '../features/quests/QuestsScreen'
 import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
@@ -16,7 +18,7 @@ import { Button, Card } from '../ui/kit'
 import { TopBar } from './TopBar'
 
 function Screen({ route }: { route: Route }) {
-  const { sessions, units, settings } = useClub()
+  const { sessions, units, settings, flags } = useClub()
   const unlockAll = settings.unlockAll
   switch (route.name) {
     case 'path':
@@ -26,13 +28,17 @@ function Screen({ route }: { route: Route }) {
     case 'session': {
       const unit = getUnit(route.unitId)
       if (!unit) return <UnitScreen unitId={route.unitId} />
-      if (!isSessionOpen(route, sessions, units, unlockAll)) return <LockedSession unitId={unit.id} index={route.index} />
+      if (!isSessionOpen(route, sessions, units, unlockAll, flags)) return <LockedSession unitId={unit.id} index={route.index} />
       return <SessionPlayer key={`${route.unitId}-${route.index}`} unit={unit} index={route.index} />
     }
     case 'review':
       return <ReviewScreen />
     case 'practice':
       return <ReviewSession />
+    case 'prologue':
+      return <PrologueScreen />
+    case 'placement':
+      return <PlacementCheck onExit={() => navigate({ name: 'profile' })} onClose={() => navigate({ name: 'profile' })} closeLabel="В профиль" />
     case 'quests':
       return <QuestsScreen />
     case 'heroines':
@@ -43,6 +49,9 @@ function Screen({ route }: { route: Route }) {
       return <ProfileScreen />
   }
 }
+
+/** Sessions, review rounds, the prologue and the placement retake take the whole screen. */
+const FULL_SCREEN = new Set(['session', 'practice', 'prologue', 'placement'])
 
 function LockedSession({ unitId, index }: { unitId: string; index: number }) {
   return (
@@ -69,12 +78,11 @@ export function App() {
 
   return (
     <div className="app">
-      {/* Sessions and review rounds take the whole screen. */}
-      {route.name !== 'session' && route.name !== 'practice' && <TopBar />}
+      {!FULL_SCREEN.has(route.name) && <TopBar />}
       <main>
         <Screen route={route} />
       </main>
-      {route.name !== 'session' && route.name !== 'practice' && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
+      {!FULL_SCREEN.has(route.name) && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
     </div>
   )
 }

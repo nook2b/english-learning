@@ -94,5 +94,59 @@
  "reading": {
   "kind": "skill",
   "ru": "Чтение"
+ },
+ "past_simple": {
+  "kind": "topic",
+  "ru": "Past Simple: что было",
+  "cheatsheet": "cheatsheets/past_simple.json"
+ },
+ "past_continuous": {
+  "kind": "topic",
+  "ru": "Past Continuous: что происходило в момент",
+  "cheatsheet": "cheatsheets/past_continuous.json"
+ },
+ "present_perfect": {
+  "kind": "topic",
+  "ru": "Present Perfect: опыт и результат",
+  "cheatsheet": "cheatsheets/present_perfect.json"
+ },
+ "comparatives": {
+  "kind": "topic",
+  "ru": "Сравнение: bigger, more interesting",
+  "cheatsheet": "cheatsheets/comparatives.json"
+ },
+ "future_forms": {
+  "kind": "topic",
+  "ru": "Будущее: will и going to",
+  "cheatsheet": "cheatsheets/future_forms.json"
+ },
+ "conditionals": {
+  "kind": "topic",
+  "ru": "Условные предложения с if",
+  "cheatsheet": "cheatsheets/conditionals.json"
+ },
+ "modals": {
+  "kind": "topic",
+  "ru": "Модальные: have to, can, should",
+  "cheatsheet": "cheatsheets/modals.json"
+ },
+ "passive": {
+  "kind": "topic",
+  "ru": "Страдательный залог",
+  "cheatsheet": "cheatsheets/passive.json"
+ },
+ "reported_speech": {
+  "kind": "topic",
+  "ru": "Косвенная речь",
+  "cheatsheet": "cheatsheets/reported_speech.json"
+ },
+ "gerund_infinitive": {
+  "kind": "topic",
+  "ru": "Герундий или инфинитив",
+  "cheatsheet": "cheatsheets/gerund_infinitive.json"
+ },
+ "writing": {
+  "kind": "skill",
+  "ru": "Письмо"
  }
 }

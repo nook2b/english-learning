@@ -108,6 +108,7 @@ main { flex: 1; padding: 12px 16px 88px; }
 }
 .option.active, .chip.active { border-color: var(--accent); }
 .option.right, .chip.right { border-color: #2b8a3e; background: color-mix(in srgb, #2b8a3e 18%, var(--surface)); }
+.option.picked { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, var(--surface)); }
 .option.wrong, .chip.wrong { border-color: #c92a2a; background: color-mix(in srgb, #c92a2a 18%, var(--surface)); }
 .timeline-option { display: flex; flex-direction: column; gap: 2px; }
 .timeline { max-width: 100%; }
@@ -274,3 +275,14 @@ main { flex: 1; padding: 12px 16px 88px; }
 @media (prefers-color-scheme: dark) {
   .classroom-scene { background: linear-gradient(180deg, #3b3226 0%, #463b2c 55%, #2c241a 55%, #241d15 100%) center / cover no-repeat; }
 }
+.route-prologue { position: static; --road: #e8590c; }
+.route-prologue-new { box-shadow: 0 0 0 2px color-mix(in srgb, var(--road) 35%, transparent); }
+.route-invite { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px; border-radius: 12px; border: 2px dashed var(--road, var(--border)); }
+.route-invite p { margin: 0; }
+
+/* Placement check: skill profile. */
+.skill-bars { display: grid; gap: 8px; margin: 12px 0; }
+.skill-bar { display: grid; grid-template-columns: 7.5em 1fr auto; gap: 8px; align-items: center; }
+.survey-row + .survey-row { margin-top: 12px; }
+.survey-row p { margin: 0 0 6px; }
+.feedback.exam .verdict { color: inherit; }

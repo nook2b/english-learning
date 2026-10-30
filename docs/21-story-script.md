@@ -2,10 +2,11 @@
 
 Собрано скриптом `scripts/export_story.py` из `content/`: все реплики, сцены, тексты и аудио юнитов, страницы героинь и реплики «После уроков». Документ для чтения и правок: правки переносятся в контент, после чего документ собирается заново. В скобках — id задания в файлах юнитов, курсивом — эмоция спрайта и теги голоса.
 
-Общий замысел, герои и сезоны — в [сюжетной библии](06-story-bible.md); пролог «Не тот кабинет» пока есть только там (сцена 1), см. [несостыковку с юнитом 001](20-prologue-unit-001-conflict.md).
+Общий замысел, герои и сезоны — в [сюжетной библии](06-story-bible.md); хронология, правила сцен и контракт сохранений — в [23-story-rules.md](23-story-rules.md).
 
 ## Содержание
 
+- [Пролог. Не тот кабинет](#пролог-не-тот-кабинет)
 - [Юнит 001. Представиться](#юнит-001-представиться)
 - [Юнит 002. Уточнить вопрос](#юнит-002-уточнить-вопрос)
 - [Юнит 003. Прочитать расписание](#юнит-003-прочитать-расписание)
@@ -15,26 +16,74 @@
 
 ---
 
+## Пролог. Не тот кабинет
+
+**Цель:** безопасно попробовать переспрос и представление (вводная с подсказками); понедельник, около 9:40, до проверки в 10:00
+
+**Итог пролога:** игрока позвали вернуться в комнату 17 после проверки; дальше — кабинет 70 и переход «Вернуться в комнату 17»
+
+
+_В сообщении международного отдела прозвучало «Room seventy, New Building». Ты расслышал «seventeen» и вошёл в старый корпус. На двери — 17. Здесь стоят микрофоны, на столе лежит спутанный кабель._
+
+- **Рэй:** The cable. Careful. — Кабель. Осторожно. _(recorder/neutral)_
+- **Мика:** Are you here for the guide? Great! We need someone who is new here. — Ты к нам насчёт гида? Отлично! Нам как раз нужен кто-то новенький. _(excited)_
+- **Айрис:** One question first. Which room do you need? — Сначала один вопрос. Какой кабинет тебе нужен? _(neutral)_
+
+**Сцена [pro-e1]**
+
+_Ты показываешь сообщение международного отдела на телефоне. Айрис прослушивает номер._
+
+- **Айрис:** Seventy. Your check is in Room 70, in the New Building. This is Room 17. — Семьдесят. Твоя проверка в кабинете 70 нового корпуса. Здесь комната 17. _(neutral)_
+- **Рэй:** Through the courtyard. Then the glass doors. — Через двор. Потом стеклянные двери. _(neutral)_
+
+Выбор намерения:
+- _Попросить повторить маршрут_ → «Could you say that again, please?» · флаг `prologue_asked_again`
+  - **Айрис:** Of course. Cross the courtyard. Go through the glass doors. Room 70 is on the ground floor. — Конечно. Перейди двор. Пройди через стеклянные двери. Кабинет 70 на первом этаже. _(neutral)_
+
+Если ответ непонятен:
+- **Айрис:** Take your time. You can use the words on the screen. — Не торопись. Можешь использовать слова на экране. _(listening)_
+
+**Сцена [pro-e2]**
+
+_Айрис пишет маршрут на свободной стороне старого листа. На обороте — схема радиокомнаты и пометка «Before You Go». Ты замечаешь её, но расспрашивать некогда. Айрис отдаёт лист тебе._
+
+- **Мика:** I'm Mika. This is Rei, and this is Iris. What's your name? — Я Мика. Это Рэй, а это Айрис. Как тебя зовут? _(happy)_
+
+Выбор намерения:
+- _Представиться_ → «Nice to meet you. I'm {player_name}.» · флаг `prologue_introduced`
+  - **Мика:** Nice to meet you! You have time. The New Building is five minutes away. — Рада познакомиться! Ты успеваешь. До нового корпуса пять минут. _(happy)_
+
+Если ответ непонятен:
+- **Айрис:** Take your time. You can use the words on the screen. — Не торопись. Можешь использовать слова на экране. _(listening)_
+
+_Итог занятия:_
+
+- **Мика:** We're making an audio guide for new students. Come back after your check if you have time. — Мы делаем аудиогид для новых студентов. Возвращайся после проверки, если будет время. _(happy)_
+- **Айрис:** You can tell us which parts aren't clear. That's useful. — Можешь сказать, что в нём непонятно. Это полезно. _(neutral)_
+- **Рэй:** And the door will still say seventeen. — А на двери всё ещё будет семнадцать. _(smirk)_
+
+---
+
 ## Юнит 001. Представиться
 
 **Цель:** Представиться, сказать, откуда ты и чем занят сейчас, и не притворяться, что всё понял.
 
-**Итог юнита:** Твоя строчка попала в аудиогид. На стене комнаты 17 появился листок «New voices» — и на нём твоё имя.
+**Итог юнита:** Твоя строчка сохранена в рабочей сборке аудиогида. На стене комнаты 17 появился листок «New voices» — и на нём твоё имя. Это первый небольшой вклад, а не автоматическое вступление в постоянную редакцию.
 
-### Занятие 1. Письмо академии (понимание)
+### Занятие 1. Памятка первой недели (понимание)
 
-_Утро. Коридор старого корпуса. Айрис догоняет тебя у доски объявлений._
+_Понедельник, после проверки. Ты возвращаешься в комнату 17. Листок Айрис всё ещё у тебя; на телефоне открыта новая памятка международного отдела. Результат проверки остаётся личным — его не нужно показывать команде._
 
-- **Айрис:** You dropped this. It's from the International Office. — Ты уронил. Это из международного отдела. _(stand/neutral, [slightly out of breath])_
-- **Айрис:** Read it before Monday. The important parts are short. — Прочитай до понедельника. Важное там короткое. _(dry_smile)_
+- **Мика:** You're back! How was the check? — Ты вернулся! Как прошла проверка? _(happy)_
+- **Айрис:** You can tell us later. First, check the welcome note on your phone. The important parts are short. — Расскажешь потом. Сначала посмотри памятку на телефоне. Важное там короткое. _(dry_smile)_
 
 **Чтение [u001-s1-e1]: «Welcome to Bellwether Academy»** (письмо)
 
 > Dear exchange student,
 >
-> Welcome to Bellwether Academy! Your English placement check is on Monday at 10 a.m. in Room 70, New Building. Please bring this letter and your student card.
+> Welcome to Bellwether Academy! Your placement check is complete. Classes start on Tuesday. Your timetable is in the student app. Please bring your student card to class.
 >
-> Classes start on Tuesday. Most exchange students live in the East Dorm. The dining hall opens at 7:30 every morning.
+> Most exchange students live in the East Dorm. The dining hall opens at 7:30 every morning. The library has quiet places to study.
 >
 > The International Office is open every day except Sunday. If you have a question, just ask us!
 >
@@ -42,22 +91,23 @@ _Утро. Коридор старого корпуса. Айрис догоня
 >
 > International Office
 
-_Перевод:_ Дорогой студент по обмену! Добро пожаловать в академию Bellwether! Вступительная проверка по английскому — в понедельник в 10 утра в кабинете 70 нового корпуса. Возьми это письмо и студенческий билет. Занятия начинаются во вторник. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел
+_Перевод:_ Дорогой студент по обмену! Добро пожаловать в академию Bellwether! Твоя вступительная проверка завершена. Занятия начинаются во вторник. Расписание находится в студенческом приложении. Пожалуйста, возьми студенческий билет на занятия. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. В библиотеке есть тихие места для учёбы. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел
 
 _Итог занятия:_
 
-- **Айрис:** Room 70, New Building. Not Room 17. Now you know. — Кабинет 70, новый корпус. Не 17-й. Теперь ты знаешь. _(dry_smile)_
+- **Айрис:** Classes start on Tuesday. Your timetable is in the app. That's what you need next. — Занятия начинаются во вторник. Расписание в приложении. Вот что тебе понадобится дальше. _(neutral)_
+- **Мика:** Can you listen to our guide and record one short line? Just a draft for us. — Послушаешь наш гид и запишешь одну короткую фразу? Пока только черновик для нас. _(happy)_
 
 ### Занятие 2. Голоса комнаты 17 (понимание)
 
-_Комната 17. На столе рекордер и три телефона._
+_Комната 17. На столе рекордер и три телефона. Ты согласился помочь. Мика объясняет: сейчас прозвучат пробные представления команды будущим слушателям, а не новое знакомство._
 
-- **Мика:** We're testing our intros for the guide. Listen and tell me if we sound clear! — Мы проверяем наши представления для гида. Послушай и скажи, понятно ли звучим! _(excited)_
+- **Мика:** These are our intros for new students. Listen and tell me if we're clear! — Это наши представления для новых студентов. Послушай и скажи, понятно ли мы говорим! _(excited)_
 - **Рэй:** Headphones are on the table. Don't drop them. — Наушники на столе. Не урони. _(recorder/neutral, [deadpan])_
 
 **Аудирование [u001-s2-e1]**
 
-- **Мика:** Hi again! So, I'm Mika. I'm in the prep program, like you. I usually spend my mornings in Room 17. We make radio shows there. Right now we're working on an audio guide for new students, so I'm asking everyone the same question: what's your first day like? — Ещё раз привет! Итак, я Мика. Я в подготовительной программе, как и ты. Обычно я провожу утро в комнате 17 — мы делаем там радиопередачи. Сейчас мы работаем над аудиогидом для новичков, поэтому я задаю всем один вопрос: каким получается твой первый день? _([slightly out of breath, cheerful])_
+- **Мика:** Hi, new students! I'm Mika. I'm in the prep program, like you. I usually spend my mornings in Room 17. We make radio shows there. Right now we're working on an audio guide for new students, so I'm asking everyone the same question: what's your first day like? — Привет, новички! Я Мика. Я в подготовительной программе, как и ты. Обычно я провожу утро в комнате 17 — мы делаем там радиопередачи. Сейчас мы работаем над аудиогидом для новичков, поэтому я задаю всем один вопрос: каким получается твой первый день? _([slightly out of breath, cheerful])_
 
 **Аудирование [u001-s2-e2]**
 
@@ -137,14 +187,14 @@ _Итог занятия:_
 
 **Сцена [u001-s8-e1]**
 
-_Комната 17. Красная лампочка над дверью горит._
+_Комната 17. Красная лампочка над дверью горит. Рэй пишет пробный фрагмент для внутренней сборки. Ты уже согласился записать короткое представление._
 
 - **Мика:** Okay, the mic is on. Can you introduce yourself for the guide? Just a few words. — Так, микрофон включён. Можешь представиться для гида? Пару слов. _(excited, [excited, keeping her voice down])_
 - **Рэй:** Speak normally. The mic hears everything. — Говори как обычно. Микрофон всё слышит. _(recorder/focused, [whispers])_
 
 Выбор намерения:
-- _Сказать, что ты новенький и ищешь кабинет 70_ → «I'm new here, and I'm looking for Room 70.» · флаг `u001_intro_looking_for_room`
-  - **Мика:** Perfect. That's exactly what new students need to hear. — Идеально. Именно это новичкам и нужно услышать. _(happy)_
+- _Сказать, что ты новенький и ищешь тихое место для учёбы_ → «I'm new here, and I'm looking for a quiet place to study.» · флаг `u001_intro_quiet_place`
+  - **Мика:** Let's keep that. Other new students need a quiet place too. — Оставим. Другим новичкам тоже нужно тихое место. _(happy)_
 - _Сказать, что ты здесь по обмену и пока не всё понимаешь_ → «I'm here on an exchange program, and I don't understand everything yet.» · флаг `u001_intro_exchange_honest`
   - **Айрис:** Honest. I like that. Let's keep it. — Честно. Мне нравится. Оставим. _(dry_smile)_
 
@@ -153,7 +203,7 @@ _Комната 17. Красная лампочка над дверью гори
 
 **Сцена [u001-s8-e2]**
 
-_Мика не выключает микрофон._
+_Рэй оставляет запись включённой для следующего короткого фрагмента. Мика поворачивается к тебе._
 
 - **Мика:** And now one question for us. Ask us anything! — А теперь один вопрос нам. Спрашивай что угодно! _(excited)_
 
@@ -212,7 +262,7 @@ _Итог занятия:_
 
 ### Занятие 2. Слишком быстро (понимание)
 
-_Двор академии. Мика уже держит микрофон._
+_Вторник, после первых занятий. Двор академии. После вчерашней пробной записи команда проверяет вопросы на настоящих новичках. Мика уже держит микрофон._
 
 - **Мика:** Okay, quick test before the real interviews! I'll ask you, you tell me if it's too fast. — Так, быстрая проверка перед настоящими интервью! Я спрашиваю — ты говоришь, если слишком быстро. _(excited)_
 
@@ -298,7 +348,7 @@ _Итог занятия:_
 _Двор. Рэй держит рекордер, Мика — список вопросов._
 
 - **Рэй:** Before we start. Is your gain at eight or at ten? — Перед началом. У тебя gain на восьми или на десяти? _(recorder/neutral)_
-- **Рэй:** …You don't know what gain is, do you? — …Ты ведь не знаешь, что такое gain? _(recorder/smirk)_
+- **Рэй:** Need the word or the button? You can ask. — Объяснить слово или показать кнопку? Можешь спросить. _(recorder/smirk)_
 
 Выбор намерения:
 - _Честно спросить, что значит gain_ → «What does "gain" mean?» · флаг `u002_asked_gain`
@@ -311,7 +361,7 @@ _Двор. Рэй держит рекордер, Мика — список во�
 
 **Сцена [u002-s8-e2]**
 
-_К вам подходит новичок с картой. Мика начинает интервью — очень быстро._
+_К вам подходит новичок с картой. Он согласился на короткое пробное интервью для внутреннего черновика. Мика начинает — очень быстро._
 
 - **Мика:** Hi! Welcome! Where-are-you-from-what-do-you-study-and-do-you-like-it-here? — Привет! Добро пожаловать! Откуда-ты-что-изучаешь-и-тебе-здесь-нравится? _(excited, [very fast, excited, all in one breath])_
 - **Новичок:** Sorry… what? — Извините… что?
@@ -340,11 +390,11 @@ _Итог занятия:_
 
 ### Занятие 1. Твоё расписание (понимание)
 
-_Комната 17. Мика рисует на доске четыре колонки._
+_Вторник, ближе к вечеру. Короткое интервью состоялось, но общую встречу команда пока не назначала. Мика рисует на доске четыре колонки: нужен постоянный час со следующей недели._
 
-- **Мика:** We need one hour when all four of us are free. Let's start with your timetable! — Нам нужен один час, когда свободны все четверо. Начнём с твоего расписания! _(excited)_
+- **Мика:** We need a regular hour from next week. When are all four of us free? Let's check your timetable! — Со следующей недели нам нужен постоянный час. Когда свободны все четверо? Посмотрим твоё расписание! _(excited)_
 
-**Чтение [u003-s1-e1]: «Your timetable — Week 1»** (текст)
+**Чтение [u003-s1-e1]: «Your timetable — First full week»** (текст)
 
 > Monday: English 9:00–12:00, Room 70
 >
@@ -388,7 +438,7 @@ _Вечер. На телефоне три голосовых сообщения.
 
 _Итог занятия:_
 
-- **Айрис:** Wednesday at one. It's the only hour that works. — Среда, час дня. Это единственный час, который подходит. _(notebook/focused)_
+- **Айрис:** Wednesday from one to three works for everyone. Let's check the courtyard. — Среда с часу до трёх подходит всем. Проверим, свободен ли двор. _(notebook/focused)_
 
 ### Занятие 3. At, on, in (форма)
 
@@ -453,7 +503,7 @@ _Комната 17. На доске четыре колонки расписан
 
 - **Мика:** Monday evening! Everyone loves Monday evening. — Понедельник вечером! Все любят понедельник вечером. _(excited)_
 - **Айрис:** I work until seven on Monday. — Я работаю до семи в понедельник. _(annoyed)_
-- **Рэй:** And I'm in the lab. Next idea. — А я в лаборатории. Следующая идея. _(deadpan)_
+- **Рэй:** I can come after five, but Iris can't come before seven. Let's try another day. — Я могу после пяти, но Айрис не может до семи. Попробуем другой день. _(deadpan)_
 
 Выбор намерения:
 - _Предложить среду в час_ → «How about Wednesday at one?» · флаг `u003_proposed_wednesday`
@@ -492,7 +542,7 @@ _Итог занятия:_
 
 ### Занятие 1. Обычный день новичка (понимание)
 
-_Библиотека, второй этаж, у окна. Айрис протягивает тебе лист._
+_Следующая неделя, до назначенной встречи в среду. Библиотека, второй этаж, у окна. После первых учебных дней ты уже можешь сравнить черновик с собственным опытом. Айрис протягивает тебе лист._
 
 - **Айрис:** I wrote a page about a typical day here. Is it true for you? — Я написала страницу про обычный день здесь. Это правда про тебя? _(notebook/focused)_
 
@@ -504,7 +554,7 @@ _Перевод:_ Большинство новичков встают окол�
 
 _Итог занятия:_
 
-- **Айрис:** So the bus part is wrong. Good to know before we record it. — Значит, часть про автобус неправильная. Хорошо, что узнали до записи. _(notebook/skeptical)_
+- **Айрис:** That's a draft, not everyone's routine. We'll use your real day for the recording. — Это черновик, а не общий распорядок. Для записи возьмём твой настоящий день. _(notebook/skeptical)_
 
 ### Занятие 2. Их дни (понимание)
 
@@ -561,7 +611,7 @@ _Айрис открывает пустую страницу «A day of a new st
 
 _Итог занятия:_
 
-- **Айрис:** I didn't change a single word. That's a compliment, by the way. — Я не изменила ни слова. Это комплимент, между прочим. _(dry_smile)_
+- **Айрис:** Your words stay. I only marked the grammar. That's a compliment, by the way. — Твои слова остаются. Я только отметила грамматику. Это комплимент, между прочим. _(dry_smile)_
 
 ### Занятие 6. Голосом (продукция)
 
@@ -597,9 +647,9 @@ _Итог занятия:_
 
 **Сцена [u004-s8-e1]**
 
-_Комната 17. Красная лампочка горит. Мика держит лист с вопросами._
+_Среда, час дня. Во дворе начался дождь, поэтому команда собралась в комнате 17. Все пришли на согласованную встречу; её время сохраняется. Красная лампочка горит. Мика держит лист с вопросами._
 
-- **Мика:** So, tell us about a normal day. What do you usually do in the morning? — Итак, расскажи про обычный день. Что ты обычно делаешь утром? _(listening, [warmly, keeping her voice down])_
+- **Мика:** Rain outside. Quiet in here. Tell us about a normal day. What do you usually do in the morning? — Снаружи дождь. Здесь тихо. Расскажи про обычный день. Что ты обычно делаешь утром? _(listening, [warmly, keeping her voice down])_
 - **Рэй:** Mic's on. Take your time. — Микрофон включён. Не торопись. _(recorder/listening, [whispers])_
 
 Выбор намерения:
@@ -626,7 +676,7 @@ _Айрис поднимает лист с последним вопросом._
 
 _Итог занятия:_
 
-- **Рэй:** That's the first full page. Saved twice. — Это первая целая страница. Сохранено дважды. _(recorder/happy)_
+- **Рэй:** First full story page. Saved twice. — Первая целая страница с историей. Сохранено дважды. _(recorder/happy)_
 - **Мика:** Module one is done! We should celebrate. With lunch. All four of us. — Первый модуль готов! Надо отметить. Обедом. Вчетвером. _(excited)_
 - **Айрис:** She's already planning the order. Run. — Она уже планирует заказ. Беги. _(dry_smile)_
 
@@ -647,7 +697,8 @@ _Итог занятия:_
 
 **Общие воспоминания:**
 
-- Your first line for the guide: “I'm new here, and I'm looking for Room 70.” — Твоя первая строчка для гида: «Я здесь новенький и ищу кабинет 70». _(флаг `u001_intro_looking_for_room`)_
+- Your first line for the guide: “I'm new here, and I'm looking for a quiet place to study.” — Твоя первая строчка для гида: «Я здесь новенький и ищу тихое место для учёбы». _(флаг `u001_intro_quiet_place`)_
+- Your first line became part of the guide draft. — Твоя первая строчка стала частью черновика гида. _(флаг `u001_intro_looking_for_room`)_
 - Your first line for the guide: honest about not understanding everything yet. — Твоя первая строчка для гида — честно о том, что пока не всё понимаешь. _(флаг `u001_intro_exchange_honest`)_
 - You asked Mika to speak more slowly in the first real interview. She laughed — and slowed down. — Ты попросил Мику говорить медленнее на первом настоящем интервью. Она рассмеялась — и замедлилась. _(флаг `u002_slowed_mika`)_
 - You helped a newcomer with one simple question. "One question at a time" is now Mika's rule. — Ты помог новичку одним простым вопросом. «По одному вопросу» — теперь правило Мики. _(флаг `u002_helped_newcomer`)_
@@ -716,11 +767,11 @@ _Итог занятия:_
 
 **Общие воспоминания:**
 
-- Iris gave you the letter you dropped. “The important parts are short.” — Айрис вернула тебе потерянное письмо. «Важное там короткое». _(после юнита 001)_
+- After the check, Iris helped you read the welcome note. “The important parts are short.” — После проверки Айрис помогла тебе прочитать памятку. «Важное там короткое». _(после юнита 001)_
 - Iris told you where to find her: second floor, by the window. — Айрис сказала, где её найти: второй этаж, у окна. _(флаг `u001_asked_iris`)_
 - Iris added a page to the guide: "How to ask again". It was your idea. — Айрис добавила в гид страницу «Как переспросить». Это была твоя идея. _(после юнита 002)_
 - You suggested Wednesday at one. Iris checked it twice. It worked. — Ты предложил среду в час. Айрис проверила дважды. Подошло. _(флаг `u003_proposed_wednesday`)_
-- Iris didn't change a single word of your page. "That's a compliment." — Айрис не изменила ни слова на твоей странице. «Это комплимент». _(после юнита 004)_
+- Iris kept your wording and only marked the grammar. "That's a compliment." — Айрис сохранила твои формулировки и только отметила грамматику. «Это комплимент». _(после юнита 004)_
 
 **Реплики «Поболтать»:**
 

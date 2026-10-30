@@ -58,6 +58,9 @@ interface ClubState {
   remember: (flag: string) => Promise<void>
 }
 
+/** Translations shown at once: the setting, or support mode. */
+export const alwaysTranslate = (s: Settings) => s.translation === 'always' || s.support
+
 export function sessionsDone(sessions: Record<string, SessionResult>, unitId: string): number {
   let n = 0
   for (let i = 1; i <= SESSIONS_PER_UNIT; i++) if (sessions[sessionId(unitId, i)]) n++

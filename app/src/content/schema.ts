@@ -11,7 +11,7 @@ const answers = z.array(z.string().min(1)).min(1)
 export const HEROINES = ['mika', 'rei', 'iris'] as const
 /** Every unit has eight sessions (docs/00-full-plan.md, 3.3). */
 export const SESSIONS_PER_UNIT = 8
-export const Speaker = z.enum([...HEROINES, 'newcomer', 'narrator'])
+export const Speaker = z.enum([...HEROINES, 'newcomer', 'narrator', 'announcer'])
 
 export const TIMELINE_KINDS = ['now', 'habit', 'state', 'schedule', 'past_point', 'past_to_now', 'future_plan'] as const
 export const TimelineKind = z.enum(TIMELINE_KINDS)
@@ -204,6 +204,11 @@ export const Session = z.object({
   frame: z.object({ setting: z.string(), lines: z.array(Line).min(1) }).optional(),
   /** Story beat after the session: what changed. */
   wrap: z.array(Line).min(1).optional(),
+  /**
+   * A story invitation after the session, answered with a button, not English
+   * ("Попробовать" / "Позже"). The next session opens once it is accepted.
+   */
+  invite: z.object({ flag: z.string(), text: z.string(), accept: z.string(), later: z.string() }).optional(),
   exercises: z.array(Exercise).min(1),
 })
 

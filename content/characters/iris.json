@@ -33,8 +33,8 @@
       "unlock": {
         "unit": "001"
       },
-      "en": "Iris gave you the letter you dropped. “The important parts are short.”",
-      "ru": "Айрис вернула тебе потерянное письмо. «Важное там короткое»."
+      "en": "After the check, Iris helped you read the welcome note. “The important parts are short.”",
+      "ru": "После проверки Айрис помогла тебе прочитать памятку. «Важное там короткое»."
     },
     {
       "unlock": {
@@ -61,8 +61,8 @@
       "unlock": {
         "unit": "004"
       },
-      "en": "Iris didn't change a single word of your page. \"That's a compliment.\"",
-      "ru": "Айрис не изменила ни слова на твоей странице. «Это комплимент»."
+      "en": "Iris kept your wording and only marked the grammar. \"That's a compliment.\"",
+      "ru": "Айрис сохранила твои формулировки и только отметила грамматику. «Это комплимент»."
     }
   ],
   "lines": [

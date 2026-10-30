@@ -1,5 +1,6 @@
 import { type ReactNode, useMemo, useState } from 'react'
 import { Button } from '../ui/kit'
+import { useExam } from './exam'
 import { shuffled } from './model'
 
 export function TextAnswer({ initial = '', locked, onSubmit, placeholder = 'Ответ по-английски' }: { initial?: string; locked: boolean; onSubmit: (text: string) => void; placeholder?: string }) {
@@ -86,10 +87,11 @@ export function Options<T extends string>({
   onPick: (option: T) => void
   render?: (option: T) => ReactNode
 }) {
+  const exam = useExam()
   return (
     <div className="options">
       {options.map((o) => {
-        const state = !locked ? '' : o === answer ? 'right' : o === picked ? 'wrong' : ''
+        const state = !locked ? '' : exam ? (o === picked ? 'picked' : '') : o === answer ? 'right' : o === picked ? 'wrong' : ''
         return (
           <button key={o} className={`option ${state}`} disabled={locked} onClick={() => onPick(o)}>
             {render(o)}

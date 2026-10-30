@@ -1,4 +1,4 @@
-import { checkTyped, matches, matchesSpeech, normalize, numberToWords } from './check'
+import { checkTyped, checkWithName, matches, matchesSpeech, normalize, numberToWords } from './check'
 
 test('ignores case, punctuation and curly apostrophes', () => {
   expect(matches('  i’m NEW here!! ', ["I'm new here."])).toBe(true)
@@ -46,4 +46,11 @@ test('missing commas and full stops need no note at all', () => {
 test('grammar is still checked', () => {
   expect(checkTyped('please dont touches the cables', ["Please don't touch the cables."])).toEqual({ correct: false })
   expect(checkTyped('he dont like it', ["He doesn't like it."])).toEqual({ correct: false })
+})
+
+test("an answer with the player's name takes any name, as typed", () => {
+  const answers = ["Nice to meet you. I'm {player_name}.", "Hi, I'm {player_name}. I'm new here."]
+  expect(checkWithName("Nice to meet you. I'm Ivan.", answers)).toEqual({ correct: true, name: 'Ivan' })
+  expect(checkWithName('hi im Anna Maria, im new here', answers)).toMatchObject({ correct: true, name: 'Anna Maria' })
+  expect(checkWithName('Nice meet you Ivan', answers)).toEqual({ correct: false })
 })

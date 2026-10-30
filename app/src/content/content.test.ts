@@ -3,6 +3,7 @@ import { ARC1_UNITS } from './outline'
 import { type HeroineId, isHeroine, parseExpr, resolveSprite } from '../story/sprites'
 import type { Exercise } from './schema'
 import { TAGS } from './tags'
+import { PROLOGUE } from './story'
 import { PRACTICE } from './practice'
 import { CHARACTERS } from './characters'
 import { AFTER_CLASS } from './afterClass'
@@ -11,9 +12,11 @@ import { clipUrl } from '../speech/clips'
 import { voicedText } from '../speech/delivery'
 
 const units = Object.values(UNITS)
+// The prologue is checked like a unit that comes before 001.
+const storyUnits = [{ id: '000', sessions: [PROLOGUE] }, ...units]
 const practice = Object.values(PRACTICE).flat()
-// Unit tasks and the after-class practice bank pass the same checks.
-const exercises = [...units.flatMap((u) => u.sessions.flatMap((s) => s.exercises)), ...practice.map((p) => p.exercise)]
+// Unit tasks, the prologue and the after-class practice bank pass the same checks.
+const exercises = [...storyUnits.flatMap((u) => u.sessions.flatMap((s) => s.exercises)), ...practice.map((p) => p.exercise)]
 
 /** Can some accepted answer be built from the tiles (each tile used at most once)? */
 function buildable(tiles: readonly string[], answers: readonly string[]): boolean {
@@ -90,7 +93,7 @@ test.each(exercises.map((e) => [e.id, e] as [string, Exercise]))('%s is answerab
 })
 
 const linesOf = (e: Exercise) => (e.type === 'scene' ? [...e.lines, ...e.intents.map((i) => i.reaction), e.clarify] : [])
-const allLines = units.flatMap((u) =>
+const allLines = storyUnits.flatMap((u) =>
   u.sessions.flatMap((s) => [...(s.frame?.lines ?? []), ...(s.wrap ?? []), ...s.exercises.flatMap(linesOf)].map((l) => ({ unit: u.id, line: l }))),
 )
 
@@ -105,7 +108,7 @@ test('every heroine line points at a drawn sprite (no fallback)', () => {
 test('a clarification after a language slip only listens, thinks or wonders (docs/10-sprites.md, section 8)', () => {
   // A whitelist, so a new emotion cannot slip in unnoticed.
   const allowed = new Set(['listening', 'thinking', 'neutral', 'surprised'])
-  const bad = units.flatMap((u) =>
+  const bad = storyUnits.flatMap((u) =>
     u.sessions.flatMap((s) => s.exercises.flatMap((e) => (e.type === 'scene' ? [e.clarify] : []))).filter((l) => !allowed.has((l.expr ?? 'neutral').split('/').pop()!)),
   )
   expect(bad).toEqual([])
@@ -126,7 +129,7 @@ test('every heroine line, listening and dictation has its voice clip (a changed 
     if ((r.type === 'listening' || r.type === 'dictation') && typeof r.audio === 'string') check(r.speaker as string, r.audio, r)
     Object.values(r).forEach(walk)
   }
-  walk(units)
+  walk(storyUnits)
   for (const c of Object.values(CHARACTERS)) for (const l of c.lines) check(c.id, l.text, l)
   for (const [id, states] of Object.entries(AFTER_CLASS)) for (const l of Object.values(states)) check(id, l.text, l)
   // Generate the missing ones with scripts/generate_audio.py.

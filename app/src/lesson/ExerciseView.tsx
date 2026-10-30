@@ -1,15 +1,16 @@
 import { type ReactNode, useEffect, useMemo, useRef, useState } from 'react'
 import type { Exercise, ExerciseOf, Line } from '../content/schema'
-import { type Outcome, SPEAKER_NAMES, type Step, TIMELINE_LABELS, shuffled } from './model'
+import { useExam } from './exam'
+import { type Outcome, SPEAKER_NAMES, type Step, TIMELINE_LABELS, shuffled, supportTiles } from './model'
 import { canRecognize, type ListenError, listen } from '../speech/recognition'
 import { hasVoice } from '../speech/voice'
 import { AudioControls, LineVoice } from '../speech/AudioControls'
 import { Button, DialogueBox } from '../ui/kit'
-import { checkTyped, matchesSpeech } from './check'
+import { checkTyped, matchesSpeech, checkWithName, NAME } from './check'
 import { Options, TextAnswer, TileAnswer } from './inputs'
 import { Gloss, Translation } from './Gloss'
 import { Timeline } from './Timeline'
-import { useClub } from '../data/store'
+import { useClub, alwaysTranslate } from '../data/store'
 import { castAt } from '../story/cast'
 import { Stage } from '../story/Stage'
 
@@ -121,6 +122,7 @@ function TimelineView({ exercise, locked, onAnswer }: ViewProps<'timeline'>) {
 }
 
 function TextView({ step, exercise, locked, onAnswer }: ViewProps<'fill' | 'translate' | 'fix' | 'transform' | 'write'>) {
+  const exam = useExam()
   const submit = (text: string) => onAnswer({ ...checkTyped(text, exercise.answers), given: text, expected: exercise.answers[0]! })
   let head: ReactNode
   switch (exercise.type) {
@@ -169,7 +171,11 @@ function TextView({ step, exercise, locked, onAnswer }: ViewProps<'fill' | 'tran
       )
       break
   }
-  const tiles = exercise.type === 'translate' ? exercise.tiles : undefined
+  // Support mode builds sentences from tiles instead of typing (not for free writing).
+  const support = useClub((s) => s.settings.support) && !exam
+  const tiles =
+    (exercise.type === 'translate' ? exercise.tiles : undefined) ??
+    (support && exercise.type !== 'write' && exercise.type !== 'fill' ? supportTiles(exercise.answers[0]!, step.key) : undefined)
   return (
     <div className="exercise">
       {head}
@@ -227,7 +233,9 @@ function SortView({ exercise, locked, onAnswer }: ViewProps<'sort'>) {
 function QuestionView({ step, exercise, locked, onAnswer }: ViewProps<'reading' | 'listening'>) {
   const [picked, setPicked] = useState<string>()
   const q = exercise.questions[step.question ?? 0]!
-  const last = (step.question ?? 0) === exercise.questions.length - 1
+  // In the placement check the transcript and translation never show.
+  const exam = useExam()
+  const last = (step.question ?? 0) === exercise.questions.length - 1 && !exam
   return (
     <div className="exercise">
       {exercise.type === 'reading' ? (
@@ -305,7 +313,7 @@ function Passage({ exercise }: { exercise: ExerciseOf<'reading'> }) {
 }
 
 export function SceneLines({ lines }: { lines: readonly Line[] }) {
-  const always = useClub((s) => s.settings.translation === 'always')
+  const always = useClub((s) => alwaysTranslate(s.settings))
   return (
     <>
       <Stage cast={castAt(lines, lines.length - 1)} speaking={lines[lines.length - 1]?.speaker} />
@@ -323,11 +331,18 @@ export function SceneLines({ lines }: { lines: readonly Line[] }) {
 function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
   const [intent, setIntent] = useState<number>()
   const chosen = intent === undefined ? undefined : exercise.intents[intent]
+  const playerName = useClub((s) => s.settings.name)
+  const support = useClub((s) => s.settings.support)
+  const sceneTiles = chosen && (chosen.tiles ?? (support && !chosen.answers[0]!.includes(NAME) ? supportTiles(chosen.answers[0]!, `${step.key}-${intent}`) : undefined))
+  const updateSettings = useClub((s) => s.updateSettings)
   const submit = (text: string) => {
     if (!chosen) return
-    const { correct: ok, spelling } = checkTyped(text, chosen.answers)
+    const { correct: ok, spelling, name } = checkWithName(text, chosen.answers)
+    // The player's name from the survey or the profile; one typed here is kept when there is none yet.
+    if (name && !playerName) void updateSettings({ name })
+    const expected = chosen.answers[0]!.replace(NAME, name || playerName || '…')
     // The story choice counts even after a language slip: the heroine clarifies and the scene goes on.
-    onAnswer({ correct: ok, spelling, given: text, expected: chosen.answers[0]!, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction], flag: chosen.flag })
+    onAnswer({ correct: ok, spelling, given: text, expected, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction], flag: chosen.flag })
   }
   return (
     <div className="exercise">
@@ -347,8 +362,13 @@ function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
       ) : (
         <>
           <p className="task">{chosen.label}. Скажи это по-английски</p>
-          {chosen.tiles ? (
-            <TileAnswer tiles={chosen.tiles} seed={`${step.key}-${intent}`} locked={locked} onSubmit={submit} />
+          {chosen.answers[0]!.includes(NAME) && (
+            <p className="muted">
+              Например: <span lang="en">{chosen.answers[0]!.replace(NAME, playerName || 'Alex')}</span>
+            </p>
+          )}
+          {sceneTiles ? (
+            <TileAnswer tiles={sceneTiles} seed={`${step.key}-${intent}`} locked={locked} onSubmit={submit} />
           ) : (
             <TextAnswer locked={locked} onSubmit={submit} />
           )}
@@ -408,6 +428,9 @@ function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
 }
 
 function DictationView({ step, exercise, locked, onAnswer }: ViewProps<'dictation'>) {
+  const exam = useExam()
+  const support = useClub((s) => s.settings.support) && !exam
+  const tiles = exercise.tiles ?? (support ? supportTiles(exercise.answers[0]!, step.key) : undefined)
   const submit = (text: string) => onAnswer({ ...checkTyped(text, exercise.answers), given: text, expected: exercise.answers[0]! })
   return (
     <div className="exercise">
@@ -418,8 +441,8 @@ function DictationView({ step, exercise, locked, onAnswer }: ViewProps<'dictatio
           {exercise.audio}
         </p>
       )}
-      {exercise.tiles ? (
-        <TileAnswer tiles={exercise.tiles} seed={step.key} locked={locked} onSubmit={submit} />
+      {tiles ? (
+        <TileAnswer tiles={tiles} seed={step.key} locked={locked} onSubmit={submit} />
       ) : (
         <TextAnswer locked={locked} onSubmit={submit} />
       )}

@@ -1,0 +1,61 @@
+{
+ "intro": "Twenty short tasks, about ten minutes. There's no pass or fail: the check only shows where to start and what to support. Answers are not marked during the check — just do your best and skip nothing.",
+ "parts": [
+  {
+   "id": "grammar",
+   "title": "Грамматика",
+   "intro": "Выбери вариант, который подходит лучше всего. Задания идут от простых к сложным — если не знаешь, выбирай наугад.",
+   "items": [
+    {"level": "A2", "exercise": {"id": "pl-g01", "type": "choice", "tags": ["third_person"], "prompt": "My sister ___ in a bank.", "options": ["work", "works", "working", "is work"], "answer": "works"}},
+    {"level": "A2", "exercise": {"id": "pl-g02", "type": "choice", "tags": ["questions_do"], "prompt": "___ you like coffee?", "options": ["Are", "Do", "Does", "Is"], "answer": "Do"}},
+    {"level": "A2", "exercise": {"id": "pl-g03", "type": "choice", "tags": ["present_continuous"], "prompt": "Be quiet, please. The baby ___.", "options": ["sleeps", "sleep", "is sleeping", "slept"], "answer": "is sleeping"}},
+    {"level": "A2", "exercise": {"id": "pl-g04", "type": "choice", "tags": ["past_simple"], "prompt": "We ___ to the cinema last night.", "options": ["go", "went", "have gone", "are going"], "answer": "went"}},
+    {"level": "A2", "exercise": {"id": "pl-g05", "type": "choice", "tags": ["comparatives"], "prompt": "This room is ___ than the kitchen.", "options": ["big", "more big", "bigger", "biggest"], "answer": "bigger"}},
+    {"level": "B1", "exercise": {"id": "pl-g06", "type": "choice", "tags": ["present_perfect"], "prompt": "I ___ this film three times already.", "options": ["saw", "have seen", "see", "was seeing"], "answer": "have seen"}},
+    {"level": "B1", "exercise": {"id": "pl-g07", "type": "choice", "tags": ["past_continuous"], "prompt": "I ___ dinner when the phone rang.", "options": ["cooked", "was cooking", "have cooked", "cook"], "answer": "was cooking"}},
+    {"level": "B1", "exercise": {"id": "pl-g08", "type": "choice", "tags": ["future_forms"], "prompt": "Look at those clouds. It ___ rain.", "options": ["is going to", "will to", "rains", "is raining to"], "answer": "is going to"}},
+    {"level": "B1", "exercise": {"id": "pl-g09", "type": "choice", "tags": ["conditionals"], "prompt": "If it ___ tomorrow, we'll stay at home.", "options": ["will rain", "rains", "rained", "would rain"], "answer": "rains"}},
+    {"level": "B1", "exercise": {"id": "pl-g10", "type": "choice", "tags": ["modals"], "prompt": "You ___ wear a uniform here. It's the rule.", "options": ["have to", "don't have to", "can", "might"], "answer": "have to"}},
+    {"level": "B2", "exercise": {"id": "pl-g11", "type": "choice", "tags": ["conditionals"], "prompt": "If I ___ more time, I would learn Japanese.", "options": ["have", "had", "will have", "would have"], "answer": "had"}},
+    {"level": "B2", "exercise": {"id": "pl-g12", "type": "choice", "tags": ["passive"], "prompt": "The new library ___ next year.", "options": ["will build", "is building", "will be built", "builds"], "answer": "will be built"}},
+    {"level": "B2", "exercise": {"id": "pl-g13", "type": "choice", "tags": ["present_perfect"], "prompt": "She ___ here since 2020.", "options": ["works", "is working", "has been working", "worked"], "answer": "has been working"}},
+    {"level": "B2", "exercise": {"id": "pl-g14", "type": "choice", "tags": ["reported_speech"], "prompt": "He told me he ___ tired.", "options": ["is being", "was", "has", "be"], "answer": "was"}},
+    {"level": "B2", "exercise": {"id": "pl-g15", "type": "choice", "tags": ["gerund_infinitive"], "prompt": "I'm looking forward to ___ you.", "options": ["see", "seeing", "have seen", "be seeing"], "answer": "seeing"}}
+   ]
+  },
+  {
+   "id": "reading",
+   "title": "Чтение",
+   "intro": "Прочитай объявление и ответь на три вопроса.",
+   "items": [
+    {"exercise": {"id": "pl-r01", "type": "reading", "tags": ["reading"], "look": "notice", "title": "Language Exchange Evenings", "text": "Do you want to practise a language with real people? Join our Language Exchange Evenings!\nWe meet every Thursday from 6 to 8 p.m. in the café on the ground floor of the New Building.\nYou spend one hour speaking your language and one hour speaking the language you are learning.\nIt's free for students, but please register at the International Office by Wednesday. Places are limited to thirty people.", "questions": [
+     {"prompt": "When do the evenings take place?", "options": ["Every Wednesday", "Every Thursday", "Every weekend"], "answer": "Every Thursday"},
+     {"prompt": "How long do you speak the language you are learning?", "options": ["One hour", "Two hours", "Thirty minutes"], "answer": "One hour"},
+     {"prompt": "What do students need to do first?", "options": ["Pay at the café", "Register by Wednesday", "Bring a friend"], "answer": "Register by Wednesday"}
+    ]}}
+   ]
+  },
+  {
+   "id": "listening",
+   "title": "Аудирование",
+   "intro": "Послушай объявление и ответь на три вопроса. Текста на экране не будет, но послушать можно несколько раз.",
+   "items": [
+    {"exercise": {"id": "pl-l01", "type": "listening", "tags": ["listening"], "speaker": "announcer", "audio": "Good morning, everyone. This is a message from the International Office. Because of repairs, the library in the Old Building is closed until Friday. Students can use the study room on the second floor of the New Building instead. It's open from eight in the morning until ten at night. If you have borrowed books, please return them next Monday. Thank you.", "questions": [
+     {"prompt": "Why is the library closed?", "options": ["Because of repairs", "Because of a holiday", "Because of an exam"], "answer": "Because of repairs"},
+     {"prompt": "Where can students study now?", "options": ["In the café", "On the second floor of the New Building", "In the Old Building"], "answer": "On the second floor of the New Building"},
+     {"prompt": "When should students return books?", "options": ["On Friday", "Today", "Next Monday"], "answer": "Next Monday"}
+    ]}}
+   ]
+  },
+  {
+   "id": "writing",
+   "title": "Письмо",
+   "intro": "Напиши предложение по-английски. Маленькие ошибки в написании не страшны.",
+   "items": [
+    {"exercise": {"id": "pl-w01", "type": "translate", "tags": ["present_simple"], "ru": "Она не пьёт кофе по утрам.", "answers": ["She doesn't drink coffee in the morning", "She does not drink coffee in the morning", "She doesn't drink coffee in the mornings", "She does not drink coffee in the mornings"]}},
+    {"exercise": {"id": "pl-w02", "type": "transform", "tags": ["questions_do"], "instruction": "Задай вопрос к этому предложению", "sentence": "They live near the station.", "answers": ["Do they live near the station?", "Where do they live?"]}},
+    {"exercise": {"id": "pl-w03", "type": "translate", "tags": ["present_perfect"], "ru": "Я ещё не закончил домашнее задание.", "answers": ["I haven't finished my homework yet", "I have not finished my homework yet", "I haven't finished the homework yet", "I have not finished the homework yet", "I haven't done my homework yet", "I have not done my homework yet"]}}
+   ]
+  }
+ ]
+}

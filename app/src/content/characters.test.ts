@@ -1,3 +1,5 @@
+import type { Exercise } from './schema'
+import { PROLOGUE, PROLOGUE_FLAG } from './story'
 import { CHARACTERS, isOpen } from './characters'
 import { UNITS } from './course'
 import { parseExpr, resolveSprite } from '../story/sprites'
@@ -14,7 +16,10 @@ test('chat lines use drawn sprites', () => {
 })
 
 test('unlocks point at existing units and scene flags', () => {
-  const flags = new Set(Object.values(UNITS).flatMap((u) => u.sessions.flatMap((s) => s.exercises.flatMap((e) => (e.type === 'scene' ? e.intents.map((i) => i.flag) : [])))))
+  const sceneFlags = (sessions: readonly { exercises: readonly Exercise[] }[]) => sessions.flatMap((s) => s.exercises.flatMap((e) => (e.type === 'scene' ? e.intents.map((i) => i.flag) : [])))
+  // Old saves may still hold flags of rewritten branches; their memories stay readable (docs/21-story-script.md, appendix A).
+  const LEGACY = ['u001_intro_looking_for_room']
+  const flags = new Set([...Object.values(UNITS).flatMap((u) => sceneFlags(u.sessions)), ...sceneFlags([PROLOGUE]), PROLOGUE_FLAG, ...LEGACY])
   for (const c of all)
     for (const item of [...c.facts, ...c.memories, ...c.lines]) {
       if (item.unlock.unit) expect(Object.keys(UNITS).concat(['001'])).toContain(item.unlock.unit)
