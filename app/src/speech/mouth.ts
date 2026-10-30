@@ -7,6 +7,8 @@ import { audioContext } from './context'
 
 let speaker: string | undefined
 let open = false
+/** How open the mouth is, 0…1, smoothed loudness: drives the Rive heroines (three mouth frames). */
+let level = 0
 let stopDriver: (() => void) | undefined
 const listeners = new Set<() => void>()
 const emit = () => listeners.forEach((l) => l())
@@ -46,6 +48,9 @@ function loudnessDriver(audio: HTMLAudioElement): () => void {
     let sum = 0
     for (const v of data) sum += ((v - 128) / 128) ** 2
     const rms = Math.sqrt(sum / data.length)
+    // Opens fast on a syllable, closes a little slower, so the lips do not jitter.
+    const target = Math.min(1, Math.max(0, (rms - 0.02) * 7))
+    level += (target - level) * (target > level ? 0.6 : 0.35)
     // Hysteresis keeps the mouth from flickering on quiet consonants.
     setOpen(open ? rms > 0.03 : rms > 0.06)
     frame = requestAnimationFrame(tick)
@@ -64,6 +69,7 @@ function clipDriver(audio: HTMLAudioElement): () => void {
   const halt = () => {
     inner?.()
     inner = undefined
+    level = 0
     setOpen(false)
   }
   const start = () => {
@@ -82,8 +88,14 @@ function clipDriver(audio: HTMLAudioElement): () => void {
 }
 
 function flapDriver(): () => void {
-  const timer = setInterval(() => setOpen(!open), 140)
-  return () => clearInterval(timer)
+  const timer = setInterval(() => {
+    setOpen(!open)
+    level = open ? 0.7 : 0
+  }, 140)
+  return () => {
+    clearInterval(timer)
+    level = 0
+  }
 }
 
 /** Called by the voice engine when speech starts, pauses, resumes or ends. */
@@ -97,6 +109,7 @@ export function mouthStart(who: string, audio?: HTMLAudioElement) {
 export function mouthPause() {
   stopDriver?.()
   stopDriver = undefined
+  level = 0
   setOpen(false)
 }
 
@@ -105,6 +118,7 @@ export function mouthStop() {
   stopDriver = undefined
   speaker = undefined
   open = false
+  level = 0
   emit()
 }
 
@@ -117,3 +131,6 @@ const subscribe = (l: () => void) => {
 export function useMouth(who: string): 'open' | 'closed' | undefined {
   return useSyncExternalStore(subscribe, () => (speaker !== who ? undefined : open ? 'open' : 'closed'))
 }
+
+/** Mouth opening 0…1 of this speaker right now; read every animation frame, not a React state. */
+export const mouthLevel = (who: string): number => (speaker === who ? level : 0)

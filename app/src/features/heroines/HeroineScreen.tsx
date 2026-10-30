@@ -5,8 +5,6 @@ import { useClub, alwaysTranslate } from '../../data/store'
 import { Gloss, Translation } from '../../lesson/Gloss'
 import { LineVoice } from '../../speech/AudioControls'
 import { play, preload } from '../../speech/voice'
-import { hasFigure } from '../../story/figures'
-import { HeroineFigure } from '../../story/HeroineFigure'
 import { Sprite } from '../../story/Stage'
 import type { HeroineId } from '../../story/sprites'
 import { Button, Card, DialogueBox } from '../../ui/kit'
@@ -40,8 +38,8 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
       </button>
       <div className="heroine-hero">
         <button className="heroine-tap" onClick={chat} aria-label={`Поболтать с ${c.name}`}>
-          {/* The Rive idle animation; heroines without one keep their emotion sprite. */}
-          {hasFigure(id) ? <HeroineFigure heroine={id} label={c.name} /> : <Sprite heroine={id} expr={line?.expr ?? 'neutral'} />}
+          {/* The Rive heroine: breathes, blinks, shows the line's face and talks with her voice. */}
+          <Sprite heroine={id} expr={line?.expr ?? 'neutral'} animate />
         </button>
       </div>
       {line ? (
