@@ -142,10 +142,5 @@
       "change": "Сама решает, какие редакторские условия принять",
       "flag": "iris06_reply_sent"
     }
-  ],
-  "greeting": {
-    "text": "One session today is enough. Small steps are fine.",
-    "ru": "Одного занятия на сегодня хватит. Маленькие шаги — это нормально.",
-    "expr": "dry_smile"
-  }
+  ]
 }

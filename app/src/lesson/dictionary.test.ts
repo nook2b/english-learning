@@ -16,7 +16,7 @@ function glossedTexts(): string[] {
     Object.values(r).forEach(walk)
   }
   walk(Object.values(UNITS))
-  for (const c of Object.values(CHARACTERS)) texts.push(c.greeting.text, ...c.lines.map((l) => l.text), ...c.memories.map((m) => m.en))
+  for (const c of Object.values(CHARACTERS)) texts.push(...c.lines.map((l) => l.text), ...c.memories.map((m) => m.en))
   return texts
 }
 

@@ -1,5 +1,5 @@
 import { navigate } from '../../app/router'
-import { CHARACTERS, isOpen, stageOf } from '../../content/characters'
+import { CHARACTERS, isOpen } from '../../content/characters'
 import { useClub } from '../../data/store'
 import { Sprite } from '../../story/Stage'
 import { HEROINE_IDS } from '../../story/sprites'
@@ -7,7 +7,6 @@ import { Card } from '../../ui/kit'
 
 export function HeroinesScreen() {
   const { units, flags, settings } = useClub()
-  const stage = stageOf(Object.keys(units).length)
   return (
     <div className="screen">
       {HEROINE_IDS.map((id) => {
@@ -21,7 +20,7 @@ export function HeroinesScreen() {
               <h2 className="card-title">{c.name}</h2>
               <p>{c.about}</p>
               <p className="muted">
-                {stage} · воспоминаний: {memories} · квестов: {quests}/{c.quests.length}
+                Воспоминаний: {memories} · квестов: {quests}/{c.quests.length}
               </p>
             </div>
           </button>

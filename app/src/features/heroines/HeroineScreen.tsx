@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { navigate } from '../../app/router'
-import { CHARACTERS, isOpen, stageOf } from '../../content/characters'
+import { CHARACTERS, isOpen } from '../../content/characters'
 import { useClub } from '../../data/store'
 import { Gloss, Translation } from '../../lesson/Gloss'
 import { LineVoice } from '../../speech/AudioControls'
@@ -55,7 +55,6 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
 
       <Card title={c.name}>
         <p>{c.about}</p>
-        <p className="muted">Этап отношений: {stageOf(Object.keys(units).length)}</p>
       </Card>
 
       <Card title="Что ты о ней знаешь">
@@ -90,15 +89,19 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
 
       <Card title="Личные квесты">
         <ul className="list quests">
-          {c.quests.map((q) => (
-            <li key={q.id} className={flags[q.flag] ? 'quest-done' : 'quest-locked'}>
-              <span>
-                {flags[q.flag] ? '✓ ' : ''}
-                {q.title}
-              </span>
-              <span className="muted">{flags[q.flag] ? q.change : `откроется в юнитах ${q.window}`}</span>
-            </li>
-          ))}
+          {c.quests.map((q) => {
+            // "Open everything" shows what each quest changes, for testing.
+            const open = !!flags[q.flag] || settings.unlockAll
+            return (
+              <li key={q.id} className={open ? 'quest-done' : 'quest-locked'}>
+                <span>
+                  {flags[q.flag] ? '✓ ' : ''}
+                  {q.title}
+                </span>
+                <span className="muted">{open ? q.change : `откроется в юнитах ${q.window}`}</span>
+              </li>
+            )
+          })}
         </ul>
       </Card>
     </div>

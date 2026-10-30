@@ -13,8 +13,6 @@ export const Character = z.object({
   facts: z.array(z.object({ unlock: Unlock, ru: z.string() })),
   memories: z.array(z.object({ unlock: Unlock, en: z.string(), ru: z.string() })),
   lines: z.array(z.object({ unlock: Unlock, text: z.string(), ru: z.string(), expr: z.string(), delivery: z.string().optional() })),
-  /** Shown on the path screen when she is the heroine of the day. */
-  greeting: z.object({ text: z.string(), ru: z.string(), expr: z.string(), delivery: z.string().optional() }),
   quests: z.array(z.object({ id: z.string(), title: z.string(), window: z.string(), change: z.string(), flag: z.string() })),
 })
 export type Character = z.infer<typeof Character>
@@ -33,12 +31,4 @@ export const CHARACTERS: Record<string, Character> = Object.fromEntries(
 /** `all` is the testing switch "open everything" from the profile. */
 export function isOpen(unlock: Unlock, units: Record<string, unknown>, flags: Record<string, unknown>, all = false): boolean {
   return all || (!!unlock.unit && !!units[unlock.unit]) || (!!unlock.flag && !!flags[unlock.flag])
-}
-
-/** Relationship stage by story progress (docs/00-full-plan.md, 3.8). Romance stages need the route, added later. */
-export function stageOf(unitsDone: number): string {
-  if (unitsDone < 20) return 'Знакомые'
-  if (unitsDone < 40) return 'Свои в компании'
-  if (unitsDone < 60) return 'Друзья'
-  return 'Близкие друзья'
 }

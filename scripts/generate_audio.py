@@ -59,12 +59,14 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--unit", help="only this unit id, e.g. 001")
+    ap.add_argument("--prune", action="store_true", help="delete clips no line uses any more (changed or removed lines)")
     args = ap.parse_args()
 
     config = json.loads((ROOT / "content/voices.json").read_text())
     voices = config["voices"]
     by_expr = config["deliveryByExpr"]
     todo = {}
+    needed = set()
     for path in sorted((ROOT / "content/course").rglob("unit-*.json")):
         unit = json.loads(path.read_text())
         if args.unit and unit["id"] != args.unit:
@@ -74,17 +76,25 @@ def main() -> int:
                 continue
             voiced = voiced_text(text, expr, delivery, by_expr)
             out = ROOT / "assets/audio" / speaker / f"{clip_key(speaker, voiced)}.mp3"
+            needed.add(out)
             if not out.exists():
                 todo[out] = (speaker, voiced)
 
     if not args.unit:
         for path in sorted((ROOT / "content/characters").glob("*.json")):
             ch = json.loads(path.read_text())
-            for line in ch.get("lines", []) + ([ch["greeting"]] if "greeting" in ch else []):
+            for line in ch.get("lines", []):
                 voiced = voiced_text(line["text"], line.get("expr"), line.get("delivery"), by_expr)
                 out = ROOT / "assets/audio" / ch["id"] / f"{clip_key(ch['id'], voiced)}.mp3"
+                needed.add(out)
                 if not out.exists():
                     todo[out] = (ch["id"], voiced)
+
+    if args.prune and not args.unit:
+        stale = [f for f in (ROOT / "assets/audio").rglob("*.mp3") if f not in needed]
+        for f in stale:
+            f.unlink()
+        print(f"{len(stale)} unused clips deleted")
 
     chars = sum(len(t) for _, t in todo.values())
     print(f"{len(todo)} clips to generate, {chars} characters")

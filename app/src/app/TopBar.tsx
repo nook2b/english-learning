@@ -12,7 +12,8 @@ export function TopBar() {
     <header className="topbar">
       <span title="Стрик">🔥 {streak}</span>
       <GoalRing minutes={minutes} goal={settings.dailyGoalMinutes} />
-      <span title="Кристаллы">💎 0</span>
+      {/* Crystals appear with the shop (stage 6); a constant "💎 0" would look broken. */}
+      <span aria-hidden />
     </header>
   )
 }
