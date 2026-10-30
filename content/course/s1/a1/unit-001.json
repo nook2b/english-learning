@@ -49,13 +49,13 @@
           "id": "u001-s1-e1",
           "type": "reading",
           "title": "Welcome to Bellwether Academy",
-          "text": "Dear exchange student,\nWelcome to Bellwether Academy! Your English placement check is on Monday at 10 a.m. in Room 70, New Building. Please bring this letter and your student card.\nClasses start on Tuesday. Most exchange students live in the East Dorm. The dining hall opens at 7:30 every morning.\nThe International Office is open every day except Sunday. If you have a question, just ask us!\nBest wishes,\nInternational Office",
+          "text": "Dear exchange student,\nThank you for your placement check! Your English group is B1. Your English classes are in Room 70, New Building. Please bring your student card.\nClasses start on Tuesday. Most exchange students live in the East Dorm. The dining hall opens at 7:30 every morning.\nThe International Office is open every day except Sunday. If you have a question, just ask us!\nBest wishes,\nInternational Office",
           "look": "letter",
           "header": "Bellwether Academy · International Office",
-          "ru": "Дорогой студент по обмену! Добро пожаловать в академию Bellwether! Вступительная проверка по английскому — в понедельник в 10 утра в кабинете 70 нового корпуса. Возьми это письмо и студенческий билет. Занятия начинаются во вторник. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел",
+          "ru": "Дорогой студент по обмену! Спасибо, что прошёл вступительную проверку! Твоя группа по английскому — B1. Занятия по английскому — в кабинете 70 нового корпуса. Возьми студенческий билет. Занятия начинаются во вторник. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел",
           "questions": [
             {
-              "prompt": "Where is the placement check?",
+              "prompt": "Where are your English classes?",
               "options": [
                 "Room 70, New Building",
                 "Room 17, Old Building",
@@ -158,19 +158,18 @@
         }
       ],
       "frame": {
-        "setting": "Утро. Коридор старого корпуса. Айрис догоняет тебя у доски объявлений.",
+        "setting": "После вступительной проверки. Ты возвращаешься в комнату 17, как тебя и звали. Айрис ждёт у двери с конвертом.",
         "lines": [
           {
             "speaker": "iris",
-            "text": "You dropped this. It's from the International Office.",
-            "ru": "Ты уронил. Это из международного отдела.",
-            "expr": "stand/neutral",
-            "delivery": "[slightly out of breath]"
+            "text": "You came back. Good. The International Office sent you a letter.",
+            "ru": "Ты вернулся. Хорошо. Международный отдел прислал тебе письмо.",
+            "expr": "dry_smile"
           },
           {
             "speaker": "iris",
-            "text": "Read it before Monday. The important parts are short.",
-            "ru": "Прочитай до понедельника. Важное там короткое.",
+            "text": "Read it first. The important parts are short.",
+            "ru": "Сначала прочитай. Важное там короткое.",
             "expr": "dry_smile"
           }
         ]
@@ -178,8 +177,8 @@
       "wrap": [
         {
           "speaker": "iris",
-          "text": "Room 70, New Building. Not Room 17. Now you know.",
-          "ru": "Кабинет 70, новый корпус. Не 17-й. Теперь ты знаешь.",
+          "text": "So: Room 70 for classes, Room 17 for the guide. Don't mix them up again.",
+          "ru": "Итак: кабинет 70 — для занятий, комната 17 — для гида. Больше не путай.",
           "expr": "dry_smile"
         }
       ]
@@ -193,8 +192,8 @@
           "id": "u001-s2-e1",
           "type": "listening",
           "speaker": "mika",
-          "audio": "Hi again! So, I'm Mika. I'm in the prep program, like you. I usually spend my mornings in Room 17. We make radio shows there. Right now we're working on an audio guide for new students, so I'm asking everyone the same question: what's your first day like?",
-          "ru": "Ещё раз привет! Итак, я Мика. Я в подготовительной программе, как и ты. Обычно я провожу утро в комнате 17 — мы делаем там радиопередачи. Сейчас мы работаем над аудиогидом для новичков, поэтому я задаю всем один вопрос: каким получается твой первый день?",
+          "audio": "Hi, new students! I'm Mika. I'm in the prep program, like you. I usually spend my mornings in Room 17. We make radio shows there. Right now we're working on an audio guide for new students, so I'm asking everyone the same question: what's your first day like?",
+          "ru": "Привет, новички! Я Мика. Я в подготовительной программе, как и ты. Обычно я провожу утро в комнате 17 — мы делаем там радиопередачи. Сейчас мы работаем над аудиогидом для новичков, поэтому я задаю всем один вопрос: каким получается твой первый день?",
           "questions": [
             {
               "prompt": "What is Mika's team working on right now?",
@@ -235,8 +234,8 @@
           "id": "u001-s2-e2",
           "type": "listening",
           "speaker": "rei",
-          "audio": "I'm Rei. I record sound for the guide. I don't talk much when the microphone is on. And please, don't touch the cables.",
-          "ru": "Я Рэй. Я записываю звук для гида. Когда микрофон включён, я мало говорю. И пожалуйста, не трогай кабели.",
+          "audio": "Hi. I'm Rei. I record sound for the guide. I don't talk much when the microphone is on. And please, don't touch the cables.",
+          "ru": "Привет. Я Рэй. Я записываю звук для гида. Когда микрофон включён, я мало говорю. И пожалуйста, не трогай кабели.",
           "questions": [
             {
               "prompt": "What does Rei do for the guide?",
@@ -267,8 +266,8 @@
           "id": "u001-s2-e3",
           "type": "listening",
           "speaker": "iris",
-          "audio": "Hello. I'm Iris. I write and check the texts for the guide. If something isn't clear, just ask me. I'm usually in the library after four.",
-          "ru": "Привет. Я Айрис. Я пишу и проверяю тексты для гида. Если что-то непонятно, просто спроси меня. После четырёх я обычно в библиотеке.",
+          "audio": "Hello, new students. I'm Iris. I write and check the texts for the guide. If something isn't clear, just ask me. I'm usually in the library after four.",
+          "ru": "Здравствуйте, новички. Я Айрис. Я пишу и проверяю тексты для гида. Если что-то непонятно, просто спроси меня. После четырёх я обычно в библиотеке.",
           "questions": [
             {
               "prompt": "What does Iris do for the guide?",
@@ -1240,12 +1239,12 @@
           ],
           "intents": [
             {
-              "label": "Сказать, что ты новенький и ищешь кабинет 70",
+              "label": "Сказать, что ты новенький и ищешь, где заниматься",
               "answers": [
-                "I'm new here, and I'm looking for Room 70.",
-                "I'm new here and I'm looking for Room 70.",
-                "I am new here and I am looking for Room 70.",
-                "I'm new here. I'm looking for Room 70."
+                "I'm new here, and I'm looking for a good place to study.",
+                "I'm new here and I'm looking for a good place to study.",
+                "I am new here and I am looking for a good place to study.",
+                "I'm new here, and I'm looking for a place to study."
               ],
               "tiles": [
                 "I'm",
@@ -1255,18 +1254,21 @@
                 "I'm",
                 "looking",
                 "for",
+                "a",
+                "good",
+                "place",
+                "to",
+                "study.",
                 "Room",
-                "70.",
-                "am",
                 "look"
               ],
               "reaction": {
                 "speaker": "mika",
-                "text": "Perfect. That's exactly what new students need to hear.",
-                "ru": "Идеально. Именно это новичкам и нужно услышать.",
+                "text": "Perfect. Room 17 is a good place to study, by the way. Just saying.",
+                "ru": "Идеально. Кстати, комната 17 — хорошее место для учёбы. Просто к слову.",
                 "expr": "happy"
               },
-              "flag": "u001_intro_looking_for_room"
+              "flag": "u001_intro_looking_for_place"
             },
             {
               "label": "Сказать, что ты здесь по обмену и пока не всё понимаешь",

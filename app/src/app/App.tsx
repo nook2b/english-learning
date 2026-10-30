@@ -8,6 +8,7 @@ import { PathScreen } from '../features/path/PathScreen'
 import { ProfileScreen } from '../features/profile/ProfileScreen'
 import { ReviewScreen } from '../features/review/ReviewScreen'
 import { ReviewSession } from '../features/review/ReviewSession'
+import { PrologueScreen } from '../features/story/PrologueScreen'
 import { QuestsScreen } from '../features/quests/QuestsScreen'
 import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
@@ -33,6 +34,8 @@ function Screen({ route }: { route: Route }) {
       return <ReviewScreen />
     case 'practice':
       return <ReviewSession />
+    case 'prologue':
+      return <PrologueScreen />
     case 'quests':
       return <QuestsScreen />
     case 'heroines':
@@ -43,6 +46,9 @@ function Screen({ route }: { route: Route }) {
       return <ProfileScreen />
   }
 }
+
+/** Sessions, review rounds and the prologue take the whole screen. */
+const FULL_SCREEN = new Set(['session', 'practice', 'prologue'])
 
 function LockedSession({ unitId, index }: { unitId: string; index: number }) {
   return (
@@ -69,12 +75,11 @@ export function App() {
 
   return (
     <div className="app">
-      {/* Sessions and review rounds take the whole screen. */}
-      {route.name !== 'session' && route.name !== 'practice' && <TopBar />}
+      {!FULL_SCREEN.has(route.name) && <TopBar />}
       <main>
         <Screen route={route} />
       </main>
-      {route.name !== 'session' && route.name !== 'practice' && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
+      {!FULL_SCREEN.has(route.name) && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
     </div>
   )
 }

@@ -31,10 +31,10 @@
   "memories": [
     {
       "unlock": {
-        "unit": "001"
+        "flag": "prologue_done"
       },
-      "en": "Iris gave you the letter you dropped. “The important parts are short.”",
-      "ru": "Айрис вернула тебе потерянное письмо. «Важное там короткое»."
+      "en": "On your first day Iris wrote you the way to Room 70. On the back, an old map of Room 17.",
+      "ru": "В первый день Айрис написала тебе маршрут до кабинета 70. На обороте — старая схема комнаты 17."
     },
     {
       "unlock": {

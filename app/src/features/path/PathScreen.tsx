@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { navigate } from '../../app/router'
 import { UNITS, isSessionOpen, nextSession } from '../../content/course'
+import { PROLOGUE_FLAG } from '../../content/story'
 import { ARC1, ARC1_UNITS } from '../../content/outline'
 import type { Unit } from '../../content/schema'
 import { sessionId } from '../../data/db'
@@ -12,8 +13,11 @@ import { mapFigure, stopIcon } from './roadmap'
 
 
 export function PathScreen() {
-  const { units, sessions } = useClub()
+  const { units, sessions, flags } = useClub()
   const next = nextSession(sessions, units)
+  // A newcomer starts with the prologue; someone already studying sees it as a separate card.
+  const prologueDone = !!flags[PROLOGUE_FLAG]
+  const prologueFirst = !prologueDone && Object.keys(sessions).length === 0
   const doneCount = ARC1_UNITS.filter((u) => units[u.id]).length
   const route = useRef<HTMLDivElement>(null)
   const away = useAwayFromCurrent()
@@ -26,9 +30,13 @@ export function PathScreen() {
 
   return (
     <div className="screen">
-      <Button onClick={() => next && navigate({ name: 'session', ...next })} disabled={!next}>
-        {next ? `Продолжить: юнит ${next.unitId}, занятие ${next.index}` : 'Новые юниты скоро появятся'}
-      </Button>
+      {prologueFirst ? (
+        <Button onClick={() => navigate({ name: 'prologue' })}>Начать: пролог «Не тот кабинет»</Button>
+      ) : (
+        <Button onClick={() => next && navigate({ name: 'session', ...next })} disabled={!next}>
+          {next ? `Продолжить: юнит ${next.unitId}, занятие ${next.index}` : 'Новые юниты скоро появятся'}
+        </Button>
+      )}
 
       <div className="arc-head">
         <h2>{ARC1.title}</h2>
@@ -36,6 +44,10 @@ export function PathScreen() {
       </div>
 
       <div className="route" ref={route}>
+        <button className={`route-head route-prologue ${prologueDone ? '' : 'route-prologue-new'}`} onClick={() => navigate({ name: 'prologue' })}>
+          <span className="route-head-kicker">Пролог · {prologueDone ? 'пройден ✓' : 'новое'}</span>
+          <span className="route-head-title">Не тот кабинет</span>
+        </button>
         {ARC1.modules.map((m) => (
           <section key={m.id} className="route-module">
             <p className="route-module-title">
@@ -44,7 +56,7 @@ export function PathScreen() {
             {m.units.map((u) => {
               const unit = UNITS[u.id]
               return unit ? (
-                <UnitRoute key={u.id} unit={unit} next={next?.unitId === u.id ? next.index : undefined} />
+                <UnitRoute key={u.id} unit={unit} next={next?.unitId === u.id ? next.index : undefined} scroll={!prologueFirst} />
               ) : (
                 <div key={u.id} className="route-head route-head-soon">
                   <span className="route-head-kicker">Юнит {u.id} · скоро</span>
@@ -82,15 +94,15 @@ function useAwayFromCurrent(): 'up' | 'down' | undefined {
  * titles visible) and the unit's heroine standing beside it. Open stations
  * start their session on tap.
  */
-function UnitRoute({ unit, next }: { unit: Unit; next?: number }) {
+function UnitRoute({ unit, next, scroll }: { unit: Unit; next?: number; scroll: boolean }) {
   const { sessions, units, settings } = useClub()
   const current = useRef<HTMLButtonElement>(null)
   const figure = mapFigure(unit)
   const done = unit.sessions.map((_, i) => !!sessions[sessionId(unit.id, i + 1)])
   useEffect(() => {
-    // Bring the current station into view when the path opens.
-    current.current?.scrollIntoView?.({ block: 'center' })
-  }, [])
+    // Bring the current station into view when the path opens (a newcomer sees the prologue button first).
+    if (scroll) current.current?.scrollIntoView?.({ block: 'center' })
+  }, [scroll])
 
   return (
     <div className={`route-unit route-${figure.heroine}`}>

@@ -1,3 +1,5 @@
+import type { Exercise } from './schema'
+import { PROLOGUE, PROLOGUE_FLAG } from './story'
 import { CHARACTERS, isOpen } from './characters'
 import { UNITS } from './course'
 import { parseExpr, resolveSprite } from '../story/sprites'
@@ -14,7 +16,8 @@ test('chat lines use drawn sprites', () => {
 })
 
 test('unlocks point at existing units and scene flags', () => {
-  const flags = new Set(Object.values(UNITS).flatMap((u) => u.sessions.flatMap((s) => s.exercises.flatMap((e) => (e.type === 'scene' ? e.intents.map((i) => i.flag) : [])))))
+  const sceneFlags = (sessions: readonly { exercises: readonly Exercise[] }[]) => sessions.flatMap((s) => s.exercises.flatMap((e) => (e.type === 'scene' ? e.intents.map((i) => i.flag) : [])))
+  const flags = new Set([...Object.values(UNITS).flatMap((u) => sceneFlags(u.sessions)), ...sceneFlags([PROLOGUE]), PROLOGUE_FLAG])
   for (const c of all)
     for (const item of [...c.facts, ...c.memories, ...c.lines]) {
       if (item.unlock.unit) expect(Object.keys(UNITS).concat(['001'])).toContain(item.unlock.unit)

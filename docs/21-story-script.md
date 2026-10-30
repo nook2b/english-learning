@@ -2,16 +2,74 @@
 
 Собрано скриптом `scripts/export_story.py` из `content/`: все реплики, сцены, тексты и аудио юнитов, страницы героинь и реплики «После уроков». Документ для чтения и правок: правки переносятся в контент, после чего документ собирается заново. В скобках — id задания в файлах юнитов, курсивом — эмоция спрайта и теги голоса.
 
-Общий замысел, герои и сезоны — в [сюжетной библии](06-story-bible.md); пролог «Не тот кабинет» пока есть только там (сцена 1), см. [несостыковку с юнитом 001](20-prologue-unit-001-conflict.md).
+Общий замысел, герои и сезоны — в [сюжетной библии](06-story-bible.md).
 
 ## Содержание
 
+- [Пролог. Не тот кабинет](#пролог-не-тот-кабинет)
 - [Юнит 001. Представиться](#юнит-001-представиться)
 - [Юнит 002. Уточнить вопрос](#юнит-002-уточнить-вопрос)
 - [Юнит 003. Прочитать расписание](#юнит-003-прочитать-расписание)
 - [Юнит 004. Объяснить свой день](#юнит-004-объяснить-свой-день)
 - [Страницы героинь](#страницы-героинь)
 - [После уроков](#после-уроков)
+
+---
+
+## Пролог. Не тот кабинет
+
+**Цель:** переспросить и представиться
+
+**Итог пролога:** игрока позвали вернуться в комнату 17 после вступительной проверки
+
+
+_Первый день. Старый корпус академии. В письме написано «Room 70», и ты ищешь кабинет 70. Из-за двери с номером 17 слышно, как кто-то считает._
+
+- **Рэй:** Three. Two. Don't touch the… — Три. Два. Не трогай… _(focused, [whispers])_
+- **Рэй:** …cable. — …кабель. _(annoyed, [sighs])_
+- **Мика:** Are you here for us? Great! We need someone who doesn't know anything yet. — Ты к нам? Отлично! Нам как раз нужен человек, который ещё ничего не знает. _(excited)_
+- **Айрис:** Mika. First find out where he's going. — Мика. Сначала выясни, куда он шёл. _(dry_smile)_
+
+**Сцена [pro-e1]**
+
+_Ты показываешь письмо и неуверенно читаешь: «English… room seventeen?»_
+
+- **Айрис:** Seventy. Seven, zero. Not seventeen. — Семьдесят. Семь, ноль. Не семнадцать. _(focused)_
+- **Рэй:** Seventy is in the New Building. Here it's seventeen and bad wiring. — Семьдесят — в новом корпусе. Здесь семнадцать и плохая проводка. _(deadpan)_
+- **Айрис:** Go out, turn left, down the stairs, across the courtyard, second door on the right. — Выходишь, налево, вниз по лестнице, через двор, вторая дверь справа. _(neutral, [quickly, matter-of-fact])_
+
+Выбор намерения:
+- _Честно переспросить_ → «Could you say that again, please?» · флаг `prologue_asked_again`
+  - **Айрис:** Of course. Left. Stairs. Courtyard. Second door on the right. — Конечно. Налево. Лестница. Двор. Вторая дверь справа. _(happy, [slowly, clearly])_
+- _Показать письмо и попросить написать_ → «Could you write it down, please?» · флаг `prologue_asked_write`
+  - **Айрис:** Good idea. I'll write it down for you. — Хорошая мысль. Я напишу тебе. _(notebook/focused)_
+- _Повторить, что понял, и уточнить_ → «Left and then the stairs?» · флаг `prologue_checked_way`
+  - **Айрис:** Yes. Then the courtyard, second door on the right. — Да. Потом двор, вторая дверь справа. _(happy)_
+
+Если ответ непонятен:
+- **Айрис:** Shall I say the way again? — Повторить маршрут? _(listening)_
+
+**Сцена [pro-e2]** · Знакомство
+
+_Айрис пишет маршрут на листке. Рэй кивает на дверь: номер наполовину закрыт афишей._
+
+- **Рэй:** You just found a mistake in our main advertising channel. — Ты только что нашёл ошибку в нашем главном рекламном канале. _(smirk)_
+- **Мика:** First rule of the guide: don't trust our signs. I'm Mika. That's Rei, and that's Iris. — Первое правило гида: не верь нашим табличкам. Я Мика. Это Рэй, а это Айрис. _(laugh)_
+
+Выбор намерения:
+- _Представиться и сказать, что ты новенький_ → «Nice to meet you. I'm new here.» · флаг `prologue_intro_new`
+  - **Айрис:** I'll write your name down. Without numbers, just in case. — Запишу твоё имя. Без цифр — на всякий случай. _(dry_smile)_
+- _Представиться и сказать, что ты студент по обмену_ → «Nice to meet you. I'm an exchange student.» · флаг `prologue_intro_exchange`
+  - **Мика:** An exchange student! Perfect for our guide. — Студент по обмену! Идеально для нашего гида. _(excited)_
+
+Если ответ непонятен:
+- **Мика:** Sorry? Your name, slowly. — Что? Как тебя зовут, медленно. _(listening)_
+
+_Итог занятия:_
+
+- **Айрис:** Here's the way. On the back there's an old map of this room. Don't ask. — Вот маршрут. На обороте — старая схема этой комнаты. Не спрашивай. _(notebook/dry_smile)_
+- **Мика:** Good luck at the check! And come back after. We need a new student's eyes. — Удачи на проверке! И возвращайся потом. Нам нужен взгляд новичка. _(excited)_
+- **Рэй:** Room 17. One, seven. Don't get lost again. — Комната 17. Один, семь. Не заблудись снова. _(smirk)_
 
 ---
 
@@ -23,16 +81,16 @@
 
 ### Занятие 1. Письмо академии (понимание)
 
-_Утро. Коридор старого корпуса. Айрис догоняет тебя у доски объявлений._
+_После вступительной проверки. Ты возвращаешься в комнату 17, как тебя и звали. Айрис ждёт у двери с конвертом._
 
-- **Айрис:** You dropped this. It's from the International Office. — Ты уронил. Это из международного отдела. _(stand/neutral, [slightly out of breath])_
-- **Айрис:** Read it before Monday. The important parts are short. — Прочитай до понедельника. Важное там короткое. _(dry_smile)_
+- **Айрис:** You came back. Good. The International Office sent you a letter. — Ты вернулся. Хорошо. Международный отдел прислал тебе письмо. _(dry_smile)_
+- **Айрис:** Read it first. The important parts are short. — Сначала прочитай. Важное там короткое. _(dry_smile)_
 
 **Чтение [u001-s1-e1]: «Welcome to Bellwether Academy»** (письмо)
 
 > Dear exchange student,
 >
-> Welcome to Bellwether Academy! Your English placement check is on Monday at 10 a.m. in Room 70, New Building. Please bring this letter and your student card.
+> Thank you for your placement check! Your English group is B1. Your English classes are in Room 70, New Building. Please bring your student card.
 >
 > Classes start on Tuesday. Most exchange students live in the East Dorm. The dining hall opens at 7:30 every morning.
 >
@@ -42,11 +100,11 @@ _Утро. Коридор старого корпуса. Айрис догоня
 >
 > International Office
 
-_Перевод:_ Дорогой студент по обмену! Добро пожаловать в академию Bellwether! Вступительная проверка по английскому — в понедельник в 10 утра в кабинете 70 нового корпуса. Возьми это письмо и студенческий билет. Занятия начинаются во вторник. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел
+_Перевод:_ Дорогой студент по обмену! Спасибо, что прошёл вступительную проверку! Твоя группа по английскому — B1. Занятия по английскому — в кабинете 70 нового корпуса. Возьми студенческий билет. Занятия начинаются во вторник. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел
 
 _Итог занятия:_
 
-- **Айрис:** Room 70, New Building. Not Room 17. Now you know. — Кабинет 70, новый корпус. Не 17-й. Теперь ты знаешь. _(dry_smile)_
+- **Айрис:** So: Room 70 for classes, Room 17 for the guide. Don't mix them up again. — Итак: кабинет 70 — для занятий, комната 17 — для гида. Больше не путай. _(dry_smile)_
 
 ### Занятие 2. Голоса комнаты 17 (понимание)
 
@@ -57,15 +115,15 @@ _Комната 17. На столе рекордер и три телефона.
 
 **Аудирование [u001-s2-e1]**
 
-- **Мика:** Hi again! So, I'm Mika. I'm in the prep program, like you. I usually spend my mornings in Room 17. We make radio shows there. Right now we're working on an audio guide for new students, so I'm asking everyone the same question: what's your first day like? — Ещё раз привет! Итак, я Мика. Я в подготовительной программе, как и ты. Обычно я провожу утро в комнате 17 — мы делаем там радиопередачи. Сейчас мы работаем над аудиогидом для новичков, поэтому я задаю всем один вопрос: каким получается твой первый день? _([slightly out of breath, cheerful])_
+- **Мика:** Hi, new students! I'm Mika. I'm in the prep program, like you. I usually spend my mornings in Room 17. We make radio shows there. Right now we're working on an audio guide for new students, so I'm asking everyone the same question: what's your first day like? — Привет, новички! Я Мика. Я в подготовительной программе, как и ты. Обычно я провожу утро в комнате 17 — мы делаем там радиопередачи. Сейчас мы работаем над аудиогидом для новичков, поэтому я задаю всем один вопрос: каким получается твой первый день? _([slightly out of breath, cheerful])_
 
 **Аудирование [u001-s2-e2]**
 
-- **Рэй:** I'm Rei. I record sound for the guide. I don't talk much when the microphone is on. And please, don't touch the cables. — Я Рэй. Я записываю звук для гида. Когда микрофон включён, я мало говорю. И пожалуйста, не трогай кабели. _([flat, quiet])_
+- **Рэй:** Hi. I'm Rei. I record sound for the guide. I don't talk much when the microphone is on. And please, don't touch the cables. — Привет. Я Рэй. Я записываю звук для гида. Когда микрофон включён, я мало говорю. И пожалуйста, не трогай кабели. _([flat, quiet])_
 
 **Аудирование [u001-s2-e3]**
 
-- **Айрис:** Hello. I'm Iris. I write and check the texts for the guide. If something isn't clear, just ask me. I'm usually in the library after four. — Привет. Я Айрис. Я пишу и проверяю тексты для гида. Если что-то непонятно, просто спроси меня. После четырёх я обычно в библиотеке. _([calm, clear])_
+- **Айрис:** Hello, new students. I'm Iris. I write and check the texts for the guide. If something isn't clear, just ask me. I'm usually in the library after four. — Здравствуйте, новички. Я Айрис. Я пишу и проверяю тексты для гида. Если что-то непонятно, просто спроси меня. После четырёх я обычно в библиотеке. _([calm, clear])_
 
 **Диктант [u001-s2-e4]** · Расшифровка записи для гида
 
@@ -143,8 +201,8 @@ _Комната 17. Красная лампочка над дверью гори
 - **Рэй:** Speak normally. The mic hears everything. — Говори как обычно. Микрофон всё слышит. _(recorder/focused, [whispers])_
 
 Выбор намерения:
-- _Сказать, что ты новенький и ищешь кабинет 70_ → «I'm new here, and I'm looking for Room 70.» · флаг `u001_intro_looking_for_room`
-  - **Мика:** Perfect. That's exactly what new students need to hear. — Идеально. Именно это новичкам и нужно услышать. _(happy)_
+- _Сказать, что ты новенький и ищешь, где заниматься_ → «I'm new here, and I'm looking for a good place to study.» · флаг `u001_intro_looking_for_place`
+  - **Мика:** Perfect. Room 17 is a good place to study, by the way. Just saying. — Идеально. Кстати, комната 17 — хорошее место для учёбы. Просто к слову. _(happy)_
 - _Сказать, что ты здесь по обмену и пока не всё понимаешь_ → «I'm here on an exchange program, and I don't understand everything yet.» · флаг `u001_intro_exchange_honest`
   - **Айрис:** Honest. I like that. Let's keep it. — Честно. Мне нравится. Оставим. _(dry_smile)_
 
@@ -647,7 +705,7 @@ _Итог занятия:_
 
 **Общие воспоминания:**
 
-- Your first line for the guide: “I'm new here, and I'm looking for Room 70.” — Твоя первая строчка для гида: «Я здесь новенький и ищу кабинет 70». _(флаг `u001_intro_looking_for_room`)_
+- Your first line for the guide: “I'm new here, and I'm looking for a good place to study.” — Твоя первая строчка для гида: «Я здесь новенький и ищу хорошее место для учёбы». _(флаг `u001_intro_looking_for_place`)_
 - Your first line for the guide: honest about not understanding everything yet. — Твоя первая строчка для гида — честно о том, что пока не всё понимаешь. _(флаг `u001_intro_exchange_honest`)_
 - You asked Mika to speak more slowly in the first real interview. She laughed — and slowed down. — Ты попросил Мику говорить медленнее на первом настоящем интервью. Она рассмеялась — и замедлилась. _(флаг `u002_slowed_mika`)_
 - You helped a newcomer with one simple question. "One question at a time" is now Mika's rule. — Ты помог новичку одним простым вопросом. «По одному вопросу» — теперь правило Мики. _(флаг `u002_helped_newcomer`)_
@@ -716,7 +774,7 @@ _Итог занятия:_
 
 **Общие воспоминания:**
 
-- Iris gave you the letter you dropped. “The important parts are short.” — Айрис вернула тебе потерянное письмо. «Важное там короткое». _(после юнита 001)_
+- On your first day Iris wrote you the way to Room 70. On the back, an old map of Room 17. — В первый день Айрис написала тебе маршрут до кабинета 70. На обороте — старая схема комнаты 17. _(флаг `prologue_done`)_
 - Iris told you where to find her: second floor, by the window. — Айрис сказала, где её найти: второй этаж, у окна. _(флаг `u001_asked_iris`)_
 - Iris added a page to the guide: "How to ask again". It was your idea. — Айрис добавила в гид страницу «Как переспросить». Это была твоя идея. _(после юнита 002)_
 - You suggested Wednesday at one. Iris checked it twice. It worked. — Ты предложил среду в час. Айрис проверила дважды. Подошло. _(флаг `u003_proposed_wednesday`)_

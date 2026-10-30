@@ -11,15 +11,22 @@ beforeEach(async () => {
   window.location.hash = ''
 })
 
-test('opens on the path screen with the first session', async () => {
+test('a newcomer starts with the prologue', async () => {
+  render(<App />)
+  expect(await screen.findByRole('button', { name: /Начать: пролог «Не тот кабинет»/ })).toBeInTheDocument()
+})
+
+test('after the prologue, continue opens the first session', async () => {
+  await db.flags.put({ id: 'prologue_done', at: 1 })
   render(<App />)
   expect(await screen.findByRole('button', { name: /Продолжить: юнит 001, занятие 1/ })).toBeInTheDocument()
 })
 
 test('continue opens the session player', async () => {
+  await db.flags.put({ id: 'prologue_done', at: 1 })
   render(<App />)
   fireEvent.click(await screen.findByRole('button', { name: /Продолжить/ }))
-  expect(await screen.findByText(line(/You dropped this/))).toBeInTheDocument()
+  expect(await screen.findByText(line(/You came back/))).toBeInTheDocument()
   fireEvent.click(screen.getByRole('button', { name: 'Дальше' }))
   fireEvent.click(screen.getByRole('button', { name: 'Начать' }))
   expect(await screen.findByText(/Занятие 1\. Понимание/)).toBeInTheDocument()
@@ -28,7 +35,7 @@ test('continue opens the session player', async () => {
 
 test('daily goal choice is saved', async () => {
   render(<App />)
-  await screen.findByRole('button', { name: /Продолжить/ })
+  await screen.findByRole('button', { name: /Начать: пролог/ })
   act(() => {
     window.location.hash = '/profile'
   })

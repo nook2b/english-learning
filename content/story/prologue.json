@@ -1,0 +1,253 @@
+{
+ "kind": "comprehension",
+ "title": "Пролог. Не тот кабинет",
+ "frame": {
+  "setting": "Первый день. Старый корпус академии. В письме написано «Room 70», и ты ищешь кабинет 70. Из-за двери с номером 17 слышно, как кто-то считает.",
+  "lines": [
+   {
+    "speaker": "rei",
+    "text": "Three. Two. Don't touch the…",
+    "ru": "Три. Два. Не трогай…",
+    "expr": "focused",
+    "delivery": "[whispers]"
+   },
+   {
+    "speaker": "rei",
+    "text": "…cable.",
+    "ru": "…кабель.",
+    "expr": "annoyed",
+    "delivery": "[sighs]"
+   },
+   {
+    "speaker": "mika",
+    "text": "Are you here for us? Great! We need someone who doesn't know anything yet.",
+    "ru": "Ты к нам? Отлично! Нам как раз нужен человек, который ещё ничего не знает.",
+    "expr": "excited"
+   },
+   {
+    "speaker": "iris",
+    "text": "Mika. First find out where he's going.",
+    "ru": "Мика. Сначала выясни, куда он шёл.",
+    "expr": "dry_smile"
+   }
+  ]
+ },
+ "exercises": [
+  {
+   "id": "pro-e1",
+   "type": "scene",
+   "setting": "Ты показываешь письмо и неуверенно читаешь: «English… room seventeen?»",
+   "lines": [
+    {
+     "speaker": "iris",
+     "text": "Seventy. Seven, zero. Not seventeen.",
+     "ru": "Семьдесят. Семь, ноль. Не семнадцать.",
+     "expr": "focused"
+    },
+    {
+     "speaker": "rei",
+     "text": "Seventy is in the New Building. Here it's seventeen and bad wiring.",
+     "ru": "Семьдесят — в новом корпусе. Здесь семнадцать и плохая проводка.",
+     "expr": "deadpan"
+    },
+    {
+     "speaker": "iris",
+     "text": "Go out, turn left, down the stairs, across the courtyard, second door on the right.",
+     "ru": "Выходишь, налево, вниз по лестнице, через двор, вторая дверь справа.",
+     "expr": "neutral",
+     "delivery": "[quickly, matter-of-fact]"
+    }
+   ],
+   "intents": [
+    {
+     "label": "Честно переспросить",
+     "answers": [
+      "Could you say that again, please?",
+      "Could you say that again?",
+      "Can you say that again, please?",
+      "Sorry, could you say that again?"
+     ],
+     "tiles": [
+      "Could",
+      "you",
+      "say",
+      "that",
+      "again,",
+      "please?",
+      "tell",
+      "it"
+     ],
+     "reaction": {
+      "speaker": "iris",
+      "text": "Of course. Left. Stairs. Courtyard. Second door on the right.",
+      "ru": "Конечно. Налево. Лестница. Двор. Вторая дверь справа.",
+      "expr": "happy",
+      "delivery": "[slowly, clearly]"
+     },
+     "flag": "prologue_asked_again"
+    },
+    {
+     "label": "Показать письмо и попросить написать",
+     "answers": [
+      "Could you write it down, please?",
+      "Could you write it down?",
+      "Can you write it down, please?"
+     ],
+     "tiles": [
+      "Could",
+      "you",
+      "write",
+      "it",
+      "down,",
+      "please?",
+      "say",
+      "up"
+     ],
+     "reaction": {
+      "speaker": "iris",
+      "text": "Good idea. I'll write it down for you.",
+      "ru": "Хорошая мысль. Я напишу тебе.",
+      "expr": "notebook/focused"
+     },
+     "flag": "prologue_asked_write"
+    },
+    {
+     "label": "Повторить, что понял, и уточнить",
+     "answers": [
+      "Left and then the stairs?",
+      "Left, then the stairs?",
+      "So, left and then the stairs?"
+     ],
+     "tiles": [
+      "Left",
+      "and",
+      "then",
+      "the",
+      "stairs?",
+      "right",
+      "up"
+     ],
+     "reaction": {
+      "speaker": "iris",
+      "text": "Yes. Then the courtyard, second door on the right.",
+      "ru": "Да. Потом двор, вторая дверь справа.",
+      "expr": "happy"
+     },
+     "flag": "prologue_checked_way"
+    }
+   ],
+   "clarify": {
+    "speaker": "iris",
+    "text": "Shall I say the way again?",
+    "ru": "Повторить маршрут?",
+    "expr": "listening"
+   },
+   "tags": [
+    "function_clarify"
+   ]
+  },
+  {
+   "id": "pro-e2",
+   "type": "scene",
+   "setting": "Айрис пишет маршрут на листке. Рэй кивает на дверь: номер наполовину закрыт афишей.",
+   "context": "Знакомство",
+   "lines": [
+    {
+     "speaker": "rei",
+     "text": "You just found a mistake in our main advertising channel.",
+     "ru": "Ты только что нашёл ошибку в нашем главном рекламном канале.",
+     "expr": "smirk"
+    },
+    {
+     "speaker": "mika",
+     "text": "First rule of the guide: don't trust our signs. I'm Mika. That's Rei, and that's Iris.",
+     "ru": "Первое правило гида: не верь нашим табличкам. Я Мика. Это Рэй, а это Айрис.",
+     "expr": "laugh"
+    }
+   ],
+   "intents": [
+    {
+     "label": "Представиться и сказать, что ты новенький",
+     "answers": [
+      "Nice to meet you. I'm new here.",
+      "Nice to meet you, I'm new here.",
+      "Nice to meet you. I am new here."
+     ],
+     "tiles": [
+      "Nice",
+      "to",
+      "meet",
+      "you.",
+      "I'm",
+      "new",
+      "here.",
+      "see",
+      "is"
+     ],
+     "reaction": {
+      "speaker": "iris",
+      "text": "I'll write your name down. Without numbers, just in case.",
+      "ru": "Запишу твоё имя. Без цифр — на всякий случай.",
+      "expr": "dry_smile"
+     },
+     "flag": "prologue_intro_new"
+    },
+    {
+     "label": "Представиться и сказать, что ты студент по обмену",
+     "answers": [
+      "Nice to meet you. I'm an exchange student.",
+      "Nice to meet you, I'm an exchange student.",
+      "Nice to meet you. I am an exchange student."
+     ],
+     "tiles": [
+      "Nice",
+      "to",
+      "meet",
+      "you.",
+      "I'm",
+      "an",
+      "exchange",
+      "student.",
+      "a"
+     ],
+     "reaction": {
+      "speaker": "mika",
+      "text": "An exchange student! Perfect for our guide.",
+      "ru": "Студент по обмену! Идеально для нашего гида.",
+      "expr": "excited"
+     },
+     "flag": "prologue_intro_exchange"
+    }
+   ],
+   "clarify": {
+    "speaker": "mika",
+    "text": "Sorry? Your name, slowly.",
+    "ru": "Что? Как тебя зовут, медленно.",
+    "expr": "listening"
+   },
+   "tags": [
+    "function_greeting"
+   ]
+  }
+ ],
+ "wrap": [
+  {
+   "speaker": "iris",
+   "text": "Here's the way. On the back there's an old map of this room. Don't ask.",
+   "ru": "Вот маршрут. На обороте — старая схема этой комнаты. Не спрашивай.",
+   "expr": "notebook/dry_smile"
+  },
+  {
+   "speaker": "mika",
+   "text": "Good luck at the check! And come back after. We need a new student's eyes.",
+   "ru": "Удачи на проверке! И возвращайся потом. Нам нужен взгляд новичка.",
+   "expr": "excited"
+  },
+  {
+   "speaker": "rei",
+   "text": "Room 17. One, seven. Don't get lost again.",
+   "ru": "Комната 17. Один, семь. Не заблудись снова.",
+   "expr": "smirk"
+  }
+ ]
+}
