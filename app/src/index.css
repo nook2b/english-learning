@@ -35,7 +35,7 @@ main { flex: 1; padding: 12px 16px 88px; }
 .loading { padding: 32px 16px; color: var(--muted); }
 
 .topbar {
-  position: sticky; top: 0; z-index: 1;
+  position: sticky; top: 0; z-index: 10;
   display: flex; align-items: center; justify-content: space-between;
   padding: 8px 16px; padding-top: max(8px, env(safe-area-inset-top));
   background: var(--bg); border-bottom: 1px solid var(--border);
@@ -43,7 +43,7 @@ main { flex: 1; padding: 12px 16px 88px; }
 .bottomnav {
   position: fixed; bottom: 0; left: 0; right: 0;
   display: flex; justify-content: center;
-  background: var(--bg); border-top: 1px solid var(--border);
+  background: var(--bg); border-top: 1px solid var(--border); z-index: 10;
   padding-bottom: env(safe-area-inset-bottom);
 }
 .bottomnav button {
@@ -204,3 +204,38 @@ main { flex: 1; padding: 12px 16px 88px; }
 .sprite-frame.dim { filter: brightness(0.75) saturate(0.85); opacity: 0.9; }
 .diff-need { font-weight: 700; text-decoration: underline; text-decoration-color: #2b8a3e; text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .diff-wrong { text-decoration: line-through; text-decoration-color: #c92a2a; color: #c92a2a; }
+
+/* Path map: a snake of round stops per unit, Duolingo-style, with the unit's heroine by the road. */
+.arc-head { display: flex; flex-direction: column; gap: 6px; }
+.arc-head h2 { margin: 0; }
+.roadmap { display: flex; flex-direction: column; gap: 18px; padding-bottom: 24px; }
+.road-module { display: flex; flex-direction: column; gap: 14px; }
+.road-module-title { margin: 8px 0 0; text-align: center; color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.road-mika { --road: #e64980; --road-dark: #a61e4d; }
+.road-rei { --road: #7950f2; --road-dark: #5032b8; }
+.road-iris { --road: #12b886; --road-dark: #087f5b; }
+.road-banner { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; width: 100%; padding: 12px 52px 12px 16px; border: 0; border-radius: 14px; background: var(--road, var(--surface)); box-shadow: 0 4px 0 var(--road-dark, var(--border)); color: #fff; font: inherit; text-align: left; cursor: pointer; }
+.road-banner-kicker { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.8; }
+.road-banner-title { font-size: 1.15rem; font-weight: 700; }
+.road-banner-more { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); font-size: 1.3rem; opacity: 0.85; }
+.road-banner-soon { background: var(--surface); box-shadow: 0 4px 0 var(--border); color: var(--muted); cursor: default; }
+.road { position: relative; display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 18px 0 6px; }
+.road-heroine { position: absolute; left: 0; top: 64px; pointer-events: none; --h: 170px; }
+.road-row { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; transform: translateX(calc(var(--x) * 58px)); }
+.road-stop { width: 66px; height: 60px; border-radius: 50%; border: 0; display: grid; place-items: center; font-size: 1.6rem; color: #fff; cursor: pointer; background: var(--road); box-shadow: 0 6px 0 var(--road-dark); transition: transform 0.08s, box-shadow 0.08s; -webkit-tap-highlight-color: transparent; }
+.road-stop:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--road-dark); }
+.road-stop-locked { background: #e3e3e8; box-shadow: 0 6px 0 #c4c4cc; filter: grayscale(1); opacity: 0.85; }
+.road-stop-open { opacity: 0.9; }
+.road-stop-next { width: 74px; height: 68px; outline: 6px solid color-mix(in srgb, var(--road) 25%, transparent); outline-offset: 4px; animation: road-bob 1.6s ease-in-out infinite; }
+.road-stop-mission, .road-stop-check { border-radius: 18px; }
+.road-start { margin-bottom: 8px; padding: 4px 12px; border-radius: 10px; background: var(--bg); border: 2px solid var(--border); color: var(--road); font-weight: 800; font-size: 0.9rem; text-transform: uppercase; }
+.road-pop { position: absolute; top: calc(100% + 12px); left: 50%; z-index: 3; width: min(280px, 80vw); padding: 12px; border-radius: 14px; background: var(--road); color: #fff; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 4px 0 var(--road-dark), 0 10px 24px rgba(0, 0, 0, 0.2); transform: translateX(calc(-50% - var(--x) * 58px)); }
+.road-pop .muted { color: rgba(255, 255, 255, 0.85); }
+.road-pop-title { font-weight: 700; margin: 0; }
+.road-pop .btn { background: #fff; color: var(--road-dark); border-color: #fff; font-weight: 700; }
+@keyframes road-bob { 50% { transform: translateY(-4px); } }
+@media (prefers-reduced-motion: reduce) { .road-stop-next { animation: none; } }
+@media (prefers-color-scheme: dark) {
+  .road-stop-locked { background: #3a3a40; box-shadow: 0 6px 0 #26262b; }
+}
+.road-row-open { z-index: 4; }

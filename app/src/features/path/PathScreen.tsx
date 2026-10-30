@@ -1,14 +1,20 @@
+import { type CSSProperties, useEffect, useRef, useState } from 'react'
 import { navigate } from '../../app/router'
 import { UNITS, nextSession } from '../../content/course'
 import { ARC1, ARC1_UNITS } from '../../content/outline'
 import { CHARACTERS } from '../../content/characters'
+import type { Unit } from '../../content/schema'
 import { dayKey } from '../../data/dates'
-import { useClub, sessionsDone } from '../../data/store'
+import { sessionId } from '../../data/db'
+import { useClub } from '../../data/store'
 import { Gloss, Translation } from '../../lesson/Gloss'
 import { LineVoice } from '../../speech/AudioControls'
 import { Sprite } from '../../story/Stage'
 import { HEROINE_IDS } from '../../story/sprites'
-import { Button, Card, DialogueBox, ProgressBar } from '../../ui/kit'
+import { Button, DialogueBox, ProgressBar } from '../../ui/kit'
+import { snakeOffset, stopIcon, unitHeroine } from './roadmap'
+
+const KIND_LABELS = { comprehension: 'Понимание', form: 'Форма', production: 'Продукция', fluency: 'Беглость' } as const
 
 export function PathScreen() {
   const { units, sessions, settings } = useClub()
@@ -31,47 +37,101 @@ export function PathScreen() {
           <Translation ru={host.greeting.ru} always={settings.translation === 'always'} />
         </DialogueBox>
       </div>
-      <div className="actions">
-        <Button onClick={() => next && navigate({ name: 'session', ...next })} disabled={!next}>
-          {next ? `Продолжить: юнит ${next.unitId}, занятие ${next.index}` : 'Новые юниты скоро появятся'}
-        </Button>
-        <div className="actions-row">
-          <Button variant="secondary" onClick={() => navigate({ name: 'review' })}>
-            Повторение · 0
-          </Button>
-          <Button variant="secondary" onClick={() => navigate({ name: 'story' })}>
-            История
-          </Button>
-        </div>
+      <Button onClick={() => next && navigate({ name: 'session', ...next })} disabled={!next}>
+        {next ? `Продолжить: юнит ${next.unitId}, занятие ${next.index}` : 'Новые юниты скоро появятся'}
+      </Button>
+
+      <div className="arc-head">
+        <h2>{ARC1.title}</h2>
+        <ProgressBar value={doneCount} max={ARC1_UNITS.length} label="Прогресс арки" />
       </div>
 
-      <Card title={ARC1.title}>
-        <ProgressBar value={doneCount} max={ARC1_UNITS.length} label="Прогресс арки" />
-        <p className="muted">
-          {doneCount} из {ARC1_UNITS.length} юнитов
-        </p>
-      </Card>
-
-      {ARC1.modules.map((m) => (
-        <Card key={m.id} title={`Модуль ${m.id}`}>
-          <p className="muted">{m.focus}</p>
-          <ul className="unit-list">
+      <div className="roadmap">
+        {ARC1.modules.map((m) => (
+          <section key={m.id} className="road-module">
+            <p className="road-module-title">
+              Модуль {m.id} · {m.focus}
+            </p>
             {m.units.map((u) => {
-              const written = !!UNITS[u.id]
-              const status = units[u.id] ? 'пройден' : !written ? 'скоро' : u.id === next?.unitId || settings.unlockAll ? `${sessionsDone(sessions, u.id)}/8` : 'закрыт'
-              const cls = units[u.id] ? 'done' : u.id === next?.unitId || (written && settings.unlockAll) ? 'open' : 'locked'
-              return (
-                <li key={u.id} className={`unit unit-${cls}`}>
-                  <button className="link" onClick={() => navigate({ name: 'unit', unitId: u.id })}>
-                    {u.id} · {u.title}
-                  </button>
-                  <span className="muted">{status}</span>
-                </li>
+              const unit = UNITS[u.id]
+              return unit ? (
+                <UnitRoad key={u.id} unit={unit} next={next?.unitId === u.id ? next.index : undefined} />
+              ) : (
+                <div key={u.id} className="road-banner road-banner-soon">
+                  <span className="road-banner-kicker">Юнит {u.id} · скоро</span>
+                  <span className="road-banner-title">{u.title}</span>
+                </div>
               )
             })}
-          </ul>
-        </Card>
-      ))}
+          </section>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+/** One unit on the map: its banner, a snake of eight stops and its heroine by the road. */
+function UnitRoad({ unit, next }: { unit: Unit; next?: number }) {
+  const { sessions, units, settings } = useClub()
+  const [picked, setPicked] = useState<number>()
+  const current = useRef<HTMLButtonElement>(null)
+  const heroine = unitHeroine(unit)
+  const unitDone = !!units[unit.id]
+  useEffect(() => {
+    // Bring the current stop into view when the path opens.
+    current.current?.scrollIntoView?.({ block: 'center' })
+  }, [])
+
+  return (
+    <div className={`road-unit road-${heroine}`}>
+      <button className={`road-banner ${unitDone ? 'road-banner-done' : ''}`} onClick={() => navigate({ name: 'unit', unitId: unit.id })}>
+        <span className="road-banner-kicker">
+          Юнит {unit.id}
+          {unitDone ? ' · пройден' : ''}
+        </span>
+        <span className="road-banner-title">{unit.title}</span>
+        <span className="road-banner-more" aria-hidden>
+          ☰
+        </span>
+      </button>
+      <div className="road">
+        <div className="road-heroine" aria-hidden>
+          <Sprite heroine={heroine} expr="happy" size="knee" />
+        </div>
+        {unit.sessions.map((s, i) => {
+          const index = i + 1
+          const done = !!sessions[sessionId(unit.id, index)]
+          const isNext = next === index
+          const open = done || isNext || settings.unlockAll
+          const state = isNext ? 'next' : done ? 'done' : open ? 'open' : 'locked'
+          return (
+            <div key={i} className={picked === i ? 'road-row road-row-open' : 'road-row'} style={{ '--x': snakeOffset(i) } as CSSProperties}>
+              {isNext && <span className="road-start">Начать</span>}
+              <button
+                ref={isNext ? current : undefined}
+                className={`road-stop road-stop-${state} ${s.role ? `road-stop-${s.role}` : ''}`}
+                aria-label={`Занятие ${index}. ${s.title}`}
+                onClick={() => setPicked(picked === i ? undefined : i)}
+              >
+                <span aria-hidden>{done && !s.role ? '✓' : stopIcon(s)}</span>
+              </button>
+              {picked === i && (
+                <div className="road-pop">
+                  <p className="road-pop-title">
+                    {index}. {s.title}
+                  </p>
+                  <p className="muted">{s.role === 'mission' ? 'Миссия юнита' : s.role === 'check' ? 'Проверка модуля' : KIND_LABELS[s.kind]}</p>
+                  {open ? (
+                    <Button onClick={() => navigate({ name: 'session', unitId: unit.id, index })}>{done ? 'Пройти ещё раз' : 'Начать'}</Button>
+                  ) : (
+                    <p className="muted">Откроется после предыдущих занятий.</p>
+                  )}
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }

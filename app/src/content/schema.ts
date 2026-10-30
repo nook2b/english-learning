@@ -194,6 +194,8 @@ export const SESSION_KINDS = ['comprehension', 'form', 'production', 'fluency'] 
 export const Session = z.object({
   kind: z.enum(SESSION_KINDS),
   title: z.string(),
+  /** A unit's mission (its last session) or a module check: special stops on the path map. */
+  role: z.enum(['mission', 'check']).optional(),
   /** Short note for the learning panel before the first exercise. */
   intro: z.string().optional(),
   /** Story beat before the exercises: where we are and why this practice matters. */

@@ -24,6 +24,10 @@ test('every unit file parses and belongs to the outline', () => {
   for (const u of units) expect(ARC1_UNITS.some((o) => o.id === u.id)).toBe(true)
 })
 
+test('each unit ends with its mission, a special stop on the path map', () => {
+  for (const u of units) expect(u.sessions.map((s) => s.role ?? '').lastIndexOf('mission')).toBe(u.sessions.length - 1)
+})
+
 test('exercise ids are unique across the course', () => {
   const ids = exercises.map((e) => e.id)
   expect(new Set(ids).size).toBe(ids.length)
