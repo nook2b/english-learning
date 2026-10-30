@@ -2,6 +2,7 @@ import { act, fireEvent, render, screen } from '@testing-library/react'
 import { db } from '../data/db'
 import { useClub } from '../data/store'
 import { App } from './App'
+import { line } from '../test/line'
 
 beforeEach(async () => {
   await db.delete()
@@ -18,7 +19,7 @@ test('opens on the path screen with the first session', async () => {
 test('continue opens the session player', async () => {
   render(<App />)
   fireEvent.click(await screen.findByRole('button', { name: /Продолжить/ }))
-  expect(await screen.findByText(/You dropped this/)).toBeInTheDocument()
+  expect(await screen.findByText(line(/You dropped this/))).toBeInTheDocument()
   fireEvent.click(screen.getByRole('button', { name: 'Дальше' }))
   fireEvent.click(screen.getByRole('button', { name: 'Начать' }))
   expect(await screen.findByText(/Занятие 1\. Понимание/)).toBeInTheDocument()

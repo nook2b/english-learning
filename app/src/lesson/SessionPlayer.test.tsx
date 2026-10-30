@@ -3,6 +3,7 @@ import { Unit } from '../content/schema'
 import { db } from '../data/db'
 import { useClub } from '../data/store'
 import { SessionPlayer } from './SessionPlayer'
+import { line } from '../test/line'
 
 const filler = { kind: 'form', title: 'x', exercises: [{ id: 'f', type: 'choice', prompt: 'a ___', options: ['a', 'b'], answer: 'a' }] }
 
@@ -78,8 +79,8 @@ test('a misunderstood scene reply gets a clarification, not annoyance', () => {
   fireEvent.click(screen.getByRole('button', { name: 'Сказать, что новенький' }))
   fireEvent.change(screen.getByRole('textbox', { name: 'Ответ' }), { target: { value: 'I new here' } })
   fireEvent.click(screen.getByRole('button', { name: 'Проверить' }))
-  expect(screen.getByText('Sorry, one more time?')).toBeInTheDocument()
-  expect(screen.getByText('Perfect.')).toBeInTheDocument()
+  expect(screen.getByText(line('Sorry, one more time?'))).toBeInTheDocument()
+  expect(screen.getByText(line('Perfect.'))).toBeInTheDocument()
 })
 
 test("skipping a speaking task is neither right nor wrong", async () => {
@@ -127,13 +128,13 @@ test('a session opens with its story frame and ends with what changed', async ()
     ],
   })
   render(<SessionPlayer unit={unit} index={1} />)
-  expect(screen.getByText('Help me sort these?')).toBeInTheDocument()
+  expect(screen.getByText(line('Help me sort these?'))).toBeInTheDocument()
   expect(screen.getByAltText('iris notebook/focused')).toBeInTheDocument()
   fireEvent.click(screen.getByRole('button', { name: 'Начать' }))
   expect(screen.getByText('Карточка Айрис')).toBeInTheDocument()
   fireEvent.click(screen.getByRole('button', { name: 'a' }))
   fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
-  expect(await screen.findByText('Good. Now the guide knows.')).toBeInTheDocument()
+  expect(await screen.findByText(line('Good. Now the guide knows.'))).toBeInTheDocument()
   fireEvent.click(screen.getByRole('button', { name: 'Итоги занятия' }))
   expect(screen.getByText(/Точность: 100%/)).toBeInTheDocument()
 })
@@ -146,7 +147,7 @@ test('a scene choice is remembered for later scenes', async () => {
   fireEvent.click(screen.getByRole('button', { name: 'Спросить Рэй' }))
   fireEvent.change(screen.getByRole('textbox', { name: 'Ответ' }), { target: { value: 'What are you doing?' } })
   fireEvent.click(screen.getByRole('button', { name: 'Проверить' }))
-  await screen.findByText('Checking levels.')
+  await screen.findByText(line('Checking levels.'))
   await new Promise((r) => setTimeout(r, 20))
   expect(await db.flags.get('asked_rei')).toBeTruthy()
 })

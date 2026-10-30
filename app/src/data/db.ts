@@ -57,6 +57,13 @@ export interface StoryFlag {
   at: number
 }
 
+/** A word the player tapped for its translation; the review deck (stage 4) starts from these. */
+export interface WordLookup {
+  word: string
+  count: number
+  lastAt: number
+}
+
 export const sessionId = (unitId: string, index: number) => `${unitId}-${index}`
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -76,6 +83,7 @@ export class ClubDB extends Dexie {
   sessions!: Table<SessionResult, string>
   mistakes!: Table<Mistake, number>
   flags!: Table<StoryFlag, string>
+  lookups!: Table<WordLookup, string>
 
   constructor(name = 'english-club') {
     super(name)
@@ -89,6 +97,7 @@ export class ClubDB extends Dexie {
       mistakes: '++id, exerciseId, *tags, at',
     })
     this.version(3).stores({ flags: 'id' })
+    this.version(4).stores({ lookups: 'word, lastAt' })
   }
 }
 
@@ -128,8 +137,8 @@ export async function addMistake(mistake: Omit<Mistake, 'id'>, database: ClubDB 
 
 /** Clears progress but keeps settings, so the name and goal survive a reset. */
 export async function resetProgress(database: ClubDB = db): Promise<void> {
-  await database.transaction('rw', [database.units, database.days, database.sessions, database.mistakes, database.flags], async () => {
-    await Promise.all([database.units.clear(), database.days.clear(), database.sessions.clear(), database.mistakes.clear(), database.flags.clear()])
+  await database.transaction('rw', [database.units, database.days, database.sessions, database.mistakes, database.flags, database.lookups], async () => {
+    await Promise.all([database.units.clear(), database.days.clear(), database.sessions.clear(), database.mistakes.clear(), database.flags.clear(), database.lookups.clear()])
   })
 }
 
@@ -137,4 +146,11 @@ export async function resetProgress(database: ClubDB = db): Promise<void> {
 export async function resetEverything(database: ClubDB = db): Promise<void> {
   await resetProgress(database)
   await database.settings.clear()
+}
+
+export async function logLookup(word: string, database: ClubDB = db): Promise<void> {
+  await database.transaction('rw', database.lookups, async () => {
+    const row = await database.lookups.get(word)
+    await database.lookups.put({ word, count: (row?.count ?? 0) + 1, lastAt: Date.now() })
+  })
 }

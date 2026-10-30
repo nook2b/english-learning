@@ -76,7 +76,9 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
           <ul className="list memories">
             {memories.map((m) => (
               <li key={m.en}>
-                <span lang="en">{m.en}</span>
+                <span>
+                  <Gloss text={m.en} />
+                </span>
                 <span className="muted">{m.ru}</span>
               </li>
             ))}
