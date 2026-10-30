@@ -206,7 +206,7 @@ export const Unit = z.object({
   focus: z.string(),
   /** Target words, collocations and functions (10–12 per unit), highlighted in texts. */
   expressions: z.array(z.object({ en: z.string(), ru: z.string() })),
-  /** Other words in this unit's texts a learner may not know; tap to see the translation. */
+  /** Set phrases ("dining hall") and words with a meaning special to this unit: not marked, but a tap translates them as a whole. */
   glossary: z.array(z.object({ en: z.string(), ru: z.string() })).default([]),
   /** The visible change in the story when the unit is done. */
   outcome: z.string(),
