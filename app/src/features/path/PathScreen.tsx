@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { navigate } from '../../app/router'
-import { UNITS, nextSession } from '../../content/course'
+import { UNITS, isSessionOpen, nextSession } from '../../content/course'
 import { ARC1, ARC1_UNITS } from '../../content/outline'
 import type { Unit } from '../../content/schema'
 import { sessionId } from '../../data/db'
@@ -109,7 +109,7 @@ function UnitRoute({ unit, next }: { unit: Unit; next?: number }) {
           {unit.sessions.map((s, i) => {
             const index = i + 1
             const isNext = next === index
-            const open = done[i] || isNext || settings.unlockAll
+            const open = isSessionOpen({ unitId: unit.id, index }, sessions, units, settings.unlockAll)
             const state = isNext ? 'next' : done[i] ? 'done' : open ? 'open' : 'locked'
             return (
               <li key={i} className={`route-stop route-stop-${state} ${s.role ? `route-stop-${s.role}` : ''}`}>

@@ -37,3 +37,9 @@ test('daily goal choice is saved', async () => {
   })
   expect((await db.settings.get('settings'))?.dailyGoalMinutes).toBe(30)
 })
+
+test('a locked session stays locked from a direct link', async () => {
+  window.location.hash = '/session/003/1'
+  render(<App />)
+  expect(await screen.findByText(/Это занятие пока закрыто/)).toBeInTheDocument()
+})

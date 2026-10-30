@@ -29,6 +29,13 @@ export default defineConfig({
             handler: 'CacheFirst',
             options: { cacheName: 'images', expiration: { maxEntries: 400 } },
           },
+          {
+            // Voice clips: the app fetches each whole file once (speech/voice.ts); the
+            // audio element's byte-range requests are then answered from the cache.
+            urlPattern: ({ url }) => url.pathname.endsWith('.mp3'),
+            handler: 'CacheFirst',
+            options: { cacheName: 'voice', expiration: { maxEntries: 2000 }, cacheableResponse: { statuses: [200] }, rangeRequests: true },
+          },
         ],
       },
       manifest: {

@@ -25,7 +25,9 @@ function set(next: VoiceState, id?: string) {
 }
 
 // Clips are fetched ahead of time (the lines of a scene as it opens), so the
-// first tap starts at once. The same elements are reused for playing.
+// first tap starts at once. The same elements are reused for playing. A plain
+// fetch of the whole file also lets the service worker keep it for offline use
+// (the audio element itself asks for byte ranges, which cannot be cached).
 const loaded = new Map<string, HTMLAudioElement>()
 
 function clipAudio(url: string): HTMLAudioElement {
@@ -33,6 +35,7 @@ function clipAudio(url: string): HTMLAudioElement {
   if (!audio) {
     audio = new Audio(url)
     audio.preload = 'auto'
+    if (typeof fetch === 'function') void fetch(url).catch(() => {})
     loaded.set(url, audio)
     if (loaded.size > 40) loaded.delete(loaded.keys().next().value!)
   }
@@ -67,17 +70,33 @@ export function play(text: string, speaker: Speaker = 'narrator', slow = false, 
     audio.playbackRate = slow ? 0.75 : 1
     audio.onended = () => current?.audio === audio && set('idle')
     const mine = (current = { id, audio })
+    // A clip that cannot load (offline and not cached yet) falls back to browser speech.
+    audio.onerror = () => {
+      if (current !== mine) return
+      mouthStop()
+      speakInstead(text, speaker, slow, id)
+    }
     // The mouth listens for the clip's 'playing' event, so attach it first.
     mouthStart(speaker, audio)
     // Older browsers return undefined instead of a promise from play().
     audio.play()?.catch(() => current === mine && set('idle'))
   } else {
     if (!canSpeak()) return
-    current = { id }
-    synth(text, speaker, slow, () => current?.id === id && !current.audio && set('idle'))
-    mouthStart(speaker)
+    speakInstead(text, speaker, slow, id)
   }
   set('playing', id)
+}
+
+function speakInstead(text: string, speaker: Speaker, slow: boolean, id: string) {
+  if (!canSpeak()) return set('idle')
+  current = { id }
+  synth(text, speaker, slow, () => current?.id === id && !current.audio && set('idle'))
+  mouthStart(speaker)
+}
+
+/** Whether this text can be heard at all: a recorded clip or browser speech. */
+export function hasVoice(text: string, speaker: Speaker, delivery: Delivery = {}): boolean {
+  return !!clipUrl(speaker, voicedText(text, delivery)) || canSpeak()
 }
 
 export function pause() {

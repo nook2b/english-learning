@@ -13,6 +13,7 @@ import {
   resetProgress,
   saveSessionResult,
   saveSettings,
+  setDayGoal,
   sessionId,
   setUnitStatus,
 } from './db'
@@ -42,7 +43,7 @@ interface ClubState {
   init: () => Promise<void>
   updateSettings: (patch: Partial<Omit<Settings, 'id'>>) => Promise<void>
   recordSession: (minutes: number, xp: number) => Promise<void>
-  finishSession: (s: FinishedSession) => Promise<{ minutes: number; xp: number }>
+  finishSession: (s: FinishedSession) => Promise<{ minutes: number; xp: number; unitCompleted: boolean }>
   markUnit: (unitId: string, status: UnitStatus) => Promise<void>
   reset: () => Promise<void>
   resetAll: () => Promise<void>
@@ -78,25 +79,29 @@ export const useClub = create<ClubState>((set, get) => ({
   updateSettings: async (patch) => {
     const settings = await saveSettings(patch)
     set({ settings })
+    if (patch.dailyGoalMinutes) {
+      const day = await setDayGoal(dayKey(), patch.dailyGoalMinutes)
+      if (day) set((s) => ({ days: [...s.days.filter((d) => d.date !== day.date), day] }))
+    }
   },
 
   recordSession: async (minutes, xp) => {
-    const day = await addActivity(dayKey(), minutes, xp)
+    const day = await addActivity(dayKey(), minutes, xp, get().settings.dailyGoalMinutes)
     set((s) => ({ days: [...s.days.filter((d) => d.date !== day.date), day] }))
   },
 
   finishSession: async ({ unitId, index, correct, total, seconds }) => {
     const capped = Math.min(seconds, MAX_SESSION_SECONDS)
     const minutes = Math.max(1, Math.round(capped / 60))
-    const xp = SESSION_XP + (correct === total ? PERFECT_BONUS_XP : 0)
+    // A session where every task was put off is not "no mistakes".
+    const xp = SESSION_XP + (total > 0 && correct === total ? PERFECT_BONUS_XP : 0)
     const result: SessionResult = { id: sessionId(unitId, index), unitId, index, correct, total, seconds: capped, completedAt: Date.now() }
     await saveSessionResult(result)
     set((s) => ({ sessions: { ...s.sessions, [result.id]: result } }))
     await get().recordSession(minutes, xp)
-    if (sessionsDone(get().sessions, unitId) === SESSIONS_PER_UNIT && !get().units[unitId]) {
-      await get().markUnit(unitId, 'done')
-    }
-    return { minutes, xp }
+    const unitCompleted = sessionsDone(get().sessions, unitId) === SESSIONS_PER_UNIT && !get().units[unitId]
+    if (unitCompleted) await get().markUnit(unitId, 'done')
+    return { minutes, xp, unitCompleted }
   },
 
   markUnit: async (unitId, status) => {

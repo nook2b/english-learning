@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react'
 import { nextSession } from '../content/course'
 import type { Unit } from '../content/schema'
-import { addMistake } from '../data/db'
+import { addDeferred, addMistake } from '../data/db'
 import { useClub } from '../data/store'
 import { navigate } from '../app/router'
 import { Button, Card, LearnPanel, ProgressBar } from '../ui/kit'
@@ -45,6 +45,8 @@ interface Summary {
   correct: number
   total: number
   skipped: number
+  /** This session finished the unit: show what changed in the story. */
+  unitCompleted: boolean
   minutes: number
   xp: number
   mistakes: { given: string; expected: string }[]
@@ -90,6 +92,8 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       remembered.current.add(o.flag)
       void remember(o.flag)
     }
+    // "Can't speak now" is kept, so the task really comes back later (review, stage 4).
+    if (o.correct === null && !step.retry) void addDeferred({ exerciseId: step.exercise.id, unitId: unit.id, index })
     if (o.correct === false) {
       if (!step.retry) void addMistake({ exerciseId: step.exercise.id, tags: step.exercise.tags, given: o.given, expected: o.shown ?? o.expected, at: Date.now() })
       retries.current += 1
@@ -109,11 +113,12 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
     const answered = results.filter((r) => r.correct !== null)
     const correct = answered.filter((r) => r.correct).length
     const seconds = Math.round((Date.now() - startedAt.current) / 1000)
-    const { minutes, xp } = await finishSession({ unitId: unit.id, index, correct, total: answered.length, seconds })
+    const { minutes, xp, unitCompleted } = await finishSession({ unitId: unit.id, index, correct, total: answered.length, seconds })
     setSummary({
       correct,
       total: answered.length,
       skipped: results.length - answered.length,
+      unitCompleted,
       minutes,
       xp,
       // One line per distinct sentence: two tasks with the same answer should not look like a duplicate.
@@ -125,7 +130,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   }
 
   const exit = (
-    <button className="close" aria-label="Выйти из занятия" onClick={() => navigate({ name: 'unit', unitId: unit.id })}>
+    <button className="close" aria-label="Выйти из занятия" onClick={() => navigate({ name: 'path' })}>
       ✕
     </button>
   )
@@ -207,14 +212,18 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
 function SessionSummary({ unit, index, summary }: { unit: Unit; index: number; summary: Summary }) {
   const { sessions, units } = useClub()
   const upcoming = nextSession(sessions, units)
-  const pct = summary.total ? Math.round((summary.correct / summary.total) * 100) : 100
+  const pct = summary.total ? Math.round((summary.correct / summary.total) * 100) : undefined
   return (
     <div className="screen">
       <Card title={`Занятие ${index} пройдено`}>
-        <p>
-          Точность: {pct}% ({summary.correct} из {summary.total})
-        </p>
-        {summary.skipped > 0 && <p className="muted">Пропущено: {summary.skipped}</p>}
+        {pct === undefined ? (
+          <p>Все задания отложены — точность не считается.</p>
+        ) : (
+          <p>
+            Точность: {pct}% ({summary.correct} из {summary.total})
+          </p>
+        )}
+        {summary.skipped > 0 && <p className="muted">Отложено: {summary.skipped}. Эти задания вернутся в повторении.</p>}
         <p>
           +{summary.xp} XP · {summary.minutes} мин
         </p>
@@ -230,7 +239,7 @@ function SessionSummary({ unit, index, summary }: { unit: Unit; index: number; s
           </ul>
         </LearnPanel>
       )}
-      {units[unit.id] && <Card title="Юнит пройден">{unit.outcome}</Card>}
+      {summary.unitCompleted && <Card title="Юнит пройден">{unit.outcome}</Card>}
       <div className="actions">
         {upcoming && (
           <Button onClick={() => navigate({ name: 'session', ...upcoming })}>

@@ -94,7 +94,18 @@ test("skipping a speaking task is neither right nor wrong", async () => {
   fireEvent.click(screen.getByRole('button', { name: 'a' }))
   fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
   expect(await screen.findByText(/Точность: 100% \(1 из 1\)/)).toBeInTheDocument()
-  expect(screen.getByText('Пропущено: 1')).toBeInTheDocument()
+  expect(screen.getByText(/Отложено: 1/)).toBeInTheDocument()
+  // The task is kept to come back in review.
+  expect(await db.deferred.get('t-5')).toMatchObject({ unitId: '999', index: 1 })
+})
+
+test('a session where every task was put off has no accuracy and no "no mistakes" bonus', async () => {
+  const unit = unitWith([{ id: 't-9', type: 'speak', show: 'en', text: 'Hi.', answers: ['Hi.'] }])
+  render(<SessionPlayer unit={unit} index={1} />)
+  fireEvent.click(screen.getByRole('button', { name: 'Сейчас не могу говорить' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
+  expect(await screen.findByText(/Все задания отложены/)).toBeInTheDocument()
+  expect(screen.getByText(/\+10 XP/)).toBeInTheDocument()
 })
 
 test('tapping a highlighted expression shows its translation', () => {
