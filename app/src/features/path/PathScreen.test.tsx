@@ -25,14 +25,15 @@ test('the heroine of the day moves her mouth while her greeting plays', () => {
   vi.useRealTimers()
 })
 
-test('the path map marks done, current and locked stops, and a stop opens its session card', () => {
+test('the route marks done, current and locked stations; an open one starts its session', () => {
   const s = { id: '001-1', unitId: '001', index: 1, correct: 1, total: 1, seconds: 60, completedAt: 1 }
   act(() => useClub.setState({ sessions: { '001-1': s } }))
-  render(<PathScreen />)
-  const first = screen.getByRole('button', { name: 'Занятие 1. Письмо академии' })
-  expect(first).toHaveClass('road-stop-done')
-  expect(screen.getAllByRole('button', { name: /^Занятие 2\./ })[0]).toHaveClass('road-stop-next')
-  expect(screen.getAllByRole('button', { name: /^Занятие 3\./ })[0]).toHaveClass('road-stop-locked')
-  fireEvent.click(first)
-  expect(screen.getByRole('button', { name: 'Пройти ещё раз' })).toBeInTheDocument()
+  const { container } = render(<PathScreen />)
+  const stops = [...container.querySelectorAll('.route-unit')][0]!.querySelectorAll('.route-stop')
+  expect(stops[0]).toHaveClass('route-stop-done')
+  expect(stops[1]).toHaveClass('route-stop-next')
+  expect(stops[2]).toHaveClass('route-stop-locked')
+  expect(stops[2]!.querySelector('button')).toBeDisabled()
+  fireEvent.click(screen.getAllByRole('button', { name: /1\. Письмо академии/ })[0]!)
+  expect(location.hash).toBe('#/session/001/1')
 })
