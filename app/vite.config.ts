@@ -22,6 +22,8 @@ export default defineConfig({
       injectRegister: false,
       includeAssets: ['icon.svg'],
       workbox: {
+        // The Rive engine (2 MB) is needed only on the heroine pages: cached on first use, not at install.
+        globIgnores: ['**/*.wasm'],
         // Sprites are large; cache them as they are first shown instead of precaching all.
         runtimeCaching: [
           {
@@ -35,6 +37,12 @@ export default defineConfig({
             urlPattern: ({ url }) => url.pathname.endsWith('.mp3'),
             handler: 'CacheFirst',
             options: { cacheName: 'voice', expiration: { maxEntries: 2000 }, cacheableResponse: { statuses: [200] }, rangeRequests: true },
+          },
+          {
+            // Rive engine and animations: fetched on the heroine pages, then kept offline.
+            urlPattern: ({ url }) => /\.(riv|wasm)$/.test(url.pathname),
+            handler: 'CacheFirst',
+            options: { cacheName: 'rive', expiration: { maxEntries: 20 }, cacheableResponse: { statuses: [200] } },
           },
         ],
       },
