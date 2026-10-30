@@ -24,6 +24,30 @@ function set(next: VoiceState, id?: string) {
   listeners.forEach((l) => l())
 }
 
+// Clips are fetched ahead of time (the lines of a scene as it opens), so the
+// first tap starts at once. The same elements are reused for playing.
+const loaded = new Map<string, HTMLAudioElement>()
+
+function clipAudio(url: string): HTMLAudioElement {
+  let audio = loaded.get(url)
+  if (!audio) {
+    audio = new Audio(url)
+    audio.preload = 'auto'
+    loaded.set(url, audio)
+    if (loaded.size > 40) loaded.delete(loaded.keys().next().value!)
+  }
+  return audio
+}
+
+/** Starts downloading the clips of these lines; lines without a clip are skipped. */
+export function preload(lines: readonly ({ text: string; speaker: Speaker } & Delivery)[]) {
+  if (typeof Audio === 'undefined') return
+  for (const l of lines) {
+    const url = clipUrl(l.speaker, voicedText(l.text, l))
+    if (url) clipAudio(url)
+  }
+}
+
 export const canVoice = () => canSpeak() || typeof Audio !== 'undefined'
 
 export function stop() {
@@ -38,13 +62,15 @@ export function play(text: string, speaker: Speaker = 'narrator', slow = false, 
   // Clips are keyed by the voiced text (with audio tags); browser speech reads the plain text.
   const url = clipUrl(speaker, voicedText(text, delivery))
   if (url) {
-    const audio = new Audio(url)
+    const audio = clipAudio(url)
+    audio.currentTime = 0
     audio.playbackRate = slow ? 0.75 : 1
     audio.onended = () => current?.audio === audio && set('idle')
-    current = { id, audio }
-    // Older browsers return undefined instead of a promise from play().
-    audio.play()?.catch(() => set('idle'))
+    const mine = (current = { id, audio })
+    // The mouth listens for the clip's 'playing' event, so attach it first.
     mouthStart(speaker, audio)
+    // Older browsers return undefined instead of a promise from play().
+    audio.play()?.catch(() => current === mine && set('idle'))
   } else {
     if (!canSpeak()) return
     current = { id }
@@ -56,7 +82,7 @@ export function play(text: string, speaker: Speaker = 'narrator', slow = false, 
 
 export function pause() {
   if (state !== 'playing') return
-  // A paused clip is silent, so its loudness analyser closes the mouth by itself.
+  // A paused clip closes the mouth by itself (its 'pause' event).
   if (current?.audio) current.audio.pause()
   else {
     window.speechSynthesis.pause()

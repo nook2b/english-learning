@@ -4,6 +4,7 @@ import { db } from '../../data/db'
 import { useClub } from '../../data/store'
 import { mouthStart, mouthStop } from '../../speech/mouth'
 import { PathScreen } from './PathScreen'
+import { line } from '../../test/line'
 
 beforeEach(async () => {
   await db.delete()
@@ -14,7 +15,7 @@ beforeEach(async () => {
 test('the heroine of the day moves her mouth while her greeting plays', () => {
   vi.useFakeTimers()
   const { container } = render(<PathScreen />)
-  const host = (['mika', 'rei', 'iris'] as const).find((h) => screen.queryByText(CHARACTERS[h]!.greeting.text))!
+  const host = (['mika', 'rei', 'iris'] as const).find((h) => screen.queryByText(line(CHARACTERS[h]!.greeting.text)))!
   expect(container.querySelector('.sprite-mouth')).toBeNull()
   act(() => mouthStart(host))
   act(() => void vi.advanceTimersByTime(150))

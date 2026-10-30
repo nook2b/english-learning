@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { LineVoice } from '../speech/AudioControls'
-import { play, stop } from '../speech/voice'
+import { play, preload, stop } from '../speech/voice'
 import type { Line } from '../content/schema'
 import { useClub } from '../data/store'
 import { Gloss, Translation } from '../lesson/Gloss'
@@ -78,6 +78,8 @@ export function Beat({ setting, lines, doneLabel, onDone }: { setting?: string; 
   useEffect(() => {
     if (voiceOn) play(line.text, line.speaker, false, line)
   }, [voiceOn, line])
+  // Fetch the whole beat's clips now, so lines start without a loading pause.
+  useEffect(() => preload(lines), [lines])
   useEffect(() => () => stop(), [])
   const last = i === lines.length - 1
   return (

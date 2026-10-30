@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { navigate } from '../../app/router'
 import { CHARACTERS, isOpen, stageOf } from '../../content/characters'
 import { useClub } from '../../data/store'
 import { Gloss, Translation } from '../../lesson/Gloss'
 import { LineVoice } from '../../speech/AudioControls'
-import { play } from '../../speech/voice'
+import { play, preload } from '../../speech/voice'
 import { Sprite } from '../../story/Stage'
 import type { HeroineId } from '../../story/sprites'
 import { Button, Card, DialogueBox } from '../../ui/kit'
@@ -12,12 +12,16 @@ import { Button, Card, DialogueBox } from '../../ui/kit'
 export function HeroineScreen({ id }: { id: HeroineId }) {
   const { units, flags, settings } = useClub()
   const c = CHARACTERS[id]!
-  const open = <T extends { unlock: Parameters<typeof isOpen>[0] }>(items: T[]) => items.filter((x) => isOpen(x.unlock, units, flags))
+  const open = <T extends { unlock: Parameters<typeof isOpen>[0] }>(items: T[]) => items.filter((x) => isOpen(x.unlock, units, flags, settings.unlockAll))
   const facts = open(c.facts)
   const memories = open(c.memories)
   const lines = open(c.lines)
   const [said, setSaid] = useState<number>()
   const line = said === undefined ? undefined : lines[said]
+
+  useEffect(() => {
+    if (settings.voice) preload(lines.map((l) => ({ ...l, speaker: id })))
+  }, [settings.voice, lines, id])
 
   // "Поболтать": a different unlocked line each tap, read aloud when voice is on.
   const chat = () => {
@@ -72,7 +76,9 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
           <ul className="list memories">
             {memories.map((m) => (
               <li key={m.en}>
-                <span lang="en">{m.en}</span>
+                <span>
+                  <Gloss text={m.en} />
+                </span>
                 <span className="muted">{m.ru}</span>
               </li>
             ))}

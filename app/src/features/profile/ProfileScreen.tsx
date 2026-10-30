@@ -67,7 +67,7 @@ export function ProfileScreen() {
       <Card title="Тестирование и сброс">
         <label className="field-inline">
           <input type="checkbox" checked={settings.unlockAll} onChange={(e) => updateSettings({ unlockAll: e.target.checked })} />
-          Открыть все занятия (можно проходить в любом порядке)
+          Открыть всё: занятия в любом порядке, факты, воспоминания и реплики героинь
         </label>
         <div className="actions">
           <Button variant="secondary" onClick={onReset}>

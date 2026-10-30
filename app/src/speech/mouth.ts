@@ -18,26 +18,52 @@ function setOpen(next: boolean) {
 }
 
 let ctx: AudioContext | undefined
+// A media element can be routed into the context only once, so keep its analyser.
+const analysers = new WeakMap<HTMLAudioElement, AnalyserNode>()
+
+function audioContext(): AudioContext | undefined {
+  const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
+  if (AC) ctx ??= new AC()
+  return ctx
+}
+
+/**
+ * Starts the audio context on the first tap anywhere (iOS allows it only in a
+ * user gesture), so even the first clip gets loudness lip-sync.
+ */
+export function unlockAudioOnFirstTap() {
+  if (typeof document === 'undefined') return
+  const unlock = () => {
+    const c = audioContext()
+    if (!c || c.state === 'running') return done()
+    void c.resume().then(done, () => {})
+  }
+  const done = () => ['pointerdown', 'touchend', 'click'].forEach((e) => document.removeEventListener(e, unlock, true))
+  ;['pointerdown', 'touchend', 'click'].forEach((e) => document.addEventListener(e, unlock, true))
+}
 
 function loudnessDriver(audio: HTMLAudioElement): () => void {
-  const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
-  if (!AC) return flapDriver()
-  ctx ??= new AC()
-  // Routing a clip through a suspended context mutes it (iOS before the first
-  // user gesture). Until audio is unlocked, keep the clip direct and flap instead.
-  if (ctx.state !== 'running') {
-    void ctx.resume()
-    return flapDriver()
+  const c = audioContext()
+  if (!c) return flapDriver()
+  let analyser = analysers.get(audio)
+  if (!analyser) {
+    // Routing a clip through a suspended context mutes it (iOS before the first
+    // user gesture). Until audio is unlocked, keep the clip direct and flap instead.
+    if (c.state !== 'running') {
+      void c.resume()
+      return flapDriver()
+    }
+    analyser = c.createAnalyser()
+    analyser.fftSize = 512
+    c.createMediaElementSource(audio).connect(analyser)
+    analyser.connect(c.destination)
+    analysers.set(audio, analyser)
   }
-  const source = ctx.createMediaElementSource(audio)
-  const analyser = ctx.createAnalyser()
-  analyser.fftSize = 512
-  source.connect(analyser)
-  analyser.connect(ctx.destination)
-  const data = new Uint8Array(analyser.fftSize)
+  const node = analyser
+  const data = new Uint8Array(node.fftSize)
   let frame = 0
   const tick = () => {
-    analyser.getByteTimeDomainData(data)
+    node.getByteTimeDomainData(data)
     let sum = 0
     for (const v of data) sum += ((v - 128) / 128) ** 2
     const rms = Math.sqrt(sum / data.length)
@@ -49,6 +75,33 @@ function loudnessDriver(audio: HTMLAudioElement): () => void {
   return () => cancelAnimationFrame(frame)
 }
 
+/**
+ * Moves the mouth only while the clip is really playing: a clip that is still
+ * loading (the first play) or buffering keeps the mouth shut, so the lips never
+ * run ahead of the sound.
+ */
+function clipDriver(audio: HTMLAudioElement): () => void {
+  let inner: (() => void) | undefined
+  const halt = () => {
+    inner?.()
+    inner = undefined
+    setOpen(false)
+  }
+  const start = () => {
+    halt()
+    inner = loudnessDriver(audio)
+  }
+  audio.addEventListener('playing', start)
+  audio.addEventListener('waiting', halt)
+  audio.addEventListener('pause', halt)
+  return () => {
+    halt()
+    audio.removeEventListener('playing', start)
+    audio.removeEventListener('waiting', halt)
+    audio.removeEventListener('pause', halt)
+  }
+}
+
 function flapDriver(): () => void {
   const timer = setInterval(() => setOpen(!open), 140)
   return () => clearInterval(timer)
@@ -58,7 +111,7 @@ function flapDriver(): () => void {
 export function mouthStart(who: string, audio?: HTMLAudioElement) {
   mouthStop()
   speaker = who
-  stopDriver = audio ? loudnessDriver(audio) : flapDriver()
+  stopDriver = audio ? clipDriver(audio) : flapDriver()
   emit()
 }
 
