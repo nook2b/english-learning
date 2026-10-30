@@ -7,7 +7,7 @@ import { UnitScreen } from '../features/lesson/UnitScreen'
 import { PathScreen } from '../features/path/PathScreen'
 import { ProfileScreen } from '../features/profile/ProfileScreen'
 import { ReviewScreen } from '../features/review/ReviewScreen'
-import { StoryScreen } from '../features/story/StoryScreen'
+import { QuestsScreen } from '../features/quests/QuestsScreen'
 import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
 import { type Route, navigate, useRoute } from './router'
@@ -30,8 +30,8 @@ function Screen({ route }: { route: Route }) {
     }
     case 'review':
       return <ReviewScreen />
-    case 'story':
-      return <StoryScreen />
+    case 'quests':
+      return <QuestsScreen />
     case 'heroines':
       return <HeroinesScreen />
     case 'heroine':

@@ -5,7 +5,7 @@ import { HEROINES, SESSIONS_PER_UNIT } from '../content/schema'
 export const TABS = [
   { route: 'path', label: 'Путь' },
   { route: 'review', label: 'Повторение' },
-  { route: 'story', label: 'История' },
+  { route: 'quests', label: 'Задания' },
   { route: 'heroines', label: 'Героини' },
   { route: 'profile', label: 'Профиль' },
 ] as const
