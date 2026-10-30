@@ -213,10 +213,10 @@ main { flex: 1; padding: 12px 16px 88px; }
 .route-rei { --road: #7048e8; }
 .route-iris { --road: #0c9b72; }
 .route-unit { display: flex; flex-direction: column; gap: 10px; }
-.route-head { position: sticky; top: var(--topbar-h, 0px); z-index: 5; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2px 12px; width: 100%; padding: 10px 12px 10px 14px; border: 0; border-left: 5px solid var(--road, var(--border)); border-radius: 4px 12px 12px 4px; background: var(--surface); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
-.route-head-kicker { grid-column: 1 / -1; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--road, var(--muted)); }
-.route-head-title { font-size: 1.12rem; font-weight: 700; }
-.route-head-more { font-size: 0.85rem; color: var(--muted); white-space: nowrap; }
+.route-head { position: sticky; top: var(--topbar-h, 0px); z-index: 5; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2px 12px; width: 100%; padding: 10px 12px 10px 14px; border: 0; border-left: 5px solid var(--road, var(--border)); border-radius: 4px 12px 12px 4px; background: var(--surface); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+.route-head-kicker { grid-column: 1; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--road, var(--muted)); }
+.route-head-title { grid-column: 1; font-size: 1.12rem; font-weight: 700; }
+.route-head-book { grid-column: 2; grid-row: 1 / 3; align-self: stretch; display: grid; place-items: center; padding-left: 14px; border-left: 1px solid var(--border); font-size: 1.5rem; }
 .route-head-soon { position: static; cursor: default; color: var(--muted); }
 .route-head-soon .route-head-kicker { color: var(--muted); }
 .route-body { display: flex; align-items: flex-start; gap: 8px; }
@@ -244,3 +244,19 @@ main { flex: 1; padding: 12px 16px 88px; }
 @keyframes route-glow { 50% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--road) 10%, transparent); } }
 @media (prefers-reduced-motion: reduce) { .route-stop-next .route-dot { animation: none; } }
 .route-back { white-space: nowrap; position: fixed; z-index: 9; left: 50%; transform: translateX(-50%); bottom: calc(72px + env(safe-area-inset-bottom)); padding: 10px 16px; border: 0; border-radius: 999px; background: var(--text); color: var(--bg); font: inherit; font-weight: 600; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); cursor: pointer; }
+
+/* Unit notebook page (opened from the route header). */
+.guide-close { align-self: flex-start; }
+.guide-hero { display: flex; align-items: flex-end; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.guide-figure { flex: none; width: 34%; max-width: 140px; }
+.guide-figure .sprite-frame { --fh: min(210px, 50vw); margin: 0 auto; }
+.guide-figure .map-figure { display: block; width: 100%; height: auto; }
+.guide-kicker { margin: 0; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.guide-title { margin: 2px 0 6px; font-size: 1.4rem; }
+.guide-section { display: flex; flex-direction: column; gap: 10px; }
+.guide-heading { margin: 4px 0 0; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
+.guide-phrases { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.guide-phrase { position: relative; padding: 12px 44px 12px 14px; border: 2px solid var(--border); border-radius: 14px; display: flex; flex-direction: column; gap: 4px; }
+.guide-phrase .line-voice { position: absolute; top: 10px; right: 10px; }
+.guide-example { margin: 0; font-size: 1.05rem; }
+.guide-gist { margin: 0; font-size: 0.85rem; color: var(--muted); }

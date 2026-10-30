@@ -1,17 +1,30 @@
+import { useMemo } from 'react'
 import { navigate } from '../../app/router'
-import { getUnit } from '../../content/course'
+import { getUnit, nextSession } from '../../content/course'
 import { ARC1_UNITS } from '../../content/outline'
-import { sessionId } from '../../data/db'
 import { useClub } from '../../data/store'
-import { Button, Card, ProgressBar } from '../../ui/kit'
+import { Gloss, Translation } from '../../lesson/Gloss'
+import { GlossaryContext } from '../../lesson/glossary'
+import { LineVoice } from '../../speech/AudioControls'
+import { Button, Card } from '../../ui/kit'
+import { MapFigure } from '../path/MapFigure'
+import { mapFigure } from '../path/roadmap'
+import { keyPhrases } from './guide'
 
-const KIND_LABELS = { comprehension: 'понимание', form: 'форма', production: 'продукция', fluency: 'беглость и миссия' } as const
+const sameText = (a: string, b: string) => a.toLowerCase().replace(/[^a-z' ]/g, '').trim() === b.toLowerCase().replace(/[^a-z' ]/g, '').trim()
 
+/**
+ * The unit's page from Iris's notebook, opened from the notebook button on the
+ * route: what the unit is for, its key phrases with an example sentence each
+ * (heard in a heroine's voice when the story has it) and the grammar focus.
+ * The sessions themselves live on the route, not here.
+ */
 export function UnitScreen({ unitId }: { unitId: string }) {
-  const sessions = useClub((s) => s.sessions)
-  const unlockAll = useClub((s) => s.settings.unlockAll)
+  const { units, sessions } = useClub()
   const unit = getUnit(unitId)
   const outline = ARC1_UNITS.find((u) => u.id === unitId)
+  const phrases = useMemo(() => (unit ? keyPhrases(unit) : []), [unit])
+  const glossary = useMemo(() => unit?.expressions.map((e) => ({ ...e, target: true })) ?? [], [unit])
 
   if (!unit) {
     return (
@@ -26,43 +39,76 @@ export function UnitScreen({ unitId }: { unitId: string }) {
     )
   }
 
-  const done = unit.sessions.map((_, i) => !!sessions[sessionId(unit.id, i + 1)])
-  const doneCount = done.filter(Boolean).length
-
+  const next = nextSession(sessions, units)
+  const done = !!units[unit.id]
   return (
-    <div className="screen">
-      <Card title={`Юнит ${unit.id}. ${unit.title}`}>
-        <p>{unit.goal}</p>
-        <p className="muted">{unit.focus}</p>
-        <ProgressBar value={doneCount} max={unit.sessions.length} label="Занятия юнита" />
-      </Card>
+    <GlossaryContext.Provider value={glossary}>
+      <div className="screen guide">
+        <button className="link muted guide-close" onClick={() => navigate({ name: 'path' })}>
+          ✕ К маршруту
+        </button>
+        <header className="guide-hero">
+          <div className="guide-figure" aria-hidden>
+            <MapFigure {...mapFigure(unit)} />
+          </div>
+          <div>
+            <p className="guide-kicker">Юнит {unit.id} · из тетради Айрис</p>
+            <h1 className="guide-title">{unit.title}</h1>
+            <p>{unit.goal}</p>
+          </div>
+        </header>
 
-      <Card title="Занятия">
-        <ul className="unit-list">
-          {unit.sessions.map((s, i) => {
-            // Sessions open in order; finished ones can be replayed.
-            const open = unlockAll || i === 0 || done[i - 1] || done[i]
-            return (
-              <li key={i} className={`unit ${done[i] ? 'unit-done' : open ? 'unit-open' : 'unit-locked'}`}>
-                <button className="link" disabled={!open} onClick={() => navigate({ name: 'session', unitId: unit.id, index: i + 1 })}>
-                  {i + 1}. {s.title}
-                </button>
-                <span className="muted">{done[i] ? 'пройдено' : KIND_LABELS[s.kind]}</span>
+        <section className="guide-section">
+          <h2 className="guide-heading">Ключевые фразы</h2>
+          <ul className="guide-phrases">
+            {phrases.map((p) => (
+              <li key={p.en} className="guide-phrase">
+                {p.example ? (
+                  <>
+                    <LineVoice text={p.example.text} speaker={p.example.speaker} expr={p.example.expr} delivery={p.example.delivery} />
+                    <p className="guide-example">
+                      <Gloss text={p.example.text} />
+                    </p>
+                    {p.example.ru ? <Translation ru={p.example.ru} always /> : null}
+                    {/* When the example is the phrase itself, its meaning is enough. */}
+                    <p className="guide-gist">
+                      {sameText(p.example.text, p.en) ? (
+                        p.ru
+                      ) : (
+                        <>
+                          <span lang="en">{p.en}</span> — {p.ru}
+                        </>
+                      )}
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <LineVoice text={p.en} speaker="narrator" />
+                    <p className="guide-example">
+                      <Gloss text={p.en} />
+                    </p>
+                    <p className="guide-gist">{p.ru}</p>
+                  </>
+                )}
               </li>
-            )
-          })}
-        </ul>
-      </Card>
+            ))}
+          </ul>
+        </section>
 
-      <Card title="Выражения юнита">
-        <ul className="expressions">
-          {unit.expressions.map((e) => (
-            <li key={e.en}>
-              <span lang="en">{e.en}</span> <span className="muted">— {e.ru}</span>
-            </li>
-          ))}
-        </ul>
-      </Card>
-    </div>
+        <section className="guide-section">
+          <h2 className="guide-heading">Грамматика</h2>
+          <p>{unit.focus}</p>
+        </section>
+
+        {done && (
+          <section className="guide-section">
+            <h2 className="guide-heading">Что изменилось в истории</h2>
+            <p>{unit.outcome}</p>
+          </section>
+        )}
+
+        {next?.unitId === unit.id && <Button onClick={() => navigate({ name: 'session', ...next })}>Продолжить: занятие {next.index}</Button>}
+      </div>
+    </GlossaryContext.Provider>
   )
 }

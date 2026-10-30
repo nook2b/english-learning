@@ -94,12 +94,15 @@ function UnitRoute({ unit, next }: { unit: Unit; next?: number }) {
 
   return (
     <div className={`route-unit route-${figure.heroine}`}>
-      <button className="route-head" onClick={() => navigate({ name: 'unit', unitId: unit.id })}>
+      <button className="route-head" onClick={() => navigate({ name: 'unit', unitId: unit.id })} aria-label={`Юнит ${unit.id}. ${unit.title}. Открыть тетрадь юнита`}>
         <span className="route-head-kicker">
           Юнит {unit.id} · {units[unit.id] ? 'пройден' : `${done.filter(Boolean).length}/${unit.sessions.length}`}
         </span>
         <span className="route-head-title">{unit.title}</span>
-        <span className="route-head-more">О юните ›</span>
+        {/* Iris's notebook: the unit's key phrases and grammar. */}
+        <span className="route-head-book" aria-hidden>
+          📓
+        </span>
       </button>
       <div className="route-body">
         <ol className="route-stops">
