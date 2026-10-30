@@ -231,15 +231,10 @@ function QuestionView({ step, exercise, locked, onAnswer }: ViewProps<'reading' 
   return (
     <div className="exercise">
       {exercise.type === 'reading' ? (
-        <article className="passage" lang="en">
-          <h3>{exercise.title}</h3>
-          {exercise.text.split('\n').map((p, i) => (
-            <p key={i}>
-              <Gloss text={p} />
-            </p>
-          ))}
+        <>
+          <Passage exercise={exercise} />
           {locked && last && exercise.ru && <p className="translation">{exercise.ru}</p>}
-        </article>
+        </>
       ) : (
         <div className="passage">
           <p className="task">Послушай{SPEAKER_NAMES[exercise.speaker] ? `: ${SPEAKER_NAMES[exercise.speaker]}` : ''}</p>
@@ -266,6 +261,46 @@ function QuestionView({ step, exercise, locked, onAnswer }: ViewProps<'reading' 
         }}
       />
     </div>
+  )
+}
+
+/** A reading text, dressed as what it is in the story: a letter, a notice, a notebook page. */
+function Passage({ exercise }: { exercise: ExerciseOf<'reading'> }) {
+  const lines = exercise.text.split('\n')
+  const look = exercise.look
+  // A letter ends with its closing and signature on the last two lines.
+  const body = look === 'letter' ? lines.slice(0, -2) : lines
+  return (
+    <article className={look ? `passage paper paper-${look}` : 'passage'} lang="en">
+      {look === 'letter' ? (
+        <header className="letterhead">
+          <span className="crest" aria-hidden>
+            B
+          </span>
+          {/* "Bellwether Academy · International Office": the sender's department goes on a second line. */}
+          <span>
+            {(exercise.header ?? exercise.title).split(' · ')[0]}
+            {exercise.header?.includes(' · ') && <small>{exercise.header.split(' · ')[1]}</small>}
+          </span>
+        </header>
+      ) : (
+        <h3>{exercise.title}</h3>
+      )}
+      {body.map((p, i) => (
+        <p key={i}>
+          <Gloss text={p} />
+        </p>
+      ))}
+      {look === 'letter' && (
+        <p className="signoff">
+          <Gloss text={lines.at(-2) ?? ''} />
+          <br />
+          <span className="signature">
+            <Gloss text={lines.at(-1) ?? ''} />
+          </span>
+        </p>
+      )}
+    </article>
   )
 }
 

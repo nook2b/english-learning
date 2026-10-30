@@ -140,6 +140,7 @@
           "type": "reading",
           "title": "Interview questions for new students",
           "text": "1. Where are you from?\n2. What do you study here?\n3. How do you usually get to the academy?\n4. What is the most difficult thing about your first week?\n5. Who do you ask when you don't understand something?\n6. What does \"home\" mean to you in a new city?\nNote for the team: speak slowly, and always check that the student understands the question.",
+          "look": "note",
           "ru": "1. Откуда ты? 2. Что ты здесь изучаешь? 3. Как ты обычно добираешься до академии? 4. Что самое трудное в твоей первой неделе? 5. К кому ты обращаешься, когда что-то не понимаешь? 6. Что для тебя значит «дом» в новом городе? Заметка для команды: говорите медленно и всегда проверяйте, понял ли студент вопрос.",
           "questions": [
             {

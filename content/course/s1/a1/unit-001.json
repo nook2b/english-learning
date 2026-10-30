@@ -143,6 +143,8 @@
           "type": "reading",
           "title": "Welcome to Bellwether Academy",
           "text": "Dear exchange student,\nWelcome to Bellwether Academy! Your English placement check is on Monday at 10 a.m. in Room 70, New Building. Please bring this letter and your student card.\nClasses start on Tuesday. Most exchange students live in the East Dorm. The dining hall opens at 7:30 every morning.\nThe International Office is open every day except Sunday. If you have a question, just ask us!\nBest wishes,\nInternational Office",
+          "look": "letter",
+          "header": "Bellwether Academy · International Office",
           "ru": "Дорогой студент по обмену! Добро пожаловать в академию Bellwether! Вступительная проверка по английскому — в понедельник в 10 утра в кабинете 70 нового корпуса. Возьми это письмо и студенческий билет. Занятия начинаются во вторник. Большинство студентов по обмену живут в Восточном общежитии. Столовая открывается в 7:30 каждое утро. Международный отдел работает каждый день, кроме воскресенья. Если есть вопрос — просто спроси нас! С наилучшими пожеланиями, Международный отдел",
           "questions": [
             {

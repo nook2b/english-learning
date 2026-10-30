@@ -934,6 +934,7 @@
           "type": "reading",
           "title": "Notice: Library hours",
           "text": "The library is open from Monday to Friday, from 8:00 to 22:00. On Saturday it opens at 10:00 and closes at 18:00. It is closed on Sunday. Students usually need a student card to borrow books. Right now, the second floor is closed for repairs.",
+          "look": "notice",
           "ru": "Библиотека открыта с понедельника по пятницу с 8:00 до 22:00. В субботу открывается в 10:00 и закрывается в 18:00. В воскресенье закрыта. Чтобы брать книги, студентам обычно нужен студенческий билет. Сейчас второй этаж закрыт на ремонт.",
           "questions": [
             {

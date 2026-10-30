@@ -96,6 +96,10 @@ const Reading = z.object({
   type: z.literal('reading'),
   title: z.string(),
   text: z.string(),
+  /** How the text looks in the story: a paper letter, a notice on a board, a notebook page. Plain by default. */
+  look: z.enum(['letter', 'notice', 'note']).optional(),
+  /** Letterhead of a letter: who it is from. */
+  header: z.string().optional(),
   /** Shown after the last question, never before: it would give the answers away. */
   ru: z.string().optional(),
   questions: z.array(Question).min(1),
