@@ -15,7 +15,7 @@ import { type HeroineId, HEROINE_IDS, SPRITE_H, SPRITE_W, TALK, isHeroine, parse
 type SpriteSize = 'stage' | 'knee' | 'avatar'
 
 /** A face every pose has, kept on a hidden Rive figure while the scene asks for a face it lacks. */
-const FIRST_FACE: Record<string, string> = { stand: 'neutral', phone: 'focused', recorder: 'focused', notebook: 'focused' }
+const FIRST_FACE: Record<string, string> = { stand: 'neutral', phone: 'focused', recorder: 'focused', notebook: 'focused', cheer: 'happy', arms_crossed: 'guarded', turn: 'dry_smile' }
 
 /**
  * A heroine sprite. 'stage' shows her full figure, 'knee' crops just above

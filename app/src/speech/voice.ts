@@ -25,21 +25,44 @@ function set(next: VoiceState, id?: string) {
 }
 
 // Clips are fetched ahead of time (the lines of a scene as it opens), so the
-// first tap starts at once. The same elements are reused for playing. A plain
-// fetch of the whole file also lets the service worker keep it for offline use
-// (the audio element itself asks for byte ranges, which cannot be cached).
-const loaded = new Map<string, HTMLAudioElement>()
+// first tap starts at once. The same elements are reused for playing. The whole
+// file is fetched once (the service worker keeps it for offline use) and played
+// from memory: Safari sometimes fails byte-range requests through the service
+// worker, and a failed clip must not turn into robotic browser speech.
+interface Clip {
+  audio: HTMLAudioElement
+  /** The fetched file as a blob URL, or undefined when it could not be fetched. */
+  memory: Promise<string | undefined>
+}
+const loaded = new Map<string, Clip>()
 
-function clipAudio(url: string): HTMLAudioElement {
-  let audio = loaded.get(url)
-  if (!audio) {
-    audio = new Audio(url)
+function fetchToMemory(url: string): Promise<string | undefined> {
+  if (typeof fetch !== 'function' || typeof URL.createObjectURL !== 'function') return Promise.resolve(undefined)
+  return fetch(url)
+    .then((r) => (r.ok ? r.blob() : Promise.reject(new Error(String(r.status)))))
+    .then((b) => URL.createObjectURL(b))
+    .catch(() => undefined)
+}
+
+function clip(url: string): Clip {
+  let c = loaded.get(url)
+  if (!c) {
+    const audio = new Audio(url)
     audio.preload = 'auto'
-    if (typeof fetch === 'function') void fetch(url).catch(() => {})
-    loaded.set(url, audio)
-    if (loaded.size > 40) loaded.delete(loaded.keys().next().value!)
+    const memory = fetchToMemory(url)
+    // Switch to the copy in memory unless the clip is already playing from the network.
+    void memory.then((m) => {
+      if (m && audio.paused && audio.currentTime === 0) audio.src = m
+    })
+    c = { audio, memory }
+    loaded.set(url, c)
+    if (loaded.size > 40) {
+      const [oldUrl, old] = loaded.entries().next().value!
+      loaded.delete(oldUrl)
+      void old.memory.then((m) => m && URL.revokeObjectURL(m))
+    }
   }
-  return audio
+  return c
 }
 
 /** Starts downloading the clips of these lines; lines without a clip are skipped. */
@@ -47,7 +70,7 @@ export function preload(lines: readonly ({ text: string; speaker: Speaker } & De
   if (typeof Audio === 'undefined') return
   for (const l of lines) {
     const url = clipUrl(l.speaker, voicedText(l.text, l))
-    if (url) clipAudio(url)
+    if (url) clip(url)
   }
 }
 
@@ -65,16 +88,28 @@ export function play(text: string, speaker: Speaker = 'narrator', slow = false, 
   // Clips are keyed by the voiced text (with audio tags); browser speech reads the plain text.
   const url = clipUrl(speaker, voicedText(text, delivery))
   if (url) {
-    const audio = clipAudio(url)
+    const { audio, memory } = clip(url)
     audio.currentTime = 0
     audio.playbackRate = slow ? 0.75 : 1
     audio.onended = () => current?.audio === audio && set('idle')
     const mine = (current = { id, audio })
-    // A clip that cannot load (offline and not cached yet) falls back to browser speech.
+    // A clip that fails to load is played again from memory; only a file that cannot
+    // be fetched at all (offline and not cached yet) falls back to browser speech.
+    let retried = false
     audio.onerror = () => {
       if (current !== mine) return
-      mouthStop()
-      speakInstead(text, speaker, slow, id)
+      void memory.then((m) => {
+        if (current !== mine) return
+        if (m && !retried && audio.src !== m) {
+          retried = true
+          audio.src = m
+          audio.playbackRate = slow ? 0.75 : 1
+          audio.play()?.catch(() => current === mine && set('idle'))
+          return
+        }
+        mouthStop()
+        speakInstead(text, speaker, slow, id)
+      })
     }
     // The mouth listens for the clip's 'playing' event, so attach it first.
     mouthStart(speaker, audio)
