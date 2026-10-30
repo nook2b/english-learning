@@ -6,13 +6,13 @@ import { HEROINE_IDS } from '../../story/sprites'
 import { Card } from '../../ui/kit'
 
 export function HeroinesScreen() {
-  const { units, flags } = useClub()
+  const { units, flags, settings } = useClub()
   const stage = stageOf(Object.keys(units).length)
   return (
     <div className="screen">
       {HEROINE_IDS.map((id) => {
         const c = CHARACTERS[id]!
-        const memories = c.memories.filter((m) => isOpen(m.unlock, units, flags)).length
+        const memories = c.memories.filter((m) => isOpen(m.unlock, units, flags, settings.unlockAll)).length
         const quests = c.quests.filter((q) => flags[q.flag]).length
         return (
           <button key={id} className="card heroine-card" onClick={() => navigate({ name: 'heroine', id })}>

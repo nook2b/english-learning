@@ -30,8 +30,9 @@ export const CHARACTERS: Record<string, Character> = Object.fromEntries(
   }),
 )
 
-export function isOpen(unlock: Unlock, units: Record<string, unknown>, flags: Record<string, unknown>): boolean {
-  return (!!unlock.unit && !!units[unlock.unit]) || (!!unlock.flag && !!flags[unlock.flag])
+/** `all` is the testing switch "open everything" from the profile. */
+export function isOpen(unlock: Unlock, units: Record<string, unknown>, flags: Record<string, unknown>, all = false): boolean {
+  return all || (!!unlock.unit && !!units[unlock.unit]) || (!!unlock.flag && !!flags[unlock.flag])
 }
 
 /** Relationship stage by story progress (docs/00-full-plan.md, 3.8). Romance stages need the route, added later. */

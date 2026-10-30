@@ -58,8 +58,8 @@ export function PathScreen() {
           <ul className="unit-list">
             {m.units.map((u) => {
               const written = !!UNITS[u.id]
-              const status = units[u.id] ? 'пройден' : !written ? 'скоро' : u.id === next?.unitId ? `${sessionsDone(sessions, u.id)}/8` : 'закрыт'
-              const cls = units[u.id] ? 'done' : u.id === next?.unitId ? 'open' : 'locked'
+              const status = units[u.id] ? 'пройден' : !written ? 'скоро' : u.id === next?.unitId || settings.unlockAll ? `${sessionsDone(sessions, u.id)}/8` : 'закрыт'
+              const cls = units[u.id] ? 'done' : u.id === next?.unitId || (written && settings.unlockAll) ? 'open' : 'locked'
               return (
                 <li key={u.id} className={`unit unit-${cls}`}>
                   <button className="link" onClick={() => navigate({ name: 'unit', unitId: u.id })}>
