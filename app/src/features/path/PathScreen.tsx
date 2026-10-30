@@ -1,43 +1,31 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { navigate } from '../../app/router'
 import { UNITS, nextSession } from '../../content/course'
 import { ARC1, ARC1_UNITS } from '../../content/outline'
-import { CHARACTERS } from '../../content/characters'
 import type { Unit } from '../../content/schema'
-import { dayKey } from '../../data/dates'
 import { sessionId } from '../../data/db'
 import { useClub } from '../../data/store'
-import { Gloss, Translation } from '../../lesson/Gloss'
-import { LineVoice } from '../../speech/AudioControls'
-import { Sprite } from '../../story/Stage'
-import { HEROINE_IDS } from '../../story/sprites'
-import { Button, DialogueBox, ProgressBar } from '../../ui/kit'
+import { Button, ProgressBar } from '../../ui/kit'
 import { MapFigure } from './MapFigure'
 import { mapFigure, stopIcon } from './roadmap'
 
 const KIND_LABELS = { comprehension: 'Понимание', form: 'Форма', production: 'Продукция', fluency: 'Беглость' } as const
 
 export function PathScreen() {
-  const { units, sessions, settings } = useClub()
-  // Heroine of the day: a different one each calendar day.
-  const day = Number(dayKey().replaceAll('-', ''))
-  const hostId = HEROINE_IDS[day % HEROINE_IDS.length]!
-  const host = CHARACTERS[hostId]!
+  const { units, sessions } = useClub()
   const next = nextSession(sessions, units)
   const doneCount = ARC1_UNITS.filter((u) => units[u.id]).length
+  const route = useRef<HTMLDivElement>(null)
+  const away = useAwayFromCurrent()
+
+  useLayoutEffect(() => {
+    // Unit headers stick right under the top bar while their unit is on screen.
+    const bar = document.querySelector('.topbar')?.getBoundingClientRect().height ?? 0
+    route.current?.style.setProperty('--topbar-h', `${bar}px`)
+  }, [])
 
   return (
     <div className="screen">
-      <div className="host">
-        <button className="heroine-tap" onClick={() => navigate({ name: 'heroine', id: hostId })} aria-label={host.name}>
-          <Sprite heroine={hostId} expr={host.greeting.expr} size="knee" />
-        </button>
-        <DialogueBox speaker={host.name}>
-          <LineVoice text={host.greeting.text} speaker={hostId} expr={host.greeting.expr} delivery={host.greeting.delivery} />
-          <Gloss text={host.greeting.text} />
-          <Translation ru={host.greeting.ru} always={settings.translation === 'always'} />
-        </DialogueBox>
-      </div>
       <Button onClick={() => next && navigate({ name: 'session', ...next })} disabled={!next}>
         {next ? `Продолжить: юнит ${next.unitId}, занятие ${next.index}` : 'Новые юниты скоро появятся'}
       </Button>
@@ -47,7 +35,7 @@ export function PathScreen() {
         <ProgressBar value={doneCount} max={ARC1_UNITS.length} label="Прогресс арки" />
       </div>
 
-      <div className="route">
+      <div className="route" ref={route}>
         {ARC1.modules.map((m) => (
           <section key={m.id} className="route-module">
             <p className="route-module-title">
@@ -67,8 +55,26 @@ export function PathScreen() {
           </section>
         ))}
       </div>
+      {away && (
+        <button className="route-back" onClick={() => document.querySelector('.route-stop-next')?.scrollIntoView({ block: 'center', behavior: 'smooth' })}>
+          {away === 'up' ? '↑' : '↓'} К текущему занятию
+        </button>
+      )}
     </div>
   )
+}
+
+/** Whether the current station has scrolled off screen, and which way it went. */
+function useAwayFromCurrent(): 'up' | 'down' | undefined {
+  const [away, setAway] = useState<'up' | 'down'>()
+  useEffect(() => {
+    const el = document.querySelector('.route-stop-next')
+    if (!el || typeof IntersectionObserver === 'undefined') return
+    const io = new IntersectionObserver(([e]) => setAway(!e || e.isIntersecting ? undefined : e.boundingClientRect.top < 0 ? 'up' : 'down'))
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+  return away
 }
 
 /**

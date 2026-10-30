@@ -199,8 +199,6 @@ main { flex: 1; padding: 12px 16px 88px; }
 .memories li, .quests li { display: flex; flex-direction: column; }
 .quests { list-style: none; padding-left: 0; }
 .quest-locked { color: var(--muted); }
-.host { display: flex; align-items: flex-end; gap: 8px; --h: min(30vh, 240px); }
-.host .dialogue { flex: 1; margin-bottom: 8px; }
 .sprite-frame.dim { filter: brightness(0.75) saturate(0.85); opacity: 0.9; }
 .diff-need { font-weight: 700; text-decoration: underline; text-decoration-color: #2b8a3e; text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .diff-wrong { text-decoration: line-through; text-decoration-color: #c92a2a; color: #c92a2a; }
@@ -215,11 +213,11 @@ main { flex: 1; padding: 12px 16px 88px; }
 .route-rei { --road: #7048e8; }
 .route-iris { --road: #0c9b72; }
 .route-unit { display: flex; flex-direction: column; gap: 10px; }
-.route-head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2px 12px; width: 100%; padding: 10px 12px 10px 14px; border: 0; border-left: 5px solid var(--road, var(--border)); border-radius: 4px 12px 12px 4px; background: var(--surface); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+.route-head { position: sticky; top: var(--topbar-h, 0px); z-index: 5; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2px 12px; width: 100%; padding: 10px 12px 10px 14px; border: 0; border-left: 5px solid var(--road, var(--border)); border-radius: 4px 12px 12px 4px; background: var(--surface); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
 .route-head-kicker { grid-column: 1 / -1; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--road, var(--muted)); }
 .route-head-title { font-size: 1.12rem; font-weight: 700; }
 .route-head-more { font-size: 0.85rem; color: var(--muted); white-space: nowrap; }
-.route-head-soon { cursor: default; color: var(--muted); }
+.route-head-soon { position: static; cursor: default; color: var(--muted); }
 .route-head-soon .route-head-kicker { color: var(--muted); }
 .route-body { display: flex; align-items: flex-start; gap: 8px; }
 .route-stops { flex: 1; min-width: 0; list-style: none; margin: 0; padding: 0; }
@@ -240,8 +238,9 @@ main { flex: 1; padding: 12px 16px 88px; }
 .route-kind { font-size: 0.82rem; color: var(--muted); }
 .route-stop-next .route-label { background: color-mix(in srgb, var(--road) 12%, transparent); }
 .route-stop-next .route-kind { color: var(--road); font-weight: 700; }
-.route-figure { position: sticky; top: 72px; flex: none; width: 38%; max-width: 170px; pointer-events: none; }
+.route-figure { position: sticky; top: calc(var(--topbar-h, 0px) + 92px); flex: none; width: 38%; max-width: 170px; pointer-events: none; }
 .route-figure .sprite-frame { --fh: min(250px, 58vw); margin: 0 auto; }
 .route-figure .map-figure { display: block; width: 100%; height: auto; }
 @keyframes route-glow { 50% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--road) 10%, transparent); } }
 @media (prefers-reduced-motion: reduce) { .route-stop-next .route-dot { animation: none; } }
+.route-back { white-space: nowrap; position: fixed; z-index: 9; left: 50%; transform: translateX(-50%); bottom: calc(72px + env(safe-area-inset-bottom)); padding: 10px 16px; border: 0; border-radius: 999px; background: var(--text); color: var(--bg); font: inherit; font-weight: 600; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); cursor: pointer; }
