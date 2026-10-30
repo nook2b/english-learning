@@ -1,0 +1,71 @@
+{
+ "mika": {
+  "stand": [
+   "neutral",
+   "listening",
+   "happy",
+   "laugh",
+   "surprised",
+   "thinking",
+   "embarrassed",
+   "annoyed",
+   "focused",
+   "excited",
+   "pout",
+   "forced_smile"
+  ],
+  "phone": [
+   "focused",
+   "neutral",
+   "happy",
+   "thinking",
+   "embarrassed"
+  ]
+ },
+ "rei": {
+  "stand": [
+   "neutral",
+   "listening",
+   "happy",
+   "laugh",
+   "surprised",
+   "thinking",
+   "embarrassed",
+   "annoyed",
+   "focused",
+   "deadpan",
+   "guarded",
+   "smirk"
+  ],
+  "recorder": [
+   "focused",
+   "neutral",
+   "happy",
+   "listening",
+   "smirk"
+  ]
+ },
+ "iris": {
+  "stand": [
+   "neutral",
+   "listening",
+   "happy",
+   "laugh",
+   "surprised",
+   "thinking",
+   "embarrassed",
+   "annoyed",
+   "focused",
+   "dry_smile",
+   "skeptical",
+   "guilty"
+  ],
+  "notebook": [
+   "focused",
+   "surprised",
+   "dry_smile",
+   "thinking",
+   "skeptical"
+  ]
+ }
+}

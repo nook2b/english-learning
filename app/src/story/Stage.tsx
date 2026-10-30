@@ -7,10 +7,15 @@ import { Gloss, Translation } from '../lesson/Gloss'
 import { SPEAKER_NAMES } from '../lesson/model'
 import { Button, DialogueBox } from '../ui/kit'
 import { castAt } from './cast'
+import { hasFigure, riveHasFace } from './figures'
+import { RiveFigure } from './HeroineFigure'
 import { useMouth } from '../speech/mouth'
 import { type HeroineId, HEROINE_IDS, SPRITE_H, SPRITE_W, TALK, isHeroine, parseExpr, resolveSprite } from './sprites'
 
 type SpriteSize = 'stage' | 'knee' | 'avatar'
+
+/** A face every pose has, kept on a hidden Rive figure while the scene asks for a face it lacks. */
+const FIRST_FACE: Record<string, string> = { stand: 'neutral', phone: 'focused', recorder: 'focused', notebook: 'focused' }
 
 /**
  * A heroine sprite. 'stage' shows her full figure, 'knee' crops just above
@@ -18,11 +23,17 @@ type SpriteSize = 'stage' | 'knee' | 'avatar'
  * While she speaks, a mouth patch ("{expr}_talk") is laid over the face on
  * each syllable when one is drawn; otherwise she gently bobs.
  */
-export function Sprite({ heroine, expr, dim = false, size = 'stage' }: { heroine: HeroineId; expr?: string; dim?: boolean; size?: SpriteSize }) {
+export function Sprite({ heroine, expr, dim = false, size = 'stage', animate = false }: { heroine: HeroineId; expr?: string; dim?: boolean; size?: SpriteSize; animate?: boolean }) {
   const ref = parseExpr(heroine, expr)
   const found = resolveSprite(ref)
-  const talk = found ? TALK[found.key] : undefined
   const mouth = useMouth(heroine)
+  // In scenes she is a Rive figure when her pose has this face; other faces stay sprites.
+  const [ready, setReady] = useState(false)
+  const [failed, setFailed] = useState(false)
+  const rive = animate && size !== 'avatar' && !failed && hasFigure(heroine, ref.pose)
+  const face = riveHasFace(heroine, ref.pose, ref.expr)
+  const live = rive && ready && face
+  const talk = found && !live ? TALK[found.key] : undefined
   useEffect(() => {
     // Preload the mouth patch so the first syllable does not flicker.
     if (talk) new Image().src = talk.url
@@ -31,8 +42,9 @@ export function Sprite({ heroine, expr, dim = false, size = 'stage' }: { heroine
   if (!found) return <div className={`sprite sprite-missing sprite-${size}`} aria-label={label} />
   if (size === 'avatar') return <div className="sprite sprite-avatar" role="img" aria-label={label} style={{ backgroundImage: `url(${found.url})` }} />
   const frame = (
-    <div className={`sprite-frame sprite-${size} ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''}`}>
-      <img className="sprite" src={found.url} alt={label} title={found.exact ? undefined : `замена: ${found.key}`} draggable={false} />
+    <div className={`sprite-frame sprite-${size} ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''} ${live ? 'rive-on' : ''}`}>
+      {rive && <RiveFigure heroine={heroine} pose={ref.pose} expression={face ? ref.expr : (FIRST_FACE[ref.pose] ?? 'neutral')} visible={face} onReady={() => setReady(true)} onFail={() => setFailed(true)} />}
+      <img className="sprite" style={live ? { visibility: 'hidden' } : undefined} src={found.url} alt={label} title={found.exact ? undefined : `замена: ${found.key}`} draggable={false} />
       {talk && mouth === 'open' && (
         <img
           className="sprite-mouth"
@@ -62,7 +74,7 @@ export function Stage({ cast, speaking, compact = false }: { cast: Partial<Recor
       {order
         .filter((h) => present.includes(h))
         .map((h) => (
-          <Sprite key={h} heroine={h} size="knee" expr={cast[h]} dim={!!speaking && isHeroine(speaking as HeroineId) && speaking !== h} />
+          <Sprite key={h} heroine={h} size="knee" animate expr={cast[h]} dim={!!speaking && isHeroine(speaking as HeroineId) && speaking !== h} />
         ))}
     </div>
   )

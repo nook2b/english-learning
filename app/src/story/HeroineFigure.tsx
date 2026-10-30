@@ -1,39 +1,38 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
-import { STILL } from './figures'
+import { lazy, Suspense } from 'react'
+import { useMouth } from '../speech/mouth'
+import { useReducedMotion } from './motion'
 import type { HeroineId } from './sprites'
 
-// A heroine at full length with her Rive idle animation (docs/22-rive-brief.md).
-// The still picture shows first and stays when motion is reduced, the
-// animation fails to load or there is no Rive file for her.
+// Rive heroines (docs/22-rive-brief.md), laid over a sprite frame (story/Stage.tsx).
+// The sprite shows until the animation is ready and stays when it fails to
+// load or the pose has no such face. With "reduce motion" she does not breathe or blink, but her
+// face and mouth still change.
 
 const RiveHeroine = lazy(() => import('./RiveHeroine'))
 
-
-function useReducedMotion(): boolean {
-  const query = typeof window !== 'undefined' && window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : undefined
-  const [reduced, setReduced] = useState(query ? query.matches : true)
-  useEffect(() => {
-    if (!query) return
-    const update = () => setReduced(query.matches)
-    query.addEventListener('change', update)
-    return () => query.removeEventListener('change', update)
-  }, [query])
-  return reduced
-}
-
-export function HeroineFigure({ heroine, label }: { heroine: HeroineId; label: string }) {
+/** The Rive canvas over a sprite frame or a figure box; `visible` hides it while the pose has no such face. */
+export function RiveFigure({
+  heroine,
+  pose,
+  expression,
+  visible = true,
+  onReady,
+  onFail,
+}: {
+  heroine: HeroineId
+  pose: string
+  expression: string
+  visible?: boolean
+  onReady: () => void
+  onFail: () => void
+}) {
   const reduced = useReducedMotion()
-  const [ready, setReady] = useState(false)
-  const [failed, setFailed] = useState(false)
-  const animate = !reduced && !failed
+  const talking = !!useMouth(heroine)
   return (
-    <div className="heroine-figure" role="img" aria-label={label}>
-      {!ready && <img className="heroine-still" src={STILL[heroine]} alt="" draggable={false} />}
-      {animate && (
-        <Suspense fallback={null}>
-          <RiveHeroine key={heroine} heroine={heroine} onReady={() => setReady(true)} onFail={() => setFailed(true)} />
-        </Suspense>
-      )}
-    </div>
+    <Suspense fallback={null}>
+      <div className="rive-layer" style={visible ? undefined : { visibility: 'hidden' }}>
+        <RiveHeroine key={`${heroine}:${pose}`} heroine={heroine} pose={pose} expression={expression} talking={talking} motion={!reduced} onReady={onReady} onFail={onFail} />
+      </div>
+    </Suspense>
   )
 }
