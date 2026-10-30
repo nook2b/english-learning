@@ -210,10 +210,10 @@ export const Unit = z.object({
   title: z.string(),
   goal: z.string(),
   focus: z.string(),
-  /** Target words, collocations and functions (10–12 per unit), highlighted in texts. */
-  expressions: z.array(z.object({ en: z.string(), ru: z.string() })),
-  /** Set phrases ("dining hall") and words with a meaning special to this unit: not marked, but a tap translates them as a whole. */
-  glossary: z.array(z.object({ en: z.string(), ru: z.string() })).default([]),
+  /** Target words, collocations and functions (10–12 per unit), underlined in texts. Translations live in content/dictionary.json. */
+  expressions: z.array(z.string()),
+  /** Set phrases ("dining hall"): not marked, but a tap translates them as a whole, from the dictionary. */
+  glossary: z.array(z.string()).default([]),
   /** The visible change in the story when the unit is done. */
   outcome: z.string(),
   sessions: z.array(Session).length(8),

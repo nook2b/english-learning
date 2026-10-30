@@ -1,6 +1,6 @@
 import { CHARACTERS } from '../content/characters'
 import { UNITS } from '../content/course'
-import { bases, lookup, WORD } from './dictionary'
+import { bases, lookup, phraseRu, WORD } from './dictionary'
 
 /** Every English text the app shows with tappable words (<Gloss>). */
 function glossedTexts(): string[] {
@@ -25,6 +25,11 @@ test('every word in story lines and texts is in the dictionary', () => {
   for (const t of glossedTexts()) for (const [w] of t.matchAll(WORD)) if (!lookup(w)) missing.add(w.toLowerCase())
   // Add these to content/dictionary.json with the meaning they have in the course.
   expect([...missing].sort()).toEqual([])
+})
+
+test('every unit expression and set phrase has its translation in the dictionary (one source)', () => {
+  const missing = Object.values(UNITS).flatMap((u) => [...u.expressions, ...u.glossary].filter((en) => !phraseRu(en)).map((en) => `${u.id}: ${en}`))
+  expect(missing).toEqual([])
 })
 
 test('regular forms find their base word', () => {

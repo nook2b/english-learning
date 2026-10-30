@@ -14,7 +14,7 @@ function unitWith(exercises: unknown[]) {
     goal: 'g',
     focus: 'f',
     outcome: 'o',
-    expressions: [{ en: 'by the way', ru: 'кстати' }],
+    expressions: ['by the way'],
     sessions: [{ kind: 'form', title: 'Test session', exercises }, ...Array(7).fill(filler)],
   })
 }

@@ -5,104 +5,32 @@
   "focus": "Present Simple для распорядка, наречия частоты, слова порядка, контраст Simple и Continuous. В конце — проверка модуля 001–004.",
   "outcome": "Первая целая страница гида записана: «A day of a new student». Модуль 001–004 закрыт, и Мика уже зовёт всех на общий обед.",
   "expressions": [
-    {
-      "en": "get up",
-      "ru": "вставать"
-    },
-    {
-      "en": "have breakfast",
-      "ru": "завтракать"
-    },
-    {
-      "en": "usually",
-      "ru": "обычно"
-    },
-    {
-      "en": "always",
-      "ru": "всегда"
-    },
-    {
-      "en": "sometimes",
-      "ru": "иногда"
-    },
-    {
-      "en": "never",
-      "ru": "никогда"
-    },
-    {
-      "en": "First",
-      "ru": "Сначала"
-    },
-    {
-      "en": "then",
-      "ru": "потом"
-    },
-    {
-      "en": "after that",
-      "ru": "после этого"
-    },
-    {
-      "en": "Finally",
-      "ru": "Наконец"
-    },
-    {
-      "en": "but today",
-      "ru": "но сегодня"
-    },
-    {
-      "en": "take the bus",
-      "ru": "ехать на автобусе"
-    }
+    "get up",
+    "have breakfast",
+    "usually",
+    "always",
+    "sometimes",
+    "never",
+    "First",
+    "then",
+    "after that",
+    "Finally",
+    "but today",
+    "take the bus"
   ],
   "glossary": [
-    {
-      "en": "typical",
-      "ru": "обычный"
-    },
-    {
-      "en": "dining hall",
-      "ru": "столовая"
-    },
-    {
-      "en": "miss",
-      "ru": "пропускать"
-    },
-    {
-      "en": "midnight",
-      "ru": "полночь"
-    },
-    {
-      "en": "sound lab",
-      "ru": "звуковая лаборатория"
-    },
-    {
-      "en": "record",
-      "ru": "записывать"
-    },
-    {
-      "en": "borrow",
-      "ru": "брать (на время)"
-    },
-    {
-      "en": "repairs",
-      "ru": "ремонт"
-    },
-    {
-      "en": "panic",
-      "ru": "паника"
-    },
-    {
-      "en": "celebrate",
-      "ru": "отметить"
-    },
-    {
-      "en": "Balance",
-      "ru": "баланс"
-    },
-    {
-      "en": "adverb",
-      "ru": "наречие"
-    }
+    "typical",
+    "dining hall",
+    "miss",
+    "midnight",
+    "sound lab",
+    "record",
+    "borrow",
+    "repairs",
+    "panic",
+    "celebrate",
+    "Balance",
+    "adverb"
   ],
   "sessions": [
     {
@@ -227,9 +155,7 @@
               "ru": "ехать на автобусе"
             }
           ],
-          "tags": [
-            "vocab_u004"
-          ]
+          "tags": []
         }
       ]
     },
@@ -1006,8 +932,7 @@
           ],
           "answer": "does",
           "tags": [
-            "questions_do",
-            "module_check"
+            "questions_do"
           ]
         },
         {
@@ -1021,8 +946,7 @@
           ],
           "answer": "is waving",
           "tags": [
-            "present_continuous",
-            "module_check"
+            "present_continuous"
           ]
         },
         {
@@ -1036,8 +960,7 @@
           ],
           "answer": "on",
           "tags": [
-            "time_prepositions",
-            "module_check"
+            "time_prepositions"
           ]
         },
         {
@@ -1051,8 +974,7 @@
           ],
           "explain": "С be наречие стоит после: am never late.",
           "tags": [
-            "frequency",
-            "module_check"
+            "frequency"
           ]
         },
         {
@@ -1064,8 +986,7 @@
             "What does repairs mean?"
           ],
           "tags": [
-            "function_clarify",
-            "module_check"
+            "function_clarify"
           ]
         },
         {
@@ -1082,8 +1003,7 @@
             "Sorry, I didn't catch that."
           ],
           "tags": [
-            "function_clarify",
-            "module_check"
+            "function_clarify"
           ]
         },
         {
@@ -1096,8 +1016,7 @@
             "I'm usually in the library, but today I'm in Room 17."
           ],
           "tags": [
-            "speaking",
-            "module_check"
+            "speaking"
           ]
         }
       ]

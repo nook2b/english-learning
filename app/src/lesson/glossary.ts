@@ -1,10 +1,18 @@
 import { createContext, useContext } from 'react'
+import type { Unit } from '../content/schema'
+import { phraseRu } from './dictionary'
 
 export interface GlossEntry {
   en: string
   ru: string
   /** A unit target expression rather than a helper word. */
   target: boolean
+}
+
+/** A unit's underlined expressions and whole-phrase glossary, translated from the course dictionary. */
+export function unitGlossary(unit: Pick<Unit, 'expressions' | 'glossary'>): GlossEntry[] {
+  const entry = (en: string, target: boolean) => ({ en, ru: phraseRu(en) ?? '', target })
+  return [...unit.expressions.map((en) => entry(en, true)), ...unit.glossary.map((en) => entry(en, false))]
 }
 
 export const GlossaryContext = createContext<GlossEntry[]>([])

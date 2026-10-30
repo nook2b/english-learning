@@ -5,104 +5,32 @@
   "focus": "Вопросы с do и does, вопросительные слова, фразы для переспроса.",
   "outcome": "В аудиогиде появилась страница «Как переспросить» — по твоей идее. А Рэй впервые дала тебе подержать рекордер.",
   "expressions": [
-    {
-      "en": "Could you speak more slowly",
-      "ru": "Можешь говорить медленнее"
-    },
-    {
-      "en": "What does",
-      "ru": "Что значит"
-    },
-    {
-      "en": "Do you mean",
-      "ru": "Ты имеешь в виду"
-    },
-    {
-      "en": "How do you spell that",
-      "ru": "Как это пишется"
-    },
-    {
-      "en": "I'm not sure I understand",
-      "ru": "Не уверен, что понимаю"
-    },
-    {
-      "en": "One more time",
-      "ru": "Ещё раз"
-    },
-    {
-      "en": "slowly",
-      "ru": "медленно"
-    },
-    {
-      "en": "difficult",
-      "ru": "трудный"
-    },
-    {
-      "en": "check",
-      "ru": "проверять"
-    },
-    {
-      "en": "understand",
-      "ru": "понимать"
-    }
+    "Could you speak more slowly",
+    "What does",
+    "Do you mean",
+    "How do you spell that",
+    "I'm not sure I understand",
+    "One more time",
+    "slowly",
+    "difficult",
+    "check",
+    "understand"
   ],
   "glossary": [
-    {
-      "en": "interview",
-      "ru": "интервью"
-    },
-    {
-      "en": "interviews",
-      "ru": "интервью"
-    },
-    {
-      "en": "transport",
-      "ru": "транспорт"
-    },
-    {
-      "en": "campus",
-      "ru": "кампус"
-    },
-    {
-      "en": "levels",
-      "ru": "уровни громкости"
-    },
-    {
-      "en": "gain",
-      "ru": "чувствительность микрофона"
-    },
-    {
-      "en": "clipping",
-      "ru": "перегруз (звук «режется»)"
-    },
-    {
-      "en": "input",
-      "ru": "вход"
-    },
-    {
-      "en": "button",
-      "ru": "кнопка"
-    },
-    {
-      "en": "loud",
-      "ru": "громкий"
-    },
-    {
-      "en": "wind",
-      "ru": "ветер"
-    },
-    {
-      "en": "Respect",
-      "ru": "уважаю"
-    },
-    {
-      "en": "nod",
-      "ru": "кивать"
-    },
-    {
-      "en": "interviewer",
-      "ru": "интервьюер"
-    }
+    "interview",
+    "interviews",
+    "transport",
+    "campus",
+    "levels",
+    "gain",
+    "clipping",
+    "input",
+    "button",
+    "loud",
+    "wind",
+    "Respect",
+    "nod",
+    "interviewer"
   ],
   "sessions": [
     {
@@ -232,9 +160,7 @@
               "ru": "медленно"
             }
           ],
-          "tags": [
-            "vocab_u002"
-          ]
+          "tags": []
         }
       ]
     },
@@ -999,9 +925,7 @@
               "ru": "Как это пишется?"
             }
           ],
-          "tags": [
-            "vocab_u002"
-          ]
+          "tags": []
         },
         {
           "id": "u002-s7-e2",

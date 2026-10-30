@@ -5,104 +5,32 @@
   "focus": "Present Simple для расписаний, предлоги at/on/in, from … to, вопросы о времени.",
   "outcome": "У команды есть общий час: среда, час дня, двор. На доске в комнате 17 появилась первая общая таблица.",
   "expressions": [
-    {
-      "en": "timetable",
-      "ru": "расписание"
-    },
-    {
-      "en": "free",
-      "ru": "свободный"
-    },
-    {
-      "en": "What time does",
-      "ru": "Во сколько"
-    },
-    {
-      "en": "How about",
-      "ru": "Как насчёт"
-    },
-    {
-      "en": "from one to three",
-      "ru": "с часу до трёх"
-    },
-    {
-      "en": "on Wednesday",
-      "ru": "в среду"
-    },
-    {
-      "en": "in the morning",
-      "ru": "утром"
-    },
-    {
-      "en": "at one",
-      "ru": "в час"
-    },
-    {
-      "en": "leaves",
-      "ru": "отправляется"
-    },
-    {
-      "en": "That works for everyone",
-      "ru": "Это подходит всем"
-    }
+    "timetable",
+    "free",
+    "What time does",
+    "How about",
+    "from one to three",
+    "on Wednesday",
+    "in the morning",
+    "at one",
+    "leaves",
+    "That works for everyone"
   ],
   "glossary": [
-    {
-      "en": "City Studies",
-      "ru": "городоведение"
-    },
-    {
-      "en": "Media Lab",
-      "ru": "медиалаборатория"
-    },
-    {
-      "en": "Writing Workshop",
-      "ru": "письменный практикум"
-    },
-    {
-      "en": "Club Fair",
-      "ru": "ярмарка клубов"
-    },
-    {
-      "en": "Main Hall",
-      "ru": "главный зал"
-    },
-    {
-      "en": "Gate B",
-      "ru": "ворота B"
-    },
-    {
-      "en": "sound lab",
-      "ru": "звуковая лаборатория"
-    },
-    {
-      "en": "seminars",
-      "ru": "семинары"
-    },
-    {
-      "en": "courtyard",
-      "ru": "внутренний двор"
-    },
-    {
-      "en": "slot",
-      "ru": "окно, свободное время"
-    },
-    {
-      "en": "Except",
-      "ru": "кроме"
-    },
-    {
-      "en": "crazy",
-      "ru": "безумный"
-    },
-    {
-      "en": "snacks",
-      "ru": "перекус"
-    },
-    {
-      "en": "Noted",
-      "ru": "записала"
-    }
+    "City Studies",
+    "Media Lab",
+    "Writing Workshop",
+    "Club Fair",
+    "Main Hall",
+    "Gate B",
+    "sound lab",
+    "seminars",
+    "courtyard",
+    "slot",
+    "Except",
+    "crazy",
+    "snacks",
+    "Noted"
   ],
   "sessions": [
     {
@@ -236,9 +164,7 @@
               "ru": "вторая половина дня"
             }
           ],
-          "tags": [
-            "vocab_u003"
-          ]
+          "tags": []
         }
       ]
     },

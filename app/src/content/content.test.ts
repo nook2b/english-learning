@@ -2,6 +2,11 @@ import { UNITS } from './course'
 import { ARC1_UNITS } from './outline'
 import { type HeroineId, isHeroine, parseExpr, resolveSprite } from '../story/sprites'
 import type { Exercise } from './schema'
+import { TAGS } from './tags'
+import { CHARACTERS } from './characters'
+import { HEROINES } from './schema'
+import { clipUrl } from '../speech/clips'
+import { voicedText } from '../speech/delivery'
 
 const units = Object.values(UNITS)
 const exercises = units.flatMap((u) => u.sessions.flatMap((s) => s.exercises))
@@ -26,6 +31,11 @@ test('every unit file parses and belongs to the outline', () => {
 
 test('each unit ends with its mission, a special stop on the path map', () => {
   for (const u of units) expect(u.sessions.map((s) => s.role ?? '').lastIndexOf('mission')).toBe(u.sessions.length - 1)
+})
+
+test('every exercise tag is in the registry (content/tags.json)', () => {
+  const unknown = [...new Set(exercises.flatMap((e) => e.tags).filter((t) => !TAGS[t]))]
+  expect(unknown).toEqual([])
 })
 
 test('exercise ids are unique across the course', () => {
@@ -79,11 +89,35 @@ test('every heroine line points at a drawn sprite (no fallback)', () => {
   expect(missing).toEqual([])
 })
 
-test('a clarification after a language slip never looks annoyed (docs/10-sprites.md, section 8)', () => {
+test('a clarification after a language slip only listens, thinks or wonders (docs/10-sprites.md, section 8)', () => {
+  // A whitelist, so a new emotion cannot slip in unnoticed.
+  const allowed = new Set(['listening', 'thinking', 'neutral', 'surprised'])
   const bad = units.flatMap((u) =>
-    u.sessions.flatMap((s) => s.exercises.flatMap((e) => (e.type === 'scene' ? [e.clarify] : []))).filter((l) => /annoyed|sad|guarded|deadpan/.test(l.expr ?? '')),
+    u.sessions.flatMap((s) => s.exercises.flatMap((e) => (e.type === 'scene' ? [e.clarify] : []))).filter((l) => !allowed.has((l.expr ?? 'neutral').split('/').pop()!)),
   )
   expect(bad).toEqual([])
+})
+
+test('every heroine line, listening and dictation has its voice clip (a changed line would silently fall back to browser speech)', () => {
+  const missing: string[] = []
+  let checked = 0
+  const check = (speaker: string, text: string, d: { expr?: string; delivery?: string }) => {
+    if (HEROINES.includes(speaker as (typeof HEROINES)[number])) checked++
+    if (HEROINES.includes(speaker as (typeof HEROINES)[number]) && !clipUrl(speaker, voicedText(text, d))) missing.push(`${speaker}: ${text}`)
+  }
+  const walk = (o: unknown): void => {
+    if (Array.isArray(o)) return o.forEach(walk)
+    if (!o || typeof o !== 'object') return
+    const r = o as Record<string, unknown>
+    if (typeof r.speaker === 'string' && typeof r.text === 'string') check(r.speaker, r.text, r)
+    if ((r.type === 'listening' || r.type === 'dictation') && typeof r.audio === 'string') check(r.speaker as string, r.audio, r)
+    Object.values(r).forEach(walk)
+  }
+  walk(units)
+  for (const c of Object.values(CHARACTERS)) for (const l of c.lines) check(c.id, l.text, l)
+  // Generate the missing ones with scripts/generate_audio.py.
+  expect(missing).toEqual([])
+  expect(checked).toBeGreaterThan(100)
 })
 
 test('romantic emotions stay off screen before unit 081', () => {

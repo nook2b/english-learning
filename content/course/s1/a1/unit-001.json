@@ -5,132 +5,39 @@
   "focus": "Present Simple и Present Continuous, глаголы состояния, вопросы с do и be.",
   "outcome": "Твоя строчка попала в аудиогид. На стене комнаты 17 появился листок «New voices» — и на нём твоё имя.",
   "expressions": [
-    {
-      "en": "Nice to meet you",
-      "ru": "Приятно познакомиться"
-    },
-    {
-      "en": "I'm new here",
-      "ru": "Я здесь новенький"
-    },
-    {
-      "en": "exchange program",
-      "ru": "программа обмена"
-    },
-    {
-      "en": "Where are you from?",
-      "ru": "Откуда ты?"
-    },
-    {
-      "en": "What do you study?",
-      "ru": "Что ты изучаешь?"
-    },
-    {
-      "en": "I'm looking for",
-      "ru": "Я ищу"
-    },
-    {
-      "en": "Could you say that again",
-      "ru": "Можешь повторить"
-    },
-    {
-      "en": "I didn't catch that",
-      "ru": "Я не расслышал"
-    },
-    {
-      "en": "I don't understand everything yet",
-      "ru": "Я пока не всё понимаю"
-    },
-    {
-      "en": "by the way",
-      "ru": "кстати"
-    },
-    {
-      "en": "usually",
-      "ru": "обычно"
-    },
-    {
-      "en": "right now",
-      "ru": "прямо сейчас"
-    }
+    "Nice to meet you",
+    "I'm new here",
+    "exchange program",
+    "Where are you from?",
+    "What do you study?",
+    "I'm looking for",
+    "Could you say that again",
+    "I didn't catch that",
+    "I don't understand everything yet",
+    "by the way",
+    "usually",
+    "right now"
   ],
   "glossary": [
-    {
-      "en": "exchange student",
-      "ru": "студент по обмену"
-    },
-    {
-      "en": "placement check",
-      "ru": "вступительная проверка уровня"
-    },
-    {
-      "en": "student card",
-      "ru": "студенческий билет"
-    },
-    {
-      "en": "dining hall",
-      "ru": "столовая"
-    },
-    {
-      "en": "dorm",
-      "ru": "общежитие"
-    },
-    {
-      "en": "except",
-      "ru": "кроме"
-    },
-    {
-      "en": "International Office",
-      "ru": "международный отдел"
-    },
-    {
-      "en": "Best wishes",
-      "ru": "с наилучшими пожеланиями"
-    },
-    {
-      "en": "prep program",
-      "ru": "подготовительная программа"
-    },
-    {
-      "en": "audio guide",
-      "ru": "аудиогид"
-    },
-    {
-      "en": "record",
-      "ru": "записывать"
-    },
-    {
-      "en": "cables",
-      "ru": "кабели"
-    },
-    {
-      "en": "microphone",
-      "ru": "микрофон"
-    },
-    {
-      "en": "mic",
-      "ru": "микрофон"
-    },
-    {
-      "en": "library",
-      "ru": "библиотека"
-    },
-    {
-      "en": "levels",
-      "ru": "уровни громкости"
-    },
-    {
-      "en": "introduce yourself",
-      "ru": "представиться"
-    },
-    {
-      "en": "Honest",
-      "ru": "честно"
-    },
-    {
-      "en": "spend",
-      "ru": "проводить (время)"
-    }
+    "exchange student",
+    "placement check",
+    "student card",
+    "dining hall",
+    "dorm",
+    "except",
+    "International Office",
+    "Best wishes",
+    "prep program",
+    "audio guide",
+    "record",
+    "cables",
+    "microphone",
+    "mic",
+    "library",
+    "levels",
+    "introduce yourself",
+    "Honest",
+    "spend"
   ],
   "sessions": [
     {
@@ -185,8 +92,7 @@
             }
           ],
           "tags": [
-            "reading",
-            "vocab_u001"
+            "reading"
           ]
         },
         {
@@ -247,9 +153,7 @@
               "ru": "кроме"
             }
           ],
-          "tags": [
-            "vocab_u001"
-          ],
+          "tags": [],
           "context": "Слова из письма"
         }
       ],
@@ -631,7 +535,7 @@
           ],
           "explain": "Сигнальные слова помогают, но главное — смысл: регулярно или прямо сейчас.",
           "tags": [
-            "signal_words",
+            "contrast_ps_pc",
             "contrast_ps_pc"
           ],
           "context": "Айрис раскладывает карточки"
@@ -928,7 +832,6 @@
           ],
           "explain": "On an exchange program — устойчивое выражение; перед exchange — an.",
           "tags": [
-            "vocab_u001",
             "articles"
           ],
           "context": "Твои фразы для записи"
@@ -1178,9 +1081,7 @@
               "ru": "кстати"
             }
           ],
-          "tags": [
-            "vocab_u001"
-          ],
+          "tags": [],
           "context": "Слова для гида"
         },
         {
@@ -1286,8 +1187,7 @@
             "at"
           ],
           "tags": [
-            "present_simple",
-            "vocab_u001"
+            "present_simple"
           ]
         }
       ],

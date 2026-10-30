@@ -4,7 +4,7 @@ import { getUnit, nextSession } from '../../content/course'
 import { ARC1_UNITS } from '../../content/outline'
 import { useClub } from '../../data/store'
 import { Gloss, Translation } from '../../lesson/Gloss'
-import { GlossaryContext } from '../../lesson/glossary'
+import { GlossaryContext, unitGlossary } from '../../lesson/glossary'
 import { LineVoice } from '../../speech/AudioControls'
 import { Button, Card } from '../../ui/kit'
 import { MapFigure } from '../path/MapFigure'
@@ -24,7 +24,7 @@ export function UnitScreen({ unitId }: { unitId: string }) {
   const unit = getUnit(unitId)
   const outline = ARC1_UNITS.find((u) => u.id === unitId)
   const phrases = useMemo(() => (unit ? keyPhrases(unit) : []), [unit])
-  const glossary = useMemo(() => unit?.expressions.map((e) => ({ ...e, target: true })) ?? [], [unit])
+  const glossary = useMemo(() => (unit ? unitGlossary(unit) : []), [unit])
 
   if (!unit) {
     return (

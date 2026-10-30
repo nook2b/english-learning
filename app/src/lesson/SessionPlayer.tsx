@@ -12,7 +12,7 @@ import { isHeroine } from '../story/sprites'
 import { Beat, Stage } from '../story/Stage'
 import { ExerciseView, SceneLines } from './ExerciseView'
 import { wordDiff } from './diff'
-import { GlossaryContext } from './glossary'
+import { GlossaryContext, unitGlossary } from './glossary'
 import { type Outcome, mistakeText, toSteps } from './model'
 
 /** Tasks with a typed or spoken sentence, where a word-by-word comparison helps. */
@@ -62,7 +62,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const finishSession = useClub((s) => s.finishSession)
   const remember = useClub((s) => s.remember)
   const glossary = useMemo(
-    () => [...unit.expressions.map((e) => ({ ...e, target: true })), ...unit.glossary.map((e) => ({ ...e, target: false }))],
+    () => unitGlossary(unit),
     [unit],
   )
   const startedAt = useRef(Date.now())

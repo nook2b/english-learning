@@ -1,4 +1,5 @@
 import type { Speaker, Unit } from '../../content/schema'
+import { phraseRu } from '../../lesson/dictionary'
 
 export interface Example {
   text: string
@@ -45,12 +46,13 @@ const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 /** The unit's expressions, each with the best short sentence of the unit that uses it. */
 export function keyPhrases(unit: Unit): KeyPhrase[] {
   const groups = sentences(unit)
-  return unit.expressions.map((e) => {
-    const re = new RegExp(`(?<![\\w'])${escape(e.en.replace(/[?.!]$/, ''))}(?![\\w'])`, 'i')
+  return unit.expressions.map((en) => {
+    const phrase = { en, ru: phraseRu(en) ?? '' }
+    const re = new RegExp(`(?<![\\w'])${escape(en.replace(/[?.!]$/, ''))}(?![\\w'])`, 'i')
     for (const group of groups) {
       const found = group.filter((s) => re.test(s.text.replace(/’/g, "'"))).sort((a, b) => a.text.length - b.text.length)[0]
-      if (found) return { ...e, example: found }
+      if (found) return { ...phrase, example: found }
     }
-    return { ...e }
+    return phrase
   })
 }

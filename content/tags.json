@@ -1,0 +1,98 @@
+{
+ "present_simple": {
+  "kind": "topic",
+  "ru": "Present Simple: привычки и факты",
+  "cheatsheet": "cheatsheets/present_simple.json"
+ },
+ "present_continuous": {
+  "kind": "topic",
+  "ru": "Present Continuous: то, что происходит сейчас",
+  "cheatsheet": "cheatsheets/present_continuous.json"
+ },
+ "contrast_ps_pc": {
+  "kind": "topic",
+  "ru": "Present Simple или Continuous",
+  "cheatsheet": "cheatsheets/contrast_ps_pc.json"
+ },
+ "state_verbs": {
+  "kind": "topic",
+  "ru": "Глаголы состояния без -ing",
+  "cheatsheet": "cheatsheets/state_verbs.json"
+ },
+ "third_person": {
+  "kind": "topic",
+  "ru": "Окончание -s у he / she / it",
+  "cheatsheet": "cheatsheets/third_person.json"
+ },
+ "questions_be": {
+  "kind": "topic",
+  "ru": "Вопросы с to be",
+  "cheatsheet": "cheatsheets/questions_be.json"
+ },
+ "questions_do": {
+  "kind": "topic",
+  "ru": "Вопросы и отрицания с do / does",
+  "cheatsheet": "cheatsheets/questions_do.json"
+ },
+ "word_order": {
+  "kind": "topic",
+  "ru": "Порядок слов",
+  "cheatsheet": "cheatsheets/word_order.json"
+ },
+ "frequency": {
+  "kind": "topic",
+  "ru": "Наречия частоты и их место",
+  "cheatsheet": "cheatsheets/frequency.json"
+ },
+ "time_prepositions": {
+  "kind": "topic",
+  "ru": "At / on / in со временем",
+  "cheatsheet": "cheatsheets/time_prepositions.json"
+ },
+ "timetable": {
+  "kind": "topic",
+  "ru": "Present Simple для расписаний",
+  "cheatsheet": "cheatsheets/timetable.json"
+ },
+ "sequencing": {
+  "kind": "topic",
+  "ru": "Порядок действий: first, then, after that",
+  "cheatsheet": "cheatsheets/sequencing.json"
+ },
+ "articles": {
+  "kind": "topic",
+  "ru": "Артикли a / an / the",
+  "cheatsheet": "cheatsheets/articles.json"
+ },
+ "function_greeting": {
+  "kind": "topic",
+  "ru": "Знакомство и приветствие",
+  "cheatsheet": "cheatsheets/function_greeting.json"
+ },
+ "function_clarify": {
+  "kind": "topic",
+  "ru": "Как переспросить и уточнить",
+  "cheatsheet": "cheatsheets/function_clarify.json"
+ },
+ "function_suggest": {
+  "kind": "topic",
+  "ru": "Как предложить: How about…?",
+  "cheatsheet": "cheatsheets/function_suggest.json"
+ },
+ "speaking": {
+  "kind": "skill",
+  "ru": "Говорение"
+ },
+ "listening": {
+  "kind": "skill",
+  "ru": "Аудирование"
+ },
+ "dictation": {
+  "kind": "skill",
+  "ru": "Диктант"
+ },
+ "reading": {
+  "kind": "skill",
+  "ru": "Чтение"
+ }
+}
