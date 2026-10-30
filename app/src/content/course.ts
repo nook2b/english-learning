@@ -38,3 +38,19 @@ export function nextSession(sessions: Record<string, SessionResult>, done: Recor
   }
   return undefined
 }
+
+/**
+ * A session can be played when it is the next one, was played before, or the
+ * testing switch "open everything" is on. A locked unit stays locked from the
+ * route, the unit page and a direct link alike.
+ */
+export function isSessionOpen(
+  ref: SessionRef,
+  sessions: Record<string, SessionResult>,
+  done: Record<string, unknown>,
+  unlockAll: boolean,
+): boolean {
+  if (unlockAll || sessions[sessionId(ref.unitId, ref.index)]) return true
+  const next = nextSession(sessions, done)
+  return next?.unitId === ref.unitId && next.index === ref.index
+}

@@ -1,4 +1,4 @@
-import type { Speaker } from '../content/schema'
+import { HEROINES, type Speaker } from '../content/schema'
 
 // Sprite lookup and fallbacks, as specified in docs/10-sprites.md.
 // Files live in /assets/characters/{heroine}/{outfit}/{pose}/{expr}.webp.
@@ -30,7 +30,8 @@ export const TALK: Record<string, TalkPatch> = Object.fromEntries(
 export const SPRITE_W = 1024
 export const SPRITE_H = 1536
 
-export const HEROINE_IDS = ['mika', 'rei', 'iris'] as const
+/** The heroines, in reference order; one list for the whole app (content/schema.ts). */
+export const HEROINE_IDS = HEROINES
 export type HeroineId = (typeof HEROINE_IDS)[number]
 
 export const isHeroine = (s: Speaker): s is HeroineId => (HEROINE_IDS as readonly string[]).includes(s)

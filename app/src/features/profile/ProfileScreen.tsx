@@ -1,10 +1,12 @@
-import { DAILY_GOALS } from '../../data/db'
+import { useEffect, useState } from 'react'
+import { DAILY_GOALS, db } from '../../data/db'
 import { useClub } from '../../data/store'
 import { Button, Card } from '../../ui/kit'
 
 export function ProfileScreen() {
   const { settings, days, units, updateSettings, reset, resetAll } = useClub()
   const totalMinutes = days.reduce((sum, d) => sum + d.minutes, 0)
+  const deferred = useDeferredCount()
 
   const onReset = async () => {
     if (window.confirm('Сбросить весь прогресс? Настройки останутся.')) await reset()
@@ -43,6 +45,7 @@ export function ProfileScreen() {
         <p>Минут всего: {totalMinutes}</p>
         <p>Дней с занятиями: {days.length}</p>
         <p>Юнитов пройдено: {Object.keys(units).length}</p>
+        {deferred > 0 && <p>Отложено заданий с микрофоном: {deferred}</p>}
       </Card>
 
       <Card title="Настройки">
@@ -81,4 +84,20 @@ export function ProfileScreen() {
       </Card>
     </div>
   )
+}
+
+/** Speaking tasks put off with "can't speak now" and not done since. */
+function useDeferredCount(): number {
+  const [count, setCount] = useState(0)
+  useEffect(() => {
+    let live = true
+    void db.deferred
+      .filter((d) => !d.doneAt)
+      .count()
+      .then((n) => live && setCount(n))
+    return () => {
+      live = false
+    }
+  }, [])
+  return count
 }

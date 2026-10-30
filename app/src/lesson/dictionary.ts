@@ -39,6 +39,14 @@ export function bases(word: string): string[] {
   return out
 }
 
+/** Dictionary key of a word or phrase: lower case, straight apostrophe, no final punctuation. */
+export const phraseKey = (en: string) => keyOf(en).replace(/[?.!]+$/, '')
+
+/** Translation of a unit expression or set phrase: its own entry, or a word found by its base. */
+export function phraseRu(en: string, dict: Readonly<Record<string, string>> = DICTIONARY): string | undefined {
+  return dict[phraseKey(en)] ?? lookup(en, dict)?.ru
+}
+
 export interface Lookup {
   /** The dictionary headword when it differs from the tapped form. */
   base?: string

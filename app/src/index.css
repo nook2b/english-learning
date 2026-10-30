@@ -35,7 +35,7 @@ main { flex: 1; padding: 12px 16px 88px; }
 .loading { padding: 32px 16px; color: var(--muted); }
 
 .topbar {
-  position: sticky; top: 0; z-index: 1;
+  position: sticky; top: 0; z-index: 10;
   display: flex; align-items: center; justify-content: space-between;
   padding: 8px 16px; padding-top: max(8px, env(safe-area-inset-top));
   background: var(--bg); border-bottom: 1px solid var(--border);
@@ -43,7 +43,7 @@ main { flex: 1; padding: 12px 16px 88px; }
 .bottomnav {
   position: fixed; bottom: 0; left: 0; right: 0;
   display: flex; justify-content: center;
-  background: var(--bg); border-top: 1px solid var(--border);
+  background: var(--bg); border-top: 1px solid var(--border); z-index: 10;
   padding-bottom: env(safe-area-inset-bottom);
 }
 .bottomnav button {
@@ -81,13 +81,6 @@ main { flex: 1; padding: 12px 16px 88px; }
 .learn-panel-title { font-weight: 600; margin-bottom: 4px; }
 
 
-.sprite-stub {
-  width: 30%; max-width: 140px; aspect-ratio: 2 / 3; border-radius: 60px 60px 8px 8px;
-  display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px;
-  color: #fff; font-size: 0.7rem; text-align: center; font-family: ui-monospace, monospace;
-}
-.heroine { display: flex; gap: 12px; align-items: center; }
-.heroine .sprite-stub { width: 72px; flex-shrink: 0; }
 
 .field { display: flex; flex-direction: column; gap: 4px; }
 .field input { padding: 10px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 1rem; }
@@ -139,14 +132,28 @@ main { flex: 1; padding: 12px 16px 88px; }
 .pairs-col { display: flex; flex-direction: column; gap: 8px; }
 .passage { background: var(--surface); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
 .passage h3 { margin: 0; font-size: 1rem; }
+/* Paper texts stay light in dark mode too: paper is paper. */
+.paper { --paper: #fbf8f1; --ink: #2a2620; --ink-muted: #7a6f5f; color: var(--ink); background: var(--paper); border-radius: 3px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 6px 18px rgba(0, 0, 0, 0.1); padding: 18px 18px 20px; font-family: Georgia, 'Times New Roman', serif; gap: 10px; }
+.paper .gloss-note { background: #efe9dc; color: var(--ink); font-family: system-ui, -apple-system, sans-serif; }
+.paper .word:active { background: #efe9dc; }
+.paper-letter .letterhead { display: flex; align-items: center; gap: 10px; padding-bottom: 10px; border-bottom: 1px solid #d8cfbd; font-variant: small-caps; letter-spacing: 0.06em; color: var(--ink-muted); font-size: 0.9rem; }
+.paper-letter .letterhead small { display: block; font-size: 0.8rem; }
+.paper-letter .crest { width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--ink-muted); display: grid; place-items: center; font-weight: 700; font-variant: normal; flex: none; }
+.paper-letter .signoff { margin-top: 6px; }
+.paper-letter .signature { font-style: italic; }
+.paper-notice { border-top: 6px solid #d9480f; padding-top: 22px; position: relative; }
+.paper-notice::before { content: ''; position: absolute; top: 4px; left: 50%; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: #c92a2a; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+.paper-notice h3 { text-transform: uppercase; letter-spacing: 0.08em; text-align: center; font-family: system-ui, -apple-system, sans-serif; }
+.paper-note { --line: 1.6rem; gap: 0; line-height: var(--line); padding: var(--line) 18px var(--line) 24px; background: repeating-linear-gradient(var(--paper) 0 calc(var(--line) - 1px), #cfdcef calc(var(--line) - 1px) var(--line)); border-left: 2px solid #f1a7a7; font-family: 'Bradley Hand', 'Segoe Print', 'Comic Sans MS', cursive; }
+.paper-note h3, .paper-note p { margin: 0; font-size: 1rem; line-height: var(--line); }
 .transcript { font-style: italic; margin: 0; }
 .feedback { display: flex; flex-direction: column; gap: 10px; padding-top: 8px; border-top: 1px solid var(--border); }
 .verdict { font-weight: 700; color: #2b8a3e; margin: 0; }
 .mistakes { margin: 0; padding-left: 18px; }
-.gloss { background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
 .word { background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .word:active { background: var(--surface); border-radius: 3px; }
-.gloss-target { text-decoration: underline solid var(--accent); text-decoration-thickness: 2px; }
+.gloss-target { text-decoration: underline solid var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.gloss-label { display: block; font-size: 0.8rem; color: var(--accent); }
 .gloss-note { display: block; margin-top: 6px; padding: 6px 8px; border-radius: 6px; background: var(--surface); font-size: 0.95rem; }
 .translation { display: block; margin-top: 6px; color: var(--muted); font-size: 0.95rem; }
 .translation-toggle { display: block; margin-top: 6px; color: var(--accent); font-size: 0.9rem; }
@@ -185,8 +192,81 @@ main { flex: 1; padding: 12px 16px 88px; }
 .memories li, .quests li { display: flex; flex-direction: column; }
 .quests { list-style: none; padding-left: 0; }
 .quest-locked { color: var(--muted); }
-.host { display: flex; align-items: flex-end; gap: 8px; --h: min(30vh, 240px); }
-.host .dialogue { flex: 1; margin-bottom: 8px; }
 .sprite-frame.dim { filter: brightness(0.75) saturate(0.85); opacity: 0.9; }
 .diff-need { font-weight: 700; text-decoration: underline; text-decoration-color: #2b8a3e; text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .diff-wrong { text-decoration: line-through; text-decoration-color: #c92a2a; color: #c92a2a; }
+
+/* Path route: each unit is a line of stations with titles, its heroine standing beside it. */
+.arc-head { display: flex; flex-direction: column; gap: 6px; }
+.arc-head h2 { margin: 0; }
+.route { display: flex; flex-direction: column; gap: 22px; padding-bottom: 24px; }
+.route-module { display: flex; flex-direction: column; gap: 16px; }
+.route-module-title { margin: 8px 0 0; color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.route-mika { --road: #d6336c; }
+.route-rei { --road: #7048e8; }
+.route-iris { --road: #0c9b72; }
+.route-unit { display: flex; flex-direction: column; gap: 10px; }
+.route-head { position: sticky; top: var(--topbar-h, 0px); z-index: 5; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2px 12px; width: 100%; padding: 10px 12px 10px 14px; border: 0; border-left: 5px solid var(--road, var(--border)); border-radius: 4px 12px 12px 4px; background: var(--surface); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+.route-head-kicker { grid-column: 1; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--road, var(--muted)); }
+.route-head-title { grid-column: 1; font-size: 1.12rem; font-weight: 700; }
+.route-head-book { grid-column: 2; grid-row: 1 / 3; align-self: stretch; display: grid; place-items: center; padding-left: 14px; border-left: 1px solid var(--border); font-size: 1.5rem; }
+.route-head-soon { position: static; cursor: default; color: var(--muted); }
+.route-head-soon .route-head-kicker { color: var(--muted); }
+.route-body { display: flex; align-items: flex-start; gap: 8px; }
+.route-stops { flex: 1; min-width: 0; list-style: none; margin: 0; padding: 0; }
+.route-stop { position: relative; display: flex; align-items: center; gap: 12px; min-height: 58px; }
+/* The line runs from each station's dot down to the next one: solid where you have been, dashed ahead. */
+.route-stop::before { content: ''; position: absolute; left: 19px; top: 50%; height: 100%; border-left: 3px dashed var(--border); }
+.route-stop-done::before { border-left-style: solid; border-left-color: var(--road); }
+.route-stop:last-child::before { display: none; }
+.route-dot { position: relative; z-index: 1; flex: none; width: 41px; height: 41px; border-radius: 50%; display: grid; place-items: center; font-size: 1.05rem; background: var(--bg); border: 3px solid var(--border); color: var(--muted); }
+.route-stop-done .route-dot { background: var(--road); border-color: var(--road); color: #fff; font-weight: 800; }
+.route-stop-next .route-dot, .route-stop-open .route-dot { border-color: var(--road); color: var(--text); }
+.route-stop-next .route-dot { box-shadow: 0 0 0 5px color-mix(in srgb, var(--road) 22%, transparent); animation: route-glow 1.8s ease-in-out infinite; }
+.route-stop-mission .route-dot, .route-stop-check .route-dot { border-radius: 12px; }
+.route-stop-locked .route-dot { filter: grayscale(1); opacity: 0.7; }
+.route-label { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; min-width: 0; padding: 6px 8px; margin-left: -6px; border: 0; border-radius: 8px; background: none; color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+.route-label:disabled { cursor: default; color: var(--muted); }
+.route-title { font-weight: 600; line-height: 1.25; }
+.route-kind { font-size: 0.82rem; color: var(--muted); }
+.route-stop-next .route-label { background: color-mix(in srgb, var(--road) 12%, transparent); }
+.route-stop-next .route-kind { color: var(--road); font-weight: 700; }
+.route-figure { position: sticky; top: calc(var(--topbar-h, 0px) + 92px); flex: none; width: 38%; max-width: 170px; pointer-events: none; }
+.route-figure .sprite-frame { --fh: min(250px, 58vw); margin: 0 auto; }
+.route-figure .map-figure { display: block; width: 100%; height: auto; }
+@keyframes route-glow { 50% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--road) 10%, transparent); } }
+@media (prefers-reduced-motion: reduce) { .route-stop-next .route-dot { animation: none; } }
+.route-back { white-space: nowrap; position: fixed; z-index: 9; left: 50%; transform: translateX(-50%); bottom: calc(72px + env(safe-area-inset-bottom)); padding: 10px 16px; border: 0; border-radius: 999px; background: var(--text); color: var(--bg); font: inherit; font-weight: 600; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); cursor: pointer; }
+
+/* Unit notebook page (opened from the route header). */
+.guide-close { align-self: flex-start; }
+.guide-hero { display: flex; align-items: flex-end; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.guide-figure { flex: none; width: 34%; max-width: 140px; }
+.guide-figure .sprite-frame { --fh: min(210px, 50vw); margin: 0 auto; }
+.guide-figure .map-figure { display: block; width: 100%; height: auto; }
+.guide-kicker { margin: 0; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.guide-title { margin: 2px 0 6px; font-size: 1.4rem; }
+.guide-section { display: flex; flex-direction: column; gap: 10px; }
+.guide-heading { margin: 4px 0 0; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
+.guide-phrases { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.guide-phrase { position: relative; padding: 12px 44px 12px 14px; border: 2px solid var(--border); border-radius: 14px; display: flex; flex-direction: column; gap: 4px; }
+.guide-phrase .line-voice { position: absolute; top: 10px; right: 10px; }
+.guide-example { margin: 0; font-size: 1.05rem; }
+.guide-gist { margin: 0; font-size: 0.85rem; color: var(--muted); }
+@media (prefers-color-scheme: dark) {
+  /* Dark outfits (Rei) would melt into the dark background without a faint rim. */
+  .map-figure { filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.45)); }
+}
+
+/* After class (review tab): an empty classroom with two heroines at their desks. */
+.classroom { display: flex; flex-direction: column; gap: 8px; }
+.classroom-scene { position: relative; display: flex; justify-content: space-around; align-items: flex-end; aspect-ratio: 3 / 2; overflow: hidden; border-radius: 14px; background: linear-gradient(180deg, #f3e3c8 0%, #f6ecdc 55%, #d9c3a0 55%, #cdb38c 100%) center / cover no-repeat; --h: min(66vw, 300px); }
+.desk { width: 48%; display: flex; justify-content: center; align-items: flex-end; }
+.desk img { display: block; width: 100%; height: auto; }
+.review-topics li { display: flex; justify-content: space-between; gap: 8px; }
+.review-due { color: var(--accent); font-weight: 700; white-space: nowrap; }
+.review-steps { letter-spacing: 2px; }
+.nav-badge { display: inline-block; min-width: 18px; margin-left: 4px; padding: 0 5px; border-radius: 9px; background: #e03131; color: #fff; font-size: 0.72rem; font-weight: 700; line-height: 18px; text-align: center; vertical-align: 1px; }
+@media (prefers-color-scheme: dark) {
+  .classroom-scene { background: linear-gradient(180deg, #3b3226 0%, #463b2c 55%, #2c241a 55%, #241d15 100%) center / cover no-repeat; }
+}

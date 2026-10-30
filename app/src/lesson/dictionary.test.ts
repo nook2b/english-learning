@@ -1,6 +1,7 @@
+import { AFTER_CLASS } from '../content/afterClass'
 import { CHARACTERS } from '../content/characters'
 import { UNITS } from '../content/course'
-import { bases, lookup, WORD } from './dictionary'
+import { bases, lookup, phraseRu, WORD } from './dictionary'
 
 /** Every English text the app shows with tappable words (<Gloss>). */
 function glossedTexts(): string[] {
@@ -16,7 +17,8 @@ function glossedTexts(): string[] {
     Object.values(r).forEach(walk)
   }
   walk(Object.values(UNITS))
-  for (const c of Object.values(CHARACTERS)) texts.push(c.greeting.text, ...c.lines.map((l) => l.text), ...c.memories.map((m) => m.en))
+  for (const states of Object.values(AFTER_CLASS)) texts.push(...Object.values(states).map((l) => l.text))
+  for (const c of Object.values(CHARACTERS)) texts.push(...c.lines.map((l) => l.text), ...c.memories.map((m) => m.en))
   return texts
 }
 
@@ -25,6 +27,11 @@ test('every word in story lines and texts is in the dictionary', () => {
   for (const t of glossedTexts()) for (const [w] of t.matchAll(WORD)) if (!lookup(w)) missing.add(w.toLowerCase())
   // Add these to content/dictionary.json with the meaning they have in the course.
   expect([...missing].sort()).toEqual([])
+})
+
+test('every unit expression and set phrase has its translation in the dictionary (one source)', () => {
+  const missing = Object.values(UNITS).flatMap((u) => [...u.expressions, ...u.glossary].filter((en) => !phraseRu(en)).map((en) => `${u.id}: ${en}`))
+  expect(missing).toEqual([])
 })
 
 test('regular forms find their base word', () => {

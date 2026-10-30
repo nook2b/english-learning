@@ -1,22 +1,37 @@
 import { useEffect, useState } from 'react'
+import { HEROINES, SESSIONS_PER_UNIT } from '../content/schema'
+
+/** Bottom menu tabs, in order; one list for the router and the menu. */
+export const TABS = [
+  { route: 'path', label: 'Путь' },
+  { route: 'review', label: 'Повторение' },
+  { route: 'quests', label: 'Задания' },
+  { route: 'heroines', label: 'Героини' },
+  { route: 'profile', label: 'Профиль' },
+] as const
+
+export type TabName = (typeof TABS)[number]['route']
 
 export type Route =
-  | { name: 'path' | 'review' | 'story' | 'heroines' | 'profile' }
+  | { name: TabName }
   | { name: 'unit'; unitId: string }
-  | { name: 'heroine'; id: 'mika' | 'rei' | 'iris' }
+  | { name: 'heroine'; id: (typeof HEROINES)[number] }
   | { name: 'session'; unitId: string; index: number }
-
-export type TabName = 'path' | 'review' | 'story' | 'heroines' | 'profile'
-const TABS: readonly string[] = ['path', 'review', 'story', 'heroines', 'profile']
+  /** An after-class review round. */
+  | { name: 'practice' }
 
 // Hash routing keeps deep links working on GitHub Pages without server rewrites.
 export function parse(hash: string): Route {
   const parts = hash.replace(/^#\/?/, '').split('/')
   const [name, a, b] = parts
   if (name === 'unit' && a && /^\d{3}$/.test(a)) return { name: 'unit', unitId: a }
-  if (name === 'session' && a && /^\d{3}$/.test(a) && b && /^[1-8]$/.test(b)) return { name: 'session', unitId: a, index: Number(b) }
-  if (name === 'heroine' && (a === 'mika' || a === 'rei' || a === 'iris')) return { name: 'heroine', id: a }
-  if (name && TABS.includes(name)) return { name: name as TabName }
+  const index = Number(b)
+  if (name === 'session' && a && /^\d{3}$/.test(a) && Number.isInteger(index) && index >= 1 && index <= SESSIONS_PER_UNIT) return { name: 'session', unitId: a, index }
+  const heroine = HEROINES.find((h) => h === a)
+  if (name === 'heroine' && heroine) return { name: 'heroine', id: heroine }
+  if (name === 'practice') return { name: 'practice' }
+  const tab = TABS.find((t) => t.route === name)
+  if (tab) return { name: tab.route }
   return { name: 'path' }
 }
 

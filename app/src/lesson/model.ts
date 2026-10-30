@@ -34,6 +34,9 @@ export function toSteps(exercises: readonly Exercise[]): Step[] {
   )
 }
 
+/** Session kinds as the learner sees them (route, session header). */
+export const KIND_LABELS = { comprehension: 'Понимание', form: 'Форма', production: 'Продукция', fluency: 'Беглость' } as const
+
 export const SPEAKER_NAMES: Record<Speaker, string> = { mika: 'Mika', rei: 'Rei', iris: 'Iris', newcomer: 'Newcomer', narrator: '' }
 
 /** Deterministic shuffle so a step looks the same after a re-render. */

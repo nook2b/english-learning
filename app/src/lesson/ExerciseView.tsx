@@ -1,8 +1,8 @@
-import { type ReactNode, useMemo, useState } from 'react'
+import { type ReactNode, useEffect, useMemo, useRef, useState } from 'react'
 import type { Exercise, ExerciseOf, Line } from '../content/schema'
 import { type Outcome, SPEAKER_NAMES, type Step, TIMELINE_LABELS, shuffled } from './model'
 import { canRecognize, type ListenError, listen } from '../speech/recognition'
-import { canSpeak } from '../speech/tts'
+import { hasVoice } from '../speech/voice'
 import { AudioControls, LineVoice } from '../speech/AudioControls'
 import { Button, DialogueBox } from '../ui/kit'
 import { checkTyped, matchesSpeech } from './check'
@@ -231,20 +231,15 @@ function QuestionView({ step, exercise, locked, onAnswer }: ViewProps<'reading' 
   return (
     <div className="exercise">
       {exercise.type === 'reading' ? (
-        <article className="passage" lang="en">
-          <h3>{exercise.title}</h3>
-          {exercise.text.split('\n').map((p, i) => (
-            <p key={i}>
-              <Gloss text={p} />
-            </p>
-          ))}
+        <>
+          <Passage exercise={exercise} />
           {locked && last && exercise.ru && <p className="translation">{exercise.ru}</p>}
-        </article>
+        </>
       ) : (
         <div className="passage">
           <p className="task">Послушай{SPEAKER_NAMES[exercise.speaker] ? `: ${SPEAKER_NAMES[exercise.speaker]}` : ''}</p>
           <AudioControls text={exercise.audio} speaker={exercise.speaker} delivery={exercise.delivery} />
-          {(!canSpeak() || (locked && last)) && (
+          {(!hasVoice(exercise.audio, exercise.speaker, exercise) || (locked && last)) && (
             <p className="transcript">
               <Gloss text={exercise.audio} />
             </p>
@@ -266,6 +261,46 @@ function QuestionView({ step, exercise, locked, onAnswer }: ViewProps<'reading' 
         }}
       />
     </div>
+  )
+}
+
+/** A reading text, dressed as what it is in the story: a letter, a notice, a notebook page. */
+function Passage({ exercise }: { exercise: ExerciseOf<'reading'> }) {
+  const lines = exercise.text.split('\n')
+  const look = exercise.look
+  // A letter ends with its closing and signature on the last two lines.
+  const body = look === 'letter' ? lines.slice(0, -2) : lines
+  return (
+    <article className={look ? `passage paper paper-${look}` : 'passage'} lang="en">
+      {look === 'letter' ? (
+        <header className="letterhead">
+          <span className="crest" aria-hidden>
+            B
+          </span>
+          {/* "Bellwether Academy · International Office": the sender's department goes on a second line. */}
+          <span>
+            {(exercise.header ?? exercise.title).split(' · ')[0]}
+            {exercise.header?.includes(' · ') && <small>{exercise.header.split(' · ')[1]}</small>}
+          </span>
+        </header>
+      ) : (
+        <h3>{exercise.title}</h3>
+      )}
+      {body.map((p, i) => (
+        <p key={i}>
+          <Gloss text={p} />
+        </p>
+      ))}
+      {look === 'letter' && (
+        <p className="signoff">
+          <Gloss text={lines.at(-2) ?? ''} />
+          <br />
+          <span className="signature">
+            <Gloss text={lines.at(-1) ?? ''} />
+          </span>
+        </p>
+      )}
+    </article>
   )
 }
 
@@ -334,12 +369,16 @@ function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
   const [state, setState] = useState<'idle' | 'listening'>('idle')
   const [error, setError] = useState<ListenError>()
   const supported = canRecognize()
+  const listening = useRef<{ stop: () => void }>(undefined)
+  // Leaving the task (next task, closing the session) turns the microphone off.
+  useEffect(() => () => listening.current?.stop(), [])
 
   const start = () => {
     setError(undefined)
     setState('listening')
-    listen()
-      .result.then((alts) => onAnswer({ correct: matchesSpeech(alts, exercise.answers), given: alts[0] ?? '', expected: exercise.answers[0]! }))
+    const l = listen()
+    listening.current = l
+    l.result.then((alts) => onAnswer({ correct: matchesSpeech(alts, exercise.answers), given: alts[0] ?? '', expected: exercise.answers[0]! }))
       .catch((e: ListenError) => setError(e))
       .finally(() => setState('idle'))
   }
@@ -348,7 +387,7 @@ function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
     <div className="exercise">
       <p className="task">{exercise.show === 'ru' ? 'Скажи по-английски' : 'Прочитай вслух'}</p>
       <p className="prompt">{exercise.show === 'en' ? <Gloss text={exercise.text} /> : exercise.text}</p>
-      {exercise.show === 'en' && canSpeak() && (
+      {exercise.show === 'en' && hasVoice(exercise.text, exercise.voice ?? 'narrator', exercise) && (
         <AudioControls text={exercise.text} speaker={exercise.voice ?? 'narrator'} delivery={exercise.delivery} label="▶ Как звучит" />
       )}
       {!locked && (
@@ -374,7 +413,7 @@ function DictationView({ step, exercise, locked, onAnswer }: ViewProps<'dictatio
     <div className="exercise">
       <p className="task">Напиши, что услышал</p>
       <AudioControls text={exercise.audio} speaker={exercise.speaker} delivery={exercise.delivery} />
-      {!canSpeak() && (
+      {!hasVoice(exercise.audio, exercise.speaker, exercise) && (
         <p className="transcript" lang="en">
           {exercise.audio}
         </p>

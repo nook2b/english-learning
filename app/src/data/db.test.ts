@@ -26,15 +26,15 @@ test('saves settings patches', async () => {
 })
 
 test('accumulates activity within a day', async () => {
-  await addActivity('2026-10-29', 8, 10, database)
-  const day = await addActivity('2026-10-29', 8, 15, database)
-  expect(day).toEqual({ date: '2026-10-29', minutes: 16, xp: 25 })
+  await addActivity('2026-10-29', 8, 10, 10, database)
+  const day = await addActivity('2026-10-29', 8, 15, 10, database)
+  expect(day).toEqual({ date: '2026-10-29', minutes: 16, xp: 25, goal: 10 })
 })
 
 test('reset clears progress but keeps settings', async () => {
   await saveSettings({ name: 'Ivan' }, database)
   await setUnitStatus('001', 'done', database)
-  await addActivity('2026-10-29', 8, 10, database)
+  await addActivity('2026-10-29', 8, 10, 10, database)
   await resetProgress(database)
   expect(await database.units.count()).toBe(0)
   expect(await database.days.count()).toBe(0)

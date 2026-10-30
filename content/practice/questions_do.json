@@ -1,0 +1,212 @@
+{
+ "tag": "questions_do",
+ "items": [
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-01",
+    "type": "choice",
+    "prompt": "___ Iris work in the library?",
+    "options": [
+     "Does",
+     "Do",
+     "Is"
+    ],
+    "answer": "Does",
+    "explain": "Iris = she → Does.",
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-02",
+    "type": "choice",
+    "prompt": "___ you study here?",
+    "options": [
+     "Do",
+     "Does",
+     "Are"
+    ],
+    "answer": "Do",
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-03",
+    "type": "choice",
+    "prompt": "What ___ Rei record?",
+    "options": [
+     "does",
+     "do",
+     "is"
+    ],
+    "answer": "does",
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-04",
+    "type": "choice",
+    "prompt": "Where ___ they live?",
+    "options": [
+     "do",
+     "does",
+     "are"
+    ],
+    "answer": "do",
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-05",
+    "type": "transform",
+    "instruction": "Сделай вопрос",
+    "sentence": "Mika works in Room 17.",
+    "answers": [
+     "Does Mika work in Room 17?"
+    ],
+    "explain": "Does + she + глагол без -s.",
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-06",
+    "type": "transform",
+    "instruction": "Сделай вопрос",
+    "sentence": "They take the bus.",
+    "answers": [
+     "Do they take the bus?"
+    ],
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-07",
+    "type": "transform",
+    "instruction": "Спроси, где: Where",
+    "sentence": "Iris works after four.",
+    "answers": [
+     "Where does Iris work after four?"
+    ],
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-08",
+    "type": "translate",
+    "ru": "Что значит «gain»?",
+    "answers": [
+     "What does \"gain\" mean?",
+     "What does gain mean?"
+    ],
+    "tiles": [
+     "What",
+     "does",
+     "\"gain\"",
+     "mean?",
+     "means",
+     "do"
+    ],
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-09",
+    "type": "translate",
+    "ru": "Ты обычно ездишь на автобусе?",
+    "answers": [
+     "Do you usually take the bus?",
+     "Do you usually go by bus?"
+    ],
+    "tiles": [
+     "Do",
+     "you",
+     "usually",
+     "take",
+     "the",
+     "bus?",
+     "Does",
+     "takes"
+    ],
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-10",
+    "type": "fix",
+    "sentence": "Does Mika speaks fast?",
+    "answers": [
+     "Does Mika speak fast?"
+    ],
+    "explain": "После does — speak.",
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-11",
+    "type": "fix",
+    "sentence": "Where you live?",
+    "answers": [
+     "Where do you live?"
+    ],
+    "explain": "Нужен do.",
+    "tags": [
+     "questions_do"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-questions_do-12",
+    "type": "fill",
+    "prompt": "How ___ you spell that?",
+    "answers": [
+     "do"
+    ],
+    "tags": [
+     "questions_do"
+    ]
+   }
+  }
+ ]
+}

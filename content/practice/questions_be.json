@@ -1,0 +1,208 @@
+{
+ "tag": "questions_be",
+ "items": [
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-01",
+    "type": "choice",
+    "prompt": "___ you new here?",
+    "options": [
+     "Are",
+     "Do",
+     "Is"
+    ],
+    "answer": "Are",
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-02",
+    "type": "choice",
+    "prompt": "___ Rei in the sound lab?",
+    "options": [
+     "Is",
+     "Does",
+     "Are"
+    ],
+    "answer": "Is",
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-03",
+    "type": "choice",
+    "prompt": "Where ___ the dining hall?",
+    "options": [
+     "is",
+     "does",
+     "are"
+    ],
+    "answer": "is",
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-04",
+    "type": "transform",
+    "instruction": "Сделай вопрос",
+    "sentence": "You are from Russia.",
+    "answers": [
+     "Are you from Russia?"
+    ],
+    "explain": "Вопрос с be: глагол вперёд.",
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-05",
+    "type": "transform",
+    "instruction": "Сделай вопрос",
+    "sentence": "Iris is in the library.",
+    "answers": [
+     "Is Iris in the library?"
+    ],
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-06",
+    "type": "transform",
+    "instruction": "Сделай вопрос",
+    "sentence": "The cables are on the table.",
+    "answers": [
+     "Are the cables on the table?"
+    ],
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-07",
+    "type": "translate",
+    "ru": "Ты студент по обмену?",
+    "answers": [
+     "Are you an exchange student?"
+    ],
+    "tiles": [
+     "Are",
+     "you",
+     "an",
+     "exchange",
+     "student?",
+     "Do",
+     "a"
+    ],
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-08",
+    "type": "translate",
+    "ru": "Где комната 17?",
+    "answers": [
+     "Where is Room 17?",
+     "Where's Room 17?"
+    ],
+    "tiles": [
+     "Where",
+     "is",
+     "Room",
+     "17?",
+     "does"
+    ],
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-09",
+    "type": "fix",
+    "sentence": "Do you new here?",
+    "answers": [
+     "Are you new here?"
+    ],
+    "explain": "С прилагательным — be, а не do.",
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-10",
+    "type": "fix",
+    "sentence": "Where Mika is?",
+    "answers": [
+     "Where is Mika?"
+    ],
+    "explain": "Вопрос: where + is + Mika.",
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-11",
+    "type": "fill",
+    "prompt": "___ it far from here?",
+    "answers": [
+     "Is"
+    ],
+    "tags": [
+     "questions_be"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-questions_be-12",
+    "type": "choice",
+    "prompt": "How ___ you today?",
+    "options": [
+     "are",
+     "do",
+     "is"
+    ],
+    "answer": "are",
+    "tags": [
+     "questions_be"
+    ]
+   }
+  }
+ ]
+}

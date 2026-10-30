@@ -1,0 +1,203 @@
+{
+ "tag": "frequency",
+ "items": [
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-01",
+    "type": "choice",
+    "prompt": "Mika ___ late.",
+    "options": [
+     "is never",
+     "never is"
+    ],
+    "answer": "is never",
+    "explain": "С be наречие идёт после: is never.",
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-02",
+    "type": "choice",
+    "prompt": "I ___ breakfast at eight.",
+    "options": [
+     "usually have",
+     "have usually"
+    ],
+    "answer": "usually have",
+    "explain": "С обычным глаголом — перед ним.",
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-03",
+    "type": "choice",
+    "prompt": "Rei ___ in the sound lab.",
+    "options": [
+     "is always",
+     "always is"
+    ],
+    "answer": "is always",
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-04",
+    "type": "choice",
+    "prompt": "We ___ the bus.",
+    "options": [
+     "sometimes take",
+     "take sometimes"
+    ],
+    "answer": "sometimes take",
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-05",
+    "type": "transform",
+    "instruction": "Добавь always",
+    "sentence": "Iris checks every word.",
+    "answers": [
+     "Iris always checks every word."
+    ],
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-06",
+    "type": "transform",
+    "instruction": "Добавь usually",
+    "sentence": "Rei is quiet.",
+    "answers": [
+     "Rei is usually quiet."
+    ],
+    "explain": "С be: is usually.",
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-07",
+    "type": "transform",
+    "instruction": "Добавь never",
+    "sentence": "Mika eats breakfast.",
+    "answers": [
+     "Mika never eats breakfast."
+    ],
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-08",
+    "type": "fix",
+    "sentence": "I go usually to the library.",
+    "answers": [
+     "I usually go to the library."
+    ],
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-09",
+    "type": "fix",
+    "sentence": "Rei always is tired in the morning.",
+    "answers": [
+     "Rei is always tired in the morning."
+    ],
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-10",
+    "type": "translate",
+    "ru": "Я иногда опаздываю.",
+    "answers": [
+     "I'm sometimes late.",
+     "I am sometimes late."
+    ],
+    "tiles": [
+     "I'm",
+     "sometimes",
+     "late.",
+     "am"
+    ],
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-11",
+    "type": "translate",
+    "ru": "Айрис никогда не бежит.",
+    "answers": [
+     "Iris never runs."
+    ],
+    "tiles": [
+     "Iris",
+     "never",
+     "runs.",
+     "doesn't",
+     "run"
+    ],
+    "tags": [
+     "frequency"
+    ]
+   }
+  },
+  {
+   "unit": "004",
+   "exercise": {
+    "id": "p-frequency-12",
+    "type": "choice",
+    "prompt": "Do you ___ get up at six?",
+    "options": [
+     "always",
+     "are always"
+    ],
+    "answer": "always",
+    "tags": [
+     "frequency"
+    ]
+   }
+  }
+ ]
+}

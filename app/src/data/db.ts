@@ -28,6 +28,8 @@ export interface ActivityDay {
   date: string
   minutes: number
   xp: number
+  /** The daily goal in force that day, so a later change of goal does not rewrite past days. */
+  goal?: number
 }
 
 /** One finished session of a unit; id is `${unitId}-${index}`, index 1–8. */
@@ -49,6 +51,31 @@ export interface Mistake {
   given: string
   expected: string
   at: number
+}
+
+/** A speaking task put off with "can't speak now"; it comes back in review (stage 4). */
+export interface Deferred {
+  exerciseId: string
+  unitId: string
+  index: number
+  at: number
+  /** Set when the task is done later. */
+  doneAt?: number
+}
+
+/**
+ * A topic (tag from content/tags.json) with mistakes to work through after
+ * class. It stays until reviewed cleanly on three separate days: right away,
+ * a day later, three days later (step 0, 1, 2).
+ */
+export interface TopicReview {
+  tag: string
+  step: 0 | 1 | 2
+  /** YYYY-MM-DD from which the topic is due again. */
+  due: string
+  /** When the current run of mistakes started; mistakes before it are already worked through. */
+  since: number
+  clearedAt?: number
 }
 
 /** A remembered story choice, e.g. which question the player asked in a scene. */
@@ -84,6 +111,8 @@ export class ClubDB extends Dexie {
   mistakes!: Table<Mistake, number>
   flags!: Table<StoryFlag, string>
   lookups!: Table<WordLookup, string>
+  deferred!: Table<Deferred, string>
+  topics!: Table<TopicReview, string>
 
   constructor(name = 'english-club') {
     super(name)
@@ -98,6 +127,8 @@ export class ClubDB extends Dexie {
     })
     this.version(3).stores({ flags: 'id' })
     this.version(4).stores({ lookups: 'word, lastAt' })
+    this.version(5).stores({ deferred: 'exerciseId, at' })
+    this.version(6).stores({ topics: 'tag, due' })
   }
 }
 
@@ -118,10 +149,10 @@ export async function setUnitStatus(unitId: string, status: UnitStatus, database
   await database.units.put({ unitId, status, updatedAt: Date.now() })
 }
 
-export async function addActivity(date: string, minutes: number, xp: number, database: ClubDB = db): Promise<ActivityDay> {
+export async function addActivity(date: string, minutes: number, xp: number, goal: number, database: ClubDB = db): Promise<ActivityDay> {
   return database.transaction('rw', database.days, async () => {
     const day = (await database.days.get(date)) ?? { date, minutes: 0, xp: 0 }
-    const next = { date, minutes: day.minutes + minutes, xp: day.xp + xp }
+    const next = { date, minutes: day.minutes + minutes, xp: day.xp + xp, goal }
     await database.days.put(next)
     return next
   })
@@ -131,14 +162,27 @@ export async function saveSessionResult(result: SessionResult, database: ClubDB 
   await database.sessions.put(result)
 }
 
+/** Today's record follows a change of goal; past days keep theirs. */
+export async function setDayGoal(date: string, goal: number, database: ClubDB = db): Promise<ActivityDay | undefined> {
+  const day = await database.days.get(date)
+  if (!day) return undefined
+  const next = { ...day, goal }
+  await database.days.put(next)
+  return next
+}
+
+export async function addDeferred(d: Omit<Deferred, 'at'>, database: ClubDB = db): Promise<void> {
+  await database.deferred.put({ ...d, at: Date.now() })
+}
+
 export async function addMistake(mistake: Omit<Mistake, 'id'>, database: ClubDB = db): Promise<void> {
   await database.mistakes.add(mistake)
 }
 
 /** Clears progress but keeps settings, so the name and goal survive a reset. */
 export async function resetProgress(database: ClubDB = db): Promise<void> {
-  await database.transaction('rw', [database.units, database.days, database.sessions, database.mistakes, database.flags, database.lookups], async () => {
-    await Promise.all([database.units.clear(), database.days.clear(), database.sessions.clear(), database.mistakes.clear(), database.flags.clear(), database.lookups.clear()])
+  await database.transaction('rw', [database.units, database.days, database.sessions, database.mistakes, database.flags, database.lookups, database.deferred, database.topics], async () => {
+    await Promise.all([database.units.clear(), database.days.clear(), database.sessions.clear(), database.mistakes.clear(), database.flags.clear(), database.lookups.clear(), database.deferred.clear(), database.topics.clear()])
   })
 }
 

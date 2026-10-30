@@ -9,6 +9,8 @@ interface Note {
   en: string
   base?: string
   ru?: string
+  /** One of the expressions this unit teaches. */
+  target?: boolean
 }
 
 /** Plain text with every word tappable. */
@@ -33,8 +35,10 @@ function Words({ text, onTap }: { text: string; onTap: (word: string) => void })
 }
 
 /**
- * English text. Unit expressions and helper words are underlined, but any
- * word can be tapped: its translation shows right below the text.
+ * English text where any word can be tapped for its translation, shown right
+ * below the text. Only the expressions the unit teaches are underlined, and
+ * their note says so. Set phrases from the unit glossary ("dining hall") are
+ * not marked but translate as a whole.
  */
 export function Gloss({ text }: { text: string }) {
   const entries = useGlossary()
@@ -53,7 +57,7 @@ export function Gloss({ text }: { text: string }) {
           typeof p === 'string' ? (
             <Words key={i} text={p} onTap={tapWord} />
           ) : (
-            <button key={i} className={`gloss ${p.entry.target ? 'gloss-target' : ''}`} onClick={() => show({ key: keyOf(p.entry.en), en: p.entry.en, ru: p.entry.ru })}>
+            <button key={i} className={p.entry.target ? 'word gloss-target' : 'word'} onClick={() => show({ key: keyOf(p.entry.en), en: p.entry.en, ru: p.entry.ru, target: p.entry.target })}>
               {p.text}
             </button>
           ),
@@ -61,6 +65,7 @@ export function Gloss({ text }: { text: string }) {
       </span>
       {open && (
         <span className="gloss-note" role="note">
+          {open.target && <span className="gloss-label">Учим в этом юните</span>}
           <span lang="en">{open.en}</span>
           {open.base && (
             <>

@@ -44,7 +44,7 @@ export function GoalRing({ minutes, goal }: { minutes: number; goal: number }) {
   )
 }
 
-/** Visual-novel line window: speaker name and line. Typing effect arrives in stage 5. */
+/** Visual-novel line window: speaker name and line. Typing effect arrives with the story screen (stage 5). */
 export function DialogueBox({ speaker, children }: { speaker?: string; children: ReactNode }) {
   return (
     <div className="dialogue">

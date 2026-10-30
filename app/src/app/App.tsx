@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { getUnit } from '../content/course'
+import { getUnit, isSessionOpen } from '../content/course'
 import { useClub } from '../data/store'
 import { HeroineScreen } from '../features/heroines/HeroineScreen'
 import { HeroinesScreen } from '../features/heroines/HeroinesScreen'
@@ -7,13 +7,17 @@ import { UnitScreen } from '../features/lesson/UnitScreen'
 import { PathScreen } from '../features/path/PathScreen'
 import { ProfileScreen } from '../features/profile/ProfileScreen'
 import { ReviewScreen } from '../features/review/ReviewScreen'
-import { StoryScreen } from '../features/story/StoryScreen'
+import { ReviewSession } from '../features/review/ReviewSession'
+import { QuestsScreen } from '../features/quests/QuestsScreen'
 import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
-import { type Route, useRoute } from './router'
+import { type Route, navigate, useRoute } from './router'
+import { Button, Card } from '../ui/kit'
 import { TopBar } from './TopBar'
 
 function Screen({ route }: { route: Route }) {
+  const { sessions, units, settings } = useClub()
+  const unlockAll = settings.unlockAll
   switch (route.name) {
     case 'path':
       return <PathScreen />
@@ -22,12 +26,15 @@ function Screen({ route }: { route: Route }) {
     case 'session': {
       const unit = getUnit(route.unitId)
       if (!unit) return <UnitScreen unitId={route.unitId} />
+      if (!isSessionOpen(route, sessions, units, unlockAll)) return <LockedSession unitId={unit.id} index={route.index} />
       return <SessionPlayer key={`${route.unitId}-${route.index}`} unit={unit} index={route.index} />
     }
     case 'review':
       return <ReviewScreen />
-    case 'story':
-      return <StoryScreen />
+    case 'practice':
+      return <ReviewSession />
+    case 'quests':
+      return <QuestsScreen />
     case 'heroines':
       return <HeroinesScreen />
     case 'heroine':
@@ -35,6 +42,19 @@ function Screen({ route }: { route: Route }) {
     case 'profile':
       return <ProfileScreen />
   }
+}
+
+function LockedSession({ unitId, index }: { unitId: string; index: number }) {
+  return (
+    <div className="screen">
+      <Card title={`Юнит ${unitId}, занятие ${index}`}>
+        <p className="muted">Это занятие пока закрыто: оно откроется после предыдущих.</p>
+        <Button variant="secondary" onClick={() => navigate({ name: 'path' })}>
+          На путь
+        </Button>
+      </Card>
+    </div>
+  )
 }
 
 export function App() {
@@ -49,11 +69,12 @@ export function App() {
 
   return (
     <div className="app">
-      {route.name !== 'session' && <TopBar />}
+      {/* Sessions and review rounds take the whole screen. */}
+      {route.name !== 'session' && route.name !== 'practice' && <TopBar />}
       <main>
         <Screen route={route} />
       </main>
-      {route.name !== 'session' && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
+      {route.name !== 'session' && route.name !== 'practice' && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
     </div>
   )
 }

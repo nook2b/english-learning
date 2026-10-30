@@ -9,6 +9,8 @@ const tags = z.array(z.string()).default([])
 const answers = z.array(z.string().min(1)).min(1)
 
 export const HEROINES = ['mika', 'rei', 'iris'] as const
+/** Every unit has eight sessions (docs/00-full-plan.md, 3.3). */
+export const SESSIONS_PER_UNIT = 8
 export const Speaker = z.enum([...HEROINES, 'newcomer', 'narrator'])
 
 export const TIMELINE_KINDS = ['now', 'habit', 'state', 'schedule', 'past_point', 'past_to_now', 'future_plan'] as const
@@ -96,6 +98,10 @@ const Reading = z.object({
   type: z.literal('reading'),
   title: z.string(),
   text: z.string(),
+  /** How the text looks in the story: a paper letter, a notice on a board, a notebook page. Plain by default. */
+  look: z.enum(['letter', 'notice', 'note']).optional(),
+  /** Letterhead of a letter: who it is from. */
+  header: z.string().optional(),
   /** Shown after the last question, never before: it would give the answers away. */
   ru: z.string().optional(),
   questions: z.array(Question).min(1),
@@ -190,6 +196,8 @@ export const SESSION_KINDS = ['comprehension', 'form', 'production', 'fluency'] 
 export const Session = z.object({
   kind: z.enum(SESSION_KINDS),
   title: z.string(),
+  /** A unit's mission (its last session) or a module check: special stops on the path map. */
+  role: z.enum(['mission', 'check']).optional(),
   /** Short note for the learning panel before the first exercise. */
   intro: z.string().optional(),
   /** Story beat before the exercises: where we are and why this practice matters. */
@@ -204,13 +212,13 @@ export const Unit = z.object({
   title: z.string(),
   goal: z.string(),
   focus: z.string(),
-  /** Target words, collocations and functions (10–12 per unit), highlighted in texts. */
-  expressions: z.array(z.object({ en: z.string(), ru: z.string() })),
-  /** Other words in this unit's texts a learner may not know; tap to see the translation. */
-  glossary: z.array(z.object({ en: z.string(), ru: z.string() })).default([]),
+  /** Target words, collocations and functions (10–12 per unit), underlined in texts. Translations live in content/dictionary.json. */
+  expressions: z.array(z.string()),
+  /** Set phrases ("dining hall"): not marked, but a tap translates them as a whole, from the dictionary. */
+  glossary: z.array(z.string()).default([]),
   /** The visible change in the story when the unit is done. */
   outcome: z.string(),
-  sessions: z.array(Session).length(8),
+  sessions: z.array(Session).length(SESSIONS_PER_UNIT),
 })
 
 export type Exercise = z.infer<typeof Exercise>

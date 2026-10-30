@@ -2,13 +2,11 @@
 // load: a soft rising chime for a right answer, a quiet falling pair for a
 // wrong one (sad, not a buzzer), a three-note phrase at the end of a session.
 
-let ctx: AudioContext | undefined
+import { audioContext } from './context'
 
 function audio(): AudioContext | undefined {
-  const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
-  if (!AC) return undefined
-  ctx ??= new AC()
-  void ctx.resume()
+  const ctx = audioContext()
+  void ctx?.resume()
   return ctx
 }
 

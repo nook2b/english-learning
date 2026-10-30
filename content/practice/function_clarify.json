@@ -1,0 +1,229 @@
+{
+ "tag": "function_clarify",
+ "items": [
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-01",
+    "type": "translate",
+    "ru": "Можешь повторить?",
+    "answers": [
+     "Could you say that again?",
+     "Can you say that again?"
+    ],
+    "tiles": [
+     "Could",
+     "you",
+     "say",
+     "that",
+     "again?",
+     "tell"
+    ],
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-02",
+    "type": "translate",
+    "ru": "Можешь говорить медленнее?",
+    "answers": [
+     "Could you speak more slowly?",
+     "Can you speak more slowly?"
+    ],
+    "tiles": [
+     "Could",
+     "you",
+     "speak",
+     "more",
+     "slowly?",
+     "slow"
+    ],
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-03",
+    "type": "translate",
+    "ru": "Как это пишется?",
+    "answers": [
+     "How do you spell that?",
+     "How do you spell it?"
+    ],
+    "tiles": [
+     "How",
+     "do",
+     "you",
+     "spell",
+     "that?",
+     "does"
+    ],
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-04",
+    "type": "translate",
+    "ru": "Ты имеешь в виду эту кнопку?",
+    "answers": [
+     "Do you mean this button?"
+    ],
+    "tiles": [
+     "Do",
+     "you",
+     "mean",
+     "this",
+     "button?",
+     "Does"
+    ],
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-05",
+    "type": "choice",
+    "prompt": "Mika talks too fast. You say: ___",
+    "options": [
+     "Could you speak more slowly?",
+     "Could you speak more slow?",
+     "Speak slowly more?"
+    ],
+    "answer": "Could you speak more slowly?",
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-06",
+    "type": "choice",
+    "prompt": "You don't know a word. You ask: ___",
+    "options": [
+     "What does \"gain\" mean?",
+     "What means \"gain\"?",
+     "What is mean \"gain\"?"
+    ],
+    "answer": "What does \"gain\" mean?",
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-07",
+    "type": "fix",
+    "sentence": "What means \"clipping\"?",
+    "answers": [
+     "What does \"clipping\" mean?",
+     "What does clipping mean?"
+    ],
+    "explain": "What does … mean?",
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-08",
+    "type": "fix",
+    "sentence": "Could you speak more slow?",
+    "answers": [
+     "Could you speak more slowly?"
+    ],
+    "explain": "slowly — наречие.",
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-09",
+    "type": "fix",
+    "sentence": "I not sure I understand.",
+    "answers": [
+     "I'm not sure I understand.",
+     "I am not sure I understand."
+    ],
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-10",
+    "type": "translate",
+    "ru": "Я не расслышал.",
+    "answers": [
+     "I didn't catch that.",
+     "I did not catch that."
+    ],
+    "tiles": [
+     "I",
+     "didn't",
+     "catch",
+     "that.",
+     "don't"
+    ],
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-11",
+    "type": "fill",
+    "prompt": "Sorry? One more ___?",
+    "answers": [
+     "time"
+    ],
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-function_clarify-12",
+    "type": "choice",
+    "prompt": "You didn't hear the room number. You say: ___",
+    "options": [
+     "Sorry, could you say that again?",
+     "Sorry, could you said that again?",
+     "Sorry, you could say that again?"
+    ],
+    "answer": "Sorry, could you say that again?",
+    "tags": [
+     "function_clarify"
+    ]
+   }
+  }
+ ]
+}

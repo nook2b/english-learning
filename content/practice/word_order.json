@@ -1,0 +1,231 @@
+{
+ "tag": "word_order",
+ "items": [
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-01",
+    "type": "translate",
+    "ru": "Я здесь новенький.",
+    "answers": [
+     "I'm new here.",
+     "I am new here."
+    ],
+    "tiles": [
+     "I'm",
+     "new",
+     "here.",
+     "is"
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-02",
+    "type": "translate",
+    "ru": "Мика работает в комнате 17.",
+    "answers": [
+     "Mika works in Room 17."
+    ],
+    "tiles": [
+     "Mika",
+     "works",
+     "in",
+     "Room",
+     "17.",
+     "work"
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-03",
+    "type": "translate",
+    "ru": "Откуда ты?",
+    "answers": [
+     "Where are you from?"
+    ],
+    "tiles": [
+     "Where",
+     "are",
+     "you",
+     "from?",
+     "do"
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-04",
+    "type": "translate",
+    "ru": "Рэй записывает звук для гида.",
+    "answers": [
+     "Rei records sound for the guide."
+    ],
+    "tiles": [
+     "Rei",
+     "records",
+     "sound",
+     "for",
+     "the",
+     "guide.",
+     "record"
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-05",
+    "type": "fix",
+    "sentence": "New here I am.",
+    "answers": [
+     "I am new here.",
+     "I'm new here."
+    ],
+    "explain": "Подлежащее → глагол → остальное.",
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-06",
+    "type": "fix",
+    "sentence": "Where from are you?",
+    "answers": [
+     "Where are you from?"
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-07",
+    "type": "fix",
+    "sentence": "In the library works Iris.",
+    "answers": [
+     "Iris works in the library."
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-08",
+    "type": "fix",
+    "sentence": "What you are doing?",
+    "answers": [
+     "What are you doing?"
+    ],
+    "explain": "В вопросе are идёт перед you.",
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-09",
+    "type": "translate",
+    "ru": "Что ты изучаешь?",
+    "answers": [
+     "What do you study?",
+     "What are you studying?"
+    ],
+    "tiles": [
+     "What",
+     "do",
+     "you",
+     "study?",
+     "are"
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-10",
+    "type": "translate",
+    "ru": "Я ищу кабинет 70.",
+    "answers": [
+     "I'm looking for Room 70.",
+     "I am looking for Room 70."
+    ],
+    "tiles": [
+     "I'm",
+     "looking",
+     "for",
+     "Room",
+     "70.",
+     "look"
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-11",
+    "type": "fix",
+    "sentence": "Speaks Mika fast.",
+    "answers": [
+     "Mika speaks fast."
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-word_order-12",
+    "type": "translate",
+    "ru": "Айрис пишет тексты.",
+    "answers": [
+     "Iris writes texts.",
+     "Iris writes the texts."
+    ],
+    "tiles": [
+     "Iris",
+     "writes",
+     "texts.",
+     "write"
+    ],
+    "tags": [
+     "word_order"
+    ]
+   }
+  }
+ ]
+}

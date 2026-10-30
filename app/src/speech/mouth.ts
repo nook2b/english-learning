@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from 'react'
+import { audioContext } from './context'
 
 // Who is speaking right now and whether her mouth is open, for the talking
 // animation. Recorded clips drive the mouth by loudness (simple lip-sync);
@@ -17,30 +18,8 @@ function setOpen(next: boolean) {
   }
 }
 
-let ctx: AudioContext | undefined
 // A media element can be routed into the context only once, so keep its analyser.
 const analysers = new WeakMap<HTMLAudioElement, AnalyserNode>()
-
-function audioContext(): AudioContext | undefined {
-  const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
-  if (AC) ctx ??= new AC()
-  return ctx
-}
-
-/**
- * Starts the audio context on the first tap anywhere (iOS allows it only in a
- * user gesture), so even the first clip gets loudness lip-sync.
- */
-export function unlockAudioOnFirstTap() {
-  if (typeof document === 'undefined') return
-  const unlock = () => {
-    const c = audioContext()
-    if (!c || c.state === 'running') return done()
-    void c.resume().then(done, () => {})
-  }
-  const done = () => ['pointerdown', 'touchend', 'click'].forEach((e) => document.removeEventListener(e, unlock, true))
-  ;['pointerdown', 'touchend', 'click'].forEach((e) => document.addEventListener(e, unlock, true))
-}
 
 function loudnessDriver(audio: HTMLAudioElement): () => void {
   const c = audioContext()

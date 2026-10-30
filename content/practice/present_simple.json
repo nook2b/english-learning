@@ -1,0 +1,210 @@
+{
+ "tag": "present_simple",
+ "items": [
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-01",
+    "type": "choice",
+    "prompt": "Rei ___ sound for the guide.",
+    "options": [
+     "records",
+     "record",
+     "is record"
+    ],
+    "answer": "records",
+    "explain": "Привычное действие, she / he → -s.",
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-02",
+    "type": "choice",
+    "prompt": "We ___ radio shows in Room 17.",
+    "options": [
+     "make",
+     "makes",
+     "are make"
+    ],
+    "answer": "make",
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-03",
+    "type": "fill",
+    "prompt": "Iris ___ the texts for the guide.",
+    "hint": "check",
+    "answers": [
+     "checks"
+    ],
+    "explain": "Iris = she → checks.",
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-04",
+    "type": "fill",
+    "prompt": "I ___ my mornings in the library.",
+    "hint": "spend",
+    "answers": [
+     "spend"
+    ],
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-05",
+    "type": "transform",
+    "instruction": "Сделай отрицание",
+    "sentence": "Mika lives in the East Dorm.",
+    "answers": [
+     "Mika doesn't live in the East Dorm.",
+     "Mika does not live in the East Dorm."
+    ],
+    "explain": "Отрицание: doesn't + глагол без -s.",
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-06",
+    "type": "transform",
+    "instruction": "Сделай отрицание",
+    "sentence": "They work on Sundays.",
+    "answers": [
+     "They don't work on Sundays.",
+     "They do not work on Sundays."
+    ],
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-07",
+    "type": "translate",
+    "ru": "Я изучаю английский.",
+    "answers": [
+     "I study English."
+    ],
+    "tiles": [
+     "I",
+     "study",
+     "English.",
+     "am",
+     "studying"
+    ],
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-08",
+    "type": "translate",
+    "ru": "Рэй не любит шум.",
+    "answers": [
+     "Rei doesn't like noise.",
+     "Rei does not like noise."
+    ],
+    "tiles": [
+     "Rei",
+     "doesn't",
+     "like",
+     "noise.",
+     "don't",
+     "likes"
+    ],
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-09",
+    "type": "fix",
+    "sentence": "Iris write the texts for the guide.",
+    "answers": [
+     "Iris writes the texts for the guide."
+    ],
+    "explain": "She → writes.",
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-10",
+    "type": "fix",
+    "sentence": "The dining hall open at 7:30.",
+    "answers": [
+     "The dining hall opens at 7:30."
+    ],
+    "explain": "It → opens.",
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-11",
+    "type": "choice",
+    "prompt": "My friends ___ in the East Dorm.",
+    "options": [
+     "live",
+     "lives",
+     "living"
+    ],
+    "answer": "live",
+    "tags": [
+     "present_simple"
+    ]
+   }
+  },
+  {
+   "unit": "001",
+   "exercise": {
+    "id": "p-present_simple-12",
+    "type": "fill",
+    "prompt": "The guide ___ new students.",
+    "hint": "help",
+    "answers": [
+     "helps"
+    ],
+    "tags": [
+     "present_simple"
+    ]
+   }
+  }
+ ]
+}

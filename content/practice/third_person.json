@@ -1,0 +1,192 @@
+{
+ "tag": "third_person",
+ "items": [
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-01",
+    "type": "fill",
+    "prompt": "Mika ___ fast.",
+    "hint": "talk",
+    "answers": [
+     "talks"
+    ],
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-02",
+    "type": "fill",
+    "prompt": "Iris ___ every word twice.",
+    "hint": "check",
+    "answers": [
+     "checks"
+    ],
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-03",
+    "type": "fill",
+    "prompt": "Rei ___ the cables after work.",
+    "hint": "fix",
+    "answers": [
+     "fixes"
+    ],
+    "explain": "fix → fixes (после x добавляем -es).",
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-04",
+    "type": "fill",
+    "prompt": "The library ___ at ten on Saturday.",
+    "hint": "open",
+    "answers": [
+     "opens"
+    ],
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-05",
+    "type": "fill",
+    "prompt": "Mika ___ the newcomers questions.",
+    "hint": "ask",
+    "answers": [
+     "asks"
+    ],
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-06",
+    "type": "fill",
+    "prompt": "She ___ Event Production.",
+    "hint": "study",
+    "answers": [
+     "studies"
+    ],
+    "explain": "study → studies (согласная + y → -ies).",
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-07",
+    "type": "fill",
+    "prompt": "He ___ to the New Building by bus.",
+    "hint": "go",
+    "answers": [
+     "goes"
+    ],
+    "explain": "go → goes.",
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-08",
+    "type": "choice",
+    "prompt": "Rei ___ a recorder.",
+    "options": [
+     "has",
+     "haves",
+     "have"
+    ],
+    "answer": "has",
+    "explain": "have → has.",
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-09",
+    "type": "fix",
+    "sentence": "Iris watch the time.",
+    "answers": [
+     "Iris watches the time."
+    ],
+    "explain": "watch → watches.",
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-10",
+    "type": "fix",
+    "sentence": "Mika don't like silence.",
+    "answers": [
+     "Mika doesn't like silence.",
+     "Mika does not like silence."
+    ],
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-11",
+    "type": "fix",
+    "sentence": "Does Rei likes noise?",
+    "answers": [
+     "Does Rei like noise?"
+    ],
+    "explain": "После does глагол без -s.",
+    "tags": [
+     "third_person"
+    ]
+   }
+  },
+  {
+   "unit": "002",
+   "exercise": {
+    "id": "p-third_person-12",
+    "type": "choice",
+    "prompt": "Iris ___ the bus at eight.",
+    "options": [
+     "takes",
+     "take"
+    ],
+    "answer": "takes",
+    "tags": [
+     "third_person"
+    ]
+   }
+  }
+ ]
+}
