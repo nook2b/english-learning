@@ -18,8 +18,8 @@ import {
   setUnitStatus,
 } from './db'
 import { dayKey } from './dates'
+import { SESSIONS_PER_UNIT } from '../content/schema'
 
-export const SESSIONS_PER_UNIT = 8
 export const SESSION_XP = 10
 export const PERFECT_BONUS_XP = 5
 /** Time spent away from the app should not count; one session never adds more than this. */

@@ -81,13 +81,6 @@ main { flex: 1; padding: 12px 16px 88px; }
 .learn-panel-title { font-weight: 600; margin-bottom: 4px; }
 
 
-.sprite-stub {
-  width: 30%; max-width: 140px; aspect-ratio: 2 / 3; border-radius: 60px 60px 8px 8px;
-  display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px;
-  color: #fff; font-size: 0.7rem; text-align: center; font-family: ui-monospace, monospace;
-}
-.heroine { display: flex; gap: 12px; align-items: center; }
-.heroine .sprite-stub { width: 72px; flex-shrink: 0; }
 
 .field { display: flex; flex-direction: column; gap: 4px; }
 .field input { padding: 10px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 1rem; }

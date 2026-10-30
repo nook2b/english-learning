@@ -1,12 +1,4 @@
-import { type TabName, navigate } from './router'
-
-const TABS: { route: TabName; label: string }[] = [
-  { route: 'path', label: 'Путь' },
-  { route: 'review', label: 'Повторение' },
-  { route: 'story', label: 'История' },
-  { route: 'heroines', label: 'Героини' },
-  { route: 'profile', label: 'Профиль' },
-]
+import { TABS, navigate } from './router'
 
 export function BottomNav({ current }: { current: string }) {
   return (

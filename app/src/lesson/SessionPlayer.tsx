@@ -13,7 +13,7 @@ import { Beat, Stage } from '../story/Stage'
 import { ExerciseView, SceneLines } from './ExerciseView'
 import { wordDiff } from './diff'
 import { GlossaryContext, unitGlossary } from './glossary'
-import { type Outcome, mistakeText, toSteps } from './model'
+import { KIND_LABELS, type Outcome, mistakeText, toSteps } from './model'
 
 /** Tasks with a typed or spoken sentence, where a word-by-word comparison helps. */
 const TYPED = new Set(['fill', 'translate', 'fix', 'transform', 'write', 'dictation', 'scene', 'speak'])
@@ -39,7 +39,6 @@ function AnswerDiff({ given, expected }: { given: string; expected: string }) {
   )
 }
 
-const KIND_LABELS = { comprehension: 'Понимание', form: 'Форма', production: 'Продукция', fluency: 'Беглость и миссия' } as const
 
 interface Summary {
   correct: number

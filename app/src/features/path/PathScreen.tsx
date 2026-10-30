@@ -5,11 +5,11 @@ import { ARC1, ARC1_UNITS } from '../../content/outline'
 import type { Unit } from '../../content/schema'
 import { sessionId } from '../../data/db'
 import { useClub } from '../../data/store'
+import { KIND_LABELS } from '../../lesson/model'
 import { Button, ProgressBar } from '../../ui/kit'
 import { MapFigure } from './MapFigure'
 import { mapFigure, stopIcon } from './roadmap'
 
-const KIND_LABELS = { comprehension: 'Понимание', form: 'Форма', production: 'Продукция', fluency: 'Беглость' } as const
 
 export function PathScreen() {
   const { units, sessions } = useClub()

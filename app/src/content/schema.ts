@@ -9,6 +9,8 @@ const tags = z.array(z.string()).default([])
 const answers = z.array(z.string().min(1)).min(1)
 
 export const HEROINES = ['mika', 'rei', 'iris'] as const
+/** Every unit has eight sessions (docs/00-full-plan.md, 3.3). */
+export const SESSIONS_PER_UNIT = 8
 export const Speaker = z.enum([...HEROINES, 'newcomer', 'narrator'])
 
 export const TIMELINE_KINDS = ['now', 'habit', 'state', 'schedule', 'past_point', 'past_to_now', 'future_plan'] as const
@@ -216,7 +218,7 @@ export const Unit = z.object({
   glossary: z.array(z.string()).default([]),
   /** The visible change in the story when the unit is done. */
   outcome: z.string(),
-  sessions: z.array(Session).length(8),
+  sessions: z.array(Session).length(SESSIONS_PER_UNIT),
 })
 
 export type Exercise = z.infer<typeof Exercise>
