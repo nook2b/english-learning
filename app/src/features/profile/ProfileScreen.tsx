@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react'
 import { DAILY_GOALS, db } from '../../data/db'
+import { navigate } from '../../app/router'
 import { useClub } from '../../data/store'
+import { PlacementCard } from '../story/PlacementCheck'
 import { Button, Card } from '../../ui/kit'
 
 export function ProfileScreen() {
   const { settings, days, units, updateSettings, reset, resetAll } = useClub()
   const totalMinutes = days.reduce((sum, d) => sum + d.minutes, 0)
   const deferred = useDeferredCount()
+  const placements = settings.placements ?? []
+  const last = placements.at(-1)
 
   const onReset = async () => {
     if (window.confirm('Сбросить весь прогресс? Настройки останутся.')) await reset()
@@ -41,6 +45,11 @@ export function ProfileScreen() {
         </div>
       </Card>
 
+      {last && <PlacementCard result={last} previous={placements.at(-2)} title="Профиль навыков" />}
+      <Button variant="secondary" onClick={() => navigate({ name: 'placement' })}>
+        {last ? 'Пройти проверку ещё раз' : 'Пройти проверку уровня'}
+      </Button>
+
       <Card title="Статистика">
         <p>Минут всего: {totalMinutes}</p>
         <p>Дней с занятиями: {days.length}</p>
@@ -64,6 +73,10 @@ export function ProfileScreen() {
             onChange={(e) => updateSettings({ translation: e.target.checked ? 'always' : 'tap' })}
           />
           Перевод в истории всегда показан
+        </label>
+        <label className="field-inline">
+          <input type="checkbox" checked={settings.support} onChange={(e) => updateSettings({ support: e.target.checked })} />
+          Режим поддержки: переводы сразу, фразы из слов, озвучка медленнее
         </label>
       </Card>
 

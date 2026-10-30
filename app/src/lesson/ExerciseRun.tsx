@@ -8,6 +8,7 @@ import { Stage } from '../story/Stage'
 import { Button, LearnPanel, ProgressBar } from '../ui/kit'
 import { ExerciseView, SceneLines } from './ExerciseView'
 import { wordDiff } from './diff'
+import { ExamMode } from './exam'
 import { type Outcome, mistakeText, toSteps } from './model'
 
 /** Tasks with a typed or spoken sentence, where a word-by-word comparison helps. */
@@ -53,6 +54,8 @@ export function ExerciseRun({
   onAnswer,
   onFinish,
   onExit,
+  exam = false,
+  finishLabel = 'Завершить занятие',
 }: {
   exercises: readonly Exercise[]
   heading: ReactNode
@@ -62,6 +65,9 @@ export function ExerciseRun({
   onAnswer?: (exercise: Exercise, outcome: Outcome, retry: boolean) => void
   onFinish: (attempts: Attempt[], seconds: number) => Promise<void> | void
   onExit: () => void
+  /** The placement check: no marking, no retries, no hints (lesson/exam.ts). */
+  exam?: boolean
+  finishLabel?: string
 }) {
   // Wrong answers come back at the end of the queue until answered right, as in Duolingo.
   const [steps, setSteps] = useState(() => toSteps(exercises))
@@ -80,13 +86,13 @@ export function ExerciseRun({
   const isLast = i === steps.length - 1
 
   const answer = (answered: Outcome) => {
-    if (sounds && answered.correct !== null) playSfx(answered.correct ? 'right' : 'wrong')
+    if (sounds && !exam && answered.correct !== null) playSfx(answered.correct ? 'right' : 'wrong')
     const o = answered.correct === false ? { ...answered, shown: mistakeText(step, answered.expected) } : answered
     setOutcome(o)
     // Accuracy and mistakes count the first attempt only.
     if (!step.retry) setAttempts((a) => [...a, { exercise: step.exercise, outcome: o }])
     onAnswer?.(step.exercise, o, !!step.retry)
-    if (o.correct === false) {
+    if (o.correct === false && !exam) {
       retries.current += 1
       // Multi-item tasks (sorting, pairs) come back with only the items that went wrong.
       setSteps((s) => [...s, { ...step, exercise: o.retry ?? step.exercise, key: `${step.key.split('~')[0]}~${retries.current}`, retry: true }])
@@ -106,50 +112,60 @@ export function ExerciseRun({
   }
 
   return (
-    <div className="screen">
-      <div className="session-head">
-        <button className="close" aria-label="Выйти из занятия" onClick={onExit}>
-          ✕
-        </button>
-        <ProgressBar value={i + (outcome ? 1 : 0)} max={steps.length} label="Прогресс занятия" />
-      </div>
-      <p className="muted">{heading}</p>
-
-      {i === 0 && !outcome && intro && <LearnPanel title="Перед началом">{intro}</LearnPanel>}
-
-      {step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} compact speaking={voice} />}
-      {step.retry && <p className="context">Ещё раз: исправим ошибку</p>}
-      <ExerciseView key={step.key} step={step} locked={!!outcome} onAnswer={answer} />
-
-      {outcome && (
-        <div className={`feedback ${outcome.correct === false ? 'bad' : 'good'}`} role="status">
-          {outcome.lines && <SceneLines lines={outcome.lines} />}
-          {outcome.correct === true && <p className="verdict">Верно</p>}
-          {outcome.spelling && (
-            <p className="muted">
-              Засчитано. Обрати внимание на написание: <span lang="en">{outcome.spelling}</span>
-            </p>
-          )}
-          {outcome.correct === null && <p className="verdict">Пропущено, вернёмся к этому позже</p>}
-          {outcome.correct === false && (
-            <LearnPanel title="Правильно так">
-              {outcome.given && TYPED.has(step.exercise.type) ? (
-                <AnswerDiff given={outcome.given} expected={outcome.expected} />
-              ) : (
-                <>
-                  <p lang="en">{outcome.expected}</p>
-                  {outcome.given && <p className="muted">Твой ответ: {outcome.given}</p>}
-                </>
-              )}
-              {step.exercise.explain && <p>{step.exercise.explain}</p>}
-            </LearnPanel>
-          )}
-          {outcome.correct === true && step.exercise.explain && step.exercise.type !== 'scene' && <p className="muted">{step.exercise.explain}</p>}
-          <Button onClick={next} disabled={saving}>
-            {isLast ? 'Завершить занятие' : 'Дальше'}
-          </Button>
+    <ExamMode.Provider value={exam}>
+      <div className="screen">
+        <div className="session-head">
+          <button className="close" aria-label="Выйти из занятия" onClick={onExit}>
+            ✕
+          </button>
+          <ProgressBar value={i + (outcome ? 1 : 0)} max={steps.length} label="Прогресс занятия" />
         </div>
-      )}
-    </div>
+        <p className="muted">{heading}</p>
+
+        {i === 0 && !outcome && intro && <LearnPanel title="Перед началом">{intro}</LearnPanel>}
+
+        {step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} compact speaking={voice} />}
+        {step.retry && <p className="context">Ещё раз: исправим ошибку</p>}
+        <ExerciseView key={step.key} step={step} locked={!!outcome} onAnswer={answer} />
+
+        {outcome && exam && (
+          <div className="feedback exam" role="status">
+            <p className="verdict">Ответ принят</p>
+            <Button onClick={next} disabled={saving}>
+              {isLast ? finishLabel : 'Дальше'}
+            </Button>
+          </div>
+        )}
+        {outcome && !exam && (
+          <div className={`feedback ${outcome.correct === false ? 'bad' : 'good'}`} role="status">
+            {outcome.lines && <SceneLines lines={outcome.lines} />}
+            {outcome.correct === true && <p className="verdict">Верно</p>}
+            {outcome.spelling && (
+              <p className="muted">
+                Засчитано. Обрати внимание на написание: <span lang="en">{outcome.spelling}</span>
+              </p>
+            )}
+            {outcome.correct === null && <p className="verdict">Пропущено, вернёмся к этому позже</p>}
+            {outcome.correct === false && (
+              <LearnPanel title="Правильно так">
+                {outcome.given && TYPED.has(step.exercise.type) ? (
+                  <AnswerDiff given={outcome.given} expected={outcome.expected} />
+                ) : (
+                  <>
+                    <p lang="en">{outcome.expected}</p>
+                    {outcome.given && <p className="muted">Твой ответ: {outcome.given}</p>}
+                  </>
+                )}
+                {step.exercise.explain && <p>{step.exercise.explain}</p>}
+              </LearnPanel>
+            )}
+            {outcome.correct === true && step.exercise.explain && step.exercise.type !== 'scene' && <p className="muted">{step.exercise.explain}</p>}
+            <Button onClick={next} disabled={saving}>
+              {isLast ? finishLabel : 'Дальше'}
+            </Button>
+          </div>
+        )}
+      </div>
+    </ExamMode.Provider>
   )
 }

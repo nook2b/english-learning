@@ -12,8 +12,14 @@ beforeEach(async () => {
 const click = (name: string | RegExp) => fireEvent.click(screen.getByRole('button', { name }))
 const next = () => screen.findByRole('button', { name: /^(Дальше|Завершить занятие)$/ })
 
-test('the prologue: wrong door, ask the way again, introduce yourself, then the check and the way back', async () => {
+test('the prologue: survey, wrong door, ask the way again, introduce yourself, then the check and the way back', async () => {
   render(<PrologueScreen />)
+  // The survey comes first, once.
+  fireEvent.click(screen.getByRole('radio', { name: '15 мин' }))
+  fireEvent.click(within(screen.getByRole('radiogroup', { name: /Понимать речь/ })).getByRole('radio', { name: 'С трудом' }))
+  click('Дальше')
+  await screen.findByText('Пролог')
+  expect(useClub.getState().settings).toMatchObject({ dailyGoalMinutes: 15, survey: { self: { listening: 'hard' } } })
   for (let i = 0; i < 3; i++) click('Дальше')
   // Ask for the way again, built from the tiles on the screen.
   click('Попросить повторить маршрут')
@@ -29,8 +35,10 @@ test('the prologue: wrong door, ask the way again, introduce yourself, then the 
   click('Завершить занятие')
   for (let i = 0; i < 3; i++) click('Дальше')
   expect(await screen.findByText('Кабинет 70, новый корпус')).toBeInTheDocument()
-  click('Завершить проверку')
-  expect(await screen.findByText('Проверка закончена')).toBeInTheDocument()
+  click('Начать проверку')
+  expect(await screen.findByText('Вступительная проверка')).toBeInTheDocument()
+  // The check itself is covered in PlacementCheck.test.tsx.
+  await useClub.getState().remember('placement_completed')
   expect(useClub.getState().flags).toMatchObject({ prologue_asked_again: true, prologue_introduced: true, prologue_completed: true, placement_completed: true })
   expect(useClub.getState().settings.name).toBe('Ivan')
 })

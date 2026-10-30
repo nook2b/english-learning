@@ -1,6 +1,6 @@
 import type { AfterClassState } from '../../content/afterClass'
 import { AFTER_CLASS } from '../../content/afterClass'
-import { useClub } from '../../data/store'
+import { useClub, alwaysTranslate } from '../../data/store'
 import { Gloss, Translation } from '../../lesson/Gloss'
 import { SPEAKER_NAMES } from '../../lesson/model'
 import { LineVoice } from '../../speech/AudioControls'
@@ -29,7 +29,7 @@ function Desk({ heroine, done }: { heroine: HeroineId; done: boolean }) {
 }
 
 export function Classroom({ pair, state }: { pair: readonly [HeroineId, HeroineId]; state: AfterClassState }) {
-  const always = useClub((s) => s.settings.translation === 'always')
+  const always = useClub((s) => alwaysTranslate(s.settings))
   // The first of the pair speaks; the line fits what is waiting for the learner.
   const speaker = pair[0]
   const line = AFTER_CLASS[speaker][state]

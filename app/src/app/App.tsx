@@ -8,6 +8,7 @@ import { PathScreen } from '../features/path/PathScreen'
 import { ProfileScreen } from '../features/profile/ProfileScreen'
 import { ReviewScreen } from '../features/review/ReviewScreen'
 import { ReviewSession } from '../features/review/ReviewSession'
+import { PlacementCheck } from '../features/story/PlacementCheck'
 import { PrologueScreen } from '../features/story/PrologueScreen'
 import { QuestsScreen } from '../features/quests/QuestsScreen'
 import { SessionPlayer } from '../lesson/SessionPlayer'
@@ -36,6 +37,8 @@ function Screen({ route }: { route: Route }) {
       return <ReviewSession />
     case 'prologue':
       return <PrologueScreen />
+    case 'placement':
+      return <PlacementCheck onExit={() => navigate({ name: 'profile' })} onClose={() => navigate({ name: 'profile' })} closeLabel="В профиль" />
     case 'quests':
       return <QuestsScreen />
     case 'heroines':
@@ -47,8 +50,8 @@ function Screen({ route }: { route: Route }) {
   }
 }
 
-/** Sessions, review rounds and the prologue take the whole screen. */
-const FULL_SCREEN = new Set(['session', 'practice', 'prologue'])
+/** Sessions, review rounds, the prologue and the placement retake take the whole screen. */
+const FULL_SCREEN = new Set(['session', 'practice', 'prologue', 'placement'])
 
 function LockedSession({ unitId, index }: { unitId: string; index: number }) {
   return (

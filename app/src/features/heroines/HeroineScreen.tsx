@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { navigate } from '../../app/router'
 import { CHARACTERS, isOpen } from '../../content/characters'
-import { useClub } from '../../data/store'
+import { useClub, alwaysTranslate } from '../../data/store'
 import { Gloss, Translation } from '../../lesson/Gloss'
 import { LineVoice } from '../../speech/AudioControls'
 import { play, preload } from '../../speech/voice'
@@ -48,7 +48,7 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
         <DialogueBox speaker={c.name}>
           <LineVoice text={line.text} speaker={id} expr={line.expr} delivery={line.delivery} />
           <Gloss text={line.text} />
-          <Translation key={said} ru={line.ru} always={settings.translation === 'always'} />
+          <Translation key={said} ru={line.ru} always={alwaysTranslate(settings)} />
         </DialogueBox>
       ) : (
         <Button variant="secondary" onClick={chat} disabled={lines.length === 0}>

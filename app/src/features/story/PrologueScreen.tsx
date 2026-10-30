@@ -5,24 +5,25 @@ import { PLACEMENT_FLAG, PROLOGUE, PROLOGUE_FLAG } from '../../content/story'
 import { useClub } from '../../data/store'
 import { ExerciseRun } from '../../lesson/ExerciseRun'
 import type { Outcome } from '../../lesson/model'
-import { playSfx } from '../../speech/sfx'
 import { castAt } from '../../story/cast'
 import { Beat } from '../../story/Stage'
 import { Button, Card, LearnPanel } from '../../ui/kit'
+import { PlacementCheck } from './PlacementCheck'
+import { SurveyStep } from './SurveyStep'
 
-type Phase = 'frame' | 'scenes' | 'wrap' | 'room70' | 'back'
+type Phase = 'survey' | 'frame' | 'scenes' | 'wrap' | 'room70' | 'check' | 'back'
 
 /**
  * The prologue "Не тот кабинет" (docs/21-story-script.md): the wrong door
  * (heard "seventeen", not "seventy"), asking for the way again, the first
  * introductions, then the placement check in Room 70 and the way back to
- * Room 17, which opens unit 001. The meeting is never played again on return:
+ * Room 17, which opens unit 001. A newcomer answers the survey first. The meeting is never played again on return:
  * after the prologue, this screen resumes at the check.
  */
 export function PrologueScreen() {
   const { flags, remember, settings } = useClub()
   const remembered = useRef(new Set<string>())
-  const resumeAt: Phase = flags[PLACEMENT_FLAG] ? 'back' : flags[PROLOGUE_FLAG] ? 'room70' : 'frame'
+  const resumeAt: Phase = flags[PLACEMENT_FLAG] ? 'back' : flags[PROLOGUE_FLAG] ? 'room70' : settings.survey ? 'frame' : 'survey'
   const [phase, setPhase] = useState<Phase>(resumeAt)
   const cast = useMemo(() => castAt(PROLOGUE.frame!.lines, PROLOGUE.frame!.lines.length - 1), [])
 
@@ -39,7 +40,6 @@ export function PrologueScreen() {
   }
   const finishCheck = async () => {
     await remember(PLACEMENT_FLAG)
-    if (settings.sounds) playSfx('done')
     setPhase('back')
   }
   const exit = (
@@ -50,6 +50,7 @@ export function PrologueScreen() {
     </div>
   )
 
+  if (phase === 'survey') return <SurveyStep onDone={() => setPhase('frame')} />
   if (phase === 'frame')
     return (
       <div className="screen">
@@ -72,12 +73,12 @@ export function PrologueScreen() {
       <div className="screen">
         {exit}
         <Card title="Кабинет 70, новый корпус">
-          <p>Ты дошёл по маршруту Айрис. Вступительная проверка уровня начинается.</p>
-          <p className="muted">Сам мини-тест появится в следующем обновлении приложения. Пока проверка засчитывается без заданий.</p>
+          <p>Ты дошёл по маршруту Айрис. В кабинете тихо, на экране — приветствие International Office. Вступительная проверка: не экзамен, а способ понять, с чего начать.</p>
         </Card>
-        <Button onClick={finishCheck}>Завершить проверку</Button>
+        <Button onClick={() => setPhase('check')}>Начать проверку</Button>
       </div>
     )
+  if (phase === 'check') return <PlacementCheck onExit={() => navigate({ name: 'path' })} onClose={finishCheck} closeLabel="Выйти из кабинета 70" />
   return (
     <div className="screen">
       <Card title="Проверка закончена">

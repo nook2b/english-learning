@@ -11,7 +11,7 @@ const answers = z.array(z.string().min(1)).min(1)
 export const HEROINES = ['mika', 'rei', 'iris'] as const
 /** Every unit has eight sessions (docs/00-full-plan.md, 3.3). */
 export const SESSIONS_PER_UNIT = 8
-export const Speaker = z.enum([...HEROINES, 'newcomer', 'narrator'])
+export const Speaker = z.enum([...HEROINES, 'newcomer', 'narrator', 'announcer'])
 
 export const TIMELINE_KINDS = ['now', 'habit', 'state', 'schedule', 'past_point', 'past_to_now', 'future_plan'] as const
 export const TimelineKind = z.enum(TIMELINE_KINDS)

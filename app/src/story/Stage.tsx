@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { LineVoice } from '../speech/AudioControls'
 import { play, preload, stop } from '../speech/voice'
 import type { Line } from '../content/schema'
-import { useClub } from '../data/store'
+import { useClub, alwaysTranslate } from '../data/store'
 import { Gloss, Translation } from '../lesson/Gloss'
 import { SPEAKER_NAMES } from '../lesson/model'
 import { Button, DialogueBox } from '../ui/kit'
@@ -71,7 +71,7 @@ export function Stage({ cast, speaking, compact = false }: { cast: Partial<Recor
 /** A short story beat: tap through the lines, then continue. */
 export function Beat({ setting, lines, doneLabel, onDone }: { setting?: string; lines: readonly Line[]; doneLabel: string; onDone: () => void }) {
   const [i, setI] = useState(0)
-  const always = useClub((s) => s.settings.translation === 'always')
+  const always = useClub((s) => alwaysTranslate(s.settings))
   const voiceOn = useClub((s) => s.settings.voice)
   const line = lines[i]!
   // Read each line aloud as it appears when voice is on; stop when leaving the beat.
