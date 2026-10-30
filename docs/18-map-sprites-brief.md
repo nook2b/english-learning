@@ -1,5 +1,7 @@
 # English Club — бриф: героини в полный рост для карты пути
 
+**Выполнено 30.10.2026:** все 12 поз подключены (`assets/map/`, WebP 512 × 768).
+
 Версия 1 · 30.10.2026. Общие правила стиля и описания героинь — в [`11-sprite-brief.md`](11-sprite-brief.md). Правило закрытого рта — из [`17-closed-mouth-sprites-brief.md`](17-closed-mouth-sprites-brief.md).
 
 ## 1. Зачем
