@@ -1,8 +1,8 @@
-import { type ReactNode, useRef, useState } from 'react'
+import { type ReactNode, useEffect, useRef, useState } from 'react'
 import type { Exercise } from '../content/schema'
 import { useClub } from '../data/store'
 import { playSfx } from '../speech/sfx'
-import { stop as stopVoice } from '../speech/voice'
+import { play, stop as stopVoice } from '../speech/voice'
 import { type HeroineId, isHeroine } from '../story/sprites'
 import { Stage } from '../story/Stage'
 import { Button, LearnPanel, ProgressBar } from '../ui/kit'
@@ -80,6 +80,22 @@ export function ExerciseRun({
   const sounds = useClub((s) => s.settings.sounds)
 
   const step = steps[i]!
+  const reaction = !exam && !!outcome?.lines
+  const feedback = useRef<HTMLDivElement>(null)
+  const voiceOn = useClub((s) => s.settings.voice)
+  useEffect(() => {
+    if (!outcome) return
+    if (reaction) {
+      // A new screen starts at the top, and the heroine answers aloud.
+      if (!/jsdom/.test(navigator.userAgent)) window.scrollTo({ top: 0 })
+      const first = outcome.lines![0]!
+      if (voiceOn) play(first.text, first.speaker, false, first)
+    } else {
+      // The verdict and "Дальше" come into view without scrolling.
+      feedback.current?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [outcome])
   // Whoever speaks in a listening, dictation or read-aloud task joins the heroines on screen.
   const voice = step.exercise.type === 'listening' || step.exercise.type === 'dictation' ? step.exercise.speaker : step.exercise.type === 'speak' ? step.exercise.voice : undefined
   const stepCast = voice && isHeroine(voice) && !(voice in cast) ? { ...cast, [voice]: 'neutral' } : cast
@@ -124,9 +140,14 @@ export function ExerciseRun({
 
         {i === 0 && !outcome && intro && <LearnPanel title="Перед началом">{intro}</LearnPanel>}
 
-        {step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} compact speaking={voice} />}
-        {step.retry && <p className="context">Ещё раз: исправим ошибку</p>}
-        <ExerciseView key={step.key} step={step} locked={!!outcome} onAnswer={answer} />
+        {/* After a scene answer the heroine's reaction replaces the task, as a next screen. */}
+        {!reaction && (
+          <>
+            {step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} compact speaking={voice} />}
+            {step.retry && <p className="context">Ещё раз: исправим ошибку</p>}
+            <ExerciseView key={step.key} step={step} locked={!!outcome} onAnswer={answer} />
+          </>
+        )}
 
         {outcome && exam && (
           <div className="feedback exam" role="status">
@@ -137,8 +158,8 @@ export function ExerciseRun({
           </div>
         )}
         {outcome && !exam && (
-          <div className={`feedback ${outcome.correct === false ? 'bad' : 'good'}`} role="status">
-            {outcome.lines && <SceneLines lines={outcome.lines} />}
+          <div ref={feedback} className={`feedback ${outcome.correct === false ? 'bad' : 'good'} ${reaction ? 'reaction' : ''}`} role="status">
+            {outcome.lines && <SceneLines lines={outcome.lines} compact />}
             {outcome.correct === true && <p className="verdict">Верно</p>}
             {outcome.spelling && (
               <p className="muted">
@@ -146,7 +167,7 @@ export function ExerciseRun({
               </p>
             )}
             {outcome.note && <p className="muted">{outcome.note}</p>}
-          {outcome.correct === null && <p className="verdict">Пропущено, вернёмся к этому позже</p>}
+            {outcome.correct === null && <p className="verdict">Пропущено, вернёмся к этому позже</p>}
             {outcome.correct === false && (
               <LearnPanel title="Правильно так">
                 {outcome.given && TYPED.has(step.exercise.type) ? (
