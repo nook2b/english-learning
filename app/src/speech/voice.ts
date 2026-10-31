@@ -165,3 +165,14 @@ export function useVoice(text: string, speaker: Speaker): VoiceState {
     () => (current?.id === `${speaker}|${text}` ? state : 'idle'),
   )
 }
+
+/** The line being voiced now ("speaker|text"), playing or paused; undefined in silence. */
+export function useVoicedLine(): string | undefined {
+  return useSyncExternalStore(
+    (l) => {
+      listeners.add(l)
+      return () => listeners.delete(l)
+    },
+    () => (state === 'idle' ? undefined : current?.id),
+  )
+}

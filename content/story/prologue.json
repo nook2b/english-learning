@@ -50,7 +50,7 @@
      "answers": [
       "Could you say that again, please?",
       "Could you repeat that, please?",
-      "Could you say that again?"
+      "Could you say that again?", "Could you say it again, please?", "Could you say it again?"
      ],
      "tiles": [
       "Could",
@@ -60,7 +60,7 @@
       "again,",
       "please?",
       "tell",
-      "it"
+      "speak"
      ],
      "reaction": {
       "speaker": "iris",

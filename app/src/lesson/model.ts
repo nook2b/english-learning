@@ -22,6 +22,8 @@ export interface Outcome {
   spelling?: string
   /** For multi-item tasks: only the items that went wrong, to repeat instead of the whole task. */
   retry?: Exercise
+  /** A short note under the verdict (the name the app has just remembered). */
+  note?: string
   /** The mistake as the summary and the review deck show it: the full sentence with the right answer. */
   shown?: string
 }

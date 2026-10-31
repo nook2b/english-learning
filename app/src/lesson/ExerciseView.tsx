@@ -3,7 +3,7 @@ import type { Exercise, ExerciseOf, Line } from '../content/schema'
 import { useExam } from './exam'
 import { type Outcome, SPEAKER_NAMES, type Step, TIMELINE_LABELS, shuffled, supportTiles } from './model'
 import { canRecognize, type ListenError, listen } from '../speech/recognition'
-import { hasVoice } from '../speech/voice'
+import { hasVoice, useVoicedLine } from '../speech/voice'
 import { AudioControls, LineVoice } from '../speech/AudioControls'
 import { Button, DialogueBox } from '../ui/kit'
 import { checkTyped, matchesSpeech, checkWithName, NAME } from './check'
@@ -312,11 +312,15 @@ function Passage({ exercise }: { exercise: ExerciseOf<'reading'> }) {
   )
 }
 
-export function SceneLines({ lines }: { lines: readonly Line[] }) {
+export function SceneLines({ lines, compact = false }: { lines: readonly Line[]; compact?: boolean }) {
   const always = useClub((s) => alwaysTranslate(s.settings))
+  // The heroine whose line is being voiced is lit, with that line's face; in silence, the last speaker.
+  const voiced = useVoicedLine()
+  const playing = lines.findIndex((l) => `${l.speaker}|${l.text}` === voiced)
+  const at = playing >= 0 ? playing : lines.length - 1
   return (
     <>
-      <Stage cast={castAt(lines, lines.length - 1)} speaking={lines[lines.length - 1]?.speaker} />
+      <Stage cast={castAt(lines, at)} speaking={lines[at]?.speaker} compact={compact} />
       {lines.map((l, i) => (
         <DialogueBox key={i} speaker={SPEAKER_NAMES[l.speaker] || undefined}>
           <LineVoice text={l.text} speaker={l.speaker} expr={l.expr} delivery={l.delivery} />
@@ -338,11 +342,20 @@ function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
   const submit = (text: string) => {
     if (!chosen) return
     const { correct: ok, spelling, name } = checkWithName(text, chosen.answers)
-    // The player's name from the survey or the profile; one typed here is kept when there is none yet.
-    if (name && !playerName) void updateSettings({ name })
+    // The player first gives their name here, in the prologue; it is kept when there is none yet (profile can change it).
+    const remembered = name && !playerName ? name : undefined
+    if (remembered) void updateSettings({ name: remembered })
     const expected = chosen.answers[0]!.replace(NAME, name || playerName || '…')
     // The story choice counts even after a language slip: the heroine clarifies and the scene goes on.
-    onAnswer({ correct: ok, spelling, given: text, expected, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction], flag: chosen.flag })
+    onAnswer({
+      correct: ok,
+      spelling,
+      given: text,
+      expected,
+      lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction],
+      flag: chosen.flag,
+      note: remembered && `Будем звать тебя ${remembered}. Поменять имя можно в профиле.`,
+    })
   }
   return (
     <div className="exercise">
