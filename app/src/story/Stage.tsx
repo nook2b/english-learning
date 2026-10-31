@@ -7,6 +7,7 @@ import { Gloss, Translation } from '../lesson/Gloss'
 import { SPEAKER_NAMES } from '../lesson/model'
 import { Button, DialogueBox } from '../ui/kit'
 import { castAt } from './cast'
+import { PLACES, usePlace } from './places'
 import { hasFigure, riveHasFace } from './figures'
 import { RiveFigure } from './HeroineFigure'
 import { useMouth } from '../speech/mouth'
@@ -66,11 +67,13 @@ export function Sprite({ heroine, expr, dim = false, size = 'stage', animate = f
 
 /** Heroines on screen, ordered as on the references: Rei left, Mika centre, Iris right. */
 export function Stage({ cast, speaking, compact = false }: { cast: Partial<Record<HeroineId, string>>; speaking?: string; compact?: boolean }) {
+  const place = usePlace()
   const present = HEROINE_IDS.filter((h) => h in cast)
   if (present.length === 0) return null
   const order: HeroineId[] = ['rei', 'mika', 'iris']
+  const bg = place ? PLACES[place] : undefined
   return (
-    <div className={`stage stage-${present.length} ${compact ? 'stage-compact' : ''}`}>
+    <div className={`stage stage-${present.length} ${compact ? 'stage-compact' : ''} ${bg ? 'stage-bg' : ''}`} style={bg ? { backgroundImage: `url(${bg})` } : undefined}>
       {order
         .filter((h) => present.includes(h))
         .map((h) => (

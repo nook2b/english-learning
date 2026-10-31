@@ -192,7 +192,7 @@ main { flex: 1; padding: 12px 16px 88px; }
 .heroine-hero { display: flex; justify-content: center; }
 /* Rive idle animation: the still picture underneath until the first frame is drawn. */
 .rive-layer, .rive-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
-.rive-canvas { transition: opacity 0.2s; }
+/* No fade: the sprite under it hides in the same frame, so a fade would flash an empty stage. */
 .sprite-frame.rive-on.talking { animation: none; }
 .heroine-tap { background: none; border: 0; padding: 0; cursor: pointer; }
 .heroine-hero .sprite-stage { --fh: min(52vh, 460px); }
@@ -289,3 +289,10 @@ main { flex: 1; padding: 12px 16px 88px; }
 .survey-row + .survey-row { margin-top: 12px; }
 .survey-row p { margin: 0 0 6px; }
 .feedback.exam .verdict { color: inherit; }
+
+/* Location background (story/places.ts): the image's height is the stage height, as drawn
+   for the calibration (eye level at 25%), so the stage is never wider than 16:9. */
+.stage-bg { width: min(100%, calc(var(--h) * 16 / 9)); margin-inline: auto; background-size: cover; background-position: center top; border-radius: 14px; }
+.place-banner { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; }
+.stage-bg .sprite-knee.dim, .stage-bg .sprite-frame.dim { opacity: 1; filter: brightness(0.7) saturate(0.85); }
+.stage-bg .sprite-knee.dim .sprite-frame.dim { filter: none; }

@@ -187,6 +187,8 @@ const Scene = z.object({
     .min(1),
   /** Said when the reply is not understood; a language slip never reads as annoyance. */
   clarify: Line,
+  /** Location background when it differs from the session's (assets/backgrounds). */
+  place: z.string().optional(),
 })
 
 export const Exercise = z.discriminatedUnion('type', [Choice, Fill, Timeline, Translate, Fix, Transform, Sort, Reading, Listening, Dictation, Pairs, Write, Speak, Scene])
@@ -200,6 +202,8 @@ export const Session = z.object({
   role: z.enum(['mission', 'check']).optional(),
   /** Short note for the learning panel before the first exercise. */
   intro: z.string().optional(),
+  /** Location background behind the heroines in this session (assets/backgrounds/{place}.webp). */
+  place: z.string().optional(),
   /** Story beat before the exercises: where we are and why this practice matters. */
   frame: z.object({ setting: z.string(), lines: z.array(Line).min(1) }).optional(),
   /** Story beat after the session: what changed. */

@@ -9,6 +9,7 @@ import { Button, LearnPanel, ProgressBar } from '../ui/kit'
 import { ExerciseView, SceneLines } from './ExerciseView'
 import { wordDiff } from './diff'
 import { ExamMode } from './exam'
+import { PlaceContext, usePlace } from '../story/places'
 import { type Outcome, mistakeText, toSteps } from './model'
 
 /** Tasks with a typed or spoken sentence, where a word-by-word comparison helps. */
@@ -80,6 +81,7 @@ export function ExerciseRun({
   const sounds = useClub((s) => s.settings.sounds)
 
   const step = steps[i]!
+  const place = usePlace()
   const reaction = !exam && !!outcome?.lines
   const feedback = useRef<HTMLDivElement>(null)
   const voiceOn = useClub((s) => s.settings.voice)
@@ -159,7 +161,11 @@ export function ExerciseRun({
         )}
         {outcome && !exam && (
           <div ref={feedback} className={`feedback ${outcome.correct === false ? 'bad' : 'good'} ${reaction ? 'reaction' : ''}`} role="status">
-            {outcome.lines && <SceneLines lines={outcome.lines} compact />}
+            {outcome.lines && (
+              <PlaceContext.Provider value={(step.exercise.type === 'scene' && step.exercise.place) || place}>
+                <SceneLines lines={outcome.lines} compact />
+              </PlaceContext.Provider>
+            )}
             {outcome.correct === true && <p className="verdict">Верно</p>}
             {outcome.spelling && (
               <p className="muted">

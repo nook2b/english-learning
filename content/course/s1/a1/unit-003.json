@@ -37,6 +37,7 @@
       "kind": "comprehension",
       "title": "Твоё расписание",
       "intro": "Прочитай своё расписание на неделю и ответь на вопросы.",
+      "place": "room17_evening",
       "frame": {
         "setting": "Вторник, ближе к вечеру. Короткое интервью состоялось, но общую встречу команда пока не назначала. Мика рисует на доске четыре колонки: нужен постоянный час со следующей недели.",
         "lines": [
@@ -172,6 +173,7 @@
       "kind": "comprehension",
       "title": "Голосовые сообщения",
       "intro": "Героини прислали голосовые сообщения о своём расписании. Слушай без текста.",
+      "place": "dorm_evening",
       "frame": {
         "setting": "Вечер. На телефоне три голосовых сообщения.",
         "lines": [
@@ -321,6 +323,7 @@
       "kind": "form",
       "title": "At, on, in",
       "intro": "Время: at three, at noon, at night. Дни и даты: on Monday, on Friday morning, on 5 May. Части дня, месяцы, годы: in the morning, in the afternoon, in October. Исключение: at the weekend (британский вариант) и on the weekend (американский).",
+      "place": "room17",
       "frame": {
         "setting": "Айрис составляет общую таблицу для доски.",
         "lines": [
@@ -501,6 +504,7 @@
       "kind": "form",
       "title": "Когда начинается?",
       "intro": "Про расписание и время спрашиваем в Present Simple: What time does the lab close? When does the bus leave? Are you free on Wednesday? Отвечаем: It closes at one. I'm free from one to three.",
+      "place": "room17",
       "frame": {
         "setting": "Мика звонит в студенческий офис узнать, свободен ли двор.",
         "lines": [
@@ -640,6 +644,7 @@
       "kind": "production",
       "title": "Договориться о времени",
       "intro": "Собирай фразы из плиток или пиши сам.",
+      "place": "dorm_evening",
       "frame": {
         "setting": "Общий чат команды. Пора предложить время.",
         "lines": [
@@ -787,6 +792,7 @@
       "kind": "production",
       "title": "Голосом",
       "intro": "Скажи фразы вслух.",
+      "place": "room17",
       "frame": {
         "setting": "Мика записывает голосовое сообщение для команды и просит тебя.",
         "lines": [
@@ -869,6 +875,7 @@
       "kind": "fluency",
       "title": "Быстрый круг",
       "intro": "Знакомое — в своём темпе.",
+      "place": "room17",
       "frame": {
         "setting": "Рэй проверяет, не перепутал ли ты время.",
         "lines": [
@@ -986,6 +993,7 @@
       "title": "Миссия: общий час",
       "role": "mission",
       "intro": "Команда спорит, когда записывать двор. Ты знаешь все четыре расписания — помоги договориться.",
+      "place": "room17",
       "exercises": [
         {
           "id": "u003-s8-e1",

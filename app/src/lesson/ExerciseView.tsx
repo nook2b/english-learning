@@ -1,6 +1,7 @@
 import { type ReactNode, useEffect, useMemo, useRef, useState } from 'react'
 import type { Exercise, ExerciseOf, Line } from '../content/schema'
 import { useExam } from './exam'
+import { PlaceContext, usePlace } from '../story/places'
 import { type Outcome, SPEAKER_NAMES, type Step, TIMELINE_LABELS, shuffled, supportTiles } from './model'
 import { canRecognize, type ListenError, listen } from '../speech/recognition'
 import { hasVoice, useVoicedLine } from '../speech/voice'
@@ -333,6 +334,7 @@ export function SceneLines({ lines, compact = false }: { lines: readonly Line[];
 }
 
 function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
+  const place = usePlace()
   const [intent, setIntent] = useState<number>()
   const chosen = intent === undefined ? undefined : exercise.intents[intent]
   const playerName = useClub((s) => s.settings.name)
@@ -360,7 +362,9 @@ function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
   return (
     <div className="exercise">
       <p className="muted">{exercise.setting}</p>
-      <SceneLines lines={exercise.lines} />
+      <PlaceContext.Provider value={exercise.place ?? place}>
+        <SceneLines lines={exercise.lines} />
+      </PlaceContext.Provider>
       {!chosen ? (
         <>
           <p className="task">Что ты хочешь ответить?</p>

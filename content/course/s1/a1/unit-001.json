@@ -44,6 +44,7 @@
       "kind": "comprehension",
       "title": "Памятка первой недели",
       "intro": "Прочитай письмо и ответь на вопросы. Подчёркнутые слова можно нажать: появится перевод. Сплошной линией выделены выражения юнита.",
+      "place": "room17",
       "exercises": [
         {
           "id": "u001-s1-e1",
@@ -199,6 +200,7 @@
       "kind": "comprehension",
       "title": "Голоса комнаты 17",
       "intro": "Слушай без текста. Можно включать запись сколько угодно раз и замедлять. Текст появится после ответов.",
+      "place": "room17",
       "exercises": [
         {
           "id": "u001-s2-e1",
@@ -377,6 +379,7 @@
       "kind": "form",
       "title": "Обычно или сейчас",
       "intro": "Present Simple — то, что бывает обычно или верно всегда: I live in the East Dorm. Present Continuous — то, что происходит прямо сейчас: I'm looking for Room 70. Глаголы состояния (know, like, need, want, understand) обычно не ставятся в Continuous: I understand, а не I'm understanding.",
+      "place": "room17",
       "exercises": [
         {
           "id": "u001-s3-e1",
@@ -589,6 +592,7 @@
       "kind": "form",
       "title": "Как задать вопрос",
       "intro": "С обычными глаголами в Present Simple вопрос строится с do/does: Where do you live? Does Rei record sound? С be меняем порядок слов: Where are you from? Are you new here? В Continuous тоже начинаем с be: What are you doing?",
+      "place": "room17",
       "exercises": [
         {
           "id": "u001-s4-e1",
@@ -782,6 +786,7 @@
       "kind": "production",
       "title": "Скажи о себе",
       "intro": "Собирай фразы из слов или пиши сам. Сокращения засчитываются: I'm = I am. Регистр и точки не важны.",
+      "place": "room17",
       "exercises": [
         {
           "id": "u001-s5-e1",
@@ -950,6 +955,7 @@
       "kind": "production",
       "title": "Голосом",
       "intro": "Нажми «Сказать» и произнеси фразу. Если сейчас неудобно говорить, нажми «Сейчас не могу говорить» — это не ошибка.",
+      "place": "room17",
       "exercises": [
         {
           "id": "u001-s6-e1",
@@ -1066,6 +1072,7 @@
       "kind": "fluency",
       "title": "Быстрый круг",
       "intro": "Всё знакомое — отвечай без подсказок, в своём темпе.",
+      "place": "room17",
       "exercises": [
         {
           "id": "u001-s7-e1",
@@ -1228,6 +1235,7 @@
       "title": "Миссия: строчка для гида",
       "role": "mission",
       "intro": "Мика записывает голоса новичков для аудиогида. Выбери, что хочешь сказать, и скажи это по-английски.",
+      "place": "room17",
       "exercises": [
         {
           "id": "u001-s8-e1",
