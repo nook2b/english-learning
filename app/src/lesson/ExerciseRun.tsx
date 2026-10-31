@@ -145,7 +145,8 @@ export function ExerciseRun({
                 Засчитано. Обрати внимание на написание: <span lang="en">{outcome.spelling}</span>
               </p>
             )}
-            {outcome.correct === null && <p className="verdict">Пропущено, вернёмся к этому позже</p>}
+            {outcome.note && <p className="muted">{outcome.note}</p>}
+          {outcome.correct === null && <p className="verdict">Пропущено, вернёмся к этому позже</p>}
             {outcome.correct === false && (
               <LearnPanel title="Правильно так">
                 {outcome.given && TYPED.has(step.exercise.type) ? (

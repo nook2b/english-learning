@@ -22,18 +22,18 @@ const STRUGGLE_LABELS: Record<(typeof STRUGGLES)[number], string> = {
 }
 
 /**
- * The first-launch survey (plan 3.1), before the prologue: a name, a daily
- * goal and how the player rates their skills. With the placement check it
- * decides whether support mode is turned on.
+ * The first-launch survey (plan 3.1), before the prologue: a daily goal and
+ * how the player rates their skills. With the placement check it decides
+ * whether support mode is turned on. The name is not asked here: the player
+ * says it in the prologue, introducing themselves to the heroines.
  */
 export function SurveyStep({ onDone }: { onDone: () => void }) {
   const { settings, updateSettings } = useClub()
-  const [name, setName] = useState(settings.name)
   const [goal, setGoal] = useState<DailyGoal>(settings.dailyGoalMinutes)
   const [answers, setAnswers] = useState<SurveyAnswers>(settings.survey ?? { self: {} })
 
   const save = async () => {
-    await updateSettings({ name: name.trim(), dailyGoalMinutes: goal, survey: answers })
+    await updateSettings({ dailyGoalMinutes: goal, survey: answers })
     onDone()
   }
 
@@ -41,10 +41,6 @@ export function SurveyStep({ onDone }: { onDone: () => void }) {
     <div className="screen">
       <Card title="Перед началом">
         <p>Пара вопросов, чтобы курс подстроился под тебя. Всё можно поменять потом в профиле.</p>
-        <label className="field">
-          Как к тебе обращаться
-          <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Имя (можно латиницей)" />
-        </label>
       </Card>
 
       <Card title="Сколько времени в день">

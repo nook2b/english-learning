@@ -338,11 +338,20 @@ function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
   const submit = (text: string) => {
     if (!chosen) return
     const { correct: ok, spelling, name } = checkWithName(text, chosen.answers)
-    // The player's name from the survey or the profile; one typed here is kept when there is none yet.
-    if (name && !playerName) void updateSettings({ name })
+    // The player first gives their name here, in the prologue; it is kept when there is none yet (profile can change it).
+    const remembered = name && !playerName ? name : undefined
+    if (remembered) void updateSettings({ name: remembered })
     const expected = chosen.answers[0]!.replace(NAME, name || playerName || '…')
     // The story choice counts even after a language slip: the heroine clarifies and the scene goes on.
-    onAnswer({ correct: ok, spelling, given: text, expected, lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction], flag: chosen.flag })
+    onAnswer({
+      correct: ok,
+      spelling,
+      given: text,
+      expected,
+      lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction],
+      flag: chosen.flag,
+      note: remembered && `Будем звать тебя ${remembered}. Поменять имя можно в профиле.`,
+    })
   }
   return (
     <div className="exercise">

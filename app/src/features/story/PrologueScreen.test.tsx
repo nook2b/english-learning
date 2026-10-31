@@ -32,6 +32,8 @@ test('the prologue: survey, wrong door, ask the way again, introduce yourself, t
   fireEvent.change(screen.getByRole('textbox'), { target: { value: "Nice to meet you. I'm Ivan." } })
   click('Проверить')
   expect(await screen.findByText('Верно')).toBeInTheDocument()
+  // The name is asked only here (not in the survey), and the app says it remembered it.
+  expect(screen.getByText('Будем звать тебя Ivan. Поменять имя можно в профиле.')).toBeInTheDocument()
   click('Завершить занятие')
   for (let i = 0; i < 3; i++) click('Дальше')
   expect(await screen.findByText('Кабинет 70, новый корпус')).toBeInTheDocument()
