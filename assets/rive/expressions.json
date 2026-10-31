@@ -1,71 +1,102 @@
 {
- "mika": {
-  "stand": [
-   "neutral",
-   "listening",
-   "happy",
-   "laugh",
-   "surprised",
-   "thinking",
-   "embarrassed",
-   "annoyed",
-   "focused",
-   "excited",
-   "pout",
-   "forced_smile"
-  ],
-  "phone": [
-   "focused",
-   "neutral",
-   "happy",
-   "thinking",
-   "embarrassed"
-  ]
- },
- "rei": {
-  "stand": [
-   "neutral",
-   "listening",
-   "happy",
-   "laugh",
-   "surprised",
-   "thinking",
-   "embarrassed",
-   "annoyed",
-   "focused",
-   "deadpan",
-   "guarded",
-   "smirk"
-  ],
-  "recorder": [
-   "focused",
-   "neutral",
-   "happy",
-   "listening",
-   "smirk"
-  ]
- },
- "iris": {
-  "stand": [
-   "neutral",
-   "listening",
-   "happy",
-   "laugh",
-   "surprised",
-   "thinking",
-   "embarrassed",
-   "annoyed",
-   "focused",
-   "dry_smile",
-   "skeptical",
-   "guilty"
-  ],
-  "notebook": [
-   "focused",
-   "surprised",
-   "dry_smile",
-   "thinking",
-   "skeptical"
-  ]
- }
+  "mika": {
+    "stand": [
+      "neutral",
+      "listening",
+      "happy",
+      "laugh",
+      "surprised",
+      "thinking",
+      "embarrassed",
+      "annoyed",
+      "focused",
+      "excited",
+      "pout",
+      "forced_smile",
+      "sad",
+      "worried"
+    ],
+    "phone": [
+      "focused",
+      "neutral",
+      "happy",
+      "thinking",
+      "embarrassed",
+      "excited",
+      "forced_smile",
+      "surprised"
+    ],
+    "cheer": [
+      "laugh",
+      "excited",
+      "happy",
+      "pout"
+    ]
+  },
+  "rei": {
+    "stand": [
+      "neutral",
+      "listening",
+      "happy",
+      "laugh",
+      "surprised",
+      "thinking",
+      "embarrassed",
+      "annoyed",
+      "focused",
+      "deadpan",
+      "guarded",
+      "smirk",
+      "sad",
+      "worried"
+    ],
+    "recorder": [
+      "focused",
+      "neutral",
+      "happy",
+      "listening",
+      "smirk",
+      "annoyed"
+    ],
+    "arms_crossed": [
+      "annoyed",
+      "guarded",
+      "deadpan",
+      "thinking",
+      "sad"
+    ]
+  },
+  "iris": {
+    "stand": [
+      "neutral",
+      "listening",
+      "happy",
+      "laugh",
+      "surprised",
+      "thinking",
+      "embarrassed",
+      "annoyed",
+      "focused",
+      "dry_smile",
+      "skeptical",
+      "guilty",
+      "sad",
+      "worried"
+    ],
+    "notebook": [
+      "focused",
+      "surprised",
+      "dry_smile",
+      "thinking",
+      "skeptical",
+      "annoyed",
+      "guilty"
+    ],
+    "turn": [
+      "dry_smile",
+      "embarrassed",
+      "happy",
+      "thinking"
+    ]
+  }
 }
