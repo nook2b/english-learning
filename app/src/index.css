@@ -161,12 +161,14 @@ main { flex: 1; padding: 12px 16px 88px; }
 .translation-toggle { display: block; margin-top: 6px; color: var(--accent); font-size: 0.9rem; }
 
 /* Sprites and story beats */
-.stage { display: flex; justify-content: center; align-items: flex-end; overflow: hidden; --h: min(40vh, 340px); }
-.stage-2 { --h: min(36vh, calc((min(100vw, 640px) - 32px) / 1.25)); }
-.stage-3 { --h: min(32vh, calc((min(100vw, 640px) - 32px) / 1.8)); }
-.stage-compact { --h: min(30vh, 260px); }
-.stage-compact.stage-2 { --h: min(26vh, calc((min(100vw, 640px) - 32px) / 1.25)); }
-.stage-compact.stage-3 { --h: min(22vh, calc((min(100vw, 640px) - 32px) / 1.8)); }
+/* One height for one, two or three heroines, so they keep their size from scene to scene
+   (and later match the backgrounds). Three fit a phone by overlapping a little at the
+   edges of their frames: a figure takes 0.606 of the height in width, three with the
+   overlap 1.64 of it. */
+.stage { display: flex; justify-content: center; align-items: flex-end; overflow: hidden; --h: min(36vh, 340px, calc((min(100vw, 640px) - 32px) / 1.64)); }
+.stage-compact { --h: min(26vh, 260px, calc((min(100vw, 640px) - 32px) / 1.64)); }
+.stage-3 > .sprite-knee + .sprite-knee { margin-left: calc(var(--h) * -0.09); }
+.stage-3 > .sprite-knee:not(.dim) { z-index: 1; }
 /* Knee crop: the 1024×1536 sprite shows its top 66% and middle 60% (the figure). */
 .sprite-knee { position: relative; height: var(--h); width: calc(var(--h) * 0.6 * 1024 / (0.66 * 1536)); overflow: hidden; flex-shrink: 0; transition: filter 0.15s, opacity 0.15s; }
 .sprite-knee .sprite-frame { --fh: calc(var(--h) / 0.66); position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
@@ -190,7 +192,7 @@ main { flex: 1; padding: 12px 16px 88px; }
 .heroine-hero { display: flex; justify-content: center; }
 /* Rive idle animation: the still picture underneath until the first frame is drawn. */
 .rive-layer, .rive-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
-.rive-canvas { transition: opacity 0.2s; }
+/* No fade: the sprite under it hides in the same frame, so a fade would flash an empty stage. */
 .sprite-frame.rive-on.talking { animation: none; }
 .heroine-tap { background: none; border: 0; padding: 0; cursor: pointer; }
 .heroine-hero .sprite-stage { --fh: min(52vh, 460px); }
@@ -237,8 +239,8 @@ main { flex: 1; padding: 12px 16px 88px; }
 .route-kind { font-size: 0.82rem; color: var(--muted); }
 .route-stop-next .route-label { background: color-mix(in srgb, var(--road) 12%, transparent); }
 .route-stop-next .route-kind { color: var(--road); font-weight: 700; }
-.route-figure { position: sticky; top: calc(var(--topbar-h, 0px) + 92px); flex: none; width: 38%; max-width: 170px; pointer-events: none; }
-.route-figure .sprite-frame { --fh: min(250px, 58vw); margin: 0 auto; }
+.route-figure { position: sticky; top: calc(var(--topbar-h, 0px) + 92px); flex: none; width: 40%; max-width: 240px; pointer-events: none; }
+.route-figure .sprite-frame { --fh: min(340px, 62vw); margin: 0 auto; }
 .route-figure .map-figure { display: block; width: 100%; height: auto; }
 @keyframes route-glow { 50% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--road) 10%, transparent); } }
 @media (prefers-reduced-motion: reduce) { .route-stop-next .route-dot { animation: none; } }
@@ -287,3 +289,10 @@ main { flex: 1; padding: 12px 16px 88px; }
 .survey-row + .survey-row { margin-top: 12px; }
 .survey-row p { margin: 0 0 6px; }
 .feedback.exam .verdict { color: inherit; }
+
+/* Location background (story/places.ts): the image's height is the stage height, as drawn
+   for the calibration (eye level at 25%), so the stage is never wider than 16:9. */
+.stage-bg { width: min(100%, calc(var(--h) * 16 / 9)); margin-inline: auto; background-size: cover; background-position: center top; border-radius: 14px; }
+.place-banner { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; }
+.stage-bg .sprite-knee.dim, .stage-bg .sprite-frame.dim { opacity: 1; filter: brightness(0.7) saturate(0.85); }
+.stage-bg .sprite-knee.dim .sprite-frame.dim { filter: none; }

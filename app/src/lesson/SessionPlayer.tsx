@@ -10,6 +10,7 @@ import { castAt } from '../story/cast'
 import { Beat } from '../story/Stage'
 import { type Attempt, ExerciseRun } from './ExerciseRun'
 import { GlossaryContext, unitGlossary } from './glossary'
+import { PlaceContext } from '../story/places'
 import { KIND_LABELS, type Outcome } from './model'
 
 interface Summary {
@@ -76,10 +77,12 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   if (phase === 'frame' && session.frame) {
     return (
       <GlossaryContext.Provider value={glossary}>
-        <div className="screen">
-          <div className="session-head">{exit}</div>
-          <Beat setting={session.frame.setting} lines={session.frame.lines} doneLabel="Начать" onDone={() => setPhase('exercises')} />
-        </div>
+        <PlaceContext.Provider value={session.place}>
+          <div className="screen">
+            <div className="session-head">{exit}</div>
+            <Beat setting={session.frame.setting} lines={session.frame.lines} doneLabel="Начать" onDone={() => setPhase('exercises')} />
+          </div>
+        </PlaceContext.Provider>
       </GlossaryContext.Provider>
     )
   }
@@ -87,9 +90,11 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   if (phase === 'wrap' && session.wrap && summary) {
     return (
       <GlossaryContext.Provider value={glossary}>
-        <div className="screen">
-          <Beat lines={session.wrap} doneLabel="Итоги занятия" onDone={() => setPhase('done')} />
-        </div>
+        <PlaceContext.Provider value={session.place}>
+          <div className="screen">
+            <Beat lines={session.wrap} doneLabel="Итоги занятия" onDone={() => setPhase('done')} />
+          </div>
+        </PlaceContext.Provider>
       </GlossaryContext.Provider>
     )
   }
@@ -98,15 +103,17 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
 
   return (
     <GlossaryContext.Provider value={glossary}>
-      <ExerciseRun
-        exercises={session.exercises}
-        heading={`Юнит ${unit.id} · Занятие ${index}. ${KIND_LABELS[session.kind]}: ${session.title}`}
-        intro={session.intro}
-        cast={cast}
-        onAnswer={onAnswer}
-        onFinish={onFinish}
-        onExit={() => navigate({ name: 'path' })}
-      />
+      <PlaceContext.Provider value={session.place}>
+        <ExerciseRun
+          exercises={session.exercises}
+          heading={`Юнит ${unit.id} · Занятие ${index}. ${KIND_LABELS[session.kind]}: ${session.title}`}
+          intro={session.intro}
+          cast={cast}
+          onAnswer={onAnswer}
+          onFinish={onFinish}
+          onExit={() => navigate({ name: 'path' })}
+        />
+      </PlaceContext.Provider>
     </GlossaryContext.Provider>
   )
 }

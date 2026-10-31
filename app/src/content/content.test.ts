@@ -9,6 +9,7 @@ import { CHARACTERS } from './characters'
 import { AFTER_CLASS } from './afterClass'
 import { HEROINES } from './schema'
 import { clipUrl } from '../speech/clips'
+import { PLACES } from '../story/places'
 import { voicedText } from '../speech/delivery'
 
 const units = Object.values(UNITS)
@@ -140,4 +141,10 @@ test('every heroine line, listening and dictation has its voice clip (a changed 
 test('romantic emotions stay off screen before unit 081', () => {
   const early = allLines.filter(({ unit, line }) => Number(unit) < 81 && /blush|tender|teary/.test(line.expr ?? ''))
   expect(early).toEqual([])
+})
+
+test('every place named in the content has a background (assets/backgrounds)', () => {
+  const named = [PROLOGUE.place, ...units.flatMap((u) => u.sessions.flatMap((s) => [s.place, ...s.exercises.map((e) => (e.type === 'scene' ? e.place : undefined))]))]
+  const missing = [...new Set(named.filter((p): p is string => !!p && !PLACES[p]))]
+  expect(missing).toEqual([])
 })

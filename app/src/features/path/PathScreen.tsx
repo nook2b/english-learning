@@ -45,8 +45,8 @@ export function PathScreen() {
       </div>
 
       <div className="route" ref={route}>
-        <button className={`route-head route-prologue ${prologueDone ? '' : 'route-prologue-new'}`} onClick={() => navigate({ name: 'prologue' })}>
-          <span className="route-head-kicker">Пролог · {prologueDone ? 'пройден ✓' : 'новое'}</span>
+        <button className={`route-head route-prologue ${prologueFirst ? 'route-prologue-new' : ''}`} onClick={() => navigate({ name: 'prologue' })}>
+          <span className="route-head-kicker">Пролог · {!prologueDone ? 'начать ›' : prologueFirst ? 'дальше: кабинет 70 ›' : 'пройден ✓'}</span>
           <span className="route-head-title">Не тот кабинет</span>
         </button>
         {ARC1.modules.map((m) => (
@@ -57,7 +57,8 @@ export function PathScreen() {
             {m.units.map((u) => {
               const unit = UNITS[u.id]
               return unit ? (
-                <UnitRoute key={u.id} unit={unit} next={next?.unitId === u.id ? next.index : undefined} scroll={!prologueFirst} />
+                // Until the prologue and the check are over, no session is current: unit 001 is still closed.
+                <UnitRoute key={u.id} unit={unit} next={!prologueFirst && next?.unitId === u.id ? next.index : undefined} scroll={!prologueFirst} />
               ) : (
                 <div key={u.id} className="route-head route-head-soon">
                   <span className="route-head-kicker">Юнит {u.id} · скоро</span>

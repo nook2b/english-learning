@@ -8,6 +8,7 @@ import type { Outcome } from '../../lesson/model'
 import { castAt } from '../../story/cast'
 import { Beat } from '../../story/Stage'
 import { Button, Card, LearnPanel } from '../../ui/kit'
+import { PLACES, PlaceContext } from '../../story/places'
 import { PlacementCheck } from './PlacementCheck'
 import { SurveyStep } from './SurveyStep'
 
@@ -20,7 +21,16 @@ type Phase = 'survey' | 'frame' | 'scenes' | 'wrap' | 'room70' | 'check' | 'back
  * Room 17, which opens unit 001. A newcomer answers the survey first. The meeting is never played again on return:
  * after the prologue, this screen resumes at the check.
  */
+/** The prologue happens in Room 17 (its place in content/story/prologue.json). */
 export function PrologueScreen() {
+  return (
+    <PlaceContext.Provider value={PROLOGUE.place}>
+      <PrologueSteps />
+    </PlaceContext.Provider>
+  )
+}
+
+function PrologueSteps() {
   const { flags, remember, settings } = useClub()
   const remembered = useRef(new Set<string>())
   const resumeAt: Phase = flags[PLACEMENT_FLAG] ? 'back' : flags[PROLOGUE_FLAG] ? 'room70' : settings.survey ? 'frame' : 'survey'
@@ -72,6 +82,7 @@ export function PrologueScreen() {
     return (
       <div className="screen">
         {exit}
+        {PLACES.room70 && <img className="place-banner" src={PLACES.room70} alt="" />}
         <Card title="Кабинет 70, новый корпус">
           <p>Ты дошёл по маршруту Айрис. В кабинете тихо, на экране — приветствие International Office. Вступительная проверка: не экзамен, а способ понять, с чего начать.</p>
         </Card>
