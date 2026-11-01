@@ -218,3 +218,20 @@ test('a sorting task comes back with only the wrongly sorted words', () => {
   expect(screen.getByText('Ещё раз: исправим ошибку')).toBeInTheDocument()
   expect(rows().map((r) => r.textContent)).toEqual(['right now'])
 })
+
+test('developer mode: a task can be skipped and counts as answered right', async () => {
+  const unit = unitWith([
+    { id: 'd-1', type: 'translate', ru: 'Я здесь новенький.', answers: ["I'm new here."] },
+    { id: 'd-2', type: 'choice', prompt: 'Look! It ___.', options: ['rains', 'is raining'], answer: 'is raining' },
+  ])
+  render(<SessionPlayer unit={unit} index={1} />)
+  // Not offered to an ordinary player.
+  expect(screen.queryByRole('button', { name: /Пропустить \(засчитать верным\)/ })).toBeNull()
+  await useClub.getState().updateSettings({ unlockAll: true })
+  fireEvent.click(await screen.findByRole('button', { name: /Пропустить \(засчитать верным\)/ }))
+  expect(await screen.findByText('Верно')).toBeInTheDocument()
+  fireEvent.click(screen.getByRole('button', { name: 'Дальше' }))
+  fireEvent.click(await screen.findByRole('button', { name: /Пропустить \(засчитать верным\)/ }))
+  fireEvent.click(await screen.findByRole('button', { name: 'Завершить занятие' }))
+  expect(await screen.findByText(/Точность: 100% \(2 из 2\)/)).toBeInTheDocument()
+})

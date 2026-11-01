@@ -98,3 +98,31 @@ export function supportTiles(answer: string, seed: string): string[] {
   const lower = new Set(words.map((w) => w.toLowerCase().replace(/[.,!?]/g, '')))
   return [...words, ...shuffled(DISTRACTORS.filter((d) => !lower.has(d)), seed).slice(0, 2)]
 }
+
+/**
+ * Developer mode: the step answered right without doing it. The outcome a
+ * correct answer would give, so the session, the story choices and the
+ * summary go on as usual (a scene takes its first intent).
+ */
+export function skippedAsRight(step: Step, playerName = ''): Outcome {
+  const e = step.exercise
+  const right = (expected: string): Outcome => ({ correct: true, given: expected, expected })
+  switch (e.type) {
+    case 'choice':
+    case 'timeline':
+      return right(e.answer)
+    case 'reading':
+    case 'listening':
+      return right(e.questions[step.question ?? 0]!.answer)
+    case 'sort':
+      return right(e.items.map((i) => i.text).join('; '))
+    case 'pairs':
+      return right(e.pairs.map((p) => `${p.en} — ${p.ru}`).join('; '))
+    case 'scene': {
+      const intent = e.intents[0]!
+      return { ...right(intent.answers[0]!.replace('{player_name}', playerName || 'Alex')), lines: [intent.reaction], flag: intent.flag }
+    }
+    default:
+      return right(e.answers[0]!)
+  }
+}

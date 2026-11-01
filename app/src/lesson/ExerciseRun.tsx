@@ -11,7 +11,7 @@ import { ExerciseView, SceneLines } from './ExerciseView'
 import { wordDiff } from './diff'
 import { ExamMode } from './exam'
 import { PlaceContext, usePlace } from '../story/places'
-import { type Outcome, mistakeText, toSteps } from './model'
+import { type Outcome, mistakeText, skippedAsRight, toSteps } from './model'
 
 /** Tasks with a typed or spoken sentence, where a word-by-word comparison helps. */
 const TYPED = new Set(['fill', 'translate', 'fix', 'transform', 'write', 'dictation', 'scene', 'speak'])
@@ -80,6 +80,8 @@ export function ExerciseRun({
   const [attempts, setAttempts] = useState<Attempt[]>([])
   const [saving, setSaving] = useState(false)
   const sounds = useClub((s) => s.settings.sounds)
+  const devMode = useClub((s) => s.settings.unlockAll)
+  const playerName = useClub((s) => s.settings.name)
 
   const step = steps[i]!
   const place = usePlace()
@@ -155,6 +157,12 @@ export function ExerciseRun({
           </>
         )}
 
+        {/* Developer mode (profile): any task can be skipped and counts as answered right. */}
+        {devMode && !outcome && (
+          <Button variant="secondary" className="dev-skip" onClick={() => answer(skippedAsRight(step, playerName))}>
+            ⏭ Пропустить (засчитать верным)
+          </Button>
+        )}
         {outcome && exam && (
           <div className="feedback exam" role="status">
             <p className="verdict">Ответ принят</p>
