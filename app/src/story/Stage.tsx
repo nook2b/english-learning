@@ -24,7 +24,23 @@ const FIRST_FACE: Record<string, string> = { stand: 'neutral', phone: 'focused',
  * While she speaks, a mouth patch ("{expr}_talk") is laid over the face on
  * each syllable when one is drawn; otherwise she gently bobs.
  */
-export function Sprite({ heroine, expr, dim = false, size = 'stage', animate = false }: { heroine: HeroineId; expr?: string; dim?: boolean; size?: SpriteSize; animate?: boolean }) {
+export function Sprite({
+  heroine,
+  expr,
+  dim = false,
+  size = 'stage',
+  animate = false,
+  lean = 0,
+  mark,
+}: {
+  heroine: HeroineId
+  expr?: string
+  dim?: boolean
+  size?: SpriteSize
+  animate?: boolean
+  lean?: number
+  mark?: string
+}) {
   const ref = parseExpr(heroine, expr)
   const found = resolveSprite(ref)
   const mouth = useMouth(heroine)
@@ -44,7 +60,7 @@ export function Sprite({ heroine, expr, dim = false, size = 'stage', animate = f
   if (size === 'avatar') return <div className="sprite sprite-avatar" role="img" aria-label={label} style={{ backgroundImage: `url(${found.url})` }} />
   const frame = (
     <div className={`sprite-frame sprite-${size} ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''} ${live ? 'rive-on' : ''}`}>
-      {rive && <RiveFigure heroine={heroine} pose={ref.pose} expression={face ? ref.expr : (FIRST_FACE[ref.pose] ?? 'neutral')} visible={face} onReady={() => setReady(true)} onFail={() => setFailed(true)} />}
+      {rive && <RiveFigure heroine={heroine} pose={ref.pose} expression={face ? ref.expr : (FIRST_FACE[ref.pose] ?? 'neutral')} visible={face} lean={lean} mark={mark} onReady={() => setReady(true)} onFail={() => setFailed(true)} />}
       <img className="sprite" style={live ? { visibility: 'hidden' } : undefined} src={found.url} alt={label} title={found.exact ? undefined : `замена: ${found.key}`} draggable={false} />
       {talk && mouth === 'open' && (
         <img
@@ -65,8 +81,25 @@ export function Sprite({ heroine, expr, dim = false, size = 'stage', animate = f
   return size === 'knee' ? <div className={`sprite-knee ${dim ? 'dim' : ''}`}>{frame}</div> : frame
 }
 
+/** Listeners lean toward the heroine who speaks: −1 when she stands to the left, 1 to the right. */
+function leanTo(h: HeroineId, speaking: string | undefined, order: HeroineId[]): number {
+  if (!speaking || speaking === h || !isHeroine(speaking as HeroineId)) return 0
+  return Math.sign(order.indexOf(speaking as HeroineId) - order.indexOf(h))
+}
+
 /** Heroines on screen, ordered as on the references: Rei left, Mika centre, Iris right. */
-export function Stage({ cast, speaking, compact = false }: { cast: Partial<Record<HeroineId, string>>; speaking?: string; compact?: boolean }) {
+export function Stage({
+  cast,
+  speaking,
+  compact = false,
+  marks = {},
+}: {
+  cast: Partial<Record<HeroineId, string>>
+  speaking?: string
+  compact?: boolean
+  /** Manga marks of the current line's speaker. */
+  marks?: Partial<Record<string, string>>
+}) {
   const place = usePlace()
   const present = HEROINE_IDS.filter((h) => h in cast)
   if (present.length === 0) return null
@@ -77,7 +110,16 @@ export function Stage({ cast, speaking, compact = false }: { cast: Partial<Recor
       {order
         .filter((h) => present.includes(h))
         .map((h) => (
-          <Sprite key={h} heroine={h} size="knee" animate expr={cast[h]} dim={!!speaking && isHeroine(speaking as HeroineId) && speaking !== h} />
+          <Sprite
+            key={h}
+            heroine={h}
+            size="knee"
+            animate
+            expr={cast[h]}
+            dim={!!speaking && isHeroine(speaking as HeroineId) && speaking !== h}
+            lean={leanTo(h, speaking, order)}
+            mark={marks[h]}
+          />
         ))}
     </div>
   )
@@ -100,7 +142,7 @@ export function Beat({ setting, lines, doneLabel, onDone }: { setting?: string; 
   return (
     <div className="beat">
       {setting && <p className="muted">{setting}</p>}
-      <Stage cast={castAt(lines, i)} speaking={line.speaker} />
+      <Stage cast={castAt(lines, i)} speaking={line.speaker} marks={line.mark ? { [line.speaker]: line.mark } : undefined} />
       <DialogueBox speaker={SPEAKER_NAMES[line.speaker] || undefined}>
         <LineVoice text={line.text} speaker={line.speaker} expr={line.expr} delivery={line.delivery} />
         <Gloss key={i} text={line.text} />

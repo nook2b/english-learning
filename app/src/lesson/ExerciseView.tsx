@@ -321,7 +321,7 @@ export function SceneLines({ lines, compact = false }: { lines: readonly Line[];
   const at = playing >= 0 ? playing : lines.length - 1
   return (
     <>
-      <Stage cast={castAt(lines, at)} speaking={lines[at]?.speaker} compact={compact} />
+      <Stage cast={castAt(lines, at)} speaking={lines[at]?.speaker} compact={compact} marks={lines[at]?.mark ? { [lines[at]!.speaker]: lines[at]!.mark } : undefined} />
       {lines.map((l, i) => (
         <DialogueBox key={i} speaker={SPEAKER_NAMES[l.speaker] || undefined}>
           <LineVoice text={l.text} speaker={l.speaker} expr={l.expr} delivery={l.delivery} />
