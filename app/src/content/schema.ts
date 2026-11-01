@@ -165,6 +165,8 @@ const Line = z.object({
   expr: z.string().optional(),
   /** Audio tags for the voice when the story context needs them: "[whispers]", "[out of breath]". See docs/14-voice.md. */
   delivery: z.string().optional(),
+  /** A manga mark by the speaker's head while the line is on screen (Rive figures, docs/26). */
+  mark: z.enum(['blush', 'sweat', 'sparkle', 'heart', 'anger', 'question', 'note']).optional(),
 })
 
 /** T9: a line in a scene — pick an intent, then build the English reply. */

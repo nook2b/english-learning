@@ -3,6 +3,7 @@ import type { Exercise } from '../content/schema'
 import { useClub } from '../data/store'
 import { playSfx } from '../speech/sfx'
 import { play, stop as stopVoice } from '../speech/voice'
+import { react } from '../story/motion'
 import { type HeroineId, isHeroine } from '../story/sprites'
 import { Stage } from '../story/Stage'
 import { Button, LearnPanel, ProgressBar } from '../ui/kit'
@@ -110,6 +111,9 @@ export function ExerciseRun({
     // Accuracy and mistakes count the first attempt only.
     if (!step.retry) setAttempts((a) => [...a, { exercise: step.exercise, outcome: o }])
     onAnswer?.(step.exercise, o, !!step.retry)
+    // The heroine who answers a right reply nods (Rive figures from kit version 14).
+    const reply = o.correct === true ? o.lines?.at(-1) : undefined
+    if (reply) react(reply.speaker, 'nod')
     if (o.correct === false && !exam) {
       retries.current += 1
       // Multi-item tasks (sorting, pairs) come back with only the items that went wrong.
