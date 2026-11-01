@@ -151,7 +151,7 @@ export function ExerciseRun({
         {/* After a scene answer the heroine's reaction replaces the task, as a next screen. */}
         {!reaction && (
           <>
-            {step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} compact speaking={voice} />}
+            {step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} speaking={voice} />}
             {step.retry && <p className="context">Ещё раз: исправим ошибку</p>}
             <ExerciseView key={step.key} step={step} locked={!!outcome} onAnswer={answer} />
           </>
@@ -175,7 +175,7 @@ export function ExerciseRun({
           <div ref={feedback} className={`feedback ${outcome.correct === false ? 'bad' : 'good'} ${reaction ? 'reaction' : ''}`} role="status">
             {outcome.lines && (
               <PlaceContext.Provider value={(step.exercise.type === 'scene' && step.exercise.place) || place}>
-                <SceneLines lines={outcome.lines} compact />
+                <SceneLines lines={outcome.lines} />
               </PlaceContext.Provider>
             )}
             {outcome.correct === true && <p className="verdict">Верно</p>}

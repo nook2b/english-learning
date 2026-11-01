@@ -91,12 +91,10 @@ function leanTo(h: HeroineId, speaking: string | undefined, order: HeroineId[]):
 export function Stage({
   cast,
   speaking,
-  compact = false,
   marks = {},
 }: {
   cast: Partial<Record<HeroineId, string>>
   speaking?: string
-  compact?: boolean
   /** Manga marks of the current line's speaker. */
   marks?: Partial<Record<string, string>>
 }) {
@@ -106,7 +104,7 @@ export function Stage({
   const order: HeroineId[] = ['rei', 'mika', 'iris']
   const bg = place ? PLACES[place] : undefined
   return (
-    <div className={`stage stage-${present.length} ${compact ? 'stage-compact' : ''} ${bg ? 'stage-bg' : ''}`} style={bg ? { backgroundImage: `url(${bg})` } : undefined}>
+    <div className={`stage stage-${present.length} ${bg ? 'stage-bg' : ''}`} style={bg ? { backgroundImage: `url(${bg})` } : undefined}>
       {order
         .filter((h) => present.includes(h))
         .map((h) => (

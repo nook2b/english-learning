@@ -161,12 +161,11 @@ main { flex: 1; padding: 12px 16px 88px; }
 .translation-toggle { display: block; margin-top: 6px; color: var(--accent); font-size: 0.9rem; }
 
 /* Sprites and story beats */
-/* One height for one, two or three heroines, so they keep their size from scene to scene
-   (and later match the backgrounds). Three fit a phone by overlapping a little at the
-   edges of their frames: a figure takes 0.606 of the height in width, three with the
-   overlap 1.64 of it. */
+/* One height for one, two or three heroines and for every screen (story beats, tasks,
+   reactions), so the heroines and the background never change size. Three fit a phone
+   by overlapping a little at the edges of their frames: a figure takes 0.606 of the
+   height in width, three with the overlap 1.64 of it. */
 .stage { display: flex; justify-content: center; align-items: flex-end; overflow: hidden; --h: min(36vh, 340px, calc((min(100vw, 640px) - 32px) / 1.64)); }
-.stage-compact { --h: min(26vh, 260px, calc((min(100vw, 640px) - 32px) / 1.64)); }
 .stage-3 > .sprite-knee + .sprite-knee { margin-left: calc(var(--h) * -0.09); }
 .stage-3 > .sprite-knee:not(.dim) { z-index: 1; }
 /* Knee crop: the 1024×1536 sprite shows its top 66% and middle 60% (the figure). */
