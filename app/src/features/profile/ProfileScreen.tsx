@@ -80,10 +80,10 @@ export function ProfileScreen() {
         </label>
       </Card>
 
-      <Card title="Тестирование и сброс">
+      <Card title="Разработка и сброс">
         <label className="field-inline">
           <input type="checkbox" checked={settings.unlockAll} onChange={(e) => updateSettings({ unlockAll: e.target.checked })} />
-          Открыть всё: занятия в любом порядке, факты, воспоминания и реплики героинь
+          Режим разработчика: занятия в любом порядке, все факты, воспоминания и реплики героинь, кнопка «Пропустить» в заданиях (задание засчитывается верным)
         </label>
         <div className="actions">
           <Button variant="secondary" onClick={onReset}>
