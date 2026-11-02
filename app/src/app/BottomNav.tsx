@@ -1,4 +1,5 @@
 import { useClub } from '../data/store'
+import { Icon } from '../ui/Icon'
 import { TABS, navigate } from './router'
 
 export function BottomNav({ current }: { current: string }) {
@@ -8,12 +9,15 @@ export function BottomNav({ current }: { current: string }) {
     <nav className="bottomnav">
       {TABS.map((t) => (
         <button key={t.route} className={current === t.route ? 'active' : ''} aria-current={current === t.route ? 'page' : undefined} onClick={() => navigate({ name: t.route })}>
+          <span className="nav-tab">
+            <Icon name={`nav-${t.route}`} size={26} />
+            {t.route === 'review' && reviewDue > 0 && (
+              <span className="nav-badge" aria-label={`пора повторить: ${reviewDue}`}>
+                {reviewDue}
+              </span>
+            )}
+          </span>
           {t.label}
-          {t.route === 'review' && reviewDue > 0 && (
-            <span className="nav-badge" aria-label={`пора повторить: ${reviewDue}`}>
-              {reviewDue}
-            </span>
-          )}
         </button>
       ))}
     </nav>

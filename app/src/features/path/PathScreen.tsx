@@ -7,6 +7,7 @@ import type { Unit } from '../../content/schema'
 import { sessionId } from '../../data/db'
 import { useClub } from '../../data/store'
 import { KIND_LABELS } from '../../lesson/model'
+import { Icon } from '../../ui/Icon'
 import { Button, ProgressBar } from '../../ui/kit'
 import { MapFigure } from './MapFigure'
 import { mapFigure, stopIcon } from './roadmap'
@@ -118,7 +119,7 @@ function UnitRoute({ unit, next, scroll }: { unit: Unit; next?: number; scroll: 
         <span className="route-head-title">{unit.title}</span>
         {/* Iris's notebook: the unit's key phrases and grammar. */}
         <span className="route-head-book" aria-hidden>
-          📓
+          <Icon name="notebook" size={28} />
         </span>
       </button>
       {pendingInvite && (
@@ -137,7 +138,7 @@ function UnitRoute({ unit, next, scroll }: { unit: Unit; next?: number; scroll: 
             return (
               <li key={i} className={`route-stop route-stop-${state} ${s.role ? `route-stop-${s.role}` : ''}`}>
                 <span className="route-dot" aria-hidden>
-                  {done[i] && !s.role ? '✓' : stopIcon(s)}
+                  <Icon name={done[i] && !s.role ? 'g-check' : stopIcon(s)} size={24} />
                 </span>
                 <button
                   ref={isNext ? current : undefined}

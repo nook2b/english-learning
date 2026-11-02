@@ -2,13 +2,15 @@ import { UNITS } from '../../content/course'
 import { ARC1_UNITS } from '../../content/outline'
 import type { Session, Unit } from '../../content/schema'
 import { HEROINE_IDS, type HeroineId } from '../../story/sprites'
+import type { IconName } from '../../ui/Icon'
 
 // Path route helpers: what each station looks like and who stands by the unit.
 
-export function stopIcon(s: Session): string {
-  if (s.role === 'mission') return '★'
-  if (s.role === 'check') return '🏆'
-  return { comprehension: '📖', form: '✏️', production: '💬', fluency: '⚡' }[s.kind]
+/** White glyph on the station dot, by the session's kind or role. */
+export function stopIcon(s: Session): IconName {
+  if (s.role === 'mission') return 'g-star'
+  if (s.role === 'check') return 'g-trophy'
+  return ({ comprehension: 'g-book', form: 'g-pencil', production: 'g-bubble', fluency: 'g-stopwatch' } as const)[s.kind]
 }
 
 /** The heroine who speaks most in a unit's story beats stands by it on the route. */

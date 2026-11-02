@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import type { Speaker } from '../content/schema'
 import { useClub } from '../data/store'
+import { Icon } from '../ui/Icon'
 import { Button } from '../ui/kit'
 import type { Delivery } from './delivery'
 import { canVoice, pause, play, preload, resume, stop, useVoice } from './voice'
@@ -39,7 +40,7 @@ export function LineVoice({ text, speaker, expr, delivery: tags }: { text: strin
   if (!canVoice()) return null
   return (
     <button className="line-voice" aria-label={state === 'playing' ? 'Пауза' : 'Озвучить реплику'} onClick={() => (state === 'playing' ? pause() : state === 'paused' ? resume() : play(text, speaker, false, delivery))}>
-      {state === 'playing' ? '⏸' : '🔊'}
+      {state === 'playing' ? <span className="line-voice-pause">⏸</span> : <Icon name="speaker" size={26} />}
     </button>
   )
 }
