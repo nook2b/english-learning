@@ -3,11 +3,15 @@ import { DAILY_GOALS, db } from '../../data/db'
 import { navigate } from '../../app/router'
 import { useClub } from '../../data/store'
 import { PlacementCard } from '../story/PlacementCheck'
+import { currentStreak } from '../../data/streak'
+import { dayKey } from '../../data/dates'
+import { Icon } from '../../ui/Icon'
 import { Button, Card } from '../../ui/kit'
 
 export function ProfileScreen() {
   const { settings, days, units, updateSettings, reset, resetAll } = useClub()
   const totalMinutes = days.reduce((sum, d) => sum + d.minutes, 0)
+  const streak = currentStreak(days, settings.dailyGoalMinutes, dayKey())
   const deferred = useDeferredCount()
   const placements = settings.placements ?? []
   const last = placements.at(-1)
@@ -22,6 +26,47 @@ export function ProfileScreen() {
 
   return (
     <div className="screen">
+      <div className="profile-head">
+        <span className="profile-avatar" aria-hidden>
+          {(settings.name.trim()[0] ?? '?').toUpperCase()}
+        </span>
+        <div>
+          <h1>{settings.name.trim() || 'Студент по обмену'}</h1>
+          <p className="muted">Комната 17 · стрик {streak}</p>
+        </div>
+      </div>
+
+      <div className="stat-tiles stat-tiles-2">
+        <div className="stat-card">
+          <Icon name="goal" size={34} />
+          <p>
+            <b>{totalMinutes}</b>
+            Минут всего
+          </p>
+        </div>
+        <div className="stat-card">
+          <Icon name="calendar" size={34} />
+          <p>
+            <b>{days.length}</b>
+            Дней с занятиями
+          </p>
+        </div>
+        <div className="stat-card">
+          <Icon name="nav-path" size={34} />
+          <p>
+            <b>{Object.keys(units).length}</b>
+            Юнитов пройдено
+          </p>
+        </div>
+        <div className="stat-card">
+          <Icon name="later" size={34} />
+          <p>
+            <b>{deferred}</b>
+            Отложено с микрофоном
+          </p>
+        </div>
+      </div>
+
       <Card title="Профиль">
         <label className="field">
           Как к тебе обращаться
@@ -29,7 +74,7 @@ export function ProfileScreen() {
         </label>
       </Card>
 
-      <Card title="Дневная цель">
+      <Card title={<><Icon name="goal" />Дневная цель</>}>
         <div className="chips" role="radiogroup" aria-label="Дневная цель">
           {DAILY_GOALS.map((g) => (
             <button
@@ -50,14 +95,7 @@ export function ProfileScreen() {
         {last ? 'Пройти проверку ещё раз' : 'Пройти проверку уровня'}
       </Button>
 
-      <Card title="Статистика">
-        <p>Минут всего: {totalMinutes}</p>
-        <p>Дней с занятиями: {days.length}</p>
-        <p>Юнитов пройдено: {Object.keys(units).length}</p>
-        {deferred > 0 && <p>Отложено заданий с микрофоном: {deferred}</p>}
-      </Card>
-
-      <Card title="Настройки">
+      <Card title={<><Icon name="settings" />Настройки</>}>
         <label className="field-inline">
           <input type="checkbox" checked={settings.voice} onChange={(e) => updateSettings({ voice: e.target.checked })} />
           Озвучка
@@ -80,7 +118,7 @@ export function ProfileScreen() {
         </label>
       </Card>
 
-      <Card title="Разработка и сброс">
+      <Card title={<><Icon name="lock" />Разработка и сброс</>}>
         <label className="field-inline">
           <input type="checkbox" checked={settings.unlockAll} onChange={(e) => updateSettings({ unlockAll: e.target.checked })} />
           Режим разработчика: занятия в любом порядке, все факты, воспоминания и реплики героинь, кнопка «Пропустить» в заданиях (задание засчитывается верным)
