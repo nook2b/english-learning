@@ -296,3 +296,5 @@ main { flex: 1; padding: 12px 16px 88px; }
 .stage-bg .sprite-knee.dim, .stage-bg .sprite-frame.dim { opacity: 1; filter: brightness(0.7) saturate(0.85); }
 .stage-bg .sprite-knee.dim .sprite-frame.dim { filter: none; }
 .dev-skip { align-self: flex-start; font-size: 0.9em; opacity: 0.8; }
+.heard { margin: 0; padding: 10px 12px; border-radius: 12px; background: var(--surface); font-size: 1.05em; }
+.heard-live { border: 1px dashed var(--accent); }

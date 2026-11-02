@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, within } from '@testing-library/react'
+import { act, fireEvent, render, screen, within } from '@testing-library/react'
 import { Unit } from '../content/schema'
 import { db } from '../data/db'
 import { useClub } from '../data/store'
@@ -234,4 +234,35 @@ test('developer mode: a task can be skipped and counts as answered right', async
   fireEvent.click(await screen.findByRole('button', { name: /Пропустить \(засчитать верным\)/ }))
   fireEvent.click(await screen.findByRole('button', { name: 'Завершить занятие' }))
   expect(await screen.findByText(/Точность: 100% \(2 из 2\)/)).toBeInTheDocument()
+})
+
+test('speaking: the words the microphone hears show while speaking and stay after the answer', async () => {
+  // A fake recogniser: an interim result, then the final one.
+  let rec: { onresult: (e: unknown) => void; interimResults: boolean } | undefined
+  class FakeRecognition {
+    lang = ''
+    interimResults = false
+    continuous = false
+    maxAlternatives = 1
+    onresult: ((e: unknown) => void) | null = null
+    onerror = null
+    onend = null
+    start() {
+      rec = this as never
+    }
+    abort() {}
+  }
+  ;(window as unknown as { webkitSpeechRecognition: unknown }).webkitSpeechRecognition = FakeRecognition
+  const results = (text: string, isFinal: boolean) => ({ results: Object.assign([Object.assign([{ transcript: text }], { isFinal })], { length: 1 }) })
+  const unit = unitWith([{ id: 's-1', type: 'speak', show: 'ru', text: 'Я здесь новенький.', answers: ["I'm new here."] }])
+  render(<SessionPlayer unit={unit} index={1} />)
+  fireEvent.click(screen.getByRole('button', { name: '🎤 Сказать' }))
+  expect(rec?.interimResults).toBe(true)
+  act(() => rec!.onresult(results("I'm new", false)))
+  expect(screen.getByText('Слышу:')).toBeInTheDocument()
+  expect(screen.getByText("I'm new")).toBeInTheDocument()
+  act(() => rec!.onresult(results("I'm new here", true)))
+  expect(await screen.findByText('Верно')).toBeInTheDocument()
+  expect(screen.getByText('Распознано:')).toBeInTheDocument()
+  delete (window as unknown as { webkitSpeechRecognition?: unknown }).webkitSpeechRecognition
 })
