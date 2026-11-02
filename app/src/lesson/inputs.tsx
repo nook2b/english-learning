@@ -1,6 +1,7 @@
 import { type ReactNode, useMemo, useState } from 'react'
 import { Button } from '../ui/kit'
 import { useExam } from './exam'
+import { haptic } from '../speech/haptics'
 import { shuffled } from './model'
 
 export function TextAnswer({ initial = '', locked, onSubmit, placeholder = 'Ответ по-английски' }: { initial?: string; locked: boolean; onSubmit: (text: string) => void; placeholder?: string }) {
@@ -93,7 +94,15 @@ export function Options<T extends string>({
       {options.map((o) => {
         const state = !locked ? '' : exam ? (o === picked ? 'picked' : '') : o === answer ? 'right' : o === picked ? 'wrong' : ''
         return (
-          <button key={o} className={`option ${state}`} disabled={locked} onClick={() => onPick(o)}>
+          <button
+            key={o}
+            className={`option ${state}`}
+            disabled={locked}
+            onClick={() => {
+              haptic('tap')
+              onPick(o)
+            }}
+          >
             {render(o)}
           </button>
         )

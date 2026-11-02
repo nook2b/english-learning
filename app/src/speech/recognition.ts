@@ -4,7 +4,7 @@
 
 interface RecognitionResultList {
   length: number
-  [index: number]: { length: number; [index: number]: { transcript: string } }
+  [index: number]: { length: number; isFinal?: boolean; [index: number]: { transcript: string } }
 }
 
 interface Recognition {
@@ -37,22 +37,30 @@ export interface Listening {
   stop: () => void
 }
 
-/** Starts listening; resolves with all recogniser alternatives for one phrase. */
-export function listen(lang = 'en-US'): Listening {
+/**
+ * Starts listening; resolves with all recogniser alternatives for one phrase.
+ * While the phrase is being said, onHeard gets what is recognised so far, so
+ * the learner sees the words appear before the answer is checked.
+ */
+export function listen(lang = 'en-US', onHeard?: (text: string) => void): Listening {
   const Ctor = ctor()
   if (!Ctor) return { result: Promise.reject<string[]>('unsupported' satisfies ListenError), stop: () => {} }
   const rec = new Ctor()
   rec.lang = lang
-  rec.interimResults = false
+  rec.interimResults = !!onHeard
   rec.continuous = false
   rec.maxAlternatives = 5
   const result = new Promise<string[]>((resolve, reject) => {
     let done = false
     rec.onresult = (e) => {
-      done = true
       const first = e.results[0]
+      if (!first) return
+      // Interim results show progress; the final one (or the only one without interim results) is the answer.
+      if (onHeard) onHeard(Array.from({ length: e.results.length }, (_, k) => e.results[k]![0]?.transcript ?? '').join(''))
+      if (onHeard && first.isFinal === false) return
+      done = true
       const alts: string[] = []
-      if (first) for (let i = 0; i < first.length; i++) alts.push(first[i]!.transcript)
+      for (let i = 0; i < first.length; i++) alts.push(first[i]!.transcript)
       resolve(alts)
     }
     rec.onerror = (e) => {

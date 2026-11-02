@@ -408,6 +408,8 @@ const LISTEN_ERRORS: Record<ListenError, string> = {
 function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
   const [state, setState] = useState<'idle' | 'listening'>('idle')
   const [error, setError] = useState<ListenError>()
+  // What the microphone hears, live while speaking; stays after the answer.
+  const [heard, setHeard] = useState('')
   const supported = canRecognize()
   const listening = useRef<{ stop: () => void }>(undefined)
   // Leaving the task (next task, closing the session) turns the microphone off.
@@ -415,10 +417,15 @@ function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
 
   const start = () => {
     setError(undefined)
+    setHeard('')
     setState('listening')
-    const l = listen()
+    const l = listen('en-US', setHeard)
     listening.current = l
-    l.result.then((alts) => onAnswer({ correct: matchesSpeech(alts, exercise.answers), given: alts[0] ?? '', expected: exercise.answers[0]! }))
+    l.result
+      .then((alts) => {
+        setHeard(alts[0] ?? '')
+        onAnswer({ correct: matchesSpeech(alts, exercise.answers), given: alts[0] ?? '', expected: exercise.answers[0]! })
+      })
       .catch((e: ListenError) => setError(e))
       .finally(() => setState('idle'))
   }
@@ -429,6 +436,12 @@ function SpeakView({ exercise, locked, onAnswer }: ViewProps<'speak'>) {
       <p className="prompt">{exercise.show === 'en' ? <Gloss text={exercise.text} /> : exercise.text}</p>
       {exercise.show === 'en' && hasVoice(exercise.text, exercise.voice ?? 'narrator', exercise) && (
         <AudioControls text={exercise.text} speaker={exercise.voice ?? 'narrator'} delivery={exercise.delivery} label="▶ Как звучит" />
+      )}
+      {(state === 'listening' || heard) && (
+        <p className={`heard ${state === 'listening' ? 'heard-live' : ''}`} aria-live="polite">
+          <span className="muted">{state === 'listening' ? 'Слышу: ' : 'Распознано: '}</span>
+          <span lang="en">{heard || '…'}</span>
+        </p>
       )}
       {!locked && (
         <div className="actions">

@@ -2,6 +2,7 @@ import { type ReactNode, useEffect, useRef, useState } from 'react'
 import type { Exercise } from '../content/schema'
 import { useClub } from '../data/store'
 import { playSfx } from '../speech/sfx'
+import { haptic } from '../speech/haptics'
 import { play, stop as stopVoice } from '../speech/voice'
 import { react } from '../story/motion'
 import { type HeroineId, isHeroine } from '../story/sprites'
@@ -109,6 +110,7 @@ export function ExerciseRun({
 
   const answer = (answered: Outcome) => {
     if (sounds && !exam && answered.correct !== null) playSfx(answered.correct ? 'right' : 'wrong')
+    if (!exam && answered.correct !== null) haptic(answered.correct ? 'right' : 'wrong')
     const o = answered.correct === false ? { ...answered, shown: mistakeText(step, answered.expected) } : answered
     setOutcome(o)
     // Accuracy and mistakes count the first attempt only.

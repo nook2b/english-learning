@@ -1,4 +1,5 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react'
+import { haptic } from '../speech/haptics'
 
 // Placeholder UI kit. The real visual design comes later; keep these
 // components small so the design pass only has to restyle them.
@@ -6,9 +7,19 @@ import type { ButtonHTMLAttributes, ReactNode } from 'react'
 export function Button({
   variant = 'primary',
   className = '',
+  onClick,
   ...props
 }: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: 'primary' | 'secondary' }) {
-  return <button className={`btn btn-${variant} ${className}`} {...props} />
+  return (
+    <button
+      className={`btn btn-${variant} ${className}`}
+      onClick={(e) => {
+        haptic('tap')
+        onClick?.(e)
+      }}
+      {...props}
+    />
+  )
 }
 
 export function Card({ title, children }: { title?: ReactNode; children: ReactNode }) {
