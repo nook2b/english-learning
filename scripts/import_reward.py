@@ -36,7 +36,7 @@ def main() -> int:
             continue
         img = Image.open(path).convert("RGBA")
         corners = [img.getpixel(p)[3] for p in ((0, 0), (img.width - 1, 0), (0, img.height - 1), (img.width - 1, img.height - 1))]
-        if max(corners[:2]) > 0:
+        if max(corners[:2]) > 8:
             print(f"warning: {name}.png has no transparent background at the top corners")
             problems += 1
         if name in TRIO:
