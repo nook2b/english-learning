@@ -15,11 +15,14 @@ import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
 import { type Route, navigate, useRoute } from './router'
 import { Button, Card } from '../ui/kit'
+import { setHapticsEnabled } from '../speech/haptics'
 import { TopBar } from './TopBar'
 
 function Screen({ route }: { route: Route }) {
   const { sessions, units, settings, flags } = useClub()
   const unlockAll = settings.unlockAll
+  // Vibration follows the profile setting.
+  useEffect(() => setHapticsEnabled(settings.haptics), [settings.haptics])
   switch (route.name) {
     case 'path':
       return <PathScreen />

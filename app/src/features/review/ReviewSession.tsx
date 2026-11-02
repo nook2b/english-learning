@@ -12,6 +12,7 @@ import { playSfx } from '../../speech/sfx'
 import { Button, Card } from '../../ui/kit'
 import { type RoundItem, buildRound } from './build'
 import { Classroom } from './Classroom'
+import { haptic } from '../../speech/haptics'
 import { plural, todaysPair } from './pairs'
 
 /** The furthest unit the learner has reached: variations only use words met so far. */
@@ -68,6 +69,7 @@ function Round({ state }: { state: ReviewState }) {
     await recordSession(Math.max(1, Math.round(Math.min(seconds, MAX_SESSION_SECONDS) / 60)), xp)
     await refreshReview()
     if (settings.sounds) playSfx('done')
+    haptic('done')
     setDone({ moved, correct, total: answered.length, xp })
   }
 

@@ -11,6 +11,7 @@ import { Beat } from '../story/Stage'
 import { type Attempt, ExerciseRun } from './ExerciseRun'
 import { GlossaryContext, unitGlossary } from './glossary'
 import { PlaceContext } from '../story/places'
+import { haptic } from '../speech/haptics'
 import { KIND_LABELS, type Outcome } from './model'
 
 interface Summary {
@@ -68,6 +69,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       mistakes: [...new Set(attempts.filter((a) => a.outcome.correct === false).map((a) => a.outcome.shown ?? a.outcome.expected))].map((expected) => ({ given: '', expected })),
     })
     if (sounds) playSfx('done')
+    haptic('done')
     setPhase(session.wrap ? 'wrap' : 'done')
   }
 

@@ -13,6 +13,8 @@ export interface Settings {
   unlockAll: boolean
   /** Short sounds for right and wrong answers. */
   sounds: boolean
+  /** Vibration on answers, taps and the end of a session (phones that support it). */
+  haptics: boolean
   /** Support mode (plan 3.7.2): translations shown at once, word tiles instead of typing, slower voice by default. */
   support: boolean
   /** First-launch survey answers. */
@@ -127,6 +129,7 @@ export const DEFAULT_SETTINGS: Settings = {
   voice: true,
   unlockAll: false,
   sounds: true,
+  haptics: true,
   support: false,
 }
 

@@ -3,6 +3,7 @@ import { DAILY_GOALS, db } from '../../data/db'
 import { navigate } from '../../app/router'
 import { useClub } from '../../data/store'
 import { PlacementCard } from '../story/PlacementCheck'
+import { canVibrate } from '../../speech/haptics'
 import { Button, Card } from '../../ui/kit'
 
 export function ProfileScreen() {
@@ -66,6 +67,12 @@ export function ProfileScreen() {
           <input type="checkbox" checked={settings.sounds} onChange={(e) => updateSettings({ sounds: e.target.checked })} />
           Звуки ответов
         </label>
+        {canVibrate() && (
+          <label className="field-inline">
+            <input type="checkbox" checked={settings.haptics} onChange={(e) => updateSettings({ haptics: e.target.checked })} />
+            Вибрация: ответы, нажатия, конец занятия
+          </label>
+        )}
         <label className="field-inline">
           <input
             type="checkbox"

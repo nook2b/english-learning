@@ -5,6 +5,7 @@ import type { PlacementResult } from '../../data/db'
 import { useClub } from '../../data/store'
 import { type Attempt, ExerciseRun } from '../../lesson/ExerciseRun'
 import { playSfx } from '../../speech/sfx'
+import { haptic } from '../../speech/haptics'
 import { Button, Card, LearnPanel, ProgressBar } from '../../ui/kit'
 
 const PART_LABELS: Record<Part, string> = { grammar: 'Грамматика', reading: 'Чтение', listening: 'Аудирование', writing: 'Письмо' }
@@ -30,6 +31,7 @@ export function PlacementCheck({ onExit, onClose, closeLabel }: { onExit: () => 
     const r = scorePlacement(attempts.current)
     await updateSettings({ placements: [...(settings.placements ?? []), r], support: settings.support || needsSupport(r, settings.survey) })
     if (settings.sounds) playSfx('done')
+    haptic('done')
     setResult(r)
   }
 
