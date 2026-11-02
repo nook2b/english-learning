@@ -5,6 +5,7 @@ the black outline. All of it shows on a dark background.
 
     python3 scripts/fix_white_pockets.py in.png out.png        # one sprite (any 1024x1536 PNG)
     python3 scripts/fix_white_pockets.py in.riv out.riv        # the full-size textures inside a Rive file
+    python3 scripts/fix_white_pockets.py in.riv out.riv --only 1,2,3   # only these full-size textures
 
 The background is near pure white (mean >= 247); the figure's own whites
 (socks, sneakers) are shaded (mean ~244) and below LEGS. Only pixels above
@@ -12,13 +13,15 @@ LEGS are touched, so socks and shoes stay as they are. Whites of the eyes
 touch the iris and are kept: the iris test is tuned for Mika's blue eyes,
 check the result before using this on another heroine.
 """
+import argparse
 import io
-import re
 import sys
 
 import numpy as np
 from PIL import Image
 from scipy import ndimage
+
+from rive_textures import rewrite
 
 LEGS = 1150  # y on the 1024x1536 canvas: socks and shoes start below
 MIN_POCKET = 60
@@ -88,41 +91,38 @@ def fix(im: Image.Image) -> tuple[Image.Image, int]:
     return Image.fromarray(a), int(clear.sum())
 
 
-def varuint(n: int) -> bytes:
-    out = bytearray()
-    while True:
-        x = n & 0x7F
-        n >>= 7
-        if n:
-            out.append(x | 0x80)
-        else:
-            out.append(x)
-            return bytes(out)
-
-
 def main() -> int:
-    src, dst = sys.argv[1:3]
-    if src.endswith(".png"):
-        im, n = fix(Image.open(src))
-        im.save(dst)
-        print(f"{src}: {n} px cleared")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("src")
+    ap.add_argument("dst")
+    ap.add_argument("--only", help="in a .riv: numbers of the full-size textures to clean, 1-based, e.g. 1,2,3 (default: all)")
+    args = ap.parse_args()
+    if args.src.endswith(".png"):
+        im, n = fix(Image.open(args.src))
+        im.save(args.dst)
+        print(f"{args.src}: {n} px cleared")
         return 0
-    b = open(src, "rb").read()
-    out, pos = bytearray(), 0
-    for m in re.finditer(rb"\x89PNG\r\n\x1a\n", b):
-        start, end = m.start(), b.find(b"IEND", m.start()) + 8
-        prefix = varuint(end - start)
-        im = Image.open(io.BytesIO(b[start:end]))
-        if im.size != (1024, 1536) or b[start - len(prefix) : start] != prefix:
-            continue
+    only = {int(x) for x in args.only.split(",")} if args.only else None
+    seen = 0
+
+    def change(i: int, data: bytes, kind: str) -> bytes | None:
+        nonlocal seen
+        im = Image.open(io.BytesIO(data))
+        if im.size != (1024, 1536):
+            return None
+        seen += 1
+        if only and seen not in only:
+            print(f"full-size texture {seen}: left as is")
+            return None
         fixed, n = fix(im)
         buf = io.BytesIO()
-        fixed.save(buf, "PNG", optimize=True)
-        out += b[pos : start - len(prefix)] + varuint(buf.tell()) + buf.getvalue()
-        pos = end
-        print(f"{src}: texture at {start}: {n} px cleared")
-    out += b[pos:]
-    open(dst, "wb").write(out)
+        # Lossless, as the kit stores it; compress_rive.py makes it small afterwards.
+        fixed.save(buf, "WEBP", lossless=True) if kind.startswith("webp") else fixed.save(buf, "PNG", optimize=True)
+        print(f"full-size texture {seen}: {n} px cleared")
+        return buf.getvalue()
+
+    out, _ = rewrite(open(args.src, "rb").read(), change)
+    open(args.dst, "wb").write(out)
     return 0
 
 

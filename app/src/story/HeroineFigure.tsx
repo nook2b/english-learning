@@ -17,6 +17,7 @@ export function RiveFigure({
   expression,
   visible = true,
   lean = 0,
+  look,
   mark,
   onReady,
   onFail,
@@ -26,6 +27,7 @@ export function RiveFigure({
   expression: string
   visible?: boolean
   lean?: number
+  look?: 'left' | 'right'
   mark?: string
   onReady: () => void
   onFail: () => void
@@ -35,7 +37,7 @@ export function RiveFigure({
   return (
     <Suspense fallback={null}>
       <div className="rive-layer" style={visible ? undefined : { visibility: 'hidden' }}>
-        <RiveHeroine key={`${heroine}:${pose}`} heroine={heroine} pose={pose} expression={expression} talking={talking} motion={!reduced} lean={lean} mark={mark} onReady={onReady} onFail={onFail} />
+        <RiveHeroine key={`${heroine}:${pose}`} heroine={heroine} pose={pose} expression={expression} talking={talking} motion={!reduced} lean={lean} look={look} mark={mark} onReady={onReady} onFail={onFail} />
       </div>
     </Suspense>
   )

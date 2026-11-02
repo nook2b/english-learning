@@ -8,7 +8,7 @@ import { SPEAKER_NAMES } from '../lesson/model'
 import { Button, DialogueBox } from '../ui/kit'
 import { castAt } from './cast'
 import { PLACES, usePlace } from './places'
-import { hasFigure, riveHasFace } from './figures'
+import { hasFigure, riveCanTurn, riveHasFace } from './figures'
 import { RiveFigure } from './HeroineFigure'
 import { useMouth } from '../speech/mouth'
 import { type HeroineId, HEROINE_IDS, SPRITE_H, SPRITE_W, TALK, isHeroine, parseExpr, resolveSprite } from './sprites'
@@ -31,6 +31,7 @@ export function Sprite({
   size = 'stage',
   animate = false,
   lean = 0,
+  look,
   mark,
 }: {
   heroine: HeroineId
@@ -39,6 +40,8 @@ export function Sprite({
   size?: SpriteSize
   animate?: boolean
   lean?: number
+  /** Turned to a side of the screen (Rive only; the sprite underneath stays front). */
+  look?: 'left' | 'right'
   mark?: string
 }) {
   const ref = parseExpr(heroine, expr)
@@ -60,7 +63,7 @@ export function Sprite({
   if (size === 'avatar') return <div className="sprite sprite-avatar" role="img" aria-label={label} style={{ backgroundImage: `url(${found.url})` }} />
   const frame = (
     <div className={`sprite-frame sprite-${size} ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''} ${live ? 'rive-on' : ''}`}>
-      {rive && <RiveFigure heroine={heroine} pose={ref.pose} expression={face ? ref.expr : (FIRST_FACE[ref.pose] ?? 'neutral')} visible={face} lean={lean} mark={mark} onReady={() => setReady(true)} onFail={() => setFailed(true)} />}
+      {rive && <RiveFigure heroine={heroine} pose={ref.pose} expression={face ? ref.expr : (FIRST_FACE[ref.pose] ?? 'neutral')} visible={face} lean={lean} look={look} mark={mark} onReady={() => setReady(true)} onFail={() => setFailed(true)} />}
       <img className="sprite" style={live ? { visibility: 'hidden' } : undefined} src={found.url} alt={label} title={found.exact ? undefined : `замена: ${found.key}`} draggable={false} />
       {talk && mouth === 'open' && (
         <img
@@ -81,10 +84,16 @@ export function Sprite({
   return size === 'knee' ? <div className={`sprite-knee ${dim ? 'dim' : ''}`}>{frame}</div> : frame
 }
 
-/** Listeners lean toward the heroine who speaks: −1 when she stands to the left, 1 to the right. */
-function leanTo(h: HeroineId, speaking: string | undefined, order: HeroineId[]): number {
-  if (!speaking || speaking === h || !isHeroine(speaking as HeroineId)) return 0
-  return Math.sign(order.indexOf(speaking as HeroineId) - order.indexOf(h))
+/**
+ * Listeners face the heroine who speaks: they turn to her side of the screen
+ * when their pose has that turn drawn, otherwise they lean (−1 left, 1 right).
+ */
+function attention(h: HeroineId, expr: string | undefined, speaking: string | undefined, order: HeroineId[]): { look?: 'left' | 'right'; lean: number } {
+  if (!speaking || speaking === h || !isHeroine(speaking as HeroineId)) return { lean: 0 }
+  const lean = Math.sign(order.indexOf(speaking as HeroineId) - order.indexOf(h))
+  const side = lean < 0 ? 'left' : 'right'
+  const ref = parseExpr(h, expr)
+  return riveCanTurn(h, ref.pose, ref.expr, side) ? { look: side, lean: 0 } : { lean }
 }
 
 /** Heroines on screen, ordered as on the references: Rei left, Mika centre, Iris right. */
@@ -115,7 +124,7 @@ export function Stage({
             animate
             expr={cast[h]}
             dim={!!speaking && isHeroine(speaking as HeroineId) && speaking !== h}
-            lean={leanTo(h, speaking, order)}
+            {...attention(h, cast[h], speaking, order)}
             mark={marks[h]}
           />
         ))}
