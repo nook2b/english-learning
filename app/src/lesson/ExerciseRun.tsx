@@ -6,6 +6,7 @@ import { play, stop as stopVoice } from '../speech/voice'
 import { react } from '../story/motion'
 import { type HeroineId, isHeroine } from '../story/sprites'
 import { Stage } from '../story/Stage'
+import { Icon } from '../ui/Icon'
 import { Button, LearnPanel, ProgressBar } from '../ui/kit'
 import { ExerciseView, SceneLines } from './ExerciseView'
 import { wordDiff } from './diff'
@@ -143,8 +144,11 @@ export function ExerciseRun({
             ✕
           </button>
           <ProgressBar value={i + (outcome ? 1 : 0)} max={steps.length} label="Прогресс занятия" />
+          <span className="session-count" aria-hidden>
+            {i + (outcome ? 1 : 0)}/{steps.length}
+          </span>
         </div>
-        <p className="muted">{heading}</p>
+        <p className="session-kicker">{heading}</p>
 
         {i === 0 && !outcome && intro && <LearnPanel title="Перед началом">{intro}</LearnPanel>}
 
@@ -178,14 +182,30 @@ export function ExerciseRun({
                 <SceneLines lines={outcome.lines} />
               </PlaceContext.Provider>
             )}
-            {outcome.correct === true && <p className="verdict">Верно</p>}
+            {outcome.correct === true && (
+              <p className="verdict">
+                <Icon name="check" size={30} />
+                Верно
+              </p>
+            )}
+            {outcome.correct === false && !reaction && (
+              <p className="verdict verdict-bad">
+                <Icon name="cross" size={30} />
+                Почти
+              </p>
+            )}
             {outcome.spelling && (
               <p className="muted">
                 Засчитано. Обрати внимание на написание: <span lang="en">{outcome.spelling}</span>
               </p>
             )}
             {outcome.note && <p className="muted">{outcome.note}</p>}
-            {outcome.correct === null && <p className="verdict">Пропущено, вернёмся к этому позже</p>}
+            {outcome.correct === null && (
+              <p className="verdict verdict-later">
+                <Icon name="later" size={30} />
+                Пропущено, вернёмся к этому позже
+              </p>
+            )}
             {outcome.correct === false && (
               <LearnPanel title="Правильно так">
                 {outcome.given && TYPED.has(step.exercise.type) ? (

@@ -7,7 +7,9 @@ import { navigate } from '../app/router'
 import { Button, Card, LearnPanel } from '../ui/kit'
 import { playSfx } from '../speech/sfx'
 import { castAt } from '../story/cast'
+import { RewardArt } from '../story/RewardArt'
 import { Beat } from '../story/Stage'
+import { unitHeroine } from '../features/path/roadmap'
 import { type Attempt, ExerciseRun } from './ExerciseRun'
 import { GlossaryContext, unitGlossary } from './glossary'
 import { PlaceContext } from '../story/places'
@@ -107,15 +109,17 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   return (
     <GlossaryContext.Provider value={glossary}>
       <PlaceContext.Provider value={session.place}>
-        <ExerciseRun
-          exercises={exercises}
-          heading={`Юнит ${unit.id} · Занятие ${index}. ${KIND_LABELS[session.kind]}: ${session.title}`}
-          intro={session.intro}
-          cast={cast}
-          onAnswer={onAnswer}
-          onFinish={onFinish}
-          onExit={() => navigate({ name: 'path' })}
-        />
+        <div className={`route-${unitHeroine(unit)}`}>
+          <ExerciseRun
+            exercises={exercises}
+            heading={`Юнит ${unit.id} · Занятие ${index}. ${KIND_LABELS[session.kind]}: ${session.title}`}
+            intro={session.intro}
+            cast={cast}
+            onAnswer={onAnswer}
+            onFinish={onFinish}
+            onExit={() => navigate({ name: 'path' })}
+          />
+        </div>
       </PlaceContext.Provider>
     </GlossaryContext.Provider>
   )
@@ -128,21 +132,36 @@ function SessionSummary({ unit, index, summary }: { unit: Unit; index: number; s
   const invite = unit.sessions[index - 1]?.invite
   const pendingInvite = invite && !flags[invite.flag] ? invite : undefined
   const pct = summary.total ? Math.round((summary.correct / summary.total) * 100) : undefined
+  const heroine = unitHeroine(unit)
+  const session = unit.sessions[index - 1]
   return (
-    <div className="screen">
-      <Card title={`Занятие ${index} пройдено`}>
-        {pct === undefined ? (
-          <p>Все задания отложены — точность не считается.</p>
-        ) : (
-          <p>
-            Точность: {pct}% ({summary.correct} из {summary.total})
-          </p>
-        )}
-        {summary.skipped > 0 && <p className="muted">Отложено: {summary.skipped}. Эти задания вернутся в повторении.</p>}
-        <p>
-          +{summary.xp} XP · {summary.minutes} мин
-        </p>
-      </Card>
+    <div className={`screen summary route-${heroine}`}>
+      <RewardArt
+        heroine={heroine}
+        moment="session"
+        trio={summary.unitCompleted ? 'mission' : session?.role === 'check' ? 'module' : undefined}
+        label={summary.unitCompleted ? 'Мика, Рэй и Айрис празднуют миссию' : 'Героиня юнита радуется'}
+      />
+      <div className="summary-head">
+        <h1 className="summary-title">Занятие {index} пройдено</h1>
+        {session && <p className="muted">{session.title} · юнит {unit.id}</p>}
+      </div>
+      <div className="stat-tiles">
+        <div className="stat-tile stat-xp">
+          <span>Опыт</span>
+          <b>+{summary.xp} XP</b>
+        </div>
+        <div className="stat-tile stat-acc" role="group" aria-label={pct === undefined ? 'Точность не считается' : `Точность: ${pct}% (${summary.correct} из ${summary.total})`}>
+          <span>Точность</span>
+          <b>{pct === undefined ? '—' : `${pct}%`}</b>
+        </div>
+        <div className="stat-tile stat-min">
+          <span>Минуты</span>
+          <b>{summary.minutes}</b>
+        </div>
+      </div>
+      {pct === undefined && <p className="muted">Все задания отложены — точность не считается.</p>}
+      {summary.skipped > 0 && <p className="muted">Отложено: {summary.skipped}. Эти задания вернутся в повторении.</p>}
       {summary.mistakes.length > 0 && (
         <LearnPanel title="Ошибки уйдут в повторение">
           <ul className="mistakes">

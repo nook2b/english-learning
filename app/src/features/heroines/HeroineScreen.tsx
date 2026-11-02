@@ -7,6 +7,7 @@ import { LineVoice } from '../../speech/AudioControls'
 import { play, preload } from '../../speech/voice'
 import { Sprite } from '../../story/Stage'
 import type { HeroineId } from '../../story/sprites'
+import { Icon } from '../../ui/Icon'
 import { Button, Card, DialogueBox } from '../../ui/kit'
 
 export function HeroineScreen({ id }: { id: HeroineId }) {
@@ -32,11 +33,14 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
   }
 
   return (
-    <div className="screen">
-      <button className="link muted" onClick={() => navigate({ name: 'heroines' })}>
+    <div className={`screen route-${id}`}>
+      <button className="link back-link" onClick={() => navigate({ name: 'heroines' })}>
         ← Все героини
       </button>
       <div className="heroine-hero">
+        <div className="heroine-hero-name">
+          <h1>{c.name}</h1>
+        </div>
         <button className="heroine-tap" onClick={chat} aria-label={`Поболтать с ${c.name}`}>
           {/* The Rive heroine: breathes, blinks, shows the line's face and talks with her voice. */}
           <Sprite heroine={id} expr={line?.expr ?? 'neutral'} animate />
@@ -58,7 +62,7 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
         <p>{c.about}</p>
       </Card>
 
-      <Card title="Что ты о ней знаешь">
+      <Card title={<><Icon name="notebook" />Что ты о ней знаешь</>}>
         {facts.length ? (
           <ul className="list">
             {facts.map((f) => (
@@ -71,7 +75,7 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
         {c.facts.length > facts.length && <p className="muted">Ещё откроется: {c.facts.length - facts.length}</p>}
       </Card>
 
-      <Card title="Общие воспоминания">
+      <Card title={<><Icon name="memory" />Общие воспоминания</>}>
         {memories.length ? (
           <ul className="list memories">
             {memories.map((m) => (
@@ -88,15 +92,15 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
         )}
       </Card>
 
-      <Card title="Личные квесты">
+      <Card title={<><Icon name="nav-quests" />Личные квесты</>}>
         <ul className="list quests">
           {c.quests.map((q) => {
             // "Open everything" shows what each quest changes, for testing.
             const open = !!flags[q.flag] || settings.unlockAll
             return (
               <li key={q.id} className={open ? 'quest-done' : 'quest-locked'}>
-                <span>
-                  {flags[q.flag] ? '✓ ' : ''}
+                <span className="quest-title">
+                  <Icon name={flags[q.flag] ? 'check' : open ? 'star' : 'lock'} size={20} />
                   {q.title}
                 </span>
                 <span className="muted">{open ? q.change : `откроется в юнитах ${q.window}`}</span>

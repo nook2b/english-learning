@@ -3,6 +3,7 @@ import { navigate } from '../../app/router'
 import { TAGS } from '../../content/tags'
 import { dayKey, daysBetween } from '../../data/dates'
 import { type ReviewState, loadReview } from '../../data/review'
+import { Icon } from '../../ui/Icon'
 import { Button, Card } from '../../ui/kit'
 import { Classroom } from './Classroom'
 import { plural, todaysPair } from './pairs'
@@ -27,7 +28,7 @@ export function ReviewScreen() {
       <Classroom pair={todaysPair(today)} state={mood} />
 
       {state.topics.length > 0 && (
-        <Card title="Ошибки по темам">
+        <Card title={<><Icon name="nav-review" />Ошибки по темам</>}>
           <ul className="list review-topics">
             {[...due, ...waiting].map((t) => (
               <li key={t.tag}>
@@ -37,7 +38,9 @@ export function ReviewScreen() {
                 </span>
                 <span className={t.due <= today ? 'review-due' : 'muted'}>
                   <span className="review-steps" aria-label={`Повторено ${t.step} из 3`}>
-                    {[0, 1, 2].map((s) => (s < t.step ? '●' : '○')).join('')}
+                    {[0, 1, 2].map((s) => (
+                      <i key={s} className={s < t.step ? 'on' : undefined} />
+                    ))}
                   </span>{' '}
                   {t.due <= today ? 'пора' : `через ${daysBetween(today, t.due)} дн.`}
                 </span>
@@ -49,7 +52,7 @@ export function ReviewScreen() {
       )}
 
       {state.deferred.length > 0 && (
-        <Card title="Отложено с микрофоном">
+        <Card title={<><Icon name="later" />Отложено с микрофоном</>}>
           <p>
             {state.deferred.length} {plural(state.deferred.length, 'задание', 'задания', 'заданий')} «Сейчас не могу говорить». Скажешь их вслух в разборе.
           </p>
