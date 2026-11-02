@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { THEMES, type Theme, loadTheme, saveTheme } from '../../app/theme'
 import { DAILY_GOALS, db } from '../../data/db'
 import { navigate } from '../../app/router'
 import { useClub } from '../../data/store'
@@ -13,6 +14,7 @@ export function ProfileScreen() {
   const totalMinutes = days.reduce((sum, d) => sum + d.minutes, 0)
   const streak = currentStreak(days, settings.dailyGoalMinutes, dayKey())
   const deferred = useDeferredCount()
+  const [theme, setTheme] = useState<Theme>(loadTheme)
   const placements = settings.placements ?? []
   const last = placements.at(-1)
 
@@ -85,6 +87,25 @@ export function ProfileScreen() {
               onClick={() => updateSettings({ dailyGoalMinutes: g })}
             >
               {g} мин
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <Card title={<><Icon name="settings" />Оформление</>}>
+        <div className="chips" role="radiogroup" aria-label="Тема">
+          {THEMES.map((t) => (
+            <button
+              key={t.id}
+              role="radio"
+              aria-checked={theme === t.id}
+              className={`chip ${theme === t.id ? 'active' : ''}`}
+              onClick={() => {
+                setTheme(t.id)
+                saveTheme(t.id)
+              }}
+            >
+              {t.label}
             </button>
           ))}
         </div>

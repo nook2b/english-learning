@@ -19,13 +19,35 @@
   --bad-i: #ffe4e4;
   --fire: #b35c00;
   --gold: #ffc800;
-  color-scheme: light dark;
+  color-scheme: light;
   font-family: 'Nunito Variable', Nunito, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.45;
 }
 
+/* Theme: light by default, dark or the phone's setting from the profile (app/theme.ts). */
+:root[data-theme='dark'] {
+    color-scheme: dark;
+    --bg: #16171f;
+    --surface: #20222d;
+    --text: #ececf3;
+    --muted: #a2a3b5;
+    --faint: #8a8a9c;
+    --border: #33354a;
+    --accent: #7c86f0;
+    --accent-d: #4f5bd5;
+    --accent-i: #262a4a;
+    --accent-text: #0d0e18;
+    --ok: #6cc644;
+    --ok-d: #2b8a0e;
+    --ok-i: #1d2e17;
+    --bad: #ff7272;
+    --bad-d: #b33030;
+    --bad-i: #3a1d1f;
+    --fire: #ffa133;
+  }
 @media (prefers-color-scheme: dark) {
-  :root {
+:root[data-theme='system'] {
+    color-scheme: dark;
     --bg: #16171f;
     --surface: #20222d;
     --text: #ececf3;
@@ -84,7 +106,10 @@ main { flex: 1; padding: 14px 16px 104px; }
 .nav-tab { position: relative; width: 50px; height: 38px; border-radius: 12px; border: 2px solid transparent; display: grid; place-items: center; }
 .bottomnav button.active { color: var(--accent-d); }
 .bottomnav button.active .nav-tab { background: var(--accent-i); border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
-@media (prefers-color-scheme: dark) { .bottomnav button.active { color: var(--accent); } }
+:root[data-theme='dark'] .bottomnav button.active { color: var(--accent); }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .bottomnav button.active { color: var(--accent); }
+}
 
 .screen { display: flex; flex-direction: column; gap: 14px; }
 .card { background: var(--bg); border: 2px solid var(--border); border-radius: 18px; padding: 14px 16px; }
@@ -119,7 +144,10 @@ main { flex: 1; padding: 14px 16px 104px; }
 /* Dialogue window: the speaker's name on a tab, a coloured bottom edge. */
 .dialogue { position: relative; border: 2px solid var(--border); border-radius: 18px; padding: 14px 16px; background: var(--bg); box-shadow: 0 4px 0 var(--border); font-size: 1.08rem; font-weight: 700; }
 .dialogue-speaker { font-weight: 900; margin-bottom: 4px; color: var(--accent-d); font-size: 0.9rem; letter-spacing: 0.03em; }
-@media (prefers-color-scheme: dark) { .dialogue-speaker { color: var(--accent); } }
+:root[data-theme='dark'] .dialogue-speaker { color: var(--accent); }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .dialogue-speaker { color: var(--accent); }
+}
 .learn-panel { background: var(--surface); padding: 12px 14px; border-radius: 16px; border: 2px solid var(--border); }
 .learn-panel-title { font-weight: 900; margin-bottom: 4px; }
 
@@ -129,7 +157,10 @@ main { flex: 1; padding: 14px 16px 104px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip { padding: 9px 14px; border-radius: 12px; border: 2px solid var(--border); box-shadow: 0 3px 0 var(--border); background: var(--bg); color: var(--text); font-size: 0.95rem; font-weight: 800; cursor: pointer; }
 .chip.active { background: var(--accent-i); color: var(--accent-d); border-color: var(--accent); box-shadow: 0 3px 0 var(--accent); }
-@media (prefers-color-scheme: dark) { .chip.active { color: var(--text); } }
+:root[data-theme='dark'] .chip.active { color: var(--text); }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .chip.active { color: var(--text); }
+}
 
 /* Stage 2: sessions and exercises */
 .link { background: none; border: 0; padding: 0; color: inherit; font: inherit; text-align: left; cursor: pointer; }
@@ -153,8 +184,9 @@ main { flex: 1; padding: 14px 16px 104px; }
 .option.picked { border-color: var(--accent); box-shadow: 0 3px 0 var(--accent); background: var(--accent-i); color: var(--accent-d); }
 .option.right, .chip.right { border-color: var(--ok); box-shadow: 0 3px 0 var(--ok); background: var(--ok-i); color: var(--ok-d); }
 .option.wrong, .chip.wrong { border-color: var(--bad); box-shadow: 0 3px 0 var(--bad); background: var(--bad-i); color: var(--bad-d); }
+:root[data-theme='dark'] .option.picked, :root[data-theme='dark'] .option.right, :root[data-theme='dark'] .chip.right, :root[data-theme='dark'] .option.wrong, :root[data-theme='dark'] .chip.wrong { color: var(--text); }
 @media (prefers-color-scheme: dark) {
-  .option.picked, .option.right, .chip.right, .option.wrong, .chip.wrong { color: var(--text); }
+:root[data-theme='system'] .option.picked, :root[data-theme='system'] .option.right, :root[data-theme='system'] .chip.right, :root[data-theme='system'] .option.wrong, :root[data-theme='system'] .chip.wrong { color: var(--text); }
 }
 .timeline-option { display: flex; flex-direction: column; gap: 4px; }
 .timeline { max-width: 100%; }
@@ -312,9 +344,11 @@ main { flex: 1; padding: 14px 16px 104px; }
 .guide-phrase .line-voice { position: absolute; top: 10px; right: 10px; }
 .guide-example { margin: 0; font-size: 1.05rem; }
 .guide-gist { margin: 0; font-size: 0.85rem; color: var(--muted); }
+/* Dark outfits (Rei) would melt into the dark background without a faint rim. */
+:root[data-theme='dark'] .map-figure { filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.45)); }
 @media (prefers-color-scheme: dark) {
-  /* Dark outfits (Rei) would melt into the dark background without a faint rim. */
-  .map-figure { filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.45)); }
+/* Dark outfits (Rei) would melt into the dark background without a faint rim. */
+:root[data-theme='system'] .map-figure { filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.45)); }
 }
 
 /* After class (review tab): an empty classroom with two heroines at their desks. */
@@ -326,8 +360,9 @@ main { flex: 1; padding: 14px 16px 104px; }
 .review-due { color: var(--accent); font-weight: 700; white-space: nowrap; }
 .review-steps { letter-spacing: 2px; }
 .nav-badge { display: inline-block; min-width: 18px; margin-left: 4px; padding: 0 5px; border-radius: 9px; background: #e03131; color: #fff; font-size: 0.72rem; font-weight: 700; line-height: 18px; text-align: center; vertical-align: 1px; }
+:root[data-theme='dark'] .classroom-scene { background: linear-gradient(180deg, #3b3226 0%, #463b2c 55%, #2c241a 55%, #241d15 100%) center / cover no-repeat; }
 @media (prefers-color-scheme: dark) {
-  .classroom-scene { background: linear-gradient(180deg, #3b3226 0%, #463b2c 55%, #2c241a 55%, #241d15 100%) center / cover no-repeat; }
+:root[data-theme='system'] .classroom-scene { background: linear-gradient(180deg, #3b3226 0%, #463b2c 55%, #2c241a 55%, #241d15 100%) center / cover no-repeat; }
 }
 .route-prologue { position: static; --road: #e8590c; }
 .route-prologue-new { box-shadow: 0 0 0 2px color-mix(in srgb, var(--road) 35%, transparent); }
@@ -357,7 +392,10 @@ main { flex: 1; padding: 14px 16px 104px; }
 .feedback.reaction, .feedback.exam { padding: 8px 0 0; background: none; border-radius: 0; }
 .feedback.exam { padding: 14px 16px; background: var(--surface); border-radius: 20px; }
 .verdict { font-size: 1.25rem; font-weight: 900; color: var(--ok-d); display: flex; align-items: center; gap: 8px; }
-@media (prefers-color-scheme: dark) { .verdict { color: var(--ok); } }
+:root[data-theme='dark'] .verdict { color: var(--ok); }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .verdict { color: var(--ok); }
+}
 .feedback.good:not(.reaction) > .btn-primary { background: var(--ok); color: #fff; box-shadow: 0 4px 0 var(--ok-d); }
 .feedback.bad > .btn-primary { background: var(--bad); color: #fff; box-shadow: 0 4px 0 var(--bad-d); }
 .feedback.bad .learn-panel { background: var(--bg); border-color: transparent; }
@@ -398,12 +436,18 @@ main { flex: 1; padding: 14px 16px 104px; }
 .route-stop-mission .route-dot, .route-stop-check .route-dot { border-radius: 50%; }
 .route-stop-mission:not(.route-stop-locked) .route-dot, .route-stop-check:not(.route-stop-locked) .route-dot { background: var(--gold); box-shadow: 0 4px 0 #cd9a00; }
 .route-stop-locked .route-dot { filter: none; opacity: 1; }
-@media (prefers-color-scheme: dark) { .route-dot { background: #3a3d52; box-shadow: 0 4px 0 #2a2c3c; } }
+:root[data-theme='dark'] .route-dot { background: #3a3d52; box-shadow: 0 4px 0 #2a2c3c; }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .route-dot { background: #3a3d52; box-shadow: 0 4px 0 #2a2c3c; }
+}
 .route-title { font-weight: 800; }
 .route-kind { font-weight: 700; }
 .route-stop-next .route-label { background: none; }
 .route-stop-next .route-kind { color: var(--road-d); font-weight: 900; }
-@media (prefers-color-scheme: dark) { .route-stop-next .route-kind { color: var(--road); } }
+:root[data-theme='dark'] .route-stop-next .route-kind { color: var(--road); }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .route-stop-next .route-kind { color: var(--road); }
+}
 .route-back { background: var(--accent); color: #fff; font-weight: 900; box-shadow: 0 4px 0 var(--accent-d); }
 .route-invite { border-radius: 16px; }
 
@@ -420,17 +464,29 @@ input[type="checkbox"] { accent-color: var(--accent); width: 20px; height: 20px;
 
 /* Session: a heroine-coloured bar with a counter, a quiet kicker line, verdicts with icons. */
 .session-count { flex: none; min-width: 2.6em; text-align: right; font-size: 0.9rem; font-weight: 900; color: var(--road-d, var(--accent)); }
-@media (prefers-color-scheme: dark) { .session-count { color: var(--road, var(--accent)); } }
+:root[data-theme='dark'] .session-count { color: var(--road, var(--accent)); }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .session-count { color: var(--road, var(--accent)); }
+}
 .session-kicker { margin: 0; font-size: 0.78rem; font-weight: 900; letter-spacing: 0.05em; text-transform: uppercase; color: var(--road-d, var(--muted)); }
-@media (prefers-color-scheme: dark) { .session-kicker { color: var(--road, var(--muted)); } }
+:root[data-theme='dark'] .session-kicker { color: var(--road, var(--muted)); }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .session-kicker { color: var(--road, var(--muted)); }
+}
 .verdict-bad { color: var(--bad-d); }
 .verdict-later { color: var(--muted); font-size: 1.05rem; }
-@media (prefers-color-scheme: dark) { .verdict-bad { color: var(--bad); } }
+:root[data-theme='dark'] .verdict-bad { color: var(--bad); }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .verdict-bad { color: var(--bad); }
+}
 
 /* Rewards (docs/33): the heroine on a circle of her colour, the picture cut along the circle. */
 .reward { position: relative; width: min(250px, 64vw); aspect-ratio: 1; margin: 40px auto 0; }
 .reward-plate { position: absolute; inset: 0; border-radius: 50%; background: var(--road-i, var(--accent-i)); }
-@media (prefers-color-scheme: dark) { .reward-plate { background: color-mix(in srgb, var(--road, var(--accent)) 28%, var(--bg)); } }
+:root[data-theme='dark'] .reward-plate { background: color-mix(in srgb, var(--road, var(--accent)) 28%, var(--bg)); }
+@media (prefers-color-scheme: dark) {
+:root[data-theme='system'] .reward-plate { background: color-mix(in srgb, var(--road, var(--accent)) 28%, var(--bg)); }
+}
 .reward-crop { position: absolute; inset: -12% 0 0; border-radius: 0 0 999px 999px / 0 0 50% 50%; overflow: hidden; }
 .reward-crop img { position: absolute; left: 50%; transform: translateX(-50%); display: block; }
 .reward-art { top: 0; width: 100%; height: 100%; object-fit: contain; object-position: 50% 100%; }
@@ -454,10 +510,13 @@ input[type="checkbox"] { accent-color: var(--accent); width: 20px; height: 20px;
 .heroine-card .sprite-avatar { width: 92px; height: 92px; background-color: #fff; border: 3px solid #fff; box-shadow: 0 3px 0 color-mix(in srgb, var(--road) 35%, transparent); }
 .heroine-counts { display: flex; gap: 14px; margin-top: 6px; font-weight: 900; }
 .heroine-counts span { display: flex; align-items: center; gap: 4px; }
+:root[data-theme='dark'] .heroine-card { background: color-mix(in srgb, var(--road) 18%, var(--bg)); }
+:root[data-theme='dark'] .heroine-card .card-title { color: var(--road); }
+:root[data-theme='dark'] .heroine-card p { color: var(--text); }
 @media (prefers-color-scheme: dark) {
-  .heroine-card { background: color-mix(in srgb, var(--road) 18%, var(--bg)); }
-  .heroine-card .card-title { color: var(--road); }
-  .heroine-card p { color: var(--text); }
+:root[data-theme='system'] .heroine-card { background: color-mix(in srgb, var(--road) 18%, var(--bg)); }
+:root[data-theme='system'] .heroine-card .card-title { color: var(--road); }
+:root[data-theme='system'] .heroine-card p { color: var(--text); }
 }
 
 /* Heroine page: her colour behind the animated figure. */
