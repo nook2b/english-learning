@@ -47,7 +47,7 @@ def lines_of(unit: dict):
         for e in s["exercises"]:
             t = e["type"]
             if t == "scene":
-                for line in e["lines"] + [i["reaction"] for i in e["intents"]] + [e["clarify"]]:
+                for line in e["lines"] + [i["reaction"] for i in e["intents"]] + [e["clarify"]] + e.get("after", []):
                     yield line["speaker"], line["text"], line.get("expr"), line.get("delivery")
             elif t in ("listening", "dictation"):
                 yield e["speaker"], e["audio"], None, e.get("delivery")

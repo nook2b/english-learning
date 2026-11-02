@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import the celebration pictures from docs/29-reward-art-brief.md.
+"""Import the celebration pictures from docs/33-reward-art-brief.md.
 
 Takes the PNGs named as in the brief ({heroine}_{moment}.png, trio_{moment}.png),
 checks the size and the transparent background, scales them for the app and

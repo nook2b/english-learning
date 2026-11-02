@@ -148,5 +148,40 @@
  "writing": {
   "kind": "skill",
   "ru": "Письмо"
+ },
+ "there_is": {
+  "kind": "topic",
+  "ru": "There is / there are",
+  "cheatsheet": "cheatsheets/there_is.json"
+ },
+ "place_prepositions": {
+  "kind": "topic",
+  "ru": "Где находится: next to, opposite, between",
+  "cheatsheet": "cheatsheets/place_prepositions.json"
+ },
+ "function_problem": {
+  "kind": "topic",
+  "ru": "Как описать неполадку",
+  "cheatsheet": "cheatsheets/function_problem.json"
+ },
+ "function_requests": {
+  "kind": "topic",
+  "ru": "Вежливые просьбы: Can / Could you, Would you mind",
+  "cheatsheet": "cheatsheets/function_requests.json"
+ },
+ "function_offers": {
+  "kind": "topic",
+  "ru": "Предложить и отказаться: Shall I, I'll, Sorry, I can't",
+  "cheatsheet": "cheatsheets/function_offers.json"
+ },
+ "preferences": {
+  "kind": "topic",
+  "ru": "Предпочтения: like, prefer, I'd rather",
+  "cheatsheet": "cheatsheets/preferences.json"
+ },
+ "adjective_order": {
+  "kind": "topic",
+  "ru": "Порядок прилагательных: a small old lamp",
+  "cheatsheet": "cheatsheets/adjective_order.json"
  }
 }

@@ -1,0 +1,133 @@
+{
+ "tag": "adjective_order",
+ "items": [
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-adjective_order-01",
+    "type": "choice",
+    "prompt": "She has a ___ bag.",
+    "options": [
+     "small pink",
+     "pink small",
+     "smally pink"
+    ],
+    "answer": "small pink",
+    "tags": [
+     "adjective_order"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-adjective_order-02",
+    "type": "choice",
+    "prompt": "It's a ___ table.",
+    "options": [
+     "long wooden",
+     "wooden long",
+     "long and wood"
+    ],
+    "answer": "long wooden",
+    "tags": [
+     "adjective_order"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-adjective_order-03",
+    "type": "choice",
+    "prompt": "We found an ___ recorder.",
+    "options": [
+     "old black",
+     "black old",
+     "oldly black"
+    ],
+    "answer": "old black",
+    "tags": [
+     "adjective_order"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-adjective_order-04",
+    "type": "choice",
+    "prompt": "There are two ___ cushions on the chair.",
+    "options": [
+     "soft blue",
+     "blue soft",
+     "softly blue"
+    ],
+    "answer": "soft blue",
+    "tags": [
+     "adjective_order"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-adjective_order-05",
+    "type": "fill",
+    "prompt": "A small ___ lamp: it is old.",
+    "answers": [
+     "old"
+    ],
+    "tags": [
+     "adjective_order"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-adjective_order-06",
+    "type": "choice",
+    "prompt": "Iris uses a ___ notebook.",
+    "options": [
+     "thin brown",
+     "brown thin",
+     "thin and brown"
+    ],
+    "answer": "thin brown",
+    "tags": [
+     "adjective_order"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-adjective_order-07",
+    "type": "fix",
+    "sentence": "We need a white small card.",
+    "answers": [
+     "We need a small white card."
+    ],
+    "tags": [
+     "adjective_order"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-adjective_order-08",
+    "type": "fix",
+    "sentence": "It's a wooden narrow shelf.",
+    "answers": [
+     "It's a narrow wooden shelf.",
+     "It is a narrow wooden shelf."
+    ],
+    "tags": [
+     "adjective_order"
+    ]
+   }
+  }
+ ]
+}

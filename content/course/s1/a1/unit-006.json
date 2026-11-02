@@ -1,0 +1,1088 @@
+{
+  "id": "006",
+  "title": "Описать проблему",
+  "goal": "Описать наблюдаемую неполадку и отличить её от предположения о причине.",
+  "focus": "Present Continuous для того, что происходит сейчас (isn't working, is buzzing, is flashing); прилагательные состояния (broken, loose, dusty, too loud); наблюдение вместо догадки.",
+  "outcome": "Составлена заявка с тремя наблюдениями: гул при подключении микрофона, мигающий индикатор записи и эхо. Выбрано, с какой проверки попросить техника начать; диагноз и ремонт ещё впереди.",
+  "expressions": [
+    "isn't working",
+    "is buzzing",
+    "is flashing",
+    "is making a noise",
+    "is getting louder",
+    "something is wrong with",
+    "broken",
+    "loose",
+    "dusty",
+    "too loud",
+    "at the moment",
+    "check the connection"
+  ],
+  "glossary": [
+    "repair request",
+    "recording light",
+    "ceiling light",
+    "switched off",
+    "unplugged",
+    "echo"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Заявка без слова «всё»",
+      "intro": "Памятка к заявке о неполадках. Прочитай и ответь: что в заявку писать, а что нет.",
+      "place": "room17",
+      "frame": {
+        "setting": "Понедельник, 12:10. Встреча короткая: Рэй должна уйти до лаборатории, Айрис — позже в библиотеку. Команда проверяет комнату перед получением мебели. Мика открывает памятку к электронной заявке.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "“Everything is broken” won't fit in this box. Also, it isn't true.",
+            "ru": "«Всё сломано» в это поле не влезет. И это неправда.",
+            "expr": "phone/thinking"
+          },
+          {
+            "speaker": "rei",
+            "text": "The recorder works. Start there.",
+            "ru": "Рекордер работает. С этого начнём.",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u006-s1-e1",
+          "type": "reading",
+          "title": "Before you send a repair request",
+          "text": "Please tell us what is happening now and where you notice it. “The microphone isn't working” is a useful start, but a short description is better. Is it silent, or is it making a noise? Is a light flashing? Does the problem happen all the time?\nWrite what you can observe. You do not need to name the cause. Leave damaged equipment switched off. Do not open sockets or repair cables yourself. Add your room number and a time when someone can let the technician in.",
+          "ru": "Расскажите, что происходит сейчас и где вы это замечаете. «Микрофон не работает» — полезное начало, но лучше добавить короткое описание. Звука нет или слышен шум? Мигает индикатор? Проблема возникает постоянно? Пишите то, что можете наблюдать. Называть причину не нужно. Оставляйте повреждённое оборудование выключенным. Не вскрывайте розетки и не ремонтируйте кабели самостоятельно. Добавьте номер комнаты и время, когда кто-нибудь сможет впустить техника.",
+          "questions": [
+            {
+              "prompt": "What should the request describe?",
+              "options": [
+                "Only the equipment brand",
+                "What is happening and where",
+                "Everyone's timetable"
+              ],
+              "answer": "What is happening and where"
+            },
+            {
+              "prompt": "Do students need to name the cause?",
+              "options": [
+                "No",
+                "Yes",
+                "Only for lights"
+              ],
+              "answer": "No"
+            },
+            {
+              "prompt": "What should happen to damaged equipment?",
+              "options": [
+                "Leave it switched off",
+                "Open it",
+                "Test it all afternoon"
+              ],
+              "answer": "Leave it switched off"
+            },
+            {
+              "prompt": "Why must the team give a time?",
+              "options": [
+                "So someone can let the technician in",
+                "To book lunch",
+                "To reserve the library"
+              ],
+              "answer": "So someone can let the technician in"
+            }
+          ],
+          "tags": [
+            "reading",
+            "function_problem",
+            "present_continuous"
+          ],
+          "look": "notice"
+        },
+        {
+          "id": "u006-s1-e2",
+          "type": "choice",
+          "prompt": "“The microphone ___ working” is a useful start.",
+          "options": [
+            "isn't",
+            "doesn't",
+            "not"
+          ],
+          "answer": "isn't",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Сейчас не работает — isn't working.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s1-e3",
+          "type": "choice",
+          "prompt": "Is it silent, or is it ___ a noise?",
+          "options": [
+            "making",
+            "make",
+            "makes"
+          ],
+          "answer": "making",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Is it making a noise? — что происходит сейчас.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "is buzzing",
+              "ru": "гудит"
+            },
+            {
+              "en": "is flashing",
+              "ru": "мигает"
+            },
+            {
+              "en": "broken",
+              "ru": "сломанный"
+            },
+            {
+              "en": "loose",
+              "ru": "неплотный, разболтанный"
+            },
+            {
+              "en": "dusty",
+              "ru": "пыльный"
+            },
+            {
+              "en": "too loud",
+              "ru": "слишком громкий"
+            }
+          ],
+          "tags": [
+            "function_problem"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Symptoms first. Guesses can wait.",
+          "ru": "Сначала признаки. Догадки подождут.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Что именно слышно",
+      "intro": "Две голосовые заметки для заявки. Слушай без текста.",
+      "place": "room17",
+      "frame": {
+        "setting": "Общий чат «Room 17». Рэй и Мика сохраняют два коротких наблюдения для заявки. Рэй уже отключила подозрительный кабель; повторного включения ради упражнения нет. Запись сухого голоса воспроизводится через исправный рекордер.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Earlier test. Listen to this.",
+            "ru": "Предыдущая проба. Послушай это.",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u006-s2-e1",
+          "type": "listening",
+          "speaker": "rei",
+          "audio": "The recorder is working. The noise starts when we connect the microphone with the old cable. I'm leaving that cable unplugged. The room is also making our voices echo.",
+          "ru": "Рекордер работает. Шум начинается, когда мы подключаем микрофон старым кабелем. Я оставляю этот кабель отключённым. А ещё в комнате эхо от наших голосов.",
+          "questions": [
+            {
+              "prompt": "When does the noise start?",
+              "options": [
+                "When a door opens",
+                "When the old microphone cable is connected",
+                "When Mika types"
+              ],
+              "answer": "When the old microphone cable is connected"
+            },
+            {
+              "prompt": "Is the old cable connected now?",
+              "options": [
+                "No",
+                "Yes",
+                "The message doesn't say"
+              ],
+              "answer": "No"
+            }
+          ],
+          "tags": [
+            "listening",
+            "present_continuous",
+            "function_problem"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Голосовое Рэй в чате «Room 17»"
+        },
+        {
+          "id": "u006-s2-e2",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "The small recording light by the door is flashing. It isn't staying red. The main ceiling light is working normally. I'm taking a photo of the small light for our request.",
+          "ru": "Маленький индикатор записи у двери мигает. Он не горит ровным красным светом. Основной потолочный свет работает нормально. Я фотографирую маленький индикатор для заявки.",
+          "questions": [
+            {
+              "prompt": "Which light is flashing?",
+              "options": [
+                "The ceiling light",
+                "The small recording light",
+                "The corridor light"
+              ],
+              "answer": "The small recording light"
+            }
+          ],
+          "tags": [
+            "listening",
+            "present_continuous"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Голосовое Мики в чате «Room 17»"
+        },
+        {
+          "id": "u006-s2-e3",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "The small recording light is flashing.",
+          "answers": [
+            "The small recording light is flashing."
+          ],
+          "tags": [
+            "dictation",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s2-e4",
+          "type": "dictation",
+          "speaker": "rei",
+          "audio": "The recorder is working.",
+          "answers": [
+            "The recorder is working."
+          ],
+          "delivery": "[quietly, focused]",
+          "tags": [
+            "dictation",
+            "present_continuous"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Two electrical symptoms. The echo goes in a separate note.",
+          "ru": "Два признака неполадок оборудования. Эхо — отдельным примечанием.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Сейчас происходит",
+      "intro": "Что происходит прямо сейчас — Present Continuous: am / is / are + -ing. The light is flashing. The microphone isn't working. Something is buzzing.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис разделяет текущие наблюдения и запись предыдущей пробы. В упражнения идут предложения, которые можно использовать в описании.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "These lines describe a test in progress. Keep “now” in mind.",
+            "ru": "Эти строки описывают идущую проверку. Помни о «сейчас».",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u006-s3-e1",
+          "type": "choice",
+          "prompt": "The microphone ___ working properly.",
+          "options": [
+            "isn't",
+            "doesn't",
+            "aren't"
+          ],
+          "answer": "isn't",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Сейчас не работает — isn't working.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s3-e2",
+          "type": "choice",
+          "prompt": "Something ___ near the microphone.",
+          "options": [
+            "is buzzing",
+            "buzzing",
+            "buzzes now"
+          ],
+          "answer": "is buzzing",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Is + -ing: is buzzing.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s3-e3",
+          "type": "fill",
+          "prompt": "The small red light ___ flashing.",
+          "answers": [
+            "is"
+          ],
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Light — он, is flashing.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s3-e4",
+          "type": "fill",
+          "prompt": "The noise is ___ louder.",
+          "answers": [
+            "getting"
+          ],
+          "hint": "становиться",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Is getting louder — становится громче.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s3-e5",
+          "type": "choice",
+          "prompt": "Rei ___ the recording.",
+          "options": [
+            "is checking",
+            "checking",
+            "is check"
+          ],
+          "answer": "is checking",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Is + глагол с -ing.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s3-e6",
+          "type": "transform",
+          "instruction": "Сделай отрицание",
+          "sentence": "We are recording a guide page at the moment.",
+          "answers": [
+            "We aren't recording a guide page at the moment.",
+            "We are not recording a guide page at the moment."
+          ],
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Are not / aren't + -ing.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s3-e7",
+          "type": "fix",
+          "sentence": "Mika taking a photo of the light.",
+          "answers": [
+            "Mika is taking a photo of the light."
+          ],
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Не забудь is: Mika is taking.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s3-e8",
+          "type": "fix",
+          "sentence": "The light is flash.",
+          "answers": [
+            "The light is flashing."
+          ],
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "После is — форма с -ing.",
+          "context": "Заметка для заявки"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "A description of the test, not a theory about the building.",
+          "ru": "Описание проверки, а не теория о здании.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Состояние или действие",
+      "intro": "Состояние и действие — разное. Состояние: is broken, is dusty, is loose, is too loud (прилагательное после is). Действие сейчас: is buzzing, is flashing (-ing). Something is wrong with… — с чем-то что-то не так.",
+      "place": "room17",
+      "frame": {
+        "setting": "На столе лежит отключённый микрофонный кабель. Никто не снимает с него изоляцию. Айрис сопоставляет слова состояния с наблюдаемым действием.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "“Dusty” and “buzzing” tell us different things. We may need both.",
+            "ru": "«Пыльный» и «гудит» сообщают разное. Могут пригодиться оба.",
+            "expr": "notebook/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u006-s4-e1",
+          "type": "sort",
+          "instruction": "Состояние или действие сейчас?",
+          "categories": [
+            {
+              "id": "state",
+              "label": "Состояние: is + прилагательное"
+            },
+            {
+              "id": "action",
+              "label": "Действие сейчас: is + -ing"
+            }
+          ],
+          "items": [
+            {
+              "text": "The shelf is dusty.",
+              "category": "state"
+            },
+            {
+              "text": "The light is flashing.",
+              "category": "action"
+            },
+            {
+              "text": "The cable may be loose.",
+              "category": "state"
+            },
+            {
+              "text": "Something is buzzing.",
+              "category": "action"
+            },
+            {
+              "text": "The sound is too loud.",
+              "category": "state"
+            },
+            {
+              "text": "The microphone isn't recording clearly.",
+              "category": "action"
+            }
+          ],
+          "tags": [
+            "function_problem",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s4-e2",
+          "type": "choice",
+          "prompt": "The shelf ___.",
+          "options": [
+            "is dusty",
+            "is dusting",
+            "dusty"
+          ],
+          "answer": "is dusty",
+          "tags": [
+            "function_problem"
+          ],
+          "explain": "Dusty — прилагательное: is dusty, без -ing.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s4-e3",
+          "type": "choice",
+          "prompt": "The sound on this test recording is ___ loud.",
+          "options": [
+            "too",
+            "to",
+            "very much"
+          ],
+          "answer": "too",
+          "tags": [
+            "function_problem"
+          ],
+          "explain": "Too loud — слишком громкий.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s4-e4",
+          "type": "fill",
+          "prompt": "Something is ___ with the recording light.",
+          "answers": [
+            "wrong"
+          ],
+          "hint": "не так",
+          "tags": [
+            "function_problem"
+          ],
+          "explain": "Something is wrong with… — что-то не так с…",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s4-e5",
+          "type": "choice",
+          "prompt": "We don't know if the cable is ___.",
+          "options": [
+            "broken",
+            "breaking",
+            "break"
+          ],
+          "answer": "broken",
+          "tags": [
+            "function_problem"
+          ],
+          "explain": "Broken — сломанный, состояние.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s4-e6",
+          "type": "fill",
+          "prompt": "Could someone check the ___?",
+          "answers": [
+            "connection"
+          ],
+          "hint": "соединение",
+          "tags": [
+            "function_problem"
+          ],
+          "explain": "Check the connection — проверить соединение.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s4-e7",
+          "type": "fix",
+          "sentence": "The shelf is dustying.",
+          "answers": [
+            "The shelf is dusty."
+          ],
+          "tags": [
+            "function_problem"
+          ],
+          "explain": "Dusty — прилагательное, -ing не нужен.",
+          "context": "Заметка для заявки"
+        },
+        {
+          "id": "u006-s4-e8",
+          "type": "translate",
+          "ru": "С индикатором записи что-то не так.",
+          "answers": [
+            "Something is wrong with the recording light."
+          ],
+          "tags": [
+            "function_problem"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Dust isn't a diagnosis.",
+          "ru": "Пыль — не диагноз.",
+          "expr": "deadpan"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Что вписать в заявку",
+      "intro": "Выбери, что Мика впишет в заявку первым, и опиши неполадку сам.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u006-s5-e1",
+          "type": "scene",
+          "setting": "Мика открыла поле «Описание». Для первой строки можно выбрать любой из двух реальных симптомов; после ответа она добавит второй.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "What should I write first? Something we can actually check.",
+              "ru": "Что написать первым? То, что действительно можно проверить.",
+              "expr": "phone/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Описать шум микрофона",
+              "answers": [
+                "The microphone is making a buzzing noise.",
+                "Something is buzzing when we connect the microphone."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "The noise first. I'll add when it happens.",
+                "ru": "Сначала шум. Добавлю, когда он возникает.",
+                "expr": "phone/focused"
+              }
+            },
+            {
+              "label": "Описать мигающий индикатор",
+              "answers": [
+                "The small recording light is flashing.",
+                "The light by the door isn't staying red."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "The small light, not the ceiling light. I'll make that clear.",
+                "ru": "Маленький индикатор, а не потолочный свет. Это уточню.",
+                "expr": "phone/focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Do you mean the noise or the light?",
+            "ru": "Ты про шум или про индикатор?",
+            "expr": "thinking"
+          },
+          "tags": [
+            "function_problem",
+            "present_continuous"
+          ],
+          "context": "Наблюдение вместо догадки"
+        },
+        {
+          "id": "u006-s5-e2",
+          "type": "translate",
+          "ru": "Микрофон не работает.",
+          "answers": [
+            "The microphone isn't working.",
+            "The microphone is not working."
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s5-e3",
+          "type": "translate",
+          "ru": "Возле микрофона что-то гудит.",
+          "answers": [
+            "Something is buzzing near the microphone."
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s5-e4",
+          "type": "translate",
+          "ru": "Маленький индикатор мигает.",
+          "answers": [
+            "The small light is flashing.",
+            "The small recording light is flashing."
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s5-e5",
+          "type": "translate",
+          "ru": "Звук слишком громкий.",
+          "answers": [
+            "The sound is too loud."
+          ],
+          "tags": [
+            "function_problem"
+          ]
+        },
+        {
+          "id": "u006-s5-e6",
+          "type": "write",
+          "situation": "Напиши в заявку одну строку: что именно сейчас не так с микрофоном (наблюдение, не догадка).",
+          "answers": [
+            "The microphone is making a buzzing noise.",
+            "The microphone is making a noise.",
+            "Something is buzzing when we connect the microphone.",
+            "The microphone isn't working properly.",
+            "There is a buzzing noise on the recording."
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Both symptoms are in the request. Neither one says “the building is broken”.",
+          "ru": "Оба признака в заявке. Ни один не говорит «здание сломалось».",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом",
+      "intro": "Прочитай вслух, как объяснить проблему технику.",
+      "place": "room17",
+      "frame": {
+        "setting": "Игрок репетирует, как объяснить проблему технику. Используется встроенный исправный микрофон рекордера, без старого кабеля. Это учебная репетиция, а не состоявшийся звонок.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Use the recorder's own mic.",
+            "ru": "Используй встроенный микрофон рекордера.",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u006-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "The microphone isn't working properly.",
+          "answers": [
+            "The microphone isn't working properly."
+          ],
+          "tags": [
+            "speaking",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "There is a buzzing noise on the recording.",
+          "answers": [
+            "There is a buzzing noise on the recording."
+          ],
+          "tags": [
+            "speaking",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "The small light by the door is flashing.",
+          "answers": [
+            "The small light by the door is flashing."
+          ],
+          "tags": [
+            "speaking",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Could you check the connection?",
+          "answers": [
+            "Could you check the connection?"
+          ],
+          "tags": [
+            "speaking",
+            "present_continuous"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Specific. That helps.",
+          "ru": "Конкретно. Это поможет.",
+          "expr": "recorder/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг",
+      "intro": "Быстрый круг: признаки неполадки и слова занятий 1–6.",
+      "place": "room17",
+      "frame": {
+        "setting": "Команда сверяет фото индикатора, фрагмент прежней записи и три строки заметки. На фото комнаты видна пустая стена: эхо осталось, хотя кабель уже отключён.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Match each observation to its source. Then we can send the request.",
+            "ru": "Сопоставь каждое наблюдение с его источником. Потом отправим заявку.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u006-s7-e1",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "repair request",
+              "ru": "заявка о неполадке"
+            },
+            {
+              "en": "recording light",
+              "ru": "индикатор записи"
+            },
+            {
+              "en": "unplugged",
+              "ru": "отключённый от сети"
+            },
+            {
+              "en": "echo",
+              "ru": "эхо"
+            },
+            {
+              "en": "at the moment",
+              "ru": "сейчас"
+            }
+          ],
+          "tags": [
+            "function_problem"
+          ]
+        },
+        {
+          "id": "u006-s7-e2",
+          "type": "choice",
+          "prompt": "The noise ___ when we connect the old cable.",
+          "options": [
+            "starts",
+            "is start",
+            "starting"
+          ],
+          "answer": "starts",
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "explain": "Каждый раз при подключении — Present Simple: starts."
+        },
+        {
+          "id": "u006-s7-e3",
+          "type": "choice",
+          "prompt": "Our voices ___ in the room.",
+          "options": [
+            "are echoing",
+            "echoing",
+            "is echoing"
+          ],
+          "answer": "are echoing",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Voices — они: are echoing."
+        },
+        {
+          "id": "u006-s7-e4",
+          "type": "fill",
+          "prompt": "The ceiling light ___ working normally.",
+          "answers": [
+            "is"
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s7-e5",
+          "type": "fill",
+          "prompt": "I'm ___ that cable unplugged.",
+          "answers": [
+            "leaving"
+          ],
+          "hint": "оставлять",
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s7-e6",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "It isn't staying red.",
+          "answers": [
+            "It isn't staying red."
+          ],
+          "delivery": "[quietly, focused]",
+          "tags": [
+            "dictation",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u006-s7-e7",
+          "type": "translate",
+          "ru": "Сейчас мы не записываем.",
+          "answers": [
+            "We aren't recording at the moment.",
+            "We are not recording at the moment.",
+            "We aren't recording right now.",
+            "We are not recording now."
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Three observations. No dramatic headline. Ready.",
+          "ru": "Три наблюдения. Без драматичного заголовка. Готово.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: понятная заявка",
+      "role": "mission",
+      "intro": "Миссия: доделай заявку технику — порядок проверки и одно примечание.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u006-s8-e1",
+          "type": "scene",
+          "setting": "В заявке уже есть номер комнаты, оба симптома оборудования и отдельная заметка об эхе. Рэй предлагает указать удобный порядок проверки; это не исключает вторую неполадку.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Cable or light first?",
+              "ru": "Сначала кабель или индикатор?",
+              "expr": "recorder/listening"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Попросить сначала проверить шум микрофона",
+              "answers": [
+                "Please check the microphone noise first.",
+                "Could you start with the buzzing microphone?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Sound first. Light stays listed.",
+                "ru": "Сначала звук. Индикатор остаётся в списке.",
+                "expr": "recorder/neutral"
+              },
+              "flag": "u006_check_sound_first"
+            },
+            {
+              "label": "Попросить сначала проверить мигающий индикатор",
+              "answers": [
+                "Please check the flashing light first.",
+                "Could you start with the recording light?"
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Light first. And we still need the microphone checked.",
+                "ru": "Сначала индикатор. И микрофон всё равно нужно проверить.",
+                "expr": "phone/focused"
+              },
+              "flag": "u006_check_light_first"
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Which one first? Both stay.",
+            "ru": "Что первым? Оба остаются.",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_problem"
+          ],
+          "context": "С чего начать проверку"
+        },
+        {
+          "id": "u006-s8-e2",
+          "type": "scene",
+          "setting": "Айрис просит добавить уточнение: что команда уже сделала или какая проблема останется после проверки техники.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "One more detail. What should the technician know?",
+              "ru": "Ещё одна деталь. Что должен знать техник?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Сказать, что старый кабель оставлен отключённым",
+              "answers": [
+                "We are leaving the old cable unplugged.",
+                "The old microphone cable is unplugged now."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Added. They can bring a replacement for the test.",
+                "ru": "Добавила. Можно будет принести замену для проверки.",
+                "expr": "notebook/focused"
+              }
+            },
+            {
+              "label": "Сказать, что в комнате также слышно эхо",
+              "answers": [
+                "Our voices are echoing in the room.",
+                "There is also an echo when we speak."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Added. A working cable won't change an empty wall.",
+                "ru": "Добавила. Исправный кабель не изменит пустую стену.",
+                "expr": "notebook/focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "The cable's current state, or the echo?",
+            "ru": "Текущее состояние кабеля или эхо?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_problem",
+            "present_continuous"
+          ],
+          "context": "Отдельное примечание"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Sent. Now we ask for a visit, not a miracle.",
+          "ru": "Отправлено. Теперь просим о визите, а не о чуде.",
+          "expr": "phone/happy"
+        },
+        {
+          "speaker": "rei",
+          "text": "Keep the old cable aside.",
+          "ru": "Старый кабель пока отложим.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    }
+  ]
+}

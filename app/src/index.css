@@ -1,4 +1,4 @@
-/* Room 17 design system v0.2 (design/ui-kit.css, docs/29). Chunky "3D" controls with a
+/* Room 17 design system v0.2 (design/ui-kit.css, docs/33). Chunky "3D" controls with a
    darker bottom edge, Nunito, the indigo "on air" accent and one colour per heroine. */
 :root {
   --bg: #ffffff;
@@ -427,7 +427,7 @@ input[type="checkbox"] { accent-color: var(--accent); width: 20px; height: 20px;
 .verdict-later { color: var(--muted); font-size: 1.05rem; }
 @media (prefers-color-scheme: dark) { .verdict-bad { color: var(--bad); } }
 
-/* Rewards (docs/29): the heroine on a circle of her colour, the picture cut along the circle. */
+/* Rewards (docs/33): the heroine on a circle of her colour, the picture cut along the circle. */
 .reward { position: relative; width: min(250px, 64vw); aspect-ratio: 1; margin: 40px auto 0; }
 .reward-plate { position: absolute; inset: 0; border-radius: 50%; background: var(--road-i, var(--accent-i)); }
 @media (prefers-color-scheme: dark) { .reward-plate { background: color-mix(in srgb, var(--road, var(--accent)) 28%, var(--bg)); } }

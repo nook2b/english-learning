@@ -1,0 +1,141 @@
+{
+ "tag": "function_offers",
+ "items": [
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_offers-01",
+    "type": "choice",
+    "prompt": "___ I close the window?",
+    "options": [
+     "Shall",
+     "Will",
+     "Do"
+    ],
+    "answer": "Shall",
+    "tags": [
+     "function_offers"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_offers-02",
+    "type": "choice",
+    "prompt": "Don't worry, I ___ bring the batteries.",
+    "options": [
+     "'ll",
+     "shall to",
+     "am bring"
+    ],
+    "answer": "'ll",
+    "tags": [
+     "function_offers"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_offers-03",
+    "type": "choice",
+    "prompt": "Sorry, I can't come ___ I have a seminar.",
+    "options": [
+     "because",
+     "so",
+     "but"
+    ],
+    "answer": "because",
+    "tags": [
+     "function_offers"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_offers-04",
+    "type": "fill",
+    "prompt": "Shall I ___ the list? I have my phone.",
+    "answers": [
+     "keep"
+    ],
+    "tags": [
+     "function_offers"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_offers-05",
+    "type": "fill",
+    "prompt": "I can't lift it, but I can hold the door ___.",
+    "answers": [
+     "instead"
+    ],
+    "tags": [
+     "function_offers"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_offers-06",
+    "type": "fill",
+    "prompt": "Sure, I ___ help after lunch.",
+    "answers": [
+     "can"
+    ],
+    "tags": [
+     "function_offers"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_offers-07",
+    "type": "transform",
+    "instruction": "Предложи помощь: начни с Shall I",
+    "sentence": "bring the trolley",
+    "answers": [
+     "Shall I bring the trolley?"
+    ],
+    "tags": [
+     "function_offers"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_offers-08",
+    "type": "fix",
+    "sentence": "Shall I to meet Alex at the door?",
+    "answers": [
+     "Shall I meet Alex at the door?"
+    ],
+    "tags": [
+     "function_offers"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_offers-09",
+    "type": "fix",
+    "sentence": "Sorry, I can't help, I'm busy because.",
+    "answers": [
+     "Sorry, I can't help because I'm busy."
+    ],
+    "tags": [
+     "function_offers"
+    ]
+   }
+  }
+ ]
+}

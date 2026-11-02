@@ -37,7 +37,7 @@ export function LineVoice({ text, speaker, expr, delivery: tags }: { text: strin
   const state = useVoice(text, speaker)
   const delivery = { expr, delivery: tags }
   useEffect(() => preload([{ text, speaker, expr, delivery: tags }]), [text, speaker, expr, tags])
-  if (!canVoice()) return null
+  if (!canVoice() || speaker === 'narrator') return null
   return (
     <button className="line-voice" aria-label={state === 'playing' ? 'Пауза' : 'Озвучить реплику'} onClick={() => (state === 'playing' ? pause() : state === 'paused' ? resume() : play(text, speaker, false, delivery))}>
       {state === 'playing' ? <span className="line-voice-pause">⏸</span> : <Icon name="speaker" size={26} />}

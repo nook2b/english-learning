@@ -1,0 +1,1253 @@
+{
+  "id": "008",
+  "title": "Рассказать о предпочтениях",
+  "goal": "Высказать предпочтение, объяснить его и договориться о варианте, учитывающем остальных.",
+  "focus": "Предпочтения: like / love / prefer + -ing, prefer A to B, I'd rather + глагол, I'd prefer + to; How about…?; описание предметов: a small old lamp, a narrow wooden shelf. В конце — проверка модуля 005–008.",
+  "outcome": "Комната 17 обустроена для работы вчетвером. Угол записи закрыт мягкими панелями, письменный стол стоит в выбранном игроком месте, коробки убраны на напольную полку, четвёртый стул свободен. Короткая проверка подтверждает: гул исчез, эха стало меньше. Карточка проверенного маршрута добавлена в локальный черновик гида.",
+  "expressions": [
+    "like working",
+    "love planning",
+    "prefer",
+    "I'd rather",
+    "I'd prefer",
+    "How about",
+    "a small old lamp",
+    "a narrow wooden shelf",
+    "a quiet corner",
+    "enough room",
+    "leave space",
+    "inside wall"
+  ],
+  "glossary": [
+    "writing table",
+    "recording corner",
+    "soft panels",
+    "work areas",
+    "clear doorway"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Четыре человека, одна комната",
+      "intro": "Айрис записала пожелания всех четверых. Прочитай и ответь.",
+      "place": "room17",
+      "frame": {
+        "setting": "Та же среда, около 13:20. Мебель внутри, но пока стоит у свободной стены. У команды сорок минут до конца обычной встречи. Айрис записала пожелания, прежде чем кто-нибудь начал всё двигать.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "I want the board where people can see it. Otherwise it is a secret plan.",
+            "ru": "Хочу доску там, где её видно. Иначе получится тайный план.",
+            "expr": "phone/thinking"
+          },
+          {
+            "speaker": "rei",
+            "text": "I want less echo.",
+            "ru": "Я хочу меньше эха.",
+            "expr": "neutral"
+          },
+          {
+            "speaker": "iris",
+            "text": "And somewhere to put a sentence down without moving a microphone.",
+            "ru": "А я — место, где можно записать предложение, не переставляя микрофон.",
+            "expr": "notebook/dry_smile"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u008-s1-e1",
+          "type": "reading",
+          "title": "Room 17 — what we need",
+          "text": "Mika likes planning with everyone around one table. She would prefer a clear board near the entrance, so nobody misses the next meeting.\nRei prefers recording in a quiet corner to recording beside the door. The two soft panels can stand near the inside wall, away from the entrance.\nIris likes writing with enough room for her notebook. She can work by the window or against the other wall. The narrow wooden shelf can hold the boxes.\nWe also need a fourth chair, a clear doorway and space to walk between the two work areas.",
+          "ru": "Мика любит планировать, когда все сидят за одним столом. Она предпочла бы хорошо видимую доску рядом со входом, чтобы никто не пропустил следующую встречу. Рэй предпочитает записывать в тихом углу, а не возле двери. Две мягкие панели можно поставить у внутренней стены, подальше от входа. Айрис любит писать, когда хватает места для блокнота. Она может работать у окна или у другой стены. Узкая деревянная полка подойдёт для коробок. Также нам нужны четвёртый стул, свободный дверной проём и проход между двумя рабочими зонами.",
+          "questions": [
+            {
+              "prompt": "Why does Mika want the board near the entrance?",
+              "options": [
+                "To hide the plan",
+                "So people see meeting information",
+                "To cover the window"
+              ],
+              "answer": "So people see meeting information"
+            },
+            {
+              "prompt": "Where would Rei prefer to record?",
+              "options": [
+                "Beside the door",
+                "In a quiet corner",
+                "In the corridor"
+              ],
+              "answer": "In a quiet corner"
+            },
+            {
+              "prompt": "Which two places could work for Iris?",
+              "options": [
+                "By the window or against the other wall",
+                "In the doorway or outside",
+                "Only beside the microphone"
+              ],
+              "answer": "By the window or against the other wall"
+            },
+            {
+              "prompt": "What must stay clear?",
+              "options": [
+                "The shelf",
+                "The doorway",
+                "The board"
+              ],
+              "answer": "The doorway"
+            }
+          ],
+          "tags": [
+            "reading",
+            "preferences"
+          ],
+          "look": "note"
+        },
+        {
+          "id": "u008-s1-e2",
+          "type": "choice",
+          "prompt": "Rei prefers recording in a quiet corner ___ recording beside the door.",
+          "options": [
+            "to",
+            "than",
+            "of"
+          ],
+          "answer": "to",
+          "tags": [
+            "preferences"
+          ],
+          "explain": "Prefer A to B.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s1-e3",
+          "type": "choice",
+          "prompt": "Iris likes ___ with enough room for her notebook.",
+          "options": [
+            "writing",
+            "write",
+            "to writing"
+          ],
+          "answer": "writing",
+          "tags": [
+            "preferences"
+          ],
+          "explain": "Like + -ing.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "prefer",
+              "ru": "предпочитать"
+            },
+            {
+              "en": "I'd rather",
+              "ru": "я лучше…"
+            },
+            {
+              "en": "How about…?",
+              "ru": "как насчёт…?"
+            },
+            {
+              "en": "enough room",
+              "ru": "достаточно места"
+            },
+            {
+              "en": "a quiet corner",
+              "ru": "тихий угол"
+            },
+            {
+              "en": "leave space",
+              "ru": "оставить место"
+            }
+          ],
+          "tags": [
+            "preferences"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Two possible desk positions. Neither is a personal insult.",
+          "ru": "Два возможных места для стола. Ни одно не является личным оскорблением.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Что важнее в расстановке",
+      "intro": "Две голосовые заметки с пожеланиями к расстановке. Слушай без текста.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика сохраняет в общий чат «Room 17» две короткие записи с пожеланиями. Они помогут свериться при перестановке; никто не отправляет личное приглашение.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Let's record the reasons too. Arrows on a plan don't explain everything.",
+            "ru": "Запишем и причины. Стрелки на плане объясняют не всё.",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u008-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "I like working around one table. I'd prefer the board near the door, where everyone can read it. The photo can wait until we're finished. I don't want a pretty room that nobody can use.",
+          "ru": "Мне нравится работать всем за одним столом. Я предпочла бы доску рядом с дверью, чтобы все могли её прочитать. Фото подождёт до конца. Мне не нужна красивая комната, которой невозможно пользоваться.",
+          "questions": [
+            {
+              "prompt": "When does Mika want to take the photo?",
+              "options": [
+                "Before moving anything",
+                "When the room is finished",
+                "During the equipment check"
+              ],
+              "answer": "When the room is finished"
+            }
+          ],
+          "tags": [
+            "listening",
+            "preferences"
+          ],
+          "context": "Голосовое Мики в чате «Room 17»"
+        },
+        {
+          "id": "u008-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "I'd rather keep the writing table separate from the recording corner. I like writing by the window, but the other wall works too. We need enough room for four people, not just for my notebook.",
+          "ru": "Я предпочла бы держать письменный стол отдельно от угла записи. Мне нравится писать у окна, но другая стена тоже подходит. Нам нужно место для четырёх человек, а не только для моего блокнота.",
+          "questions": [
+            {
+              "prompt": "What would Iris rather keep separate?",
+              "options": [
+                "The shelf and the boxes",
+                "The writing table and recording corner",
+                "The chair and the window"
+              ],
+              "answer": "The writing table and recording corner"
+            },
+            {
+              "prompt": "Does Iris accept only the window position?",
+              "options": [
+                "Yes",
+                "No",
+                "She does not mention the window"
+              ],
+              "answer": "No"
+            }
+          ],
+          "tags": [
+            "listening",
+            "preferences"
+          ],
+          "context": "Голосовое Айрис в чате «Room 17»"
+        },
+        {
+          "id": "u008-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "I'd rather keep the doorway clear.",
+          "answers": [
+            "I'd rather keep the doorway clear."
+          ],
+          "tags": [
+            "dictation",
+            "preferences"
+          ]
+        },
+        {
+          "id": "u008-s2-e4",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "I like working around one table.",
+          "answers": [
+            "I like working around one table."
+          ],
+          "tags": [
+            "dictation",
+            "preferences"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Pretty can stay. Echo can't.",
+          "ru": "Красоту оставим. Эхо — нет.",
+          "expr": "smirk"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Что нравится и что предпочитаешь",
+      "intro": "Нравится и предпочитаю: like / love / prefer + -ing (I like working). Prefer A to B — одно больше другого. I'd rather + глагол без to (I'd rather wait). I'd prefer + to (I'd prefer to wait). Предложить: How about + -ing?",
+      "place": "room17",
+      "frame": {
+        "setting": "На двух бумажных вариантах плана пока только стрелки. Айрис добавляет короткие объяснения предпочтений.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Say what you prefer. “Fine” doesn't tell us which plan to use.",
+            "ru": "Скажи, что предпочитаешь. «Нормально» не объясняет, какой план выбрать.",
+            "expr": "notebook/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u008-s3-e1",
+          "type": "choice",
+          "prompt": "Mika likes ___ around one table.",
+          "options": [
+            "working",
+            "work",
+            "to working"
+          ],
+          "answer": "working",
+          "tags": [
+            "preferences"
+          ],
+          "explain": "Like + -ing.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s3-e2",
+          "type": "choice",
+          "prompt": "She loves ___ with the team.",
+          "options": [
+            "planning",
+            "plan",
+            "plans"
+          ],
+          "answer": "planning",
+          "tags": [
+            "preferences"
+          ],
+          "explain": "Love + -ing.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s3-e3",
+          "type": "fill",
+          "prompt": "Rei prefers ___ away from the door.",
+          "answers": [
+            "recording"
+          ],
+          "hint": "record",
+          "tags": [
+            "preferences"
+          ],
+          "explain": "Prefer + -ing.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s3-e4",
+          "type": "choice",
+          "prompt": "I prefer sitting by the wall ___ sitting in the doorway.",
+          "options": [
+            "to",
+            "than",
+            "that"
+          ],
+          "answer": "to",
+          "tags": [
+            "preferences"
+          ],
+          "explain": "Prefer A to B.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s3-e5",
+          "type": "choice",
+          "prompt": "I'd rather ___ the table than block the door.",
+          "options": [
+            "move",
+            "moving",
+            "to move"
+          ],
+          "answer": "move",
+          "tags": [
+            "preferences"
+          ],
+          "explain": "I'd rather + глагол без to.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s3-e6",
+          "type": "choice",
+          "prompt": "I'd prefer ___ the shelf near the table.",
+          "options": [
+            "to keep",
+            "keep",
+            "keeping"
+          ],
+          "answer": "to keep",
+          "tags": [
+            "preferences"
+          ],
+          "explain": "I'd prefer + to + глагол.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s3-e7",
+          "type": "fill",
+          "prompt": "How about ___ the boxes onto the shelf?",
+          "answers": [
+            "moving"
+          ],
+          "hint": "move",
+          "tags": [
+            "preferences"
+          ],
+          "explain": "How about + -ing?",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s3-e8",
+          "type": "fix",
+          "sentence": "I'd rather to move the table.",
+          "answers": [
+            "I'd rather move the table."
+          ],
+          "tags": [
+            "preferences"
+          ],
+          "explain": "После I'd rather — глагол без to.",
+          "context": "План расстановки"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "A preference and a reason. Now we can compare plans.",
+          "ru": "Предпочтение и причина. Теперь можно сравнивать планы.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Какую именно полку",
+      "intro": "Описание предмета: сначала размер, потом возраст, цвет, материал — a small old lamp, a narrow wooden shelf, two soft grey panels.",
+      "place": "room17",
+      "frame": {
+        "setting": "На полку нужно убрать коробки. Айрис подписывает схему, чтобы «эта штука» не означала три разных предмета. Маленькая старая лампа уже была в комнате: её не покупали в этом модуле.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "We have three things called “that thing”. Let's give them better names.",
+            "ru": "У нас три предмета называются «та штука». Дадим им имена получше.",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u008-s4-e1",
+          "type": "choice",
+          "prompt": "There is a ___ lamp on the table.",
+          "options": [
+            "small old",
+            "old small",
+            "small and old"
+          ],
+          "answer": "small old",
+          "tags": [
+            "adjective_order"
+          ],
+          "explain": "Размер, потом возраст: a small old lamp.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s4-e2",
+          "type": "choice",
+          "prompt": "We can put the boxes on the ___ shelf.",
+          "options": [
+            "narrow wooden",
+            "wooden narrow",
+            "narrow and wood"
+          ],
+          "answer": "narrow wooden",
+          "tags": [
+            "adjective_order"
+          ],
+          "explain": "Форма (размер) перед материалом: narrow wooden.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s4-e3",
+          "type": "choice",
+          "prompt": "The two ___ panels go near the inside wall.",
+          "options": [
+            "soft grey",
+            "grey soft",
+            "softly grey"
+          ],
+          "answer": "soft grey",
+          "tags": [
+            "adjective_order"
+          ],
+          "explain": "Качество перед цветом: soft grey.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s4-e4",
+          "type": "fill",
+          "prompt": "There is a spare black ___ for the fourth person.",
+          "answers": [
+            "chair"
+          ],
+          "hint": "стул",
+          "tags": [
+            "adjective_order"
+          ],
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s4-e5",
+          "type": "choice",
+          "prompt": "A ___ card can show the way to the equipment desk.",
+          "options": [
+            "small white",
+            "white small",
+            "smally white"
+          ],
+          "answer": "small white",
+          "tags": [
+            "adjective_order"
+          ],
+          "explain": "Размер перед цветом: a small white card.",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s4-e6",
+          "type": "fix",
+          "sentence": "We need a wooden narrow shelf.",
+          "answers": [
+            "We need a narrow wooden shelf."
+          ],
+          "tags": [
+            "adjective_order"
+          ],
+          "explain": "Narrow (размер/форма) перед wooden (материал).",
+          "context": "План расстановки"
+        },
+        {
+          "id": "u008-s4-e7",
+          "type": "translate",
+          "ru": "Нам нужно свободное место рядом с дверью.",
+          "answers": [
+            "We need a clear space beside the door.",
+            "We need a clear space next to the door.",
+            "We need some clear space beside the door."
+          ],
+          "tags": [
+            "adjective_order"
+          ]
+        },
+        {
+          "id": "u008-s4-e8",
+          "type": "sort",
+          "instruction": "Что это за слово?",
+          "categories": [
+            {
+              "id": "size",
+              "label": "Размер или форма"
+            },
+            {
+              "id": "age",
+              "label": "Возраст"
+            },
+            {
+              "id": "colour",
+              "label": "Цвет"
+            },
+            {
+              "id": "material",
+              "label": "Материал"
+            }
+          ],
+          "items": [
+            {
+              "text": "small",
+              "category": "size"
+            },
+            {
+              "text": "narrow",
+              "category": "size"
+            },
+            {
+              "text": "old",
+              "category": "age"
+            },
+            {
+              "text": "grey",
+              "category": "colour"
+            },
+            {
+              "text": "black",
+              "category": "colour"
+            },
+            {
+              "text": "wooden",
+              "category": "material"
+            }
+          ],
+          "tags": [
+            "adjective_order"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "The shelf now has a name.",
+          "ru": "Теперь у полки есть название.",
+          "expr": "deadpan"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Предложить расстановку",
+      "intro": "Выбери, где будет письменный стол, и объясни свой выбор.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u008-s5-e1",
+          "type": "scene",
+          "setting": "На плане в обоих вариантах есть тихий угол у внутренней стены, доска рядом со входом и свободный проход. Отличается место письменного стола. Игрок выбирает его сейчас; в финале мебель действительно поставят по выбранному варианту.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "Window or wall for the writing table? Both leave the door clear.",
+              "ru": "Письменный стол у окна или у стены? Оба варианта оставляют дверь свободной.",
+              "expr": "phone/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Выбрать письменный стол у окна",
+              "answers": [
+                "I'd prefer the writing table by the window.",
+                "I like working by the window. Let's put the table there."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Window it is. The shelf can stand beside it.",
+                "ru": "Значит, у окна. Полка встанет рядом.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u008_layout_window"
+            },
+            {
+              "label": "Выбрать письменный стол у другой стены",
+              "answers": [
+                "I'd rather put the writing table against the other wall.",
+                "I prefer working by the wall. Can the table go there?"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "That works. We'll leave the window area open.",
+                "ru": "Подходит. Место у окна оставим свободным.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u008_layout_wall"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Which place would you prefer for the writing table?",
+            "ru": "Какое место ты предпочитаешь для письменного стола?",
+            "expr": "thinking"
+          },
+          "tags": [
+            "preferences"
+          ],
+          "context": "Два рабочих варианта"
+        },
+        {
+          "id": "u008-s5-e2",
+          "type": "translate",
+          "ru": "Я предпочитаю работать у окна.",
+          "answers": [
+            "I prefer working by the window.",
+            "I prefer to work by the window."
+          ],
+          "tags": [
+            "preferences"
+          ]
+        },
+        {
+          "id": "u008-s5-e3",
+          "type": "translate",
+          "ru": "Я лучше оставлю дверной проём свободным.",
+          "answers": [
+            "I'd rather keep the doorway clear.",
+            "I would rather keep the doorway clear."
+          ],
+          "tags": [
+            "preferences"
+          ]
+        },
+        {
+          "id": "u008-s5-e4",
+          "type": "translate",
+          "ru": "Как насчёт того, чтобы поставить стол у стены?",
+          "answers": [
+            "How about putting the table by the wall?",
+            "How about putting the table against the wall?",
+            "How about moving the table to the wall?"
+          ],
+          "tags": [
+            "preferences"
+          ]
+        },
+        {
+          "id": "u008-s5-e5",
+          "type": "translate",
+          "ru": "Рэй предпочитает тихий угол.",
+          "answers": [
+            "Rei prefers a quiet corner."
+          ],
+          "tags": [
+            "preferences"
+          ]
+        },
+        {
+          "id": "u008-s5-e6",
+          "type": "write",
+          "situation": "Скажи, где ты предпочёл бы сидеть в комнате 17 и почему (одно-два предложения).",
+          "answers": [
+            "I'd prefer to sit by the window because there is more light.",
+            "I prefer sitting by the window because it's quiet.",
+            "I'd rather sit by the wall because it's quiet.",
+            "I prefer sitting by the wall because I can see the board.",
+            "I'd prefer to sit at the writing table because I like writing."
+          ],
+          "tags": [
+            "preferences"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Recording corner stays over here.",
+          "ru": "Угол записи остаётся здесь.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом",
+      "intro": "Прочитай вслух свой план расстановки.",
+      "place": "room17",
+      "frame": {
+        "setting": "Перед перестановкой игрок пробует вслух объяснить выбранный план. Для второй строки берётся только его сохранённый вариант. Остальные строки общие.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Explain the plan before we move the furniture. Less lifting that way.",
+            "ru": "Объясни план, прежде чем двигать мебель. Так придётся меньше таскать.",
+            "expr": "notebook/dry_smile"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u008-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I'd rather keep the doorway clear.",
+          "answers": [
+            "I'd rather keep the doorway clear."
+          ],
+          "tags": [
+            "speaking",
+            "preferences"
+          ]
+        },
+        {
+          "id": "u008-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I'd prefer the writing table by the window.",
+          "answers": [
+            "I'd prefer the writing table by the window."
+          ],
+          "tags": [
+            "speaking",
+            "preferences"
+          ],
+          "if": "u008_layout_window"
+        },
+        {
+          "id": "u008-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I'd rather put the writing table against the other wall.",
+          "answers": [
+            "I'd rather put the writing table against the other wall."
+          ],
+          "tags": [
+            "speaking",
+            "preferences"
+          ],
+          "ifNot": "u008_layout_window"
+        },
+        {
+          "id": "u008-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "The narrow wooden shelf can hold the boxes.",
+          "answers": [
+            "The narrow wooden shelf can hold the boxes."
+          ],
+          "tags": [
+            "speaking",
+            "adjective_order"
+          ]
+        },
+        {
+          "id": "u008-s6-e5",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Let's leave enough room between the work areas.",
+          "answers": [
+            "Let's leave enough room between the work areas."
+          ],
+          "tags": [
+            "speaking",
+            "preferences"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Good. We can all point to our own bit of the plan.",
+          "ru": "Хорошо. Каждый может показать свою часть плана.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Проверка модуля 005–008",
+      "role": "check",
+      "intro": "Проверка всего модуля на новом материале: где находится, что не так, просьба о помощи и предпочтение.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис достаёт новую учебную карточку. Это вымышленная ситуация другого клуба, а не сообщение о новых поломках комнаты 17. Проверка не создаёт сюжетных событий и не ставит новые флаги.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "A different club, a different room. Use the same skills.",
+            "ru": "Другой клуб, другая комната. Используй те же навыки.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u008-s7-e1",
+          "type": "reading",
+          "title": "Art club — Room 24",
+          "text": "The art club is in Room 24 on the ground floor of the New Building. It is opposite the lift, between a classroom and a small office. Today the desk lamp is making a noise, so it is switched off. The club prefers drawing by the window. They need help moving a narrow wooden table there. Please keep the door clear. There are two spare chairs beside the office if anyone needs them.",
+          "ru": "Художественный клуб находится в кабинете 24 на первом этаже нового корпуса. Он напротив лифта, между аудиторией и маленьким офисом. Сегодня настольная лампа шумит, поэтому она выключена. Участники клуба предпочитают рисовать у окна. Им нужна помощь: передвинуть туда узкий деревянный стол. Пожалуйста, оставьте дверь свободной. Возле офиса есть два свободных стула, если кому-нибудь нужны.",
+          "questions": [
+            {
+              "prompt": "Where is Room 24?",
+              "options": [
+                "Upstairs in the Old Building",
+                "Opposite the lift on the ground floor",
+                "At the end of the courtyard"
+              ],
+              "answer": "Opposite the lift on the ground floor"
+            },
+            {
+              "prompt": "What is the problem with the lamp?",
+              "options": [
+                "It is making a noise",
+                "It is missing",
+                "It is too small"
+              ],
+              "answer": "It is making a noise"
+            },
+            {
+              "prompt": "Where does the club prefer to draw?",
+              "options": [
+                "In the corridor",
+                "By the window",
+                "Beside the door"
+              ],
+              "answer": "By the window"
+            }
+          ],
+          "tags": [
+            "reading",
+            "place_prepositions",
+            "function_problem",
+            "preferences"
+          ],
+          "look": "note"
+        },
+        {
+          "id": "u008-s7-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "Could you help the art club after lunch? They need two people to move the table. If you can't lift it, you can hold the door. Please don't turn the noisy lamp on.",
+          "ru": "Можешь помочь художественному клубу после обеда? Нужны двое, чтобы передвинуть стол. Если не можешь поднимать, можно подержать дверь. Пожалуйста, не включай шумящую лампу.",
+          "questions": [
+            {
+              "prompt": "What help is possible without lifting?",
+              "options": [
+                "Holding the door",
+                "Turning on the lamp",
+                "Taking the table away"
+              ],
+              "answer": "Holding the door"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_requests",
+            "function_offers"
+          ],
+          "context": "Учебное сообщение Айрис"
+        },
+        {
+          "id": "u008-s7-e3",
+          "type": "choice",
+          "prompt": "The art club is ___ the lift.",
+          "options": [
+            "opposite",
+            "between",
+            "upstairs"
+          ],
+          "answer": "opposite",
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u008-s7-e4",
+          "type": "choice",
+          "prompt": "Today the desk lamp ___ a noise.",
+          "options": [
+            "is making",
+            "making",
+            "makes now"
+          ],
+          "answer": "is making",
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u008-s7-e5",
+          "type": "choice",
+          "prompt": "___ you help the art club after lunch?",
+          "options": [
+            "Could",
+            "Shall",
+            "Would mind"
+          ],
+          "answer": "Could",
+          "tags": [
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u008-s7-e6",
+          "type": "fill",
+          "prompt": "The club prefers ___ by the window.",
+          "answers": [
+            "drawing"
+          ],
+          "hint": "draw",
+          "tags": [
+            "preferences"
+          ]
+        },
+        {
+          "id": "u008-s7-e7",
+          "type": "write",
+          "situation": "Объясни новичку, где кабинет 24 художественного клуба.",
+          "answers": [
+            "Room 24 is opposite the lift on the ground floor.",
+            "It's on the ground floor, between a classroom and a small office."
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u008-s7-e8",
+          "type": "write",
+          "situation": "Опиши неполадку с настольной лампой.",
+          "answers": [
+            "The desk lamp is making a noise.",
+            "Something is wrong with the desk lamp. It's making a noise."
+          ],
+          "tags": [
+            "function_problem"
+          ]
+        },
+        {
+          "id": "u008-s7-e9",
+          "type": "write",
+          "situation": "Попроси о помощи со столом или с дверью.",
+          "answers": [
+            "Could you help us move the table?",
+            "Would you mind holding the door?"
+          ],
+          "tags": [
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u008-s7-e10",
+          "type": "write",
+          "situation": "Скажи, где клуб предпочитает рисовать.",
+          "answers": [
+            "They prefer drawing by the window.",
+            "They'd rather draw by the window."
+          ],
+          "tags": [
+            "preferences"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "New room, familiar skills. Back to ours.",
+          "ru": "Новая комната, знакомые навыки. Вернёмся к нашей.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: комната, которой можно пользоваться",
+      "role": "mission",
+      "intro": "Миссия: обустроить комнату 17 и оставить на доске карточку маршрута.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u008-s8-e1",
+          "type": "scene",
+          "setting": "Около 13:40. Бумажный план выбран, техника исправна, мебель ещё можно передвинуть. Задачи небольшие: поставить панели, передвинуть стол вдвоём, убрать коробки на полку. Все решения уже согласованы; игрок выбирает порядок работы, а не право отменить чужое рабочее место.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "Plan agreed. What would you rather start with?",
+              "ru": "План согласован. С чего ты предпочёл бы начать?",
+              "expr": "focused"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Сначала подготовить угол записи",
+              "answers": [
+                "I'd rather put the soft panels in place first.",
+                "Let's start with the quiet recording corner."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Panels first. I'll show you.",
+                "ru": "Сначала панели. Я покажу.",
+                "expr": "focused"
+              },
+              "flag": "u008_setup_sound_first"
+            },
+            {
+              "label": "Сначала освободить письменный стол",
+              "answers": [
+                "I'd prefer to clear the writing table first.",
+                "Let's put the boxes on the shelf first."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Table first. These boxes go on the shelf.",
+                "ru": "Сначала стол. Эти коробки — на полку.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u008_setup_table_first"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "The recording corner or the writing table first?",
+            "ru": "Сначала угол записи или письменный стол?",
+            "expr": "thinking"
+          },
+          "tags": [
+            "preferences"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "Four chairs. All available for actual people.",
+              "ru": "Четыре стула. Все доступны настоящим людям.",
+              "expr": "happy"
+            },
+            {
+              "speaker": "rei",
+              "text": "Try one normal sentence.",
+              "ru": "Попробуй одно обычное предложение.",
+              "expr": "recorder/listening"
+            },
+            {
+              "speaker": "rei",
+              "text": "Less echo. No buzz. Better.",
+              "ru": "Меньше эха. Без гула. Лучше.",
+              "expr": "recorder/happy"
+            }
+          ],
+          "context": "Что делать первым"
+        },
+        {
+          "id": "u008-s8-e2",
+          "type": "scene",
+          "setting": "Около 13:55. Айрис прикрепляет карточку маршрута рядом с общей таблицей на среду. Первая строка — та, что ты выбрал в юните 005.",
+          "lines": [
+            {
+              "speaker": "narrator",
+              "text": "The equipment desk is on the ground floor of the Old Building.",
+              "ru": "Пункт выдачи на первом этаже старого корпуса.",
+              "if": "u005_route_building"
+            },
+            {
+              "speaker": "narrator",
+              "text": "Find it between the stairs and the noticeboard, at the end of the corridor.",
+              "ru": "Он между лестницей и доской объявлений, в конце коридора.",
+              "if": "u005_route_building"
+            },
+            {
+              "speaker": "narrator",
+              "text": "In the Old Building, find the stairs and the noticeboard.",
+              "ru": "В старом корпусе найди лестницу и доску объявлений.",
+              "ifNot": "u005_route_building"
+            },
+            {
+              "speaker": "narrator",
+              "text": "The equipment desk is between them, on the ground floor, at the end of the corridor.",
+              "ru": "Пункт выдачи между ними, на первом этаже, в конце коридора.",
+              "ifNot": "u005_route_building"
+            },
+            {
+              "speaker": "iris",
+              "text": "The route is checked. What reminder should go underneath?",
+              "ru": "Маршрут проверен. Какую памятку добавить снизу?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Напомнить, что вещи сначала нужно забронировать",
+              "answers": [
+                "Please reserve the furniture before you collect it.",
+                "Write your room number on the borrowing sheet first."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Reservation first. I'll add that below the route.",
+                "ru": "Сначала бронь. Добавлю под маршрутом.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u008_card_reservation"
+            },
+            {
+              "label": "Напомнить, что нужно сверять наклейки",
+              "answers": [
+                "Please check the green labels before taking anything.",
+                "Only take furniture with a green label."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Labels first. Much better than “take whatever looks nice”.",
+                "ru": "Сначала наклейки. Лучше, чем «берите всё красивое».",
+                "expr": "phone/happy"
+              },
+              "flag": "u008_card_labels"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "The reservation or the labels? Which reminder do you want to add?",
+            "ru": "Бронь или наклейки? Какую памятку ты хочешь добавить?",
+            "expr": "listening"
+          },
+          "tags": [
+            "preferences",
+            "function_requests"
+          ],
+          "context": "Карточка, которую можно проверить"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "We can actually work in here now! Four chairs, no boxes in the doorway.",
+          "ru": "Теперь здесь правда можно работать! Четыре стула, никаких коробок в дверях.",
+          "expr": "phone/happy"
+        },
+        {
+          "speaker": "iris",
+          "text": "Room photo, no people. The table is finally visible.",
+          "ru": "Фото комнаты, без людей. Стол наконец-то видно.",
+          "expr": "notebook/dry_smile"
+        },
+        {
+          "speaker": "rei",
+          "text": "Equipment off. Cable put away.",
+          "ru": "Оборудование выключено. Кабель убран.",
+          "expr": "recorder/neutral"
+        },
+        {
+          "speaker": "mika",
+          "text": "Next meeting: that lunch I promised. We should ask what everyone actually wants.",
+          "ru": "Следующая встреча — тот обед, который я обещала. Стоит спросить, чего все действительно хотят.",
+          "expr": "phone/thinking"
+        },
+        {
+          "speaker": "iris",
+          "text": "Put your own answer on the list too.",
+          "ru": "Свой ответ тоже внеси в список.",
+          "expr": "notebook/dry_smile"
+        },
+        {
+          "speaker": "mika",
+          "text": "Right. Four people. Four answers.",
+          "ru": "Точно. Четыре человека. Четыре ответа.",
+          "expr": "happy"
+        }
+      ]
+    }
+  ]
+}

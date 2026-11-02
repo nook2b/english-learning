@@ -1,0 +1,141 @@
+{
+ "tag": "place_prepositions",
+ "items": [
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-place_prepositions-01",
+    "type": "choice",
+    "prompt": "The café is ___ the library, on the other side of the courtyard.",
+    "options": [
+     "opposite",
+     "between",
+     "upstairs"
+    ],
+    "answer": "opposite",
+    "tags": [
+     "place_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-place_prepositions-02",
+    "type": "choice",
+    "prompt": "Room 12 is ___ Room 11 and Room 13.",
+    "options": [
+     "between",
+     "next",
+     "opposite to"
+    ],
+    "answer": "between",
+    "tags": [
+     "place_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-place_prepositions-03",
+    "type": "choice",
+    "prompt": "The sound lab is ___. Take the stairs.",
+    "options": [
+     "upstairs",
+     "at upstairs",
+     "on upstairs"
+    ],
+    "answer": "upstairs",
+    "tags": [
+     "place_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-place_prepositions-04",
+    "type": "fill",
+    "prompt": "The lift is next ___ the stairs.",
+    "answers": [
+     "to"
+    ],
+    "tags": [
+     "place_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-place_prepositions-05",
+    "type": "fill",
+    "prompt": "The office is at the end ___ the corridor.",
+    "answers": [
+     "of"
+    ],
+    "tags": [
+     "place_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-place_prepositions-06",
+    "type": "fill",
+    "prompt": "The equipment desk is ___ the ground floor.",
+    "answers": [
+     "on"
+    ],
+    "tags": [
+     "place_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-place_prepositions-07",
+    "type": "transform",
+    "instruction": "Спроси, где это найти",
+    "sentence": "the language lab",
+    "answers": [
+     "Where can I find the language lab?"
+    ],
+    "tags": [
+     "place_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-place_prepositions-08",
+    "type": "fix",
+    "sentence": "The noticeboard is next the door.",
+    "answers": [
+     "The noticeboard is next to the door."
+    ],
+    "tags": [
+     "place_prepositions"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-place_prepositions-09",
+    "type": "fix",
+    "sentence": "The desk is between of the window and the door.",
+    "answers": [
+     "The desk is between the window and the door."
+    ],
+    "tags": [
+     "place_prepositions"
+    ]
+   }
+  }
+ ]
+}

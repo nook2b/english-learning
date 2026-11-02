@@ -1,6 +1,6 @@
 import { SPRITES, type HeroineId } from './sprites'
 
-// Celebration pictures from docs/29-reward-art-brief.md: assets/reward/{heroine}_{moment}.webp
+// Celebration pictures from docs/33-reward-art-brief.md: assets/reward/{heroine}_{moment}.webp
 // for one heroine, assets/reward/trio_{moment}.webp for all three. Until a picture arrives,
 // the heroine's ordinary sprite stands in for it.
 const files = import.meta.glob<string>('../../../assets/reward/*.webp', { eager: true, query: '?url', import: 'default' })

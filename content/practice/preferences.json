@@ -1,0 +1,145 @@
+{
+ "tag": "preferences",
+ "items": [
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-preferences-01",
+    "type": "choice",
+    "prompt": "Rei likes ___ late at night.",
+    "options": [
+     "recording",
+     "record",
+     "to recording"
+    ],
+    "answer": "recording",
+    "tags": [
+     "preferences"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-preferences-02",
+    "type": "choice",
+    "prompt": "I prefer tea ___ coffee.",
+    "options": [
+     "to",
+     "than",
+     "of"
+    ],
+    "answer": "to",
+    "tags": [
+     "preferences"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-preferences-03",
+    "type": "choice",
+    "prompt": "I'd rather ___ here.",
+    "options": [
+     "stay",
+     "staying",
+     "to stay"
+    ],
+    "answer": "stay",
+    "tags": [
+     "preferences"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-preferences-04",
+    "type": "choice",
+    "prompt": "I'd prefer ___ by the window.",
+    "options": [
+     "to sit",
+     "sit",
+     "sitting"
+    ],
+    "answer": "to sit",
+    "tags": [
+     "preferences"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-preferences-05",
+    "type": "fill",
+    "prompt": "How about ___ the board near the door?",
+    "answers": [
+     "putting"
+    ],
+    "tags": [
+     "preferences"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-preferences-06",
+    "type": "fill",
+    "prompt": "Mika loves ___ trips for everyone.",
+    "answers": [
+     "planning"
+    ],
+    "tags": [
+     "preferences"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-preferences-07",
+    "type": "transform",
+    "instruction": "Скажи то же с I'd rather",
+    "sentence": "I prefer to wait.",
+    "answers": [
+     "I'd rather wait.",
+     "I would rather wait."
+    ],
+    "tags": [
+     "preferences"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-preferences-08",
+    "type": "fix",
+    "sentence": "I'd rather to work at the table.",
+    "answers": [
+     "I'd rather work at the table."
+    ],
+    "tags": [
+     "preferences"
+    ]
+   }
+  },
+  {
+   "unit": "008",
+   "exercise": {
+    "id": "p-preferences-09",
+    "type": "fix",
+    "sentence": "I prefer sitting by the wall than sitting in the doorway.",
+    "answers": [
+     "I prefer sitting by the wall to sitting in the doorway."
+    ],
+    "tags": [
+     "preferences"
+    ]
+   }
+  }
+ ]
+}

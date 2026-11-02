@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from 'react'
 import { nextSession } from '../content/course'
-import type { Exercise, Unit } from '../content/schema'
+import { type Exercise, type Unit, shownWith } from '../content/schema'
 import { addDeferred } from '../data/db'
 import { useClub } from '../data/store'
 import { navigate } from '../app/router'
@@ -29,6 +29,9 @@ interface Summary {
 export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const session = unit.sessions[index - 1]!
   const remembered = useRef(new Set<string>())
+  // Tasks that depend on an earlier story choice (the player's own layout line) show only for it.
+  const flags = useClub((s) => s.flags)
+  const exercises = useMemo(() => session.exercises.filter((e) => shownWith(e, flags)), [session, flags])
   const cast = useMemo(() => (session.frame ? castAt(session.frame.lines, session.frame.lines.length - 1) : {}), [session])
   const finishSession = useClub((s) => s.finishSession)
   const remember = useClub((s) => s.remember)
@@ -108,7 +111,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       <PlaceContext.Provider value={session.place}>
         <div className={`route-${unitHeroine(unit)}`}>
           <ExerciseRun
-            exercises={session.exercises}
+            exercises={exercises}
             heading={`Юнит ${unit.id} · Занятие ${index}. ${KIND_LABELS[session.kind]}: ${session.title}`}
             intro={session.intro}
             cast={cast}
