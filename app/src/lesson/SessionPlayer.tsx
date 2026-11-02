@@ -133,7 +133,12 @@ function SessionSummary({ unit, index, summary }: { unit: Unit; index: number; s
   const session = unit.sessions[index - 1]
   return (
     <div className={`screen summary route-${heroine}`}>
-      <RewardArt heroine={heroine} moment="session" label="Героиня юнита радуется" />
+      <RewardArt
+        heroine={heroine}
+        moment="session"
+        trio={summary.unitCompleted ? 'mission' : session?.role === 'check' ? 'module' : undefined}
+        label={summary.unitCompleted ? 'Мика, Рэй и Айрис празднуют миссию' : 'Героиня юнита радуется'}
+      />
       <div className="summary-head">
         <h1 className="summary-title">Занятие {index} пройдено</h1>
         {session && <p className="muted">{session.title} · юнит {unit.id}</p>}
