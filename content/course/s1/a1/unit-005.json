@@ -1,0 +1,1112 @@
+{
+  "id": "005",
+  "title": "Найти комнату",
+  "goal": "Спросить и объяснить, где что находится в здании.",
+  "focus": "There is / there are, вопросы Is there…? и Where can I find…?, предлоги места: next to, opposite, between, at the end of, upstairs, on the ground floor.",
+  "outcome": "Найден пункт выдачи мебели в старом корпусе. Для комнаты 17 забронированы стул, узкая полка и две мягкие переносные панели; на доске есть проверенный маршрут к пункту выдачи. Ничего ещё не перевезено.",
+  "expressions": [
+    "there is",
+    "there are",
+    "Is there",
+    "Where can I find",
+    "next to",
+    "opposite",
+    "between",
+    "at the end of",
+    "upstairs",
+    "on the ground floor",
+    "storage room",
+    "equipment desk"
+  ],
+  "glossary": [
+    "borrowing sheet",
+    "noticeboard",
+    "language lab",
+    "Old Building",
+    "New Building",
+    "green label",
+    "small print",
+    "recording panels"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "На плане есть не всё",
+      "intro": "На плане два похожих склада. Прочитай объявление до конца и ответь.",
+      "place": "new_corridor",
+      "frame": {
+        "setting": "Пятница, 12:10. Вы собрались ненадолго перед следующими делами. В комнате 17 коробки занимают один из стульев; Мика предлагает взять недостающую мебель в академии. На стене нового корпуса висит план с двумя похожими обозначениями.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "We need another chair. A person should sit on it, not a box.",
+            "ru": "Нам нужен ещё один стул. На нём должен сидеть человек, а не коробка.",
+            "expr": "phone/focused"
+          },
+          {
+            "speaker": "iris",
+            "text": "There are two storage rooms on this notice. Read the small print.",
+            "ru": "В этом объявлении два склада. Прочитай мелкий шрифт.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u005-s1-e1",
+          "type": "reading",
+          "title": "Equipment and furniture",
+          "text": "Looking for equipment? There is a technical storage room upstairs in the New Building. It is next to the lift, opposite the language lab. Only staff can collect equipment there.\nStudent clubs can borrow furniture from the equipment desk in the Old Building. Go through the courtyard and enter the Old Building. Stay on the ground floor. The desk is at the end of the corridor, between the stairs and the noticeboard. There are chairs, small shelves and soft recording panels. Please read the borrowing instructions before taking anything.",
+          "ru": "Ищете оборудование? В новом корпусе наверху есть технический склад. Он рядом с лифтом, напротив языковой лаборатории. Получать там оборудование могут только сотрудники. Студенческие клубы могут брать мебель в пункте выдачи старого корпуса. Перейдите двор и войдите в старый корпус. Оставайтесь на первом этаже. Пункт выдачи находится в конце коридора, между лестницей и доской объявлений. Там есть стулья, небольшие полки и мягкие панели для записи. Прежде чем что-либо брать, прочитайте правила выдачи.",
+          "questions": [
+            {
+              "prompt": "Who can collect equipment from the technical storage room?",
+              "options": [
+                "Any student",
+                "Only staff",
+                "Only new students"
+              ],
+              "answer": "Only staff"
+            },
+            {
+              "prompt": "Where can student clubs borrow furniture?",
+              "options": [
+                "In the language lab",
+                "In the Old Building",
+                "By the New Building lift"
+              ],
+              "answer": "In the Old Building"
+            },
+            {
+              "prompt": "Where is the equipment desk?",
+              "options": [
+                "On the ground floor",
+                "Upstairs by the lift",
+                "Inside Room 17"
+              ],
+              "answer": "On the ground floor"
+            },
+            {
+              "prompt": "What must the team do before taking anything?",
+              "options": [
+                "Record a message",
+                "Read the borrowing instructions",
+                "Buy a ticket"
+              ],
+              "answer": "Read the borrowing instructions"
+            }
+          ],
+          "tags": [
+            "reading",
+            "there_is",
+            "place_prepositions"
+          ],
+          "look": "notice"
+        },
+        {
+          "id": "u005-s1-e2",
+          "type": "choice",
+          "prompt": "The equipment desk is ___ the stairs and the noticeboard.",
+          "options": [
+            "between",
+            "opposite",
+            "upstairs"
+          ],
+          "answer": "between",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "Between A and B — между двумя ориентирами.",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s1-e3",
+          "type": "choice",
+          "prompt": "___ a technical storage room upstairs in the New Building.",
+          "options": [
+            "There is",
+            "There are",
+            "It is"
+          ],
+          "answer": "There is",
+          "tags": [
+            "there_is"
+          ],
+          "explain": "Один склад — there is.",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "next to",
+              "ru": "рядом с"
+            },
+            {
+              "en": "opposite",
+              "ru": "напротив"
+            },
+            {
+              "en": "between",
+              "ru": "между"
+            },
+            {
+              "en": "upstairs",
+              "ru": "наверху"
+            },
+            {
+              "en": "on the ground floor",
+              "ru": "на первом этаже"
+            },
+            {
+              "en": "at the end of",
+              "ru": "в конце"
+            }
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Old Building, ground floor. Good thing we read past the word “storage”.",
+          "ru": "Старый корпус, первый этаж. Хорошо, что прочитали дальше слова «склад».",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Между лестницей и доской",
+      "intro": "Две голосовые заметки с маршрутом. Слушай без текста и сверяй с объявлением.",
+      "place": "new_corridor",
+      "frame": {
+        "setting": "Айрис пересылает план в общий чат «Room 17». Команда слушает две маршрутные заметки перед выходом; это рабочие голосовые для всех, не личная переписка.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Check these directions against the notice. We only need one route today.",
+            "ru": "Сверь эти указания с объявлением. Сегодня нам нужен только один маршрут.",
+            "expr": "notebook/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u005-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "Start at the glass doors of the New Building. Cross the courtyard and enter the Old Building. There are stairs on your left. Don't go upstairs. The equipment desk is further along the corridor.",
+          "ru": "Начни у стеклянных дверей нового корпуса. Перейди двор и войди в старый корпус. Слева будет лестница. Не поднимайся. Пункт выдачи дальше по коридору.",
+          "questions": [
+            {
+              "prompt": "Should the listener go upstairs?",
+              "options": [
+                "Yes",
+                "No",
+                "Only after four"
+              ],
+              "answer": "No"
+            },
+            {
+              "prompt": "What does the listener cross?",
+              "options": [
+                "The library",
+                "The courtyard",
+                "The language lab"
+              ],
+              "answer": "The courtyard"
+            }
+          ],
+          "tags": [
+            "listening",
+            "place_prepositions"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Голосовое Мики в чате «Room 17»"
+        },
+        {
+          "id": "u005-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "The equipment desk is between the stairs and the noticeboard, at the end of the corridor. There is a borrowing sheet by the door. The furniture has coloured labels on it.",
+          "ru": "Пункт выдачи между лестницей и доской объявлений, в конце коридора. У двери лежит лист выдачи. На мебели есть цветные наклейки.",
+          "questions": [
+            {
+              "prompt": "Where is the borrowing sheet?",
+              "options": [
+                "By the door",
+                "Under the stairs",
+                "In Room 17"
+              ],
+              "answer": "By the door"
+            }
+          ],
+          "tags": [
+            "listening",
+            "place_prepositions",
+            "there_is"
+          ],
+          "context": "Голосовое Айрис в чате «Room 17»"
+        },
+        {
+          "id": "u005-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "The equipment desk is at the end of the corridor.",
+          "answers": [
+            "The equipment desk is at the end of the corridor."
+          ],
+          "tags": [
+            "dictation",
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s2-e4",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "There are stairs on your left.",
+          "answers": [
+            "There are stairs on your left."
+          ],
+          "delivery": "[quietly, focused]",
+          "tags": [
+            "dictation",
+            "there_is"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Right building. Right floor. Progress.",
+          "ru": "Нужный корпус. Нужный этаж. Уже хорошо.",
+          "expr": "deadpan"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Что есть на этаже",
+      "intro": "There is — для одного предмета, there are — для нескольких: There is a desk. There are two doors. Отрицание: there isn't / there aren't any. Вопрос: Is there…? / Are there any…?",
+      "place": "old_corridor",
+      "frame": {
+        "setting": "У входа в старый корпус Айрис показывает схему. Игрок проверяет, какие объекты на ней обозначены.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "These notes describe the floor. Check each one against the plan.",
+            "ru": "Эти заметки описывают этаж. Сверь каждую с планом.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u005-s3-e1",
+          "type": "choice",
+          "prompt": "___ an equipment desk on the ground floor.",
+          "options": [
+            "There is",
+            "There are",
+            "There"
+          ],
+          "answer": "There is",
+          "tags": [
+            "there_is"
+          ],
+          "explain": "Один пункт выдачи — there is.",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s3-e2",
+          "type": "choice",
+          "prompt": "___ two doors next to the stairs.",
+          "options": [
+            "There are",
+            "There is",
+            "They are"
+          ],
+          "answer": "There are",
+          "tags": [
+            "there_is"
+          ],
+          "explain": "Две двери — there are.",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s3-e3",
+          "type": "choice",
+          "prompt": "There ___ a lift in this part of the building.",
+          "options": [
+            "isn't",
+            "aren't",
+            "don't"
+          ],
+          "answer": "isn't",
+          "tags": [
+            "there_is"
+          ],
+          "explain": "Нет одного предмета — there isn't.",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s3-e4",
+          "type": "fill",
+          "prompt": "There ___ any chairs in the corridor.",
+          "answers": [
+            "aren't",
+            "are not"
+          ],
+          "hint": "не быть, мн. ч.",
+          "tags": [
+            "there_is"
+          ],
+          "explain": "Нет нескольких — there aren't any.",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s3-e5",
+          "type": "choice",
+          "prompt": "___ a borrowing sheet by the door?",
+          "options": [
+            "Is there",
+            "There is",
+            "Are there"
+          ],
+          "answer": "Is there",
+          "tags": [
+            "there_is"
+          ],
+          "explain": "Вопрос: Is there…? — меняем порядок слов.",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s3-e6",
+          "type": "fill",
+          "prompt": "Are ___ any shelves we can borrow?",
+          "answers": [
+            "there"
+          ],
+          "tags": [
+            "there_is"
+          ],
+          "explain": "Вопрос о нескольких: Are there any…?",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s3-e7",
+          "type": "transform",
+          "instruction": "Сделай вопрос",
+          "sentence": "There is a borrowing sheet beside the entrance.",
+          "answers": [
+            "Is there a borrowing sheet beside the entrance?"
+          ],
+          "tags": [
+            "there_is"
+          ],
+          "explain": "Is there + предмет + место?",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s3-e8",
+          "type": "fix",
+          "sentence": "There is two doors next to the stairs.",
+          "answers": [
+            "There are two doors next to the stairs."
+          ],
+          "tags": [
+            "there_is"
+          ],
+          "explain": "Две двери — there are.",
+          "context": "Схема этажа"
+        },
+        {
+          "id": "u005-s3-e9",
+          "type": "sort",
+          "instruction": "Is или are?",
+          "categories": [
+            {
+              "id": "is",
+              "label": "There is…"
+            },
+            {
+              "id": "are",
+              "label": "There are…"
+            }
+          ],
+          "items": [
+            {
+              "text": "an equipment desk",
+              "category": "is"
+            },
+            {
+              "text": "two doors",
+              "category": "are"
+            },
+            {
+              "text": "a borrowing sheet",
+              "category": "is"
+            },
+            {
+              "text": "some shelves",
+              "category": "are"
+            },
+            {
+              "text": "soft panels",
+              "category": "are"
+            },
+            {
+              "text": "a noticeboard",
+              "category": "is"
+            }
+          ],
+          "tags": [
+            "there_is"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "One desk, several shelves. The notes match the plan.",
+          "ru": "Один пункт выдачи, несколько полок. Заметки совпадают со схемой.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Не просто «там»",
+      "intro": "Где именно: next to (рядом с), opposite (напротив), between A and B (между), at the end of (в конце), upstairs (наверху), on the ground floor (на первом этаже). Вопрос: Where can I find…?",
+      "place": "old_corridor",
+      "frame": {
+        "setting": "Мика пишет маршрут для доски комнаты 17. В первой версии три раза встречается «там».",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "“Over there” is doing too much work. Let's give it some help.",
+            "ru": "На «вон там» слишком много работы. Давай ему поможем.",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u005-s4-e1",
+          "type": "choice",
+          "prompt": "The technical storage room is ___ the lift.",
+          "options": [
+            "next to",
+            "between",
+            "upstairs"
+          ],
+          "answer": "next to",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "Next to — рядом с.",
+          "context": "Маршрут для доски"
+        },
+        {
+          "id": "u005-s4-e2",
+          "type": "choice",
+          "prompt": "The language lab is ___ that storage room.",
+          "options": [
+            "opposite",
+            "between",
+            "at the end"
+          ],
+          "answer": "opposite",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "Opposite — напротив, без предлога после.",
+          "context": "Маршрут для доски"
+        },
+        {
+          "id": "u005-s4-e3",
+          "type": "fill",
+          "prompt": "The equipment desk is ___ the stairs and the noticeboard.",
+          "answers": [
+            "between"
+          ],
+          "hint": "между",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "Between A and B.",
+          "context": "Маршрут для доски"
+        },
+        {
+          "id": "u005-s4-e4",
+          "type": "fill",
+          "prompt": "It is at the ___ of the corridor.",
+          "answers": [
+            "end"
+          ],
+          "hint": "в конце",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "At the end of — в конце.",
+          "context": "Маршрут для доски"
+        },
+        {
+          "id": "u005-s4-e5",
+          "type": "choice",
+          "prompt": "The technical storage room is ___ in the New Building.",
+          "options": [
+            "upstairs",
+            "on upstairs",
+            "at upstairs"
+          ],
+          "answer": "upstairs",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "Upstairs — без предлога: it is upstairs.",
+          "context": "Маршрут для доски"
+        },
+        {
+          "id": "u005-s4-e6",
+          "type": "fill",
+          "prompt": "The equipment desk is ___ the ground floor of the Old Building.",
+          "answers": [
+            "on"
+          ],
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "On the ground floor — на первом этаже.",
+          "context": "Маршрут для доски"
+        },
+        {
+          "id": "u005-s4-e7",
+          "type": "transform",
+          "instruction": "Спроси, где это найти",
+          "sentence": "the borrowing sheet",
+          "answers": [
+            "Where can I find the borrowing sheet?"
+          ],
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "Where can I find + предмет?",
+          "context": "Маршрут для доски"
+        },
+        {
+          "id": "u005-s4-e8",
+          "type": "fix",
+          "sentence": "The desk is between of the stairs and the noticeboard.",
+          "answers": [
+            "The desk is between the stairs and the noticeboard."
+          ],
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "После between не нужен of.",
+          "context": "Маршрут для доски"
+        },
+        {
+          "id": "u005-s4-e9",
+          "type": "fix",
+          "sentence": "The storage room is opposite to the language lab.",
+          "answers": [
+            "The storage room is opposite the language lab."
+          ],
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "Opposite — без to.",
+          "context": "Маршрут для доски"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Now “there” has an address.",
+          "ru": "Теперь у «там» есть адрес.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Уточнить ориентир",
+      "intro": "Уточни маршрут у Рэй, потом скажи то же самое сам.",
+      "place": "old_corridor",
+      "exercises": [
+        {
+          "id": "u005-s5-e1",
+          "type": "scene",
+          "setting": "Рэй несёт только рекордер. У поворота она останавливается: игроку нужно выбрать, какую часть маршрута уточнить. Ни один вариант не означает, что он потерялся заново.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Which bit shall we check?",
+              "ru": "Какую часть проверим?",
+              "expr": "listening"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Уточнить этаж пункта выдачи",
+              "answers": [
+                "Is the equipment desk on the ground floor?",
+                "Do we stay on the ground floor?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Ground floor. No stairs today.",
+                "ru": "Первый этаж. Сегодня без лестниц.",
+                "expr": "neutral"
+              }
+            },
+            {
+              "label": "Уточнить, между какими ориентирами он находится",
+              "answers": [
+                "Is it between the stairs and the noticeboard?",
+                "Is the desk next to the stairs?"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Yes. The noticeboard is on its other side.",
+                "ru": "Да. С другой стороны от него доска объявлений.",
+                "expr": "neutral"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "The floor or the landmarks?",
+            "ru": "Этаж или ориентиры?",
+            "expr": "listening"
+          },
+          "tags": [
+            "place_prepositions",
+            "there_is"
+          ],
+          "context": "Куда идти от входа"
+        },
+        {
+          "id": "u005-s5-e2",
+          "type": "translate",
+          "ru": "Пункт выдачи на первом этаже.",
+          "answers": [
+            "The equipment desk is on the ground floor."
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s5-e3",
+          "type": "translate",
+          "ru": "Есть ли лифт в старом корпусе?",
+          "answers": [
+            "Is there a lift in the Old Building?"
+          ],
+          "tags": [
+            "there_is"
+          ]
+        },
+        {
+          "id": "u005-s5-e4",
+          "type": "translate",
+          "ru": "Где найти лист выдачи?",
+          "answers": [
+            "Where can I find the borrowing sheet?"
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s5-e5",
+          "type": "translate",
+          "ru": "Склад напротив языковой лаборатории.",
+          "answers": [
+            "The storage room is opposite the language lab."
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s5-e6",
+          "type": "write",
+          "situation": "Объясни новичку, где пункт выдачи: корпус, этаж и два ориентира.",
+          "answers": [
+            "The equipment desk is on the ground floor of the Old Building, between the stairs and the noticeboard.",
+            "It's on the ground floor of the Old Building, between the stairs and the noticeboard.",
+            "The equipment desk is in the Old Building, on the ground floor, between the stairs and the noticeboard.",
+            "It is between the stairs and the noticeboard, on the ground floor of the Old Building."
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "That's a useful question for the guide, too.",
+          "ru": "Для гида это тоже полезный вопрос.",
+          "expr": "notebook/thinking"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом",
+      "intro": "Прочитай вслух короткое объяснение маршрута.",
+      "place": "old_corridor",
+      "frame": {
+        "setting": "У пункта выдачи игрок репетирует короткое объяснение маршрута. Рэй сохраняет пробу отдельно от готовых страниц.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Directions first. Recording second.",
+            "ru": "Сначала маршрут. Потом запись.",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u005-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Where can I find the equipment desk?",
+          "answers": [
+            "Where can I find the equipment desk?"
+          ],
+          "tags": [
+            "speaking",
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "It is on the ground floor of the Old Building.",
+          "answers": [
+            "It is on the ground floor of the Old Building."
+          ],
+          "tags": [
+            "speaking",
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Go to the end of the corridor.",
+          "answers": [
+            "Go to the end of the corridor."
+          ],
+          "tags": [
+            "speaking",
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "It is between the stairs and the noticeboard.",
+          "answers": [
+            "It is between the stairs and the noticeboard."
+          ],
+          "tags": [
+            "speaking",
+            "place_prepositions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Clear enough to follow.",
+          "ru": "Достаточно понятно, чтобы дойти.",
+          "expr": "recorder/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг",
+      "intro": "Быстрый круг: ориентиры, there is / there are и маршрут из занятий 1–6.",
+      "place": "old_corridor",
+      "frame": {
+        "setting": "На двери пункта выдачи есть небольшая схема. Команда быстро соотносит ориентиры со своими заметками, не уходит в другие части здания.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Quick check: the stairs, the desk, the noticeboard. In that order?",
+            "ru": "Быстрая проверка: лестница, пункт выдачи, доска. В таком порядке?",
+            "expr": "thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u005-s7-e1",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "storage room",
+              "ru": "склад"
+            },
+            {
+              "en": "equipment desk",
+              "ru": "пункт выдачи"
+            },
+            {
+              "en": "noticeboard",
+              "ru": "доска объявлений"
+            },
+            {
+              "en": "borrowing sheet",
+              "ru": "лист выдачи"
+            },
+            {
+              "en": "stairs",
+              "ru": "лестница"
+            }
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s7-e2",
+          "type": "choice",
+          "prompt": "The stairs, the desk, the noticeboard. The desk is ___ them.",
+          "options": [
+            "between",
+            "opposite",
+            "upstairs"
+          ],
+          "answer": "between",
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s7-e3",
+          "type": "choice",
+          "prompt": "___ any chairs we can borrow?",
+          "options": [
+            "Are there",
+            "Is there",
+            "There are"
+          ],
+          "answer": "Are there",
+          "tags": [
+            "there_is"
+          ]
+        },
+        {
+          "id": "u005-s7-e4",
+          "type": "fill",
+          "prompt": "___ is a green label on the chair.",
+          "answers": [
+            "There"
+          ],
+          "tags": [
+            "there_is"
+          ],
+          "explain": "There is + предмет."
+        },
+        {
+          "id": "u005-s7-e5",
+          "type": "fill",
+          "prompt": "Don't go upstairs. Stay ___ the ground floor.",
+          "answers": [
+            "on"
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s7-e6",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "The noticeboard is on its other side.",
+          "answers": [
+            "The noticeboard is on its other side."
+          ],
+          "tags": [
+            "dictation",
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u005-s7-e7",
+          "type": "translate",
+          "ru": "Наверху есть технический склад.",
+          "answers": [
+            "There is a technical storage room upstairs.",
+            "There's a technical storage room upstairs."
+          ],
+          "tags": [
+            "there_is"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Yes! Three things I can point at. Better than three arrows on my phone.",
+          "ru": "Да! Три вещи, которые можно показать. Лучше трёх стрелок в телефоне.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: место для четвёртого стула",
+      "role": "mission",
+      "intro": "Миссия: найди забронированные вещи и выбери первую строку карточки маршрута для доски комнаты 17.",
+      "place": "old_corridor",
+      "exercises": [
+        {
+          "id": "u005-s8-e1",
+          "type": "scene",
+          "setting": "Пункт выдачи виден через открытый дверной проём. На листе: «Green labels: club furniture. Sign with your room number to reserve. Collect after the equipment check». — «Зелёные наклейки: мебель для клубов. Для брони укажите номер своей комнаты. Получать после проверки оборудования». В зелёном списке — стул, узкая полка и две мягкие панели. На тяжёлой большой полке зелёной наклейки нет.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "A chair, a narrow shelf, two panels. Can you check where they are?",
+              "ru": "Стул, узкая полка, две панели. Проверишь, где они?",
+              "expr": "phone/focused"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Указать сначала стул",
+              "answers": [
+                "There is a green label on the chair by the door.",
+                "The chair by the door has a green label."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Great. One less box pretending to be a chair.",
+                "ru": "Отлично. На одну коробку, притворяющуюся стулом, меньше.",
+                "expr": "happy"
+              }
+            },
+            {
+              "label": "Указать сначала полку и панели",
+              "answers": [
+                "There are two panels next to the narrow shelf.",
+                "The narrow shelf is beside the two panels."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Two panels. That may help.",
+                "ru": "Две панели. Могут пригодиться.",
+                "expr": "neutral"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Which object do you mean?",
+            "ru": "Какой предмет ты имеешь в виду?",
+            "expr": "listening"
+          },
+          "tags": [
+            "there_is",
+            "place_prepositions"
+          ],
+          "context": "Что можно взять"
+        },
+        {
+          "id": "u005-s8-e2",
+          "type": "scene",
+          "setting": "По дороге обратно команда проверяет маршрут в обратном направлении. У пункта выдачи Айрис предлагает игроку выбрать первую строку карточки для доски комнаты 17. Полная информация сохранится в обоих вариантах, но порядок действительно будет разным.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "What should come first: the building or the landmarks?",
+              "ru": "Что поставить первым: корпус или ориентиры?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Сначала назвать корпус и этаж",
+              "answers": [
+                "The equipment desk is on the ground floor of the Old Building.",
+                "Start in the Old Building and stay on the ground floor."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Building first. Then the stairs and the noticeboard.",
+                "ru": "Сначала корпус. Затем лестница и доска объявлений.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u005_route_building"
+            },
+            {
+              "label": "Сначала описать ориентиры внутри старого корпуса",
+              "answers": [
+                "In the Old Building, find the stairs and the noticeboard.",
+                "Look between the stairs and the noticeboard in the Old Building."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Landmarks first. The next line will confirm the floor.",
+                "ru": "Сначала ориентиры. Следующая строка уточнит этаж.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u005_route_landmarks"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Which part would you put first?",
+            "ru": "Какую часть ты поставишь первой?",
+            "expr": "thinking"
+          },
+          "tags": [
+            "place_prepositions"
+          ],
+          "context": "Первая строка маршрута"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Reserved! We collect everything after the room check.",
+          "ru": "Забронировано! Заберём всё после проверки комнаты.",
+          "expr": "phone/happy"
+        },
+        {
+          "speaker": "rei",
+          "text": "First, that buzzing cable.",
+          "ru": "Сначала этот гудящий кабель.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    }
+  ]
+}

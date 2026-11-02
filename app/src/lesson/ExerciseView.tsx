@@ -1,5 +1,5 @@
 import { type ReactNode, useEffect, useMemo, useRef, useState } from 'react'
-import type { Exercise, ExerciseOf, Line } from '../content/schema'
+import { type Exercise, type ExerciseOf, type Line, shownWith } from '../content/schema'
 import { useExam } from './exam'
 import { PlaceContext, usePlace } from '../story/places'
 import { type Outcome, SPEAKER_NAMES, type Step, TIMELINE_LABELS, shuffled, supportTiles } from './model'
@@ -313,8 +313,10 @@ function Passage({ exercise }: { exercise: ExerciseOf<'reading'> }) {
   )
 }
 
-export function SceneLines({ lines }: { lines: readonly Line[] }) {
+export function SceneLines({ lines: all }: { lines: readonly Line[] }) {
   const always = useClub((s) => alwaysTranslate(s.settings))
+  const flags = useClub((s) => s.flags)
+  const lines = all.filter((l) => shownWith(l, flags))
   // The heroine whose line is being voiced is lit, with that line's face; in silence, the last speaker.
   const voiced = useVoicedLine()
   const playing = lines.findIndex((l) => `${l.speaker}|${l.text}` === voiced)
@@ -354,7 +356,8 @@ function SceneView({ step, exercise, locked, onAnswer }: ViewProps<'scene'>) {
       spelling,
       given: text,
       expected,
-      lines: ok ? [chosen.reaction] : [exercise.clarify, chosen.reaction],
+      // The common continuation follows any intent's reaction.
+      lines: [...(ok ? [] : [exercise.clarify]), chosen.reaction, ...(exercise.after ?? [])],
       flag: chosen.flag,
       note: remembered && `Будем звать тебя ${remembered}. Поменять имя можно в профиле.`,
     })

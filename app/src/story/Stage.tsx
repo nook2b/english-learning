@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { LineVoice } from '../speech/AudioControls'
 import { play, preload, stop } from '../speech/voice'
-import type { Line } from '../content/schema'
+import { type Line, shownWith } from '../content/schema'
 import { useClub, alwaysTranslate } from '../data/store'
 import { Gloss, Translation } from '../lesson/Gloss'
 import { SPEAKER_NAMES } from '../lesson/model'
@@ -133,14 +133,18 @@ export function Stage({
 }
 
 /** A short story beat: tap through the lines, then continue. */
-export function Beat({ setting, lines, doneLabel, onDone }: { setting?: string; lines: readonly Line[]; doneLabel: string; onDone: () => void }) {
+export function Beat({ setting, lines: all, doneLabel, onDone }: { setting?: string; lines: readonly Line[]; doneLabel: string; onDone: () => void }) {
+  // Lines that depend on an earlier story choice show only when it was made.
+  const flags = useClub((s) => s.flags)
+  const lines = useMemo(() => all.filter((l) => shownWith(l, flags)), [all, flags])
   const [i, setI] = useState(0)
   const always = useClub((s) => alwaysTranslate(s.settings))
   const voiceOn = useClub((s) => s.settings.voice)
   const line = lines[i]!
   // Read each line aloud as it appears when voice is on; stop when leaving the beat.
   useEffect(() => {
-    if (voiceOn) play(line.text, line.speaker, false, line)
+    // Narrator text (a card, a note) is read, not voiced.
+    if (voiceOn && line.speaker !== 'narrator') play(line.text, line.speaker, false, line)
   }, [voiceOn, line])
   // Fetch the whole beat's clips now, so lines start without a loading pause.
   useEffect(() => preload(lines), [lines])

@@ -1,0 +1,1122 @@
+{
+  "id": "007",
+  "title": "Договориться о помощи",
+  "goal": "Вежливо попросить о помощи, предложить посильную задачу и уточнить границы договорённости.",
+  "focus": "Вежливые просьбы: Can / Could you…?, Would you mind + -ing?, Could we…?; предложить помощь: Shall I…?, I'll…; согласиться или отказаться с причиной: Sure, I can / Sorry, I can't… because…",
+  "outcome": "Алекс проверил оборудование в выбранном порядке, заменил неисправный микрофонный кабель и батарейки индикатора. Команда получила разрешение пользоваться комплектом; забронированные предметы доставлены в комнату 17. Расстановка ещё не выбрана.",
+  "expressions": [
+    "Can you",
+    "Could you",
+    "Would you mind",
+    "Shall I",
+    "I'll",
+    "Could we",
+    "Sure, I can",
+    "Sorry, I can't",
+    "let me in",
+    "give me a hand",
+    "together",
+    "instead"
+  ],
+  "glossary": [
+    "power supply",
+    "trolley",
+    "batteries",
+    "doorway",
+    "replacement cable",
+    "put up shelves"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Когда техник может прийти",
+      "intro": "Техник ответил на заявку. Прочитай письмо: когда он придёт и что сделает.",
+      "place": "student_office",
+      "frame": {
+        "setting": "Вторник, 12:10. Мика показывает игроку ответ на вчерашнюю заявку. Айрис присоединяется после утренних семинаров; Рэй зайдёт на короткое согласование до лаборатории. Новый общий час не придумывают: проверяют уже существующую среду, 13:00.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "We have a reply! Wednesday at one. That is actually our time.",
+            "ru": "Нам ответили! Среда, час. Как раз наше время.",
+            "expr": "phone/happy"
+          },
+          {
+            "speaker": "iris",
+            "text": "Read what Alex can do before we add three more requests.",
+            "ru": "Прочитай, что Алекс может сделать, прежде чем добавлять ещё три просьбы.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u007-s1-e1",
+          "type": "reading",
+          "title": "Room 17 — equipment check",
+          "text": "Hello, Room 17 team,\nI can visit on Wednesday at 13:00. Could someone let me in and show me the equipment? Please leave the old microphone cable unplugged. I'll bring a replacement cable and batteries for the recording light.\nI can check the equipment and the power supply, but I can't put up shelves during this visit. After the check, you can collect your reserved furniture. There is a small trolley at the equipment desk. Please move the shelf together and keep the door clear.\nThanks,\nAlex, academy technician",
+          "ru": "Здравствуйте, команда комнаты 17! Я могу прийти в среду в 13:00. Может кто-нибудь впустить меня и показать оборудование? Пожалуйста, оставьте старый микрофонный кабель отключённым. Я принесу кабель для замены и батарейки для индикатора записи. Могу проверить оборудование и питание, но не смогу устанавливать полки во время этого визита. После проверки можно забрать забронированную мебель. В пункте выдачи есть маленькая тележка. Пожалуйста, переносите полку вдвоём и не загромождайте дверь. Алекс, техник академии.",
+          "questions": [
+            {
+              "prompt": "When can Alex visit?",
+              "options": [
+                "Tuesday at 14:00",
+                "Wednesday at 13:00",
+                "Wednesday at 15:00"
+              ],
+              "answer": "Wednesday at 13:00"
+            },
+            {
+              "prompt": "What does Alex need someone to do?",
+              "options": [
+                "Let Alex in and show the equipment",
+                "Buy a new shelf",
+                "Record a guide page"
+              ],
+              "answer": "Let Alex in and show the equipment"
+            },
+            {
+              "prompt": "What is outside this visit's tasks?",
+              "options": [
+                "Checking the power supply",
+                "Bringing a replacement cable",
+                "Putting up shelves"
+              ],
+              "answer": "Putting up shelves"
+            },
+            {
+              "prompt": "When can the team collect the furniture?",
+              "options": [
+                "Before the check",
+                "After the check",
+                "Only next month"
+              ],
+              "answer": "After the check"
+            }
+          ],
+          "tags": [
+            "reading",
+            "function_requests",
+            "function_offers"
+          ],
+          "look": "letter",
+          "header": "Bellwether Academy · Technical Services"
+        },
+        {
+          "id": "u007-s1-e2",
+          "type": "choice",
+          "prompt": "Could someone ___ me in?",
+          "options": [
+            "let",
+            "lets",
+            "letting"
+          ],
+          "answer": "let",
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "Let someone in — впустить.",
+          "context": "Письмо Алекса"
+        },
+        {
+          "id": "u007-s1-e3",
+          "type": "choice",
+          "prompt": "I ___ bring a replacement cable.",
+          "options": [
+            "'ll",
+            "shall",
+            "would mind"
+          ],
+          "answer": "'ll",
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "I'll — я сделаю (обещание).",
+          "context": "Письмо Алекса"
+        },
+        {
+          "id": "u007-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "Could you…?",
+              "ru": "не могли бы вы…?"
+            },
+            {
+              "en": "Would you mind…?",
+              "ru": "не возражаете, если…? / не могли бы…?"
+            },
+            {
+              "en": "Shall I…?",
+              "ru": "мне…? / давай я…?"
+            },
+            {
+              "en": "I'll…",
+              "ru": "я сделаю…"
+            },
+            {
+              "en": "let me in",
+              "ru": "впустить меня"
+            },
+            {
+              "en": "give me a hand",
+              "ru": "помочь мне"
+            }
+          ],
+          "tags": [
+            "function_requests"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "A visit has a time and a limit. Both are useful.",
+          "ru": "У визита есть время и границы. И то и другое полезно.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Кто что может",
+      "intro": "Две голосовые заметки: кто что может сделать в среду. Слушай без текста.",
+      "place": "student_office",
+      "frame": {
+        "setting": "В общем чате «Room 17» лежат две короткие заметки, записанные для распределения задач. В обоих случаях речь о предстоящей среде, не о том, что помощь уже оказана.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Listen before we put names next to jobs.",
+            "ru": "Сначала послушаем, потом впишем имена рядом с задачами.",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u007-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "I can meet Alex at the door at one. Could someone keep the repair request open on their phone? After the check, I'll bring the trolley. We need two people to move the shelf.",
+          "ru": "Я могу встретить Алекса у двери в час. Кто-нибудь может держать заявку открытой на телефоне? После проверки я привезу тележку. Чтобы перевезти полку, нужны двое.",
+          "questions": [
+            {
+              "prompt": "What can Mika do at one?",
+              "options": [
+                "Meet Alex",
+                "Put up a shelf",
+                "Leave for the city"
+              ],
+              "answer": "Meet Alex"
+            },
+            {
+              "prompt": "How many people should move the shelf?",
+              "options": [
+                "One",
+                "Two",
+                "Five"
+              ],
+              "answer": "Two"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_offers"
+          ],
+          "context": "Голосовое Мики в чате «Room 17»"
+        },
+        {
+          "id": "u007-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "I'll bring the borrowing sheet and clear the writing table. I can help move light boxes, but I can't carry the shelf alone. Would you mind keeping the doorway clear?",
+          "ru": "Я принесу лист выдачи и освобожу письменный стол. Могу помочь перенести лёгкие коробки, но не могу нести полку одна. Не мог бы ты оставить дверной проём свободным?",
+          "questions": [
+            {
+              "prompt": "What can't Iris do alone?",
+              "options": [
+                "Bring the sheet",
+                "Clear the table",
+                "Carry the shelf"
+              ],
+              "answer": "Carry the shelf"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_offers",
+            "function_requests"
+          ],
+          "context": "Голосовое Айрис в чате «Room 17»"
+        },
+        {
+          "id": "u007-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "Would you mind keeping the doorway clear?",
+          "answers": [
+            "Would you mind keeping the doorway clear?"
+          ],
+          "tags": [
+            "dictation",
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u007-s2-e4",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "I can meet Alex at the door at one.",
+          "answers": [
+            "I can meet Alex at the door at one."
+          ],
+          "delivery": "[quietly, focused]",
+          "tags": [
+            "dictation",
+            "function_offers"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Ask first. Assign second.",
+          "ru": "Сначала спросить. Потом распределять.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Попросить конкретно",
+      "intro": "Вежливая просьба: Can you…? (проще), Could you…? (вежливее), Would you mind + -ing? (очень вежливо: Would you mind opening the door?). Про себя и команду: Could we…?",
+      "place": "student_office",
+      "frame": {
+        "setting": "Айрис делает короткую карточку просьб: один адресат, одно понятное действие. Просьбы репетируются, оборудование пока никто не перемещает.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "A polite request still needs a clear action.",
+            "ru": "Даже вежливой просьбе нужно понятное действие.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u007-s3-e1",
+          "type": "choice",
+          "prompt": "___ you bring the borrowing sheet?",
+          "options": [
+            "Can",
+            "Shall",
+            "Would"
+          ],
+          "answer": "Can",
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "Can you…? — просьба.",
+          "context": "Карточка просьб Айрис"
+        },
+        {
+          "id": "u007-s3-e2",
+          "type": "choice",
+          "prompt": "Could you ___ the microphone cable?",
+          "options": [
+            "check",
+            "checking",
+            "to check"
+          ],
+          "answer": "check",
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "После could you — глагол без to.",
+          "context": "Карточка просьб Айрис"
+        },
+        {
+          "id": "u007-s3-e3",
+          "type": "choice",
+          "prompt": "Would you mind ___ the door?",
+          "options": [
+            "opening",
+            "open",
+            "to open"
+          ],
+          "answer": "opening",
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "После Would you mind — форма с -ing.",
+          "context": "Карточка просьб Айрис"
+        },
+        {
+          "id": "u007-s3-e4",
+          "type": "fill",
+          "prompt": "Would you mind ___ this space clear?",
+          "answers": [
+            "keeping"
+          ],
+          "hint": "keep",
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "Would you mind + -ing: keeping.",
+          "context": "Карточка просьб Айрис"
+        },
+        {
+          "id": "u007-s3-e5",
+          "type": "fill",
+          "prompt": "Could ___ borrow the small trolley?",
+          "answers": [
+            "we"
+          ],
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "Could we…? — можно нам…?",
+          "context": "Карточка просьб Айрис"
+        },
+        {
+          "id": "u007-s3-e6",
+          "type": "fill",
+          "prompt": "Can you give me a ___ with these boxes?",
+          "answers": [
+            "hand"
+          ],
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "Give someone a hand — помочь.",
+          "context": "Карточка просьб Айрис"
+        },
+        {
+          "id": "u007-s3-e7",
+          "type": "fix",
+          "sentence": "Would you mind to open the door?",
+          "answers": [
+            "Would you mind opening the door?"
+          ],
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "Would you mind + -ing.",
+          "context": "Карточка просьб Айрис"
+        },
+        {
+          "id": "u007-s3-e8",
+          "type": "transform",
+          "instruction": "Сделай просьбу вежливее: начни с Could you",
+          "sentence": "Show us where the panels go.",
+          "answers": [
+            "Could you show us where the panels go?"
+          ],
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "Could you + глагол?",
+          "context": "Карточка просьб Айрис"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Now nobody has to guess what “help” means.",
+          "ru": "Теперь никому не нужно угадывать, что значит «помочь».",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Предложить и отказаться",
+      "intro": "Предложить: Shall I…? (мне сделать?), I'll… (я сделаю). Согласиться: Sure, I can. Отказаться честно: Sorry, I can't… because… — и предложить, что можешь: I can… instead.",
+      "place": "student_office",
+      "frame": {
+        "setting": "Мика распределяет ещё не выполненные задачи на среду. У каждой есть реальное время; отказ от одной задачи не означает отказ от всей команды.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "You can say what you can do. And what you can't. I need both.",
+            "ru": "Можно сказать, что ты можешь сделать. И чего не можешь. Мне нужно и то и другое.",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u007-s4-e1",
+          "type": "choice",
+          "prompt": "___ I meet Alex at the door?",
+          "options": [
+            "Shall",
+            "Will",
+            "Do"
+          ],
+          "answer": "Shall",
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "Shall I…? — предложение: мне сделать?",
+          "context": "Список Мики"
+        },
+        {
+          "id": "u007-s4-e2",
+          "type": "choice",
+          "prompt": "I ___ bring the trolley after the check.",
+          "options": [
+            "'ll",
+            "shall to",
+            "am bring"
+          ],
+          "answer": "'ll",
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "I'll + глагол — обещаю сделать.",
+          "context": "Список Мики"
+        },
+        {
+          "id": "u007-s4-e3",
+          "type": "fill",
+          "prompt": "Shall I ___ the table first?",
+          "answers": [
+            "clear"
+          ],
+          "hint": "освободить",
+          "tags": [
+            "function_offers"
+          ],
+          "context": "Список Мики"
+        },
+        {
+          "id": "u007-s4-e4",
+          "type": "choice",
+          "prompt": "Sure, I ___ help with the boxes.",
+          "options": [
+            "can",
+            "can to",
+            "am can"
+          ],
+          "answer": "can",
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "Sure, I can help.",
+          "context": "Список Мики"
+        },
+        {
+          "id": "u007-s4-e5",
+          "type": "fill",
+          "prompt": "Sorry, I can't carry the shelf alone ___ it's too heavy.",
+          "answers": [
+            "because"
+          ],
+          "hint": "потому что",
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "Отказ с причиной: because…",
+          "context": "Список Мики"
+        },
+        {
+          "id": "u007-s4-e6",
+          "type": "fill",
+          "prompt": "I can hold the door ___.",
+          "answers": [
+            "instead"
+          ],
+          "hint": "вместо этого",
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "Instead — вместо этого.",
+          "context": "Список Мики"
+        },
+        {
+          "id": "u007-s4-e7",
+          "type": "sort",
+          "instruction": "Это просьба или предложение?",
+          "categories": [
+            {
+              "id": "req",
+              "label": "Просьба: прошу другого"
+            },
+            {
+              "id": "off",
+              "label": "Предложение: делаю сам"
+            }
+          ],
+          "items": [
+            {
+              "text": "Could you check this cable?",
+              "category": "req"
+            },
+            {
+              "text": "Shall I bring the trolley?",
+              "category": "off"
+            },
+            {
+              "text": "Would you mind holding the door?",
+              "category": "req"
+            },
+            {
+              "text": "I'll meet Alex at the door.",
+              "category": "off"
+            },
+            {
+              "text": "Can you give me a hand?",
+              "category": "req"
+            },
+            {
+              "text": "I can hold the door instead.",
+              "category": "off"
+            }
+          ],
+          "tags": [
+            "function_offers",
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u007-s4-e8",
+          "type": "fix",
+          "sentence": "Sorry, I can't carry the shelf alone, it's too heavy because.",
+          "answers": [
+            "Sorry, I can't carry the shelf alone because it's too heavy."
+          ],
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "Because ставится перед причиной.",
+          "context": "Список Мики"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "A smaller promise I can actually put on the list. Useful.",
+          "ru": "Небольшое обещание, которое можно действительно внести в список. Полезно.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Выбрать свою задачу",
+      "intro": "Выбери свою задачу на среду и попроси о помощи сам.",
+      "place": "student_office",
+      "exercises": [
+        {
+          "id": "u007-s5-e1",
+          "type": "scene",
+          "setting": "Две реальные задачи на среду ещё свободны. Игрок выбирает одну. Во второй задаче его заменит Мика; роли показаны явно.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "Can you handle one of these? Meeting Alex, or keeping the list during the check?",
+              "ru": "Возьмёшь что-то одно? Встретить Алекса или вести список во время проверки?",
+              "expr": "phone/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Предложить встретить техника",
+              "answers": [
+                "I'll meet Alex at the door.",
+                "Shall I let Alex in at one?"
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Thanks. I'll keep the request open and note the results.",
+                "ru": "Спасибо. Я открою заявку и запишу результаты.",
+                "expr": "phone/focused"
+              },
+              "flag": "u007_role_door"
+            },
+            {
+              "label": "Предложить вести список и попросить Мику встретить техника",
+              "answers": [
+                "I'll keep the list. Could you meet Alex?",
+                "Can you let Alex in? I'll write down the results."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Sure. I'll meet Alex, and you'll keep the list.",
+                "ru": "Конечно. Я встречу Алекса, а ты будешь вести список.",
+                "expr": "phone/focused"
+              },
+              "flag": "u007_role_notes"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Which task would you like: the door or the list?",
+            "ru": "Какую задачу ты выбираешь: дверь или список?",
+            "expr": "thinking"
+          },
+          "tags": [
+            "function_offers",
+            "function_requests"
+          ],
+          "context": "Помочь так, как можешь"
+        },
+        {
+          "id": "u007-s5-e2",
+          "type": "translate",
+          "ru": "Не могли бы вы проверить этот кабель?",
+          "answers": [
+            "Could you check this cable?",
+            "Could you check this cable, please?",
+            "Can you check this cable?"
+          ],
+          "tags": [
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u007-s5-e3",
+          "type": "translate",
+          "ru": "Мне привезти тележку?",
+          "answers": [
+            "Shall I bring the trolley?"
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u007-s5-e4",
+          "type": "translate",
+          "ru": "Я встречу Алекса у двери.",
+          "answers": [
+            "I'll meet Alex at the door.",
+            "I will meet Alex at the door."
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u007-s5-e5",
+          "type": "translate",
+          "ru": "Не мог бы ты подержать дверь?",
+          "answers": [
+            "Would you mind holding the door?",
+            "Could you hold the door?",
+            "Can you hold the door?"
+          ],
+          "tags": [
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u007-s5-e6",
+          "type": "write",
+          "situation": "Тебя просят одного нести полку. Откажись честно, назови причину и предложи, что можешь сделать.",
+          "answers": [
+            "Sorry, I can't carry the shelf alone because it's too heavy. I can hold the door instead.",
+            "Sorry, I can't carry it alone because it's heavy. I can hold the door.",
+            "Sorry, I can't carry the shelf alone because it's too heavy, but I can help you move it together.",
+            "Sorry, I can't move the shelf alone because it's too heavy. I can hold the trolley instead."
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "One name per task. Two people are no longer both “doing everything”.",
+          "ru": "На каждую задачу по имени. Два человека больше не «делают всё» одновременно.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом",
+      "intro": "Прочитай вслух просьбы на завтра.",
+      "place": "student_office",
+      "frame": {
+        "setting": "Игрок репетирует просьбы для встречи и перемещения мебели. Это ещё не разговор с техником.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Requests for tomorrow. Try them.",
+            "ru": "Просьбы на завтра. Попробуй.",
+            "expr": "listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u007-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Could you check this cable, please?",
+          "answers": [
+            "Could you check this cable, please?"
+          ],
+          "tags": [
+            "speaking",
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u007-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Would you mind holding the door?",
+          "answers": [
+            "Would you mind holding the door?"
+          ],
+          "tags": [
+            "speaking",
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u007-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Shall I bring the trolley?",
+          "answers": [
+            "Shall I bring the trolley?"
+          ],
+          "tags": [
+            "speaking",
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u007-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I can't move the shelf alone, but I can help you.",
+          "answers": [
+            "I can't move the shelf alone, but I can help you."
+          ],
+          "tags": [
+            "speaking",
+            "function_requests"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Clear requests. No guessing.",
+          "ru": "Понятные просьбы. Без угадывания.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг",
+      "intro": "Быстрый круг: просьба — согласие или отказ с причиной.",
+      "place": "student_office",
+      "frame": {
+        "setting": "Перед отправкой подтверждения Мика показывает список: среда, 13:00; роли игрока и Мики; техника проверяют до выдачи мебели.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Last check. Does every job have a person, and every request an answer?",
+            "ru": "Последняя проверка. У каждой задачи есть исполнитель, а у каждой просьбы — ответ?",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u007-s7-e1",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "trolley",
+              "ru": "тележка"
+            },
+            {
+              "en": "doorway",
+              "ru": "дверной проём"
+            },
+            {
+              "en": "power supply",
+              "ru": "питание, электропитание"
+            },
+            {
+              "en": "batteries",
+              "ru": "батарейки"
+            },
+            {
+              "en": "instead",
+              "ru": "вместо этого"
+            }
+          ],
+          "tags": [
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u007-s7-e2",
+          "type": "choice",
+          "prompt": "— Would you mind holding the door? — ___",
+          "options": [
+            "Of course, I'll hold it.",
+            "Yes, I mind.",
+            "Sure, I can't."
+          ],
+          "answer": "Of course, I'll hold it.",
+          "tags": [
+            "function_requests"
+          ],
+          "explain": "На Would you mind лучше отвечать полной фразой: Of course, I'll…"
+        },
+        {
+          "id": "u007-s7-e3",
+          "type": "choice",
+          "prompt": "— Can you carry the shelf alone? — Sorry, I can't ___ it's too heavy.",
+          "options": [
+            "because",
+            "so",
+            "but"
+          ],
+          "answer": "because",
+          "tags": [
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u007-s7-e4",
+          "type": "fill",
+          "prompt": "Shall I ___ the trolley?",
+          "answers": [
+            "bring"
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u007-s7-e5",
+          "type": "fill",
+          "prompt": "Could you ___ me in at one?",
+          "answers": [
+            "let"
+          ],
+          "tags": [
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u007-s7-e6",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "I can't carry the shelf alone.",
+          "answers": [
+            "I can't carry the shelf alone."
+          ],
+          "tags": [
+            "dictation",
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u007-s7-e7",
+          "type": "translate",
+          "ru": "Можно нам взять маленькую тележку?",
+          "answers": [
+            "Could we borrow the small trolley?",
+            "Can we borrow the small trolley?"
+          ],
+          "tags": [
+            "function_requests"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Confirmed for Wednesday at one. Same hour, a different plan.",
+          "ru": "Подтвердили среду, час дня. Тот же час, другой план.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: помощь по договорённости",
+      "role": "mission",
+      "intro": "Миссия: визит техника и перевозка мебели — каждый делает то, о чём договорились.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u007-s8-e1",
+          "type": "scene",
+          "setting": "Среда третьей недели, ровно 13:00. Алекс приходит в комнату 17. Каждый делает задачу, которую выбрал: один впускает техника, другой ведёт список результатов на телефоне. Рэй показывает отключённый кабель, Мика — индикатор.",
+          "lines": [
+            {
+              "speaker": "alex",
+              "text": "Hello. Could you show me which problem you want checked first?",
+              "ru": "Здравствуйте. Покажете, какую проблему вы хотите проверить первой?"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Попросить объяснить результат проверки",
+              "answers": [
+                "Could you explain what you find?",
+                "Can you tell us what the problem is?"
+              ],
+              "reaction": {
+                "speaker": "alex",
+                "text": "Of course. I'll explain each result before we move on.",
+                "ru": "Конечно. Объясню каждый результат, прежде чем двигаться дальше."
+              }
+            },
+            {
+              "label": "Попросить проверить также питание",
+              "answers": [
+                "Could you check the power supply too?",
+                "Can you also check the socket we use?"
+              ],
+              "reaction": {
+                "speaker": "alex",
+                "text": "Yes. That is part of the check. I'll include the result in your notes.",
+                "ru": "Да. Это часть проверки. Я добавлю результат в ваши заметки."
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "alex",
+            "text": "Do you want an explanation, or an extra check?",
+            "ru": "Вы хотите объяснение или дополнительную проверку?"
+          },
+          "tags": [
+            "function_requests"
+          ],
+          "after": [
+            {
+              "speaker": "alex",
+              "text": "The microphone cable has a faulty connector. I'll replace the cable.",
+              "ru": "У микрофонного кабеля неисправен разъём. Заменю кабель.",
+              "ifNot": "u006_check_light_first"
+            },
+            {
+              "speaker": "alex",
+              "text": "This small light runs on batteries. They are low. I'll replace them.",
+              "ru": "Этот маленький индикатор работает от батареек. Они садятся. Заменю их."
+            },
+            {
+              "speaker": "alex",
+              "text": "The microphone cable has a faulty connector. I'll replace the cable.",
+              "ru": "У микрофонного кабеля неисправен разъём. Заменю кабель.",
+              "if": "u006_check_light_first"
+            },
+            {
+              "speaker": "alex",
+              "text": "The socket and power supply are working normally. The echo needs a different solution.",
+              "ru": "Розетка и питание работают нормально. Для эха нужно другое решение."
+            },
+            {
+              "speaker": "rei",
+              "text": "So, not the whole building.",
+              "ru": "Значит, не всё здание.",
+              "expr": "deadpan"
+            },
+            {
+              "speaker": "alex",
+              "text": "Put the soft panels around the recording corner. Leave space to walk.",
+              "ru": "Поставьте мягкие панели вокруг угла записи. Оставьте место для прохода."
+            }
+          ],
+          "context": "Проверка"
+        },
+        {
+          "id": "u007-s8-e2",
+          "type": "scene",
+          "setting": "Около 13:15. Алекс закончил визит и ушёл. Мика привезла тележку из пункта выдачи, Рэй идёт с игроком к уже отмеченным предметам; Айрис остаётся подписать опись и освободить место в комнате. Пункт выдачи близко, на том же этаже.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Shelf first. Need a hand?",
+              "ru": "Сначала полка. Нужна помощь?",
+              "expr": "neutral"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Попросить Рэй помочь поставить полку на тележку",
+              "answers": [
+                "Could you help me put the shelf on the trolley?",
+                "Can we move the shelf onto the trolley together?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Yes. One side each.",
+                "ru": "Да. Каждому по стороне.",
+                "expr": "focused"
+              }
+            },
+            {
+              "label": "Предложить держать тележку и попросить Мику помочь Рэй",
+              "answers": [
+                "I'll hold the trolley. Could you help Rei with the shelf, Mika?",
+                "Can you two lift the shelf? I'll keep the trolley still."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Sure. You hold it steady; we'll lift together.",
+                "ru": "Конечно. Ты придерживаешь, мы поднимаем вдвоём.",
+                "expr": "focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Helping lift, or holding the trolley?",
+            "ru": "Помогаешь поднять или держишь тележку?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_requests",
+            "function_offers"
+          ],
+          "context": "Тележка у двери"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Four borrowed items, one working microphone, and a clear doorway.",
+          "ru": "Четыре взятых предмета, один работающий микрофон и свободный дверной проём.",
+          "expr": "notebook/focused"
+        },
+        {
+          "speaker": "mika",
+          "text": "Now we can argue about where everything goes.",
+          "ru": "Теперь можно спорить о том, куда всё поставить.",
+          "expr": "happy"
+        },
+        {
+          "speaker": "rei",
+          "text": "Quietly.",
+          "ru": "Тихо.",
+          "expr": "deadpan"
+        }
+      ]
+    }
+  ]
+}
