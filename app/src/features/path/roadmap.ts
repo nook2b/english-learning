@@ -29,7 +29,7 @@ export function unitHeroine(unit: Unit): HeroineId {
 export const MAP_POSES: Record<HeroineId, readonly string[]> = {
   mika: ['wave_mic', 'clipboard_run', 'phone_show', 'lunch_bags', 'peace', 'leaning', 'cat_gesture'],
   rei: ['recorder_crouch', 'headphones_listen', 'cable_coil', 'mic_stand', 'stool', 'greeting', 'kneeling'],
-  iris: ['book_walk', 'timetable_point', 'notebook_write', 'books_sit'],
+  iris: ['book_walk', 'timetable_point', 'notebook_write', 'books_sit', 'peace', 'seated', 'over_shoulder'],
 }
 
 /** Each unit's heroine takes her poses in turn along the course, so neighbours differ. */
