@@ -47,7 +47,7 @@ test('right and wrong answers, feedback, mistakes and summary', async () => {
   fireEvent.change(screen.getByRole('textbox', { name: 'Ответ' }), { target: { value: 'lives' } })
   fireEvent.click(screen.getByRole('button', { name: 'Проверить' }))
   fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
-  expect(await screen.findByText(/Точность: 50%/)).toBeInTheDocument()
+  expect(await screen.findByLabelText(/Точность: 50%/)).toBeInTheDocument()
   // The summary shows the whole sentence, not the bare answer.
   expect(screen.getByText('She lives here.')).toBeInTheDocument()
 
@@ -93,7 +93,7 @@ test("skipping a speaking task is neither right nor wrong", async () => {
   fireEvent.click(screen.getByRole('button', { name: 'Дальше' }))
   fireEvent.click(screen.getByRole('button', { name: 'a' }))
   fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
-  expect(await screen.findByText(/Точность: 100% \(1 из 1\)/)).toBeInTheDocument()
+  expect(await screen.findByLabelText(/Точность: 100% \(1 из 1\)/)).toBeInTheDocument()
   expect(screen.getByText(/Отложено: 1/)).toBeInTheDocument()
   // The task is kept to come back in review.
   expect(await db.deferred.get('t-5')).toMatchObject({ unitId: '999', index: 1 })
@@ -147,7 +147,7 @@ test('a session opens with its story frame and ends with what changed', async ()
   fireEvent.click(screen.getByRole('button', { name: 'Завершить занятие' }))
   expect(await screen.findByText(line('Good. Now the guide knows.'))).toBeInTheDocument()
   fireEvent.click(screen.getByRole('button', { name: 'Итоги занятия' }))
-  expect(screen.getByText(/Точность: 100%/)).toBeInTheDocument()
+  expect(screen.getByLabelText(/Точность: 100%/)).toBeInTheDocument()
 })
 
 test('a scene choice is remembered for later scenes', async () => {
@@ -233,7 +233,7 @@ test('developer mode: a task can be skipped and counts as answered right', async
   fireEvent.click(screen.getByRole('button', { name: 'Дальше' }))
   fireEvent.click(await screen.findByRole('button', { name: /Пропустить \(засчитать верным\)/ }))
   fireEvent.click(await screen.findByRole('button', { name: 'Завершить занятие' }))
-  expect(await screen.findByText(/Точность: 100% \(2 из 2\)/)).toBeInTheDocument()
+  expect(await screen.findByLabelText(/Точность: 100% \(2 из 2\)/)).toBeInTheDocument()
 })
 
 test('speaking: the words the microphone hears show while speaking and stay after the answer', async () => {
