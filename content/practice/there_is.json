@@ -1,0 +1,143 @@
+{
+ "tag": "there_is",
+ "items": [
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-there_is-01",
+    "type": "choice",
+    "prompt": "___ a small office next to the lift.",
+    "options": [
+     "There is",
+     "There are",
+     "It is"
+    ],
+    "answer": "There is",
+    "tags": [
+     "there_is"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-there_is-02",
+    "type": "choice",
+    "prompt": "___ three chairs by the window.",
+    "options": [
+     "There are",
+     "There is",
+     "They are"
+    ],
+    "answer": "There are",
+    "tags": [
+     "there_is"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-there_is-03",
+    "type": "choice",
+    "prompt": "There ___ any panels in the corridor.",
+    "options": [
+     "aren't",
+     "isn't",
+     "don't"
+    ],
+    "answer": "aren't",
+    "tags": [
+     "there_is"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-there_is-04",
+    "type": "fill",
+    "prompt": "There ___ a noticeboard at the end of the corridor.",
+    "answers": [
+     "is"
+    ],
+    "tags": [
+     "there_is"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-there_is-05",
+    "type": "fill",
+    "prompt": "___ there a lift in the Old Building?",
+    "answers": [
+     "Is"
+    ],
+    "tags": [
+     "there_is"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-there_is-06",
+    "type": "transform",
+    "instruction": "Сделай вопрос",
+    "sentence": "There are some shelves in the storage room.",
+    "answers": [
+     "Are there any shelves in the storage room?"
+    ],
+    "tags": [
+     "there_is"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-there_is-07",
+    "type": "transform",
+    "instruction": "Сделай отрицание",
+    "sentence": "There is a trolley at the equipment desk.",
+    "answers": [
+     "There isn't a trolley at the equipment desk.",
+     "There is not a trolley at the equipment desk."
+    ],
+    "tags": [
+     "there_is"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-there_is-08",
+    "type": "fix",
+    "sentence": "There are a borrowing sheet by the door.",
+    "answers": [
+     "There is a borrowing sheet by the door."
+    ],
+    "tags": [
+     "there_is"
+    ]
+   }
+  },
+  {
+   "unit": "005",
+   "exercise": {
+    "id": "p-there_is-09",
+    "type": "fix",
+    "sentence": "Is there any chairs we can borrow?",
+    "answers": [
+     "Are there any chairs we can borrow?"
+    ],
+    "tags": [
+     "there_is"
+    ]
+   }
+  }
+ ]
+}

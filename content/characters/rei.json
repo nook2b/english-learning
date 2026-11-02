@@ -26,6 +26,12 @@
         "unit": "004"
       },
       "ru": "Встаёт поздно. Иногда записывает ночной автобус."
+    },
+    {
+      "unlock": {
+        "unit": "008"
+      },
+      "ru": "Она предпочитает записывать подальше от двери; две мягкие панели для неё полезнее, чем пустой красивый угол."
     }
   ],
   "memories": [
@@ -56,6 +62,20 @@
       },
       "en": "You admitted your mornings are chaos. Rei kept it in the guide.",
       "ru": "Ты признался, что утро у тебя — хаос. Рэй оставила это в гиде."
+    },
+    {
+      "unlock": {
+        "flag": "u008_setup_sound_first"
+      },
+      "en": "You suggested starting with the recording corner. You and Rei put up the panels, then cleared the writing table. Less echo on the test.",
+      "ru": "Ты предложил начать обустройство с угла записи. Вы с Рэй поставили панели, а затем освободили письменный стол. На пробе стало меньше эха."
+    },
+    {
+      "unlock": {
+        "flag": "u008_setup_table_first"
+      },
+      "en": "You suggested clearing the writing table first, then helped Rei with the panels. Less echo on the test.",
+      "ru": "Ты предложил сначала освободить письменный стол, а затем помог Рэй поставить панели. На пробе стало меньше эха."
     }
   ],
   "lines": [

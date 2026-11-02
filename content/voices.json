@@ -12,7 +12,8 @@
     "rei": "tWbuddD9YFdBqLHumjE2",
     "mika": "zy9WSTvdBJgqZRZ8JJF2",
     "iris": "MTtyIHkOaoPnvpzwLU3Z",
-    "announcer": "onwK4e9ZLuTAKqWW03F9"
+    "announcer": "onwK4e9ZLuTAKqWW03F9",
+    "alex": "iP95p4xoKVk53GoZ742B"
   },
   "_deliveryByExpr": "Audio tags added to a line by the sprite emotion when the line has no explicit delivery. Only for heroine lines; see docs/14-voice.md.",
   "deliveryByExpr": {
@@ -40,5 +41,5 @@
     "teary": "[emotional, voice trembling]",
     "playful": "[playfully]"
   },
-  "_voices": "Heroines, and the announcer: the International Office voice in the placement check (no heroine runs the check)."
+  "_voices": "Heroines; the announcer: the International Office voice in the placement check (no heroine runs the check); alex: Alex, the academy technician (units 006-007)."
 }

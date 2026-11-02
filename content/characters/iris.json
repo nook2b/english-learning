@@ -26,6 +26,12 @@
         "unit": "004"
       },
       "ru": "Любит, когда каждое наречие стоит на своём месте."
+    },
+    {
+      "unlock": {
+        "unit": "008"
+      },
+      "ru": "Ей нужен отдельный письменный стол с местом для блокнота; она любит писать у окна, но принимает и другой удобный вариант."
     }
   ],
   "memories": [
@@ -63,6 +69,20 @@
       },
       "en": "Iris kept your wording and only marked the grammar. \"That's a compliment.\"",
       "ru": "Айрис сохранила твои формулировки и только отметила грамматику. «Это комплимент»."
+    },
+    {
+      "unlock": {
+        "flag": "u008_layout_window"
+      },
+      "en": "On your suggestion the writing table went by the window, with the shelf beside it. The boxes finally stopped sitting on a chair.",
+      "ru": "По твоему предложению письменный стол поставили у окна, а полку — рядом. Коробки наконец перестали занимать стул."
+    },
+    {
+      "unlock": {
+        "flag": "u008_layout_wall"
+      },
+      "en": "On your suggestion the writing table went against the other wall, and the window area stayed open. The boxes went on the shelf.",
+      "ru": "По твоему предложению письменный стол поставили у другой стены, оставив место у окна свободным. Коробки убрали на полку рядом со столом."
     }
   ],
   "lines": [

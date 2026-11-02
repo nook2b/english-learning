@@ -1,0 +1,143 @@
+{
+ "tag": "function_problem",
+ "items": [
+  {
+   "unit": "006",
+   "exercise": {
+    "id": "p-function_problem-01",
+    "type": "choice",
+    "prompt": "The projector ___ working.",
+    "options": [
+     "isn't",
+     "doesn't",
+     "not"
+    ],
+    "answer": "isn't",
+    "tags": [
+     "function_problem"
+    ]
+   }
+  },
+  {
+   "unit": "006",
+   "exercise": {
+    "id": "p-function_problem-02",
+    "type": "choice",
+    "prompt": "The window is very ___. Nobody cleans it.",
+    "options": [
+     "dusty",
+     "dusting",
+     "dust"
+    ],
+    "answer": "dusty",
+    "tags": [
+     "function_problem"
+    ]
+   }
+  },
+  {
+   "unit": "006",
+   "exercise": {
+    "id": "p-function_problem-03",
+    "type": "choice",
+    "prompt": "The music is ___ loud. I can't hear you.",
+    "options": [
+     "too",
+     "to",
+     "very much"
+    ],
+    "answer": "too",
+    "tags": [
+     "function_problem"
+    ]
+   }
+  },
+  {
+   "unit": "006",
+   "exercise": {
+    "id": "p-function_problem-04",
+    "type": "fill",
+    "prompt": "Something is ___ with the printer.",
+    "answers": [
+     "wrong"
+    ],
+    "tags": [
+     "function_problem"
+    ]
+   }
+  },
+  {
+   "unit": "006",
+   "exercise": {
+    "id": "p-function_problem-05",
+    "type": "fill",
+    "prompt": "The screen is ___. It turns on and off.",
+    "answers": [
+     "flashing"
+    ],
+    "tags": [
+     "function_problem"
+    ]
+   }
+  },
+  {
+   "unit": "006",
+   "exercise": {
+    "id": "p-function_problem-06",
+    "type": "fill",
+    "prompt": "Could you check the ___? The cable may be loose.",
+    "answers": [
+     "connection"
+    ],
+    "tags": [
+     "function_problem"
+    ]
+   }
+  },
+  {
+   "unit": "006",
+   "exercise": {
+    "id": "p-function_problem-07",
+    "type": "choice",
+    "prompt": "We don't know why. The lamp is ___.",
+    "options": [
+     "broken",
+     "breaking",
+     "break"
+    ],
+    "answer": "broken",
+    "tags": [
+     "function_problem"
+    ]
+   }
+  },
+  {
+   "unit": "006",
+   "exercise": {
+    "id": "p-function_problem-08",
+    "type": "fix",
+    "sentence": "The cable is loosing.",
+    "answers": [
+     "The cable is loose."
+    ],
+    "tags": [
+     "function_problem"
+    ]
+   }
+  },
+  {
+   "unit": "006",
+   "exercise": {
+    "id": "p-function_problem-09",
+    "type": "fix",
+    "sentence": "Something is wrong the speaker.",
+    "answers": [
+     "Something is wrong with the speaker."
+    ],
+    "tags": [
+     "function_problem"
+    ]
+   }
+  }
+ ]
+}

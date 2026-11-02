@@ -39,7 +39,7 @@ export function toSteps(exercises: readonly Exercise[]): Step[] {
 /** Session kinds as the learner sees them (route, session header). */
 export const KIND_LABELS = { comprehension: 'Понимание', form: 'Форма', production: 'Продукция', fluency: 'Беглость' } as const
 
-export const SPEAKER_NAMES: Record<Speaker, string> = { mika: 'Mika', rei: 'Rei', iris: 'Iris', newcomer: 'Newcomer', narrator: '', announcer: 'International Office' }
+export const SPEAKER_NAMES: Record<Speaker, string> = { mika: 'Mika', rei: 'Rei', iris: 'Iris', newcomer: 'Newcomer', narrator: '', announcer: 'International Office', alex: 'Alex' }
 
 /** Deterministic shuffle so a step looks the same after a re-render. */
 export function shuffled<T>(items: readonly T[], seed: string): T[] {
@@ -120,7 +120,7 @@ export function skippedAsRight(step: Step, playerName = ''): Outcome {
       return right(e.pairs.map((p) => `${p.en} — ${p.ru}`).join('; '))
     case 'scene': {
       const intent = e.intents[0]!
-      return { ...right(intent.answers[0]!.replace('{player_name}', playerName || 'Alex')), lines: [intent.reaction], flag: intent.flag }
+      return { ...right(intent.answers[0]!.replace('{player_name}', playerName || 'Alex')), lines: [intent.reaction, ...(e.after ?? [])], flag: intent.flag }
     }
     default:
       return right(e.answers[0]!)

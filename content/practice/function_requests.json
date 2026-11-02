@@ -1,0 +1,143 @@
+{
+ "tag": "function_requests",
+ "items": [
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_requests-01",
+    "type": "choice",
+    "prompt": "Would you mind ___ the window?",
+    "options": [
+     "closing",
+     "close",
+     "to close"
+    ],
+    "answer": "closing",
+    "tags": [
+     "function_requests"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_requests-02",
+    "type": "choice",
+    "prompt": "Could you ___ me with this box?",
+    "options": [
+     "help",
+     "helping",
+     "to help"
+    ],
+    "answer": "help",
+    "tags": [
+     "function_requests"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_requests-03",
+    "type": "choice",
+    "prompt": "___ we use this room after lunch?",
+    "options": [
+     "Could",
+     "Shall",
+     "Would mind"
+    ],
+    "answer": "Could",
+    "tags": [
+     "function_requests"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_requests-04",
+    "type": "fill",
+    "prompt": "Would you mind ___ a bit quieter?",
+    "answers": [
+     "speaking",
+     "talking"
+    ],
+    "tags": [
+     "function_requests"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_requests-05",
+    "type": "fill",
+    "prompt": "Can you give me a ___ with the chairs?",
+    "answers": [
+     "hand"
+    ],
+    "tags": [
+     "function_requests"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_requests-06",
+    "type": "fill",
+    "prompt": "Could someone ___ me in at two?",
+    "answers": [
+     "let"
+    ],
+    "tags": [
+     "function_requests"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_requests-07",
+    "type": "transform",
+    "instruction": "Сделай просьбу вежливее: начни с Could you",
+    "sentence": "Open the door.",
+    "answers": [
+     "Could you open the door?",
+     "Could you open the door, please?"
+    ],
+    "tags": [
+     "function_requests"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_requests-08",
+    "type": "fix",
+    "sentence": "Would you mind to wait a minute?",
+    "answers": [
+     "Would you mind waiting a minute?"
+    ],
+    "tags": [
+     "function_requests"
+    ]
+   }
+  },
+  {
+   "unit": "007",
+   "exercise": {
+    "id": "p-function_requests-09",
+    "type": "fix",
+    "sentence": "Could you to check the light?",
+    "answers": [
+     "Could you check the light?"
+    ],
+    "tags": [
+     "function_requests"
+    ]
+   }
+  }
+ ]
+}

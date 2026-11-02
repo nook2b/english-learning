@@ -26,6 +26,12 @@
         "unit": "004"
       },
       "ru": "Встаёт в шесть, первым делом проверяет сообщения и никогда не ложится до полуночи."
+    },
+    {
+      "unlock": {
+        "unit": "008"
+      },
+      "ru": "Для общей работы ей нужна хорошо видимая доска; красивое фото может подождать, пока комнатой действительно можно пользоваться."
     }
   ],
   "memories": [
@@ -70,6 +76,20 @@
       },
       "en": "Mika sent the team's first real plan: Wednesday, one o'clock, the courtyard.",
       "ru": "Мика отправила первый настоящий план команды: среда, час дня, двор."
+    },
+    {
+      "unlock": {
+        "flag": "u007_role_door"
+      },
+      "en": "Before Alex's visit you took the door, and Mika kept the list of results.",
+      "ru": "Перед визитом техника ты взял на себя встречу у двери, а Мика вела список результатов."
+    },
+    {
+      "unlock": {
+        "flag": "u007_role_notes"
+      },
+      "en": "Before Alex's visit you kept the list of results, and Mika let him in. You both did exactly those jobs.",
+      "ru": "Перед визитом техника ты выбрал список результатов, а Мика встретила техника. Вы выполнили именно эти роли."
     }
   ],
   "lines": [

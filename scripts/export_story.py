@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-NAMES = {"mika": "Мика", "rei": "Рэй", "iris": "Айрис", "newcomer": "Новичок", "narrator": "Диктор"}
+NAMES = {"mika": "Мика", "rei": "Рэй", "iris": "Айрис", "newcomer": "Новичок", "narrator": "Диктор", "alex": "Алекс"}
 KINDS = {"comprehension": "понимание", "form": "форма", "production": "продукция", "fluency": "беглость"}
 
 
@@ -22,6 +22,10 @@ def say(line, indent=""):
         extra.append(line["expr"])
     if line.get("delivery"):
         extra.append(line["delivery"])
+    if line.get("if"):
+        extra.append(f"если `{line['if']}`")
+    if line.get("ifNot"):
+        extra.append(f"если нет `{line['ifNot']}`")
     tail = f" _({', '.join(extra)})_" if extra else ""
     ru = f" — {line['ru']}" if line.get("ru") else ""
     return f"{indent}- **{who}:** {line['text']}{ru}{tail}"
@@ -54,6 +58,8 @@ def unit_story(unit):
                     flag = f" · флаг `{it['flag']}`" if it.get("flag") else ""
                     out += [f"- _{it['label']}_ → «{it['answers'][0]}»{flag}", say(it["reaction"], "  ")]
                 out += ["", "Если ответ непонятен:", say(e["clarify"]), ""]
+                if e.get("after"):
+                    out += ["Общее продолжение:"] + [say(l) for l in e["after"]] + [""]
         if s.get("wrap"):
             out += ["_Итог занятия:_", ""] + [say(l) for l in s["wrap"]] + [""]
     return out

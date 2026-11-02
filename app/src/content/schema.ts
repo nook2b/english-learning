@@ -11,13 +11,23 @@ const answers = z.array(z.string().min(1)).min(1)
 export const HEROINES = ['mika', 'rei', 'iris'] as const
 /** Every unit has eight sessions (docs/00-full-plan.md, 3.3). */
 export const SESSIONS_PER_UNIT = 8
-export const Speaker = z.enum([...HEROINES, 'newcomer', 'narrator', 'announcer'])
+export const Speaker = z.enum([...HEROINES, 'newcomer', 'narrator', 'announcer', 'alex'])
 
 export const TIMELINE_KINDS = ['now', 'habit', 'state', 'schedule', 'past_point', 'past_to_now', 'future_plan'] as const
 export const TimelineKind = z.enum(TIMELINE_KINDS)
 
+/**
+ * Shown only after an earlier story choice (flag) was made, or only when it
+ * was not: the technician checks what the player asked to check first.
+ */
+const choiceCondition = {
+  if: z.string().optional(),
+  ifNot: z.string().optional(),
+}
+
 const base = {
   id,
+  ...choiceCondition,
   explain: z.string().optional(),
   tags,
   /** In-story label of what this is: "Карточка из заметок Айрис", "Вопрос из списка Мики". */
@@ -167,6 +177,7 @@ const Line = z.object({
   delivery: z.string().optional(),
   /** A manga mark by the speaker's head while the line is on screen (Rive figures, docs/26). */
   mark: z.enum(['blush', 'sweat', 'sparkle', 'heart', 'anger', 'question', 'note']).optional(),
+  ...choiceCondition,
 })
 
 /** T9: a line in a scene — pick an intent, then build the English reply. */
@@ -189,6 +200,8 @@ const Scene = z.object({
     .min(1),
   /** Said when the reply is not understood; a language slip never reads as annoyance. */
   clarify: Line,
+  /** The common continuation after any accepted intent's reaction. */
+  after: z.array(Line).optional(),
   /** Location background when it differs from the session's (assets/backgrounds). */
   place: z.string().optional(),
 })
@@ -239,3 +252,8 @@ export type Unit = z.infer<typeof Unit>
 export type TimelineKind = z.infer<typeof TimelineKind>
 export type Speaker = z.infer<typeof Speaker>
 export type Line = z.infer<typeof Line>
+
+/** Whether a line or task shows with these story flags (its if / ifNot condition). */
+export function shownWith(item: { if?: string; ifNot?: string }, flags: Record<string, unknown>): boolean {
+  return (!item.if || !!flags[item.if]) && (!item.ifNot || !flags[item.ifNot])
+}
