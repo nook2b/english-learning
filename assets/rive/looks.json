@@ -1,0 +1,32 @@
+{
+ "mika": {
+  "stand": {
+   "left": [
+    "neutral",
+    "listening",
+    "happy",
+    "laugh",
+    "excited",
+    "surprised",
+    "thinking",
+    "embarrassed",
+    "annoyed",
+    "pout"
+   ],
+   "right": [
+    "neutral",
+    "listening",
+    "happy",
+    "laugh",
+    "excited",
+    "surprised",
+    "thinking",
+    "embarrassed",
+    "annoyed",
+    "pout"
+   ]
+  },
+  "phone": {},
+  "cheer": {}
+ }
+}

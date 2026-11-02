@@ -26,6 +26,8 @@ type FigureProps = {
   motion: boolean
   /** −1 leans to the heroine on her left, 1 to the right, 0 upright. */
   lean: number
+  /** Turned to a side of the screen; front when undefined (kit brief 28). */
+  look?: 'left' | 'right'
   /** A manga mark by her head ('blush', 'sweat'...), or none. */
   mark?: string
   onReady: () => void
@@ -47,7 +49,7 @@ export default function RiveHeroine(props: FigureProps) {
   return src ? <Figure src={src} {...props} /> : null
 }
 
-function Figure({ src, heroine, pose, expression, talking, motion, lean, mark, onReady, onFail }: FigureProps & { src: string }) {
+function Figure({ src, heroine, pose, expression, talking, motion, lean, look, mark, onReady, onFail }: FigureProps & { src: string }) {
   const [shown, setShown] = useState(false)
   const { rive, RiveComponent } = useRive({
     src,
@@ -82,6 +84,10 @@ function Figure({ src, heroine, pose, expression, talking, motion, lean, mark, o
     const l = vm?.number('lean')
     if (l) l.value = lean
   }, [vm, lean])
+  useEffect(() => {
+    const l = vm?.enum('look')
+    if (l) l.value = look ?? 'front'
+  }, [vm, look])
   useEffect(() => {
     const m = vm?.enum('mark')
     if (m) m.value = mark ?? 'none'
