@@ -11,7 +11,7 @@ import { PLACES, usePlace } from './places'
 import { hasFigure, riveCanTurn, riveHasFace } from './figures'
 import { RiveFigure } from './HeroineFigure'
 import { useMouth } from '../speech/mouth'
-import { type HeroineId, HEROINE_IDS, SPRITE_H, SPRITE_W, TALK, isHeroine, parseExpr, resolveSprite } from './sprites'
+import { type HeroineId, HEROINE_IDS, SIMILAR, SPRITE_H, SPRITE_W, TALK, isHeroine, parseExpr, resolveSprite } from './sprites'
 
 type SpriteSize = 'stage' | 'knee' | 'avatar'
 
@@ -85,15 +85,34 @@ export function Sprite({
 }
 
 /**
- * Listeners face the heroine who speaks: they turn to her side of the screen
- * when their pose has that turn drawn, otherwise they lean (−1 left, 1 right).
+ * Listeners face the heroine who speaks: they turn to her side of the screen.
+ * A pose without a drawn turn (Mika with her phone) or a face without one
+ * (focused) turns from the standing pose with the closest drawn face while
+ * she listens, and goes back when she speaks. Only when nothing turned is
+ * drawn does she lean instead (−1 left, 1 right).
  */
-function attention(h: HeroineId, expr: string | undefined, speaking: string | undefined, order: HeroineId[]): { look?: 'left' | 'right'; lean: number } {
+function attention(h: HeroineId, expr: string | undefined, speaking: string | undefined, order: HeroineId[]): { look?: 'left' | 'right'; lean: number; expr?: string } {
   if (!speaking || speaking === h || !isHeroine(speaking as HeroineId)) return { lean: 0 }
   const lean = Math.sign(order.indexOf(speaking as HeroineId) - order.indexOf(h))
   const side = lean < 0 ? 'left' : 'right'
   const ref = parseExpr(h, expr)
-  return riveCanTurn(h, ref.pose, ref.expr, side) ? { look: side, lean: 0 } : { lean }
+  if (riveCanTurn(h, ref.pose, ref.expr, side)) return { look: side, lean: 0 }
+  // Changing pose only pays off when the Rive figure can actually turn.
+  const face = hasFigure(h, 'stand') ? [ref.expr, ...similarFaces(ref.expr)].find((e) => riveCanTurn(h, 'stand', e, side)) : undefined
+  return face ? { look: side, lean: 0, expr: face } : { lean }
+}
+
+/** Sprite props of a listener: her face (the turned stand face when it replaces her pose), turn and lean. */
+function withAttention(h: HeroineId, expr: string | undefined, speaking: string | undefined, order: HeroineId[]) {
+  const { expr: turned, ...rest } = attention(h, expr, speaking, order)
+  return { expr: turned ?? expr, ...rest }
+}
+
+/** The closest drawn faces of an emotion, in the order sprites fall back to them. */
+function similarFaces(expr: string): string[] {
+  const out: string[] = []
+  for (let e = SIMILAR[expr]; e && !out.includes(e); e = SIMILAR[e]) out.push(e)
+  return [...out, 'neutral']
 }
 
 /** Heroines on screen, ordered as on the references: Rei left, Mika centre, Iris right. */
@@ -122,9 +141,8 @@ export function Stage({
             heroine={h}
             size="knee"
             animate
-            expr={cast[h]}
             dim={!!speaking && isHeroine(speaking as HeroineId) && speaking !== h}
-            {...attention(h, cast[h], speaking, order)}
+            {...withAttention(h, cast[h], speaking, order)}
             mark={marks[h]}
           />
         ))}

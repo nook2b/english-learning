@@ -1,0 +1,1163 @@
+{
+  "id": "009",
+  "title": "Заказать обед",
+  "goal": "Узнать, что есть, назвать своё пожелание и собрать предварительный заказ без предположений за других.",
+  "focus": "Заказ: I'd like…, Could I have…?, Do you have any…?; количество: a portion of, a bowl of, a slice of, a bottle of; some и any; у стойки: Anything else? For here. On the side.",
+  "outcome": "У каждого есть выбранное блюдо и напиток; предварительный заказ записан. До окончательного подтверждения команда проверит состав в 010. Еда пока не оплачена и не подана.",
+  "expressions": [
+    "I'd like",
+    "Could I have",
+    "Do you have any",
+    "some rice",
+    "any soup",
+    "a portion of",
+    "a bowl of",
+    "a slice of",
+    "a bottle of",
+    "anything else",
+    "for here",
+    "on the side"
+  ],
+  "glossary": [
+    "lunch set",
+    "counter",
+    "tray",
+    "table number",
+    "vegetable pasta",
+    "tomato soup",
+    "chicken with rice"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Четыре ответа",
+      "intro": "Меню столовой. Прочитай и ответь: что есть, сколько стоит, где заказывать.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Среда, 13:00. Столовая ещё не переполнена. Мика открывает меню на телефоне, начинает показывать четыре одинаковых набора и убирает палец с кнопки количества.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Four lunch sets—wait. Four people, four answers. What would everyone like?",
+            "ru": "Четыре набора… стоп. Четыре человека, четыре ответа. Кто что хочет?",
+            "expr": "phone/thinking"
+          },
+          {
+            "speaker": "rei",
+            "text": "Something without meat.",
+            "ru": "Что-нибудь без мяса.",
+            "expr": "neutral"
+          },
+          {
+            "speaker": "iris",
+            "text": "Let's read before we agree.",
+            "ru": "Прочитаем, прежде чем соглашаться.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u009-s1-e1",
+          "type": "reading",
+          "title": "Lunch today",
+          "text": "Lunch is served from twelve until two. Today we have chicken with rice for £6, vegetable pasta for £5, and tomato soup for £3. A slice of bread costs £1. You can have a bottle of water or a cup of tea for £1 each.\nPlease order at the counter. Tell us about any food allergies before we prepare your meal. Some dishes can be changed. Ask a member of staff about ingredients. Take a table number after you pay.",
+          "ru": "Обед подают с двенадцати до двух. Сегодня есть курица с рисом за £6, паста с овощами за £5 и томатный суп за £3. Ломтик хлеба стоит £1. Бутылка воды или чашка чая — по £1. Заказывайте у стойки. Сообщите о пищевой аллергии до приготовления еды. Некоторые блюда можно изменить. О составе спросите сотрудника. После оплаты возьмите номер для стола.",
+          "questions": [
+            {
+              "prompt": "When does lunch finish?",
+              "options": [
+                "At twelve",
+                "At two",
+                "At three"
+              ],
+              "answer": "At two"
+            },
+            {
+              "prompt": "What costs £5?",
+              "options": [
+                "Vegetable pasta",
+                "Chicken with rice",
+                "Tomato soup"
+              ],
+              "answer": "Vegetable pasta"
+            },
+            {
+              "prompt": "When should a customer mention an allergy?",
+              "options": [
+                "After eating",
+                "Before the meal is prepared",
+                "Only when paying"
+              ],
+              "answer": "Before the meal is prepared"
+            },
+            {
+              "prompt": "Where do customers order?",
+              "options": [
+                "At the table",
+                "At the counter",
+                "In Room 17"
+              ],
+              "answer": "At the counter"
+            }
+          ],
+          "tags": [
+            "reading",
+            "function_ordering",
+            "partitives"
+          ],
+          "look": "notice"
+        },
+        {
+          "id": "u009-s1-e2",
+          "type": "choice",
+          "prompt": "A ___ of bread costs £1.",
+          "options": [
+            "slice",
+            "bowl",
+            "bottle"
+          ],
+          "answer": "slice",
+          "tags": [
+            "partitives"
+          ],
+          "explain": "A slice of bread — ломтик хлеба.",
+          "context": "Меню столовой"
+        },
+        {
+          "id": "u009-s1-e3",
+          "type": "choice",
+          "prompt": "Please order ___ the counter.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": "at",
+          "tags": [
+            "function_ordering"
+          ],
+          "explain": "At the counter — у стойки.",
+          "context": "Меню столовой"
+        },
+        {
+          "id": "u009-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "I'd like…",
+              "ru": "я бы хотел…"
+            },
+            {
+              "en": "Could I have…?",
+              "ru": "можно мне…?"
+            },
+            {
+              "en": "a portion of",
+              "ru": "порция"
+            },
+            {
+              "en": "a bowl of",
+              "ru": "миска"
+            },
+            {
+              "en": "a slice of",
+              "ru": "ломтик"
+            },
+            {
+              "en": "a bottle of",
+              "ru": "бутылка"
+            }
+          ],
+          "tags": [
+            "function_ordering"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Nobody has ordered four surprise lunches. Progress!",
+          "ru": "Никто не заказал четыре обеда-сюрприза. Уже прогресс!",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Сначала послушать",
+      "intro": "Мика и Айрис вслух называют, что хотят. Слушай без текста: блюдо и количество — разные сведения.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Пока ты смотришь меню, героини вслух сверяют, кто что хочет.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Listen for the food and the amount. They are separate pieces of information.",
+            "ru": "Слушай, что за еда и сколько её нужно. Это разные сведения.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u009-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "I'd like a portion of chicken with rice and a bottle of water. I don't need any bread. The rice is enough. Let's ask about the sauce before we send the order to the kitchen.",
+          "ru": "Я бы хотела порцию курицы с рисом и бутылку воды. Хлеб мне не нужен. Риса достаточно. Спросим о соусе, прежде чем отправлять заказ на кухню.",
+          "questions": [
+            {
+              "prompt": "Does Mika want bread?",
+              "options": [
+                "Yes",
+                "No",
+                "Two slices"
+              ],
+              "answer": "No"
+            },
+            {
+              "prompt": "What still needs checking?",
+              "options": [
+                "The sauce",
+                "The table number",
+                "The opening day"
+              ],
+              "answer": "The sauce"
+            }
+          ],
+          "tags": [
+            "listening",
+            "partitives",
+            "some_any"
+          ],
+          "context": "Мика за столом"
+        },
+        {
+          "id": "u009-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "I'd like a bowl of tomato soup, a slice of bread and a cup of tea. I want to check the soup ingredients first. A dish name doesn't tell us everything inside.",
+          "ru": "Я бы хотела миску томатного супа, ломтик хлеба и чашку чая. Сначала хочу проверить состав супа. Название блюда не сообщает обо всём, что в нём есть.",
+          "questions": [
+            {
+              "prompt": "How much bread does Iris want?",
+              "options": [
+                "A whole loaf",
+                "A slice",
+                "None"
+              ],
+              "answer": "A slice"
+            }
+          ],
+          "tags": [
+            "listening",
+            "partitives"
+          ],
+          "delivery": "[thoughtfully]",
+          "context": "Айрис за столом"
+        },
+        {
+          "id": "u009-s2-e3",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "Could I have a bottle of water?",
+          "answers": [
+            "Could I have a bottle of water?"
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "function_ordering"
+          ]
+        },
+        {
+          "id": "u009-s2-e4",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "I'd like a bowl of tomato soup.",
+          "answers": [
+            "I'd like a bowl of tomato soup."
+          ],
+          "tags": [
+            "dictation",
+            "partitives"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Pasta and water for me.",
+          "ru": "Мне пасту и воду.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Порция, миска, ломтик",
+      "intro": "Количество еды: a portion of rice, a bowl of soup, a slice of bread, a bottle of water, a cup of tea. Два и больше: two bottles of water.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Айрис записывает количества в черновик заказа. Это подготовка к разговору у стойки.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "A portion tells us how much. Four portions still need four choices.",
+            "ru": "Порция указывает количество. Для четырёх порций всё равно нужны четыре выбора.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u009-s3-e1",
+          "type": "choice",
+          "prompt": "I'd like a ___ of rice.",
+          "options": [
+            "portion",
+            "bottle",
+            "slice"
+          ],
+          "answer": "portion",
+          "tags": [
+            "partitives"
+          ],
+          "explain": "A portion of — порция.",
+          "context": "Черновик заказа Айрис"
+        },
+        {
+          "id": "u009-s3-e2",
+          "type": "choice",
+          "prompt": "Could I have a ___ of soup?",
+          "options": [
+            "bowl",
+            "slice",
+            "bottle"
+          ],
+          "answer": "bowl",
+          "tags": [
+            "partitives"
+          ],
+          "explain": "Суп — в миске: a bowl of soup.",
+          "context": "Черновик заказа Айрис"
+        },
+        {
+          "id": "u009-s3-e3",
+          "type": "fill",
+          "prompt": "Iris wants a ___ of bread.",
+          "answers": [
+            "slice"
+          ],
+          "hint": "ломтик",
+          "tags": [
+            "partitives"
+          ],
+          "explain": "A slice of bread.",
+          "context": "Черновик заказа Айрис"
+        },
+        {
+          "id": "u009-s3-e4",
+          "type": "choice",
+          "prompt": "We need three ___ of water.",
+          "options": [
+            "bottles",
+            "bottle",
+            "bottles'"
+          ],
+          "answer": "bottles",
+          "tags": [
+            "partitives"
+          ],
+          "explain": "Три бутылки: three bottles of water.",
+          "context": "Черновик заказа Айрис"
+        },
+        {
+          "id": "u009-s3-e5",
+          "type": "fill",
+          "prompt": "There are two ___ of tea on that tray.",
+          "answers": [
+            "cups"
+          ],
+          "hint": "чашки",
+          "tags": [
+            "partitives"
+          ],
+          "explain": "Two cups of tea.",
+          "context": "Черновик заказа Айрис"
+        },
+        {
+          "id": "u009-s3-e6",
+          "type": "choice",
+          "prompt": "There is ___ rice in the lunch set.",
+          "options": [
+            "some",
+            "a",
+            "many"
+          ],
+          "answer": "some",
+          "tags": [
+            "partitives",
+            "some_any"
+          ],
+          "explain": "Rice неисчисляемое: some rice, без a.",
+          "context": "Черновик заказа Айрис"
+        },
+        {
+          "id": "u009-s3-e7",
+          "type": "fix",
+          "sentence": "Could I have a water?",
+          "answers": [
+            "Could I have a bottle of water?",
+            "Could I have some water?",
+            "Could I have a glass of water?"
+          ],
+          "tags": [
+            "partitives"
+          ],
+          "explain": "Water не считают штуками: a bottle of water или some water.",
+          "context": "Черновик заказа Айрис"
+        },
+        {
+          "id": "u009-s3-e8",
+          "type": "sort",
+          "instruction": "Что во что?",
+          "categories": [
+            {
+              "id": "bowl",
+              "label": "a bowl of"
+            },
+            {
+              "id": "slice",
+              "label": "a slice of"
+            },
+            {
+              "id": "bottle",
+              "label": "a bottle of"
+            }
+          ],
+          "items": [
+            {
+              "text": "soup",
+              "category": "bowl"
+            },
+            {
+              "text": "bread",
+              "category": "slice"
+            },
+            {
+              "text": "water",
+              "category": "bottle"
+            },
+            {
+              "text": "pasta",
+              "category": "bowl"
+            },
+            {
+              "text": "cake",
+              "category": "slice"
+            },
+            {
+              "text": "juice",
+              "category": "bottle"
+            }
+          ],
+          "tags": [
+            "partitives"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Now “some” has a size when it needs one.",
+          "ru": "Теперь у «немного» есть мера там, где она нужна.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Есть ли ещё суп?",
+      "intro": "Some — в утверждениях и вежливых просьбах (Could I have some water?). Any — в вопросах и отрицаниях (Do you have any soup? We don't need any bread).",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Мика замечает, что у соседнего посетителя закончилось место на подносе. Команда пока ничего не добавляет к своему заказу.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Let's ask what's available before we add anything else.",
+            "ru": "Спросим, что есть, прежде чем добавлять что-то ещё.",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u009-s4-e1",
+          "type": "choice",
+          "prompt": "Do you have ___ tomato soup?",
+          "options": [
+            "any",
+            "some",
+            "a"
+          ],
+          "answer": "any",
+          "tags": [
+            "some_any"
+          ],
+          "explain": "В вопросе о наличии — any.",
+          "context": "Меню столовой"
+        },
+        {
+          "id": "u009-s4-e2",
+          "type": "choice",
+          "prompt": "There is ___ vegetable pasta left.",
+          "options": [
+            "some",
+            "any",
+            "a"
+          ],
+          "answer": "some",
+          "tags": [
+            "some_any"
+          ],
+          "explain": "В утверждении — some.",
+          "context": "Меню столовой"
+        },
+        {
+          "id": "u009-s4-e3",
+          "type": "fill",
+          "prompt": "We don't need ___ extra bread.",
+          "answers": [
+            "any"
+          ],
+          "tags": [
+            "some_any"
+          ],
+          "explain": "В отрицании — any.",
+          "context": "Меню столовой"
+        },
+        {
+          "id": "u009-s4-e4",
+          "type": "choice",
+          "prompt": "Could I have ___ water?",
+          "options": [
+            "some",
+            "any",
+            "a"
+          ],
+          "answer": "some",
+          "tags": [
+            "some_any"
+          ],
+          "explain": "В вежливой просьбе — some, даже в вопросе.",
+          "context": "Меню столовой"
+        },
+        {
+          "id": "u009-s4-e5",
+          "type": "choice",
+          "prompt": "Are there ___ clean trays?",
+          "options": [
+            "any",
+            "some",
+            "a"
+          ],
+          "answer": "any",
+          "tags": [
+            "some_any"
+          ],
+          "explain": "Вопрос о наличии: Are there any…?",
+          "context": "Меню столовой"
+        },
+        {
+          "id": "u009-s4-e6",
+          "type": "fill",
+          "prompt": "Would you like ___ tea?",
+          "answers": [
+            "some"
+          ],
+          "tags": [
+            "some_any"
+          ],
+          "explain": "Предложение: Would you like some…?",
+          "context": "Меню столовой"
+        },
+        {
+          "id": "u009-s4-e7",
+          "type": "transform",
+          "instruction": "Сделай вопрос с any",
+          "sentence": "There is some sauce on the rice.",
+          "answers": [
+            "Is there any sauce on the rice?"
+          ],
+          "tags": [
+            "some_any"
+          ],
+          "explain": "Is there any…?",
+          "context": "Меню столовой"
+        },
+        {
+          "id": "u009-s4-e8",
+          "type": "fix",
+          "sentence": "We don't need some bread.",
+          "answers": [
+            "We don't need any bread."
+          ],
+          "tags": [
+            "some_any"
+          ],
+          "explain": "В отрицании — any.",
+          "context": "Меню столовой"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Questions before extra trays.",
+          "ru": "Сначала вопросы. Потом лишние подносы.",
+          "expr": "deadpan"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Свободное место",
+      "intro": "Мика заняла тебе место. Ответь — как хочешь — и вернитесь к заказу.",
+      "place": "dining_hall",
+      "exercises": [
+        {
+          "id": "u009-s5-e1",
+          "type": "scene",
+          "setting": "Мика оставляет за столом папку и показывает свободный стул рядом. Остальные выбирают напитки у меню в двух шагах; это не встреча вдвоём.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "I saved you a seat. Best view of the menu. And fairly good company.",
+              "ru": "Я заняла тебе место. Отсюда лучше всего видно меню. И компания вполне ничего.",
+              "expr": "happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "The company is better than the menu.",
+                "I'd choose the company first."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Good answer. The menu can't take a compliment anyway.",
+                "ru": "Хороший ответ. Меню всё равно не умеет принимать комплименты.",
+                "expr": "laugh"
+              },
+              "flag": "flirt_mika_009"
+            },
+            {
+              "label": "Отшутиться по-дружески",
+              "answers": [
+                "Does the seat come with extra rice?",
+                "I hope the chair has a good review."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Five stars. Never talks during lunch.",
+                "ru": "Пять звёзд. За обедом никогда не разговаривает.",
+                "expr": "laugh"
+              }
+            },
+            {
+              "label": "Вернуться к заказу",
+              "answers": [
+                "Thanks. What would you like to drink?",
+                "Thank you. Shall we finish the order?"
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Water for me. Let's check everyone else's choice too.",
+                "ru": "Мне воду. Проверим и выбор остальных.",
+                "expr": "phone/happy"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Sorry, could you say that another way?",
+            "ru": "Прости, можешь сказать иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_ordering"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "Right. Four meals, not four copies of mine.",
+              "ru": "Так. Четыре обеда, а не четыре копии моего.",
+              "expr": "phone/focused"
+            }
+          ],
+          "context": "Место с преимуществом"
+        },
+        {
+          "id": "u009-s5-e2",
+          "type": "translate",
+          "ru": "Я бы хотел порцию пасты с овощами.",
+          "answers": [
+            "I'd like a portion of vegetable pasta.",
+            "I would like a portion of vegetable pasta.",
+            "I'd like a portion of vegetable pasta, please."
+          ],
+          "tags": [
+            "partitives",
+            "function_ordering"
+          ]
+        },
+        {
+          "id": "u009-s5-e3",
+          "type": "translate",
+          "ru": "Можно мне миску супа?",
+          "answers": [
+            "Could I have a bowl of soup?",
+            "Can I have a bowl of soup?",
+            "Could I have a bowl of soup, please?"
+          ],
+          "tags": [
+            "partitives",
+            "function_ordering"
+          ]
+        },
+        {
+          "id": "u009-s5-e4",
+          "type": "translate",
+          "ru": "У вас есть хлеб?",
+          "answers": [
+            "Do you have any bread?",
+            "Have you got any bread?"
+          ],
+          "tags": [
+            "some_any"
+          ]
+        },
+        {
+          "id": "u009-s5-e5",
+          "type": "translate",
+          "ru": "Нам не нужен рис.",
+          "answers": [
+            "We don't need any rice.",
+            "We do not need any rice."
+          ],
+          "tags": [
+            "some_any"
+          ]
+        },
+        {
+          "id": "u009-s5-e6",
+          "type": "write",
+          "situation": "Закажи себе обед из меню: блюдо и напиток, вежливо.",
+          "answers": [
+            "I'd like a portion of vegetable pasta and a bottle of water, please.",
+            "Could I have a bowl of tomato soup and a cup of tea, please?",
+            "I'd like chicken with rice and a bottle of water, please.",
+            "Could I have the vegetable pasta and a cup of tea?",
+            "I'd like a bowl of soup, a slice of bread and a bottle of water, please."
+          ],
+          "tags": [
+            "function_ordering",
+            "partitives"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Your seat can wait. Your order still needs a line.",
+          "ru": "Место тебя подождёт. Для заказа пока нужна строчка.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: свой заказ",
+      "intro": "Прочитай вслух полный заказ: количество и вежливая просьба.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Ты репетируешь вежливый заказ, прежде чем идти к стойке.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Try a complete order, with an amount and a polite request.",
+            "ru": "Попробуй полный заказ: количество и вежливая просьба.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u009-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I'd like a portion of vegetable pasta, please.",
+          "answers": [
+            "I'd like a portion of vegetable pasta, please."
+          ],
+          "tags": [
+            "speaking",
+            "partitives"
+          ]
+        },
+        {
+          "id": "u009-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Could I have a bottle of water?",
+          "answers": [
+            "Could I have a bottle of water?"
+          ],
+          "tags": [
+            "speaking",
+            "function_ordering"
+          ]
+        },
+        {
+          "id": "u009-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Do you have any tomato soup left?",
+          "answers": [
+            "Do you have any tomato soup left?"
+          ],
+          "tags": [
+            "speaking",
+            "some_any"
+          ]
+        },
+        {
+          "id": "u009-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "A slice of bread on the side, please.",
+          "answers": [
+            "A slice of bread on the side, please."
+          ],
+          "tags": [
+            "speaking",
+            "function_ordering"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Clear. Ready for the counter.",
+          "ru": "Понятно. Можно к стойке.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: без лишнего",
+      "intro": "Быстрый круг: блюдо, количество, напиток. Короткие ответы для очереди.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Короткие устные ответы по меню — тренировка перед стойкой.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Quick round! Food, amount, drink. Nobody has to guess.",
+            "ru": "Быстрый круг! Блюдо, количество, напиток. Никому не придётся угадывать.",
+            "expr": "phone/happy"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u009-s7-e1",
+          "type": "write",
+          "situation": "Попроси миску супа.",
+          "answers": [
+            "A bowl of soup, please.",
+            "Could I have a bowl of soup?",
+            "I'd like a bowl of soup, please.",
+            "Can I have a bowl of soup, please?"
+          ],
+          "tags": [
+            "partitives"
+          ]
+        },
+        {
+          "id": "u009-s7-e2",
+          "type": "write",
+          "situation": "Спроси, остался ли хлеб.",
+          "answers": [
+            "Do you have any bread left?",
+            "Is there any bread left?",
+            "Have you got any bread left?",
+            "Do you have any bread?"
+          ],
+          "tags": [
+            "some_any"
+          ]
+        },
+        {
+          "id": "u009-s7-e3",
+          "type": "write",
+          "situation": "Попроси бутылку воды.",
+          "answers": [
+            "A bottle of water, please.",
+            "Could I have a bottle of water?",
+            "I'd like a bottle of water, please.",
+            "Can I have a bottle of water, please?"
+          ],
+          "tags": [
+            "partitives",
+            "function_ordering"
+          ]
+        },
+        {
+          "id": "u009-s7-e4",
+          "type": "write",
+          "situation": "Откажись от дополнительного риса.",
+          "answers": [
+            "No extra rice, thank you.",
+            "I don't need any extra rice, thanks.",
+            "No more rice for me, thanks.",
+            "I don't need any more rice, thank you.",
+            "No rice, thank you."
+          ],
+          "tags": [
+            "some_any"
+          ]
+        },
+        {
+          "id": "u009-s7-e5",
+          "type": "choice",
+          "prompt": "— Anything else? — ___",
+          "options": [
+            "No, that's all, thank you.",
+            "Yes, I have.",
+            "No, any."
+          ],
+          "answer": "No, that's all, thank you.",
+          "tags": [
+            "function_ordering"
+          ],
+          "explain": "Если больше ничего не нужно: No, that's all."
+        },
+        {
+          "id": "u009-s7-e6",
+          "type": "choice",
+          "prompt": "— Is it for here? — ___",
+          "options": [
+            "Yes, for here, please.",
+            "Yes, here is.",
+            "For here, any."
+          ],
+          "answer": "Yes, for here, please.",
+          "tags": [
+            "function_ordering"
+          ],
+          "explain": "For here — есть здесь, в зале."
+        },
+        {
+          "id": "u009-s7-e7",
+          "type": "fill",
+          "prompt": "A slice of bread on the ___, please.",
+          "answers": [
+            "side"
+          ],
+          "hint": "отдельно",
+          "tags": [
+            "function_ordering"
+          ],
+          "explain": "On the side — отдельно."
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Short enough for a queue. Clear enough for a real order.",
+          "ru": "Достаточно коротко для очереди. Достаточно понятно для настоящего заказа.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: заказать для себя, услышать других",
+      "role": "mission",
+      "intro": "Миссия: заказать у стойки для себя и выслушать остальных.",
+      "place": "dining_hall",
+      "exercises": [
+        {
+          "id": "u009-s8-e1",
+          "type": "scene",
+          "setting": "Все у стойки. Нора принимает предварительный заказ: прежде чем готовить, она отдельно уточнит состав и пожелания. Выбери себе блюдо.",
+          "lines": [
+            {
+              "speaker": "nora",
+              "text": "What would you like? We can check ingredients before I send the order through.",
+              "ru": "Что будете? Мы можем проверить состав, прежде чем я отправлю заказ."
+            }
+          ],
+          "intents": [
+            {
+              "label": "Выбрать пасту",
+              "answers": [
+                "I'd like a portion of vegetable pasta, please.",
+                "Could I have the vegetable pasta?"
+              ],
+              "reaction": {
+                "speaker": "nora",
+                "text": "Vegetable pasta. I'll keep the order open while we check.",
+                "ru": "Паста с овощами. Оставлю заказ открытым до проверки."
+              },
+              "flag": "u009_meal_pasta"
+            },
+            {
+              "label": "Выбрать суп с хлебом",
+              "answers": [
+                "I'd like tomato soup and a slice of bread.",
+                "Could I have a bowl of soup with bread?"
+              ],
+              "reaction": {
+                "speaker": "nora",
+                "text": "Soup and bread. We'll check those ingredients too.",
+                "ru": "Суп с хлебом. Их состав тоже проверим."
+              },
+              "flag": "u009_meal_soup"
+            }
+          ],
+          "clarify": {
+            "speaker": "nora",
+            "text": "Which dish would you like?",
+            "ru": "Какое блюдо вы хотите?"
+          },
+          "tags": [
+            "function_ordering",
+            "partitives"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "Water for me and Rei. Tea for Iris. What about you?",
+              "ru": "Воду мне и Рэй. Чай Айрис. А тебе?",
+              "expr": "phone/thinking"
+            },
+            {
+              "speaker": "nora",
+              "text": "Anything else? And is it for here?",
+              "ru": "Что-нибудь ещё? И вы будете есть здесь?"
+            }
+          ],
+          "context": "Последняя пустая строка"
+        },
+        {
+          "id": "u009-s8-e2",
+          "type": "write",
+          "situation": "Нора спрашивает: «Anything else? And is it for here?» Ответь, что будешь есть здесь, и попроси бутылку воды.",
+          "answers": [
+            "For here, please. And a bottle of water, please.",
+            "For here, please. A bottle of water, please.",
+            "A bottle of water, please. For here.",
+            "For here, please. Could I have a bottle of water?",
+            "Yes, for here. And a bottle of water, please."
+          ],
+          "tags": [
+            "function_ordering",
+            "partitives"
+          ]
+        },
+        {
+          "id": "u009-s8-e3",
+          "type": "scene",
+          "setting": "Нора отходит за папкой состава. Айрис сверяет записанные пожелания, потом поворачивается к игроку. Остальные обсуждают подносы, не комментируя разговор.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "You waited for my answer before writing. I could get used to that.",
+              "ru": "Ты дождался моего ответа, прежде чем записать. К такому можно привыкнуть.",
+              "expr": "turn/dry_smile"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "Your answers are worth waiting for.",
+                "I'd like to hear more of them."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Then I'll try to keep them interesting.",
+                "ru": "Тогда постараюсь, чтобы они были интересными.",
+                "expr": "turn/happy"
+              },
+              "flag": "flirt_iris_009"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "My pen needed a break.",
+                "It's a very patient pen."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "A rare quality in stationery.",
+                "ru": "Редкое качество для канцелярии.",
+                "expr": "dry_smile"
+              }
+            },
+            {
+              "label": "Уточнить заказ",
+              "answers": [
+                "Is your tea on the list?",
+                "Shall we check the ingredients now?"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "It is. And yes, ingredients next.",
+                "ru": "В списке. И да, дальше состав.",
+                "expr": "notebook/focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Could you put that another way?",
+            "ru": "Можешь сказать иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_ordering"
+          ],
+          "context": "Точный наблюдатель"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "nora",
+          "text": "Before we confirm: does anyone have an allergy or need a change?",
+          "ru": "Перед подтверждением: у кого-нибудь есть аллергия или нужно что-то изменить?"
+        },
+        {
+          "speaker": "rei",
+          "text": "Let's check the sauce.",
+          "ru": "Проверим соус.",
+          "expr": "neutral"
+        }
+      ]
+    }
+  ]
+}

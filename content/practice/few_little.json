@@ -1,0 +1,143 @@
+{
+ "tag": "few_little",
+ "items": [
+  {
+   "unit": "012",
+   "exercise": {
+    "id": "p-few_little-01",
+    "type": "choice",
+    "prompt": "Can I have a ___ milk in my coffee?",
+    "options": [
+     "little",
+     "few",
+     "many"
+    ],
+    "answer": "little",
+    "tags": [
+     "few_little"
+    ]
+   }
+  },
+  {
+   "unit": "012",
+   "exercise": {
+    "id": "p-few_little-02",
+    "type": "choice",
+    "prompt": "There are a ___ apples in the bag.",
+    "options": [
+     "few",
+     "little",
+     "much"
+    ],
+    "answer": "few",
+    "tags": [
+     "few_little"
+    ]
+   }
+  },
+  {
+   "unit": "012",
+   "exercise": {
+    "id": "p-few_little-03",
+    "type": "choice",
+    "prompt": "We have a ___ time before lunch.",
+    "options": [
+     "little",
+     "few",
+     "many"
+    ],
+    "answer": "little",
+    "tags": [
+     "few_little"
+    ]
+   }
+  },
+  {
+   "unit": "012",
+   "exercise": {
+    "id": "p-few_little-04",
+    "type": "choice",
+    "prompt": "A ___ students are still in the room.",
+    "options": [
+     "few",
+     "little",
+     "much"
+    ],
+    "answer": "few",
+    "tags": [
+     "few_little"
+    ]
+   }
+  },
+  {
+   "unit": "012",
+   "exercise": {
+    "id": "p-few_little-05",
+    "type": "fill",
+    "prompt": "Could you bring a ___ cups?",
+    "answers": [
+     "few"
+    ],
+    "tags": [
+     "few_little"
+    ]
+   }
+  },
+  {
+   "unit": "012",
+   "exercise": {
+    "id": "p-few_little-06",
+    "type": "fill",
+    "prompt": "Add a ___ salt to the soup.",
+    "answers": [
+     "little"
+    ],
+    "tags": [
+     "few_little"
+    ]
+   }
+  },
+  {
+   "unit": "012",
+   "exercise": {
+    "id": "p-few_little-07",
+    "type": "fill",
+    "prompt": "I'll get the mugs. Who's ___ the biscuits?",
+    "answers": [
+     "getting"
+    ],
+    "tags": [
+     "few_little"
+    ]
+   }
+  },
+  {
+   "unit": "012",
+   "exercise": {
+    "id": "p-few_little-08",
+    "type": "fix",
+    "sentence": "We need a little chairs for the meeting.",
+    "answers": [
+     "We need a few chairs for the meeting."
+    ],
+    "tags": [
+     "few_little"
+    ]
+   }
+  },
+  {
+   "unit": "012",
+   "exercise": {
+    "id": "p-few_little-09",
+    "type": "fix",
+    "sentence": "There is a few water in the bottle.",
+    "answers": [
+     "There is a little water in the bottle."
+    ],
+    "tags": [
+     "few_little"
+    ]
+   }
+  }
+ ]
+}

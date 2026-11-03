@@ -1,0 +1,1214 @@
+{
+  "id": "012",
+  "title": "Составить общий список",
+  "goal": "Согласовать количества и обязанности, отличить запас от лишнего и выполнить одну общую закупку.",
+  "focus": "Количество: a few / a little, too many / too much, enough; общий список: We need…, We don't need any…, I'll get…, Who's getting…?, one each. В конце — проверка модуля 009–012.",
+  "outcome": "Подставка установлена, ветрозащита надета. Куплены две общие чашки и одна выбранная мелочь. Из £8 потрачено £6, осталось £2. Список следующей встречи согласован; чай из дома и печенье пока только предложены, клубные деньги на них не выделялись.",
+  "expressions": [
+    "a few",
+    "a little",
+    "too many",
+    "too much",
+    "enough",
+    "We need",
+    "We don't need any",
+    "I'll get",
+    "Who's getting",
+    "one each",
+    "leave some money",
+    "check the list"
+  ],
+  "glossary": [
+    "shared list",
+    "plain mugs",
+    "cable clips",
+    "paper tape",
+    "biscuits",
+    "shared budget"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Три пакета одного и того же",
+      "intro": "Общий список комнаты 17. Прочитай: что уже есть, что купить и сколько оставить.",
+      "place": "room17",
+      "frame": {
+        "setting": "Следующая среда, 13:00. Коробка из магазина на столе. Мика показывает черновик списка: чай в нём записан три раза разными людьми.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Three people offered tea. Very kind. Possibly too much tea.",
+            "ru": "Трое предложили чай. Очень мило. Возможно, слишком много чая.",
+            "expr": "phone/thinking"
+          },
+          {
+            "speaker": "rei",
+            "text": "One list. Fewer bags.",
+            "ru": "Один список. Меньше пакетов.",
+            "expr": "neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u012-s1-e1",
+          "type": "reading",
+          "title": "Room 17 — shared list",
+          "text": "We have a working microphone, a new stand and a foam windscreen. We don't need any more recording equipment today. We have £8 left in the shared budget.\nTwo plain mugs cost £2 each. We also need either one pack of cable clips or one roll of paper tape. Each option costs £2. Buy one option, not both, and leave £2 for later.\nFood is separate. For next Wednesday, Mika can bring a little tea from home. Iris can bring a few biscuits. Ask everyone first. Nobody needs to buy four bags of the same thing.",
+          "ru": "У нас есть рабочий микрофон, новая подставка и поролоновая ветрозащита. Сегодня дополнительная техника для записи не нужна. В общем бюджете осталось £8. Две простые чашки стоят по £2. Ещё нужна либо одна упаковка кабельных зажимов, либо один рулон бумажной ленты. Каждый вариант стоит £2. Купите один, не оба, и оставьте £2 на потом. Еда отдельно. На следующую среду Мика может принести немного чая из дома. Айрис может принести несколько печений. Сначала спросите всех. Никому не нужно покупать четыре пакета одного и того же.",
+          "questions": [
+            {
+              "prompt": "How much shared money is available now?",
+              "options": [
+                "£2",
+                "£8",
+                "£24"
+              ],
+              "answer": "£8"
+            },
+            {
+              "prompt": "How many extra supply options should the team buy?",
+              "options": [
+                "Both",
+                "One",
+                "Four"
+              ],
+              "answer": "One"
+            },
+            {
+              "prompt": "How much should remain?",
+              "options": [
+                "£0",
+                "£2",
+                "£6"
+              ],
+              "answer": "£2"
+            },
+            {
+              "prompt": "Has the tea already been bought?",
+              "options": [
+                "Yes",
+                "No, it is planned for next Wednesday",
+                "The shop gives it free"
+              ],
+              "answer": "No, it is planned for next Wednesday"
+            }
+          ],
+          "tags": [
+            "reading",
+            "few_little",
+            "too_enough"
+          ],
+          "look": "note"
+        },
+        {
+          "id": "u012-s1-e2",
+          "type": "choice",
+          "prompt": "Iris can bring a ___ biscuits.",
+          "options": [
+            "few",
+            "little",
+            "lot"
+          ],
+          "answer": "few",
+          "tags": [
+            "few_little"
+          ],
+          "explain": "Печенье считают: a few biscuits.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s1-e3",
+          "type": "choice",
+          "prompt": "Mika can bring a ___ tea from home.",
+          "options": [
+            "little",
+            "few",
+            "many"
+          ],
+          "answer": "little",
+          "tags": [
+            "few_little"
+          ],
+          "explain": "Чай не считают: a little tea.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "a few",
+              "ru": "несколько"
+            },
+            {
+              "en": "a little",
+              "ru": "немного"
+            },
+            {
+              "en": "too many",
+              "ru": "слишком много (штук)"
+            },
+            {
+              "en": "too much",
+              "ru": "слишком много (вещества)"
+            },
+            {
+              "en": "one each",
+              "ru": "по одному"
+            },
+            {
+              "en": "leave some money",
+              "ru": "оставить немного денег"
+            }
+          ],
+          "tags": [
+            "few_little"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Two budgets. Supplies now, possible snacks next week.",
+          "ru": "Две отдельные статьи. Вещи сейчас, возможное угощение на следующей неделе.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Кто берёт что",
+      "intro": "Два голосовых в общем чате: кто что принесёт в следующую среду. Слушай без текста.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика и Айрис оставляют голосовые в общем чате — про следующую среду, а не про сегодняшние покупки.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "I'll put the offers in the chat. Offers first, final list after everyone answers.",
+            "ru": "Запишу предложения в чат. Сначала предложения, окончательный список — когда все ответят.",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u012-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "I'll bring a little tea from home next Wednesday. We don't need three packets. Please tell me if you don't want tea. Water is fine too. Nobody has to join in.",
+          "ru": "В следующую среду принесу немного чая из дома. Три пачки нам не нужны. Скажите, если не хотите чай. Вода тоже подойдёт. Никто не обязан участвовать.",
+          "questions": [
+            {
+              "prompt": "When does Mika offer to bring tea?",
+              "options": [
+                "Today",
+                "Next Wednesday",
+                "Every day"
+              ],
+              "answer": "Next Wednesday"
+            },
+            {
+              "prompt": "Must everyone drink tea?",
+              "options": [
+                "Yes",
+                "No",
+                "Only new members"
+              ],
+              "answer": "No"
+            }
+          ],
+          "tags": [
+            "listening",
+            "few_little"
+          ],
+          "context": "Голосовое Мики в чате «Room 17»"
+        },
+        {
+          "id": "u012-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "I can bring a few plain biscuits next week. I'll keep the packet so everyone can check the ingredients. We need enough for a small break, not enough to open a cafe.",
+          "ru": "Могу принести несколько простых печений на следующей неделе. Сохраню упаковку, чтобы все могли проверить состав. Нужно достаточно для короткого перерыва, а не для открытия кафе.",
+          "questions": [
+            {
+              "prompt": "Why will Iris keep the packet?",
+              "options": [
+                "To check ingredients",
+                "To hide the price",
+                "To carry the microphone"
+              ],
+              "answer": "To check ingredients"
+            }
+          ],
+          "tags": [
+            "listening",
+            "few_little",
+            "too_enough"
+          ],
+          "delivery": "[dry, understated humor]",
+          "context": "Голосовое Айрис в чате «Room 17»"
+        },
+        {
+          "id": "u012-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "We have enough money for two mugs.",
+          "answers": [
+            "We have enough money for two mugs."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u012-s2-e4",
+          "type": "dictation",
+          "speaker": "rei",
+          "audio": "I'll bring water. No extra list.",
+          "answers": [
+            "I'll bring water. No extra list."
+          ],
+          "tags": [
+            "dictation",
+            "function_offers"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "I'll bring water. No extra list.",
+          "ru": "Принесу воду. Без дополнительного списка.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Несколько или немного",
+      "intro": "A few + то, что считают (a few biscuits, a few clips). A little + то, что не считают (a little tea, a little money). Оба значат «немного, но есть».",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис подчёркивает количество рядом с предметом. Чашки пока только в списке.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "A little tea. A few biscuits. Small amounts, different words.",
+            "ru": "Немного чая. Несколько печений. Маленькие количества, разные слова.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u012-s3-e1",
+          "type": "choice",
+          "prompt": "Mika can bring a ___ tea.",
+          "options": [
+            "little",
+            "few",
+            "many"
+          ],
+          "answer": "little",
+          "tags": [
+            "few_little"
+          ],
+          "explain": "Tea не считают: a little.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s3-e2",
+          "type": "choice",
+          "prompt": "Iris can bring a ___ biscuits.",
+          "options": [
+            "few",
+            "little",
+            "much"
+          ],
+          "answer": "few",
+          "tags": [
+            "few_little"
+          ],
+          "explain": "Biscuits считают: a few.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s3-e3",
+          "type": "fill",
+          "prompt": "We have a ___ money left.",
+          "answers": [
+            "little"
+          ],
+          "tags": [
+            "few_little"
+          ],
+          "explain": "Money не считают: a little money.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s3-e4",
+          "type": "fill",
+          "prompt": "There are a ___ empty boxes on the shelf.",
+          "answers": [
+            "few"
+          ],
+          "tags": [
+            "few_little"
+          ],
+          "explain": "Boxes считают: a few.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s3-e5",
+          "type": "choice",
+          "prompt": "We need a few ___, not a large box.",
+          "options": [
+            "clips",
+            "clip",
+            "clipping"
+          ],
+          "answer": "clips",
+          "tags": [
+            "few_little"
+          ],
+          "explain": "После a few — множественное число.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s3-e6",
+          "type": "choice",
+          "prompt": "Leave a ___ space for the cups.",
+          "options": [
+            "little",
+            "few",
+            "many"
+          ],
+          "answer": "little",
+          "tags": [
+            "few_little"
+          ],
+          "explain": "Space (место) не считают: a little space.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s3-e7",
+          "type": "fix",
+          "sentence": "A little names are still missing from the list.",
+          "answers": [
+            "A few names are still missing from the list."
+          ],
+          "tags": [
+            "few_little"
+          ],
+          "explain": "Имена считают: a few names.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s3-e8",
+          "type": "sort",
+          "instruction": "A few или a little?",
+          "categories": [
+            {
+              "id": "few",
+              "label": "a few"
+            },
+            {
+              "id": "little",
+              "label": "a little"
+            }
+          ],
+          "items": [
+            {
+              "text": "biscuits",
+              "category": "few"
+            },
+            {
+              "text": "clips",
+              "category": "few"
+            },
+            {
+              "text": "names",
+              "category": "few"
+            },
+            {
+              "text": "tea",
+              "category": "little"
+            },
+            {
+              "text": "money",
+              "category": "little"
+            },
+            {
+              "text": "space",
+              "category": "little"
+            }
+          ],
+          "tags": [
+            "few_little"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Small doesn't mean the same word for everything.",
+          "ru": "Маленькое количество не означает одно и то же слово для всего.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Достаточно — это тоже решение",
+      "intro": "Too many — слишком много того, что считают (too many bags); too much — того, что не считают (too much tea). Enough — достаточно. Распределить дела: I'll get… / Who's getting…?",
+      "place": "room17",
+      "frame": {
+        "setting": "Рэй убирает лишнюю пустую коробку с края стола.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Enough space. Keep some.",
+            "ru": "Места хватает. Часть оставим свободной.",
+            "expr": "neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u012-s4-e1",
+          "type": "choice",
+          "prompt": "We don't need ___ more microphones.",
+          "options": [
+            "any",
+            "some",
+            "a"
+          ],
+          "answer": "any",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "В отрицании — any.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s4-e2",
+          "type": "choice",
+          "prompt": "There are too ___ bags on this draft list.",
+          "options": [
+            "many",
+            "much",
+            "lot"
+          ],
+          "answer": "many",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Пакеты считают: too many.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s4-e3",
+          "type": "choice",
+          "prompt": "Three packets of tea are too ___ for one short meeting.",
+          "options": [
+            "much",
+            "many",
+            "enough"
+          ],
+          "answer": "much",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Здесь речь о чае: too much.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s4-e4",
+          "type": "fill",
+          "prompt": "Two mugs are ___ for now if we take turns.",
+          "answers": [
+            "enough"
+          ],
+          "hint": "достаточно",
+          "tags": [
+            "too_enough"
+          ],
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s4-e5",
+          "type": "fill",
+          "prompt": "We don't have ___ money for every item.",
+          "answers": [
+            "enough"
+          ],
+          "tags": [
+            "too_enough"
+          ],
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s4-e6",
+          "type": "choice",
+          "prompt": "I'll get the mugs. Who's ___ the tape?",
+          "options": [
+            "getting",
+            "get",
+            "gets"
+          ],
+          "answer": "getting",
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "Who's getting…? — кто берёт…?",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s4-e7",
+          "type": "fill",
+          "prompt": "We need one pack of clips, not one ___.",
+          "answers": [
+            "each"
+          ],
+          "hint": "каждому",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "One each — по одному каждому.",
+          "context": "Общий список"
+        },
+        {
+          "id": "u012-s4-e8",
+          "type": "fix",
+          "sentence": "There is too many tea on the list.",
+          "answers": [
+            "There is too much tea on the list."
+          ],
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Tea не считают: too much.",
+          "context": "Общий список"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "“Enough” just saved me from a second shopping bag.",
+          "ru": "«Достаточно» только что избавило меня от второго пакета покупок.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Ещё одна строка",
+      "intro": "В списке нет пожелания самой Айрис. Ты спрашиваешь её — и она отвечает.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u012-s5-e1",
+          "type": "scene",
+          "setting": "Айрис читает финальную версию списка. В нём есть чай Мики и вода Рэй, но нет её собственного пожелания. Ты спрашиваешь: «And what would you like?» — и она добавляет свой чай.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "You keep asking for my answer. Careful. I might start saving you a line in every plan.",
+              "ru": "Ты всё время спрашиваешь моё мнение. Осторожнее. Начну оставлять тебе строчку в каждом плане.",
+              "expr": "turn/dry_smile"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "I'd like a line next to yours.",
+                "Save me one next to yours."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll leave room for one. No final draft yet.",
+                "ru": "Оставлю место для одного. Финальной версии пока нет.",
+                "expr": "turn/happy"
+              },
+              "flag": "flirt_iris_012"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "Only if my handwriting is good enough.",
+                "Does the line come with biscuits?"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Terms and conditions. I expected nothing less.",
+                "ru": "Условия и оговорки. Меньшего я и не ожидала.",
+                "expr": "dry_smile"
+              }
+            },
+            {
+              "label": "Вернуться к покупкам",
+              "answers": [
+                "Shall I get the mugs?",
+                "Is the shopping list ready?"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Yes. Two mugs, one extra item, and some money left.",
+                "ru": "Да. Две чашки, одна дополнительная вещь и остаток денег.",
+                "expr": "notebook/focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Could you say that more simply?",
+            "ru": "Можешь сказать проще?",
+            "expr": "listening"
+          },
+          "tags": [
+            "few_little",
+            "function_offers"
+          ],
+          "context": "Полезная привычка"
+        },
+        {
+          "id": "u012-s5-e2",
+          "type": "translate",
+          "ru": "Я возьму две чашки.",
+          "answers": [
+            "I'll get two mugs.",
+            "I will get two mugs.",
+            "I'll buy two mugs."
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u012-s5-e3",
+          "type": "translate",
+          "ru": "Кто берёт ленту?",
+          "answers": [
+            "Who's getting the tape?",
+            "Who is getting the tape?"
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u012-s5-e4",
+          "type": "translate",
+          "ru": "Нам нужно несколько зажимов.",
+          "answers": [
+            "We need a few clips.",
+            "We need a few cable clips."
+          ],
+          "tags": [
+            "few_little"
+          ]
+        },
+        {
+          "id": "u012-s5-e5",
+          "type": "translate",
+          "ru": "Оставим немного денег на потом.",
+          "answers": [
+            "Let's leave a little money for later.",
+            "Let's leave some money for later."
+          ],
+          "tags": [
+            "few_little"
+          ]
+        },
+        {
+          "id": "u012-s5-e6",
+          "type": "write",
+          "situation": "Предложи, что возьмёшь ты, и спроси, кто берёт остальное.",
+          "answers": [
+            "I'll get the mugs. Who's getting the clips?",
+            "I'll get two mugs. Who's getting the tape?",
+            "I'll get the tape. Who's getting the mugs?",
+            "I'll get the clips. Who is getting the mugs?"
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "My answer is on the list now. Thank you.",
+          "ru": "Теперь мой ответ тоже в списке. Спасибо.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: взять одну задачу",
+      "intro": "Прочитай вслух: одно ясное предложение помощи.",
+      "place": "room17",
+      "frame": {
+        "setting": "Все собираются в ближайший магазин. Ты репетируешь предложения помощи.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "One clear offer is better than everyone saying “I'll get everything”.",
+            "ru": "Одно ясное предложение лучше, чем всеобщее «я возьму всё».",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u012-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I'll get two mugs.",
+          "answers": [
+            "I'll get two mugs."
+          ],
+          "tags": [
+            "speaking",
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u012-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "We don't need any more tea today.",
+          "answers": [
+            "We don't need any more tea today."
+          ],
+          "tags": [
+            "speaking",
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u012-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Who's getting the cable clips?",
+          "answers": [
+            "Who's getting the cable clips?"
+          ],
+          "tags": [
+            "speaking",
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u012-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Let's leave a little money for later.",
+          "answers": [
+            "Let's leave a little money for later."
+          ],
+          "tags": [
+            "speaking",
+            "few_little"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "A name next to each task. I like this version of organising.",
+          "ru": "Имя рядом с каждой задачей. Мне нравится такая организация.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Проверка модуля 009–012",
+      "role": "check",
+      "intro": "Проверка всего модуля на новом материале: заказ, состав, сравнение цен и количество.",
+      "place": "room17",
+      "frame": {
+        "setting": "Перед выходом Айрис показывает учебную карточку: другой клуб, придуманная ситуация.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Different club. Same decisions: food, ingredients, prices, quantities.",
+            "ru": "Другой клуб. Те же решения: еда, состав, цены, количества.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u012-s7-e1",
+          "type": "reading",
+          "title": "Photo club picnic",
+          "text": "The photo club is planning a picnic for four people. They have £20. A cheese sandwich costs £3 and contains milk and wheat. A vegetable rice box costs £4 and contains no milk. Bottles of water cost £1 each.\nOne member cannot have milk. The club needs one meal and one bottle of water per person. Three cheese sandwiches, one rice box and four bottles of water cost £17. Two large bags of crisps would cost another £4. The club must stay within its budget and check any other dietary needs before ordering.",
+          "ru": "Фотоклуб планирует пикник на четверых. У них £20. Сэндвич с сыром стоит £3, содержит молоко и пшеницу. Коробка овощного риса стоит £4, молока в ней нет. Бутылка воды стоит £1. Одному участнику нельзя молоко. Каждому нужно по одному блюду и бутылке воды. Три сэндвича с сыром, одна коробка риса и четыре бутылки воды стоят £17. Два больших пакета чипсов стоили бы ещё £4. Клуб должен уложиться в бюджет и до заказа уточнить остальные пищевые ограничения.",
+          "questions": [
+            {
+              "prompt": "Which meal has no milk according to the card?",
+              "options": [
+                "Cheese sandwich",
+                "Vegetable rice",
+                "Both"
+              ],
+              "answer": "Vegetable rice"
+            },
+            {
+              "prompt": "How much is the planned food and water?",
+              "options": [
+                "£13",
+                "£17",
+                "£21"
+              ],
+              "answer": "£17"
+            },
+            {
+              "prompt": "Can they add both bags of crisps within £20?",
+              "options": [
+                "Yes",
+                "No",
+                "Only without a receipt"
+              ],
+              "answer": "No"
+            }
+          ],
+          "tags": [
+            "reading",
+            "function_ingredients",
+            "comparatives",
+            "too_enough"
+          ],
+          "look": "note"
+        },
+        {
+          "id": "u012-s7-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "Please check everyone's order before paying. We have enough money for the meals and water, but not for both bags of crisps. The rice box is more expensive, but one person needs it.",
+          "ru": "Перед оплатой проверьте заказ каждого. На еду и воду денег достаточно, но на оба пакета чипсов уже нет. Коробка риса дороже, но одному человеку она нужна.",
+          "questions": [
+            {
+              "prompt": "Why isn't the cheapest meal suitable for everyone?",
+              "options": [
+                "It contains milk",
+                "There is no water",
+                "It costs £20"
+              ],
+              "answer": "It contains milk"
+            }
+          ],
+          "tags": [
+            "listening",
+            "too_enough",
+            "comparatives"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Учебное сообщение Айрис"
+        },
+        {
+          "id": "u012-s7-e3",
+          "type": "write",
+          "situation": "Закажи одно подходящее блюдо и напиток для пикника.",
+          "answers": [
+            "I'd like a rice box and a bottle of water.",
+            "Could I have a vegetable rice box and a bottle of water?",
+            "I'd like a cheese sandwich and a bottle of water, please.",
+            "Could I have a rice box and some water, please?"
+          ],
+          "tags": [
+            "function_ordering",
+            "partitives"
+          ]
+        },
+        {
+          "id": "u012-s7-e4",
+          "type": "write",
+          "situation": "Спроси о составе сэндвича.",
+          "answers": [
+            "Does the sandwich contain milk?",
+            "What's in the sandwich?",
+            "Does the cheese sandwich contain milk?",
+            "Is there any milk in the sandwich?"
+          ],
+          "tags": [
+            "function_ingredients"
+          ]
+        },
+        {
+          "id": "u012-s7-e5",
+          "type": "write",
+          "situation": "Сравни два блюда по цене.",
+          "answers": [
+            "The rice box is more expensive than the sandwich.",
+            "The sandwich is cheaper than the rice box.",
+            "The cheese sandwich is cheaper than the rice box.",
+            "The rice box isn't as cheap as the sandwich."
+          ],
+          "tags": [
+            "comparatives"
+          ]
+        },
+        {
+          "id": "u012-s7-e6",
+          "type": "write",
+          "situation": "Предложи покупку в пределах бюджета.",
+          "answers": [
+            "I'll get four bottles of water. We don't need both bags of crisps.",
+            "I'll get four bottles of water.",
+            "We don't need both bags of crisps. I'll get one bag.",
+            "I'll get the water. We don't have enough money for both bags of crisps."
+          ],
+          "tags": [
+            "function_offers",
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u012-s7-e7",
+          "type": "choice",
+          "prompt": "How ___ bottles of water does the club need?",
+          "options": [
+            "many",
+            "much",
+            "lot"
+          ],
+          "answer": "many",
+          "tags": [
+            "much_many"
+          ]
+        },
+        {
+          "id": "u012-s7-e8",
+          "type": "choice",
+          "prompt": "Do they have ___ cheese sandwiches left?",
+          "options": [
+            "any",
+            "some",
+            "a"
+          ],
+          "answer": "any",
+          "tags": [
+            "some_any"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Good. Back to our eight pounds and our actual list.",
+          "ru": "Хорошо. Возвращаемся к нашим восьми фунтам и настоящему списку.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: две чашки и немного места",
+      "role": "mission",
+      "intro": "Миссия: купить две чашки и одну мелочь — и оставить немного денег.",
+      "place": "shop",
+      "exercises": [
+        {
+          "id": "u012-s8-e1",
+          "type": "scene",
+          "setting": "В магазине Сэм показывает две простые общие чашки — жёлтую и серо-синюю, по £2. Обе мелочи полезны: зажимы — для кабеля у подставки, бумажная лента — для подписей на коробках. Купить можно одну.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "Two mugs leave four pounds. One extra item leaves two. Which do we get?",
+              "ru": "После двух чашек останется четыре фунта. После одной мелочи — два. Что берём?",
+              "expr": "phone/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Взять зажимы для кабеля",
+              "answers": [
+                "I'll get one pack of clips. We don't need the tape today.",
+                "Let's buy a few clips and leave the tape for later."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Clips today. I'll fit them.",
+                "ru": "Сегодня зажимы. Я поставлю.",
+                "expr": "focused"
+              },
+              "flag": "u012_supply_clips"
+            },
+            {
+              "label": "Взять бумажную ленту для подписей",
+              "answers": [
+                "I'll get one roll of tape. We can buy clips later.",
+                "Let's buy a little tape for labels, not the clips today."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Tape today. I'll label the boxes.",
+                "ru": "Сегодня лента. Я подпишу коробки.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u012_supply_tape"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "One pack of clips or one roll of tape?",
+            "ru": "Упаковку зажимов или рулон ленты?",
+            "expr": "thinking"
+          },
+          "tags": [
+            "function_offers",
+            "too_enough"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "I'll take the mugs to the counter. You bring the item you chose. Iris has the money.",
+              "ru": "Отнесу чашки к кассе. Ты принеси выбранную вещь. Деньги у Айрис.",
+              "expr": "phone/focused"
+            },
+            {
+              "speaker": "sam",
+              "text": "Two mugs and one extra item. Six pounds altogether.",
+              "ru": "Две чашки и одна дополнительная вещь. Всего шесть фунтов."
+            },
+            {
+              "speaker": "iris",
+              "text": "Six paid. Two left. Receipt saved.",
+              "ru": "Шесть заплатили. Два осталось. Чек сохранён.",
+              "expr": "notebook/focused"
+            }
+          ],
+          "place": "shop",
+          "context": "Одна мелочь, не две"
+        },
+        {
+          "id": "u012-s8-e2",
+          "type": "scene",
+          "setting": "Около 13:50, снова в комнате 17. Рэй ставит подставку с ветрозащитой, Айрис освобождает полку для чашек. Ты помогаешь с тем, что выбрал.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Cable clipped below the stand. Enough space to move.",
+              "ru": "Кабель закреплён под подставкой. Для движения места хватает.",
+              "expr": "focused",
+              "if": "u012_supply_clips"
+            },
+            {
+              "speaker": "iris",
+              "text": "Labels on. We'll return the boxes to the right places.",
+              "ru": "Подписи готовы. Вернём коробки на нужные места.",
+              "expr": "notebook/focused",
+              "if": "u012_supply_tape"
+            },
+            {
+              "speaker": "mika",
+              "text": "Enough money left, and nobody carried four bags. I like planning things with you.",
+              "ru": "Деньги остались, никто не тащил четыре пакета. Мне нравится планировать с тобой.",
+              "expr": "happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "Then I'd like to be in the next plan.",
+                "Planning with you is the best part."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Noted! One place in the next plan. Still room for sensible shopping.",
+                "ru": "Записано! Одно место в следующем плане. На разумные покупки место тоже оставим.",
+                "expr": "phone/happy"
+              },
+              "flag": "flirt_mika_012"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "The list deserves most of the credit.",
+                "My best skill is carrying only one bag."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "A very useful talent. I'll add it under “team skills”.",
+                "ru": "Очень полезный талант. Добавлю в «навыки команды».",
+                "expr": "laugh"
+              }
+            },
+            {
+              "label": "Продолжить дело",
+              "answers": [
+                "Shall we check next Wednesday's list?",
+                "Let's confirm who brings what next week."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Yes. Offers only become a plan when everyone agrees.",
+                "ru": "Да. Предложения становятся планом, только когда все согласны.",
+                "expr": "phone/focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Could you say that again?",
+            "ru": "Можешь повторить?",
+            "expr": "listening"
+          },
+          "tags": [
+            "few_little",
+            "too_enough"
+          ],
+          "after": [
+            {
+              "speaker": "iris",
+              "text": "Two mugs. Four people. We are halfway to a collection.",
+              "ru": "Две чашки. Четыре человека. Мы на полпути к коллекции.",
+              "expr": "notebook/dry_smile"
+            },
+            {
+              "speaker": "rei",
+              "text": "Different colours. Fewer arguments.",
+              "ru": "Разные цвета. Меньше споров.",
+              "expr": "deadpan"
+            },
+            {
+              "speaker": "mika",
+              "text": "Next time, tea if you want it. No compulsory biscuits.",
+              "ru": "В следующий раз — чай по желанию. Печенье не обязательное.",
+              "expr": "phone/happy"
+            }
+          ],
+          "place": "room17",
+          "context": "Хорошо получилось"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "A few useful things. A little money left. Enough room for all four of us.",
+          "ru": "Несколько полезных вещей. Немного оставшихся денег. Достаточно места для нас четверых.",
+          "expr": "happy"
+        }
+      ]
+    }
+  ]
+}

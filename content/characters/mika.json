@@ -32,6 +32,18 @@
         "unit": "008"
       },
       "ru": "Для общей работы ей нужна хорошо видимая доска; красивое фото может подождать, пока комнатой действительно можно пользоваться."
+    },
+    {
+      "unlock": {
+        "unit": "010"
+      },
+      "ru": "Предпочитает неострую еду; немного перца ей подходит. Это предпочтение, а не аллергия."
+    },
+    {
+      "unlock": {
+        "unit": "011"
+      },
+      "ru": "Замечает яркие красивые вещи, но умеет отказаться от покупки ради общей задачи и оставить резерв."
     }
   ],
   "memories": [
@@ -90,6 +102,27 @@
       },
       "en": "Before Alex's visit you kept the list of results, and Mika let him in. You both did exactly those jobs.",
       "ru": "Перед визитом техника ты выбрал список результатов, а Мика встретила техника. Вы выполнили именно эти роли."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_mika_009"
+      },
+      "en": "At your first lunch together Mika saved you a seat and called the company \"fairly good\". You said the company was better than the menu.",
+      "ru": "На первом общем обеде Мика заняла тебе место рядом и назвала компанию «вполне ничего». Ты ответил, что компания лучше меню."
+    },
+    {
+      "unlock": {
+        "flag": "u012_supply_clips"
+      },
+      "en": "You took the shared list all the way to the shop: two different mugs, one pack of cable clips and two pounds for later.",
+      "ru": "Вы довели общий список до покупки: две разные чашки, упаковка кабельных зажимов и £2 на потом."
+    },
+    {
+      "unlock": {
+        "flag": "u012_supply_tape"
+      },
+      "en": "You took the shared list all the way to the shop: two different mugs, one roll of paper tape and two pounds for later.",
+      "ru": "Вы довели общий список до покупки: две разные чашки, рулон бумажной ленты и £2 на потом."
     }
   ],
   "lines": [

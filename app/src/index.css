@@ -430,8 +430,14 @@ main { flex: 1; padding: 14px 16px 104px; }
 .route-head-soon .route-head-kicker { color: var(--faint); }
 .route-prologue-new { box-shadow: 0 4px 0 var(--road-d), 0 0 0 4px color-mix(in srgb, var(--road) 30%, transparent); }
 .route-stop { min-height: 62px; }
-.route-stop::before { left: 22px; border-left: 4px dashed var(--border); }
-.route-stop-done::before { border-left-color: var(--road); }
+.route-stop::before { left: 22px; width: 4px; border-left: 0; border-radius: 2px; background: repeating-linear-gradient(to bottom, var(--border) 0 8px, transparent 8px 14px); }
+/* Drawn with a background, not a dashed border: Safari spreads border dashes over the whole length and the line almost disappears. */
+.route-stop-done::before { background: var(--road); }
+@media (max-width: 480px) {
+  .route-figure { width: 34%; }
+  .route-title { font-size: 0.98rem; }
+  .route-stop { gap: 10px; }
+}
 .route-dot { width: 48px; height: 48px; border: 0; background: #d5d5dc; box-shadow: 0 4px 0 #bdbdc6; }
 .route-stop-done .route-dot, .route-stop-open .route-dot, .route-stop-next .route-dot { background: var(--road); box-shadow: 0 4px 0 var(--road-d); }
 .route-stop-next .route-dot { box-shadow: 0 4px 0 var(--road-d), 0 0 0 5px var(--bg), 0 0 0 9px color-mix(in srgb, var(--road) 30%, transparent); animation: none; }

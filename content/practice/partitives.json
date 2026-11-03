@@ -1,0 +1,141 @@
+{
+ "tag": "partitives",
+ "items": [
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-partitives-01",
+    "type": "choice",
+    "prompt": "Could I have a ___ of orange juice?",
+    "options": [
+     "bottle",
+     "slice",
+     "bowl"
+    ],
+    "answer": "bottle",
+    "tags": [
+     "partitives"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-partitives-02",
+    "type": "choice",
+    "prompt": "I'd like a ___ of cake, please.",
+    "options": [
+     "slice",
+     "bottle",
+     "cup"
+    ],
+    "answer": "slice",
+    "tags": [
+     "partitives"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-partitives-03",
+    "type": "choice",
+    "prompt": "A ___ of rice comes with the fish.",
+    "options": [
+     "portion",
+     "slice",
+     "bottle"
+    ],
+    "answer": "portion",
+    "tags": [
+     "partitives"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-partitives-04",
+    "type": "fill",
+    "prompt": "Two ___ of soup, please.",
+    "answers": [
+     "bowls"
+    ],
+    "tags": [
+     "partitives"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-partitives-05",
+    "type": "fill",
+    "prompt": "Would you like a ___ of coffee?",
+    "answers": [
+     "cup"
+    ],
+    "tags": [
+     "partitives"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-partitives-06",
+    "type": "fill",
+    "prompt": "There are four ___ of water on the table.",
+    "answers": [
+     "bottles"
+    ],
+    "tags": [
+     "partitives"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-partitives-07",
+    "type": "transform",
+    "instruction": "Сделай две порции",
+    "sentence": "a slice of bread",
+    "answers": [
+     "two slices of bread"
+    ],
+    "tags": [
+     "partitives"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-partitives-08",
+    "type": "fix",
+    "sentence": "Could I have two bread, please?",
+    "answers": [
+     "Could I have two slices of bread, please?"
+    ],
+    "tags": [
+     "partitives"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-partitives-09",
+    "type": "fix",
+    "sentence": "I'd like a bowl soup.",
+    "answers": [
+     "I'd like a bowl of soup."
+    ],
+    "tags": [
+     "partitives"
+    ]
+   }
+  }
+ ]
+}

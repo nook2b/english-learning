@@ -1,0 +1,145 @@
+{
+ "tag": "some_any",
+ "items": [
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-some_any-01",
+    "type": "choice",
+    "prompt": "Do you have ___ vegetable soup today?",
+    "options": [
+     "any",
+     "some",
+     "a"
+    ],
+    "answer": "any",
+    "tags": [
+     "some_any"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-some_any-02",
+    "type": "choice",
+    "prompt": "There is ___ bread on the tray.",
+    "options": [
+     "some",
+     "any",
+     "a"
+    ],
+    "answer": "some",
+    "tags": [
+     "some_any"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-some_any-03",
+    "type": "choice",
+    "prompt": "We haven't got ___ cups left.",
+    "options": [
+     "any",
+     "some",
+     "a"
+    ],
+    "answer": "any",
+    "tags": [
+     "some_any"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-some_any-04",
+    "type": "choice",
+    "prompt": "Could I have ___ tea, please?",
+    "options": [
+     "some",
+     "any",
+     "an"
+    ],
+    "answer": "some",
+    "tags": [
+     "some_any"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-some_any-05",
+    "type": "fill",
+    "prompt": "Are there ___ free tables?",
+    "answers": [
+     "any"
+    ],
+    "tags": [
+     "some_any"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-some_any-06",
+    "type": "fill",
+    "prompt": "Would you like ___ rice with that?",
+    "answers": [
+     "some"
+    ],
+    "tags": [
+     "some_any"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-some_any-07",
+    "type": "transform",
+    "instruction": "Сделай отрицание",
+    "sentence": "There is some sauce on the pasta.",
+    "answers": [
+     "There isn't any sauce on the pasta.",
+     "There is not any sauce on the pasta."
+    ],
+    "tags": [
+     "some_any"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-some_any-08",
+    "type": "fix",
+    "sentence": "Is there some milk in the soup?",
+    "answers": [
+     "Is there any milk in the soup?"
+    ],
+    "tags": [
+     "some_any"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-some_any-09",
+    "type": "fix",
+    "sentence": "I don't want some bread.",
+    "answers": [
+     "I don't want any bread."
+    ],
+    "tags": [
+     "some_any"
+    ]
+   }
+  }
+ ]
+}
