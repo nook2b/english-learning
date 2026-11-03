@@ -8,7 +8,8 @@ const POSES: Record<string, string> = Object.fromEntries(
   Object.entries(files).map(([path, url]) => [path.replace(/^.*assets\/map\//, '').replace(/\.webp$/, ''), url]),
 )
 
-export function MapFigure({ heroine, pose }: { heroine: HeroineId; pose: string }) {
-  const url = POSES[`${heroine}/${pose}`]
+/** `fallback`: a close drawn pose to show until this one is drawn. */
+export function MapFigure({ heroine, pose, fallback }: { heroine: HeroineId; pose: string; fallback?: string }) {
+  const url = POSES[`${heroine}/${pose}`] ?? (fallback ? POSES[`${heroine}/${fallback}`] : undefined)
   return url ? <img className="map-figure" src={url} alt="" draggable={false} /> : <Sprite heroine={heroine} expr="happy" />
 }
