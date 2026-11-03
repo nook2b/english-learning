@@ -27,6 +27,7 @@ def parse(b):
         types[k] = (cur >> ((n % 16) * 2)) & 3
     objs = []
     while i < len(b):
+        ostart = i
         tk, i = varuint(b, i)
         props = []
         while True:
@@ -42,5 +43,5 @@ def parse(b):
             elif t == 4: v = b[i]; i += 1
             else: raise ValueError(f'unknown key {k} at {i}')
             props.append((k, t, v, st, i))
-        objs.append((tk, props))
+        objs.append((tk, props, ostart, i))
     return (major, minor), objs

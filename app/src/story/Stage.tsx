@@ -8,7 +8,7 @@ import { SPEAKER_NAMES } from '../lesson/model'
 import { Button, DialogueBox } from '../ui/kit'
 import { castAt } from './cast'
 import { PLACES, usePlace } from './places'
-import { hasFigure, riveCanTurn, riveHasFace } from './figures'
+import { hasFigure, riveCanTurn, riveHasFace, turnedPose } from './figures'
 import { RiveFigure } from './HeroineFigure'
 import { useMouth } from '../speech/mouth'
 import { type HeroineId, HEROINE_IDS, SIMILAR, SPRITE_H, SPRITE_W, TALK, isHeroine, parseExpr, resolveSprite } from './sprites'
@@ -44,15 +44,19 @@ export function Sprite({
   look?: 'left' | 'right'
   mark?: string
 }) {
-  const ref = parseExpr(heroine, expr)
+  const front = parseExpr(heroine, expr)
+  // Turned to a side: a pose drawn turned as its own artboard and sprites ("stand_left"), or Mika's `look`.
+  const turned = look ? turnedPose(heroine, front.pose, look) : undefined
+  const ref = turned ? { ...front, pose: turned } : front
   const found = resolveSprite(ref)
   const mouth = useMouth(heroine)
   // In scenes she is a Rive figure when her pose has this face; other faces stay sprites.
-  const [ready, setReady] = useState(false)
+  const [readyPose, setReadyPose] = useState<string>()
   const [failed, setFailed] = useState(false)
   const rive = animate && size !== 'avatar' && !failed && hasFigure(heroine, ref.pose)
   const face = riveHasFace(heroine, ref.pose, ref.expr)
-  const live = rive && ready && face
+  // A newly chosen artboard loads under the sprite of the same pose, so the switch does not flash.
+  const live = rive && readyPose === ref.pose && face
   const talk = found && !live ? TALK[found.key] : undefined
   useEffect(() => {
     // Preload the mouth patch so the first syllable does not flicker.
@@ -63,7 +67,7 @@ export function Sprite({
   if (size === 'avatar') return <div className="sprite sprite-avatar" role="img" aria-label={label} style={{ backgroundImage: `url(${found.url})` }} />
   const frame = (
     <div className={`sprite-frame sprite-${size} ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''} ${live ? 'rive-on' : ''}`}>
-      {rive && <RiveFigure heroine={heroine} pose={ref.pose} expression={face ? ref.expr : (FIRST_FACE[ref.pose] ?? 'neutral')} visible={face} lean={lean} look={look} mark={mark} onReady={() => setReady(true)} onFail={() => setFailed(true)} />}
+      {rive && <RiveFigure heroine={heroine} pose={ref.pose} expression={face ? ref.expr : (FIRST_FACE[ref.pose] ?? 'neutral')} visible={face} lean={lean} look={turned ? undefined : look} mark={mark} onReady={() => setReadyPose(ref.pose)} onFail={() => setFailed(true)} />}
       <img className="sprite" style={live ? { visibility: 'hidden' } : undefined} src={found.url} alt={label} title={found.exact ? undefined : `замена: ${found.key}`} draggable={false} />
       {talk && mouth === 'open' && (
         <img

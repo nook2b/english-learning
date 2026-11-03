@@ -21,5 +21,12 @@ export const riveHasFace = (heroine: HeroineId, pose: string, expr: string) => !
 /** Turned versions of a pose (kit brief 28): side of the screen -> faces drawn turned that way. */
 const LOOKS: Record<string, Record<string, Partial<Record<'left' | 'right', readonly string[]>>>> = looks
 
+/**
+ * A turned copy of the pose drawn as its own artboard ("stand_left"), when the
+ * heroine's file has one; Mika turns inside her artboard instead (`look`).
+ */
+export const turnedPose = (heroine: HeroineId, pose: string, side: 'left' | 'right') => (FACES[heroine]?.[`${pose}_${side}`] ? `${pose}_${side}` : undefined)
+
 /** The pose can turn to this side of the screen with this face; otherwise she leans instead. */
-export const riveCanTurn = (heroine: HeroineId, pose: string, expr: string, side: 'left' | 'right') => !!LOOKS[heroine]?.[pose]?.[side]?.includes(expr)
+export const riveCanTurn = (heroine: HeroineId, pose: string, expr: string, side: 'left' | 'right') =>
+  !!LOOKS[heroine]?.[pose]?.[side]?.includes(expr) || !!FACES[heroine]?.[`${pose}_${side}`]?.includes(expr)

@@ -97,6 +97,22 @@
       "embarrassed",
       "happy",
       "thinking"
+    ],
+    "stand_left": [
+      "neutral",
+      "listening",
+      "happy",
+      "laugh",
+      "surprised",
+      "thinking",
+      "embarrassed",
+      "annoyed",
+      "focused",
+      "dry_smile",
+      "skeptical",
+      "guilty",
+      "sad",
+      "worried"
     ]
   }
 }
