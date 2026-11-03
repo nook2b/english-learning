@@ -24,20 +24,20 @@ export const UNIT_FIGURES: Record<string, { heroine: HeroineId; pose: string; un
   '002': { heroine: 'rei', pose: 'headphones_listen' }, // Уточнить вопрос: вслушивается
   '003': { heroine: 'iris', pose: 'timetable_point' }, // Прочитать расписание
   '004': { heroine: 'mika', pose: 'clipboard_run' }, // Объяснить свой день: бегом по делам
-  '005': { heroine: 'iris', pose: 'floor_plan', until: 'book_walk' }, // Найти комнату: план этажа
+  '005': { heroine: 'iris', pose: 'floor_plan' }, // Найти комнату: план этажа
   '006': { heroine: 'rei', pose: 'cable_coil' }, // Описать проблему: гудящий кабель
-  '007': { heroine: 'mika', pose: 'carry_chair', until: 'lunch_bags' }, // Договориться о помощи: несёт стул
-  '008': { heroine: 'rei', pose: 'acoustic_panel', until: 'stool' }, // Предпочтения: панель для угла записи
+  '007': { heroine: 'mika', pose: 'carry_chair' }, // Договориться о помощи: несёт стул
+  '008': { heroine: 'rei', pose: 'acoustic_panel' }, // Предпочтения: панель для угла записи
   '009': { heroine: 'mika', pose: 'lunch_bags' }, // Заказать обед
-  '010': { heroine: 'iris', pose: 'menu_check', until: 'notebook_write' }, // Уточнить состав: читает меню
+  '010': { heroine: 'iris', pose: 'menu_check' }, // Уточнить состав: читает меню
   '011': { heroine: 'rei', pose: 'mic_stand' }, // Сравнить цены: новая стойка
-  '012': { heroine: 'iris', pose: 'two_mugs', until: 'books_sit' }, // Общий список: две чашки
+  '012': { heroine: 'iris', pose: 'two_mugs' }, // Общий список: две чашки
   '013': { heroine: 'rei', pose: 'recorder_crouch' }, // Привычное и текущее: десять секунд тишины
   '014': { heroine: 'mika', pose: 'phone_show' }, // Описать помеху: телефон зазвонил
   '015': { heroine: 'iris', pose: 'notebook_write' }, // Перенести встречу: правит план
   '016': { heroine: 'mika', pose: 'peace' }, // Подтвердить договорённость
   '017': { heroine: 'iris', pose: 'over_shoulder' }, // Объяснить маршрут: «за мной»
-  '018': { heroine: 'rei', pose: 'manual_read', until: 'stool' }, // Проверить инструкцию
+  '018': { heroine: 'rei', pose: 'manual_read' }, // Проверить инструкцию
   '019': { heroine: 'mika', pose: 'leaning' }, // Уточнить непонятное: наклонилась, переспрашивает
   '020': { heroine: 'rei', pose: 'greeting' }, // Провести новичка: встречает
 }
