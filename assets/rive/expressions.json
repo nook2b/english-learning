@@ -113,6 +113,22 @@
       "guilty",
       "sad",
       "worried"
+    ],
+    "stand_right": [
+      "neutral",
+      "listening",
+      "happy",
+      "laugh",
+      "surprised",
+      "thinking",
+      "embarrassed",
+      "annoyed",
+      "focused",
+      "dry_smile",
+      "skeptical",
+      "guilty",
+      "sad",
+      "worried"
     ]
   }
 }
