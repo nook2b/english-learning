@@ -1,0 +1,1140 @@
+{
+  "id": "011",
+  "title": "Сравнить цены",
+  "goal": "Сравнить цену и пригодность вариантов, объяснить, почему самая дешёвая или самая дорогая вещь не всегда подходит.",
+  "focus": "Сравнение: cheaper than, more expensive than, the cheapest, the best option; as good as / not as tall as; слишком и достаточно: too expensive, tall enough, stable enough; within our budget.",
+  "outcome": "Из общего бюджета £24 куплены устойчивая подставка с зажимом за £12 и поролоновая ветрозащита за £4. Израсходовано £16, осталось £8. Исправный микрофон не заменяют. Игрок определяет порядок сравнения и порядок советов в локальной карточке покупок.",
+  "expressions": [
+    "cheaper than",
+    "more expensive than",
+    "the cheapest",
+    "the best option",
+    "as good as",
+    "not as tall as",
+    "too expensive",
+    "tall enough",
+    "stable enough",
+    "within our budget",
+    "compare the prices",
+    "try it first"
+  ],
+  "glossary": [
+    "stand",
+    "clamp",
+    "foam windscreen",
+    "receipt",
+    "budget sheet",
+    "speaking height"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Не новый микрофон",
+      "intro": "Карточка на полке магазина. Прочитай: что сколько стоит и что подходит именно нам.",
+      "place": "shop",
+      "frame": {
+        "setting": "Пятница, 16:00. Все четверо у полки с техникой для записи. У клуба есть £24 на общие вещи; Айрис принесла лист бюджета. Рэй рассматривает хороший новый микрофон, Мика — яркую синюю модель.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Better microphone. Worse price.",
+            "ru": "Микрофон лучше. Цена хуже.",
+            "expr": "thinking"
+          },
+          {
+            "speaker": "mika",
+            "text": "The blue one looks great. Looking is still free, right?",
+            "ru": "Синий выглядит классно. Смотреть ведь пока бесплатно?",
+            "expr": "happy"
+          },
+          {
+            "speaker": "iris",
+            "text": "We have a working microphone and twenty-four pounds. Let's start there.",
+            "ru": "У нас есть рабочий микрофон и двадцать четыре фунта. Начнём с этого.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u011-s1-e1",
+          "type": "reading",
+          "title": "Small recording equipment",
+          "text": "Three microphones are on display: a basic model for £18, a blue model for £28, and a studio model for £40. A microphone is not included with any stand.\nThe short table stand costs £7. The taller stand with a clamp costs £12. Both can hold our microphone, but only the taller stand can reach a comfortable speaking height at our table. A foam windscreen costs £4.\nCustomers may test the stands at the counter. Ask before opening a box. Keep your receipt if you buy anything.",
+          "ru": "На витрине три микрофона: базовая модель за £18, синяя за £28 и студийная за £40. Ни с одной подставкой микрофон не идёт в комплекте. Низкая настольная подставка стоит £7. Более высокая подставка с зажимом — £12. Обе удерживают наш микрофон, но только высокая поднимает его на удобную для речи высоту за нашим столом. Поролоновая ветрозащита стоит £4. Подставки можно проверить у прилавка. Прежде чем открывать коробку, спросите. Сохраните чек после покупки.",
+          "questions": [
+            {
+              "prompt": "Which microphone is the cheapest?",
+              "options": [
+                "Basic",
+                "Blue",
+                "Studio"
+              ],
+              "answer": "Basic"
+            },
+            {
+              "prompt": "What costs £12?",
+              "options": [
+                "A microphone",
+                "The taller stand with a clamp",
+                "A windscreen"
+              ],
+              "answer": "The taller stand with a clamp"
+            },
+            {
+              "prompt": "Why might the £7 stand be unsuitable?",
+              "options": [
+                "Too short",
+                "Too blue",
+                "Cannot hold any microphone"
+              ],
+              "answer": "Too short"
+            },
+            {
+              "prompt": "Can customers open boxes without asking?",
+              "options": [
+                "Yes",
+                "No",
+                "Only on Friday"
+              ],
+              "answer": "No"
+            }
+          ],
+          "tags": [
+            "reading",
+            "comparatives",
+            "too_enough"
+          ],
+          "look": "notice"
+        },
+        {
+          "id": "u011-s1-e2",
+          "type": "choice",
+          "prompt": "The basic microphone is ___ of the three.",
+          "options": [
+            "the cheapest",
+            "cheaper",
+            "the most cheap"
+          ],
+          "answer": "the cheapest",
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "Из трёх — the cheapest.",
+          "context": "Карточка на полке"
+        },
+        {
+          "id": "u011-s1-e3",
+          "type": "choice",
+          "prompt": "The short stand is ___ than the taller one.",
+          "options": [
+            "cheaper",
+            "more cheap",
+            "cheapest"
+          ],
+          "answer": "cheaper",
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "Cheap → cheaper than.",
+          "context": "Карточка на полке"
+        },
+        {
+          "id": "u011-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "cheaper than",
+              "ru": "дешевле, чем"
+            },
+            {
+              "en": "more expensive than",
+              "ru": "дороже, чем"
+            },
+            {
+              "en": "the cheapest",
+              "ru": "самый дешёвый"
+            },
+            {
+              "en": "too expensive",
+              "ru": "слишком дорогой"
+            },
+            {
+              "en": "tall enough",
+              "ru": "достаточно высокий"
+            },
+            {
+              "en": "within our budget",
+              "ru": "в пределах бюджета"
+            }
+          ],
+          "tags": [
+            "comparatives"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Ours works. Holding it is the problem.",
+          "ru": "Наш работает. Проблема — его держать.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Цена и задача",
+      "intro": "Рэй и Айрис: про высоту подставки и про бюджет. Слушай без текста.",
+      "place": "shop",
+      "frame": {
+        "setting": "На столе для проверки Рэй показывает, где должен оказаться микрофон. Айрис читает бюджет.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Let's compare what the money actually changes.",
+            "ru": "Сравним, что деньги действительно меняют.",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u011-s2-e1",
+          "type": "listening",
+          "speaker": "rei",
+          "audio": "The short stand holds the microphone. It's cheaper, but not tall enough for our table. The taller one lets us sit normally. Let's test the clamp before buying it.",
+          "ru": "Низкая подставка держит микрофон. Она дешевле, но для нашего стола недостаточно высокая. С высокой можно нормально сидеть. Проверим зажим до покупки.",
+          "questions": [
+            {
+              "prompt": "Which feature matters here?",
+              "options": [
+                "Height",
+                "Colour",
+                "A famous name"
+              ],
+              "answer": "Height"
+            }
+          ],
+          "tags": [
+            "listening",
+            "too_enough",
+            "comparatives"
+          ],
+          "context": "Рэй у стола для проверки"
+        },
+        {
+          "id": "u011-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "Our club has twenty-four pounds for shared supplies. The taller stand and a foam windscreen cost sixteen together. That leaves eight. Lunch was paid separately, so it doesn't come out of this budget.",
+          "ru": "У клуба двадцать четыре фунта на общие вещи. Высокая подставка и поролоновая ветрозащита вместе стоят шестнадцать. Останется восемь. Обед каждый оплачивал отдельно, поэтому из этого бюджета он не вычитается.",
+          "questions": [
+            {
+              "prompt": "How much will remain after these two items?",
+              "options": [
+                "£4",
+                "£8",
+                "£16"
+              ],
+              "answer": "£8"
+            },
+            {
+              "prompt": "Is lunch included in this budget?",
+              "options": [
+                "Yes",
+                "No",
+                "Only Mika's lunch"
+              ],
+              "answer": "No"
+            }
+          ],
+          "tags": [
+            "listening",
+            "too_enough"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Айрис с листом бюджета"
+        },
+        {
+          "id": "u011-s2-e3",
+          "type": "dictation",
+          "speaker": "rei",
+          "audio": "The cheaper stand isn't tall enough.",
+          "answers": [
+            "The cheaper stand isn't tall enough."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u011-s2-e4",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "That leaves eight pounds.",
+          "answers": [
+            "That leaves eight pounds."
+          ],
+          "tags": [
+            "dictation",
+            "comparatives"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Less shopping, more useful shopping. I can work with that.",
+          "ru": "Меньше покупок, больше полезных покупок. Подходит.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Дешевле чего?",
+      "intro": "Сравнение двух вещей: короткие слова + -er than (cheaper than), длинные — more … than (more expensive than). Из трёх и больше: the cheapest, the most expensive, the best. Равенство: as good as; неравенство: not as tall as.",
+      "place": "shop",
+      "frame": {
+        "setting": "Айрис прикрывает рукой яркую рекламную надпись и оставляет видимыми только цену и характеристики.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Compare two things first. Then decide what “best” means.",
+            "ru": "Сначала сравни две вещи. Потом реши, что значит «лучше всего».",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u011-s3-e1",
+          "type": "choice",
+          "prompt": "The short stand is ___ than the tall one.",
+          "options": [
+            "cheaper",
+            "cheap",
+            "more cheaper"
+          ],
+          "answer": "cheaper",
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "Короткое слово: cheap → cheaper than.",
+          "context": "Карточка на полке"
+        },
+        {
+          "id": "u011-s3-e2",
+          "type": "choice",
+          "prompt": "The studio microphone is ___ than the blue one.",
+          "options": [
+            "more expensive",
+            "expensiver",
+            "most expensive"
+          ],
+          "answer": "more expensive",
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "Длинное слово: more expensive than.",
+          "context": "Карточка на полке"
+        },
+        {
+          "id": "u011-s3-e3",
+          "type": "fill",
+          "prompt": "The basic microphone is the ___ of the three.",
+          "answers": [
+            "cheapest"
+          ],
+          "hint": "cheap",
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "Из трёх — the cheapest.",
+          "context": "Карточка на полке"
+        },
+        {
+          "id": "u011-s3-e4",
+          "type": "choice",
+          "prompt": "The taller stand is the ___ option for our table.",
+          "options": [
+            "best",
+            "better",
+            "goodest"
+          ],
+          "answer": "best",
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "Good → better → the best.",
+          "context": "Карточка на полке"
+        },
+        {
+          "id": "u011-s3-e5",
+          "type": "fill",
+          "prompt": "The short stand is not ___ tall as the other one.",
+          "answers": [
+            "as"
+          ],
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "Not as … as — не такой…, как.",
+          "context": "Карточка на полке"
+        },
+        {
+          "id": "u011-s3-e6",
+          "type": "choice",
+          "prompt": "Is the cheaper one ___ good as this one?",
+          "options": [
+            "as",
+            "so",
+            "than"
+          ],
+          "answer": "as",
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "As good as — такой же хороший, как.",
+          "context": "Карточка на полке"
+        },
+        {
+          "id": "u011-s3-e7",
+          "type": "fix",
+          "sentence": "A useful stand is more better for us than a new colour.",
+          "answers": [
+            "A useful stand is better for us than a new colour."
+          ],
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "Better уже сравнительная степень, more не нужно.",
+          "context": "Карточка на полке"
+        },
+        {
+          "id": "u011-s3-e8",
+          "type": "transform",
+          "instruction": "Скажи то же с not as … as",
+          "sentence": "The short stand is shorter than the tall stand.",
+          "answers": [
+            "The short stand is not as tall as the tall stand.",
+            "The short stand isn't as tall as the tall stand."
+          ],
+          "tags": [
+            "comparatives"
+          ],
+          "explain": "Not as tall as.",
+          "context": "Карточка на полке"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Best for the job. Not the shelf.",
+          "ru": "Лучше для дела. Не для витрины.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Слишком или достаточно",
+      "intro": "Too + прилагательное — слишком (too expensive). Прилагательное + enough — достаточно (tall enough). Enough + существительное: enough money.",
+      "place": "shop",
+      "frame": {
+        "setting": "Мика записывает два условия: покупка помещается в бюджет и решает конкретную задачу.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "“We can pay” is one question. “Will it help?” is another.",
+            "ru": "«Мы можем заплатить?» — один вопрос. «Это поможет?» — другой.",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u011-s4-e1",
+          "type": "choice",
+          "prompt": "The blue microphone is ___ expensive for us.",
+          "options": [
+            "too",
+            "enough",
+            "very enough"
+          ],
+          "answer": "too",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Too expensive — слишком дорогой.",
+          "context": "Лист бюджета"
+        },
+        {
+          "id": "u011-s4-e2",
+          "type": "choice",
+          "prompt": "The £7 stand is not ___.",
+          "options": [
+            "tall enough",
+            "enough tall",
+            "too tall enough"
+          ],
+          "answer": "tall enough",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Прилагательное перед enough: tall enough.",
+          "context": "Лист бюджета"
+        },
+        {
+          "id": "u011-s4-e3",
+          "type": "fill",
+          "prompt": "The taller stand is stable ___ for our microphone.",
+          "answers": [
+            "enough"
+          ],
+          "hint": "достаточно",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Stable enough.",
+          "context": "Лист бюджета"
+        },
+        {
+          "id": "u011-s4-e4",
+          "type": "choice",
+          "prompt": "We have ___ for the stand and the windscreen.",
+          "options": [
+            "enough money",
+            "money enough",
+            "too money"
+          ],
+          "answer": "enough money",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Enough перед существительным: enough money.",
+          "context": "Лист бюджета"
+        },
+        {
+          "id": "u011-s4-e5",
+          "type": "fill",
+          "prompt": "We don't have ___ money for the studio microphone.",
+          "answers": [
+            "enough"
+          ],
+          "tags": [
+            "too_enough"
+          ],
+          "context": "Лист бюджета"
+        },
+        {
+          "id": "u011-s4-e6",
+          "type": "choice",
+          "prompt": "The clamp opens ___ for our table.",
+          "options": [
+            "wide enough",
+            "enough wide",
+            "too wide enough"
+          ],
+          "answer": "wide enough",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Wide enough.",
+          "context": "Лист бюджета"
+        },
+        {
+          "id": "u011-s4-e7",
+          "type": "fix",
+          "sentence": "Is the cheaper option enough good for this job?",
+          "answers": [
+            "Is the cheaper option good enough for this job?"
+          ],
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Enough после прилагательного: good enough.",
+          "context": "Лист бюджета"
+        },
+        {
+          "id": "u011-s4-e8",
+          "type": "sort",
+          "instruction": "Слишком или достаточно?",
+          "categories": [
+            {
+              "id": "too",
+              "label": "Слишком: не подходит"
+            },
+            {
+              "id": "enough",
+              "label": "Достаточно: подходит"
+            }
+          ],
+          "items": [
+            {
+              "text": "too expensive",
+              "category": "too"
+            },
+            {
+              "text": "too short",
+              "category": "too"
+            },
+            {
+              "text": "too heavy",
+              "category": "too"
+            },
+            {
+              "text": "tall enough",
+              "category": "enough"
+            },
+            {
+              "text": "stable enough",
+              "category": "enough"
+            },
+            {
+              "text": "cheap enough",
+              "category": "enough"
+            }
+          ],
+          "tags": [
+            "too_enough"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Two conditions. Both need a yes.",
+          "ru": "Два условия. По обоим нужно «да».",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Хорошая пара для сравнения",
+      "intro": "Рэй показывает тебе два ценника. Ответь — как хочешь.",
+      "place": "shop",
+      "exercises": [
+        {
+          "id": "u011-s5-e1",
+          "type": "scene",
+          "setting": "Мика спрашивает продавца Сэма о коробках, Айрис сверяет цены. Рэй показывает тебе два ценника.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Shopping with you is better than shopping alone. Fewer bad ideas. Mostly mine.",
+              "ru": "С тобой ходить по магазинам лучше, чем одной. Меньше плохих идей. В основном моих.",
+              "expr": "smirk"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "I like this shopping team too.",
+                "Then let's make a good team again."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Fine. Keep the honest opinions.",
+                "ru": "Ладно. Только продолжай говорить честно.",
+                "expr": "happy"
+              },
+              "flag": "flirt_rei_011"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "The prices are doing most of the work.",
+                "My wallet is very convincing."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Strong argument. Very quiet.",
+                "ru": "Сильный аргумент. Очень тихий.",
+                "expr": "smirk"
+              }
+            },
+            {
+              "label": "Вернуться к сравнению",
+              "answers": [
+                "Let's test the taller stand first.",
+                "Is the clamp strong enough?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Good question. Let's check.",
+                "ru": "Хороший вопрос. Проверим.",
+                "expr": "focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "What do you mean?",
+            "ru": "Что ты имеешь в виду?",
+            "expr": "listening"
+          },
+          "tags": [
+            "comparatives"
+          ],
+          "context": "Тебя можно брать в магазин"
+        },
+        {
+          "id": "u011-s5-e2",
+          "type": "translate",
+          "ru": "Эта подставка дешевле той.",
+          "answers": [
+            "This stand is cheaper than that one.",
+            "This stand is cheaper than that stand."
+          ],
+          "tags": [
+            "comparatives"
+          ]
+        },
+        {
+          "id": "u011-s5-e3",
+          "type": "translate",
+          "ru": "Синий микрофон слишком дорогой.",
+          "answers": [
+            "The blue microphone is too expensive.",
+            "The blue microphone is too expensive for us."
+          ],
+          "tags": [
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u011-s5-e4",
+          "type": "translate",
+          "ru": "Высокая подставка — лучший вариант.",
+          "answers": [
+            "The tall stand is the best option.",
+            "The taller stand is the best option."
+          ],
+          "tags": [
+            "comparatives"
+          ]
+        },
+        {
+          "id": "u011-s5-e5",
+          "type": "translate",
+          "ru": "Она достаточно устойчивая?",
+          "answers": [
+            "Is it stable enough?"
+          ],
+          "tags": [
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u011-s5-e6",
+          "type": "write",
+          "situation": "Объясни, почему мы берём подставку за £12, а не за £7.",
+          "answers": [
+            "The £7 stand is cheaper, but it isn't tall enough.",
+            "The cheaper stand isn't tall enough, so the £12 stand is the best option.",
+            "The short stand is cheaper, but the tall stand is better for our table.",
+            "The £12 stand is more expensive, but it is tall enough and within our budget.",
+            "The £7 stand is not as tall as the £12 stand."
+          ],
+          "tags": [
+            "comparatives",
+            "too_enough"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Price first. Test next.",
+          "ru": "Сначала цена. Дальше проверка.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: обосновать выбор",
+      "intro": "Прочитай вслух объяснение выбора: цена и причина.",
+      "place": "shop",
+      "frame": {
+        "setting": "Ты репетируешь объяснение для общего списка.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "A reason someone else can check. That's what we need.",
+            "ru": "Нужна причина, которую другой сможет проверить.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u011-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "This one is cheaper, but it isn't tall enough.",
+          "answers": [
+            "This one is cheaper, but it isn't tall enough."
+          ],
+          "tags": [
+            "speaking",
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u011-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "The taller stand is the best option for our table.",
+          "answers": [
+            "The taller stand is the best option for our table."
+          ],
+          "tags": [
+            "speaking",
+            "comparatives"
+          ]
+        },
+        {
+          "id": "u011-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "It is within our budget.",
+          "answers": [
+            "It is within our budget."
+          ],
+          "tags": [
+            "speaking",
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u011-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Could we try it before we buy it?",
+          "answers": [
+            "Could we try it before we buy it?"
+          ],
+          "tags": [
+            "speaking",
+            "comparatives"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "A price and a reason. Better than “the nice one”.",
+          "ru": "Цена и причина. Лучше, чем «тот красивый».",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: три ценника",
+      "intro": "Быстрый круг: три ценника, по одному предложению.",
+      "place": "shop",
+      "frame": {
+        "setting": "Мика выложила фотографии ценников в общий чат.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Quick comparisons. One sentence each, then we ask to test.",
+            "ru": "Быстрые сравнения. По одному предложению, потом попросим проверить.",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u011-s7-e1",
+          "type": "write",
+          "situation": "Сравни микрофоны за £18 и £28.",
+          "answers": [
+            "The blue one is more expensive.",
+            "The £28 microphone is more expensive than the £18 one.",
+            "The basic microphone is cheaper than the blue one.",
+            "The £18 microphone is cheaper than the £28 one."
+          ],
+          "tags": [
+            "comparatives"
+          ]
+        },
+        {
+          "id": "u011-s7-e2",
+          "type": "write",
+          "situation": "Назови самый дорогой микрофон из трёх.",
+          "answers": [
+            "The studio model is the most expensive.",
+            "The studio microphone is the most expensive.",
+            "The studio one is the most expensive."
+          ],
+          "tags": [
+            "comparatives"
+          ]
+        },
+        {
+          "id": "u011-s7-e3",
+          "type": "write",
+          "situation": "Объясни разницу между подставками за £7 и £12.",
+          "answers": [
+            "The short stand isn't tall enough.",
+            "The £7 stand is cheaper, but it isn't tall enough.",
+            "The £12 stand is taller than the £7 stand.",
+            "The £7 stand isn't as tall as the £12 stand."
+          ],
+          "tags": [
+            "comparatives",
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u011-s7-e4",
+          "type": "write",
+          "situation": "Сколько останется: £24 минус £16?",
+          "answers": [
+            "We'll have eight pounds left.",
+            "We will have eight pounds left.",
+            "Eight pounds are left.",
+            "There will be eight pounds left.",
+            "We'll have £8 left."
+          ],
+          "tags": [
+            "too_enough"
+          ]
+        },
+        {
+          "id": "u011-s7-e5",
+          "type": "choice",
+          "prompt": "The windscreen costs £4. It's ___ than the stand.",
+          "options": [
+            "cheaper",
+            "more cheap",
+            "the cheapest"
+          ],
+          "answer": "cheaper",
+          "tags": [
+            "comparatives"
+          ]
+        },
+        {
+          "id": "u011-s7-e6",
+          "type": "choice",
+          "prompt": "Is it ___ our budget?",
+          "options": [
+            "within",
+            "inside of",
+            "in of"
+          ],
+          "answer": "within",
+          "tags": [
+            "too_enough"
+          ],
+          "explain": "Within our budget — в пределах бюджета."
+        },
+        {
+          "id": "u011-s7-e7",
+          "type": "fill",
+          "prompt": "Could we try it ___ we buy it?",
+          "answers": [
+            "before"
+          ],
+          "hint": "до того как",
+          "tags": [
+            "comparatives"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Same prices in the chat and on the shelf. Ready.",
+          "ru": "В чате и на полке одинаковые цены. Готово.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: купить то, чего не хватало",
+      "role": "mission",
+      "intro": "Миссия: проверить подставку и купить то, чего не хватало.",
+      "place": "shop",
+      "exercises": [
+        {
+          "id": "u011-s8-e1",
+          "type": "scene",
+          "setting": "Продавец Сэм разрешает проверить демонстрационную подставку. Размеры стола и модель микрофона записаны. С чего начать проверку?",
+          "lines": [
+            {
+              "speaker": "sam",
+              "text": "We can check the clamp and the height. Which first?",
+              "ru": "Можем проверить зажим и высоту. С чего начнём?"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Начать с устойчивости",
+              "answers": [
+                "Could we check if the clamp is strong enough?",
+                "Let's test the clamp first, please."
+              ],
+              "reaction": {
+                "speaker": "sam",
+                "text": "Clamp first, then height. Here is the matching microphone holder.",
+                "ru": "Сначала зажим, потом высота. Вот совместимый держатель микрофона."
+              },
+              "flag": "u011_test_clamp"
+            },
+            {
+              "label": "Начать с высоты",
+              "answers": [
+                "Could we check if it's tall enough?",
+                "Let's test the speaking height first."
+              ],
+              "reaction": {
+                "speaker": "sam",
+                "text": "Height first, then clamp. Use this chair for the test.",
+                "ru": "Сначала высота, потом зажим. Для проверки сядьте на этот стул."
+              },
+              "flag": "u011_test_height"
+            }
+          ],
+          "clarify": {
+            "speaker": "sam",
+            "text": "The clamp or the height first?",
+            "ru": "Сначала зажим или высота?"
+          },
+          "tags": [
+            "too_enough",
+            "comparatives"
+          ],
+          "after": [
+            {
+              "speaker": "rei",
+              "text": "Stable. Tall enough. This works.",
+              "ru": "Устойчивая. Достаточно высокая. Подходит.",
+              "expr": "focused"
+            },
+            {
+              "speaker": "iris",
+              "text": "Twelve for the stand, four for the windscreen. Sixteen in total.",
+              "ru": "Двенадцать за подставку, четыре за ветрозащиту. Всего шестнадцать.",
+              "expr": "notebook/focused"
+            },
+            {
+              "speaker": "mika",
+              "text": "All four agree? Good. Let's buy these two.",
+              "ru": "Все четверо согласны? Хорошо. Берём эти две вещи.",
+              "expr": "phone/happy"
+            }
+          ],
+          "context": "Проверяем сначала"
+        },
+        {
+          "id": "u011-s8-e2",
+          "type": "scene",
+          "setting": "Мика фотографирует покупки и чек для общего чата. Айрис пишет короткую заметку для гида.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "What should our shopping note start with?",
+              "ru": "С чего начнём памятку о покупках?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Сначала объяснить задачу",
+              "answers": [
+                "Choose what is good enough for the job.",
+                "Start with what you actually need."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "The job first, then the prices and the test.",
+                "ru": "Сначала задача, потом цены и проверка.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u011_guide_need"
+            },
+            {
+              "label": "Сначала напомнить о сравнении",
+              "answers": [
+                "Compare the prices, then test your choice.",
+                "Don't choose only by the lowest price."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Comparison first, with our stand as the example.",
+                "ru": "Сначала сравнение, на примере нашей подставки.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u011_guide_compare"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Start with the task or with comparing prices?",
+            "ru": "Начать с задачи или со сравнения цен?",
+            "expr": "thinking"
+          },
+          "tags": [
+            "comparatives"
+          ],
+          "after": [
+            {
+              "speaker": "narrator",
+              "text": "Shopping: Start with the job. Compare the prices. Test your choice.",
+              "ru": "Покупки: начните с задачи. Сравните цены. Проверьте выбранное.",
+              "if": "u011_guide_need"
+            },
+            {
+              "speaker": "narrator",
+              "text": "Shopping: Compare the prices. Check what the job needs. Test your choice.",
+              "ru": "Покупки: сравните цены. Проверьте, что нужно для задачи. Проверьте выбранное.",
+              "if": "u011_guide_compare"
+            }
+          ],
+          "context": "Совет следующему покупателю"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Good team. Honest opinions.",
+          "ru": "Хорошая команда. Честные мнения.",
+          "expr": "neutral",
+          "if": "flirt_rei_011"
+        },
+        {
+          "speaker": "mika",
+          "text": "Eight pounds left. I'll post that before anyone finds another beautiful microphone.",
+          "ru": "Осталось восемь фунтов. Напишу, пока никто не нашёл ещё один прекрасный микрофон.",
+          "expr": "phone/happy"
+        },
+        {
+          "speaker": "rei",
+          "text": "Wednesday. We fit the stand.",
+          "ru": "В среду. Установим подставку.",
+          "expr": "neutral"
+        }
+      ]
+    }
+  ]
+}

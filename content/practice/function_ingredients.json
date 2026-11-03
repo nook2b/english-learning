@@ -1,0 +1,143 @@
+{
+ "tag": "function_ingredients",
+ "items": [
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-function_ingredients-01",
+    "type": "choice",
+    "prompt": "Does the soup ___ any meat?",
+    "options": [
+     "contain",
+     "contains",
+     "containing"
+    ],
+    "answer": "contain",
+    "tags": [
+     "function_ingredients"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-function_ingredients-02",
+    "type": "choice",
+    "prompt": "What's ___ the salad?",
+    "options": [
+     "in",
+     "on",
+     "of"
+    ],
+    "answer": "in",
+    "tags": [
+     "function_ingredients"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-function_ingredients-03",
+    "type": "choice",
+    "prompt": "I'd prefer it ___ cheese.",
+    "options": [
+     "without",
+     "no",
+     "not"
+    ],
+    "answer": "without",
+    "tags": [
+     "function_ingredients"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-function_ingredients-04",
+    "type": "choice",
+    "prompt": "«I'm ___ to milk» — это об аллергии.",
+    "options": [
+     "allergic",
+     "allergy",
+     "allergies"
+    ],
+    "answer": "allergic",
+    "tags": [
+     "function_ingredients"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-function_ingredients-05",
+    "type": "fill",
+    "prompt": "I don't ___ meat or fish.",
+    "answers": [
+     "eat"
+    ],
+    "tags": [
+     "function_ingredients"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-function_ingredients-06",
+    "type": "fill",
+    "prompt": "Could I have the dressing on the ___?",
+    "answers": [
+     "side"
+    ],
+    "tags": [
+     "function_ingredients"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-function_ingredients-07",
+    "type": "fill",
+    "prompt": "Could you check the ___, please? I want to see the ingredients.",
+    "answers": [
+     "label"
+    ],
+    "tags": [
+     "function_ingredients"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-function_ingredients-08",
+    "type": "fix",
+    "sentence": "Does the sauce contains mushrooms?",
+    "answers": [
+     "Does the sauce contain mushrooms?"
+    ],
+    "tags": [
+     "function_ingredients"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-function_ingredients-09",
+    "type": "fix",
+    "sentence": "I'd prefer it without of onion.",
+    "answers": [
+     "I'd prefer it without onion."
+    ],
+    "tags": [
+     "function_ingredients"
+    ]
+   }
+  }
+ ]
+}

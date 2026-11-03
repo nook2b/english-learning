@@ -183,5 +183,40 @@
   "kind": "topic",
   "ru": "Порядок прилагательных: a small old lamp",
   "cheatsheet": "cheatsheets/adjective_order.json"
+ },
+ "partitives": {
+  "kind": "topic",
+  "ru": "Порция, миска, ломтик: a portion of, a bowl of",
+  "cheatsheet": "cheatsheets/partitives.json"
+ },
+ "some_any": {
+  "kind": "topic",
+  "ru": "Some и any",
+  "cheatsheet": "cheatsheets/some_any.json"
+ },
+ "function_ordering": {
+  "kind": "topic",
+  "ru": "Как заказать: I'd like, Could I have",
+  "cheatsheet": "cheatsheets/function_ordering.json"
+ },
+ "function_ingredients": {
+  "kind": "topic",
+  "ru": "Состав и изменения: Does it contain, without",
+  "cheatsheet": "cheatsheets/function_ingredients.json"
+ },
+ "much_many": {
+  "kind": "topic",
+  "ru": "How much / how many, a lot of",
+  "cheatsheet": "cheatsheets/much_many.json"
+ },
+ "too_enough": {
+  "kind": "topic",
+  "ru": "Слишком и достаточно: too, enough",
+  "cheatsheet": "cheatsheets/too_enough.json"
+ },
+ "few_little": {
+  "kind": "topic",
+  "ru": "A few и a little",
+  "cheatsheet": "cheatsheets/few_little.json"
  }
 }

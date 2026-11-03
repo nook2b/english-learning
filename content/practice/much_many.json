@@ -1,0 +1,143 @@
+{
+ "tag": "much_many",
+ "items": [
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-much_many-01",
+    "type": "choice",
+    "prompt": "How ___ sugar do you want in your tea?",
+    "options": [
+     "much",
+     "many",
+     "lot"
+    ],
+    "answer": "much",
+    "tags": [
+     "much_many"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-much_many-02",
+    "type": "choice",
+    "prompt": "How ___ people are in the queue?",
+    "options": [
+     "many",
+     "much",
+     "lot"
+    ],
+    "answer": "many",
+    "tags": [
+     "much_many"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-much_many-03",
+    "type": "choice",
+    "prompt": "There isn't ___ time before the class.",
+    "options": [
+     "much",
+     "many",
+     "a lot"
+    ],
+    "answer": "much",
+    "tags": [
+     "much_many"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-much_many-04",
+    "type": "choice",
+    "prompt": "There are ___ students in the hall today.",
+    "options": [
+     "a lot of",
+     "much",
+     "a lot"
+    ],
+    "answer": "a lot of",
+    "tags": [
+     "much_many"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-much_many-05",
+    "type": "fill",
+    "prompt": "How ___ slices of pizza can I take?",
+    "answers": [
+     "many"
+    ],
+    "tags": [
+     "much_many"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-much_many-06",
+    "type": "fill",
+    "prompt": "We haven't got ___ bread left. Just one slice.",
+    "answers": [
+     "much"
+    ],
+    "tags": [
+     "much_many"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-much_many-07",
+    "type": "fill",
+    "prompt": "There aren't ___ chairs. Bring two more.",
+    "answers": [
+     "many"
+    ],
+    "tags": [
+     "much_many"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-much_many-08",
+    "type": "fix",
+    "sentence": "How many money do we have?",
+    "answers": [
+     "How much money do we have?"
+    ],
+    "tags": [
+     "much_many"
+    ]
+   }
+  },
+  {
+   "unit": "010",
+   "exercise": {
+    "id": "p-much_many-09",
+    "type": "fix",
+    "sentence": "There isn't many sauce on my pasta.",
+    "answers": [
+     "There isn't much sauce on my pasta."
+    ],
+    "tags": [
+     "much_many"
+    ]
+   }
+  }
+ ]
+}

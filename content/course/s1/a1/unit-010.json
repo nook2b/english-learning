@@ -1,0 +1,1203 @@
+{
+  "id": "010",
+  "title": "Уточнить состав",
+  "goal": "Спросить о составе и количестве, различить предпочтение и ограничение, подтвердить подходящий заказ.",
+  "focus": "Состав и изменения: Does it contain…?, What's in…?, without…, on the side; предпочтение или ограничение: I'd prefer it without…, I don't eat…, I'm allergic to…; сколько: How much / How many, not much, a lot of.",
+  "outcome": "Заказ проверен и приготовлен с согласованными изменениями. Обед состоялся. На пятницу согласован общий поход в магазин; это дополнительная встреча, не изменение расписания.",
+  "expressions": [
+    "Does it contain",
+    "What's in",
+    "without",
+    "on the side",
+    "I don't eat",
+    "I'd prefer it without",
+    "I'm allergic to",
+    "How much",
+    "How many",
+    "not much",
+    "a lot of",
+    "check the label"
+  ],
+  "glossary": [
+    "ingredients",
+    "meat stock",
+    "raw onion",
+    "topping",
+    "hot sauce",
+    "mushrooms",
+    "allergy"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Название — ещё не состав",
+      "intro": "Лист состава от кухни. Прочитай: название блюда — ещё не состав.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "13:15. Заказ всё ещё открыт. Нора даёт лист состава. Айрис читает его перед подтверждением.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "“Vegetable” describes the pasta. Let's check the sauce separately.",
+            "ru": "«Овощная» описывает пасту. Соус проверим отдельно.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u010-s1-e1",
+          "type": "reading",
+          "title": "Kitchen notes",
+          "text": "Vegetable pasta comes with tomato sauce and a cheese topping. The sauce contains tomatoes, cooked onions and mushrooms, but no meat or fish. We can leave out the cheese. We can also serve plain pasta with a separate portion of cooked vegetables, without mushrooms.\nTomato soup contains cooked onions. Raw onion is an optional topping, added after cooking. Please ask for no topping if you do not want it.\nChicken comes with rice. The hot sauce is served separately on request. For allergies, ask staff to check the full ingredient information.",
+          "ru": "Пасту с овощами подают с томатным соусом и сыром сверху. В соусе томаты, приготовленный лук и грибы, но нет мяса или рыбы. Сыр можно не добавлять. Также можно подать обычную пасту с отдельной порцией приготовленных овощей, без грибов. В томатном супе есть приготовленный лук. Сырой лук добавляют по желанию после приготовления. Если он не нужен, попросите без этой добавки. Курицу подают с рисом. Острый соус приносят отдельно по запросу. При аллергии попросите сотрудника проверить полную информацию о составе.",
+          "questions": [
+            {
+              "prompt": "Does the pasta sauce contain fish?",
+              "options": [
+                "Yes",
+                "No",
+                "Only on Fridays"
+              ],
+              "answer": "No"
+            },
+            {
+              "prompt": "Can mushrooms be removed from the ready sauce?",
+              "options": [
+                "Yes, by taking them out",
+                "The alternative is plain pasta with separate vegetables",
+                "The sheet says there are no mushrooms"
+              ],
+              "answer": "The alternative is plain pasta with separate vegetables"
+            },
+            {
+              "prompt": "Is all the onion in the soup raw?",
+              "options": [
+                "Yes",
+                "No, only the optional topping",
+                "There is no onion"
+              ],
+              "answer": "No, only the optional topping"
+            },
+            {
+              "prompt": "How is the hot sauce served?",
+              "options": [
+                "Mixed into every dish",
+                "Separately on request",
+                "Only with tea"
+              ],
+              "answer": "Separately on request"
+            }
+          ],
+          "tags": [
+            "reading",
+            "function_ingredients"
+          ],
+          "look": "notice"
+        },
+        {
+          "id": "u010-s1-e2",
+          "type": "choice",
+          "prompt": "The sauce ___ tomatoes, cooked onions and mushrooms.",
+          "options": [
+            "contains",
+            "contain",
+            "is contain"
+          ],
+          "answer": "contains",
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "The sauce contains… — в соусе есть…",
+          "context": "Лист состава"
+        },
+        {
+          "id": "u010-s1-e3",
+          "type": "choice",
+          "prompt": "We can leave ___ the cheese.",
+          "options": [
+            "out",
+            "off",
+            "away"
+          ],
+          "answer": "out",
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "Leave out — не добавлять, убрать.",
+          "context": "Лист состава"
+        },
+        {
+          "id": "u010-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "Does it contain…?",
+              "ru": "в этом есть…?"
+            },
+            {
+              "en": "without",
+              "ru": "без"
+            },
+            {
+              "en": "on the side",
+              "ru": "отдельно"
+            },
+            {
+              "en": "raw onion",
+              "ru": "сырой лук"
+            },
+            {
+              "en": "topping",
+              "ru": "добавка сверху"
+            },
+            {
+              "en": "ingredients",
+              "ru": "состав, ингредиенты"
+            }
+          ],
+          "tags": [
+            "function_ingredients"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Cooked onion is fine for me. I'd prefer no raw onion on top.",
+          "ru": "Приготовленный лук мне подходит. Сверху я бы предпочла без сырого лука.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Не одно и то же",
+      "intro": "Рэй и Мика говорят о своих пожеланиях. Слушай: «не ем», «предпочитаю» и «аллергия» — разные вещи.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Нора уточняет пожелания у стойки.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Let's say what we mean. “I don't like it” and “I'm allergic” aren't the same.",
+            "ru": "Скажем точно. «Я это не люблю» и «у меня аллергия» — не одно и то же.",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u010-s2-e1",
+          "type": "listening",
+          "speaker": "rei",
+          "audio": "I don't eat meat or fish. Cheese is fine. Could you check that there is no meat stock in the sauce? I want to be sure before ordering.",
+          "ru": "Я не ем мясо и рыбу. Сыр мне подходит. Проверите, нет ли в соусе мясного бульона? Хочу убедиться до заказа.",
+          "questions": [
+            {
+              "prompt": "What can Rei eat?",
+              "options": [
+                "Fish",
+                "Cheese",
+                "Chicken"
+              ],
+              "answer": "Cheese"
+            },
+            {
+              "prompt": "What does she ask staff to check?",
+              "options": [
+                "The meat stock",
+                "The bread price",
+                "The amount of rice"
+              ],
+              "answer": "The meat stock"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_ingredients"
+          ],
+          "context": "Рэй у стойки"
+        },
+        {
+          "id": "u010-s2-e2",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "I'd prefer my chicken without hot sauce. It's a preference, not an allergy. A little pepper is fine. Please don't order the same changes for everyone without asking them.",
+          "ru": "Я бы предпочла курицу без острого соуса. Это предпочтение, не аллергия. Немного перца нормально. Пожалуйста, не заказывайте такие же изменения всем, не спросив.",
+          "questions": [
+            {
+              "prompt": "Is Mika describing an allergy?",
+              "options": [
+                "Yes",
+                "No",
+                "She doesn't know"
+              ],
+              "answer": "No"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_ingredients"
+          ],
+          "delivery": "[thoughtfully]",
+          "context": "Мика у стойки"
+        },
+        {
+          "id": "u010-s2-e3",
+          "type": "dictation",
+          "speaker": "rei",
+          "audio": "Does the sauce contain any meat?",
+          "answers": [
+            "Does the sauce contain any meat?"
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "function_ingredients"
+          ]
+        },
+        {
+          "id": "u010-s2-e4",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "I'd prefer my chicken without hot sauce.",
+          "answers": [
+            "I'd prefer my chicken without hot sauce."
+          ],
+          "tags": [
+            "dictation",
+            "function_ingredients"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "nora",
+          "text": "I've checked: no meat stock in this sauce.",
+          "ru": "Проверила: в этом соусе нет мясного бульона."
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Состав и изменения",
+      "intro": "Узнать состав: Does it contain…? What's in…? Попросить изменение: without…, on the side. Сказать о себе: I don't eat… (не ем), I'd prefer it without… (предпочитаю), I'm allergic to… (аллергия).",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Айрис отделяет вопросы от просьб, чтобы в заказе было понятно и то и другое.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "First find out what is in it. Then ask for the change.",
+            "ru": "Сначала узнай состав. Затем попроси изменение.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u010-s3-e1",
+          "type": "choice",
+          "prompt": "___ the soup contain cooked onions?",
+          "options": [
+            "Does",
+            "Is",
+            "Do"
+          ],
+          "answer": "Does",
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "Does it contain…? — с does, глагол без -s.",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s3-e2",
+          "type": "fill",
+          "prompt": "What's ___ the pasta sauce?",
+          "answers": [
+            "in"
+          ],
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "What's in…? — что входит в…?",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s3-e3",
+          "type": "choice",
+          "prompt": "I'd prefer it ___ raw onion.",
+          "options": [
+            "without",
+            "with no",
+            "not"
+          ],
+          "answer": "without",
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "I'd prefer it without… — я бы предпочёл без…",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s3-e4",
+          "type": "fill",
+          "prompt": "Could I have the sauce on the ___?",
+          "answers": [
+            "side"
+          ],
+          "hint": "отдельно",
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "On the side — отдельно.",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s3-e5",
+          "type": "choice",
+          "prompt": "Rei: «I don't ___ fish.»",
+          "options": [
+            "eat",
+            "eats",
+            "eating"
+          ],
+          "answer": "eat",
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "I don't eat… — я не ем (так говорят о своём выборе).",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s3-e6",
+          "type": "choice",
+          "prompt": "«I'm ___ to nuts» — это об аллергии.",
+          "options": [
+            "allergic",
+            "allergy",
+            "allergies"
+          ],
+          "answer": "allergic",
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "I'm allergic to… — у меня аллергия на…",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s3-e7",
+          "type": "transform",
+          "instruction": "Сделай вежливую просьбу: начни с Could you",
+          "sentence": "Check the full ingredient list.",
+          "answers": [
+            "Could you check the full ingredient list?",
+            "Could you check the full ingredient list, please?"
+          ],
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "Could you + глагол?",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s3-e8",
+          "type": "sort",
+          "instruction": "Что это?",
+          "categories": [
+            {
+              "id": "pref",
+              "label": "Предпочтение"
+            },
+            {
+              "id": "diet",
+              "label": "Не ест по своему выбору"
+            },
+            {
+              "id": "allergy",
+              "label": "Аллергия"
+            }
+          ],
+          "items": [
+            {
+              "text": "I'd prefer it without raw onion.",
+              "category": "pref"
+            },
+            {
+              "text": "I'd rather not have hot sauce.",
+              "category": "pref"
+            },
+            {
+              "text": "I don't eat meat or fish.",
+              "category": "diet"
+            },
+            {
+              "text": "I don't eat meat.",
+              "category": "diet"
+            },
+            {
+              "text": "I'm allergic to nuts.",
+              "category": "allergy"
+            },
+            {
+              "text": "I'm allergic to milk.",
+              "category": "allergy"
+            }
+          ],
+          "tags": [
+            "function_ingredients"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Specific words prevent very different orders from sounding the same.",
+          "ru": "Точные слова помогают не спутать совсем разные заказы.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Сколько именно",
+      "intro": "How many — для того, что считают (bottles, slices, people). How much — для того, что не считают (rice, sauce, salt). Not much / not many — немного; a lot of — много, для обоих.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "На подносе у Норы стоят бутылки воды; еду начнут готовить после подтверждения заказа.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Drinks are easy to count. Sauce needs a different question.",
+            "ru": "Напитки легко посчитать. Для соуса нужен другой вопрос.",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u010-s4-e1",
+          "type": "choice",
+          "prompt": "How ___ bottles of water do we need?",
+          "options": [
+            "many",
+            "much",
+            "lot"
+          ],
+          "answer": "many",
+          "tags": [
+            "much_many"
+          ],
+          "explain": "Бутылки считают: how many.",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s4-e2",
+          "type": "choice",
+          "prompt": "How ___ rice comes with the chicken?",
+          "options": [
+            "much",
+            "many",
+            "lot"
+          ],
+          "answer": "much",
+          "tags": [
+            "much_many"
+          ],
+          "explain": "Rice не считают: how much.",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s4-e3",
+          "type": "fill",
+          "prompt": "There isn't ___ hot sauce in this sample.",
+          "answers": [
+            "much"
+          ],
+          "tags": [
+            "much_many"
+          ],
+          "explain": "Соус не считают: not much.",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s4-e4",
+          "type": "fill",
+          "prompt": "There aren't ___ people in the queue now.",
+          "answers": [
+            "many"
+          ],
+          "tags": [
+            "much_many"
+          ],
+          "explain": "Людей считают: not many.",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s4-e5",
+          "type": "choice",
+          "prompt": "There are a ___ of tables in the hall.",
+          "options": [
+            "lot",
+            "many",
+            "much"
+          ],
+          "answer": "lot",
+          "tags": [
+            "much_many"
+          ],
+          "explain": "A lot of — много, для любых слов.",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s4-e6",
+          "type": "choice",
+          "prompt": "Is there ___ salt in the soup?",
+          "options": [
+            "a lot of",
+            "many",
+            "a lot"
+          ],
+          "answer": "a lot of",
+          "tags": [
+            "much_many"
+          ],
+          "explain": "A lot of + существительное.",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s4-e7",
+          "type": "fix",
+          "sentence": "How much portions of pasta are on our list?",
+          "answers": [
+            "How many portions of pasta are on our list?"
+          ],
+          "tags": [
+            "much_many"
+          ],
+          "explain": "Порции считают: how many.",
+          "context": "Заказ у стойки"
+        },
+        {
+          "id": "u010-s4-e8",
+          "type": "sort",
+          "instruction": "How much или how many?",
+          "categories": [
+            {
+              "id": "much",
+              "label": "How much…?"
+            },
+            {
+              "id": "many",
+              "label": "How many…?"
+            }
+          ],
+          "items": [
+            {
+              "text": "rice",
+              "category": "much"
+            },
+            {
+              "text": "sauce",
+              "category": "much"
+            },
+            {
+              "text": "salt",
+              "category": "much"
+            },
+            {
+              "text": "bottles",
+              "category": "many"
+            },
+            {
+              "text": "slices",
+              "category": "many"
+            },
+            {
+              "text": "people",
+              "category": "many"
+            }
+          ],
+          "tags": [
+            "much_many"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Count bottles. Ask about sauce.",
+          "ru": "Бутылки считаем. Про соус спрашиваем.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Полезная подробность",
+      "intro": "Рэй заметила, что ты не выбирал за неё. Ответь — как хочешь.",
+      "place": "dining_hall",
+      "exercises": [
+        {
+          "id": "u010-s5-e1",
+          "type": "scene",
+          "setting": "Айрис передаёт Норе список, где отдельно отмечены состав соуса и сыр. Рэй замечает, что ты не стал выбирать за неё.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "You actually listened. Careful. I might choose your table again.",
+              "ru": "Ты правда слушал. Осторожнее. Я ведь могу снова сесть с тобой.",
+              "expr": "smirk"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "I'll make sure there's a seat for you.",
+                "Then I'll keep listening."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Good. No speech required.",
+                "ru": "Хорошо. Без торжественной речи.",
+                "expr": "smirk"
+              },
+              "flag": "flirt_rei_010"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "My ears finally have a job.",
+                "The menu was a good teacher."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Better hours than our club.",
+                "ru": "Расписание лучше, чем у нашего клуба.",
+                "expr": "happy"
+              }
+            },
+            {
+              "label": "Вернуться к составу",
+              "answers": [
+                "So the cheese is fine for you?",
+                "Shall we confirm your pasta now?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Yes. Cheese stays. Meat doesn't.",
+                "ru": "Да. Сыр остаётся. Мясо — нет.",
+                "expr": "neutral"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Say that again?",
+            "ru": "Повторишь?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_ingredients"
+          ],
+          "context": "Комплимент с оговоркой"
+        },
+        {
+          "id": "u010-s5-e2",
+          "type": "translate",
+          "ru": "В соусе есть грибы?",
+          "answers": [
+            "Does the sauce contain mushrooms?",
+            "Does the sauce contain any mushrooms?",
+            "Are there any mushrooms in the sauce?",
+            "Are there mushrooms in the sauce?"
+          ],
+          "tags": [
+            "function_ingredients"
+          ]
+        },
+        {
+          "id": "u010-s5-e3",
+          "type": "translate",
+          "ru": "Я не ем рыбу.",
+          "answers": [
+            "I don't eat fish.",
+            "I do not eat fish."
+          ],
+          "tags": [
+            "function_ingredients"
+          ]
+        },
+        {
+          "id": "u010-s5-e4",
+          "type": "translate",
+          "ru": "Можно мне острый соус отдельно?",
+          "answers": [
+            "Could I have the hot sauce on the side?",
+            "Can I have the hot sauce on the side?",
+            "Could I have hot sauce on the side?",
+            "Could I have the hot sauce on the side, please?"
+          ],
+          "tags": [
+            "function_ingredients"
+          ]
+        },
+        {
+          "id": "u010-s5-e5",
+          "type": "translate",
+          "ru": "Сколько ломтиков хлеба нам нужно?",
+          "answers": [
+            "How many slices of bread do we need?"
+          ],
+          "tags": [
+            "much_many"
+          ]
+        },
+        {
+          "id": "u010-s5-e6",
+          "type": "write",
+          "situation": "Скажи, без чего ты предпочёл бы своё блюдо, и спроси о составе соуса.",
+          "answers": [
+            "I'd prefer it without onion. What's in the sauce?",
+            "I'd prefer my pasta without cheese. Does the sauce contain mushrooms?",
+            "I'd prefer it without mushrooms. What's in the sauce?",
+            "I'd prefer it without hot sauce. Does the sauce contain meat?",
+            "I'd prefer my soup without the topping. What's in the soup?"
+          ],
+          "tags": [
+            "function_ingredients"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "My order is clear now.",
+          "ru": "Теперь мой заказ понятен.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: спросить, не угадать",
+      "intro": "Прочитай вслух вопросы, которые лучше задать, чем угадывать.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Репетиция вопросов до окончательного подтверждения заказа.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "A question is safer than an assumption. Try these aloud.",
+            "ru": "Вопрос надёжнее предположения. Произнеси эти фразы.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u010-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Does the sauce contain mushrooms?",
+          "answers": [
+            "Does the sauce contain mushrooms?"
+          ],
+          "tags": [
+            "speaking",
+            "function_ingredients"
+          ]
+        },
+        {
+          "id": "u010-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Could I have it without the topping?",
+          "answers": [
+            "Could I have it without the topping?"
+          ],
+          "tags": [
+            "speaking",
+            "function_ingredients"
+          ]
+        },
+        {
+          "id": "u010-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "How much rice is in one portion?",
+          "answers": [
+            "How much rice is in one portion?"
+          ],
+          "tags": [
+            "speaking",
+            "much_many"
+          ]
+        },
+        {
+          "id": "u010-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Could you check the label, please?",
+          "answers": [
+            "Could you check the label, please?"
+          ],
+          "tags": [
+            "speaking",
+            "function_ingredients"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Now we can ask without guessing the answer first.",
+          "ru": "Теперь можно спросить, не угадывая ответ заранее.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: уточнения",
+      "intro": "Быстрый круг: три коротких уточнения у стойки.",
+      "place": "dining_hall",
+      "frame": {
+        "setting": "Пока Нора сверяет заказ с кухней, Мика предлагает короткую тренировку по памятке.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Three quick questions. No bonus for speaking fastest.",
+            "ru": "Три коротких вопроса. За самую быструю речь бонуса нет.",
+            "expr": "phone/happy"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u010-s7-e1",
+          "type": "write",
+          "situation": "Спроси, есть ли в соусе рыба.",
+          "answers": [
+            "Does it contain fish?",
+            "Does the sauce contain fish?",
+            "Does the sauce contain any fish?",
+            "Is there any fish in the sauce?",
+            "Is there fish in the sauce?"
+          ],
+          "tags": [
+            "function_ingredients"
+          ]
+        },
+        {
+          "id": "u010-s7-e2",
+          "type": "write",
+          "situation": "Спроси, сколько ломтиков хлеба в заказе.",
+          "answers": [
+            "How many slices of bread are in the order?",
+            "How many slices?",
+            "How many slices of bread are there?",
+            "How many slices of bread do we have?"
+          ],
+          "tags": [
+            "much_many"
+          ]
+        },
+        {
+          "id": "u010-s7-e3",
+          "type": "write",
+          "situation": "Попроси острый соус отдельно.",
+          "answers": [
+            "Sauce on the side, please.",
+            "Hot sauce on the side, please.",
+            "Could I have the hot sauce on the side?",
+            "Could I have the sauce on the side, please?"
+          ],
+          "tags": [
+            "function_ingredients"
+          ]
+        },
+        {
+          "id": "u010-s7-e4",
+          "type": "choice",
+          "prompt": "— Is it an allergy? — No, ___",
+          "options": [
+            "it's a preference.",
+            "I'm allergic.",
+            "I don't eat it never."
+          ],
+          "answer": "it's a preference.",
+          "tags": [
+            "function_ingredients"
+          ],
+          "explain": "Предпочтение — не аллергия: It's a preference."
+        },
+        {
+          "id": "u010-s7-e5",
+          "type": "choice",
+          "prompt": "___ soup do you want? Just a small bowl?",
+          "options": [
+            "How much",
+            "How many",
+            "How lot"
+          ],
+          "answer": "How much",
+          "tags": [
+            "much_many"
+          ],
+          "explain": "Суп не считают: how much."
+        },
+        {
+          "id": "u010-s7-e6",
+          "type": "fill",
+          "prompt": "There isn't ___ cheese on it. Just a little.",
+          "answers": [
+            "much"
+          ],
+          "tags": [
+            "much_many"
+          ]
+        },
+        {
+          "id": "u010-s7-e7",
+          "type": "dictation",
+          "speaker": "nora",
+          "audio": "I've checked: no meat stock in this sauce.",
+          "answers": [
+            "I've checked: no meat stock in this sauce."
+          ],
+          "tags": [
+            "dictation",
+            "function_ingredients"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Questions ready. Let's finish the real order.",
+          "ru": "Вопросы готовы. Закончим настоящий заказ.",
+          "expr": "phone/focused"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Миссия: обед, который подходит",
+      "role": "mission",
+      "intro": "Миссия: подтвердить заказ, который подходит каждому, и пообедать вместе.",
+      "place": "dining_hall",
+      "exercises": [
+        {
+          "id": "u010-s8-e1",
+          "type": "scene",
+          "setting": "Нора возвращается к стойке. Скажи, нужно ли что-то изменить в твоём блюде.",
+          "lines": [
+            {
+              "speaker": "nora",
+              "text": "Any changes for your meal?",
+              "ru": "Для вашего блюда нужны изменения?"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Попросить вариант без грибов; это предпочтение",
+              "answers": [
+                "I'd prefer my meal without mushrooms.",
+                "Could I have a mushroom-free option, please?"
+              ],
+              "reaction": {
+                "speaker": "nora",
+                "text": "For pasta, we'll use plain pasta and separate vegetables. The soup already has no mushrooms.",
+                "ru": "Для пасты возьмём обычную пасту и отдельные овощи. В супе грибов и так нет."
+              },
+              "flag": "u010_player_no_mushrooms"
+            },
+            {
+              "label": "Оставить выбранное блюдо без изменений",
+              "answers": [
+                "No changes for me, thank you.",
+                "My meal is fine as it is."
+              ],
+              "reaction": {
+                "speaker": "nora",
+                "text": "All right. Your original choice stays on the order.",
+                "ru": "Хорошо. В заказе остаётся ваш исходный вариант."
+              },
+              "flag": "u010_player_standard"
+            }
+          ],
+          "clarify": {
+            "speaker": "nora",
+            "text": "Is there an ingredient you would like to leave out?",
+            "ru": "Есть ингредиент, который вы хотите исключить?"
+          },
+          "tags": [
+            "function_ingredients"
+          ],
+          "after": [
+            {
+              "speaker": "iris",
+              "text": "No raw onion on mine, please. Cooked onion is fine.",
+              "ru": "Мне без сырого лука, пожалуйста. Приготовленный подходит.",
+              "expr": "neutral"
+            },
+            {
+              "speaker": "mika",
+              "text": "No hot sauce on my chicken, please.",
+              "ru": "Мне курицу без острого соуса, пожалуйста.",
+              "expr": "happy"
+            },
+            {
+              "speaker": "nora",
+              "text": "Confirmed. I'll send it to the kitchen now.",
+              "ru": "Подтверждено. Теперь отправляю на кухню."
+            }
+          ],
+          "context": "Пожелание игрока"
+        },
+        {
+          "id": "u010-s8-e2",
+          "type": "scene",
+          "setting": "Обед на столе. С разрешения всех Мика фотографирует только меню. Айрис предлагает добавить в черновик гида короткую подсказку для новичка.",
+          "lines": [
+            {
+              "speaker": "narrator",
+              "text": "Nora brings the food. Your pasta is plain, with the vegetables on the side and no mushrooms.",
+              "ru": "Нора приносит еду. Твоя паста — обычная, овощи отдельно, без грибов.",
+              "if": "u010_player_no_mushrooms",
+              "ifNot": "u009_meal_soup"
+            },
+            {
+              "speaker": "narrator",
+              "text": "Nora brings the food. Your vegetable pasta, just as you ordered it.",
+              "ru": "Нора приносит еду. Твоя паста с овощами — как ты и заказал.",
+              "if": "u010_player_standard",
+              "ifNot": "u009_meal_soup"
+            },
+            {
+              "speaker": "narrator",
+              "text": "Nora brings the food. Your tomato soup and a slice of bread.",
+              "ru": "Нора приносит еду. Твой томатный суп и ломтик хлеба.",
+              "if": "u009_meal_soup"
+            },
+            {
+              "speaker": "narrator",
+              "text": "Rei has pasta with cheese, Iris has soup with no raw onion, and Mika has chicken without hot sauce.",
+              "ru": "У Рэй паста с сыром, у Айрис суп без сырого лука, у Мики курица без острого соуса."
+            },
+            {
+              "speaker": "iris",
+              "text": "One useful reminder for the guide. What should come first?",
+              "ru": "Одна полезная памятка для гида. Что поставить первым?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Начать с вопроса о составе",
+              "answers": [
+                "Ask what's in the dish before ordering.",
+                "Check the ingredients before you confirm."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Ingredients first. I'll keep the example short.",
+                "ru": "Сначала состав. Пример будет коротким.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u010_guide_ingredients"
+            },
+            {
+              "label": "Начать с просьбы об изменении",
+              "answers": [
+                "Say clearly what you need without.",
+                "Ask for any changes before they prepare it."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Changes before cooking. I'll put the ingredient question underneath.",
+                "ru": "Изменения до приготовления. Вопрос о составе поставлю ниже.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u010_guide_changes"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Which reminder should lead: ingredients or changes?",
+            "ru": "Что поставить первым: состав или изменения?",
+            "expr": "thinking"
+          },
+          "tags": [
+            "function_ingredients",
+            "much_many"
+          ],
+          "after": [
+            {
+              "speaker": "narrator",
+              "text": "Lunch: Ask what's in the dish. Request any changes before cooking.",
+              "ru": "Обед: спросите состав блюда. Попросите изменения до приготовления.",
+              "if": "u010_guide_ingredients"
+            },
+            {
+              "speaker": "narrator",
+              "text": "Lunch: Request any changes before cooking. Ask what's in the dish if you are unsure.",
+              "ru": "Обед: попросите изменения до приготовления. Если сомневаетесь, спросите состав блюда.",
+              "if": "u010_guide_changes"
+            },
+            {
+              "speaker": "narrator",
+              "text": "Tell staff about allergies and ask them to check the full ingredient information.",
+              "ru": "Сообщите сотрудникам об аллергии и попросите проверить полную информацию о составе."
+            }
+          ],
+          "context": "Полезная строка для гида"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Actual lunch! No planning while we eat for the next five minutes.",
+          "ru": "Настоящий обед! Следующие пять минут едим без планирования.",
+          "expr": "happy"
+        },
+        {
+          "speaker": "rei",
+          "text": "Starting now.",
+          "ru": "Начиная сейчас.",
+          "expr": "deadpan"
+        },
+        {
+          "speaker": "mika",
+          "text": "Shop on Friday at four? Extra meeting, after classes.",
+          "ru": "В магазин в пятницу в четыре? Дополнительная встреча, после занятий.",
+          "expr": "phone/thinking"
+        },
+        {
+          "speaker": "rei",
+          "text": "Free. We need a stand.",
+          "ru": "Свободна. Нужна подставка.",
+          "expr": "neutral"
+        },
+        {
+          "speaker": "iris",
+          "text": "Free too. I can bring the budget sheet.",
+          "ru": "Тоже свободна. Принесу лист бюджета.",
+          "expr": "notebook/focused"
+        }
+      ]
+    }
+  ]
+}

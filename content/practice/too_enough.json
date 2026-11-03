@@ -1,0 +1,143 @@
+{
+ "tag": "too_enough",
+ "items": [
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-too_enough-01",
+    "type": "choice",
+    "prompt": "This coat is ___ expensive. I can't buy it.",
+    "options": [
+     "too",
+     "enough",
+     "very enough"
+    ],
+    "answer": "too",
+    "tags": [
+     "too_enough"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-too_enough-02",
+    "type": "choice",
+    "prompt": "The table isn't ___ for four people.",
+    "options": [
+     "big enough",
+     "enough big",
+     "too enough"
+    ],
+    "answer": "big enough",
+    "tags": [
+     "too_enough"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-too_enough-03",
+    "type": "choice",
+    "prompt": "Do we have ___ for the tickets?",
+    "options": [
+     "enough money",
+     "money enough",
+     "too money"
+    ],
+    "answer": "enough money",
+    "tags": [
+     "too_enough"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-too_enough-04",
+    "type": "choice",
+    "prompt": "There are too ___ chairs in this small room.",
+    "options": [
+     "many",
+     "much",
+     "enough"
+    ],
+    "answer": "many",
+    "tags": [
+     "too_enough"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-too_enough-05",
+    "type": "fill",
+    "prompt": "The shelf is ___ high. I can't reach it.",
+    "answers": [
+     "too"
+    ],
+    "tags": [
+     "too_enough"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-too_enough-06",
+    "type": "fill",
+    "prompt": "Is the box strong ___ for the books?",
+    "answers": [
+     "enough"
+    ],
+    "tags": [
+     "too_enough"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-too_enough-07",
+    "type": "fill",
+    "prompt": "There is too ___ noise in the corridor.",
+    "answers": [
+     "much"
+    ],
+    "tags": [
+     "too_enough"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-too_enough-08",
+    "type": "fix",
+    "sentence": "The stand isn't enough tall.",
+    "answers": [
+     "The stand isn't tall enough."
+    ],
+    "tags": [
+     "too_enough"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-too_enough-09",
+    "type": "fix",
+    "sentence": "We have too much bags.",
+    "answers": [
+     "We have too many bags."
+    ],
+    "tags": [
+     "too_enough"
+    ]
+   }
+  }
+ ]
+}

@@ -15,6 +15,10 @@
 - [Юнит 006. Описать проблему](#юнит-006-описать-проблему)
 - [Юнит 007. Договориться о помощи](#юнит-007-договориться-о-помощи)
 - [Юнит 008. Рассказать о предпочтениях](#юнит-008-рассказать-о-предпочтениях)
+- [Юнит 009. Заказать обед](#юнит-009-заказать-обед)
+- [Юнит 010. Уточнить состав](#юнит-010-уточнить-состав)
+- [Юнит 011. Сравнить цены](#юнит-011-сравнить-цены)
+- [Юнит 012. Составить общий список](#юнит-012-составить-общий-список)
 - [Страницы героинь](#страницы-героинь)
 - [После уроков](#после-уроков)
 
@@ -1345,6 +1349,690 @@ _Итог занятия:_
 
 ---
 
+## Юнит 009. Заказать обед
+
+**Цель:** Узнать, что есть, назвать своё пожелание и собрать предварительный заказ без предположений за других.
+
+**Итог юнита:** У каждого есть выбранное блюдо и напиток; предварительный заказ записан. До окончательного подтверждения команда проверит состав в 010. Еда пока не оплачена и не подана.
+
+### Занятие 1. Четыре ответа (понимание)
+
+_Среда, 13:00. Столовая ещё не переполнена. Мика открывает меню на телефоне, начинает показывать четыре одинаковых набора и убирает палец с кнопки количества._
+
+- **Мика:** Four lunch sets—wait. Four people, four answers. What would everyone like? — Четыре набора… стоп. Четыре человека, четыре ответа. Кто что хочет? _(phone/thinking)_
+- **Рэй:** Something without meat. — Что-нибудь без мяса. _(neutral)_
+- **Айрис:** Let's read before we agree. — Прочитаем, прежде чем соглашаться. _(notebook/focused)_
+
+**Чтение [u009-s1-e1]: «Lunch today»** (объявление)
+
+> Lunch is served from twelve until two. Today we have chicken with rice for £6, vegetable pasta for £5, and tomato soup for £3. A slice of bread costs £1. You can have a bottle of water or a cup of tea for £1 each.
+>
+> Please order at the counter. Tell us about any food allergies before we prepare your meal. Some dishes can be changed. Ask a member of staff about ingredients. Take a table number after you pay.
+
+_Перевод:_ Обед подают с двенадцати до двух. Сегодня есть курица с рисом за £6, паста с овощами за £5 и томатный суп за £3. Ломтик хлеба стоит £1. Бутылка воды или чашка чая — по £1. Заказывайте у стойки. Сообщите о пищевой аллергии до приготовления еды. Некоторые блюда можно изменить. О составе спросите сотрудника. После оплаты возьмите номер для стола.
+
+_Итог занятия:_
+
+- **Мика:** Nobody has ordered four surprise lunches. Progress! — Никто не заказал четыре обеда-сюрприза. Уже прогресс! _(happy)_
+
+### Занятие 2. Сначала послушать (понимание)
+
+_Пока ты смотришь меню, героини вслух сверяют, кто что хочет._
+
+- **Айрис:** Listen for the food and the amount. They are separate pieces of information. — Слушай, что за еда и сколько её нужно. Это разные сведения. _(notebook/focused)_
+
+**Аудирование [u009-s2-e1]** · Мика за столом
+
+- **Мика:** I'd like a portion of chicken with rice and a bottle of water. I don't need any bread. The rice is enough. Let's ask about the sauce before we send the order to the kitchen. — Я бы хотела порцию курицы с рисом и бутылку воды. Хлеб мне не нужен. Риса достаточно. Спросим о соусе, прежде чем отправлять заказ на кухню.
+
+**Аудирование [u009-s2-e2]** · Айрис за столом
+
+- **Айрис:** I'd like a bowl of tomato soup, a slice of bread and a cup of tea. I want to check the soup ingredients first. A dish name doesn't tell us everything inside. — Я бы хотела миску томатного супа, ломтик хлеба и чашку чая. Сначала хочу проверить состав супа. Название блюда не сообщает обо всём, что в нём есть. _([thoughtfully])_
+
+**Диктант [u009-s2-e3]**
+
+- **Мика:** Could I have a bottle of water? _([clearly, at a moderate pace])_
+
+**Диктант [u009-s2-e4]**
+
+- **Айрис:** I'd like a bowl of tomato soup.
+
+_Итог занятия:_
+
+- **Рэй:** Pasta and water for me. — Мне пасту и воду. _(neutral)_
+
+### Занятие 3. Порция, миска, ломтик (форма)
+
+_Айрис записывает количества в черновик заказа. Это подготовка к разговору у стойки._
+
+- **Айрис:** A portion tells us how much. Four portions still need four choices. — Порция указывает количество. Для четырёх порций всё равно нужны четыре выбора. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Now “some” has a size when it needs one. — Теперь у «немного» есть мера там, где она нужна. _(notebook/dry_smile)_
+
+### Занятие 4. Есть ли ещё суп? (форма)
+
+_Мика замечает, что у соседнего посетителя закончилось место на подносе. Команда пока ничего не добавляет к своему заказу._
+
+- **Мика:** Let's ask what's available before we add anything else. — Спросим, что есть, прежде чем добавлять что-то ещё. _(phone/focused)_
+
+_Итог занятия:_
+
+- **Рэй:** Questions before extra trays. — Сначала вопросы. Потом лишние подносы. _(deadpan)_
+
+### Занятие 5. Свободное место (продукция)
+
+**Сцена [u009-s5-e1]** · Место с преимуществом
+
+_Мика оставляет за столом папку и показывает свободный стул рядом. Остальные выбирают напитки у меню в двух шагах; это не встреча вдвоём._
+
+- **Мика:** I saved you a seat. Best view of the menu. And fairly good company. — Я заняла тебе место. Отсюда лучше всего видно меню. И компания вполне ничего. _(happy)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «The company is better than the menu.» · флаг `flirt_mika_009`
+  - **Мика:** Good answer. The menu can't take a compliment anyway. — Хороший ответ. Меню всё равно не умеет принимать комплименты. _(laugh)_
+- _Отшутиться по-дружески_ → «Does the seat come with extra rice?»
+  - **Мика:** Five stars. Never talks during lunch. — Пять звёзд. За обедом никогда не разговаривает. _(laugh)_
+- _Вернуться к заказу_ → «Thanks. What would you like to drink?»
+  - **Мика:** Water for me. Let's check everyone else's choice too. — Мне воду. Проверим и выбор остальных. _(phone/happy)_
+
+Если ответ непонятен:
+- **Мика:** Sorry, could you say that another way? — Прости, можешь сказать иначе? _(listening)_
+
+Общее продолжение:
+- **Мика:** Right. Four meals, not four copies of mine. — Так. Четыре обеда, а не четыре копии моего. _(phone/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Your seat can wait. Your order still needs a line. — Место тебя подождёт. Для заказа пока нужна строчка. _(notebook/focused)_
+
+### Занятие 6. Голосом: свой заказ (продукция)
+
+_Ты репетируешь вежливый заказ, прежде чем идти к стойке._
+
+- **Айрис:** Try a complete order, with an amount and a polite request. — Попробуй полный заказ: количество и вежливая просьба. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Рэй:** Clear. Ready for the counter. — Понятно. Можно к стойке. _(happy)_
+
+### Занятие 7. Быстрый круг: без лишнего (беглость)
+
+_Короткие устные ответы по меню — тренировка перед стойкой._
+
+- **Мика:** Quick round! Food, amount, drink. Nobody has to guess. — Быстрый круг! Блюдо, количество, напиток. Никому не придётся угадывать. _(phone/happy)_
+
+_Итог занятия:_
+
+- **Мика:** Short enough for a queue. Clear enough for a real order. — Достаточно коротко для очереди. Достаточно понятно для настоящего заказа. _(phone/happy)_
+
+### Занятие 8. Миссия: заказать для себя, услышать других (беглость · миссия)
+
+**Сцена [u009-s8-e1]** · Последняя пустая строка
+
+_Все у стойки. Нора принимает предварительный заказ: прежде чем готовить, она отдельно уточнит состав и пожелания. Выбери себе блюдо._
+
+- **Нора:** What would you like? We can check ingredients before I send the order through. — Что будете? Мы можем проверить состав, прежде чем я отправлю заказ.
+
+Выбор намерения:
+- _Выбрать пасту_ → «I'd like a portion of vegetable pasta, please.» · флаг `u009_meal_pasta`
+  - **Нора:** Vegetable pasta. I'll keep the order open while we check. — Паста с овощами. Оставлю заказ открытым до проверки.
+- _Выбрать суп с хлебом_ → «I'd like tomato soup and a slice of bread.» · флаг `u009_meal_soup`
+  - **Нора:** Soup and bread. We'll check those ingredients too. — Суп с хлебом. Их состав тоже проверим.
+
+Если ответ непонятен:
+- **Нора:** Which dish would you like? — Какое блюдо вы хотите?
+
+Общее продолжение:
+- **Мика:** Water for me and Rei. Tea for Iris. What about you? — Воду мне и Рэй. Чай Айрис. А тебе? _(phone/thinking)_
+- **Нора:** Anything else? And is it for here? — Что-нибудь ещё? И вы будете есть здесь?
+
+**Сцена [u009-s8-e3]** · Точный наблюдатель
+
+_Нора отходит за папкой состава. Айрис сверяет записанные пожелания, потом поворачивается к игроку. Остальные обсуждают подносы, не комментируя разговор._
+
+- **Айрис:** You waited for my answer before writing. I could get used to that. — Ты дождался моего ответа, прежде чем записать. К такому можно привыкнуть. _(turn/dry_smile)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «Your answers are worth waiting for.» · флаг `flirt_iris_009`
+  - **Айрис:** Then I'll try to keep them interesting. — Тогда постараюсь, чтобы они были интересными. _(turn/happy)_
+- _Отшутиться_ → «My pen needed a break.»
+  - **Айрис:** A rare quality in stationery. — Редкое качество для канцелярии. _(dry_smile)_
+- _Уточнить заказ_ → «Is your tea on the list?»
+  - **Айрис:** It is. And yes, ingredients next. — В списке. И да, дальше состав. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** Could you put that another way? — Можешь сказать иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Нора:** Before we confirm: does anyone have an allergy or need a change? — Перед подтверждением: у кого-нибудь есть аллергия или нужно что-то изменить?
+- **Рэй:** Let's check the sauce. — Проверим соус. _(neutral)_
+
+---
+
+## Юнит 010. Уточнить состав
+
+**Цель:** Спросить о составе и количестве, различить предпочтение и ограничение, подтвердить подходящий заказ.
+
+**Итог юнита:** Заказ проверен и приготовлен с согласованными изменениями. Обед состоялся. На пятницу согласован общий поход в магазин; это дополнительная встреча, не изменение расписания.
+
+### Занятие 1. Название — ещё не состав (понимание)
+
+_13:15. Заказ всё ещё открыт. Нора даёт лист состава. Айрис читает его перед подтверждением._
+
+- **Айрис:** “Vegetable” describes the pasta. Let's check the sauce separately. — «Овощная» описывает пасту. Соус проверим отдельно. _(notebook/focused)_
+
+**Чтение [u010-s1-e1]: «Kitchen notes»** (объявление)
+
+> Vegetable pasta comes with tomato sauce and a cheese topping. The sauce contains tomatoes, cooked onions and mushrooms, but no meat or fish. We can leave out the cheese. We can also serve plain pasta with a separate portion of cooked vegetables, without mushrooms.
+>
+> Tomato soup contains cooked onions. Raw onion is an optional topping, added after cooking. Please ask for no topping if you do not want it.
+>
+> Chicken comes with rice. The hot sauce is served separately on request. For allergies, ask staff to check the full ingredient information.
+
+_Перевод:_ Пасту с овощами подают с томатным соусом и сыром сверху. В соусе томаты, приготовленный лук и грибы, но нет мяса или рыбы. Сыр можно не добавлять. Также можно подать обычную пасту с отдельной порцией приготовленных овощей, без грибов. В томатном супе есть приготовленный лук. Сырой лук добавляют по желанию после приготовления. Если он не нужен, попросите без этой добавки. Курицу подают с рисом. Острый соус приносят отдельно по запросу. При аллергии попросите сотрудника проверить полную информацию о составе.
+
+_Итог занятия:_
+
+- **Айрис:** Cooked onion is fine for me. I'd prefer no raw onion on top. — Приготовленный лук мне подходит. Сверху я бы предпочла без сырого лука. _(neutral)_
+
+### Занятие 2. Не одно и то же (понимание)
+
+_Нора уточняет пожелания у стойки._
+
+- **Мика:** Let's say what we mean. “I don't like it” and “I'm allergic” aren't the same. — Скажем точно. «Я это не люблю» и «у меня аллергия» — не одно и то же. _(phone/thinking)_
+
+**Аудирование [u010-s2-e1]** · Рэй у стойки
+
+- **Рэй:** I don't eat meat or fish. Cheese is fine. Could you check that there is no meat stock in the sauce? I want to be sure before ordering. — Я не ем мясо и рыбу. Сыр мне подходит. Проверите, нет ли в соусе мясного бульона? Хочу убедиться до заказа.
+
+**Аудирование [u010-s2-e2]** · Мика у стойки
+
+- **Мика:** I'd prefer my chicken without hot sauce. It's a preference, not an allergy. A little pepper is fine. Please don't order the same changes for everyone without asking them. — Я бы предпочла курицу без острого соуса. Это предпочтение, не аллергия. Немного перца нормально. Пожалуйста, не заказывайте такие же изменения всем, не спросив. _([thoughtfully])_
+
+**Диктант [u010-s2-e3]**
+
+- **Рэй:** Does the sauce contain any meat? _([clearly, at a moderate pace])_
+
+**Диктант [u010-s2-e4]**
+
+- **Мика:** I'd prefer my chicken without hot sauce.
+
+_Итог занятия:_
+
+- **Нора:** I've checked: no meat stock in this sauce. — Проверила: в этом соусе нет мясного бульона.
+
+### Занятие 3. Состав и изменения (форма)
+
+_Айрис отделяет вопросы от просьб, чтобы в заказе было понятно и то и другое._
+
+- **Айрис:** First find out what is in it. Then ask for the change. — Сначала узнай состав. Затем попроси изменение. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Specific words prevent very different orders from sounding the same. — Точные слова помогают не спутать совсем разные заказы. _(notebook/focused)_
+
+### Занятие 4. Сколько именно (форма)
+
+_На подносе у Норы стоят бутылки воды; еду начнут готовить после подтверждения заказа._
+
+- **Мика:** Drinks are easy to count. Sauce needs a different question. — Напитки легко посчитать. Для соуса нужен другой вопрос. _(phone/thinking)_
+
+_Итог занятия:_
+
+- **Рэй:** Count bottles. Ask about sauce. — Бутылки считаем. Про соус спрашиваем. _(neutral)_
+
+### Занятие 5. Полезная подробность (продукция)
+
+**Сцена [u010-s5-e1]** · Комплимент с оговоркой
+
+_Айрис передаёт Норе список, где отдельно отмечены состав соуса и сыр. Рэй замечает, что ты не стал выбирать за неё._
+
+- **Рэй:** You actually listened. Careful. I might choose your table again. — Ты правда слушал. Осторожнее. Я ведь могу снова сесть с тобой. _(smirk)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «I'll make sure there's a seat for you.» · флаг `flirt_rei_010`
+  - **Рэй:** Good. No speech required. — Хорошо. Без торжественной речи. _(smirk)_
+- _Отшутиться_ → «My ears finally have a job.»
+  - **Рэй:** Better hours than our club. — Расписание лучше, чем у нашего клуба. _(happy)_
+- _Вернуться к составу_ → «So the cheese is fine for you?»
+  - **Рэй:** Yes. Cheese stays. Meat doesn't. — Да. Сыр остаётся. Мясо — нет. _(neutral)_
+
+Если ответ непонятен:
+- **Рэй:** Say that again? — Повторишь? _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** My order is clear now. — Теперь мой заказ понятен. _(neutral)_
+
+### Занятие 6. Голосом: спросить, не угадать (продукция)
+
+_Репетиция вопросов до окончательного подтверждения заказа._
+
+- **Айрис:** A question is safer than an assumption. Try these aloud. — Вопрос надёжнее предположения. Произнеси эти фразы. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Now we can ask without guessing the answer first. — Теперь можно спросить, не угадывая ответ заранее. _(notebook/focused)_
+
+### Занятие 7. Быстрый круг: уточнения (беглость)
+
+_Пока Нора сверяет заказ с кухней, Мика предлагает короткую тренировку по памятке._
+
+- **Мика:** Three quick questions. No bonus for speaking fastest. — Три коротких вопроса. За самую быструю речь бонуса нет. _(phone/happy)_
+
+**Диктант [u010-s7-e7]**
+
+- **Нора:** I've checked: no meat stock in this sauce.
+
+_Итог занятия:_
+
+- **Мика:** Questions ready. Let's finish the real order. — Вопросы готовы. Закончим настоящий заказ. _(phone/focused)_
+
+### Занятие 8. Миссия: обед, который подходит (беглость · миссия)
+
+**Сцена [u010-s8-e1]** · Пожелание игрока
+
+_Нора возвращается к стойке. Скажи, нужно ли что-то изменить в твоём блюде._
+
+- **Нора:** Any changes for your meal? — Для вашего блюда нужны изменения?
+
+Выбор намерения:
+- _Попросить вариант без грибов; это предпочтение_ → «I'd prefer my meal without mushrooms.» · флаг `u010_player_no_mushrooms`
+  - **Нора:** For pasta, we'll use plain pasta and separate vegetables. The soup already has no mushrooms. — Для пасты возьмём обычную пасту и отдельные овощи. В супе грибов и так нет.
+- _Оставить выбранное блюдо без изменений_ → «No changes for me, thank you.» · флаг `u010_player_standard`
+  - **Нора:** All right. Your original choice stays on the order. — Хорошо. В заказе остаётся ваш исходный вариант.
+
+Если ответ непонятен:
+- **Нора:** Is there an ingredient you would like to leave out? — Есть ингредиент, который вы хотите исключить?
+
+Общее продолжение:
+- **Айрис:** No raw onion on mine, please. Cooked onion is fine. — Мне без сырого лука, пожалуйста. Приготовленный подходит. _(neutral)_
+- **Мика:** No hot sauce on my chicken, please. — Мне курицу без острого соуса, пожалуйста. _(happy)_
+- **Нора:** Confirmed. I'll send it to the kitchen now. — Подтверждено. Теперь отправляю на кухню.
+
+**Сцена [u010-s8-e2]** · Полезная строка для гида
+
+_Обед на столе. С разрешения всех Мика фотографирует только меню. Айрис предлагает добавить в черновик гида короткую подсказку для новичка._
+
+- **Диктор:** Nora brings the food. Your pasta is plain, with the vegetables on the side and no mushrooms. — Нора приносит еду. Твоя паста — обычная, овощи отдельно, без грибов. _(если `u010_player_no_mushrooms`, если нет `u009_meal_soup`)_
+- **Диктор:** Nora brings the food. Your vegetable pasta, just as you ordered it. — Нора приносит еду. Твоя паста с овощами — как ты и заказал. _(если `u010_player_standard`, если нет `u009_meal_soup`)_
+- **Диктор:** Nora brings the food. Your tomato soup and a slice of bread. — Нора приносит еду. Твой томатный суп и ломтик хлеба. _(если `u009_meal_soup`)_
+- **Диктор:** Rei has pasta with cheese, Iris has soup with no raw onion, and Mika has chicken without hot sauce. — У Рэй паста с сыром, у Айрис суп без сырого лука, у Мики курица без острого соуса.
+- **Айрис:** One useful reminder for the guide. What should come first? — Одна полезная памятка для гида. Что поставить первым? _(notebook/thinking)_
+
+Выбор намерения:
+- _Начать с вопроса о составе_ → «Ask what's in the dish before ordering.» · флаг `u010_guide_ingredients`
+  - **Айрис:** Ingredients first. I'll keep the example short. — Сначала состав. Пример будет коротким. _(notebook/focused)_
+- _Начать с просьбы об изменении_ → «Say clearly what you need without.» · флаг `u010_guide_changes`
+  - **Айрис:** Changes before cooking. I'll put the ingredient question underneath. — Изменения до приготовления. Вопрос о составе поставлю ниже. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** Which reminder should lead: ingredients or changes? — Что поставить первым: состав или изменения? _(thinking)_
+
+Общее продолжение:
+- **Диктор:** Lunch: Ask what's in the dish. Request any changes before cooking. — Обед: спросите состав блюда. Попросите изменения до приготовления. _(если `u010_guide_ingredients`)_
+- **Диктор:** Lunch: Request any changes before cooking. Ask what's in the dish if you are unsure. — Обед: попросите изменения до приготовления. Если сомневаетесь, спросите состав блюда. _(если `u010_guide_changes`)_
+- **Диктор:** Tell staff about allergies and ask them to check the full ingredient information. — Сообщите сотрудникам об аллергии и попросите проверить полную информацию о составе.
+
+_Итог занятия:_
+
+- **Мика:** Actual lunch! No planning while we eat for the next five minutes. — Настоящий обед! Следующие пять минут едим без планирования. _(happy)_
+- **Рэй:** Starting now. — Начиная сейчас. _(deadpan)_
+- **Мика:** Shop on Friday at four? Extra meeting, after classes. — В магазин в пятницу в четыре? Дополнительная встреча, после занятий. _(phone/thinking)_
+- **Рэй:** Free. We need a stand. — Свободна. Нужна подставка. _(neutral)_
+- **Айрис:** Free too. I can bring the budget sheet. — Тоже свободна. Принесу лист бюджета. _(notebook/focused)_
+
+---
+
+## Юнит 011. Сравнить цены
+
+**Цель:** Сравнить цену и пригодность вариантов, объяснить, почему самая дешёвая или самая дорогая вещь не всегда подходит.
+
+**Итог юнита:** Из общего бюджета £24 куплены устойчивая подставка с зажимом за £12 и поролоновая ветрозащита за £4. Израсходовано £16, осталось £8. Исправный микрофон не заменяют. Игрок определяет порядок сравнения и порядок советов в локальной карточке покупок.
+
+### Занятие 1. Не новый микрофон (понимание)
+
+_Пятница, 16:00. Все четверо у полки с техникой для записи. У клуба есть £24 на общие вещи; Айрис принесла лист бюджета. Рэй рассматривает хороший новый микрофон, Мика — яркую синюю модель._
+
+- **Рэй:** Better microphone. Worse price. — Микрофон лучше. Цена хуже. _(thinking)_
+- **Мика:** The blue one looks great. Looking is still free, right? — Синий выглядит классно. Смотреть ведь пока бесплатно? _(happy)_
+- **Айрис:** We have a working microphone and twenty-four pounds. Let's start there. — У нас есть рабочий микрофон и двадцать четыре фунта. Начнём с этого. _(notebook/focused)_
+
+**Чтение [u011-s1-e1]: «Small recording equipment»** (объявление)
+
+> Three microphones are on display: a basic model for £18, a blue model for £28, and a studio model for £40. A microphone is not included with any stand.
+>
+> The short table stand costs £7. The taller stand with a clamp costs £12. Both can hold our microphone, but only the taller stand can reach a comfortable speaking height at our table. A foam windscreen costs £4.
+>
+> Customers may test the stands at the counter. Ask before opening a box. Keep your receipt if you buy anything.
+
+_Перевод:_ На витрине три микрофона: базовая модель за £18, синяя за £28 и студийная за £40. Ни с одной подставкой микрофон не идёт в комплекте. Низкая настольная подставка стоит £7. Более высокая подставка с зажимом — £12. Обе удерживают наш микрофон, но только высокая поднимает его на удобную для речи высоту за нашим столом. Поролоновая ветрозащита стоит £4. Подставки можно проверить у прилавка. Прежде чем открывать коробку, спросите. Сохраните чек после покупки.
+
+_Итог занятия:_
+
+- **Рэй:** Ours works. Holding it is the problem. — Наш работает. Проблема — его держать. _(neutral)_
+
+### Занятие 2. Цена и задача (понимание)
+
+_На столе для проверки Рэй показывает, где должен оказаться микрофон. Айрис читает бюджет._
+
+- **Мика:** Let's compare what the money actually changes. — Сравним, что деньги действительно меняют. _(phone/thinking)_
+
+**Аудирование [u011-s2-e1]** · Рэй у стола для проверки
+
+- **Рэй:** The short stand holds the microphone. It's cheaper, but not tall enough for our table. The taller one lets us sit normally. Let's test the clamp before buying it. — Низкая подставка держит микрофон. Она дешевле, но для нашего стола недостаточно высокая. С высокой можно нормально сидеть. Проверим зажим до покупки.
+
+**Аудирование [u011-s2-e2]** · Айрис с листом бюджета
+
+- **Айрис:** Our club has twenty-four pounds for shared supplies. The taller stand and a foam windscreen cost sixteen together. That leaves eight. Lunch was paid separately, so it doesn't come out of this budget. — У клуба двадцать четыре фунта на общие вещи. Высокая подставка и поролоновая ветрозащита вместе стоят шестнадцать. Останется восемь. Обед каждый оплачивал отдельно, поэтому из этого бюджета он не вычитается. _([quietly, focused])_
+
+**Диктант [u011-s2-e3]**
+
+- **Рэй:** The cheaper stand isn't tall enough. _([clearly, at a moderate pace])_
+
+**Диктант [u011-s2-e4]**
+
+- **Айрис:** That leaves eight pounds.
+
+_Итог занятия:_
+
+- **Мика:** Less shopping, more useful shopping. I can work with that. — Меньше покупок, больше полезных покупок. Подходит. _(phone/happy)_
+
+### Занятие 3. Дешевле чего? (форма)
+
+_Айрис прикрывает рукой яркую рекламную надпись и оставляет видимыми только цену и характеристики._
+
+- **Айрис:** Compare two things first. Then decide what “best” means. — Сначала сравни две вещи. Потом реши, что значит «лучше всего». _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Рэй:** Best for the job. Not the shelf. — Лучше для дела. Не для витрины. _(neutral)_
+
+### Занятие 4. Слишком или достаточно (форма)
+
+_Мика записывает два условия: покупка помещается в бюджет и решает конкретную задачу._
+
+- **Мика:** “We can pay” is one question. “Will it help?” is another. — «Мы можем заплатить?» — один вопрос. «Это поможет?» — другой. _(phone/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Two conditions. Both need a yes. — Два условия. По обоим нужно «да». _(notebook/focused)_
+
+### Занятие 5. Хорошая пара для сравнения (продукция)
+
+**Сцена [u011-s5-e1]** · Тебя можно брать в магазин
+
+_Мика спрашивает продавца Сэма о коробках, Айрис сверяет цены. Рэй показывает тебе два ценника._
+
+- **Рэй:** Shopping with you is better than shopping alone. Fewer bad ideas. Mostly mine. — С тобой ходить по магазинам лучше, чем одной. Меньше плохих идей. В основном моих. _(smirk)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «I like this shopping team too.» · флаг `flirt_rei_011`
+  - **Рэй:** Fine. Keep the honest opinions. — Ладно. Только продолжай говорить честно. _(happy)_
+- _Отшутиться_ → «The prices are doing most of the work.»
+  - **Рэй:** Strong argument. Very quiet. — Сильный аргумент. Очень тихий. _(smirk)_
+- _Вернуться к сравнению_ → «Let's test the taller stand first.»
+  - **Рэй:** Good question. Let's check. — Хороший вопрос. Проверим. _(focused)_
+
+Если ответ непонятен:
+- **Рэй:** What do you mean? — Что ты имеешь в виду? _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** Price first. Test next. — Сначала цена. Дальше проверка. _(neutral)_
+
+### Занятие 6. Голосом: обосновать выбор (продукция)
+
+_Ты репетируешь объяснение для общего списка._
+
+- **Айрис:** A reason someone else can check. That's what we need. — Нужна причина, которую другой сможет проверить. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** A price and a reason. Better than “the nice one”. — Цена и причина. Лучше, чем «тот красивый». _(notebook/dry_smile)_
+
+### Занятие 7. Быстрый круг: три ценника (беглость)
+
+_Мика выложила фотографии ценников в общий чат._
+
+- **Мика:** Quick comparisons. One sentence each, then we ask to test. — Быстрые сравнения. По одному предложению, потом попросим проверить. _(phone/focused)_
+
+_Итог занятия:_
+
+- **Мика:** Same prices in the chat and on the shelf. Ready. — В чате и на полке одинаковые цены. Готово. _(phone/happy)_
+
+### Занятие 8. Миссия: купить то, чего не хватало (беглость · миссия)
+
+**Сцена [u011-s8-e1]** · Проверяем сначала
+
+_Продавец Сэм разрешает проверить демонстрационную подставку. Размеры стола и модель микрофона записаны. С чего начать проверку?_
+
+- **Сэм:** We can check the clamp and the height. Which first? — Можем проверить зажим и высоту. С чего начнём?
+
+Выбор намерения:
+- _Начать с устойчивости_ → «Could we check if the clamp is strong enough?» · флаг `u011_test_clamp`
+  - **Сэм:** Clamp first, then height. Here is the matching microphone holder. — Сначала зажим, потом высота. Вот совместимый держатель микрофона.
+- _Начать с высоты_ → «Could we check if it's tall enough?» · флаг `u011_test_height`
+  - **Сэм:** Height first, then clamp. Use this chair for the test. — Сначала высота, потом зажим. Для проверки сядьте на этот стул.
+
+Если ответ непонятен:
+- **Сэм:** The clamp or the height first? — Сначала зажим или высота?
+
+Общее продолжение:
+- **Рэй:** Stable. Tall enough. This works. — Устойчивая. Достаточно высокая. Подходит. _(focused)_
+- **Айрис:** Twelve for the stand, four for the windscreen. Sixteen in total. — Двенадцать за подставку, четыре за ветрозащиту. Всего шестнадцать. _(notebook/focused)_
+- **Мика:** All four agree? Good. Let's buy these two. — Все четверо согласны? Хорошо. Берём эти две вещи. _(phone/happy)_
+
+**Сцена [u011-s8-e2]** · Совет следующему покупателю
+
+_Мика фотографирует покупки и чек для общего чата. Айрис пишет короткую заметку для гида._
+
+- **Айрис:** What should our shopping note start with? — С чего начнём памятку о покупках? _(notebook/thinking)_
+
+Выбор намерения:
+- _Сначала объяснить задачу_ → «Choose what is good enough for the job.» · флаг `u011_guide_need`
+  - **Айрис:** The job first, then the prices and the test. — Сначала задача, потом цены и проверка. _(notebook/focused)_
+- _Сначала напомнить о сравнении_ → «Compare the prices, then test your choice.» · флаг `u011_guide_compare`
+  - **Айрис:** Comparison first, with our stand as the example. — Сначала сравнение, на примере нашей подставки. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** Start with the task or with comparing prices? — Начать с задачи или со сравнения цен? _(thinking)_
+
+Общее продолжение:
+- **Диктор:** Shopping: Start with the job. Compare the prices. Test your choice. — Покупки: начните с задачи. Сравните цены. Проверьте выбранное. _(если `u011_guide_need`)_
+- **Диктор:** Shopping: Compare the prices. Check what the job needs. Test your choice. — Покупки: сравните цены. Проверьте, что нужно для задачи. Проверьте выбранное. _(если `u011_guide_compare`)_
+
+_Итог занятия:_
+
+- **Рэй:** Good team. Honest opinions. — Хорошая команда. Честные мнения. _(neutral, если `flirt_rei_011`)_
+- **Мика:** Eight pounds left. I'll post that before anyone finds another beautiful microphone. — Осталось восемь фунтов. Напишу, пока никто не нашёл ещё один прекрасный микрофон. _(phone/happy)_
+- **Рэй:** Wednesday. We fit the stand. — В среду. Установим подставку. _(neutral)_
+
+---
+
+## Юнит 012. Составить общий список
+
+**Цель:** Согласовать количества и обязанности, отличить запас от лишнего и выполнить одну общую закупку.
+
+**Итог юнита:** Подставка установлена, ветрозащита надета. Куплены две общие чашки и одна выбранная мелочь. Из £8 потрачено £6, осталось £2. Список следующей встречи согласован; чай из дома и печенье пока только предложены, клубные деньги на них не выделялись.
+
+### Занятие 1. Три пакета одного и того же (понимание)
+
+_Следующая среда, 13:00. Коробка из магазина на столе. Мика показывает черновик списка: чай в нём записан три раза разными людьми._
+
+- **Мика:** Three people offered tea. Very kind. Possibly too much tea. — Трое предложили чай. Очень мило. Возможно, слишком много чая. _(phone/thinking)_
+- **Рэй:** One list. Fewer bags. — Один список. Меньше пакетов. _(neutral)_
+
+**Чтение [u012-s1-e1]: «Room 17 — shared list»** (тетрадный лист)
+
+> We have a working microphone, a new stand and a foam windscreen. We don't need any more recording equipment today. We have £8 left in the shared budget.
+>
+> Two plain mugs cost £2 each. We also need either one pack of cable clips or one roll of paper tape. Each option costs £2. Buy one option, not both, and leave £2 for later.
+>
+> Food is separate. For next Wednesday, Mika can bring a little tea from home. Iris can bring a few biscuits. Ask everyone first. Nobody needs to buy four bags of the same thing.
+
+_Перевод:_ У нас есть рабочий микрофон, новая подставка и поролоновая ветрозащита. Сегодня дополнительная техника для записи не нужна. В общем бюджете осталось £8. Две простые чашки стоят по £2. Ещё нужна либо одна упаковка кабельных зажимов, либо один рулон бумажной ленты. Каждый вариант стоит £2. Купите один, не оба, и оставьте £2 на потом. Еда отдельно. На следующую среду Мика может принести немного чая из дома. Айрис может принести несколько печений. Сначала спросите всех. Никому не нужно покупать четыре пакета одного и того же.
+
+_Итог занятия:_
+
+- **Айрис:** Two budgets. Supplies now, possible snacks next week. — Две отдельные статьи. Вещи сейчас, возможное угощение на следующей неделе. _(notebook/focused)_
+
+### Занятие 2. Кто берёт что (понимание)
+
+_Мика и Айрис оставляют голосовые в общем чате — про следующую среду, а не про сегодняшние покупки._
+
+- **Мика:** I'll put the offers in the chat. Offers first, final list after everyone answers. — Запишу предложения в чат. Сначала предложения, окончательный список — когда все ответят. _(phone/focused)_
+
+**Аудирование [u012-s2-e1]** · Голосовое Мики в чате «Room 17»
+
+- **Мика:** I'll bring a little tea from home next Wednesday. We don't need three packets. Please tell me if you don't want tea. Water is fine too. Nobody has to join in. — В следующую среду принесу немного чая из дома. Три пачки нам не нужны. Скажите, если не хотите чай. Вода тоже подойдёт. Никто не обязан участвовать.
+
+**Аудирование [u012-s2-e2]** · Голосовое Айрис в чате «Room 17»
+
+- **Айрис:** I can bring a few plain biscuits next week. I'll keep the packet so everyone can check the ingredients. We need enough for a small break, not enough to open a cafe. — Могу принести несколько простых печений на следующей неделе. Сохраню упаковку, чтобы все могли проверить состав. Нужно достаточно для короткого перерыва, а не для открытия кафе. _([dry, understated humor])_
+
+**Диктант [u012-s2-e3]**
+
+- **Айрис:** We have enough money for two mugs. _([clearly, at a moderate pace])_
+
+**Диктант [u012-s2-e4]**
+
+- **Рэй:** I'll bring water. No extra list.
+
+_Итог занятия:_
+
+- **Рэй:** I'll bring water. No extra list. — Принесу воду. Без дополнительного списка. _(neutral)_
+
+### Занятие 3. Несколько или немного (форма)
+
+_Айрис подчёркивает количество рядом с предметом. Чашки пока только в списке._
+
+- **Айрис:** A little tea. A few biscuits. Small amounts, different words. — Немного чая. Несколько печений. Маленькие количества, разные слова. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Small doesn't mean the same word for everything. — Маленькое количество не означает одно и то же слово для всего. _(notebook/focused)_
+
+### Занятие 4. Достаточно — это тоже решение (форма)
+
+_Рэй убирает лишнюю пустую коробку с края стола._
+
+- **Рэй:** Enough space. Keep some. — Места хватает. Часть оставим свободной. _(neutral)_
+
+_Итог занятия:_
+
+- **Мика:** “Enough” just saved me from a second shopping bag. — «Достаточно» только что избавило меня от второго пакета покупок. _(phone/happy)_
+
+### Занятие 5. Ещё одна строка (продукция)
+
+**Сцена [u012-s5-e1]** · Полезная привычка
+
+_Айрис читает финальную версию списка. В нём есть чай Мики и вода Рэй, но нет её собственного пожелания. Ты спрашиваешь: «And what would you like?» — и она добавляет свой чай._
+
+- **Айрис:** You keep asking for my answer. Careful. I might start saving you a line in every plan. — Ты всё время спрашиваешь моё мнение. Осторожнее. Начну оставлять тебе строчку в каждом плане. _(turn/dry_smile)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «I'd like a line next to yours.» · флаг `flirt_iris_012`
+  - **Айрис:** I'll leave room for one. No final draft yet. — Оставлю место для одного. Финальной версии пока нет. _(turn/happy)_
+- _Отшутиться_ → «Only if my handwriting is good enough.»
+  - **Айрис:** Terms and conditions. I expected nothing less. — Условия и оговорки. Меньшего я и не ожидала. _(dry_smile)_
+- _Вернуться к покупкам_ → «Shall I get the mugs?»
+  - **Айрис:** Yes. Two mugs, one extra item, and some money left. — Да. Две чашки, одна дополнительная вещь и остаток денег. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** Could you say that more simply? — Можешь сказать проще? _(listening)_
+
+_Итог занятия:_
+
+- **Айрис:** My answer is on the list now. Thank you. — Теперь мой ответ тоже в списке. Спасибо. _(happy)_
+
+### Занятие 6. Голосом: взять одну задачу (продукция)
+
+_Все собираются в ближайший магазин. Ты репетируешь предложения помощи._
+
+- **Мика:** One clear offer is better than everyone saying “I'll get everything”. — Одно ясное предложение лучше, чем всеобщее «я возьму всё». _(phone/focused)_
+
+_Итог занятия:_
+
+- **Мика:** A name next to each task. I like this version of organising. — Имя рядом с каждой задачей. Мне нравится такая организация. _(phone/happy)_
+
+### Занятие 7. Проверка модуля 009–012 (беглость · проверка модуля)
+
+_Перед выходом Айрис показывает учебную карточку: другой клуб, придуманная ситуация._
+
+- **Айрис:** Different club. Same decisions: food, ingredients, prices, quantities. — Другой клуб. Те же решения: еда, состав, цены, количества. _(notebook/focused)_
+
+**Чтение [u012-s7-e1]: «Photo club picnic»** (тетрадный лист)
+
+> The photo club is planning a picnic for four people. They have £20. A cheese sandwich costs £3 and contains milk and wheat. A vegetable rice box costs £4 and contains no milk. Bottles of water cost £1 each.
+>
+> One member cannot have milk. The club needs one meal and one bottle of water per person. Three cheese sandwiches, one rice box and four bottles of water cost £17. Two large bags of crisps would cost another £4. The club must stay within its budget and check any other dietary needs before ordering.
+
+_Перевод:_ Фотоклуб планирует пикник на четверых. У них £20. Сэндвич с сыром стоит £3, содержит молоко и пшеницу. Коробка овощного риса стоит £4, молока в ней нет. Бутылка воды стоит £1. Одному участнику нельзя молоко. Каждому нужно по одному блюду и бутылке воды. Три сэндвича с сыром, одна коробка риса и четыре бутылки воды стоят £17. Два больших пакета чипсов стоили бы ещё £4. Клуб должен уложиться в бюджет и до заказа уточнить остальные пищевые ограничения.
+
+**Аудирование [u012-s7-e2]** · Учебное сообщение Айрис
+
+- **Айрис:** Please check everyone's order before paying. We have enough money for the meals and water, but not for both bags of crisps. The rice box is more expensive, but one person needs it. — Перед оплатой проверьте заказ каждого. На еду и воду денег достаточно, но на оба пакета чипсов уже нет. Коробка риса дороже, но одному человеку она нужна. _([quietly, focused])_
+
+_Итог занятия:_
+
+- **Айрис:** Good. Back to our eight pounds and our actual list. — Хорошо. Возвращаемся к нашим восьми фунтам и настоящему списку. _(notebook/focused)_
+
+### Занятие 8. Миссия: две чашки и немного места (беглость · миссия)
+
+**Сцена [u012-s8-e1]** · Одна мелочь, не две
+
+_В магазине Сэм показывает две простые общие чашки — жёлтую и серо-синюю, по £2. Обе мелочи полезны: зажимы — для кабеля у подставки, бумажная лента — для подписей на коробках. Купить можно одну._
+
+- **Мика:** Two mugs leave four pounds. One extra item leaves two. Which do we get? — После двух чашек останется четыре фунта. После одной мелочи — два. Что берём? _(phone/thinking)_
+
+Выбор намерения:
+- _Взять зажимы для кабеля_ → «I'll get one pack of clips. We don't need the tape today.» · флаг `u012_supply_clips`
+  - **Рэй:** Clips today. I'll fit them. — Сегодня зажимы. Я поставлю. _(focused)_
+- _Взять бумажную ленту для подписей_ → «I'll get one roll of tape. We can buy clips later.» · флаг `u012_supply_tape`
+  - **Айрис:** Tape today. I'll label the boxes. — Сегодня лента. Я подпишу коробки. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Мика:** One pack of clips or one roll of tape? — Упаковку зажимов или рулон ленты? _(thinking)_
+
+Общее продолжение:
+- **Мика:** I'll take the mugs to the counter. You bring the item you chose. Iris has the money. — Отнесу чашки к кассе. Ты принеси выбранную вещь. Деньги у Айрис. _(phone/focused)_
+- **Сэм:** Two mugs and one extra item. Six pounds altogether. — Две чашки и одна дополнительная вещь. Всего шесть фунтов.
+- **Айрис:** Six paid. Two left. Receipt saved. — Шесть заплатили. Два осталось. Чек сохранён. _(notebook/focused)_
+
+**Сцена [u012-s8-e2]** · Хорошо получилось
+
+_Около 13:50, снова в комнате 17. Рэй ставит подставку с ветрозащитой, Айрис освобождает полку для чашек. Ты помогаешь с тем, что выбрал._
+
+- **Рэй:** Cable clipped below the stand. Enough space to move. — Кабель закреплён под подставкой. Для движения места хватает. _(focused, если `u012_supply_clips`)_
+- **Айрис:** Labels on. We'll return the boxes to the right places. — Подписи готовы. Вернём коробки на нужные места. _(notebook/focused, если `u012_supply_tape`)_
+- **Мика:** Enough money left, and nobody carried four bags. I like planning things with you. — Деньги остались, никто не тащил четыре пакета. Мне нравится планировать с тобой. _(happy)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «Then I'd like to be in the next plan.» · флаг `flirt_mika_012`
+  - **Мика:** Noted! One place in the next plan. Still room for sensible shopping. — Записано! Одно место в следующем плане. На разумные покупки место тоже оставим. _(phone/happy)_
+- _Отшутиться_ → «The list deserves most of the credit.»
+  - **Мика:** A very useful talent. I'll add it under “team skills”. — Очень полезный талант. Добавлю в «навыки команды». _(laugh)_
+- _Продолжить дело_ → «Shall we check next Wednesday's list?»
+  - **Мика:** Yes. Offers only become a plan when everyone agrees. — Да. Предложения становятся планом, только когда все согласны. _(phone/focused)_
+
+Если ответ непонятен:
+- **Мика:** Could you say that again? — Можешь повторить? _(listening)_
+
+Общее продолжение:
+- **Айрис:** Two mugs. Four people. We are halfway to a collection. — Две чашки. Четыре человека. Мы на полпути к коллекции. _(notebook/dry_smile)_
+- **Рэй:** Different colours. Fewer arguments. — Разные цвета. Меньше споров. _(deadpan)_
+- **Мика:** Next time, tea if you want it. No compulsory biscuits. — В следующий раз — чай по желанию. Печенье не обязательное. _(phone/happy)_
+
+_Итог занятия:_
+
+- **Айрис:** A few useful things. A little money left. Enough room for all four of us. — Несколько полезных вещей. Немного оставшихся денег. Достаточно места для нас четверых. _(happy)_
+
+---
+
 # Страницы героинь
 
 ## Мика
@@ -1358,6 +2046,8 @@ _Итог занятия:_
 - Встречи клубов — в понедельник и четверг вечером. В среду свободна после двенадцати. _(после юнита 003)_
 - Встаёт в шесть, первым делом проверяет сообщения и никогда не ложится до полуночи. _(после юнита 004)_
 - Для общей работы ей нужна хорошо видимая доска; красивое фото может подождать, пока комнатой действительно можно пользоваться. _(после юнита 008)_
+- Предпочитает неострую еду; немного перца ей подходит. Это предпочтение, а не аллергия. _(после юнита 010)_
+- Замечает яркие красивые вещи, но умеет отказаться от покупки ради общей задачи и оставить резерв. _(после юнита 011)_
 
 **Общие воспоминания:**
 
@@ -1369,6 +2059,9 @@ _Итог занятия:_
 - Mika sent the team's first real plan: Wednesday, one o'clock, the courtyard. — Мика отправила первый настоящий план команды: среда, час дня, двор. _(флаг `u003_confirmed_slot`)_
 - Before Alex's visit you took the door, and Mika kept the list of results. — Перед визитом техника ты взял на себя встречу у двери, а Мика вела список результатов. _(флаг `u007_role_door`)_
 - Before Alex's visit you kept the list of results, and Mika let him in. You both did exactly those jobs. — Перед визитом техника ты выбрал список результатов, а Мика встретила техника. Вы выполнили именно эти роли. _(флаг `u007_role_notes`)_
+- At your first lunch together Mika saved you a seat and called the company "fairly good". You said the company was better than the menu. — На первом общем обеде Мика заняла тебе место рядом и назвала компанию «вполне ничего». Ты ответил, что компания лучше меню. _(флаг `flirt_mika_009`)_
+- You took the shared list all the way to the shop: two different mugs, one pack of cable clips and two pounds for later. — Вы довели общий список до покупки: две разные чашки, упаковка кабельных зажимов и £2 на потом. _(флаг `u012_supply_clips`)_
+- You took the shared list all the way to the shop: two different mugs, one roll of paper tape and two pounds for later. — Вы довели общий список до покупки: две разные чашки, рулон бумажной ленты и £2 на потом. _(флаг `u012_supply_tape`)_
 
 **Реплики «Поболтать»:**
 
@@ -1397,6 +2090,8 @@ _Итог занятия:_
 - В звуковой лаборатории каждый день с двух до пяти. Кроме среды. _(после юнита 003)_
 - Встаёт поздно. Иногда записывает ночной автобус. _(после юнита 004)_
 - Она предпочитает записывать подальше от двери; две мягкие панели для неё полезнее, чем пустой красивый угол. _(после юнита 008)_
+- Не ест мясо и рыбу, но ест сыр. Перед заказом уточняет состав соуса, включая мясной бульон. _(после юнита 010)_
+- Если старый микрофон исправен, предпочтёт подходящую подставку новому микрофону; смотрит на высоту и устойчивость. _(после юнита 011)_
 
 **Общие воспоминания:**
 
@@ -1406,6 +2101,9 @@ _Итог занятия:_
 - You admitted your mornings are chaos. Rei kept it in the guide. — Ты признался, что утро у тебя — хаос. Рэй оставила это в гиде. _(флаг `u004_honest_morning`)_
 - You suggested starting with the recording corner. You and Rei put up the panels, then cleared the writing table. Less echo on the test. — Ты предложил начать обустройство с угла записи. Вы с Рэй поставили панели, а затем освободили письменный стол. На пробе стало меньше эха. _(флаг `u008_setup_sound_first`)_
 - You suggested clearing the writing table first, then helped Rei with the panels. Less echo on the test. — Ты предложил сначала освободить письменный стол, а затем помог Рэй поставить панели. На пробе стало меньше эха. _(флаг `u008_setup_table_first`)_
+- At lunch Rei noticed that you listened to her instead of choosing for her. You went along with her joke about choosing your table again. — За обедом Рэй заметила, что ты слушал её пожелания, а не выбирал за неё. Ты поддержал её подколку про следующую встречу. _(флаг `flirt_rei_010`)_
+- In the shop you tested the clamp first, then the height. The stand you bought was right for the table. — В магазине вы сначала проверили зажим, затем высоту. Купленная подставка подошла. _(флаг `u011_test_clamp`)_
+- In the shop you tested the height first, then the clamp. The stand you bought was right for the table. — В магазине вы сначала проверили высоту, затем зажим. Купленная подставка подошла. _(флаг `u011_test_height`)_
 
 **Реплики «Поболтать»:**
 
@@ -1434,6 +2132,8 @@ _Итог занятия:_
 - Работает в библиотеке в понедельник, среду и пятницу с трёх до семи. Во вторник и четверг утром — семинары. _(после юнита 003)_
 - Любит, когда каждое наречие стоит на своём месте. _(после юнита 004)_
 - Ей нужен отдельный письменный стол с местом для блокнота; она любит писать у окна, но принимает и другой удобный вариант. _(после юнита 008)_
+- Не любит сырой лук сверху; приготовленный лук в супе ей подходит. Это предпочтение, а не аллергия. _(после юнита 010)_
+- Хочет оставлять немного общих денег на будущие мелочи; личная еда не входит в бюджет студии. _(после юнита 012)_
 
 **Общие воспоминания:**
 
@@ -1444,6 +2144,8 @@ _Итог занятия:_
 - Iris kept your wording and only marked the grammar. "That's a compliment." — Айрис сохранила твои формулировки и только отметила грамматику. «Это комплимент». _(после юнита 004)_
 - On your suggestion the writing table went by the window, with the shelf beside it. The boxes finally stopped sitting on a chair. — По твоему предложению письменный стол поставили у окна, а полку — рядом. Коробки наконец перестали занимать стул. _(флаг `u008_layout_window`)_
 - On your suggestion the writing table went against the other wall, and the window area stayed open. The boxes went on the shelf. — По твоему предложению письменный стол поставили у другой стены, оставив место у окна свободным. Коробки убрали на полку рядом со столом. _(флаг `u008_layout_wall`)_
+- At your first lunch Iris noticed that you waited for her answer. You went along with her joke, and she promised to keep her answers interesting. — За первым обедом она заметила, что ты дождался её ответа. Ты поддержал её шутку, и она пообещала делать ответы интересными. _(флаг `flirt_iris_009`)_
+- Together you checked the shopping against the money: twenty-four pounds, then eight, then two. Half of a future mug collection is on the shelf. — Вы вместе сверили покупки с остатком: £24 → £8 → £2. На полке появилась половина будущей коллекции чашек. _(после юнита 012)_
 
 **Реплики «Поболтать»:**
 

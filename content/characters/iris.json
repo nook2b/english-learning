@@ -32,6 +32,18 @@
         "unit": "008"
       },
       "ru": "Ей нужен отдельный письменный стол с местом для блокнота; она любит писать у окна, но принимает и другой удобный вариант."
+    },
+    {
+      "unlock": {
+        "unit": "010"
+      },
+      "ru": "Не любит сырой лук сверху; приготовленный лук в супе ей подходит. Это предпочтение, а не аллергия."
+    },
+    {
+      "unlock": {
+        "unit": "012"
+      },
+      "ru": "Хочет оставлять немного общих денег на будущие мелочи; личная еда не входит в бюджет студии."
     }
   ],
   "memories": [
@@ -83,6 +95,20 @@
       },
       "en": "On your suggestion the writing table went against the other wall, and the window area stayed open. The boxes went on the shelf.",
       "ru": "По твоему предложению письменный стол поставили у другой стены, оставив место у окна свободным. Коробки убрали на полку рядом со столом."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_iris_009"
+      },
+      "en": "At your first lunch Iris noticed that you waited for her answer. You went along with her joke, and she promised to keep her answers interesting.",
+      "ru": "За первым обедом она заметила, что ты дождался её ответа. Ты поддержал её шутку, и она пообещала делать ответы интересными."
+    },
+    {
+      "unlock": {
+        "unit": "012"
+      },
+      "en": "Together you checked the shopping against the money: twenty-four pounds, then eight, then two. Half of a future mug collection is on the shelf.",
+      "ru": "Вы вместе сверили покупки с остатком: £24 → £8 → £2. На полке появилась половина будущей коллекции чашек."
     }
   ],
   "lines": [

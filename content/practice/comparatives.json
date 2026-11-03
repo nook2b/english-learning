@@ -1,0 +1,145 @@
+{
+ "tag": "comparatives",
+ "items": [
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-comparatives-01",
+    "type": "choice",
+    "prompt": "This bag is ___ than that one.",
+    "options": [
+     "cheaper",
+     "more cheap",
+     "cheapest"
+    ],
+    "answer": "cheaper",
+    "tags": [
+     "comparatives"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-comparatives-02",
+    "type": "choice",
+    "prompt": "The new laptop is ___ than the old one.",
+    "options": [
+     "more expensive",
+     "expensiver",
+     "most expensive"
+    ],
+    "answer": "more expensive",
+    "tags": [
+     "comparatives"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-comparatives-03",
+    "type": "choice",
+    "prompt": "This is ___ café in town.",
+    "options": [
+     "the best",
+     "the better",
+     "the goodest"
+    ],
+    "answer": "the best",
+    "tags": [
+     "comparatives"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-comparatives-04",
+    "type": "choice",
+    "prompt": "Is the small lamp as bright ___ the big one?",
+    "options": [
+     "as",
+     "than",
+     "so"
+    ],
+    "answer": "as",
+    "tags": [
+     "comparatives"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-comparatives-05",
+    "type": "fill",
+    "prompt": "The library is ___ than the canteen. Nobody talks there.",
+    "answers": [
+     "quieter"
+    ],
+    "tags": [
+     "comparatives"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-comparatives-06",
+    "type": "fill",
+    "prompt": "The blue headphones are the ___ of the three. Only £10.",
+    "answers": [
+     "cheapest"
+    ],
+    "tags": [
+     "comparatives"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-comparatives-07",
+    "type": "transform",
+    "instruction": "Скажи то же с not as … as",
+    "sentence": "The old chair is shorter than the new chair.",
+    "answers": [
+     "The old chair is not as tall as the new chair.",
+     "The old chair isn't as tall as the new chair."
+    ],
+    "tags": [
+     "comparatives"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-comparatives-08",
+    "type": "fix",
+    "sentence": "This stand is more cheaper than that one.",
+    "answers": [
+     "This stand is cheaper than that one."
+    ],
+    "tags": [
+     "comparatives"
+    ]
+   }
+  },
+  {
+   "unit": "011",
+   "exercise": {
+    "id": "p-comparatives-09",
+    "type": "fix",
+    "sentence": "The studio model is the most good option.",
+    "answers": [
+     "The studio model is the best option."
+    ],
+    "tags": [
+     "comparatives"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "tag": "function_ordering",
+ "items": [
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-function_ordering-01",
+    "type": "choice",
+    "prompt": "___ a bowl of soup, please.",
+    "options": [
+     "I'd like",
+     "I like",
+     "I'd liking"
+    ],
+    "answer": "I'd like",
+    "tags": [
+     "function_ordering"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-function_ordering-02",
+    "type": "choice",
+    "prompt": "___ I have a cup of tea?",
+    "options": [
+     "Could",
+     "Would",
+     "Shall"
+    ],
+    "answer": "Could",
+    "tags": [
+     "function_ordering"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-function_ordering-03",
+    "type": "choice",
+    "prompt": "— Anything else? — ___",
+    "options": [
+     "No, that's all, thanks.",
+     "No, any.",
+     "Yes, I have."
+    ],
+    "answer": "No, that's all, thanks.",
+    "tags": [
+     "function_ordering"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-function_ordering-04",
+    "type": "fill",
+    "prompt": "Is it for ___ or to take away?",
+    "answers": [
+     "here"
+    ],
+    "tags": [
+     "function_ordering"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-function_ordering-05",
+    "type": "fill",
+    "prompt": "The sauce on the ___, please.",
+    "answers": [
+     "side"
+    ],
+    "tags": [
+     "function_ordering"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-function_ordering-06",
+    "type": "fill",
+    "prompt": "Do you ___ any pasta left?",
+    "answers": [
+     "have"
+    ],
+    "tags": [
+     "function_ordering"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-function_ordering-07",
+    "type": "transform",
+    "instruction": "Сделай вежливую просьбу: начни с Could I have",
+    "sentence": "Give me a bottle of water.",
+    "answers": [
+     "Could I have a bottle of water?",
+     "Could I have a bottle of water, please?"
+    ],
+    "tags": [
+     "function_ordering"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-function_ordering-08",
+    "type": "fix",
+    "sentence": "I like a portion of chicken, please.",
+    "answers": [
+     "I'd like a portion of chicken, please.",
+     "I would like a portion of chicken, please."
+    ],
+    "tags": [
+     "function_ordering"
+    ]
+   }
+  },
+  {
+   "unit": "009",
+   "exercise": {
+    "id": "p-function_ordering-09",
+    "type": "fix",
+    "sentence": "Could I to have the pasta?",
+    "answers": [
+     "Could I have the pasta?"
+    ],
+    "tags": [
+     "function_ordering"
+    ]
+   }
+  }
+ ]
+}
