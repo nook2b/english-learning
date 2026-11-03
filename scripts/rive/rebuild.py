@@ -5,7 +5,7 @@ Rebuilds iris.riv with the new Iris art, keeping every artboard, property and an
 Body and layer textures are swapped; face patches are recut from the new frames
 (eyes with the closed mouth, blink, three mouths) and moved where the new face is.
 """
-import io, json, struct, sys
+import io, json, os, struct, sys
 sys.path.insert(0, 'scripts'); sys.path.insert(0, 'scripts/rive')
 import numpy as np
 from PIL import Image
@@ -19,6 +19,16 @@ EMOS = json.load(open('assets/rive/expressions.json'))['iris']
 POSES = {'stand': dict(start=0, body=71, layers=(72, 73), under=70, anchor=(500, 330), recut=True),
          'notebook': dict(start=74, body=110, layers=(111, 112), under=109, anchor=(500, 330), recut=True),
          'turn': dict(start=113, body=134, layers=(135, 136), under=133, anchor=(497, 338), recut=True)}
+# Copies of artboards made by duplicate_artboard.py, in the order they were added: their assets follow the 137 originals.
+COPIES = [('stand_left', 'stand'), ('stand_right', 'stand'), ('notebook_left', 'notebook'), ('notebook_right', 'notebook')]
+_next = 137
+for _copy, _of in COPIES:
+    _o = POSES[_of]
+    n = _o['layers'][1] - _o['start'] + 1
+    if os.path.isdir(f'{KIT}/sprites/{_copy}'):
+        d = _next - _o['start']
+        POSES[_copy] = dict(start=_next, body=_o['body'] + d, layers=tuple(x + d for x in _o['layers']), under=_o['under'] + d, anchor=_o['anchor'], recut=True, emos=_of)
+        _next += n
 
 def load(p): return np.array(Image.open(p).convert('RGBA'))
 def diff(a, c): return np.abs(a[:, :, :3].astype(int) - c[:, :, :3].astype(int)).sum(axis=2) + np.abs(a[:, :, 3].astype(int) - c[:, :, 3].astype(int)) > 24
@@ -45,7 +55,7 @@ for pose, P in POSES.items():
         continue
     new_tex[P['under']] = np.zeros((1, 1, 4), np.uint8)  # the new eye patches cover the whole changed face
     ax, ay = P['anchor']
-    for g, e in enumerate(EMOS[pose]):
+    for g, e in enumerate(EMOS[P.get('emos', pose)]):
         f = lambda s: load(f'{KIT}/sprites/{pose}/iris_{pose}_{e}{s}.png')
         C, H, O, B = f(''), f('_half'), f('_open'), f('_blink')
         i = P['start'] + 5 * g
@@ -61,7 +71,7 @@ for pose, P in POSES.items():
 # Move the recut patches: x and y of each Image (typeKey 100) by its asset id (key 206), in place.
 _, objs = parse(bytes(b))
 moved = 0
-for t, props in objs:
+for t, props, *_ in objs:
     if t != 100: continue
     d = {k: (s, v) for k, _, v, s, e in props}
     aid = d.get(206, (None, None))[1]
