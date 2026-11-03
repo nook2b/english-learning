@@ -17,7 +17,7 @@ SRC, KIT, OUT = sys.argv[1], sys.argv[2], sys.argv[3]
 b = bytearray(open(SRC, 'rb').read())
 EMOS = json.load(open('assets/rive/expressions.json'))['iris']
 POSES = {'stand': dict(start=0, body=71, layers=(72, 73), under=70, anchor=(500, 330), recut=True),
-         'notebook': dict(start=74, body=110, layers=(111, 112), under=109, anchor=(500, 330), recut=False),
+         'notebook': dict(start=74, body=110, layers=(111, 112), under=109, anchor=(500, 330), recut=True),
          'turn': dict(start=113, body=134, layers=(135, 136), under=133, anchor=(497, 338), recut=True)}
 
 def load(p): return np.array(Image.open(p).convert('RGBA'))
@@ -37,8 +37,6 @@ def png(a):
 new_tex, moves = {}, {}
 old = [np.array(Image.open(io.BytesIO(bytes(b[s:e]))).convert('RGBA')) for s, e, k in textures(bytes(b))]
 for pose, P in POSES.items():
-    if not P['recut']:
-        continue  # notebook: the riv has its own art; waits for its own emotion set
     base = load(f'{KIT}/sprites/{pose}/iris_{pose}_base.png')
     new_tex[P['body']] = base
     for L in P['layers']:  # hand and item: the new frame under the old layer's shape
