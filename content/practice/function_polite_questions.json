@@ -1,0 +1,143 @@
+{
+ "tag": "function_polite_questions",
+ "items": [
+  {
+   "unit": "014",
+   "exercise": {
+    "id": "p-function_polite_questions-01",
+    "type": "choice",
+    "prompt": "I'm sorry to ___ you, but could you help us?",
+    "options": [
+     "bother",
+     "worry",
+     "disturbing"
+    ],
+    "answer": "bother",
+    "tags": [
+     "function_polite_questions"
+    ]
+   }
+  },
+  {
+   "unit": "014",
+   "exercise": {
+    "id": "p-function_polite_questions-02",
+    "type": "choice",
+    "prompt": "Could you tell me when the library ___?",
+    "options": [
+     "opens",
+     "does open",
+     "open"
+    ],
+    "answer": "opens",
+    "tags": [
+     "function_polite_questions"
+    ]
+   }
+  },
+  {
+   "unit": "014",
+   "exercise": {
+    "id": "p-function_polite_questions-03",
+    "type": "choice",
+    "prompt": "How long ___ the meeting take?",
+    "options": [
+     "will",
+     "is",
+     "does it"
+    ],
+    "answer": "will",
+    "tags": [
+     "function_polite_questions"
+    ]
+   }
+  },
+  {
+   "unit": "014",
+   "exercise": {
+    "id": "p-function_polite_questions-04",
+    "type": "fill",
+    "prompt": "Is there a ___ time to call? It's very busy now.",
+    "answers": [
+     "better",
+     "quieter"
+    ],
+    "tags": [
+     "function_polite_questions"
+    ]
+   }
+  },
+  {
+   "unit": "014",
+   "exercise": {
+    "id": "p-function_polite_questions-05",
+    "type": "fill",
+    "prompt": "When ___ the shop close, please?",
+    "answers": [
+     "does"
+    ],
+    "tags": [
+     "function_polite_questions"
+    ]
+   }
+  },
+  {
+   "unit": "014",
+   "exercise": {
+    "id": "p-function_polite_questions-06",
+    "type": "fill",
+    "prompt": "Could you tell us ___ the class finishes?",
+    "answers": [
+     "when"
+    ],
+    "tags": [
+     "function_polite_questions"
+    ]
+   }
+  },
+  {
+   "unit": "014",
+   "exercise": {
+    "id": "p-function_polite_questions-07",
+    "type": "transform",
+    "instruction": "Сделай вежливее: начни с Could you tell me",
+    "sentence": "When does the bus leave?",
+    "answers": [
+     "Could you tell me when the bus leaves?",
+     "Could you tell me when the bus leaves, please?"
+    ],
+    "tags": [
+     "function_polite_questions"
+    ]
+   }
+  },
+  {
+   "unit": "014",
+   "exercise": {
+    "id": "p-function_polite_questions-08",
+    "type": "fix",
+    "sentence": "Could you tell me when does the café open?",
+    "answers": [
+     "Could you tell me when the café opens?"
+    ],
+    "tags": [
+     "function_polite_questions"
+    ]
+   }
+  },
+  {
+   "unit": "014",
+   "exercise": {
+    "id": "p-function_polite_questions-09",
+    "type": "fix",
+    "sentence": "How long it will take?",
+    "answers": [
+     "How long will it take?"
+    ],
+    "tags": [
+     "function_polite_questions"
+    ]
+   }
+  }
+ ]
+}

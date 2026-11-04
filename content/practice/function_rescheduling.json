@@ -1,0 +1,145 @@
+{
+ "tag": "function_rescheduling",
+ "items": [
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-function_rescheduling-01",
+    "type": "choice",
+    "prompt": "I'm ___ I can't come on Monday.",
+    "options": [
+     "afraid",
+     "sorry that",
+     "scared"
+    ],
+    "answer": "afraid",
+    "tags": [
+     "function_rescheduling"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-function_rescheduling-02",
+    "type": "choice",
+    "prompt": "Can we move it ___ Tuesday?",
+    "options": [
+     "to",
+     "on",
+     "at"
+    ],
+    "answer": "to",
+    "tags": [
+     "function_rescheduling"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-function_rescheduling-03",
+    "type": "choice",
+    "prompt": "How ___ Friday afternoon?",
+    "options": [
+     "about",
+     "for",
+     "with"
+    ],
+    "answer": "about",
+    "tags": [
+     "function_rescheduling"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-function_rescheduling-04",
+    "type": "choice",
+    "prompt": "— Is ten OK? — Yes, that ___ for me.",
+    "options": [
+     "works",
+     "work",
+     "is working"
+    ],
+    "answer": "works",
+    "tags": [
+     "function_rescheduling"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-function_rescheduling-05",
+    "type": "fill",
+    "prompt": "I'm busy ___, but Thursday works.",
+    "answers": [
+     "then"
+    ],
+    "tags": [
+     "function_rescheduling"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-function_rescheduling-06",
+    "type": "fill",
+    "prompt": "Are you ___ after class?",
+    "answers": [
+     "free"
+    ],
+    "tags": [
+     "function_rescheduling"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-function_rescheduling-07",
+    "type": "transform",
+    "instruction": "Предложи другое время: начни с How about",
+    "sentence": "Saturday at noon",
+    "answers": [
+     "How about Saturday at noon?"
+    ],
+    "tags": [
+     "function_rescheduling"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-function_rescheduling-08",
+    "type": "fix",
+    "sentence": "How about to meet at six?",
+    "answers": [
+     "How about meeting at six?",
+     "How about six?"
+    ],
+    "tags": [
+     "function_rescheduling"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-function_rescheduling-09",
+    "type": "fix",
+    "sentence": "Can we move it at Friday?",
+    "answers": [
+     "Can we move it to Friday?"
+    ],
+    "tags": [
+     "function_rescheduling"
+    ]
+   }
+  }
+ ]
+}

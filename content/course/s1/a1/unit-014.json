@@ -1,0 +1,1111 @@
+{
+  "id": "014",
+  "title": "Что мешает записи",
+  "goal": "Описать помеху и вежливо узнать, когда шум закончится.",
+  "focus": "Что мешает: Present Continuous для того, что происходит (The fan is running), keep + -ing для того, что повторяется (They keep moving chairs); вежливо узнать: I'm sorry to bother you, but…, Could you…, please?, How long will it take?, When does the work finish?",
+  "outcome": "Вторая попытка срывается. Рабочий сообщает, что шумные работы закончатся в среду следующей недели к пяти вечера.",
+  "expressions": [
+    "It's too loud",
+    "It's getting louder",
+    "They keep moving chairs",
+    "Could you",
+    "I'm sorry to bother you, but",
+    "How long will it take",
+    "When does the work finish",
+    "We're trying to record",
+    "the ventilation fan",
+    "a short break",
+    "until Wednesday",
+    "after five"
+  ],
+  "glossary": [
+    "notice",
+    "trumpet",
+    "working hours",
+    "noisy work",
+    "set up"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Объявление у стены",
+      "intro": "Объявление у стены двора. Найди главное: когда закончатся шумные работы.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Пятница, четыре часа. Рядом со стеной появилось объявление. Из открытой двери доносится скрежет стульев.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "There is a finish time. Let’s read that first.",
+            "ru": "Тут есть время окончания. Начнём с него.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u014-s1-e1",
+          "type": "reading",
+          "title": "Courtyard work",
+          "text": "Work on the courtyard wall continues this week and next week. The team works from nine until five on weekdays. Noisy work will finish next Wednesday at five. The benches remain available, but please keep bags away from the tools. Staff may move chairs through the courtyard while the wall is being repaired. If you are planning a recording, ask a worker about the day's work before you set up. Short breaks are possible, but we cannot promise a quiet courtyard during working hours.",
+          "ru": "Работы на стене двора продолжаются на этой и следующей неделе. Бригада работает по будням с девяти до пяти. Шумные работы закончатся в следующую среду в пять. Скамейками можно пользоваться, но не оставляйте сумки возле инструментов. Пока ремонтируют стену, сотрудники могут переносить стулья через двор. Если планируете запись, спросите рабочего о сегодняшних работах до установки оборудования. Короткие перерывы возможны, но гарантировать тишину в рабочее время мы не можем.",
+          "questions": [
+            {
+              "prompt": "When does noisy work finish?",
+              "options": [
+                "This Friday",
+                "Next Wednesday at five",
+                "Next Saturday"
+              ],
+              "answer": "Next Wednesday at five"
+            },
+            {
+              "prompt": "Can students use the benches?",
+              "options": [
+                "Yes",
+                "Only at night",
+                "No"
+              ],
+              "answer": "Yes"
+            },
+            {
+              "prompt": "What should the team do before setting up?",
+              "options": [
+                "Ask a worker",
+                "Buy a chair",
+                "Call the library"
+              ],
+              "answer": "Ask a worker"
+            }
+          ],
+          "tags": [
+            "reading",
+            "function_polite_questions"
+          ]
+        },
+        {
+          "id": "u014-s1-e2",
+          "type": "choice",
+          "prompt": "Noisy work will finish next Wednesday ___ five.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": "at",
+          "tags": [
+            "function_polite_questions"
+          ],
+          "explain": "Время на часах — at five."
+        },
+        {
+          "id": "u014-s1-e3",
+          "type": "choice",
+          "prompt": "The team works ___ nine until five on weekdays.",
+          "options": [
+            "from",
+            "since",
+            "at"
+          ],
+          "answer": "from",
+          "tags": [
+            "function_polite_questions"
+          ],
+          "explain": "From … until … — с … до …"
+        },
+        {
+          "id": "u014-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "It's too loud",
+              "ru": "слишком громко"
+            },
+            {
+              "en": "a short break",
+              "ru": "короткий перерыв"
+            },
+            {
+              "en": "until Wednesday",
+              "ru": "до среды"
+            },
+            {
+              "en": "after five",
+              "ru": "после пяти"
+            },
+            {
+              "en": "the ventilation fan",
+              "ru": "вентилятор"
+            },
+            {
+              "en": "I'm sorry to bother you",
+              "ru": "извините, что беспокою"
+            }
+          ],
+          "tags": [
+            "function_polite_questions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Wednesday at one is inside working hours.",
+          "ru": "Среда, час дня — работы ещё идут.",
+          "expr": "thinking"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Не только дрель",
+      "intro": "Голосовое Мики из общего чата и слова Рэй. Слушай сквозь шум: что звучит и где.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "В общем чате появляется голосовое Мики. На фоне гудит вентиляция, а потом кто-то берёт на трубе длинную ноту.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "I found two more sounds. Neither is us.",
+            "ru": "Нашла ещё два звука. Ни один не наш.",
+            "expr": "phone/neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u014-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "I'm near the door. They keep moving chairs behind me, and the fan is running above it. Someone is practising the trumpet upstairs too. Can you hear me? I'm coming back to the bench now.",
+          "ru": "Я возле двери. За мной всё время двигают стулья, а над дверью работает вентилятор. Наверху ещё кто-то упражняется на трубе. Вы меня слышите? Сейчас вернусь к скамейке.",
+          "questions": [
+            {
+              "prompt": "Where is Mika going?",
+              "options": [
+                "To the bench",
+                "Upstairs",
+                "To the shop"
+              ],
+              "answer": "To the bench"
+            }
+          ],
+          "tags": [
+            "listening",
+            "present_continuous",
+            "function_problem"
+          ],
+          "context": "Голосовое Мики в чате «Room 17»"
+        },
+        {
+          "id": "u014-s2-e2",
+          "type": "listening",
+          "speaker": "rei",
+          "audio": "The fan is making a steady low sound. The chairs are louder, but they stop sometimes. The trumpet is coming from an open window. Moving the microphone won't remove all three sounds.",
+          "ru": "Вентилятор ровно гудит на низкой ноте. Стулья громче, но иногда затихают. Труба звучит из открытого окна. Одной перестановкой микрофона все три звука не убрать.",
+          "questions": [
+            {
+              "prompt": "Which sound is steady?",
+              "options": [
+                "The chairs",
+                "The fan",
+                "The trumpet"
+              ],
+              "answer": "The fan"
+            }
+          ],
+          "tags": [
+            "listening",
+            "present_continuous"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Рэй во дворе"
+        },
+        {
+          "id": "u014-s2-e3",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "They keep moving chairs near the door.",
+          "answers": [
+            "They keep moving chairs near the door."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u014-s2-e4",
+          "type": "choice",
+          "prompt": "Rei: «The fan ___ a steady low sound.»",
+          "options": [
+            "is making",
+            "makes now",
+            "making"
+          ],
+          "answer": "is making",
+          "tags": [
+            "present_continuous"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Three sounds. One microphone.",
+          "ru": "Три звука. Один микрофон.",
+          "expr": "recorder/smirk"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Что происходит и что повторяется",
+      "intro": "То, что происходит: The fan is running. Становится сильнее: It's getting louder. Повторяется снова и снова: keep + -ing — They keep moving chairs. We keep hearing the same note.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Айрис записывает источники шума в отдельные строки.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "One sound can continue. Another can stop and start.",
+            "ru": "Один звук может тянуться. Другой — то стихать, то возникать снова.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u014-s3-e1",
+          "type": "choice",
+          "prompt": "The fan ___ above the door.",
+          "options": [
+            "is running",
+            "runs now",
+            "running"
+          ],
+          "answer": "is running",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Сейчас — is + -ing.",
+          "context": "Список шумов Айрис"
+        },
+        {
+          "id": "u014-s3-e2",
+          "type": "choice",
+          "prompt": "They keep ___ chairs.",
+          "options": [
+            "moving",
+            "move",
+            "to move"
+          ],
+          "answer": "moving",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Keep + -ing: всё время что-то делать.",
+          "context": "Список шумов Айрис"
+        },
+        {
+          "id": "u014-s3-e3",
+          "type": "fill",
+          "prompt": "Someone is ___ the trumpet.",
+          "answers": [
+            "practising",
+            "practicing"
+          ],
+          "hint": "practise",
+          "tags": [
+            "present_continuous"
+          ],
+          "context": "Список шумов Айрис"
+        },
+        {
+          "id": "u014-s3-e4",
+          "type": "choice",
+          "prompt": "The drill is ___ louder.",
+          "options": [
+            "getting",
+            "get",
+            "gets"
+          ],
+          "answer": "getting",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "It's getting louder — становится громче.",
+          "context": "Список шумов Айрис"
+        },
+        {
+          "id": "u014-s3-e5",
+          "type": "fill",
+          "prompt": "We keep ___ the same note.",
+          "answers": [
+            "hearing"
+          ],
+          "hint": "hear",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Keep + -ing.",
+          "context": "Список шумов Айрис"
+        },
+        {
+          "id": "u014-s3-e6",
+          "type": "choice",
+          "prompt": "The workers ___ using the drill at the moment.",
+          "options": [
+            "are not",
+            "do not",
+            "not"
+          ],
+          "answer": "are not",
+          "tags": [
+            "present_continuous"
+          ],
+          "context": "Список шумов Айрис"
+        },
+        {
+          "id": "u014-s3-e7",
+          "type": "fix",
+          "sentence": "They keep to move chairs.",
+          "answers": [
+            "They keep moving chairs."
+          ],
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "После keep — -ing.",
+          "context": "Список шумов Айрис"
+        },
+        {
+          "id": "u014-s3-e8",
+          "type": "sort",
+          "instruction": "Звук идёт сейчас или повторяется?",
+          "categories": [
+            {
+              "id": "now",
+              "label": "Идёт сейчас"
+            },
+            {
+              "id": "again",
+              "label": "Повторяется (keep + -ing)"
+            }
+          ],
+          "items": [
+            {
+              "text": "The fan is running.",
+              "category": "now"
+            },
+            {
+              "text": "Someone is practising the trumpet.",
+              "category": "now"
+            },
+            {
+              "text": "The drill is getting louder.",
+              "category": "now"
+            },
+            {
+              "text": "They keep moving chairs.",
+              "category": "again"
+            },
+            {
+              "text": "We keep hearing the same note.",
+              "category": "again"
+            },
+            {
+              "text": "The door keeps opening.",
+              "category": "again"
+            }
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Write what you hear. We don’t need to guess why.",
+          "ru": "Запиши, что слышишь. Гадать о причинах не нужно.",
+          "expr": "notebook/thinking"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Вежливая просьба",
+      "intro": "Вежливо обратиться к незнакомому: I'm sorry to bother you, but… Попросить: Could you…, please? Узнать время: When does the work finish? How long will it take? Is there a quieter time?",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Рабочий убирает дрель на стол. Мика показывает на него и опускает голос.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Let’s wait until he puts that down.",
+            "ru": "Подождём, пока он это положит.",
+            "expr": "thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u014-s4-e1",
+          "type": "choice",
+          "prompt": "I'm sorry to ___ you, but we're trying to record.",
+          "options": [
+            "bother",
+            "disturbing",
+            "worry"
+          ],
+          "answer": "bother",
+          "tags": [
+            "function_polite_questions"
+          ],
+          "explain": "I'm sorry to bother you — извините, что беспокою.",
+          "context": "Вопрос рабочему"
+        },
+        {
+          "id": "u014-s4-e2",
+          "type": "choice",
+          "prompt": "Could you tell us when the work ___, please?",
+          "options": [
+            "finishes",
+            "finish",
+            "is finish"
+          ],
+          "answer": "finishes",
+          "tags": [
+            "function_polite_questions"
+          ],
+          "explain": "When the work finishes — внутри вопроса прямой порядок слов.",
+          "context": "Вопрос рабочему"
+        },
+        {
+          "id": "u014-s4-e3",
+          "type": "fill",
+          "prompt": "Could we use this bench ___ your break?",
+          "answers": [
+            "during"
+          ],
+          "hint": "во время",
+          "tags": [
+            "function_requests"
+          ],
+          "context": "Вопрос рабочему"
+        },
+        {
+          "id": "u014-s4-e4",
+          "type": "choice",
+          "prompt": "How long ___ the noisy work take?",
+          "options": [
+            "will",
+            "is",
+            "does it"
+          ],
+          "answer": "will",
+          "tags": [
+            "function_polite_questions"
+          ],
+          "explain": "How long will it take? — сколько это займёт?",
+          "context": "Вопрос рабочему"
+        },
+        {
+          "id": "u014-s4-e5",
+          "type": "fill",
+          "prompt": "Is there a ___ time to come back?",
+          "answers": [
+            "quieter"
+          ],
+          "hint": "тише",
+          "tags": [
+            "function_polite_questions"
+          ],
+          "explain": "Quiet → quieter.",
+          "context": "Вопрос рабочему"
+        },
+        {
+          "id": "u014-s4-e6",
+          "type": "choice",
+          "prompt": "Thank you. We can come back ___ day.",
+          "options": [
+            "another",
+            "other",
+            "an other"
+          ],
+          "answer": "another",
+          "tags": [
+            "function_polite_questions"
+          ],
+          "explain": "Another day — в другой день.",
+          "context": "Вопрос рабочему"
+        },
+        {
+          "id": "u014-s4-e7",
+          "type": "fix",
+          "sentence": "Could you tell us when does the work finish?",
+          "answers": [
+            "Could you tell us when the work finishes?"
+          ],
+          "tags": [
+            "function_polite_questions"
+          ],
+          "explain": "Во вложенном вопросе — прямой порядок: when the work finishes.",
+          "context": "Вопрос рабочему"
+        },
+        {
+          "id": "u014-s4-e8",
+          "type": "transform",
+          "instruction": "Сделай вежливее: начни с Could you tell us",
+          "sentence": "When does the work finish?",
+          "answers": [
+            "Could you tell us when the work finishes?",
+            "Could you tell us when the work finishes, please?"
+          ],
+          "tags": [
+            "function_polite_questions"
+          ],
+          "context": "Вопрос рабочему"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Ask for a time. Not a miracle.",
+          "ru": "Спроси про время. Чуда не надо.",
+          "expr": "smirk"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Тихая правка",
+      "intro": "Айрис ищет, что поправить в твоей фразе, — и не находит. Ответь, как хочешь.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Вы с Айрис отходите от двери, чтобы разобрать вопрос перед разговором. Она перечитывает твою строчку.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "That sounds polite already.",
+            "ru": "Уже звучит вежливо.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u014-s5-e1",
+          "type": "scene",
+          "setting": "Вы с Айрис отходите от двери, чтобы разобрать вопрос перед разговором. Она перечитывает твою строчку.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "You're making this difficult. I was looking for something to correct.",
+              "ru": "Ты усложняешь мне задачу. Я искала, что поправить.",
+              "expr": "dry_smile"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "Then stay. I might surprise you again.",
+                "I like having you check my words."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll read the next sentence too.",
+                "ru": "Прочитаю и следующее предложение.",
+                "expr": "dry_smile"
+              },
+              "flag": "flirt_iris_014"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "I can add a mistake if you need one.",
+                "Don't worry. There is another sentence."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Let's not order extra mistakes.",
+                "ru": "Не будем заказывать дополнительные ошибки.",
+                "expr": "dry_smile"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Thanks. Shall we ask him now?",
+                "Could you check the time question too?"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Yes. That's the one we need.",
+                "ru": "Да. Он нам и нужен.",
+                "expr": "dry_smile"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_polite_questions"
+          ],
+          "context": "Непривычная пауза"
+        },
+        {
+          "id": "u014-s5-e2",
+          "type": "translate",
+          "ru": "Извините, что беспокою, но мы пытаемся записать.",
+          "answers": [
+            "I'm sorry to bother you, but we're trying to record.",
+            "Sorry to bother you, but we're trying to record.",
+            "I'm sorry to bother you, but we are trying to record."
+          ],
+          "tags": [
+            "function_polite_questions"
+          ]
+        },
+        {
+          "id": "u014-s5-e3",
+          "type": "translate",
+          "ru": "Когда заканчиваются работы?",
+          "answers": [
+            "When does the work finish?",
+            "When does the work finish, please?"
+          ],
+          "tags": [
+            "function_polite_questions"
+          ]
+        },
+        {
+          "id": "u014-s5-e4",
+          "type": "translate",
+          "ru": "Вентилятор слишком громкий.",
+          "answers": [
+            "The fan is too loud.",
+            "The ventilation fan is too loud."
+          ],
+          "tags": [
+            "function_problem"
+          ]
+        },
+        {
+          "id": "u014-s5-e5",
+          "type": "translate",
+          "ru": "Они всё время двигают стулья.",
+          "answers": [
+            "They keep moving chairs.",
+            "They keep moving the chairs."
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u014-s5-e6",
+          "type": "write",
+          "situation": "Опиши рабочему помеху и вежливо спроси, когда станет тише (два предложения).",
+          "answers": [
+            "They keep moving chairs near the microphone. Is there a quieter time to come back?",
+            "The fan is too loud. When does the work finish?",
+            "We're trying to record, but it's too loud. Could you tell us when the work finishes?",
+            "I'm sorry to bother you, but we're trying to record. How long will the noisy work take?"
+          ],
+          "tags": [
+            "function_polite_questions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "He has put the drill down. Your turn.",
+          "ru": "Он положил дрель. Твой выход.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: обратиться к рабочему",
+      "intro": "Прочитай вслух, как обратиться к рабочему.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Ты останавливаешься в нескольких шагах от рабочего. Айрис держит тетрадь наготове.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Try the opening first.",
+            "ru": "Попробуй сначала начало.",
+            "expr": "neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u014-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I'm sorry to bother you, but we're trying to record.",
+          "answers": [
+            "I'm sorry to bother you, but we're trying to record."
+          ],
+          "tags": [
+            "speaking",
+            "function_polite_questions"
+          ]
+        },
+        {
+          "id": "u014-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Could you tell us when the work finishes?",
+          "answers": [
+            "Could you tell us when the work finishes?"
+          ],
+          "tags": [
+            "speaking",
+            "function_polite_questions"
+          ]
+        },
+        {
+          "id": "u014-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "They keep moving chairs near the microphone.",
+          "answers": [
+            "They keep moving chairs near the microphone."
+          ],
+          "tags": [
+            "speaking",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u014-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Is there a quieter time to come back?",
+          "answers": [
+            "Is there a quieter time to come back?"
+          ],
+          "tags": [
+            "speaking",
+            "function_polite_questions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Short and clear. He can answer that.",
+          "ru": "Коротко и понятно. На это он сможет ответить.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: звук и просьба",
+      "intro": "Быстрый круг: звук — и вопрос к нему.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Рэй по очереди называет звуки. Ты подбираешь к каждому описание и вопрос.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Fan. Chairs. Trumpet. Your words.",
+            "ru": "Вентилятор. Стулья. Труба. Твои слова.",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u014-s7-e1",
+          "type": "write",
+          "situation": "Скажи, что вентилятор слишком громкий.",
+          "answers": [
+            "The fan is too loud.",
+            "The ventilation fan is too loud.",
+            "It's too loud. The fan is very loud."
+          ],
+          "tags": [
+            "function_problem"
+          ]
+        },
+        {
+          "id": "u014-s7-e2",
+          "type": "write",
+          "situation": "Предложи отойти от двери.",
+          "answers": [
+            "Could we move away from the door?",
+            "Can we move away from the door?",
+            "Let's move away from the door."
+          ],
+          "tags": [
+            "function_requests"
+          ]
+        },
+        {
+          "id": "u014-s7-e3",
+          "type": "write",
+          "situation": "Скажи, что всё время двигают стулья.",
+          "answers": [
+            "They keep moving chairs.",
+            "They keep moving the chairs.",
+            "Someone keeps moving chairs."
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u014-s7-e4",
+          "type": "write",
+          "situation": "Спроси, когда они закончат.",
+          "answers": [
+            "When do they finish?",
+            "When do they finish, please?",
+            "When does the work finish?"
+          ],
+          "tags": [
+            "function_polite_questions"
+          ]
+        },
+        {
+          "id": "u014-s7-e5",
+          "type": "choice",
+          "prompt": "Someone ___ upstairs.",
+          "options": [
+            "is practising",
+            "practises now",
+            "practising"
+          ],
+          "answer": "is practising",
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u014-s7-e6",
+          "type": "choice",
+          "prompt": "Could we come back ___?",
+          "options": [
+            "later",
+            "late",
+            "latest"
+          ],
+          "answer": "later",
+          "tags": [
+            "function_polite_questions"
+          ]
+        },
+        {
+          "id": "u014-s7-e7",
+          "type": "dictation",
+          "speaker": "rei",
+          "audio": "Could we come back later?",
+          "answers": [
+            "Could we come back later?"
+          ],
+          "tags": [
+            "dictation",
+            "function_polite_questions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Now ask the person with the answers.",
+          "ru": "Теперь спроси того, кто знает ответы.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Вторая попытка",
+      "role": "mission",
+      "intro": "Миссия: вторая попытка записи и разговор с рабочим.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Рабочий вытирает руки и смотрит на рекордер. У двери снова скребут ножки стульев.",
+        "lines": [
+          {
+            "speaker": "worker",
+            "text": "Are you trying to record something?",
+            "ru": "Вы пытаетесь что-то записать?"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u014-s8-e1",
+          "type": "scene",
+          "setting": "Рабочий вытирает руки и смотрит на рекордер. У двери снова скребут ножки стульев.",
+          "lines": [
+            {
+              "speaker": "worker",
+              "text": "What do you need to know?",
+              "ru": "Что вы хотите узнать?"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Узнать окончание работ",
+              "answers": [
+                "Could you tell us when the noisy work finishes?",
+                "When does the work finish, please?"
+              ],
+              "reaction": {
+                "speaker": "worker",
+                "text": "Next Wednesday at five. Then the noisy work is finished.",
+                "ru": "В следующую среду в пять. На этом шумные работы закончатся."
+              },
+              "flag": "u014_ask_finish"
+            },
+            {
+              "label": "Узнать про перерыв",
+              "answers": [
+                "Is there a short break soon?",
+                "Could we record during your break?"
+              ],
+              "reaction": {
+                "speaker": "worker",
+                "text": "We can pause the drill now. The noisy work finishes next Wednesday at five.",
+                "ru": "Можем сейчас выключить дрель. Шумные работы закончатся в следующую среду в пять."
+              },
+              "flag": "u014_ask_break"
+            }
+          ],
+          "clarify": {
+            "speaker": "worker",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?"
+          },
+          "tags": [
+            "function_polite_questions"
+          ],
+          "after": [
+            {
+              "speaker": "worker",
+              "text": "The chairs and the fan are still going. I can't promise silence today.",
+              "ru": "Стулья всё ещё двигают, вентилятор работает. Сегодня тишины не обещаю."
+            },
+            {
+              "speaker": "narrator",
+              "text": "Рэй включает короткий тест. В паузе между стульями сверху тянется нота трубы. Она снимает наушники."
+            },
+            {
+              "speaker": "rei",
+              "text": "Not today.",
+              "ru": "Сегодня не выйдет.",
+              "expr": "recorder/neutral"
+            }
+          ],
+          "context": "Спросить, когда станет тише"
+        },
+        {
+          "id": "u014-s8-e2",
+          "type": "scene",
+          "setting": "Тест не удался. Мика садится рядом на скамейку.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "You could still hear me in that voice message? I hope I was worth the effort.",
+              "ru": "Ты всё-таки расслышал меня в том голосовом? Надеюсь, старания того стоили.",
+              "expr": "happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "I'd listen to you even with the trumpet.",
+                "Your voice was the best part."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll take that. Next time, no trumpet.",
+                "ru": "Принимается. В следующий раз без трубы.",
+                "expr": "happy"
+              },
+              "flag": "flirt_mika_014"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "The trumpet almost answered for you.",
+                "It sounded like a very small concert."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Terrible tickets. No seats.",
+                "ru": "Ужасные билеты. Даже мест нет.",
+                "expr": "happy"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Yes. You were going back to the bench.",
+                "I heard you. The fan was loud, though."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Good. Next recording needs less background.",
+                "ru": "Хорошо. Для следующей записи нужно меньше шума.",
+                "expr": "happy"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "present_continuous"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "I'll tell the chat: no recording today. We'll check new times on Monday.",
+              "ru": "Напишу в чат: сегодня не записать. В понедельник выберем другое время.",
+              "expr": "phone/focused"
+            }
+          ],
+          "context": "Сквозь шум"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Next Wednesday at five. I’ve written it down.",
+          "ru": "Следующая среда, пять вечера. Записала.",
+          "expr": "notebook/focused"
+        }
+      ]
+    }
+  ]
+}

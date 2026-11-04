@@ -44,6 +44,18 @@
         "unit": "011"
       },
       "ru": "Замечает яркие красивые вещи, но умеет отказаться от покупки ради общей задачи и оставить резерв."
+    },
+    {
+      "unlock": {
+        "unit": "013"
+      },
+      "ru": "Приносит чай из дома на общие встречи."
+    },
+    {
+      "unlock": {
+        "unit": "015"
+      },
+      "ru": "По четвергам у неё занятие до пяти."
     }
   ],
   "memories": [
@@ -123,6 +135,34 @@
       },
       "en": "You took the shared list all the way to the shop: two different mugs, one roll of paper tape and two pounds for later.",
       "ru": "Вы довели общий список до покупки: две разные чашки, рулон бумажной ленты и £2 на потом."
+    },
+    {
+      "unlock": {
+        "unit": "013"
+      },
+      "en": "You heard her phone ring in the middle of an almost perfect silence.",
+      "ru": "Ты слышал, как её телефон сорвал почти удавшуюся запись тишины."
+    },
+    {
+      "unlock": {
+        "unit": "015"
+      },
+      "en": "You found another time together, and nobody had to miss a class.",
+      "ru": "Вы нашли другое время, и никто не пропустил занятия."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_mika_014"
+      },
+      "en": "You told her that her voice was the best part of that noisy message.",
+      "ru": "Ты заметил, что её всё равно приятно слушать сквозь шум."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_mika_015"
+      },
+      "en": "You called seeing her a good part of the plan.",
+      "ru": "Ты назвал встречу с ней хорошей частью плана."
     }
   ],
   "lines": [

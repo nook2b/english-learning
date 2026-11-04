@@ -44,6 +44,18 @@
         "unit": "011"
       },
       "ru": "Если старый микрофон исправен, предпочтёт подходящую подставку новому микрофону; смотрит на высоту и устойчивость."
+    },
+    {
+      "unlock": {
+        "unit": "013"
+      },
+      "ru": "Сначала записывает фон места, потом речь."
+    },
+    {
+      "unlock": {
+        "unit": "014"
+      },
+      "ru": "Отличает постоянный гул от шума, который то стихает, то возвращается."
     }
   ],
   "memories": [
@@ -109,6 +121,41 @@
       },
       "en": "In the shop you tested the height first, then the clamp. The stand you bought was right for the table.",
       "ru": "В магазине вы сначала проверили высоту, затем зажим. Купленная подставка подошла."
+    },
+    {
+      "unlock": {
+        "unit": "013"
+      },
+      "en": "She gave you the other earphone to listen to the courtyard.",
+      "ru": "Она дала тебе второй наушник послушать двор."
+    },
+    {
+      "unlock": {
+        "flag": "u016_take_students"
+      },
+      "en": "You finally recorded ten seconds of the courtyard. The sneeze came after the stop.",
+      "ru": "Вы наконец записали десять секунд двора, а чих прозвучал уже после остановки."
+    },
+    {
+      "unlock": {
+        "flag": "u016_take_sound"
+      },
+      "en": "You finally recorded ten seconds of the courtyard. The sneeze came after the stop.",
+      "ru": "Вы наконец записали десять секунд двора, а чих прозвучал уже после остановки."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_rei_013"
+      },
+      "en": "You answered her joke about the other earphone.",
+      "ru": "Ты ответил на её шутку про второй наушник."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_rei_016"
+      },
+      "en": "She listened to your recording twice, and you offered to record another one for her.",
+      "ru": "Ты поддержал её желание ещё раз послушать твою запись."
     }
   ],
   "lines": [

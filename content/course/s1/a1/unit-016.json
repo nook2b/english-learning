@@ -1,0 +1,1288 @@
+{
+  "id": "016",
+  "title": "Подтвердить и записать",
+  "goal": "Подтвердить договорённость и распределить подготовку.",
+  "focus": "Подтвердить договорённость: Just to confirm…, So we're meeting at…, right?, See you on…; распределить подготовку: I'll bring…, I'll check… — will для решений и обещаний. В занятии 7 — проверка модуля 013–016.",
+  "outcome": "В выбранное время вы записываете десять секунд фона и описание двора. Первый натурный фрагмент готов для локального гида.",
+  "expressions": [
+    "Just to confirm",
+    "We're meeting in",
+    "I'll bring",
+    "I'll check",
+    "See you on",
+    "I've got",
+    "All four here",
+    "on silent",
+    "Keep this take",
+    "Confirmed",
+    "back to our usual time",
+    "Background done"
+  ],
+  "glossary": [
+    "reminder",
+    "battery",
+    "background sound",
+    "one-off",
+    "on silent"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Напоминание",
+      "intro": "Напоминание о записи. Проверь: где, когда и что принести.",
+      "place": "room17",
+      "frame": {
+        "setting": "Четверг, четыре часа. Мика открывает общий чат. Айрис кладёт рядом тетрадь с выбранным временем.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "One reminder. Same plan.",
+            "ru": "Одно напоминание. План прежний.",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u016-s1-e1-fri",
+          "type": "reading",
+          "title": "Recording reminder",
+          "text": "Just to confirm: we are meeting in the courtyard on Friday at four. The wall work finished on Wednesday at five. Please bring the recorder, microphone and stand. Mika is bringing tea from home. Iris is bringing the short description, and Rei is checking the equipment. We need ten seconds of background sound before we record the words. Please put your phones on silent before we start. This is our one-off recording session. Next week, our regular meeting is back on Wednesday at one.",
+          "ru": "Уточним напоследок: встречаемся во дворе в пятницу в четыре. Работы на стене закончились в среду в пять. Принесите рекордер, микрофон и подставку. Мика принесёт чай из дома. Айрис принесёт короткое описание, а Рэй проверит оборудование. До записи слов нам нужны десять секунд фонового звука. Пожалуйста, заранее отключите звук телефонов. Это наша разовая встреча для записи. На следующей неделе возвращаемся к обычной встрече в среду в час.",
+          "questions": [
+            {
+              "prompt": "Where is the recording?",
+              "options": [
+                "In the courtyard",
+                "In the shop",
+                "In the library"
+              ],
+              "answer": "In the courtyard"
+            },
+            {
+              "prompt": "What happens before the words?",
+              "options": [
+                "Ten seconds of background",
+                "A song",
+                "An interview"
+              ],
+              "answer": "Ten seconds of background"
+            },
+            {
+              "prompt": "When is next week’s regular meeting?",
+              "options": [
+                "Wednesday at one",
+                "Friday at four",
+                "Saturday at eleven"
+              ],
+              "answer": "Wednesday at one"
+            }
+          ],
+          "tags": [
+            "reading",
+            "function_confirming"
+          ],
+          "ifNot": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s1-e1-sat",
+          "type": "reading",
+          "title": "Recording reminder",
+          "text": "Just to confirm: we are meeting in the courtyard on Saturday at eleven. The wall work finished on Wednesday at five. Please bring the recorder, microphone and stand. Mika is bringing tea from home. Iris is bringing the short description, and Rei is checking the equipment. We need ten seconds of background sound before we record the words. Please put your phones on silent before we start. This is our one-off recording session. Next week, our regular meeting is back on Wednesday at one.",
+          "ru": "Уточним напоследок: встречаемся во дворе в субботу в одиннадцать. Работы на стене закончились в среду в пять. Принесите рекордер, микрофон и подставку. Мика принесёт чай из дома. Айрис принесёт короткое описание, а Рэй проверит оборудование. До записи слов нам нужны десять секунд фонового звука. Пожалуйста, заранее отключите звук телефонов. Это наша разовая встреча для записи. На следующей неделе возвращаемся к обычной встрече в среду в час.",
+          "questions": [
+            {
+              "prompt": "Where is the recording?",
+              "options": [
+                "In the courtyard",
+                "In the shop",
+                "In the library"
+              ],
+              "answer": "In the courtyard"
+            },
+            {
+              "prompt": "What happens before the words?",
+              "options": [
+                "Ten seconds of background",
+                "A song",
+                "An interview"
+              ],
+              "answer": "Ten seconds of background"
+            },
+            {
+              "prompt": "When is next week’s regular meeting?",
+              "options": [
+                "Wednesday at one",
+                "Friday at four",
+                "Saturday at eleven"
+              ],
+              "answer": "Wednesday at one"
+            }
+          ],
+          "tags": [
+            "reading",
+            "function_confirming"
+          ],
+          "if": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s1-e2",
+          "type": "choice",
+          "prompt": "Mika ___ tea from home.",
+          "options": [
+            "is bringing",
+            "brings now",
+            "bring"
+          ],
+          "answer": "is bringing",
+          "tags": [
+            "future_arrangements"
+          ],
+          "explain": "Уже договорились: is bringing."
+        },
+        {
+          "id": "u016-s1-e3",
+          "type": "choice",
+          "prompt": "Please put your phones ___ silent.",
+          "options": [
+            "on",
+            "in",
+            "at"
+          ],
+          "answer": "on",
+          "tags": [
+            "function_confirming"
+          ],
+          "explain": "On silent — без звука."
+        },
+        {
+          "id": "u016-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "Just to confirm",
+              "ru": "уточню напоследок"
+            },
+            {
+              "en": "See you on…",
+              "ru": "увидимся в…"
+            },
+            {
+              "en": "ready to record",
+              "ru": "готовы записывать"
+            },
+            {
+              "en": "one more take",
+              "ru": "ещё один дубль"
+            },
+            {
+              "en": "back to our usual time",
+              "ru": "возвращаемся к обычному времени"
+            },
+            {
+              "en": "keep this version",
+              "ru": "оставить эту версию"
+            }
+          ],
+          "tags": [
+            "function_confirming"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "The courtyard. I’ve underlined it.",
+          "ru": "Во дворе. Подчеркнула.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Подтверждения",
+      "intro": "Подтверждения в общем чате и две устные реплики. Слушай: кто что сделает.",
+      "place": "room17",
+      "frame": {
+        "setting": "Под напоминанием появляются ответы. На экране три коротких сообщения.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Check the place as well.",
+            "ru": "Место тоже проверь.",
+            "expr": "neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u016-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "We're meeting in the courtyard, not in this room. I'll bring the tea from home, and I'll put my phone on silent before we start. Please remind me if I forget that last part.",
+          "ru": "Встречаемся во дворе, не в этой комнате. Принесу чай из дома и отключу звук телефона до начала. Если забуду последний пункт, напомните.",
+          "questions": [
+            {
+              "prompt": "What will Mika do before the recording?",
+              "options": [
+                "Silence her phone",
+                "Buy a microphone",
+                "Call the worker"
+              ],
+              "answer": "Silence her phone"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_confirming",
+            "function_offers"
+          ],
+          "context": "Мика в комнате 17"
+        },
+        {
+          "id": "u016-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "I've got the short text from our first attempt. I'll bring it with me, but I'll keep the notebook closed while Rei records the background. Apparently, my notebook has a voice of its own.",
+          "ru": "У меня короткий текст с первой попытки. Я принесу его, но пока Рэй пишет фон, тетрадь будет закрыта. У неё, оказывается, собственный голос.",
+          "questions": [
+            {
+              "prompt": "What will Iris keep closed?",
+              "options": [
+                "Her notebook",
+                "The gate",
+                "The recorder case"
+              ],
+              "answer": "Her notebook"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_offers"
+          ],
+          "delivery": "[dry, understated humor]",
+          "context": "Айрис в комнате 17"
+        },
+        {
+          "id": "u016-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "Just to confirm, we are meeting in the courtyard.",
+          "answers": [
+            "Just to confirm, we are meeting in the courtyard."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "function_confirming"
+          ]
+        },
+        {
+          "id": "u016-s2-e4",
+          "type": "choice",
+          "prompt": "Rei: «Confirmed. I'll ___ the recorder and bring the stand.»",
+          "options": [
+            "check",
+            "checking",
+            "to check"
+          ],
+          "answer": "check",
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "I'll + глагол без to."
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Confirmed: Friday at four, courtyard. I'll bring tea.",
+          "ru": "Подтверждаю: в пятницу в четыре, двор. Принесу чай.",
+          "expr": "phone/happy",
+          "ifNot": "u015_slot_sat11"
+        },
+        {
+          "speaker": "mika",
+          "text": "Confirmed: Saturday at eleven, courtyard. I'll bring tea.",
+          "ru": "Подтверждаю: в субботу в одиннадцать, двор. Принесу чай.",
+          "expr": "phone/happy",
+          "if": "u015_slot_sat11"
+        },
+        {
+          "speaker": "iris",
+          "text": "That works. I'll bring the text. See you on Friday.",
+          "ru": "Подходит. Принесу текст. Увидимся в пятницу.",
+          "expr": "neutral",
+          "ifNot": "u015_slot_sat11"
+        },
+        {
+          "speaker": "iris",
+          "text": "That works. I'll bring the text. See you on Saturday.",
+          "ru": "Подходит. Принесу текст. Увидимся в субботу.",
+          "expr": "neutral",
+          "if": "u015_slot_sat11"
+        },
+        {
+          "speaker": "rei",
+          "text": "Confirmed. I'll check the recorder and bring the stand.",
+          "ru": "Подтверждаю. Проверю рекордер и принесу подставку.",
+          "expr": "neutral"
+        },
+        {
+          "speaker": "rei",
+          "text": "Text, stand, silent phone. Good.",
+          "ru": "Текст, подставка, телефон без звука. Хорошо.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Так мы договорились?",
+      "intro": "Подтвердить договорённость: Just to confirm, we're meeting in the courtyard. Переспросить для верности: So we're meeting on Friday, right? Хвостик right? превращает утверждение в вопрос.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис сверяет напоминание с записью в тетради.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Confirm what we agreed. Don’t invent a new time.",
+            "ru": "Подтверди, о чём договорились. Новое время придумывать не надо.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u016-s3-e1-fri",
+          "type": "choice",
+          "prompt": "So we're meeting on Friday, ___?",
+          "options": [
+            "right",
+            "yes",
+            "OK"
+          ],
+          "answer": "right",
+          "tags": [
+            "function_confirming"
+          ],
+          "explain": "Хвостик right? — переспросить для верности.",
+          "context": "Тетрадь Айрис",
+          "ifNot": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s3-e1-sat",
+          "type": "choice",
+          "prompt": "So we're meeting on Saturday, ___?",
+          "options": [
+            "right",
+            "yes",
+            "OK"
+          ],
+          "answer": "right",
+          "tags": [
+            "function_confirming"
+          ],
+          "explain": "Хвостик right? — переспросить для верности.",
+          "context": "Тетрадь Айрис",
+          "if": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s3-e2-fri",
+          "type": "fill",
+          "prompt": "We're meeting at four, ___?",
+          "answers": [
+            "right"
+          ],
+          "tags": [
+            "function_confirming"
+          ],
+          "context": "Тетрадь Айрис",
+          "ifNot": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s3-e2-sat",
+          "type": "fill",
+          "prompt": "We're meeting at eleven, ___?",
+          "answers": [
+            "right"
+          ],
+          "tags": [
+            "function_confirming"
+          ],
+          "context": "Тетрадь Айрис",
+          "if": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s3-e3",
+          "type": "choice",
+          "prompt": "___, the meeting is in the courtyard.",
+          "options": [
+            "Just to confirm",
+            "Just confirm",
+            "To confirming"
+          ],
+          "answer": "Just to confirm",
+          "tags": [
+            "function_confirming"
+          ],
+          "explain": "Just to confirm — уточню напоследок.",
+          "context": "Тетрадь Айрис"
+        },
+        {
+          "id": "u016-s3-e4",
+          "type": "choice",
+          "prompt": "The work ___ on Wednesday.",
+          "options": [
+            "finished",
+            "finishes now",
+            "is finishing"
+          ],
+          "answer": "finished",
+          "tags": [
+            "function_confirming"
+          ],
+          "explain": "Уже закончилась — finished.",
+          "context": "Тетрадь Айрис"
+        },
+        {
+          "id": "u016-s3-e5",
+          "type": "fill",
+          "prompt": "That is ___ in the group chat.",
+          "answers": [
+            "confirmed"
+          ],
+          "hint": "подтверждено",
+          "tags": [
+            "function_confirming"
+          ],
+          "context": "Тетрадь Айрис"
+        },
+        {
+          "id": "u016-s3-e6",
+          "type": "choice",
+          "prompt": "Next week, we ___ on Wednesday at one.",
+          "options": [
+            "are meeting",
+            "meeting",
+            "meets"
+          ],
+          "answer": "are meeting",
+          "tags": [
+            "future_arrangements"
+          ],
+          "explain": "Договорённость: are meeting.",
+          "context": "Тетрадь Айрис"
+        },
+        {
+          "id": "u016-s3-e7",
+          "type": "fix",
+          "sentence": "So we meeting in the courtyard, right?",
+          "answers": [
+            "So we're meeting in the courtyard, right?",
+            "So we are meeting in the courtyard, right?"
+          ],
+          "tags": [
+            "function_confirming"
+          ],
+          "explain": "Нужен are: we're meeting.",
+          "context": "Тетрадь Айрис"
+        },
+        {
+          "id": "u016-s3-e8",
+          "type": "transform",
+          "instruction": "Переспроси для верности: добавь right?",
+          "sentence": "We're meeting in the courtyard.",
+          "answers": [
+            "We're meeting in the courtyard, right?",
+            "So we're meeting in the courtyard, right?"
+          ],
+          "tags": [
+            "function_confirming"
+          ],
+          "context": "Тетрадь Айрис"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Same time in both places. A relief.",
+          "ru": "В обоих местах одно время. Можно выдохнуть.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Я принесу, я проверю",
+      "intro": "Пообещать или взять на себя: I'll + глагол — I'll bring the recorder. I'll check the battery. Will здесь — решение в момент разговора и обещание.",
+      "place": "room17",
+      "frame": {
+        "setting": "Рэй кладёт рекордер рядом с подставкой. На листке остаются свободные строки для мелких дел.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "I’ll take the equipment. What else?",
+            "ru": "Я возьму оборудование. Что ещё?",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u016-s4-e1",
+          "type": "choice",
+          "prompt": "I ___ bring the recorder.",
+          "options": [
+            "'ll",
+            "am bring",
+            "will to"
+          ],
+          "answer": "'ll",
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "I'll + глагол — обещаю.",
+          "context": "Листок с делами на запись"
+        },
+        {
+          "id": "u016-s4-e2",
+          "type": "fill",
+          "prompt": "I'll ___ the battery.",
+          "answers": [
+            "check"
+          ],
+          "tags": [
+            "function_offers"
+          ],
+          "context": "Листок с делами на запись"
+        },
+        {
+          "id": "u016-s4-e3",
+          "type": "choice",
+          "prompt": "I'll put my phone ___ silent.",
+          "options": [
+            "on",
+            "in",
+            "to"
+          ],
+          "answer": "on",
+          "tags": [
+            "function_offers"
+          ],
+          "context": "Листок с делами на запись"
+        },
+        {
+          "id": "u016-s4-e4",
+          "type": "fill",
+          "prompt": "I'll ___ the text while you speak.",
+          "answers": [
+            "hold"
+          ],
+          "hint": "подержу",
+          "tags": [
+            "function_offers"
+          ],
+          "context": "Листок с делами на запись"
+        },
+        {
+          "id": "u016-s4-e5",
+          "type": "choice",
+          "prompt": "I'll check the sound ___ we start.",
+          "options": [
+            "before",
+            "until",
+            "since"
+          ],
+          "answer": "before",
+          "tags": [
+            "function_offers"
+          ],
+          "context": "Листок с делами на запись"
+        },
+        {
+          "id": "u016-s4-e6",
+          "type": "fill",
+          "prompt": "I'll leave the notebook ___.",
+          "answers": [
+            "closed"
+          ],
+          "hint": "закрытой",
+          "tags": [
+            "function_offers"
+          ],
+          "context": "Листок с делами на запись"
+        },
+        {
+          "id": "u016-s4-e7",
+          "type": "fix",
+          "sentence": "I'll to bring the stand.",
+          "answers": [
+            "I'll bring the stand."
+          ],
+          "tags": [
+            "function_offers"
+          ],
+          "explain": "После I'll — глагол без to.",
+          "context": "Листок с делами на запись"
+        },
+        {
+          "id": "u016-s4-e8",
+          "type": "sort",
+          "instruction": "Кто что берёт на себя?",
+          "categories": [
+            {
+              "id": "mika",
+              "label": "Мика"
+            },
+            {
+              "id": "iris",
+              "label": "Айрис"
+            },
+            {
+              "id": "rei",
+              "label": "Рэй"
+            }
+          ],
+          "items": [
+            {
+              "text": "I'll bring the tea.",
+              "category": "mika"
+            },
+            {
+              "text": "I'll put my phone on silent.",
+              "category": "mika"
+            },
+            {
+              "text": "I'll bring the text.",
+              "category": "iris"
+            },
+            {
+              "text": "I'll leave the notebook closed.",
+              "category": "iris"
+            },
+            {
+              "text": "I'll check the recorder.",
+              "category": "rei"
+            },
+            {
+              "text": "I'll bring the stand.",
+              "category": "rei"
+            }
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "I’ll bring the tea. Still no shopping required.",
+          "ru": "Принесу чай. Покупать по-прежнему ничего не нужно.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Понятно с первого раза",
+      "intro": "Рэй слушает твою пробную запись. Ответь, как хочешь.",
+      "place": "room17",
+      "frame": {
+        "setting": "Рэй прокручивает пробную запись с твоей медленной фразой. После неё слышно дрель.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Your words are clear. The wall is louder.",
+            "ru": "Слова понятные. Стена громче.",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u016-s5-e1",
+          "type": "scene",
+          "setting": "Рэй прокручивает пробную запись с твоей медленной фразой. После неё слышно дрель.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "I listened twice. Didn't need to. Wanted to.",
+              "ru": "Послушала два раза. Не потому что не поняла. Захотелось.",
+              "expr": "recorder/smirk"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "Then I'll record another one for you.",
+                "I like having you listen."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Make it clear. I'll listen.",
+                "ru": "Говори понятно. Послушаю.",
+                "expr": "recorder/smirk"
+              },
+              "flag": "flirt_rei_016"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "The drill has fans already.",
+                "Should we give the wall a microphone?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "No. It's loud enough.",
+                "ru": "Нет. Она и так громкая.",
+                "expr": "recorder/smirk"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's use the same words again.",
+                "Can we check the battery now?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Yes. Let's get ready.",
+                "ru": "Да. Давай готовиться.",
+                "expr": "recorder/smirk"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_confirming"
+          ],
+          "context": "Ещё одно прослушивание"
+        },
+        {
+          "id": "u016-s5-e2",
+          "type": "translate",
+          "ru": "Уточню напоследок: встречаемся во дворе.",
+          "answers": [
+            "Just to confirm, we're meeting in the courtyard.",
+            "Just to confirm: we're meeting in the courtyard.",
+            "Just to confirm, we are meeting in the courtyard."
+          ],
+          "tags": [
+            "function_confirming"
+          ]
+        },
+        {
+          "id": "u016-s5-e3",
+          "type": "translate",
+          "ru": "Я принесу текст.",
+          "answers": [
+            "I'll bring the text.",
+            "I will bring the text."
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u016-s5-e4",
+          "type": "translate",
+          "ru": "Я проверю батарею.",
+          "answers": [
+            "I'll check the battery.",
+            "I will check the battery."
+          ],
+          "tags": [
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u016-s5-e5",
+          "type": "translate",
+          "ru": "Значит, встречаемся в субботу, верно?",
+          "answers": [
+            "So we're meeting on Saturday, right?",
+            "So we are meeting on Saturday, right?"
+          ],
+          "tags": [
+            "function_confirming"
+          ]
+        },
+        {
+          "id": "u016-s5-e6-fri",
+          "type": "write",
+          "situation": "Подтверди место и время встречи и скажи, что ты сделаешь.",
+          "answers": [
+            "Just to confirm, we're meeting in the courtyard on Friday at four. I'll put my phone on silent.",
+            "So we're meeting in the courtyard on Friday, right? I'll bring the stand.",
+            "Just to confirm: Friday at four, in the courtyard. I'll check the battery."
+          ],
+          "tags": [
+            "function_confirming"
+          ],
+          "ifNot": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s5-e6-sat",
+          "type": "write",
+          "situation": "Подтверди место и время встречи и скажи, что ты сделаешь.",
+          "answers": [
+            "Just to confirm, we're meeting in the courtyard on Saturday at eleven. I'll put my phone on silent.",
+            "So we're meeting in the courtyard on Saturday, right? I'll bring the stand.",
+            "Just to confirm: Saturday at eleven, in the courtyard. I'll check the battery."
+          ],
+          "tags": [
+            "function_confirming"
+          ],
+          "if": "u015_slot_sat11"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "The words can stay. New recording.",
+          "ru": "Слова оставим. Запись сделаем новую.",
+          "expr": "recorder/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: всё подтвердить",
+      "intro": "Прочитай вслух своё подтверждение.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика держит телефон с напоминанием. Ты сверяешь с ним свой ответ.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Your confirmation, then we’re done.",
+            "ru": "Твоё подтверждение — и закончили.",
+            "expr": "phone/happy"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u016-s6-e1-fri",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Just to confirm, we are meeting on Friday at four.",
+          "answers": [
+            "Just to confirm, we are meeting on Friday at four."
+          ],
+          "tags": [
+            "speaking",
+            "function_confirming"
+          ],
+          "ifNot": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s6-e1-sat",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Just to confirm, we are meeting on Saturday at eleven.",
+          "answers": [
+            "Just to confirm, we are meeting on Saturday at eleven."
+          ],
+          "tags": [
+            "speaking",
+            "function_confirming"
+          ],
+          "if": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "We are meeting in the courtyard.",
+          "answers": [
+            "We are meeting in the courtyard."
+          ],
+          "tags": [
+            "speaking",
+            "function_confirming"
+          ]
+        },
+        {
+          "id": "u016-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I'll put my phone on silent.",
+          "answers": [
+            "I'll put my phone on silent."
+          ],
+          "tags": [
+            "speaking",
+            "function_offers"
+          ]
+        },
+        {
+          "id": "u016-s6-e4-fri",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "See you on Friday.",
+          "answers": [
+            "See you on Friday."
+          ],
+          "tags": [
+            "speaking",
+            "function_confirming"
+          ],
+          "ifNot": "u015_slot_sat11"
+        },
+        {
+          "id": "u016-s6-e4-sat",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "See you on Saturday.",
+          "answers": [
+            "See you on Saturday."
+          ],
+          "tags": [
+            "speaking",
+            "function_confirming"
+          ],
+          "if": "u015_slot_sat11"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "That matches the notebook.",
+          "ru": "Совпадает с тетрадью.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Проверка модуля: запись в саду",
+      "intro": "Проверка всего модуля на новом материале: обычно и сейчас, вежливый вопрос, перенос и подтверждение.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис кладёт на стол карточку с вымышленным садом и расписанием клуба.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "A different place. Same problem: people need a clear plan.",
+            "ru": "Другое место. Та же задача: людям нужен понятный план.",
+            "expr": "notebook/focused"
+          },
+          {
+            "speaker": "iris",
+            "text": "Which day and time do you mean?",
+            "ru": "Какой день и время ты имеешь в виду?",
+            "expr": "listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u016-s7-e1",
+          "type": "write",
+          "situation": "Другой клуб, другое место. Школьный сад вымышленного языкового клуба: обычно там читают, сегодня стригут траву. Клуб собирается во вторник в два, стрижка закончится во вторник в четыре. Элла занята в среду до трёх, Том свободен после двух. Всем подходит среда в половине четвёртого. Для записи нужны телефон и лист с текстом. Опиши сад: как обычно и что сейчас.",
+          "answers": [
+            "People usually read here. Today, someone is cutting the grass.",
+            "It is usually quiet, but they are cutting the grass now.",
+            "People usually read in the garden. Right now, someone is cutting the grass."
+          ],
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u016-s7-e2",
+          "type": "write",
+          "situation": "Вежливо узнай у садовника, когда закончится работа.",
+          "answers": [
+            "Could you tell us when the work finishes?",
+            "When does the work finish, please?",
+            "I'm sorry to bother you, but when does the work finish?"
+          ],
+          "tags": [
+            "function_polite_questions"
+          ]
+        },
+        {
+          "id": "u016-s7-e3",
+          "type": "write",
+          "situation": "Отклони вторник в два и предложи среду в половине четвёртого.",
+          "answers": [
+            "I'm afraid we can't record on Tuesday at two. How about Wednesday at half past three?",
+            "Tuesday at two is too noisy. Can we meet on Wednesday at three thirty?",
+            "We can't record on Tuesday at two. How about Wednesday at three thirty?"
+          ],
+          "tags": [
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u016-s7-e4",
+          "type": "write",
+          "situation": "Подтверди место и время и скажи, что принесёшь.",
+          "answers": [
+            "We're meeting in the garden on Wednesday at three thirty. I'll bring the text.",
+            "Just to confirm: Wednesday at half past three, in the garden. I'll bring my phone.",
+            "So we're meeting in the garden on Wednesday at half past three, right? I'll bring the text."
+          ],
+          "tags": [
+            "function_confirming"
+          ]
+        },
+        {
+          "id": "u016-s7-e5",
+          "type": "choice",
+          "prompt": "In the garden, people usually ___.",
+          "options": [
+            "read",
+            "are reading",
+            "reads"
+          ],
+          "answer": "read",
+          "tags": [
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u016-s7-e6",
+          "type": "choice",
+          "prompt": "Today, someone ___ the grass.",
+          "options": [
+            "is cutting",
+            "cuts",
+            "cut"
+          ],
+          "answer": "is cutting",
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u016-s7-e7",
+          "type": "choice",
+          "prompt": "Ella ___ on Wednesday until three.",
+          "options": [
+            "is busy",
+            "busy",
+            "is busying"
+          ],
+          "answer": "is busy",
+          "tags": [
+            "future_arrangements"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "They can find each other. That’s a plan.",
+          "ru": "Они смогут найти друг друга. Значит, договорились.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Получилось",
+      "role": "mission",
+      "intro": "Миссия: в выбранное время записать десять секунд двора и твою строчку.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Наступает выбранный день. На стене больше нет стремянки. Мика ставит чай на скамейку, Айрис держит текст. Рэй проверяет подставку.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "All four here. And no drill.",
+            "ru": "Все четверо здесь. И дрели нет.",
+            "expr": "happy"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u016-s8-e1",
+          "type": "scene",
+          "setting": "Наступает выбранный день. Стремянки у стены больше нет. Мика ставит чай на скамейку, Айрис держит текст, Рэй проверяет подставку.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Before I press record: what will you check?",
+              "ru": "Прежде чем нажму запись: что проверишь ты?",
+              "expr": "recorder/listening"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Проверить телефоны",
+              "answers": [
+                "I'll check that our phones are on silent.",
+                "I'll remind everyone to silence their phones."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Good. Including Mika's.",
+                "ru": "Хорошо. И на телефоне Мики тоже.",
+                "expr": "recorder/listening"
+              },
+              "flag": "u016_check_phones"
+            },
+            {
+              "label": "Проверить фон",
+              "answers": [
+                "I'll listen for background noise.",
+                "I'll check that the courtyard is quiet enough."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Good. I'll check the phones.",
+                "ru": "Хорошо. Телефоны проверю я.",
+                "expr": "recorder/listening"
+              },
+              "flag": "u016_check_background"
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_confirming",
+            "function_offers"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "Already on silent. I remember.",
+              "ru": "Уже без звука. Я помню.",
+              "expr": "phone/happy"
+            },
+            {
+              "speaker": "iris",
+              "text": "Notebook closed. Also remembered.",
+              "ru": "Тетрадь закрыта. Тоже помню.",
+              "expr": "dry_smile"
+            },
+            {
+              "speaker": "narrator",
+              "text": "Рэй поднимает палец. Вы молчите десять секунд. Слышно ветер в листьях и далёкие шаги. Она опускает руку."
+            },
+            {
+              "speaker": "rei",
+              "text": "Background done. Now your line.",
+              "ru": "Фон есть. Теперь твоя строчка.",
+              "expr": "recorder/focused"
+            }
+          ],
+          "context": "Последняя проверка"
+        },
+        {
+          "id": "u016-s8-e2",
+          "type": "scene",
+          "setting": "Фон записан: десять секунд ветра в листьях и далёких шагов. Теперь — твоя строчка.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Keep the usual courtyard and this quiet moment in the description.",
+              "ru": "Скажи, какой двор обычно и какой он сейчас, когда тихо.",
+              "expr": "recorder/listening"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Сказать о студентах",
+              "answers": [
+                "Students usually study here. Right now, we're recording a guide.",
+                "Students usually read here. Today, we're making a recording."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Clear. Keep this take.",
+                "ru": "Понятно. Этот дубль оставим.",
+                "expr": "recorder/listening"
+              },
+              "flag": "u016_take_students"
+            },
+            {
+              "label": "Сказать о звуке",
+              "answers": [
+                "It is usually quiet here. Today, you can hear the wind in the trees.",
+                "It's usually quiet. Right now, the wind is moving the leaves."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Clear. Keep this take.",
+                "ru": "Понятно. Этот дубль оставим.",
+                "expr": "recorder/listening"
+              },
+              "flag": "u016_take_sound"
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "after": [
+            {
+              "speaker": "narrator",
+              "text": "Рэй останавливает запись. Где-то вдалеке кто-то чихает."
+            },
+            {
+              "speaker": "mika",
+              "text": "Did that get in?",
+              "ru": "Это попало в запись?",
+              "expr": "surprised"
+            },
+            {
+              "speaker": "rei",
+              "text": "After the end. The academy is alive. Breaking news.",
+              "ru": "После конца. Академия живая. Сенсация.",
+              "expr": "recorder/smirk"
+            },
+            {
+              "speaker": "iris",
+              "text": "Then we can keep the courtyard.",
+              "ru": "Тогда двор можно оставить.",
+              "expr": "notebook/dry_smile"
+            }
+          ],
+          "context": "Фрагмент для гида"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Next Wednesday at one. Back to our usual time. I'll bring tea again.",
+          "ru": "В следующую среду в час. Возвращаемся к обычному времени. Снова принесу чай.",
+          "expr": "phone/happy"
+        }
+      ]
+    }
+  ]
+}

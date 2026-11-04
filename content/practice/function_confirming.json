@@ -1,0 +1,144 @@
+{
+ "tag": "function_confirming",
+ "items": [
+  {
+   "unit": "016",
+   "exercise": {
+    "id": "p-function_confirming-01",
+    "type": "choice",
+    "prompt": "___, the bus leaves at nine.",
+    "options": [
+     "Just to confirm",
+     "Just confirm",
+     "To confirming"
+    ],
+    "answer": "Just to confirm",
+    "tags": [
+     "function_confirming"
+    ]
+   }
+  },
+  {
+   "unit": "016",
+   "exercise": {
+    "id": "p-function_confirming-02",
+    "type": "choice",
+    "prompt": "So we're meeting at the station, ___?",
+    "options": [
+     "right",
+     "yes",
+     "no"
+    ],
+    "answer": "right",
+    "tags": [
+     "function_confirming"
+    ]
+   }
+  },
+  {
+   "unit": "016",
+   "exercise": {
+    "id": "p-function_confirming-03",
+    "type": "choice",
+    "prompt": "See you ___ Friday!",
+    "options": [
+     "on",
+     "in",
+     "at"
+    ],
+    "answer": "on",
+    "tags": [
+     "function_confirming"
+    ]
+   }
+  },
+  {
+   "unit": "016",
+   "exercise": {
+    "id": "p-function_confirming-04",
+    "type": "fill",
+    "prompt": "That's ___. I've written it down.",
+    "answers": [
+     "confirmed"
+    ],
+    "tags": [
+     "function_confirming"
+    ]
+   }
+  },
+  {
+   "unit": "016",
+   "exercise": {
+    "id": "p-function_confirming-05",
+    "type": "fill",
+    "prompt": "I'll ___ the tickets. You bring the snacks.",
+    "answers": [
+     "bring",
+     "buy",
+     "get"
+    ],
+    "tags": [
+     "function_confirming"
+    ]
+   }
+  },
+  {
+   "unit": "016",
+   "exercise": {
+    "id": "p-function_confirming-06",
+    "type": "fill",
+    "prompt": "So the class is in Room 17, ___?",
+    "answers": [
+     "right"
+    ],
+    "tags": [
+     "function_confirming"
+    ]
+   }
+  },
+  {
+   "unit": "016",
+   "exercise": {
+    "id": "p-function_confirming-07",
+    "type": "transform",
+    "instruction": "Переспроси для верности: добавь right?",
+    "sentence": "We're meeting at four.",
+    "answers": [
+     "We're meeting at four, right?",
+     "So we're meeting at four, right?"
+    ],
+    "tags": [
+     "function_confirming"
+    ]
+   }
+  },
+  {
+   "unit": "016",
+   "exercise": {
+    "id": "p-function_confirming-08",
+    "type": "fix",
+    "sentence": "Just for confirm, the meeting is at two.",
+    "answers": [
+     "Just to confirm, the meeting is at two."
+    ],
+    "tags": [
+     "function_confirming"
+    ]
+   }
+  },
+  {
+   "unit": "016",
+   "exercise": {
+    "id": "p-function_confirming-09",
+    "type": "fix",
+    "sentence": "I'll to check the room.",
+    "answers": [
+     "I'll check the room."
+    ],
+    "tags": [
+     "function_confirming"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,1197 @@
+{
+  "id": "013",
+  "title": "Обычно и сейчас",
+  "goal": "Различить обычное положение дел и то, что происходит сейчас.",
+  "focus": "Обычно и сейчас: Present Simple для привычного (usually, every Wednesday) и Present Continuous для того, что происходит сейчас (right now, at the moment, today).",
+  "outcome": "Описание двора записано на пробу, но дрель перекрывает голос. Вы назначаете вторую попытку на пятницу после занятий.",
+  "expressions": [
+    "usually",
+    "right now",
+    "at the moment",
+    "today",
+    "every Wednesday",
+    "It's usually quiet",
+    "We're recording",
+    "They're repairing the wall",
+    "Can you hear",
+    "ten seconds",
+    "in the background",
+    "Let's try again"
+  ],
+  "glossary": [
+    "courtyard",
+    "drill",
+    "ladder",
+    "benches",
+    "earphone",
+    "take"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "У окна во двор",
+      "intro": "Заметки о дворе. Прочитай и раздели: что здесь бывает обычно, а что происходит сегодня.",
+      "place": "room17",
+      "frame": {
+        "setting": "Среда, час дня. Мика ставит чай рядом с двумя чашками. Айрис кладёт печенье на стол, Рэй достаёт бутылку воды. За окном гремит металл.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Tea first, courtyard next. I brought enough for four.",
+            "ru": "Сначала чай, потом двор. Я принесла на четверых.",
+            "expr": "phone/happy"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u013-s1-e1",
+          "type": "reading",
+          "title": "Courtyard notes",
+          "text": "Students usually use the courtyard between classes. Some eat lunch on the benches, and others read or talk near the wall. It is usually quiet during lessons. Today, workers are repairing part of the wall. They are using a drill, and their tools are lying beside a ladder. We are checking the sound before we record a short guide. We need an honest description of the place. The guide should help new students understand what they can usually do here and what is happening today.",
+          "ru": "Между занятиями студенты обычно проводят время во дворе. Кто-то обедает на скамейках, другие читают или разговаривают у стены. Во время занятий здесь обычно тихо. Сегодня рабочие ремонтируют часть стены. Они пользуются дрелью, а рядом со стремянкой лежат инструменты. Перед записью короткого фрагмента гида мы проверяем звук. Нам нужно правдивое описание места. Гид должен помочь новичкам понять, что здесь обычно можно делать и что происходит сегодня.",
+          "questions": [
+            {
+              "prompt": "What do students usually do here?",
+              "options": [
+                "Read and eat",
+                "Repair walls",
+                "Sell tools"
+              ],
+              "answer": "Read and eat"
+            },
+            {
+              "prompt": "What is happening today?",
+              "options": [
+                "An exam",
+                "Wall repairs",
+                "A concert"
+              ],
+              "answer": "Wall repairs"
+            },
+            {
+              "prompt": "Where are the tools?",
+              "options": [
+                "Beside a ladder",
+                "In Room 17",
+                "Under a bench"
+              ],
+              "answer": "Beside a ladder"
+            }
+          ],
+          "tags": [
+            "reading",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u013-s1-e2",
+          "type": "choice",
+          "prompt": "Students ___ use the courtyard between classes.",
+          "options": [
+            "usually",
+            "are usually",
+            "usually are"
+          ],
+          "answer": "usually",
+          "tags": [
+            "present_simple"
+          ],
+          "explain": "Наречие частоты — перед глаголом: usually use."
+        },
+        {
+          "id": "u013-s1-e3",
+          "type": "choice",
+          "prompt": "Today, workers ___ part of the wall.",
+          "options": [
+            "are repairing",
+            "repair",
+            "repairs"
+          ],
+          "answer": "are repairing",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Сегодня, прямо сейчас — Present Continuous."
+        },
+        {
+          "id": "u013-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "usually",
+              "ru": "обычно"
+            },
+            {
+              "en": "right now",
+              "ru": "прямо сейчас"
+            },
+            {
+              "en": "at the moment",
+              "ru": "в данный момент"
+            },
+            {
+              "en": "every Wednesday",
+              "ru": "каждую среду"
+            },
+            {
+              "en": "in the background",
+              "ru": "на фоне"
+            },
+            {
+              "en": "Let's try again",
+              "ru": "давай попробуем ещё раз"
+            }
+          ],
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Keep both parts: the usual courtyard and today’s courtyard.",
+          "ru": "Оставим обе части: какой двор обычно и какой он сегодня.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Послушай эту тишину",
+      "intro": "Голосовое Рэй в общем чате и слова Айрис. Слушай без текста: обычно или сейчас?",
+      "place": "courtyard",
+      "frame": {
+        "setting": "У стены стоит стремянка. Рэй отправляет в общий чат запись двора, а потом фотографирует инструменты.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Listen. This is our quiet courtyard.",
+            "ru": "Послушай. Вот наш тихий двор.",
+            "expr": "recorder/smirk"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u013-s2-e1",
+          "type": "listening",
+          "speaker": "rei",
+          "audio": "Listen. This is our quiet courtyard. Usually, you can hear people talking near the benches. Right now, the drill is louder than everyone. I'm standing by the wall, with the recorder facing the middle.",
+          "ru": "Послушайте. Вот наш тихий двор. Обычно слышно, как у скамеек разговаривают люди. Сейчас дрель громче всех. Я стою у стены, рекордер направлен в центр двора.",
+          "questions": [
+            {
+              "prompt": "What is loudest right now?",
+              "options": [
+                "The drill",
+                "Students",
+                "Music"
+              ],
+              "answer": "The drill"
+            }
+          ],
+          "tags": [
+            "listening",
+            "contrast_ps_pc"
+          ],
+          "context": "Голосовое Рэй в чате «Room 17»"
+        },
+        {
+          "id": "u013-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "I usually take notes in the library, but today I'm writing outside. These notes are for the courtyard page. Please don't describe it as silent. Someone may believe us and bring a book.",
+          "ru": "Обычно я делаю заметки в библиотеке, но сегодня пишу на улице. Это заметки для страницы про двор. Только не называй его бесшумным. Кто-нибудь поверит и придёт с книжкой.",
+          "questions": [
+            {
+              "prompt": "Where is Iris writing today?",
+              "options": [
+                "In the library",
+                "Outside",
+                "In a shop"
+              ],
+              "answer": "Outside"
+            }
+          ],
+          "tags": [
+            "listening",
+            "contrast_ps_pc"
+          ],
+          "delivery": "[dry, understated humor]",
+          "context": "Айрис во дворе"
+        },
+        {
+          "id": "u013-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "It is usually quiet, but today they are repairing the wall.",
+          "answers": [
+            "It is usually quiet, but today they are repairing the wall."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u013-s2-e4",
+          "type": "choice",
+          "prompt": "Rei: «Right now, the drill ___ louder than everyone.»",
+          "options": [
+            "is",
+            "are",
+            "be"
+          ],
+          "answer": "is",
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "explain": "The drill is louder — сейчас."
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "We have a very clear drill.",
+          "ru": "Дрель записалась отлично.",
+          "expr": "recorder/smirk"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Каждую среду",
+      "intro": "Present Simple — то, что бывает обычно или регулярно: Students usually read here. We meet every Wednesday. Отрицание и вопрос — с do / does: It doesn't usually sound like this. Does it get busy?",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Айрис делит страницу тетради на две колонки: «обычно» и «сейчас».",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Start with what happens regularly.",
+            "ru": "Начни с того, что происходит регулярно.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u013-s3-e1",
+          "type": "choice",
+          "prompt": "Students usually ___ here.",
+          "options": [
+            "read",
+            "reads",
+            "are reading"
+          ],
+          "answer": "read",
+          "tags": [
+            "present_simple"
+          ],
+          "explain": "Обычно — Present Simple; students — без -s.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s3-e2",
+          "type": "fill",
+          "prompt": "We meet ___ Wednesday.",
+          "answers": [
+            "every"
+          ],
+          "hint": "каждую",
+          "tags": [
+            "present_simple"
+          ],
+          "explain": "Every Wednesday — каждую среду.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s3-e3",
+          "type": "choice",
+          "prompt": "Rei ___ the sound before each recording.",
+          "options": [
+            "checks",
+            "check",
+            "is check"
+          ],
+          "answer": "checks",
+          "tags": [
+            "present_simple"
+          ],
+          "explain": "She / he — глагол с -s.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s3-e4",
+          "type": "choice",
+          "prompt": "Mika ___ brings her phone.",
+          "options": [
+            "usually",
+            "is usually",
+            "usual"
+          ],
+          "answer": "usually",
+          "tags": [
+            "present_simple"
+          ],
+          "explain": "Usually — перед смысловым глаголом.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s3-e5",
+          "type": "fill",
+          "prompt": "___ the courtyard get busy at lunch?",
+          "answers": [
+            "Does"
+          ],
+          "tags": [
+            "present_simple"
+          ],
+          "explain": "Вопрос в Present Simple: Does + подлежащее + глагол.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s3-e6",
+          "type": "choice",
+          "prompt": "It ___ usually sound like this.",
+          "options": [
+            "doesn't",
+            "isn't",
+            "don't"
+          ],
+          "answer": "doesn't",
+          "tags": [
+            "present_simple"
+          ],
+          "explain": "Отрицание: doesn't + глагол без -s.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s3-e7",
+          "type": "fix",
+          "sentence": "Rei check the sound before each recording.",
+          "answers": [
+            "Rei checks the sound before each recording."
+          ],
+          "tags": [
+            "present_simple"
+          ],
+          "explain": "Rei — she: checks.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s3-e8",
+          "type": "transform",
+          "instruction": "Сделай вопрос",
+          "sentence": "Students usually read here.",
+          "answers": [
+            "Do students usually read here?"
+          ],
+          "tags": [
+            "present_simple"
+          ],
+          "explain": "Do + students + usually + read?",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "That is the usual day. Now listen to this one.",
+          "ru": "Это обычный день. А теперь послушай сегодняшний.",
+          "expr": "notebook/thinking"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Сегодня у стены",
+      "intro": "Present Continuous — то, что происходит сейчас: am / is / are + -ing. Workers are repairing the wall. Are they using the drill now? Слова-подсказки: now, right now, at the moment, today.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Дрель ненадолго замолкает. Рэй показывает на стену, затем на рекордер.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "What is happening now?",
+            "ru": "Что происходит сейчас?",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u013-s4-e1",
+          "type": "choice",
+          "prompt": "Workers ___ the wall.",
+          "options": [
+            "are repairing",
+            "repair",
+            "is repairing"
+          ],
+          "answer": "are repairing",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Сейчас: are + -ing.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s4-e2",
+          "type": "fill",
+          "prompt": "We are ___ the recorder.",
+          "answers": [
+            "testing"
+          ],
+          "hint": "test",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Are + testing.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s4-e3",
+          "type": "choice",
+          "prompt": "Mika ___ her phone away.",
+          "options": [
+            "is putting",
+            "puts",
+            "are putting"
+          ],
+          "answer": "is putting",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Mika — is + -ing.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s4-e4",
+          "type": "choice",
+          "prompt": "Iris ___ outside today.",
+          "options": [
+            "is writing",
+            "writes",
+            "writing"
+          ],
+          "answer": "is writing",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Today — то, что происходит в этот раз.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s4-e5",
+          "type": "fill",
+          "prompt": "___ they using the drill now?",
+          "answers": [
+            "Are"
+          ],
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Вопрос: Are + they + -ing?",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s4-e6",
+          "type": "choice",
+          "prompt": "We ___ recording the final version yet.",
+          "options": [
+            "are not",
+            "do not",
+            "not"
+          ],
+          "answer": "are not",
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Отрицание: are not + -ing.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s4-e7",
+          "type": "fix",
+          "sentence": "They repairing the wall right now.",
+          "answers": [
+            "They are repairing the wall right now.",
+            "They're repairing the wall right now."
+          ],
+          "tags": [
+            "present_continuous"
+          ],
+          "explain": "Нужен are: are repairing.",
+          "context": "Тетрадь Айрис: «обычно» и «сейчас»"
+        },
+        {
+          "id": "u013-s4-e8",
+          "type": "sort",
+          "instruction": "Обычно или сейчас?",
+          "categories": [
+            {
+              "id": "ps",
+              "label": "Обычно (Present Simple)"
+            },
+            {
+              "id": "pc",
+              "label": "Сейчас (Present Continuous)"
+            }
+          ],
+          "items": [
+            {
+              "text": "Students read here.",
+              "category": "ps"
+            },
+            {
+              "text": "We meet every Wednesday.",
+              "category": "ps"
+            },
+            {
+              "text": "Rei checks the sound.",
+              "category": "ps"
+            },
+            {
+              "text": "Workers are repairing the wall.",
+              "category": "pc"
+            },
+            {
+              "text": "We are testing the recorder.",
+              "category": "pc"
+            },
+            {
+              "text": "Iris is writing outside today.",
+              "category": "pc"
+            }
+          ],
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Good. Nobody is repairing the recorder.",
+          "ru": "Хорошо. Рекордер никто не ремонтирует.",
+          "expr": "recorder/smirk"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Второй наушник",
+      "intro": "Рэй даёт тебе второй наушник. Ответь — как хочешь.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Рэй протягивает тебе свободный наушник. Мика и Айрис сверяют заметки у скамейки.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Try this one.",
+            "ru": "Попробуй этот.",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u013-s5-e1",
+          "type": "scene",
+          "setting": "Рэй протягивает тебе свободный наушник. Мика и Айрис сверяют заметки у скамейки.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "You can use the other earphone. Only for the test. Don't get used to it.",
+              "ru": "Можешь взять второй наушник. Только для проверки. Не привыкай.",
+              "expr": "recorder/smirk"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "Too late. I like listening with you.",
+                "Good sound. Better company."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Then listen carefully.",
+                "ru": "Тогда слушай внимательно.",
+                "expr": "recorder/smirk"
+              },
+              "flag": "flirt_rei_013"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "Does the drill get an earphone too?",
+                "The drill sounds very confident."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "It doesn't need one.",
+                "ru": "Ей не нужен.",
+                "expr": "recorder/smirk"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Thanks. I can hear the drill.",
+                "The voice is too quiet."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Yes. That's the problem.",
+                "ru": "Да. В этом и проблема.",
+                "expr": "recorder/smirk"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "context": "Только для проверки"
+        },
+        {
+          "id": "u013-s5-e2",
+          "type": "translate",
+          "ru": "Обычно здесь тихо.",
+          "answers": [
+            "It's usually quiet here.",
+            "It is usually quiet here."
+          ],
+          "tags": [
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u013-s5-e3",
+          "type": "translate",
+          "ru": "Сейчас рабочие ремонтируют стену.",
+          "answers": [
+            "Right now, workers are repairing the wall.",
+            "Workers are repairing the wall right now.",
+            "Right now the workers are repairing the wall."
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u013-s5-e4",
+          "type": "translate",
+          "ru": "Ты слышишь дрель?",
+          "answers": [
+            "Can you hear the drill?"
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u013-s5-e5",
+          "type": "translate",
+          "ru": "Мы записываем.",
+          "answers": [
+            "We're recording.",
+            "We are recording."
+          ],
+          "tags": [
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u013-s5-e6",
+          "type": "write",
+          "situation": "Опиши двор: как здесь обычно и что происходит сейчас (два предложения).",
+          "answers": [
+            "Students usually study here. Right now, workers are repairing the wall.",
+            "It's usually quiet here. Today, it's noisy.",
+            "Students usually read here. Today, workers are repairing the wall.",
+            "It is usually quiet here, but today the workers are using a drill."
+          ],
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "We need a quieter moment.",
+          "ru": "Нужен момент потише.",
+          "expr": "recorder/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: два двора",
+      "intro": "Прочитай вслух два двора: обычный и сегодняшний.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Айрис держит перед тобой карточку. Рэй пока не включает запись.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Try both sentences together. You can take your time.",
+            "ru": "Попробуй сказать оба предложения вместе. Не спеши.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u013-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Students usually study here.",
+          "answers": [
+            "Students usually study here."
+          ],
+          "tags": [
+            "speaking",
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u013-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Right now, workers are repairing the wall.",
+          "answers": [
+            "Right now, workers are repairing the wall."
+          ],
+          "tags": [
+            "speaking",
+            "present_continuous"
+          ]
+        },
+        {
+          "id": "u013-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "It is usually quiet here.",
+          "answers": [
+            "It is usually quiet here."
+          ],
+          "tags": [
+            "speaking",
+            "present_simple"
+          ]
+        },
+        {
+          "id": "u013-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Today, it is noisy.",
+          "answers": [
+            "Today, it is noisy."
+          ],
+          "tags": [
+            "speaking",
+            "present_continuous"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "I can hear the difference between usually and now.",
+          "ru": "Слышно, где «обычно», а где «сейчас».",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: что слышно",
+      "intro": "Быстрый круг: обычно или прямо сейчас?",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Рэй показывает по очереди на скамейку, стену и рекордер. Айрис держит карточки со словами времени.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Usually or right now?",
+            "ru": "Обычно или прямо сейчас?",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u013-s7-e1",
+          "type": "choice",
+          "prompt": "Every Wednesday: we ___ here.",
+          "options": [
+            "meet",
+            "are meeting",
+            "meets"
+          ],
+          "answer": "meet",
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "explain": "Каждую среду — Present Simple."
+        },
+        {
+          "id": "u013-s7-e2",
+          "type": "choice",
+          "prompt": "Right now: we ___.",
+          "options": [
+            "are waiting",
+            "wait",
+            "waits"
+          ],
+          "answer": "are waiting",
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "explain": "Прямо сейчас — Present Continuous."
+        },
+        {
+          "id": "u013-s7-e3",
+          "type": "fill",
+          "prompt": "Usually: students ___ on these benches.",
+          "answers": [
+            "sit"
+          ],
+          "hint": "sit",
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u013-s7-e4",
+          "type": "choice",
+          "prompt": "Today: the drill ___ a lot of noise.",
+          "options": [
+            "is making",
+            "makes",
+            "make"
+          ],
+          "answer": "is making",
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u013-s7-e5",
+          "type": "fill",
+          "prompt": "At the moment: Iris is ___ the cards.",
+          "answers": [
+            "holding"
+          ],
+          "hint": "hold",
+          "tags": [
+            "contrast_ps_pc"
+          ]
+        },
+        {
+          "id": "u013-s7-e6",
+          "type": "choice",
+          "prompt": "Before each recording: Rei ___ the sound.",
+          "options": [
+            "checks",
+            "is checking",
+            "check"
+          ],
+          "answer": "checks",
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "explain": "Перед каждой записью — регулярно."
+        },
+        {
+          "id": "u013-s7-e7",
+          "type": "dictation",
+          "speaker": "rei",
+          "audio": "Before each recording, Rei checks the sound.",
+          "answers": [
+            "Before each recording, Rei checks the sound."
+          ],
+          "tags": [
+            "dictation",
+            "present_simple"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Ready? Ten seconds. Surely we can manage ten.",
+          "ru": "Готовы? Десять секунд. Уж десять-то мы осилим.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Десять секунд тишины",
+      "role": "mission",
+      "intro": "Миссия: записать десять секунд тишины и строчку о дворе.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Рэй ставит рекордер на подставку. Айрис раскрывает тетрадь. Мика оглядывает двор.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "It's usually quiet here.",
+            "ru": "Здесь обычно тихо.",
+            "expr": "neutral"
+          },
+          {
+            "speaker": "narrator",
+            "text": "За стеной включается дрель."
+          },
+          {
+            "speaker": "rei",
+            "text": "Usually. Useful word. Saves our reputation.",
+            "ru": "«Обычно». Полезное слово. Спасает репутацию.",
+            "expr": "recorder/smirk"
+          },
+          {
+            "speaker": "iris",
+            "text": "Shall we record somewhere else?",
+            "ru": "Может, запишем в другом месте?",
+            "expr": "notebook/thinking"
+          },
+          {
+            "speaker": "rei",
+            "text": "I need ten seconds here. Nobody talking.",
+            "ru": "Нужно десять секунд здесь. Без разговоров.",
+            "expr": "recorder/focused"
+          },
+          {
+            "speaker": "mika",
+            "text": "Why record silence?",
+            "ru": "Зачем записывать тишину?",
+            "expr": "thinking"
+          },
+          {
+            "speaker": "rei",
+            "text": "For the gaps where you breathe.",
+            "ru": "Для пауз, когда ты вдыхаешь.",
+            "expr": "recorder/smirk"
+          },
+          {
+            "speaker": "mika",
+            "text": "My breathing has character.",
+            "ru": "У моих вдохов есть характер.",
+            "expr": "happy"
+          },
+          {
+            "speaker": "narrator",
+            "text": "Рэй поднимает палец. На шестой секунде у Мики звонит телефон. Она торопливо выключает звук."
+          },
+          {
+            "speaker": "mika",
+            "text": "Sorry. Again.",
+            "ru": "Простите. Ещё раз.",
+            "expr": "phone/embarrassed"
+          },
+          {
+            "speaker": "narrator",
+            "text": "На четвёртой секунде Айрис закрывает тетрадь. Переплёт громко скрипит."
+          },
+          {
+            "speaker": "iris",
+            "text": "I'm starting to understand your job.",
+            "ru": "Начинаю понимать, какая у тебя работа.",
+            "expr": "notebook/dry_smile"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u013-s8-e1",
+          "type": "scene",
+          "setting": "Десять секунд не получились: дрель, телефон Мики, скрип тетради. Рэй предлагает записать хотя бы строчку о дворе.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Tell us what it is usually like. Then what is happening today.",
+              "ru": "Скажи, как здесь обычно. А потом — что происходит сегодня.",
+              "expr": "recorder/listening"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Сказать о студентах и ремонте",
+              "answers": [
+                "Students usually study here. Today, workers are repairing the wall.",
+                "Students usually read here. Right now, workers are repairing the wall."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Got it. Listen back.",
+                "ru": "Записала. Послушаем.",
+                "expr": "recorder/listening"
+              },
+              "flag": "u013_description_students"
+            },
+            {
+              "label": "Сказать о тишине и шуме",
+              "answers": [
+                "It is usually quiet here. It is noisy today.",
+                "It's usually quiet, but today the workers are making noise."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Got it. Listen back.",
+                "ru": "Записала. Послушаем.",
+                "expr": "recorder/listening"
+              },
+              "flag": "u013_description_sound"
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Every day, or right now?",
+            "ru": "Каждый день или прямо сейчас?",
+            "expr": "recorder/listening"
+          },
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "after": [
+            {
+              "speaker": "iris",
+              "text": "You sound slow, but clear. Keep the words. Try them again without the drill.",
+              "ru": "Ты говоришь медленно, но понятно. Слова оставим. Попробуем ещё раз без дрели.",
+              "expr": "notebook/focused"
+            }
+          ],
+          "context": "Строчка о дворе"
+        },
+        {
+          "id": "u013-s8-e2",
+          "type": "scene",
+          "setting": "Айрис слушает дубль. Слова хорошие, дрель громче.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "You listen when I speak. That's a rare skill around a microphone.",
+              "ru": "Ты слушаешь, когда я говорю. Рядом с микрофоном это редкий навык.",
+              "expr": "dry_smile"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "I'd listen to you without a microphone too.",
+                "You make listening easy."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Then I'll try to say something worth hearing.",
+                "ru": "Тогда постараюсь сказать что-нибудь стоящее.",
+                "expr": "dry_smile"
+              },
+              "flag": "flirt_iris_013"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "The drill hasn't learned that skill.",
+                "The notebook wants a turn too."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "The notebook has had enough turns.",
+                "ru": "Тетрадь уже достаточно высказалась.",
+                "expr": "dry_smile"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Thanks. Let's keep the words and record again.",
+                "The text works. We need less noise."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Agreed. Same words, quieter day.",
+                "ru": "Согласна. Те же слова, более тихий день.",
+                "expr": "dry_smile"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "contrast_ps_pc"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "Let's try Friday at four, after classes. Does that work?",
+              "ru": "Давайте попробуем в пятницу в четыре, после занятий. Подходит?",
+              "expr": "phone/thinking"
+            },
+            {
+              "speaker": "iris",
+              "text": "Yes. I finish at half past three.",
+              "ru": "Да. Я заканчиваю в половине четвёртого.",
+              "expr": "neutral"
+            },
+            {
+              "speaker": "rei",
+              "text": "Four works.",
+              "ru": "В четыре подходит.",
+              "expr": "neutral"
+            }
+          ],
+          "context": "Без микрофона"
+        },
+        {
+          "id": "u013-s8-e3",
+          "type": "write",
+          "situation": "Мика предлагает пятницу в четыре, после занятий. Ответь, что тебе подходит.",
+          "answers": [
+            "Friday at four works for me.",
+            "Friday at four is fine for me.",
+            "Yes, Friday at four works for me.",
+            "That works for me."
+          ],
+          "tags": [
+            "future_arrangements"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Friday, then. Phone on silent. Mine, especially.",
+          "ru": "Тогда в пятницу. Телефоны без звука. Особенно мой.",
+          "expr": "phone/happy"
+        }
+      ]
+    }
+  ]
+}

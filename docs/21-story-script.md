@@ -19,6 +19,10 @@
 - [Юнит 010. Уточнить состав](#юнит-010-уточнить-состав)
 - [Юнит 011. Сравнить цены](#юнит-011-сравнить-цены)
 - [Юнит 012. Составить общий список](#юнит-012-составить-общий-список)
+- [Юнит 013. Обычно и сейчас](#юнит-013-обычно-и-сейчас)
+- [Юнит 014. Что мешает записи](#юнит-014-что-мешает-записи)
+- [Юнит 015. Найти другое время](#юнит-015-найти-другое-время)
+- [Юнит 016. Подтвердить и записать](#юнит-016-подтвердить-и-записать)
 - [Страницы героинь](#страницы-героинь)
 - [После уроков](#после-уроков)
 
@@ -2033,6 +2037,686 @@ _Итог занятия:_
 
 ---
 
+## Юнит 013. Обычно и сейчас
+
+**Цель:** Различить обычное положение дел и то, что происходит сейчас.
+
+**Итог юнита:** Описание двора записано на пробу, но дрель перекрывает голос. Вы назначаете вторую попытку на пятницу после занятий.
+
+### Занятие 1. У окна во двор (понимание)
+
+_Среда, час дня. Мика ставит чай рядом с двумя чашками. Айрис кладёт печенье на стол, Рэй достаёт бутылку воды. За окном гремит металл._
+
+- **Мика:** Tea first, courtyard next. I brought enough for four. — Сначала чай, потом двор. Я принесла на четверых. _(phone/happy)_
+
+**Чтение [u013-s1-e1]: «Courtyard notes»** (текст)
+
+> Students usually use the courtyard between classes. Some eat lunch on the benches, and others read or talk near the wall. It is usually quiet during lessons. Today, workers are repairing part of the wall. They are using a drill, and their tools are lying beside a ladder. We are checking the sound before we record a short guide. We need an honest description of the place. The guide should help new students understand what they can usually do here and what is happening today.
+
+_Перевод:_ Между занятиями студенты обычно проводят время во дворе. Кто-то обедает на скамейках, другие читают или разговаривают у стены. Во время занятий здесь обычно тихо. Сегодня рабочие ремонтируют часть стены. Они пользуются дрелью, а рядом со стремянкой лежат инструменты. Перед записью короткого фрагмента гида мы проверяем звук. Нам нужно правдивое описание места. Гид должен помочь новичкам понять, что здесь обычно можно делать и что происходит сегодня.
+
+_Итог занятия:_
+
+- **Айрис:** Keep both parts: the usual courtyard and today’s courtyard. — Оставим обе части: какой двор обычно и какой он сегодня. _(notebook/focused)_
+
+### Занятие 2. Послушай эту тишину (понимание)
+
+_У стены стоит стремянка. Рэй отправляет в общий чат запись двора, а потом фотографирует инструменты._
+
+- **Рэй:** Listen. This is our quiet courtyard. — Послушай. Вот наш тихий двор. _(recorder/smirk)_
+
+**Аудирование [u013-s2-e1]** · Голосовое Рэй в чате «Room 17»
+
+- **Рэй:** Listen. This is our quiet courtyard. Usually, you can hear people talking near the benches. Right now, the drill is louder than everyone. I'm standing by the wall, with the recorder facing the middle. — Послушайте. Вот наш тихий двор. Обычно слышно, как у скамеек разговаривают люди. Сейчас дрель громче всех. Я стою у стены, рекордер направлен в центр двора.
+
+**Аудирование [u013-s2-e2]** · Айрис во дворе
+
+- **Айрис:** I usually take notes in the library, but today I'm writing outside. These notes are for the courtyard page. Please don't describe it as silent. Someone may believe us and bring a book. — Обычно я делаю заметки в библиотеке, но сегодня пишу на улице. Это заметки для страницы про двор. Только не называй его бесшумным. Кто-нибудь поверит и придёт с книжкой. _([dry, understated humor])_
+
+**Диктант [u013-s2-e3]**
+
+- **Айрис:** It is usually quiet, but today they are repairing the wall. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Рэй:** We have a very clear drill. — Дрель записалась отлично. _(recorder/smirk)_
+
+### Занятие 3. Каждую среду (форма)
+
+_Айрис делит страницу тетради на две колонки: «обычно» и «сейчас»._
+
+- **Айрис:** Start with what happens regularly. — Начни с того, что происходит регулярно. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** That is the usual day. Now listen to this one. — Это обычный день. А теперь послушай сегодняшний. _(notebook/thinking)_
+
+### Занятие 4. Сегодня у стены (форма)
+
+_Дрель ненадолго замолкает. Рэй показывает на стену, затем на рекордер._
+
+- **Рэй:** What is happening now? — Что происходит сейчас? _(recorder/listening)_
+
+_Итог занятия:_
+
+- **Рэй:** Good. Nobody is repairing the recorder. — Хорошо. Рекордер никто не ремонтирует. _(recorder/smirk)_
+
+### Занятие 5. Второй наушник (продукция)
+
+_Рэй протягивает тебе свободный наушник. Мика и Айрис сверяют заметки у скамейки._
+
+- **Рэй:** Try this one. — Попробуй этот. _(recorder/neutral)_
+
+**Сцена [u013-s5-e1]** · Только для проверки
+
+_Рэй протягивает тебе свободный наушник. Мика и Айрис сверяют заметки у скамейки._
+
+- **Рэй:** You can use the other earphone. Only for the test. Don't get used to it. — Можешь взять второй наушник. Только для проверки. Не привыкай. _(recorder/smirk)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «Too late. I like listening with you.» · флаг `flirt_rei_013`
+  - **Рэй:** Then listen carefully. — Тогда слушай внимательно. _(recorder/smirk)_
+- _Отшутиться_ → «Does the drill get an earphone too?»
+  - **Рэй:** It doesn't need one. — Ей не нужен. _(recorder/smirk)_
+- _По делу_ → «Thanks. I can hear the drill.»
+  - **Рэй:** Yes. That's the problem. — Да. В этом и проблема. _(recorder/smirk)_
+
+Если ответ непонятен:
+- **Рэй:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** We need a quieter moment. — Нужен момент потише. _(recorder/focused)_
+
+### Занятие 6. Голосом: два двора (продукция)
+
+_Айрис держит перед тобой карточку. Рэй пока не включает запись._
+
+- **Айрис:** Try both sentences together. You can take your time. — Попробуй сказать оба предложения вместе. Не спеши. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** I can hear the difference between usually and now. — Слышно, где «обычно», а где «сейчас». _(notebook/dry_smile)_
+
+### Занятие 7. Быстрый круг: что слышно (беглость)
+
+_Рэй показывает по очереди на скамейку, стену и рекордер. Айрис держит карточки со словами времени._
+
+- **Рэй:** Usually or right now? — Обычно или прямо сейчас? _(recorder/listening)_
+
+**Диктант [u013-s7-e7]**
+
+- **Рэй:** Before each recording, Rei checks the sound.
+
+_Итог занятия:_
+
+- **Мика:** Ready? Ten seconds. Surely we can manage ten. — Готовы? Десять секунд. Уж десять-то мы осилим. _(happy)_
+
+### Занятие 8. Десять секунд тишины (беглость · миссия)
+
+_Рэй ставит рекордер на подставку. Айрис раскрывает тетрадь. Мика оглядывает двор._
+
+- **Мика:** It's usually quiet here. — Здесь обычно тихо. _(neutral)_
+- **Диктор:** За стеной включается дрель.
+- **Рэй:** Usually. Useful word. Saves our reputation. — «Обычно». Полезное слово. Спасает репутацию. _(recorder/smirk)_
+- **Айрис:** Shall we record somewhere else? — Может, запишем в другом месте? _(notebook/thinking)_
+- **Рэй:** I need ten seconds here. Nobody talking. — Нужно десять секунд здесь. Без разговоров. _(recorder/focused)_
+- **Мика:** Why record silence? — Зачем записывать тишину? _(thinking)_
+- **Рэй:** For the gaps where you breathe. — Для пауз, когда ты вдыхаешь. _(recorder/smirk)_
+- **Мика:** My breathing has character. — У моих вдохов есть характер. _(happy)_
+- **Диктор:** Рэй поднимает палец. На шестой секунде у Мики звонит телефон. Она торопливо выключает звук.
+- **Мика:** Sorry. Again. — Простите. Ещё раз. _(phone/embarrassed)_
+- **Диктор:** На четвёртой секунде Айрис закрывает тетрадь. Переплёт громко скрипит.
+- **Айрис:** I'm starting to understand your job. — Начинаю понимать, какая у тебя работа. _(notebook/dry_smile)_
+
+**Сцена [u013-s8-e1]** · Строчка о дворе
+
+_Десять секунд не получились: дрель, телефон Мики, скрип тетради. Рэй предлагает записать хотя бы строчку о дворе._
+
+- **Рэй:** Tell us what it is usually like. Then what is happening today. — Скажи, как здесь обычно. А потом — что происходит сегодня. _(recorder/listening)_
+
+Выбор намерения:
+- _Сказать о студентах и ремонте_ → «Students usually study here. Today, workers are repairing the wall.» · флаг `u013_description_students`
+  - **Рэй:** Got it. Listen back. — Записала. Послушаем. _(recorder/listening)_
+- _Сказать о тишине и шуме_ → «It is usually quiet here. It is noisy today.» · флаг `u013_description_sound`
+  - **Рэй:** Got it. Listen back. — Записала. Послушаем. _(recorder/listening)_
+
+Если ответ непонятен:
+- **Рэй:** Every day, or right now? — Каждый день или прямо сейчас? _(recorder/listening)_
+
+Общее продолжение:
+- **Айрис:** You sound slow, but clear. Keep the words. Try them again without the drill. — Ты говоришь медленно, но понятно. Слова оставим. Попробуем ещё раз без дрели. _(notebook/focused)_
+
+**Сцена [u013-s8-e2]** · Без микрофона
+
+_Айрис слушает дубль. Слова хорошие, дрель громче._
+
+- **Айрис:** You listen when I speak. That's a rare skill around a microphone. — Ты слушаешь, когда я говорю. Рядом с микрофоном это редкий навык. _(dry_smile)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «I'd listen to you without a microphone too.» · флаг `flirt_iris_013`
+  - **Айрис:** Then I'll try to say something worth hearing. — Тогда постараюсь сказать что-нибудь стоящее. _(dry_smile)_
+- _Отшутиться_ → «The drill hasn't learned that skill.»
+  - **Айрис:** The notebook has had enough turns. — Тетрадь уже достаточно высказалась. _(dry_smile)_
+- _По делу_ → «Thanks. Let's keep the words and record again.»
+  - **Айрис:** Agreed. Same words, quieter day. — Согласна. Те же слова, более тихий день. _(dry_smile)_
+
+Если ответ непонятен:
+- **Айрис:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+Общее продолжение:
+- **Мика:** Let's try Friday at four, after classes. Does that work? — Давайте попробуем в пятницу в четыре, после занятий. Подходит? _(phone/thinking)_
+- **Айрис:** Yes. I finish at half past three. — Да. Я заканчиваю в половине четвёртого. _(neutral)_
+- **Рэй:** Four works. — В четыре подходит. _(neutral)_
+
+_Итог занятия:_
+
+- **Мика:** Friday, then. Phone on silent. Mine, especially. — Тогда в пятницу. Телефоны без звука. Особенно мой. _(phone/happy)_
+
+---
+
+## Юнит 014. Что мешает записи
+
+**Цель:** Описать помеху и вежливо узнать, когда шум закончится.
+
+**Итог юнита:** Вторая попытка срывается. Рабочий сообщает, что шумные работы закончатся в среду следующей недели к пяти вечера.
+
+### Занятие 1. Объявление у стены (понимание)
+
+_Пятница, четыре часа. Рядом со стеной появилось объявление. Из открытой двери доносится скрежет стульев._
+
+- **Айрис:** There is a finish time. Let’s read that first. — Тут есть время окончания. Начнём с него. _(notebook/focused)_
+
+**Чтение [u014-s1-e1]: «Courtyard work»** (текст)
+
+> Work on the courtyard wall continues this week and next week. The team works from nine until five on weekdays. Noisy work will finish next Wednesday at five. The benches remain available, but please keep bags away from the tools. Staff may move chairs through the courtyard while the wall is being repaired. If you are planning a recording, ask a worker about the day's work before you set up. Short breaks are possible, but we cannot promise a quiet courtyard during working hours.
+
+_Перевод:_ Работы на стене двора продолжаются на этой и следующей неделе. Бригада работает по будням с девяти до пяти. Шумные работы закончатся в следующую среду в пять. Скамейками можно пользоваться, но не оставляйте сумки возле инструментов. Пока ремонтируют стену, сотрудники могут переносить стулья через двор. Если планируете запись, спросите рабочего о сегодняшних работах до установки оборудования. Короткие перерывы возможны, но гарантировать тишину в рабочее время мы не можем.
+
+_Итог занятия:_
+
+- **Рэй:** Wednesday at one is inside working hours. — Среда, час дня — работы ещё идут. _(thinking)_
+
+### Занятие 2. Не только дрель (понимание)
+
+_В общем чате появляется голосовое Мики. На фоне гудит вентиляция, а потом кто-то берёт на трубе длинную ноту._
+
+- **Мика:** I found two more sounds. Neither is us. — Нашла ещё два звука. Ни один не наш. _(phone/neutral)_
+
+**Аудирование [u014-s2-e1]** · Голосовое Мики в чате «Room 17»
+
+- **Мика:** I'm near the door. They keep moving chairs behind me, and the fan is running above it. Someone is practising the trumpet upstairs too. Can you hear me? I'm coming back to the bench now. — Я возле двери. За мной всё время двигают стулья, а над дверью работает вентилятор. Наверху ещё кто-то упражняется на трубе. Вы меня слышите? Сейчас вернусь к скамейке.
+
+**Аудирование [u014-s2-e2]** · Рэй во дворе
+
+- **Рэй:** The fan is making a steady low sound. The chairs are louder, but they stop sometimes. The trumpet is coming from an open window. Moving the microphone won't remove all three sounds. — Вентилятор ровно гудит на низкой ноте. Стулья громче, но иногда затихают. Труба звучит из открытого окна. Одной перестановкой микрофона все три звука не убрать. _([quietly, focused])_
+
+**Диктант [u014-s2-e3]**
+
+- **Мика:** They keep moving chairs near the door. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Рэй:** Three sounds. One microphone. — Три звука. Один микрофон. _(recorder/smirk)_
+
+### Занятие 3. Что происходит и что повторяется (форма)
+
+_Айрис записывает источники шума в отдельные строки._
+
+- **Айрис:** One sound can continue. Another can stop and start. — Один звук может тянуться. Другой — то стихать, то возникать снова. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Write what you hear. We don’t need to guess why. — Запиши, что слышишь. Гадать о причинах не нужно. _(notebook/thinking)_
+
+### Занятие 4. Вежливая просьба (форма)
+
+_Рабочий убирает дрель на стол. Мика показывает на него и опускает голос._
+
+- **Мика:** Let’s wait until he puts that down. — Подождём, пока он это положит. _(thinking)_
+
+_Итог занятия:_
+
+- **Рэй:** Ask for a time. Not a miracle. — Спроси про время. Чуда не надо. _(smirk)_
+
+### Занятие 5. Тихая правка (продукция)
+
+_Вы с Айрис отходите от двери, чтобы разобрать вопрос перед разговором. Она перечитывает твою строчку._
+
+- **Айрис:** That sounds polite already. — Уже звучит вежливо. _(notebook/focused)_
+
+**Сцена [u014-s5-e1]** · Непривычная пауза
+
+_Вы с Айрис отходите от двери, чтобы разобрать вопрос перед разговором. Она перечитывает твою строчку._
+
+- **Айрис:** You're making this difficult. I was looking for something to correct. — Ты усложняешь мне задачу. Я искала, что поправить. _(dry_smile)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «Then stay. I might surprise you again.» · флаг `flirt_iris_014`
+  - **Айрис:** I'll read the next sentence too. — Прочитаю и следующее предложение. _(dry_smile)_
+- _Отшутиться_ → «I can add a mistake if you need one.»
+  - **Айрис:** Let's not order extra mistakes. — Не будем заказывать дополнительные ошибки. _(dry_smile)_
+- _По делу_ → «Thanks. Shall we ask him now?»
+  - **Айрис:** Yes. That's the one we need. — Да. Он нам и нужен. _(dry_smile)_
+
+Если ответ непонятен:
+- **Айрис:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Айрис:** He has put the drill down. Your turn. — Он положил дрель. Твой выход. _(notebook/focused)_
+
+### Занятие 6. Голосом: обратиться к рабочему (продукция)
+
+_Ты останавливаешься в нескольких шагах от рабочего. Айрис держит тетрадь наготове._
+
+- **Айрис:** Try the opening first. — Попробуй сначала начало. _(neutral)_
+
+_Итог занятия:_
+
+- **Мика:** Short and clear. He can answer that. — Коротко и понятно. На это он сможет ответить. _(happy)_
+
+### Занятие 7. Быстрый круг: звук и просьба (беглость)
+
+_Рэй по очереди называет звуки. Ты подбираешь к каждому описание и вопрос._
+
+- **Рэй:** Fan. Chairs. Trumpet. Your words. — Вентилятор. Стулья. Труба. Твои слова. _(recorder/listening)_
+
+**Диктант [u014-s7-e7]**
+
+- **Рэй:** Could we come back later?
+
+_Итог занятия:_
+
+- **Рэй:** Now ask the person with the answers. — Теперь спроси того, кто знает ответы. _(recorder/neutral)_
+
+### Занятие 8. Вторая попытка (беглость · миссия)
+
+_Рабочий вытирает руки и смотрит на рекордер. У двери снова скребут ножки стульев._
+
+- **Рабочий:** Are you trying to record something? — Вы пытаетесь что-то записать?
+
+**Сцена [u014-s8-e1]** · Спросить, когда станет тише
+
+_Рабочий вытирает руки и смотрит на рекордер. У двери снова скребут ножки стульев._
+
+- **Рабочий:** What do you need to know? — Что вы хотите узнать?
+
+Выбор намерения:
+- _Узнать окончание работ_ → «Could you tell us when the noisy work finishes?» · флаг `u014_ask_finish`
+  - **Рабочий:** Next Wednesday at five. Then the noisy work is finished. — В следующую среду в пять. На этом шумные работы закончатся.
+- _Узнать про перерыв_ → «Is there a short break soon?» · флаг `u014_ask_break`
+  - **Рабочий:** We can pause the drill now. The noisy work finishes next Wednesday at five. — Можем сейчас выключить дрель. Шумные работы закончатся в следующую среду в пять.
+
+Если ответ непонятен:
+- **Рабочий:** Could you say that another way? — Можешь сказать это иначе?
+
+Общее продолжение:
+- **Рабочий:** The chairs and the fan are still going. I can't promise silence today. — Стулья всё ещё двигают, вентилятор работает. Сегодня тишины не обещаю.
+- **Диктор:** Рэй включает короткий тест. В паузе между стульями сверху тянется нота трубы. Она снимает наушники.
+- **Рэй:** Not today. — Сегодня не выйдет. _(recorder/neutral)_
+
+**Сцена [u014-s8-e2]** · Сквозь шум
+
+_Тест не удался. Мика садится рядом на скамейку._
+
+- **Мика:** You could still hear me in that voice message? I hope I was worth the effort. — Ты всё-таки расслышал меня в том голосовом? Надеюсь, старания того стоили. _(happy)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «I'd listen to you even with the trumpet.» · флаг `flirt_mika_014`
+  - **Мика:** I'll take that. Next time, no trumpet. — Принимается. В следующий раз без трубы. _(happy)_
+- _Отшутиться_ → «The trumpet almost answered for you.»
+  - **Мика:** Terrible tickets. No seats. — Ужасные билеты. Даже мест нет. _(happy)_
+- _По делу_ → «Yes. You were going back to the bench.»
+  - **Мика:** Good. Next recording needs less background. — Хорошо. Для следующей записи нужно меньше шума. _(happy)_
+
+Если ответ непонятен:
+- **Мика:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+Общее продолжение:
+- **Мика:** I'll tell the chat: no recording today. We'll check new times on Monday. — Напишу в чат: сегодня не записать. В понедельник выберем другое время. _(phone/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Next Wednesday at five. I’ve written it down. — Следующая среда, пять вечера. Записала. _(notebook/focused)_
+
+---
+
+## Юнит 015. Найти другое время
+
+**Цель:** Предложить время, объяснить занятость и договориться о разовой встрече.
+
+**Итог юнита:** Вы выбираете пятницу, 16:00, или субботу, 11:00. Регулярные встречи по средам сохраняются.
+
+### Занятие 1. Четыре расписания (понимание)
+
+_Понедельник, четыре часа. Мика рисует на доске пятницу и субботу. Айрис сверяет время окончания ремонта._
+
+- **Мика:** Two options. Both after the work finishes. — Два варианта. Оба после окончания работ. _(phone/focused)_
+
+**Чтение [u015-s1-e1]: «One recording, another day»** (текст)
+
+> The courtyard work finishes on Wednesday at five. Our usual Wednesday meeting is at one, so we need another time for this recording. Mika has a class on Thursday until five. Rei is helping in the sound room on Friday until half past three. Iris is studying in the library on Saturday afternoon, but she is free in the morning. Everyone is free on Friday at four and Saturday at eleven. Please choose one of these times. We are moving this recording only. Our regular meetings stay on Wednesdays at one.
+
+_Перевод:_ Работы во дворе закончатся в среду в пять. Наша обычная встреча в среду в час, поэтому для этой записи нужно другое время. В четверг Мика на занятии до пяти. Рэй в пятницу помогает в звуковой комнате до половины четвёртого. Айрис в субботу после обеда занимается в библиотеке, но утром свободна. Всем подходят пятница в четыре и суббота в одиннадцать. Выберите одно из этих времён. Мы переносим только эту запись. Обычные встречи остаются по средам в час.
+
+_Итог занятия:_
+
+- **Мика:** Nobody needs to miss a class. — Никому не придётся пропускать занятия. _(phone/happy)_
+
+### Занятие 2. Два предложения (понимание)
+
+_В общий чат приходят два голосовых. На доске пока пусты клетки напротив пятницы и субботы._
+
+- **Мика:** Listen before you pick. Both are real options. — Прежде чем выбрать, послушай. Оба варианта подходят. _(phone/thinking)_
+
+**Аудирование [u015-s2-e1]** · Голосовое Мики в чате «Room 17»
+
+- **Мика:** How about Friday at four? My classes finish at three, so I can bring the tea first. I can't do Thursday at four because I'm having a class. Saturday morning works for me too. — Как насчёт пятницы в четыре? У меня занятия заканчиваются в три, так что сначала занесу чай. В четверг в четыре не могу: у меня занятие. Суббота утром мне тоже подходит.
+
+**Аудирование [u015-s2-e2]** · Голосовое Айрис в чате «Room 17»
+
+- **Айрис:** I'm studying in the library on Saturday afternoon, but eleven in the morning is fine. Friday at four also works. Could we choose just one? I don't want to put two recording sessions in my notebook. — В субботу после обеда я занимаюсь в библиотеке, но в одиннадцать утра могу. Пятница в четыре тоже подходит. Выберем что-то одно? Не хочу записывать в тетрадь две встречи для записи.
+
+**Диктант [u015-s2-e3]**
+
+- **Айрис:** Can we move it to Friday at four? _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Айрис:** We have two options, not two bookings. — У нас два варианта, а не две назначенные встречи. _(notebook/dry_smile)_
+
+### Занятие 3. Что уже в расписании (форма)
+
+_Айрис обводит занятия и дела, которые уже стоят у всех в расписаниях._
+
+- **Айрис:** These are arrangements. The days are already in the diary. — Это договорённости. Даты уже записаны. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Рэй:** The recorder can wait. Classes first. — Рекордер подождёт. Сначала занятия. _(neutral)_
+
+### Занятие 4. Не могу, но могу иначе (форма)
+
+_Мика зачёркивает четверг и оставляет два свободных окошка._
+
+- **Мика:** A no is useful if we know what works instead. — Отказ тоже полезен, если понятно, что подходит взамен. _(phone/thinking)_
+
+_Итог занятия:_
+
+- **Мика:** Good. Two boxes left. — Хорошо. Осталось два окошка. _(phone/happy)_
+
+### Занятие 5. Важное уточнение Мики (продукция)
+
+_Мика разворачивает телефон к тебе. В календаре открыта суббота._
+
+- **Мика:** I can do either. What about you? — Я могу в оба дня. А ты? _(phone/happy)_
+
+**Сцена [u015-s5-e1]** · Очень рабочий вопрос
+
+_Мика разворачивает к тебе телефон. В календаре открыта суббота._
+
+- **Мика:** If we pick Saturday, I get to see you at the weekend. For work, obviously. — Если выберем субботу, увижу тебя на выходных. По работе, разумеется. _(happy)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «That sounds like a good reason to come.» · флаг `flirt_mika_015`
+  - **Мика:** I'll put that under team spirit. — Запишу в раздел «командный дух». _(happy)_
+- _Отшутиться_ → «Does the recorder know it's working Saturday?»
+  - **Мика:** The drill is definitely not invited. — Дрель точно не приглашена. _(happy)_
+- _По делу_ → «Both times work. Let's check the list.»
+  - **Мика:** Right. One time for all four. — Верно. Одно время на четверых. _(happy)_
+
+Если ответ непонятен:
+- **Мика:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Мика:** No booking yet. One final check. — Пока ничего не назначаю. Последняя проверка. _(phone/focused)_
+
+### Занятие 6. Голосом: предложить и отказаться (продукция)
+
+_Айрис закрывает нижнюю часть расписания листком. Тебе видны день и время._
+
+- **Айрис:** Say the whole arrangement, including the time. — Назови договорённость целиком, вместе со временем. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Рэй:** Day and time. Both there. — День и время. Всё на месте. _(happy)_
+
+### Занятие 7. Быстрый круг: свободен или занят (беглость)
+
+_Мика по очереди указывает на три имени и два свободных дня._
+
+- **Мика:** Who can come, and when? — Кто может прийти и когда? _(phone/focused)_
+
+**Диктант [u015-s7-e6]**
+
+- **Мика:** Saturday at eleven works for everyone too.
+
+_Итог занятия:_
+
+- **Айрис:** Now choose the one that suits you. — Теперь выбери, какой вариант удобен тебе. _(neutral)_
+
+### Занятие 8. Одна встреча вместо двух (беглость · миссия)
+
+_На доске остаются два времени. Мика держит телефон над календарём._
+
+- **Мика:** Which one shall I book? — Какое время записать? _(phone/thinking)_
+
+**Сцена [u015-s8-e1]** · Выбрать разовый перенос
+
+_На доске остаются два времени. Мика держит телефон над календарём._
+
+- **Мика:** Friday at four or Saturday at eleven? — Пятница в четыре или суббота в одиннадцать? _(phone/happy)_
+
+Выбор намерения:
+- _Пятница, 16:00_ → «Let's meet on Friday at four.» · флаг `u015_slot_fri16`
+  - **Мика:** Friday at four. I'll cross out Saturday. — Пятница в четыре. Субботу зачёркиваю. _(phone/happy)_
+- _Суббота, 11:00_ → «Let's meet on Saturday at eleven.» · флаг `u015_slot_sat11`
+  - **Мика:** Saturday at eleven. I'll cross out Friday. — Суббота в одиннадцать. Пятницу зачёркиваю. _(phone/happy)_
+
+Если ответ непонятен:
+- **Мика:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+**Сцена [u015-s8-e2]** · Уточнить регулярную встречу
+
+_Мика сфотографировала доску для общего чата. Айрис открывает тетрадь на странице с регулярными встречами._
+
+- **Айрис:** And our regular Wednesday meeting? — А наша обычная встреча по средам? _(notebook/thinking)_
+
+Выбор намерения:
+- _Подтвердить прежний час_ → «We still meet on Wednesdays at one.» · флаг `u015_regular_confirmed`
+  - **Айрис:** Good. I'll keep that line. — Хорошо. Эту строку оставлю. _(notebook/thinking)_
+- _Уточнить разовый характер_ → «We're only moving this recording.» · флаг `u015_one_off_confirmed`
+  - **Айрис:** Exactly. Wednesdays stay in the diary. — Именно. Среды остаются в расписании. _(notebook/thinking)_
+
+Если ответ непонятен:
+- **Айрис:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Мика:** We're meeting on Friday at four. I'll send a reminder on Thursday. — Встречаемся в пятницу в четыре. В четверг пришлю напоминание. _(phone/happy, если нет `u015_slot_sat11`)_
+- **Мика:** We're meeting on Saturday at eleven. I'll send a reminder on Thursday. — Встречаемся в субботу в одиннадцать. В четверг пришлю напоминание. _(phone/happy, если `u015_slot_sat11`)_
+
+---
+
+## Юнит 016. Подтвердить и записать
+
+**Цель:** Подтвердить договорённость и распределить подготовку.
+
+**Итог юнита:** В выбранное время вы записываете десять секунд фона и описание двора. Первый натурный фрагмент готов для локального гида.
+
+### Занятие 1. Напоминание (понимание)
+
+_Четверг, четыре часа. Мика открывает общий чат. Айрис кладёт рядом тетрадь с выбранным временем._
+
+- **Мика:** One reminder. Same plan. — Одно напоминание. План прежний. _(phone/focused)_
+
+**Чтение [u016-s1-e1-fri]: «Recording reminder»** (текст)
+
+> Just to confirm: we are meeting in the courtyard on Friday at four. The wall work finished on Wednesday at five. Please bring the recorder, microphone and stand. Mika is bringing tea from home. Iris is bringing the short description, and Rei is checking the equipment. We need ten seconds of background sound before we record the words. Please put your phones on silent before we start. This is our one-off recording session. Next week, our regular meeting is back on Wednesday at one.
+
+_Перевод:_ Уточним напоследок: встречаемся во дворе в пятницу в четыре. Работы на стене закончились в среду в пять. Принесите рекордер, микрофон и подставку. Мика принесёт чай из дома. Айрис принесёт короткое описание, а Рэй проверит оборудование. До записи слов нам нужны десять секунд фонового звука. Пожалуйста, заранее отключите звук телефонов. Это наша разовая встреча для записи. На следующей неделе возвращаемся к обычной встрече в среду в час.
+
+**Чтение [u016-s1-e1-sat]: «Recording reminder»** (текст)
+
+> Just to confirm: we are meeting in the courtyard on Saturday at eleven. The wall work finished on Wednesday at five. Please bring the recorder, microphone and stand. Mika is bringing tea from home. Iris is bringing the short description, and Rei is checking the equipment. We need ten seconds of background sound before we record the words. Please put your phones on silent before we start. This is our one-off recording session. Next week, our regular meeting is back on Wednesday at one.
+
+_Перевод:_ Уточним напоследок: встречаемся во дворе в субботу в одиннадцать. Работы на стене закончились в среду в пять. Принесите рекордер, микрофон и подставку. Мика принесёт чай из дома. Айрис принесёт короткое описание, а Рэй проверит оборудование. До записи слов нам нужны десять секунд фонового звука. Пожалуйста, заранее отключите звук телефонов. Это наша разовая встреча для записи. На следующей неделе возвращаемся к обычной встрече в среду в час.
+
+_Итог занятия:_
+
+- **Айрис:** The courtyard. I’ve underlined it. — Во дворе. Подчеркнула. _(notebook/focused)_
+
+### Занятие 2. Подтверждения (понимание)
+
+_Под напоминанием появляются ответы. На экране три коротких сообщения._
+
+- **Рэй:** Check the place as well. — Место тоже проверь. _(neutral)_
+
+**Аудирование [u016-s2-e1]** · Мика в комнате 17
+
+- **Мика:** We're meeting in the courtyard, not in this room. I'll bring the tea from home, and I'll put my phone on silent before we start. Please remind me if I forget that last part. — Встречаемся во дворе, не в этой комнате. Принесу чай из дома и отключу звук телефона до начала. Если забуду последний пункт, напомните.
+
+**Аудирование [u016-s2-e2]** · Айрис в комнате 17
+
+- **Айрис:** I've got the short text from our first attempt. I'll bring it with me, but I'll keep the notebook closed while Rei records the background. Apparently, my notebook has a voice of its own. — У меня короткий текст с первой попытки. Я принесу его, но пока Рэй пишет фон, тетрадь будет закрыта. У неё, оказывается, собственный голос. _([dry, understated humor])_
+
+**Диктант [u016-s2-e3]**
+
+- **Айрис:** Just to confirm, we are meeting in the courtyard. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Мика:** Confirmed: Friday at four, courtyard. I'll bring tea. — Подтверждаю: в пятницу в четыре, двор. Принесу чай. _(phone/happy, если нет `u015_slot_sat11`)_
+- **Мика:** Confirmed: Saturday at eleven, courtyard. I'll bring tea. — Подтверждаю: в субботу в одиннадцать, двор. Принесу чай. _(phone/happy, если `u015_slot_sat11`)_
+- **Айрис:** That works. I'll bring the text. See you on Friday. — Подходит. Принесу текст. Увидимся в пятницу. _(neutral, если нет `u015_slot_sat11`)_
+- **Айрис:** That works. I'll bring the text. See you on Saturday. — Подходит. Принесу текст. Увидимся в субботу. _(neutral, если `u015_slot_sat11`)_
+- **Рэй:** Confirmed. I'll check the recorder and bring the stand. — Подтверждаю. Проверю рекордер и принесу подставку. _(neutral)_
+- **Рэй:** Text, stand, silent phone. Good. — Текст, подставка, телефон без звука. Хорошо. _(happy)_
+
+### Занятие 3. Так мы договорились? (форма)
+
+_Айрис сверяет напоминание с записью в тетради._
+
+- **Айрис:** Confirm what we agreed. Don’t invent a new time. — Подтверди, о чём договорились. Новое время придумывать не надо. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Same time in both places. A relief. — В обоих местах одно время. Можно выдохнуть. _(notebook/dry_smile)_
+
+### Занятие 4. Я принесу, я проверю (форма)
+
+_Рэй кладёт рекордер рядом с подставкой. На листке остаются свободные строки для мелких дел._
+
+- **Рэй:** I’ll take the equipment. What else? — Я возьму оборудование. Что ещё? _(recorder/neutral)_
+
+_Итог занятия:_
+
+- **Мика:** I’ll bring the tea. Still no shopping required. — Принесу чай. Покупать по-прежнему ничего не нужно. _(phone/happy)_
+
+### Занятие 5. Понятно с первого раза (продукция)
+
+_Рэй прокручивает пробную запись с твоей медленной фразой. После неё слышно дрель._
+
+- **Рэй:** Your words are clear. The wall is louder. — Слова понятные. Стена громче. _(recorder/neutral)_
+
+**Сцена [u016-s5-e1]** · Ещё одно прослушивание
+
+_Рэй прокручивает пробную запись с твоей медленной фразой. После неё слышно дрель._
+
+- **Рэй:** I listened twice. Didn't need to. Wanted to. — Послушала два раза. Не потому что не поняла. Захотелось. _(recorder/smirk)_
+
+Выбор намерения:
+- _Поддержать флирт_ → «Then I'll record another one for you.» · флаг `flirt_rei_016`
+  - **Рэй:** Make it clear. I'll listen. — Говори понятно. Послушаю. _(recorder/smirk)_
+- _Отшутиться_ → «The drill has fans already.»
+  - **Рэй:** No. It's loud enough. — Нет. Она и так громкая. _(recorder/smirk)_
+- _По делу_ → «Let's use the same words again.»
+  - **Рэй:** Yes. Let's get ready. — Да. Давай готовиться. _(recorder/smirk)_
+
+Если ответ непонятен:
+- **Рэй:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** The words can stay. New recording. — Слова оставим. Запись сделаем новую. _(recorder/focused)_
+
+### Занятие 6. Голосом: всё подтвердить (продукция)
+
+_Мика держит телефон с напоминанием. Ты сверяешь с ним свой ответ._
+
+- **Мика:** Your confirmation, then we’re done. — Твоё подтверждение — и закончили. _(phone/happy)_
+
+_Итог занятия:_
+
+- **Айрис:** That matches the notebook. — Совпадает с тетрадью. _(notebook/focused)_
+
+### Занятие 7. Проверка модуля: запись в саду (беглость)
+
+_Айрис кладёт на стол карточку с вымышленным садом и расписанием клуба._
+
+- **Айрис:** A different place. Same problem: people need a clear plan. — Другое место. Та же задача: людям нужен понятный план. _(notebook/focused)_
+- **Айрис:** Which day and time do you mean? — Какой день и время ты имеешь в виду? _(listening)_
+
+_Итог занятия:_
+
+- **Айрис:** They can find each other. That’s a plan. — Они смогут найти друг друга. Значит, договорились. _(notebook/dry_smile)_
+
+### Занятие 8. Получилось (беглость · миссия)
+
+_Наступает выбранный день. На стене больше нет стремянки. Мика ставит чай на скамейку, Айрис держит текст. Рэй проверяет подставку._
+
+- **Мика:** All four here. And no drill. — Все четверо здесь. И дрели нет. _(happy)_
+
+**Сцена [u016-s8-e1]** · Последняя проверка
+
+_Наступает выбранный день. Стремянки у стены больше нет. Мика ставит чай на скамейку, Айрис держит текст, Рэй проверяет подставку._
+
+- **Рэй:** Before I press record: what will you check? — Прежде чем нажму запись: что проверишь ты? _(recorder/listening)_
+
+Выбор намерения:
+- _Проверить телефоны_ → «I'll check that our phones are on silent.» · флаг `u016_check_phones`
+  - **Рэй:** Good. Including Mika's. — Хорошо. И на телефоне Мики тоже. _(recorder/listening)_
+- _Проверить фон_ → «I'll listen for background noise.» · флаг `u016_check_background`
+  - **Рэй:** Good. I'll check the phones. — Хорошо. Телефоны проверю я. _(recorder/listening)_
+
+Если ответ непонятен:
+- **Рэй:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+Общее продолжение:
+- **Мика:** Already on silent. I remember. — Уже без звука. Я помню. _(phone/happy)_
+- **Айрис:** Notebook closed. Also remembered. — Тетрадь закрыта. Тоже помню. _(dry_smile)_
+- **Диктор:** Рэй поднимает палец. Вы молчите десять секунд. Слышно ветер в листьях и далёкие шаги. Она опускает руку.
+- **Рэй:** Background done. Now your line. — Фон есть. Теперь твоя строчка. _(recorder/focused)_
+
+**Сцена [u016-s8-e2]** · Фрагмент для гида
+
+_Фон записан: десять секунд ветра в листьях и далёких шагов. Теперь — твоя строчка._
+
+- **Рэй:** Keep the usual courtyard and this quiet moment in the description. — Скажи, какой двор обычно и какой он сейчас, когда тихо. _(recorder/listening)_
+
+Выбор намерения:
+- _Сказать о студентах_ → «Students usually study here. Right now, we're recording a guide.» · флаг `u016_take_students`
+  - **Рэй:** Clear. Keep this take. — Понятно. Этот дубль оставим. _(recorder/listening)_
+- _Сказать о звуке_ → «It is usually quiet here. Today, you can hear the wind in the trees.» · флаг `u016_take_sound`
+  - **Рэй:** Clear. Keep this take. — Понятно. Этот дубль оставим. _(recorder/listening)_
+
+Если ответ непонятен:
+- **Рэй:** Could you say that another way? — Можешь сказать это иначе? _(listening)_
+
+Общее продолжение:
+- **Диктор:** Рэй останавливает запись. Где-то вдалеке кто-то чихает.
+- **Мика:** Did that get in? — Это попало в запись? _(surprised)_
+- **Рэй:** After the end. The academy is alive. Breaking news. — После конца. Академия живая. Сенсация. _(recorder/smirk)_
+- **Айрис:** Then we can keep the courtyard. — Тогда двор можно оставить. _(notebook/dry_smile)_
+
+_Итог занятия:_
+
+- **Мика:** Next Wednesday at one. Back to our usual time. I'll bring tea again. — В следующую среду в час. Возвращаемся к обычному времени. Снова принесу чай. _(phone/happy)_
+
+---
+
 # Страницы героинь
 
 ## Мика
@@ -2048,6 +2732,8 @@ _Итог занятия:_
 - Для общей работы ей нужна хорошо видимая доска; красивое фото может подождать, пока комнатой действительно можно пользоваться. _(после юнита 008)_
 - Предпочитает неострую еду; немного перца ей подходит. Это предпочтение, а не аллергия. _(после юнита 010)_
 - Замечает яркие красивые вещи, но умеет отказаться от покупки ради общей задачи и оставить резерв. _(после юнита 011)_
+- Приносит чай из дома на общие встречи. _(после юнита 013)_
+- По четвергам у неё занятие до пяти. _(после юнита 015)_
 
 **Общие воспоминания:**
 
@@ -2062,6 +2748,10 @@ _Итог занятия:_
 - At your first lunch together Mika saved you a seat and called the company "fairly good". You said the company was better than the menu. — На первом общем обеде Мика заняла тебе место рядом и назвала компанию «вполне ничего». Ты ответил, что компания лучше меню. _(флаг `flirt_mika_009`)_
 - You took the shared list all the way to the shop: two different mugs, one pack of cable clips and two pounds for later. — Вы довели общий список до покупки: две разные чашки, упаковка кабельных зажимов и £2 на потом. _(флаг `u012_supply_clips`)_
 - You took the shared list all the way to the shop: two different mugs, one roll of paper tape and two pounds for later. — Вы довели общий список до покупки: две разные чашки, рулон бумажной ленты и £2 на потом. _(флаг `u012_supply_tape`)_
+- You heard her phone ring in the middle of an almost perfect silence. — Ты слышал, как её телефон сорвал почти удавшуюся запись тишины. _(после юнита 013)_
+- You found another time together, and nobody had to miss a class. — Вы нашли другое время, и никто не пропустил занятия. _(после юнита 015)_
+- You told her that her voice was the best part of that noisy message. — Ты заметил, что её всё равно приятно слушать сквозь шум. _(флаг `flirt_mika_014`)_
+- You called seeing her a good part of the plan. — Ты назвал встречу с ней хорошей частью плана. _(флаг `flirt_mika_015`)_
 
 **Реплики «Поболтать»:**
 
@@ -2092,6 +2782,8 @@ _Итог занятия:_
 - Она предпочитает записывать подальше от двери; две мягкие панели для неё полезнее, чем пустой красивый угол. _(после юнита 008)_
 - Не ест мясо и рыбу, но ест сыр. Перед заказом уточняет состав соуса, включая мясной бульон. _(после юнита 010)_
 - Если старый микрофон исправен, предпочтёт подходящую подставку новому микрофону; смотрит на высоту и устойчивость. _(после юнита 011)_
+- Сначала записывает фон места, потом речь. _(после юнита 013)_
+- Отличает постоянный гул от шума, который то стихает, то возвращается. _(после юнита 014)_
 
 **Общие воспоминания:**
 
@@ -2104,6 +2796,11 @@ _Итог занятия:_
 - At lunch Rei noticed that you listened to her instead of choosing for her. You went along with her joke about choosing your table again. — За обедом Рэй заметила, что ты слушал её пожелания, а не выбирал за неё. Ты поддержал её подколку про следующую встречу. _(флаг `flirt_rei_010`)_
 - In the shop you tested the clamp first, then the height. The stand you bought was right for the table. — В магазине вы сначала проверили зажим, затем высоту. Купленная подставка подошла. _(флаг `u011_test_clamp`)_
 - In the shop you tested the height first, then the clamp. The stand you bought was right for the table. — В магазине вы сначала проверили высоту, затем зажим. Купленная подставка подошла. _(флаг `u011_test_height`)_
+- She gave you the other earphone to listen to the courtyard. — Она дала тебе второй наушник послушать двор. _(после юнита 013)_
+- You finally recorded ten seconds of the courtyard. The sneeze came after the stop. — Вы наконец записали десять секунд двора, а чих прозвучал уже после остановки. _(флаг `u016_take_students`)_
+- You finally recorded ten seconds of the courtyard. The sneeze came after the stop. — Вы наконец записали десять секунд двора, а чих прозвучал уже после остановки. _(флаг `u016_take_sound`)_
+- You answered her joke about the other earphone. — Ты ответил на её шутку про второй наушник. _(флаг `flirt_rei_013`)_
+- She listened to your recording twice, and you offered to record another one for her. — Ты поддержал её желание ещё раз послушать твою запись. _(флаг `flirt_rei_016`)_
 
 **Реплики «Поболтать»:**
 
@@ -2134,6 +2831,8 @@ _Итог занятия:_
 - Ей нужен отдельный письменный стол с местом для блокнота; она любит писать у окна, но принимает и другой удобный вариант. _(после юнита 008)_
 - Не любит сырой лук сверху; приготовленный лук в супе ей подходит. Это предпочтение, а не аллергия. _(после юнита 010)_
 - Хочет оставлять немного общих денег на будущие мелочи; личная еда не входит в бюджет студии. _(после юнита 012)_
+- В субботу после обеда занимается в библиотеке. _(после юнита 015)_
+- Приносит к записи короткий текст. _(после юнита 016)_
 
 **Общие воспоминания:**
 
@@ -2146,6 +2845,10 @@ _Итог занятия:_
 - On your suggestion the writing table went against the other wall, and the window area stayed open. The boxes went on the shelf. — По твоему предложению письменный стол поставили у другой стены, оставив место у окна свободным. Коробки убрали на полку рядом со столом. _(флаг `u008_layout_wall`)_
 - At your first lunch Iris noticed that you waited for her answer. You went along with her joke, and she promised to keep her answers interesting. — За первым обедом она заметила, что ты дождался её ответа. Ты поддержал её шутку, и она пообещала делать ответы интересными. _(флаг `flirt_iris_009`)_
 - Together you checked the shopping against the money: twenty-four pounds, then eight, then two. Half of a future mug collection is on the shelf. — Вы вместе сверили покупки с остатком: £24 → £8 → £2. На полке появилась половина будущей коллекции чашек. _(после юнита 012)_
+- Her notebook turned out to be louder than anyone wanted during the recording. — Её тетрадь оказалась громче, чем хотелось при записи. _(после юнита 013)_
+- You checked the reminder against her notebook: the day, the time and the courtyard all matched. — Вы сверили напоминание с тетрадью: день, время и двор совпали. _(после юнита 016)_
+- You joked that she is worth listening to without a microphone. — Вы пошутили о том, что её стоит слушать и без микрофона. _(флаг `flirt_iris_013`)_
+- You asked her to stay and check your next sentence too. — Ты предложил ей остаться и проверить следующую фразу. _(флаг `flirt_iris_014`)_
 
 **Реплики «Поболтать»:**
 
