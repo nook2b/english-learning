@@ -129,6 +129,15 @@
       "guilty",
       "sad",
       "worried"
+    ],
+    "notebook_left": [
+      "focused",
+      "surprised",
+      "dry_smile",
+      "thinking",
+      "skeptical",
+      "annoyed",
+      "guilty"
     ]
   }
 }
