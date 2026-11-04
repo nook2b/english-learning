@@ -64,6 +64,30 @@
       "deadpan",
       "thinking",
       "sad"
+    ],
+    "recorder_right": [
+      "focused",
+      "neutral",
+      "happy",
+      "listening",
+      "smirk",
+      "annoyed"
+    ],
+    "stand_right": [
+      "neutral",
+      "listening",
+      "happy",
+      "laugh",
+      "surprised",
+      "thinking",
+      "embarrassed",
+      "annoyed",
+      "focused",
+      "deadpan",
+      "guarded",
+      "smirk",
+      "sad",
+      "worried"
     ]
   },
   "iris": {
