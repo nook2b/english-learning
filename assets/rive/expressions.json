@@ -31,6 +31,38 @@
       "excited",
       "happy",
       "pout"
+    ],
+    "stand_left": [
+      "neutral",
+      "listening",
+      "happy",
+      "laugh",
+      "surprised",
+      "thinking",
+      "embarrassed",
+      "annoyed",
+      "focused",
+      "excited",
+      "pout",
+      "forced_smile",
+      "sad",
+      "worried"
+    ],
+    "stand_right": [
+      "neutral",
+      "listening",
+      "happy",
+      "laugh",
+      "surprised",
+      "thinking",
+      "embarrassed",
+      "annoyed",
+      "focused",
+      "excited",
+      "pout",
+      "forced_smile",
+      "sad",
+      "worried"
     ]
   },
   "rei": {

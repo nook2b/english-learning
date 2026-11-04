@@ -184,7 +184,8 @@ test('a heroine speaking in a listening task appears on screen even if not in th
   render(<SessionPlayer unit={unit} index={1} />)
   fireEvent.click(screen.getByRole('button', { name: 'Начать' }))
   expect(screen.getByAltText('iris stand/neutral')).toBeInTheDocument()
-  expect(screen.getByAltText('mika stand/excited')).toBeInTheDocument()
+  // Mika listens to Iris, on her right: she turns to her.
+  expect(screen.getByAltText('mika stand_right/excited')).toBeInTheDocument()
 })
 
 test('a sorting task comes back with only the wrongly sorted words', () => {

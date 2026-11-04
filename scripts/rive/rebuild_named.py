@@ -7,7 +7,7 @@ For artboard A the kit holds KIT/sprites/A/{heroine}_A_base.png and, per emotion
 "A E eyelids", "A E face", "A Body", "A Fixed Skin" and full-canvas layers; patches are
 recut from the frames where they changed and moved under the artboard's "Head Breath Anchor".
 """
-import io, struct, sys
+import io, os, struct, sys
 sys.path.insert(0, 'scripts'); sys.path.insert(0, 'scripts/rive')
 import numpy as np
 from PIL import Image
@@ -42,13 +42,15 @@ new, moves = {}, {}
 for A in BOARDS:
     base = load(f'{KIT}/sprites/{A}/{H}_{A}_base.png')
     ax, ay = anchor[A]
+    # Emotions drawn in the kit; other faces of a copied artboard (Mika's "left happy face" for `look`) stay as they are.
     emos = sorted({n[len(A) + 1:].rsplit(' face', 1)[0] for n in assets if n.startswith(A + ' ') and n.endswith(' face')})
+    emos = [e for e in emos if os.path.exists(f'{KIT}/sprites/{A}/{H}_{A}_{e}.png')]
     for i, n in enumerate(assets):
         if not n.startswith(A + ' '): continue
         role = n[len(A) + 1:]
         if role == 'Body': new[i] = base
         elif role == 'Fixed Skin': new[i] = np.zeros((1, 1, 4), np.uint8)
-        elif old[i].shape[:2] == base.shape[:2] and not any(w in role for w in ('mouth', 'eyelids', 'face')):
+        elif old[i].shape[:2] == base.shape[:2] and not any(w in role for w in ('mouth', 'eyelids', 'face', 'left', 'right')):
             a = base.copy(); a[:, :, 3] = np.minimum(base[:, :, 3], old[i][:, :, 3]); new[i] = a  # layer
     for e in emos:
         f = lambda s: load(f'{KIT}/sprites/{A}/{H}_{A}_{e}{s}.png')
