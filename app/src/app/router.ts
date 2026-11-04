@@ -23,6 +23,8 @@ export type Route =
   | { name: 'prologue' }
   /** The placement check taken again from the profile. */
   | { name: 'placement' }
+  /** The team chat "Room 17". */
+  | { name: 'chat' }
 
 // Hash routing keeps deep links working on GitHub Pages without server rewrites.
 export function parse(hash: string): Route {
@@ -36,6 +38,7 @@ export function parse(hash: string): Route {
   if (name === 'practice') return { name: 'practice' }
   if (name === 'prologue') return { name: 'prologue' }
   if (name === 'placement') return { name: 'placement' }
+  if (name === 'chat') return { name: 'chat' }
   const tab = TABS.find((t) => t.route === name)
   if (tab) return { name: tab.route }
   return { name: 'path' }

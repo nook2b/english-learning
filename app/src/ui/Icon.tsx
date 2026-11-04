@@ -11,7 +11,7 @@ export type IconName =
   | 'nav-path' | 'nav-review' | 'nav-quests' | 'nav-heroines' | 'nav-profile'
   | 'mic' | 'headphones' | 'speaker' | 'slow' | 'translate' | 'later' | 'check' | 'cross'
   | 'notebook' | 'letter' | 'memory' | 'gift' | 'shop' | 'lock' | 'trophy' | 'star'
-  | 'challenge' | 'external' | 'plane' | 'settings' | 'on-air'
+  | 'challenge' | 'external' | 'plane' | 'settings' | 'on-air' | 'phone'
   | 'g-book' | 'g-pencil' | 'g-bubble' | 'g-stopwatch' | 'g-star' | 'g-trophy' | 'g-check'
 
 /**
