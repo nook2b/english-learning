@@ -1,0 +1,402 @@
+{
+ "id": "room17",
+ "title": "Room 17",
+ "members": [
+  "mika",
+  "rei",
+  "iris"
+ ],
+ "messages": [
+  {
+   "id": "room17-003-2-1",
+   "unlock": {
+    "unit": "003",
+    "session": 2
+   },
+   "day": "Вторник, вечер",
+   "from": "system",
+   "type": "system",
+   "ru": "Мика добавила тебя в чат «Room 17»"
+  },
+  {
+   "id": "room17-003-2-2",
+   "unlock": {
+    "unit": "003",
+    "session": 2
+   },
+   "day": "Вторник, вечер",
+   "from": "mika",
+   "type": "text",
+   "text": "I asked everyone to send their timetable by voice message. Listen and find our free hour!",
+   "ru": "Я попросила всех прислать расписание голосовыми. Послушай и найди наш свободный час!"
+  },
+  {
+   "id": "room17-003-2-3",
+   "unlock": {
+    "unit": "003",
+    "session": 2
+   },
+   "day": "Вторник, вечер",
+   "from": "mika",
+   "type": "voice",
+   "text": "Hi! My timetable is crazy. Club meetings on Monday and Thursday evenings, the student office on Tuesday morning, and on Wednesday I'm free after twelve. Friday is the Club Fair, so don't even ask!",
+   "ru": "Привет! У меня безумное расписание. Встречи клубов в понедельник и четверг вечером, студенческий офис во вторник утром, а в среду я свободна после двенадцати. В пятницу ярмарка клубов, так что даже не спрашивай!",
+   "delivery": "[cheerful, a little rushed]"
+  },
+  {
+   "id": "room17-003-2-4",
+   "unlock": {
+    "unit": "003",
+    "session": 2
+   },
+   "day": "Вторник, вечер",
+   "from": "rei",
+   "type": "voice",
+   "text": "Rei here. I'm in the sound lab every day from two to five. Except Wednesday. On Wednesday the lab closes at one, so I'm free from one to three.",
+   "ru": "Это Рэй. Я в звуковой лаборатории каждый день с двух до пяти. Кроме среды. В среду лаборатория закрывается в час, так что я свободна с часу до трёх.",
+   "delivery": "[flat, quiet]"
+  },
+  {
+   "id": "room17-003-2-5",
+   "unlock": {
+    "unit": "003",
+    "session": 2
+   },
+   "day": "Вторник, вечер",
+   "from": "iris",
+   "type": "voice",
+   "text": "Hello, it's Iris. I work in the library on Monday, Wednesday and Friday, from three to seven. On Tuesday and Thursday I have seminars in the morning. So Wednesday before three is fine for me.",
+   "ru": "Привет, это Айрис. Я работаю в библиотеке в понедельник, среду и пятницу с трёх до семи. Во вторник и четверг у меня утром семинары. Так что среда до трёх мне подходит.",
+   "delivery": "[calm, clear]"
+  },
+  {
+   "id": "room17-003-8-1",
+   "unlock": {
+    "unit": "003",
+    "session": 8
+   },
+   "day": "Среда",
+   "from": "system",
+   "type": "system",
+   "ru": "Общий час команды: среда, 13:00"
+  },
+  {
+   "id": "room17-005-2-1",
+   "unlock": {
+    "unit": "005",
+    "session": 2
+   },
+   "day": "Пятница",
+   "from": "iris",
+   "type": "photo",
+   "image": "chat_005_floorplan",
+   "about": "План этажа с пометками ручкой"
+  },
+  {
+   "id": "room17-005-2-2",
+   "unlock": {
+    "unit": "005",
+    "session": 2
+   },
+   "day": "Пятница",
+   "from": "mika",
+   "type": "voice",
+   "text": "Start at the glass doors of the New Building. Cross the courtyard and enter the Old Building. There are stairs on your left. Don't go upstairs. The equipment desk is further along the corridor.",
+   "ru": "Начни у стеклянных дверей нового корпуса. Перейди двор и войди в старый корпус. Слева будет лестница. Не поднимайся. Пункт выдачи дальше по коридору.",
+   "delivery": "[quietly, focused]"
+  },
+  {
+   "id": "room17-005-2-3",
+   "unlock": {
+    "unit": "005",
+    "session": 2
+   },
+   "day": "Пятница",
+   "from": "iris",
+   "type": "voice",
+   "text": "The equipment desk is between the stairs and the noticeboard, at the end of the corridor. There is a borrowing sheet by the door. The furniture has coloured labels on it.",
+   "ru": "Пункт выдачи между лестницей и доской объявлений, в конце коридора. У двери лежит лист выдачи. На мебели есть цветные наклейки."
+  },
+  {
+   "id": "room17-006-2-1",
+   "unlock": {
+    "unit": "006",
+    "session": 2
+   },
+   "day": "Понедельник",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_006_light",
+   "about": "Мигающий индикатор записи над дверью"
+  },
+  {
+   "id": "room17-006-2-2",
+   "unlock": {
+    "unit": "006",
+    "session": 2
+   },
+   "day": "Понедельник",
+   "from": "rei",
+   "type": "voice",
+   "text": "The recorder is working. The noise starts when we connect the microphone with the old cable. I'm leaving that cable unplugged. The room is also making our voices echo.",
+   "ru": "Рекордер работает. Шум начинается, когда мы подключаем микрофон старым кабелем. Я оставляю этот кабель отключённым. А ещё в комнате эхо от наших голосов.",
+   "delivery": "[quietly, focused]"
+  },
+  {
+   "id": "room17-006-2-3",
+   "unlock": {
+    "unit": "006",
+    "session": 2
+   },
+   "day": "Понедельник",
+   "from": "mika",
+   "type": "voice",
+   "text": "The small recording light by the door is flashing. It isn't staying red. The main ceiling light is working normally. I'm taking a photo of the small light for our request.",
+   "ru": "Маленький индикатор записи у двери мигает. Он не горит ровным красным светом. Основной потолочный свет работает нормально. Я фотографирую маленький индикатор для заявки.",
+   "delivery": "[quietly, focused]"
+  },
+  {
+   "id": "room17-007-2-1",
+   "unlock": {
+    "unit": "007",
+    "session": 2
+   },
+   "day": "Вторник",
+   "from": "mika",
+   "type": "voice",
+   "text": "I can meet Alex at the door at one. Could someone keep the repair request open on their phone? After the check, I'll bring the trolley. We need two people to move the shelf.",
+   "ru": "Я могу встретить Алекса у двери в час. Кто-нибудь может держать заявку открытой на телефоне? После проверки я привезу тележку. Чтобы перевезти полку, нужны двое."
+  },
+  {
+   "id": "room17-007-2-2",
+   "unlock": {
+    "unit": "007",
+    "session": 2
+   },
+   "day": "Вторник",
+   "from": "iris",
+   "type": "voice",
+   "text": "I'll bring the borrowing sheet and clear the writing table. I can help move light boxes, but I can't carry the shelf alone. Would you mind keeping the doorway clear?",
+   "ru": "Я принесу лист выдачи и освобожу письменный стол. Могу помочь перенести лёгкие коробки, но не могу нести полку одна. Не мог бы ты оставить дверной проём свободным?"
+  },
+  {
+   "id": "room17-008-2-1",
+   "unlock": {
+    "unit": "008",
+    "session": 2
+   },
+   "day": "Среда",
+   "from": "mika",
+   "type": "voice",
+   "text": "I like working around one table. I'd prefer the board near the door, where everyone can read it. The photo can wait until we're finished. I don't want a pretty room that nobody can use.",
+   "ru": "Мне нравится работать всем за одним столом. Я предпочла бы доску рядом с дверью, чтобы все могли её прочитать. Фото подождёт до конца. Мне не нужна красивая комната, которой невозможно пользоваться."
+  },
+  {
+   "id": "room17-008-2-2",
+   "unlock": {
+    "unit": "008",
+    "session": 2
+   },
+   "day": "Среда",
+   "from": "iris",
+   "type": "voice",
+   "text": "I'd rather keep the writing table separate from the recording corner. I like writing by the window, but the other wall works too. We need enough room for four people, not just for my notebook.",
+   "ru": "Я предпочла бы держать письменный стол отдельно от угла записи. Мне нравится писать у окна, но другая стена тоже подходит. Нам нужно место для четырёх человек, а не только для моего блокнота."
+  },
+  {
+   "id": "room17-008-8-1",
+   "unlock": {
+    "unit": "008",
+    "session": 8
+   },
+   "day": "Среда, после обустройства",
+   "from": "mika",
+   "type": "text",
+   "text": "We can actually work in here now! Four chairs, no boxes in the doorway.",
+   "ru": "Теперь здесь правда можно работать! Четыре стула, никаких коробок в дверях."
+  },
+  {
+   "id": "room17-008-8-2",
+   "unlock": {
+    "unit": "008",
+    "session": 8
+   },
+   "day": "Среда, после обустройства",
+   "from": "iris",
+   "type": "photo",
+   "image": "chat_008_room_after_window",
+   "about": "Комната 17 после обустройства: письменный стол у окна",
+   "caption": "Room photo, no people.",
+   "captionRu": "Фото комнаты, без людей.",
+   "if": "u008_layout_window"
+  },
+  {
+   "id": "room17-008-8-3",
+   "unlock": {
+    "unit": "008",
+    "session": 8
+   },
+   "day": "Среда, после обустройства",
+   "from": "iris",
+   "type": "photo",
+   "image": "chat_008_room_after_wall",
+   "about": "Комната 17 после обустройства: письменный стол у стены",
+   "caption": "Room photo, no people.",
+   "captionRu": "Фото комнаты, без людей.",
+   "ifNot": "u008_layout_window"
+  },
+  {
+   "id": "room17-010-8-1",
+   "unlock": {
+    "unit": "010",
+    "session": 8
+   },
+   "day": "Среда, после обеда",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_010_menu",
+   "about": "Меню столовой на стойке"
+  },
+  {
+   "id": "room17-010-8-2",
+   "unlock": {
+    "unit": "010",
+    "session": 8
+   },
+   "day": "Среда, после обеда",
+   "from": "mika",
+   "type": "text",
+   "text": "Shop on Friday at four? Extra meeting, after classes.",
+   "ru": "В магазин в пятницу в четыре? Дополнительная встреча, после занятий."
+  },
+  {
+   "id": "room17-010-8-3",
+   "unlock": {
+    "unit": "010",
+    "session": 8
+   },
+   "day": "Среда, после обеда",
+   "from": "rei",
+   "type": "text",
+   "text": "Free. We need a stand.",
+   "ru": "Свободна. Нужна подставка."
+  },
+  {
+   "id": "room17-010-8-4",
+   "unlock": {
+    "unit": "010",
+    "session": 8
+   },
+   "day": "Среда, после обеда",
+   "from": "iris",
+   "type": "text",
+   "text": "Free too. I can bring the budget sheet.",
+   "ru": "Тоже свободна. Принесу лист бюджета."
+  },
+  {
+   "id": "room17-010-8-5",
+   "unlock": {
+    "unit": "010",
+    "session": 8
+   },
+   "day": "Среда, после обеда",
+   "from": "me",
+   "type": "text",
+   "text": "Friday at four works for me.",
+   "ru": "Пятница в четыре мне подходит."
+  },
+  {
+   "id": "room17-011-7-1",
+   "unlock": {
+    "unit": "011",
+    "session": 7
+   },
+   "day": "Пятница",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_011_prices",
+   "about": "Ценники на полке: подставки £7 и £12, микрофоны £18, £28, £40"
+  },
+  {
+   "id": "room17-011-8-1",
+   "unlock": {
+    "unit": "011",
+    "session": 8
+   },
+   "day": "Пятница, после магазина",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_011_receipt",
+   "about": "Подставка, ветрозащита и чек на столе",
+   "caption": "Stand £12 + windscreen £4. £8 left.",
+   "captionRu": "Подставка £12 + ветрозащита £4. Осталось £8."
+  },
+  {
+   "id": "room17-011-8-2",
+   "unlock": {
+    "unit": "011",
+    "session": 8
+   },
+   "day": "Пятница, после магазина",
+   "from": "mika",
+   "type": "text",
+   "text": "Eight pounds left. I'll post that before anyone finds another beautiful microphone.",
+   "ru": "Осталось восемь фунтов. Напишу, пока никто не нашёл ещё один прекрасный микрофон."
+  },
+  {
+   "id": "room17-012-2-1",
+   "unlock": {
+    "unit": "012",
+    "session": 2
+   },
+   "day": "Среда",
+   "from": "mika",
+   "type": "voice",
+   "text": "I'll bring a little tea from home next Wednesday. We don't need three packets. Please tell me if you don't want tea. Water is fine too. Nobody has to join in.",
+   "ru": "В следующую среду принесу немного чая из дома. Три пачки нам не нужны. Скажите, если не хотите чай. Вода тоже подойдёт. Никто не обязан участвовать."
+  },
+  {
+   "id": "room17-012-2-2",
+   "unlock": {
+    "unit": "012",
+    "session": 2
+   },
+   "day": "Среда",
+   "from": "iris",
+   "type": "voice",
+   "text": "I can bring a few plain biscuits next week. I'll keep the packet so everyone can check the ingredients. We need enough for a small break, not enough to open a cafe.",
+   "ru": "Могу принести несколько простых печений на следующей неделе. Сохраню упаковку, чтобы все могли проверить состав. Нужно достаточно для короткого перерыва, а не для открытия кафе.",
+   "delivery": "[dry, understated humor]"
+  },
+  {
+   "id": "room17-012-8-1",
+   "unlock": {
+    "unit": "012",
+    "session": 8
+   },
+   "day": "Среда, после покупки",
+   "from": "iris",
+   "type": "photo",
+   "image": "chat_012_shelf_clips",
+   "about": "Полка с двумя чашками, кабель закреплён зажимами",
+   "caption": "Two mugs. Two pounds left.",
+   "captionRu": "Две чашки. Осталось два фунта.",
+   "if": "u012_supply_clips"
+  },
+  {
+   "id": "room17-012-8-2",
+   "unlock": {
+    "unit": "012",
+    "session": 8
+   },
+   "day": "Среда, после покупки",
+   "from": "iris",
+   "type": "photo",
+   "image": "chat_012_shelf_tape",
+   "about": "Полка с двумя чашками, коробки подписаны лентой",
+   "caption": "Two mugs. Two pounds left.",
+   "captionRu": "Две чашки. Осталось два фунта.",
+   "if": "u012_supply_tape"
+  }
+ ]
+}

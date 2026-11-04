@@ -11,6 +11,7 @@ import { ReviewSession } from '../features/review/ReviewSession'
 import { PlacementCheck } from '../features/story/PlacementCheck'
 import { PrologueScreen } from '../features/story/PrologueScreen'
 import { QuestsScreen } from '../features/quests/QuestsScreen'
+import { ChatScreen } from '../features/chat/ChatScreen'
 import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
 import { type Route, navigate, useRoute } from './router'
@@ -50,6 +51,8 @@ function Screen({ route }: { route: Route }) {
       return <HeroineScreen key={route.id} id={route.id} />
     case 'profile':
       return <ProfileScreen />
+    case 'chat':
+      return <ChatScreen />
   }
 }
 

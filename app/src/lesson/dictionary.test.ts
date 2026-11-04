@@ -1,5 +1,6 @@
 import { AFTER_CLASS } from '../content/afterClass'
 import { CHARACTERS } from '../content/characters'
+import { ROOM17 } from '../content/chats'
 import { UNITS } from '../content/course'
 import { PROLOGUE } from '../content/story'
 import { bases, lookup, phraseRu, WORD } from './dictionary'
@@ -20,6 +21,7 @@ function glossedTexts(): string[] {
   walk([...Object.values(UNITS), PROLOGUE])
   for (const states of Object.values(AFTER_CLASS)) texts.push(...Object.values(states).map((l) => l.text))
   for (const c of Object.values(CHARACTERS)) texts.push(...c.lines.map((l) => l.text), ...c.memories.map((m) => m.en))
+  for (const m of ROOM17.messages) texts.push(...[m.text, m.caption].filter((t): t is string => !!t))
   return texts
 }
 

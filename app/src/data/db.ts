@@ -21,6 +21,8 @@ export interface Settings {
   survey?: SurveyAnswers
   /** Placement check results, oldest first: the first one at the start, later ones on retakes. */
   placements?: PlacementResult[]
+  /** Team chat messages already seen (their ids), for the unread badge. */
+  chatSeen?: string[]
 }
 
 export const SKILLS = ['reading', 'listening', 'speaking', 'writing'] as const
