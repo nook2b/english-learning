@@ -397,6 +397,214 @@
    "caption": "Two mugs. Two pounds left.",
    "captionRu": "Две чашки. Осталось два фунта.",
    "if": "u012_supply_tape"
+  },
+  {
+   "id": "room17-013-2-1",
+   "unlock": {
+    "unit": "013",
+    "session": 2
+   },
+   "day": "Среда, во дворе",
+   "from": "rei",
+   "type": "voice",
+   "text": "Listen. This is our quiet courtyard. Usually, you can hear people talking near the benches. Right now, the drill is louder than everyone. I'm standing by the wall, with the recorder facing the middle.",
+   "ru": "Послушайте. Вот наш тихий двор. Обычно слышно, как у скамеек разговаривают люди. Сейчас дрель громче всех. Я стою у стены, рекордер направлен в центр двора."
+  },
+  {
+   "id": "room17-013-2-2",
+   "unlock": {
+    "unit": "013",
+    "session": 2
+   },
+   "day": "Среда, во дворе",
+   "from": "rei",
+   "type": "photo",
+   "image": "chat_013_ladder",
+   "about": "Стремянка и инструменты у стены двора",
+   "caption": "Not our equipment.",
+   "captionRu": "Это оборудование не наше."
+  },
+  {
+   "id": "room17-014-2-1",
+   "unlock": {
+    "unit": "014",
+    "session": 2
+   },
+   "day": "Пятница, перед второй попыткой",
+   "from": "mika",
+   "type": "voice",
+   "text": "I'm near the door. They keep moving chairs behind me, and the fan is running above it. Someone is practising the trumpet upstairs too. Can you hear me? I'm coming back to the bench now.",
+   "ru": "Я возле двери. За мной всё время двигают стулья, а над дверью работает вентилятор. Наверху ещё кто-то упражняется на трубе. Вы меня слышите? Сейчас вернусь к скамейке."
+  },
+  {
+   "id": "room17-014-2-2",
+   "unlock": {
+    "unit": "014",
+    "session": 2
+   },
+   "day": "Пятница, перед второй попыткой",
+   "from": "iris",
+   "type": "photo",
+   "image": "chat_014_notice",
+   "about": "Объявление о работах во дворе: Wed, 17:00",
+   "caption": "The important part.",
+   "captionRu": "Самое важное."
+  },
+  {
+   "id": "room17-014-8-1",
+   "unlock": {
+    "unit": "014",
+    "session": 8
+   },
+   "day": "Пятница, после попытки",
+   "from": "mika",
+   "type": "text",
+   "text": "No recording today. We'll check new times on Monday.",
+   "ru": "Сегодня не записываем. В понедельник выберем другое время."
+  },
+  {
+   "id": "room17-015-2-1",
+   "unlock": {
+    "unit": "015",
+    "session": 2
+   },
+   "day": "Понедельник, сверка расписаний",
+   "from": "mika",
+   "type": "voice",
+   "text": "How about Friday at four? My classes finish at three, so I can bring the tea first. I can't do Thursday at four because I'm having a class. Saturday morning works for me too.",
+   "ru": "Как насчёт пятницы в четыре? У меня занятия заканчиваются в три, так что сначала занесу чай. В четверг в четыре не могу: у меня занятие. Суббота утром мне тоже подходит."
+  },
+  {
+   "id": "room17-015-2-2",
+   "unlock": {
+    "unit": "015",
+    "session": 2
+   },
+   "day": "Понедельник, сверка расписаний",
+   "from": "iris",
+   "type": "voice",
+   "text": "I'm studying in the library on Saturday afternoon, but eleven in the morning is fine. Friday at four also works. Could we choose just one? I don't want to put two recording sessions in my notebook.",
+   "ru": "В субботу после обеда я занимаюсь в библиотеке, но в одиннадцать утра могу. Пятница в четыре тоже подходит. Выберем что-то одно? Не хочу записывать в тетрадь две встречи для записи."
+  },
+  {
+   "id": "room17-015-2-3",
+   "unlock": {
+    "unit": "015",
+    "session": 2
+   },
+   "day": "Понедельник, сверка расписаний",
+   "from": "rei",
+   "type": "text",
+   "text": "Friday after three thirty. Or Saturday morning. Both work.",
+   "ru": "В пятницу после половины четвёртого. Или в субботу утром. Оба подходят."
+  },
+  {
+   "id": "room17-015-8-1",
+   "unlock": {
+    "unit": "015",
+    "session": 8
+   },
+   "day": "Понедельник, после выбора",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_015_board_fri",
+   "about": "Доска: выбрана пятница, 16:00, суббота зачёркнута",
+   "caption": "One time, four people.",
+   "captionRu": "Одно время, четыре человека.",
+   "ifNot": "u015_slot_sat11"
+  },
+  {
+   "id": "room17-015-8-2",
+   "unlock": {
+    "unit": "015",
+    "session": 8
+   },
+   "day": "Понедельник, после выбора",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_015_board_sat",
+   "about": "Доска: выбрана суббота, 11:00, пятница зачёркнута",
+   "caption": "One time, four people.",
+   "captionRu": "Одно время, четыре человека.",
+   "if": "u015_slot_sat11"
+  },
+  {
+   "id": "room17-016-2-1",
+   "unlock": {
+    "unit": "016",
+    "session": 2
+   },
+   "day": "Четверг, подтверждения",
+   "from": "mika",
+   "type": "text",
+   "text": "Confirmed: Friday at four, courtyard. I'll bring tea.",
+   "ru": "Подтверждаю: в пятницу в четыре, двор. Принесу чай.",
+   "ifNot": "u015_slot_sat11"
+  },
+  {
+   "id": "room17-016-2-2",
+   "unlock": {
+    "unit": "016",
+    "session": 2
+   },
+   "day": "Четверг, подтверждения",
+   "from": "mika",
+   "type": "text",
+   "text": "Confirmed: Saturday at eleven, courtyard. I'll bring tea.",
+   "ru": "Подтверждаю: в субботу в одиннадцать, двор. Принесу чай.",
+   "if": "u015_slot_sat11"
+  },
+  {
+   "id": "room17-016-2-3",
+   "unlock": {
+    "unit": "016",
+    "session": 2
+   },
+   "day": "Четверг, подтверждения",
+   "from": "iris",
+   "type": "text",
+   "text": "That works. I'll bring the text. See you on Friday.",
+   "ru": "Подходит. Принесу текст. Увидимся в пятницу.",
+   "ifNot": "u015_slot_sat11"
+  },
+  {
+   "id": "room17-016-2-4",
+   "unlock": {
+    "unit": "016",
+    "session": 2
+   },
+   "day": "Четверг, подтверждения",
+   "from": "iris",
+   "type": "text",
+   "text": "That works. I'll bring the text. See you on Saturday.",
+   "ru": "Подходит. Принесу текст. Увидимся в субботу.",
+   "if": "u015_slot_sat11"
+  },
+  {
+   "id": "room17-016-2-5",
+   "unlock": {
+    "unit": "016",
+    "session": 2
+   },
+   "day": "Четверг, подтверждения",
+   "from": "rei",
+   "type": "text",
+   "text": "Confirmed. I'll check the recorder and bring the stand.",
+   "ru": "Подтверждаю. Проверю рекордер и принесу подставку."
+  },
+  {
+   "id": "room17-016-8-1",
+   "unlock": {
+    "unit": "016",
+    "session": 8
+   },
+   "day": "После записи",
+   "from": "rei",
+   "type": "photo",
+   "image": "chat_016_recorder",
+   "about": "Экран рекордера: длина фонового клипа 00:10",
+   "caption": "Ten seconds. Finally.",
+   "captionRu": "Десять секунд. Наконец-то."
   }
  ]
 }

@@ -22,10 +22,22 @@ def line(uid, n, speaker, start):
         if e['type'] == 'scene':
             pool += e['lines'] + e.get('after', [])
     found = next(l for l in pool if l['speaker'] == speaker and l['text'].startswith(start))
-    m = {'from': speaker, 'type': 'text', 'text': found['text'], 'ru': found['ru']}
-    if found.get('if'):
-        m['if'] = found['if']
+    return as_message(found)
+
+
+def as_message(found):
+    m = {'from': found['speaker'], 'type': 'text', 'text': found['text'], 'ru': found['ru']}
+    for k in ('if', 'ifNot'):
+        if found.get(k):
+            m[k] = found[k]
     return m
+
+
+def lines(uid, n, speaker, start):
+    """Every variant of a line (lines that depend on a choice come in several)."""
+    s = units[uid]['sessions'][n - 1]
+    pool = (s.get('frame') or {}).get('lines', []) + s.get('wrap', [])
+    return [as_message(l) for l in pool if l['speaker'] == speaker and l['text'].startswith(start)]
 
 
 def voices(uid, n):
@@ -84,6 +96,16 @@ FEED = [
         photo('iris', 'chat_012_shelf_clips', 'Полка с двумя чашками, кабель закреплён зажимами', 'Two mugs. Two pounds left.', 'Две чашки. Осталось два фунта.', **{'if': 'u012_supply_clips'}),
         photo('iris', 'chat_012_shelf_tape', 'Полка с двумя чашками, коробки подписаны лентой', 'Two mugs. Two pounds left.', 'Две чашки. Осталось два фунта.', **{'if': 'u012_supply_tape'}),
     ]),
+    ('013', 2, 'Среда, во дворе', [*voices('013', 2), photo('rei', 'chat_013_ladder', 'Стремянка и инструменты у стены двора', 'Not our equipment.', 'Это оборудование не наше.')]),
+    ('014', 2, 'Пятница, перед второй попыткой', [*voices('014', 2), photo('iris', 'chat_014_notice', 'Объявление о работах во дворе: Wed, 17:00', 'The important part.', 'Самое важное.')]),
+    ('014', 8, 'Пятница, после попытки', [{'from': 'mika', 'type': 'text', 'text': "No recording today. We'll check new times on Monday.", 'ru': 'Сегодня не записываем. В понедельник выберем другое время.'}]),
+    ('015', 2, 'Понедельник, сверка расписаний', [*voices('015', 2), {'from': 'rei', 'type': 'text', 'text': 'Friday after three thirty. Or Saturday morning. Both work.', 'ru': 'В пятницу после половины четвёртого. Или в субботу утром. Оба подходят.'}]),
+    ('015', 8, 'Понедельник, после выбора', [
+        photo('mika', 'chat_015_board_fri', 'Доска: выбрана пятница, 16:00, суббота зачёркнута', 'One time, four people.', 'Одно время, четыре человека.', ifNot='u015_slot_sat11'),
+        photo('mika', 'chat_015_board_sat', 'Доска: выбрана суббота, 11:00, пятница зачёркнута', 'One time, four people.', 'Одно время, четыре человека.', **{'if': 'u015_slot_sat11'}),
+    ]),
+    ('016', 2, 'Четверг, подтверждения', [*lines('016', 2, 'mika', 'Confirmed:'), *lines('016', 2, 'iris', 'That works.'), *lines('016', 2, 'rei', 'Confirmed. I')]),
+    ('016', 8, 'После записи', [photo('rei', 'chat_016_recorder', 'Экран рекордера: длина фонового клипа 00:10', 'Ten seconds. Finally.', 'Десять секунд. Наконец-то.')]),
 ]
 
 messages = []

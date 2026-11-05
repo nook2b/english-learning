@@ -218,5 +218,25 @@
   "kind": "topic",
   "ru": "A few и a little",
   "cheatsheet": "cheatsheets/few_little.json"
+ },
+ "function_polite_questions": {
+  "kind": "topic",
+  "ru": "Вежливо узнать: When does…? How long will it take?",
+  "cheatsheet": "cheatsheets/function_polite_questions.json"
+ },
+ "future_arrangements": {
+  "kind": "topic",
+  "ru": "Договорённости: We're meeting on…",
+  "cheatsheet": "cheatsheets/future_arrangements.json"
+ },
+ "function_rescheduling": {
+  "kind": "topic",
+  "ru": "Перенести встречу: Can we move it…? I'm afraid I can't",
+  "cheatsheet": "cheatsheets/function_rescheduling.json"
+ },
+ "function_confirming": {
+  "kind": "topic",
+  "ru": "Подтвердить: Just to confirm…, right?",
+  "cheatsheet": "cheatsheets/function_confirming.json"
  }
 }

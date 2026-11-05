@@ -1,0 +1,1067 @@
+{
+  "id": "015",
+  "title": "Найти другое время",
+  "goal": "Предложить время, объяснить занятость и договориться о разовой встрече.",
+  "focus": "Планы и договорённости: Present Continuous для того, что уже в расписании (I'm having a class on Thursday, We're meeting on Friday); перенести и отказаться: Can we move it to…?, How about…?, I'm afraid I can't…, I'm busy then, That works for me.",
+  "outcome": "Вы выбираете пятницу, 16:00, или субботу, 11:00. Регулярные встречи по средам сохраняются.",
+  "expressions": [
+    "We're meeting on",
+    "Can we move it to",
+    "How about",
+    "I'm afraid I can't",
+    "I'm busy then",
+    "That works for me",
+    "after class",
+    "this time only",
+    "Are you free on",
+    "I'm having a class",
+    "Let's check",
+    "another time"
+  ],
+  "glossary": [
+    "recording session",
+    "sound room",
+    "diary",
+    "booking",
+    "regular meeting"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Четыре расписания",
+      "intro": "Записка с расписаниями всех четверых. Найди время, которое подходит всем.",
+      "place": "room17",
+      "frame": {
+        "setting": "Понедельник, четыре часа. Мика рисует на доске пятницу и субботу. Айрис сверяет время окончания ремонта.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Two options. Both after the work finishes.",
+            "ru": "Два варианта. Оба после окончания работ.",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u015-s1-e1",
+          "type": "reading",
+          "title": "One recording, another day",
+          "text": "The courtyard work finishes on Wednesday at five. Our usual Wednesday meeting is at one, so we need another time for this recording. Mika has a class on Thursday until five. Rei is helping in the sound room on Friday until half past three. Iris is studying in the library on Saturday afternoon, but she is free in the morning. Everyone is free on Friday at four and Saturday at eleven. Please choose one of these times. We are moving this recording only. Our regular meetings stay on Wednesdays at one.",
+          "ru": "Работы во дворе закончатся в среду в пять. Наша обычная встреча в среду в час, поэтому для этой записи нужно другое время. В четверг Мика на занятии до пяти. Рэй в пятницу помогает в звуковой комнате до половины четвёртого. Айрис в субботу после обеда занимается в библиотеке, но утром свободна. Всем подходят пятница в четыре и суббота в одиннадцать. Выберите одно из этих времён. Мы переносим только эту запись. Обычные встречи остаются по средам в час.",
+          "questions": [
+            {
+              "prompt": "Why not Wednesday at one?",
+              "options": [
+                "The work is still going",
+                "Iris is away",
+                "The recorder is broken"
+              ],
+              "answer": "The work is still going"
+            },
+            {
+              "prompt": "When is Rei free on Friday?",
+              "options": [
+                "After 3:30",
+                "Only at noon",
+                "After six"
+              ],
+              "answer": "After 3:30"
+            },
+            {
+              "prompt": "What stays the same?",
+              "options": [
+                "Regular Wednesday meetings",
+                "The repair schedule changes",
+                "Both options are booked"
+              ],
+              "answer": "Regular Wednesday meetings"
+            }
+          ],
+          "tags": [
+            "reading",
+            "future_arrangements",
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s1-e2",
+          "type": "choice",
+          "prompt": "Mika ___ a class on Thursday until five.",
+          "options": [
+            "has",
+            "is have",
+            "having"
+          ],
+          "answer": "has",
+          "tags": [
+            "future_arrangements"
+          ],
+          "explain": "В записке — факт расписания: has a class."
+        },
+        {
+          "id": "u015-s1-e3",
+          "type": "choice",
+          "prompt": "We ___ this recording only.",
+          "options": [
+            "are moving",
+            "move",
+            "moves"
+          ],
+          "answer": "are moving",
+          "tags": [
+            "future_arrangements"
+          ],
+          "explain": "Уже решили: are moving."
+        },
+        {
+          "id": "u015-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "That works for me",
+              "ru": "мне подходит"
+            },
+            {
+              "en": "I'm afraid I can't",
+              "ru": "боюсь, не могу"
+            },
+            {
+              "en": "How about…?",
+              "ru": "как насчёт…?"
+            },
+            {
+              "en": "after class",
+              "ru": "после занятия"
+            },
+            {
+              "en": "this time only",
+              "ru": "только в этот раз"
+            },
+            {
+              "en": "another time",
+              "ru": "другое время"
+            }
+          ],
+          "tags": [
+            "function_rescheduling"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Nobody needs to miss a class.",
+          "ru": "Никому не придётся пропускать занятия.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Два предложения",
+      "intro": "Два голосовых в общем чате: Мика и Айрис предлагают время. Слушай без текста.",
+      "place": "room17",
+      "frame": {
+        "setting": "В общий чат приходят два голосовых. На доске пока пусты клетки напротив пятницы и субботы.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Listen before you pick. Both are real options.",
+            "ru": "Прежде чем выбрать, послушай. Оба варианта подходят.",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u015-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "How about Friday at four? My classes finish at three, so I can bring the tea first. I can't do Thursday at four because I'm having a class. Saturday morning works for me too.",
+          "ru": "Как насчёт пятницы в четыре? У меня занятия заканчиваются в три, так что сначала занесу чай. В четверг в четыре не могу: у меня занятие. Суббота утром мне тоже подходит.",
+          "questions": [
+            {
+              "prompt": "Which time is impossible for Mika?",
+              "options": [
+                "Thursday at four",
+                "Friday at four",
+                "Saturday morning"
+              ],
+              "answer": "Thursday at four"
+            }
+          ],
+          "tags": [
+            "listening",
+            "future_arrangements",
+            "function_rescheduling"
+          ],
+          "context": "Голосовое Мики в чате «Room 17»"
+        },
+        {
+          "id": "u015-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "I'm studying in the library on Saturday afternoon, but eleven in the morning is fine. Friday at four also works. Could we choose just one? I don't want to put two recording sessions in my notebook.",
+          "ru": "В субботу после обеда я занимаюсь в библиотеке, но в одиннадцать утра могу. Пятница в четыре тоже подходит. Выберем что-то одно? Не хочу записывать в тетрадь две встречи для записи.",
+          "questions": [
+            {
+              "prompt": "How many sessions does Iris want to arrange?",
+              "options": [
+                "One",
+                "Two",
+                "Three"
+              ],
+              "answer": "One"
+            }
+          ],
+          "tags": [
+            "listening",
+            "future_arrangements"
+          ],
+          "context": "Голосовое Айрис в чате «Room 17»"
+        },
+        {
+          "id": "u015-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "Can we move it to Friday at four?",
+          "answers": [
+            "Can we move it to Friday at four?"
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s2-e4",
+          "type": "choice",
+          "prompt": "Rei: «Friday after three thirty. Or Saturday morning. Both ___.»",
+          "options": [
+            "work",
+            "works",
+            "working"
+          ],
+          "answer": "work",
+          "tags": [
+            "function_rescheduling"
+          ],
+          "explain": "Both work — оба подходят."
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "We have two options, not two bookings.",
+          "ru": "У нас два варианта, а не две назначенные встречи.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Что уже в расписании",
+      "intro": "Договорённость на будущее, которая уже стоит в расписании, — Present Continuous: I'm having a class on Thursday. We're meeting after the repairs finish. Это не «сейчас», а «уже договорились».",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис обводит занятия и дела, которые уже стоят у всех в расписаниях.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "These are arrangements. The days are already in the diary.",
+            "ru": "Это договорённости. Даты уже записаны.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u015-s3-e1",
+          "type": "choice",
+          "prompt": "Mika ___ a class on Thursday afternoon.",
+          "options": [
+            "is having",
+            "has having",
+            "have"
+          ],
+          "answer": "is having",
+          "tags": [
+            "future_arrangements"
+          ],
+          "explain": "Уже в расписании: is having.",
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s3-e2",
+          "type": "fill",
+          "prompt": "Rei is ___ in the sound room on Friday.",
+          "answers": [
+            "helping"
+          ],
+          "hint": "help",
+          "tags": [
+            "future_arrangements"
+          ],
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s3-e3",
+          "type": "choice",
+          "prompt": "Iris ___ in the library on Saturday afternoon.",
+          "options": [
+            "is studying",
+            "studies now",
+            "study"
+          ],
+          "answer": "is studying",
+          "tags": [
+            "future_arrangements"
+          ],
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s3-e4",
+          "type": "fill",
+          "prompt": "We are ___ after the repairs finish.",
+          "answers": [
+            "meeting"
+          ],
+          "hint": "meet",
+          "tags": [
+            "future_arrangements"
+          ],
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s3-e5",
+          "type": "choice",
+          "prompt": "___ you doing anything on Saturday morning?",
+          "options": [
+            "Are",
+            "Do",
+            "Is"
+          ],
+          "answer": "Are",
+          "tags": [
+            "future_arrangements"
+          ],
+          "explain": "Вопрос о планах: Are you doing…?",
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s3-e6",
+          "type": "choice",
+          "prompt": "We ___ recording this Wednesday at one.",
+          "options": [
+            "are not",
+            "do not",
+            "not"
+          ],
+          "answer": "are not",
+          "tags": [
+            "future_arrangements"
+          ],
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s3-e7",
+          "type": "fix",
+          "sentence": "I am have a class on Thursday.",
+          "answers": [
+            "I am having a class on Thursday.",
+            "I'm having a class on Thursday.",
+            "I have a class on Thursday."
+          ],
+          "tags": [
+            "future_arrangements"
+          ],
+          "explain": "Am + -ing: I'm having.",
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s3-e8",
+          "type": "transform",
+          "instruction": "Спроси о планах: начни с Are you",
+          "sentence": "free on Saturday",
+          "answers": [
+            "Are you free on Saturday?"
+          ],
+          "tags": [
+            "future_arrangements"
+          ],
+          "context": "Доска с расписаниями"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "The recorder can wait. Classes first.",
+          "ru": "Рекордер подождёт. Сначала занятия.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Не могу, но могу иначе",
+      "intro": "Отказаться и предложить другое: I'm afraid I can't come on Thursday. I'm busy then, but Friday works. How about…? Can we move it to…? Согласиться: That works for me.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика зачёркивает четверг и оставляет два свободных окошка.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "A no is useful if we know what works instead.",
+            "ru": "Отказ тоже полезен, если понятно, что подходит взамен.",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u015-s4-e1",
+          "type": "choice",
+          "prompt": "I'm ___ I can't come on Thursday.",
+          "options": [
+            "afraid",
+            "sorry that",
+            "scared"
+          ],
+          "answer": "afraid",
+          "tags": [
+            "function_rescheduling"
+          ],
+          "explain": "I'm afraid I can't — боюсь, не могу.",
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s4-e2",
+          "type": "fill",
+          "prompt": "I'm busy then, but Friday ___.",
+          "answers": [
+            "works"
+          ],
+          "tags": [
+            "function_rescheduling"
+          ],
+          "explain": "Friday works — пятница подходит.",
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s4-e3",
+          "type": "choice",
+          "prompt": "How ___ Saturday at eleven?",
+          "options": [
+            "about",
+            "for",
+            "with"
+          ],
+          "answer": "about",
+          "tags": [
+            "function_rescheduling"
+          ],
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s4-e4",
+          "type": "fill",
+          "prompt": "Can we move it ___ Friday?",
+          "answers": [
+            "to"
+          ],
+          "tags": [
+            "function_rescheduling"
+          ],
+          "explain": "Move it to… — перенести на…",
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s4-e5",
+          "type": "choice",
+          "prompt": "That ___ for me.",
+          "options": [
+            "works",
+            "is working",
+            "work"
+          ],
+          "answer": "works",
+          "tags": [
+            "function_rescheduling"
+          ],
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s4-e6",
+          "type": "choice",
+          "prompt": "Are you free ___ class?",
+          "options": [
+            "after",
+            "since",
+            "until"
+          ],
+          "answer": "after",
+          "tags": [
+            "function_rescheduling"
+          ],
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s4-e7",
+          "type": "fix",
+          "sentence": "How about to meet on Friday?",
+          "answers": [
+            "How about meeting on Friday?",
+            "How about Friday?"
+          ],
+          "tags": [
+            "function_rescheduling"
+          ],
+          "explain": "После How about — существительное или -ing.",
+          "context": "Доска с расписаниями"
+        },
+        {
+          "id": "u015-s4-e8",
+          "type": "sort",
+          "instruction": "Это согласие или отказ?",
+          "categories": [
+            {
+              "id": "yes",
+              "label": "Согласие"
+            },
+            {
+              "id": "no",
+              "label": "Отказ"
+            }
+          ],
+          "items": [
+            {
+              "text": "That works for me.",
+              "category": "yes"
+            },
+            {
+              "text": "Friday is fine.",
+              "category": "yes"
+            },
+            {
+              "text": "Saturday at eleven works.",
+              "category": "yes"
+            },
+            {
+              "text": "I'm afraid I can't.",
+              "category": "no"
+            },
+            {
+              "text": "I'm busy then.",
+              "category": "no"
+            },
+            {
+              "text": "I'm having a class.",
+              "category": "no"
+            }
+          ],
+          "tags": [
+            "function_rescheduling"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Good. Two boxes left.",
+          "ru": "Хорошо. Осталось два окошка.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Важное уточнение Мики",
+      "intro": "Мика открывает календарь на субботе. Ответь, как хочешь.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика разворачивает телефон к тебе. В календаре открыта суббота.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "I can do either. What about you?",
+            "ru": "Я могу в оба дня. А ты?",
+            "expr": "phone/happy"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u015-s5-e1",
+          "type": "scene",
+          "setting": "Мика разворачивает к тебе телефон. В календаре открыта суббота.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "If we pick Saturday, I get to see you at the weekend. For work, obviously.",
+              "ru": "Если выберем субботу, увижу тебя на выходных. По работе, разумеется.",
+              "expr": "happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Поддержать флирт",
+              "answers": [
+                "That sounds like a good reason to come.",
+                "Seeing you is a good part of the plan."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll put that under team spirit.",
+                "ru": "Запишу в раздел «командный дух».",
+                "expr": "happy"
+              },
+              "flag": "flirt_mika_015"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "Does the recorder know it's working Saturday?",
+                "I hope the drill has the weekend off."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "The drill is definitely not invited.",
+                "ru": "Дрель точно не приглашена.",
+                "expr": "happy"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Both times work. Let's check the list.",
+                "Let's choose a time after we check everyone."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Right. One time for all four.",
+                "ru": "Верно. Одно время на четверых.",
+                "expr": "happy"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_rescheduling"
+          ],
+          "context": "Очень рабочий вопрос"
+        },
+        {
+          "id": "u015-s5-e2",
+          "type": "translate",
+          "ru": "Боюсь, в четверг я не смогу прийти.",
+          "answers": [
+            "I'm afraid I can't come on Thursday.",
+            "I am afraid I can't come on Thursday."
+          ],
+          "tags": [
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s5-e3",
+          "type": "translate",
+          "ru": "Как насчёт пятницы в четыре?",
+          "answers": [
+            "How about Friday at four?"
+          ],
+          "tags": [
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s5-e4",
+          "type": "translate",
+          "ru": "Мне подходит.",
+          "answers": [
+            "That works for me.",
+            "It works for me."
+          ],
+          "tags": [
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s5-e5",
+          "type": "translate",
+          "ru": "В четверг у меня занятие.",
+          "answers": [
+            "I'm having a class on Thursday.",
+            "I have a class on Thursday."
+          ],
+          "tags": [
+            "future_arrangements"
+          ]
+        },
+        {
+          "id": "u015-s5-e6",
+          "type": "write",
+          "situation": "Откажись от четверга, объясни почему и предложи другое время.",
+          "answers": [
+            "I'm afraid I can't come on Thursday. I'm having a class. How about Friday at four?",
+            "I'm busy on Thursday. How about Saturday at eleven?",
+            "Sorry, I can't come on Thursday because I have a class. Can we move it to Friday?",
+            "I'm afraid I can't on Thursday. Friday at four works for me."
+          ],
+          "tags": [
+            "function_rescheduling"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "No booking yet. One final check.",
+          "ru": "Пока ничего не назначаю. Последняя проверка.",
+          "expr": "phone/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: предложить и отказаться",
+      "intro": "Прочитай вслух: отказ, предложение и согласие.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис закрывает нижнюю часть расписания листком. Тебе видны день и время.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Say the whole arrangement, including the time.",
+            "ru": "Назови договорённость целиком, вместе со временем.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u015-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I'm afraid I can't come on Thursday.",
+          "answers": [
+            "I'm afraid I can't come on Thursday."
+          ],
+          "tags": [
+            "speaking",
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "How about Friday at four?",
+          "answers": [
+            "How about Friday at four?"
+          ],
+          "tags": [
+            "speaking",
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Saturday at eleven works for me.",
+          "answers": [
+            "Saturday at eleven works for me."
+          ],
+          "tags": [
+            "speaking",
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "We are moving this recording only.",
+          "answers": [
+            "We are moving this recording only."
+          ],
+          "tags": [
+            "speaking",
+            "future_arrangements"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Day and time. Both there.",
+          "ru": "День и время. Всё на месте.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: свободен или занят",
+      "intro": "Быстрый круг: кто свободен и когда.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика по очереди указывает на три имени и два свободных дня.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Who can come, and when?",
+            "ru": "Кто может прийти и когда?",
+            "expr": "phone/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u015-s7-e1",
+          "type": "choice",
+          "prompt": "Mika ___ come on Thursday at four.",
+          "options": [
+            "cannot",
+            "doesn't can",
+            "not can"
+          ],
+          "answer": "cannot",
+          "tags": [
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s7-e2",
+          "type": "fill",
+          "prompt": "Rei is busy ___ half past three on Friday.",
+          "answers": [
+            "until"
+          ],
+          "hint": "до",
+          "tags": [
+            "future_arrangements"
+          ]
+        },
+        {
+          "id": "u015-s7-e3",
+          "type": "choice",
+          "prompt": "Iris ___ free on Saturday morning.",
+          "options": [
+            "is",
+            "are",
+            "be"
+          ],
+          "answer": "is",
+          "tags": [
+            "future_arrangements"
+          ]
+        },
+        {
+          "id": "u015-s7-e4",
+          "type": "write",
+          "situation": "Скажи, что пятница в четыре подходит всем.",
+          "answers": [
+            "Friday at four works for everyone.",
+            "Friday at four is fine for everyone.",
+            "Everyone is free on Friday at four."
+          ],
+          "tags": [
+            "function_rescheduling"
+          ]
+        },
+        {
+          "id": "u015-s7-e5",
+          "type": "write",
+          "situation": "Скажи, что нам нужна одна дополнительная встреча.",
+          "answers": [
+            "We need one extra meeting.",
+            "We need one more meeting.",
+            "We need an extra meeting."
+          ],
+          "tags": [
+            "future_arrangements"
+          ]
+        },
+        {
+          "id": "u015-s7-e6",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "Saturday at eleven works for everyone too.",
+          "answers": [
+            "Saturday at eleven works for everyone too."
+          ],
+          "tags": [
+            "dictation",
+            "function_rescheduling"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Now choose the one that suits you.",
+          "ru": "Теперь выбери, какой вариант удобен тебе.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Одна встреча вместо двух",
+      "role": "mission",
+      "intro": "Миссия: выбрать одно время для записи и не потерять обычную среду.",
+      "place": "room17",
+      "frame": {
+        "setting": "На доске остаются два времени. Мика держит телефон над календарём.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Which one shall I book?",
+            "ru": "Какое время записать?",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u015-s8-e1",
+          "type": "scene",
+          "setting": "На доске остаются два времени. Мика держит телефон над календарём.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "Friday at four or Saturday at eleven?",
+              "ru": "Пятница в четыре или суббота в одиннадцать?",
+              "expr": "phone/happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Пятница, 16:00",
+              "answers": [
+                "Let's meet on Friday at four.",
+                "Friday at four works for me."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Friday at four. I'll cross out Saturday.",
+                "ru": "Пятница в четыре. Субботу зачёркиваю.",
+                "expr": "phone/happy"
+              },
+              "flag": "u015_slot_fri16"
+            },
+            {
+              "label": "Суббота, 11:00",
+              "answers": [
+                "Let's meet on Saturday at eleven.",
+                "Saturday at eleven works for me."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Saturday at eleven. I'll cross out Friday.",
+                "ru": "Суббота в одиннадцать. Пятницу зачёркиваю.",
+                "expr": "phone/happy"
+              },
+              "flag": "u015_slot_sat11"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_rescheduling"
+          ],
+          "context": "Выбрать разовый перенос"
+        },
+        {
+          "id": "u015-s8-e2",
+          "type": "scene",
+          "setting": "Мика сфотографировала доску для общего чата. Айрис открывает тетрадь на странице с регулярными встречами.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "And our regular Wednesday meeting?",
+              "ru": "А наша обычная встреча по средам?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Подтвердить прежний час",
+              "answers": [
+                "We still meet on Wednesdays at one.",
+                "Wednesday at one stays the same."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Good. I'll keep that line.",
+                "ru": "Хорошо. Эту строку оставлю.",
+                "expr": "notebook/thinking"
+              },
+              "flag": "u015_regular_confirmed"
+            },
+            {
+              "label": "Уточнить разовый характер",
+              "answers": [
+                "We're only moving this recording.",
+                "This change is for one recording only."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Exactly. Wednesdays stay in the diary.",
+                "ru": "Именно. Среды остаются в расписании.",
+                "expr": "notebook/thinking"
+              },
+              "flag": "u015_one_off_confirmed"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать это иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "future_arrangements"
+          ],
+          "context": "Уточнить регулярную встречу"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "We're meeting on Friday at four. I'll send a reminder on Thursday.",
+          "ru": "Встречаемся в пятницу в четыре. В четверг пришлю напоминание.",
+          "expr": "phone/happy",
+          "ifNot": "u015_slot_sat11"
+        },
+        {
+          "speaker": "mika",
+          "text": "We're meeting on Saturday at eleven. I'll send a reminder on Thursday.",
+          "ru": "Встречаемся в субботу в одиннадцать. В четверг пришлю напоминание.",
+          "expr": "phone/happy",
+          "if": "u015_slot_sat11"
+        }
+      ]
+    }
+  ]
+}

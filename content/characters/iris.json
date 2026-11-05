@@ -44,6 +44,18 @@
         "unit": "012"
       },
       "ru": "Хочет оставлять немного общих денег на будущие мелочи; личная еда не входит в бюджет студии."
+    },
+    {
+      "unlock": {
+        "unit": "015"
+      },
+      "ru": "В субботу после обеда занимается в библиотеке."
+    },
+    {
+      "unlock": {
+        "unit": "016"
+      },
+      "ru": "Приносит к записи короткий текст."
     }
   ],
   "memories": [
@@ -109,6 +121,34 @@
       },
       "en": "Together you checked the shopping against the money: twenty-four pounds, then eight, then two. Half of a future mug collection is on the shelf.",
       "ru": "Вы вместе сверили покупки с остатком: £24 → £8 → £2. На полке появилась половина будущей коллекции чашек."
+    },
+    {
+      "unlock": {
+        "unit": "013"
+      },
+      "en": "Her notebook turned out to be louder than anyone wanted during the recording.",
+      "ru": "Её тетрадь оказалась громче, чем хотелось при записи."
+    },
+    {
+      "unlock": {
+        "unit": "016"
+      },
+      "en": "You checked the reminder against her notebook: the day, the time and the courtyard all matched.",
+      "ru": "Вы сверили напоминание с тетрадью: день, время и двор совпали."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_iris_013"
+      },
+      "en": "You joked that she is worth listening to without a microphone.",
+      "ru": "Вы пошутили о том, что её стоит слушать и без микрофона."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_iris_014"
+      },
+      "en": "You asked her to stay and check your next sentence too.",
+      "ru": "Ты предложил ей остаться и проверить следующую фразу."
     }
   ],
   "lines": [

@@ -15,7 +15,8 @@
     "announcer": "onwK4e9ZLuTAKqWW03F9",
     "alex": "iP95p4xoKVk53GoZ742B",
     "nora": "Xb7hH8MSUJpSbSDYk0k2",
-    "sam": "JBFqnCBsd6RMkjVDRZzb"
+    "sam": "JBFqnCBsd6RMkjVDRZzb",
+    "worker": "pqHfZKP75CvOlQylNhV4"
   },
   "_deliveryByExpr": "Audio tags added to a line by the sprite emotion when the line has no explicit delivery. Only for heroine lines; see docs/14-voice.md.",
   "deliveryByExpr": {

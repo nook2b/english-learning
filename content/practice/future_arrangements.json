@@ -1,0 +1,143 @@
+{
+ "tag": "future_arrangements",
+ "items": [
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-future_arrangements-01",
+    "type": "choice",
+    "prompt": "I ___ my sister on Saturday. We booked a table.",
+    "options": [
+     "am meeting",
+     "meet",
+     "meets"
+    ],
+    "answer": "am meeting",
+    "tags": [
+     "future_arrangements"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-future_arrangements-02",
+    "type": "choice",
+    "prompt": "Are you ___ anything on Sunday?",
+    "options": [
+     "doing",
+     "do",
+     "does"
+    ],
+    "answer": "doing",
+    "tags": [
+     "future_arrangements"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-future_arrangements-03",
+    "type": "choice",
+    "prompt": "We ___ the bus at eight tomorrow.",
+    "options": [
+     "are taking",
+     "take now",
+     "taking"
+    ],
+    "answer": "are taking",
+    "tags": [
+     "future_arrangements"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-future_arrangements-04",
+    "type": "fill",
+    "prompt": "Mika is ___ a class on Thursday.",
+    "answers": [
+     "having"
+    ],
+    "tags": [
+     "future_arrangements"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-future_arrangements-05",
+    "type": "fill",
+    "prompt": "We are ___ after the concert.",
+    "answers": [
+     "meeting"
+    ],
+    "tags": [
+     "future_arrangements"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-future_arrangements-06",
+    "type": "fill",
+    "prompt": "I'm not ___ to the party on Friday.",
+    "answers": [
+     "going",
+     "coming"
+    ],
+    "tags": [
+     "future_arrangements"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-future_arrangements-07",
+    "type": "transform",
+    "instruction": "Сделай вопрос",
+    "sentence": "You are studying on Saturday.",
+    "answers": [
+     "Are you studying on Saturday?"
+    ],
+    "tags": [
+     "future_arrangements"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-future_arrangements-08",
+    "type": "fix",
+    "sentence": "I meeting Rei tomorrow at five.",
+    "answers": [
+     "I'm meeting Rei tomorrow at five.",
+     "I am meeting Rei tomorrow at five."
+    ],
+    "tags": [
+     "future_arrangements"
+    ]
+   }
+  },
+  {
+   "unit": "015",
+   "exercise": {
+    "id": "p-future_arrangements-09",
+    "type": "fix",
+    "sentence": "Do you doing anything tonight?",
+    "answers": [
+     "Are you doing anything tonight?"
+    ],
+    "tags": [
+     "future_arrangements"
+    ]
+   }
+  }
+ ]
+}
