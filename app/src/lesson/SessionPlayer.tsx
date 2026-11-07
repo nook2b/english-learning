@@ -87,7 +87,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
         <PlaceContext.Provider value={session.place}>
           <div className="screen">
             <div className="session-head">{exit}</div>
-            <Beat setting={session.frame.setting} lines={session.frame.lines} doneLabel="Начать" onDone={() => setPhase('exercises')} />
+            <Beat setting={session.frame.setting} lines={session.frame.lines} chat={session.view === 'chat'} doneLabel="Начать" onDone={() => setPhase('exercises')} />
           </div>
         </PlaceContext.Provider>
       </GlossaryContext.Provider>
@@ -99,7 +99,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       <GlossaryContext.Provider value={glossary}>
         <PlaceContext.Provider value={session.place}>
           <div className="screen">
-            <Beat lines={session.wrap} doneLabel="Итоги занятия" onDone={() => setPhase('done')} />
+            <Beat lines={session.wrap} chat={session.view === 'chat'} doneLabel="Итоги занятия" onDone={() => setPhase('done')} />
           </div>
         </PlaceContext.Provider>
       </GlossaryContext.Provider>
@@ -117,6 +117,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
             heading={`Юнит ${unit.id} · Занятие ${index}. ${KIND_LABELS[session.kind]}: ${session.title}`}
             intro={session.intro}
             cast={cast}
+            chat={session.view === 'chat'}
             onAnswer={onAnswer}
             onFinish={onFinish}
             onExit={() => navigate({ name: 'path' })}

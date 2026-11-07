@@ -238,6 +238,8 @@ main { flex: 1; padding: 14px 16px 104px; }
 .mistakes { margin: 0; padding-left: 18px; }
 .word { background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .word:active { background: var(--surface); border-radius: 3px; }
+/* A tappable word and the punctuation right after it: the line never breaks between them. */
+.word-tail { white-space: nowrap; }
 .gloss-target { text-decoration: underline solid var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .gloss-label { display: block; font-size: 0.8rem; color: var(--accent); }
 .gloss-note { display: block; margin-top: 6px; padding: 6px 8px; border-radius: 6px; background: var(--surface); font-size: 0.95rem; }
@@ -409,7 +411,7 @@ main { flex: 1; padding: 14px 16px 104px; }
 .gloss-label { font-weight: 800; }
 .gloss-note { border-radius: 12px; padding: 8px 10px; }
 .line-voice { padding: 0 0 4px 8px; line-height: 0; }
-.line-voice-pause { font-size: 1.2rem; line-height: 1.4; }
+.line-voice-pause { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--accent, #5c5bd6); color: #fff; font-size: 0.8rem; line-height: 1; }
 .context { font-weight: 800; }
 
 /* Badges on the menu. */
@@ -516,8 +518,8 @@ input[type="checkbox"] { accent-color: var(--accent); width: 20px; height: 20px;
 .heroine-card .card-title { color: var(--road-d); font-size: 1.4rem; margin-bottom: 2px; }
 .heroine-card p { color: #3c3c4a; font-size: 0.92rem; }
 .heroine-card .sprite-avatar { width: 92px; height: 92px; background-color: #fff; border: 3px solid #fff; box-shadow: 0 3px 0 color-mix(in srgb, var(--road) 35%, transparent); }
-.heroine-counts { display: flex; gap: 14px; margin-top: 6px; font-weight: 900; }
-.heroine-counts span { display: flex; align-items: center; gap: 4px; }
+.heroine-counts { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font-weight: 800; font-size: 0.85rem; }
+.heroine-counts span { display: flex; align-items: center; gap: 4px; white-space: nowrap; }
 :root[data-theme='dark'] .heroine-card { background: color-mix(in srgb, var(--road) 18%, var(--bg)); }
 :root[data-theme='dark'] .heroine-card .card-title { color: var(--road); }
 :root[data-theme='dark'] .heroine-card p { color: var(--text); }
@@ -614,3 +616,9 @@ button.chat-photo > img { display: block; width: 100%; max-width: 260px; aspect-
 .chat-empty, .chat-foot { text-align: center; font-size: 0.86rem; }
 @media (prefers-reduced-motion: no-preference) { .chat-row { animation: chat-in 150ms ease-out; } }
 @keyframes chat-in { from { opacity: 0; transform: translateY(6px); } }
+/* A story beat in the team chat (sessions with view "chat"). */
+.beat-chat { display: flex; flex-direction: column; gap: 6px; padding: 10px 12px 14px; border: 1px solid var(--border); border-radius: 18px; background: var(--bg); }
+.beat-chat-head { display: flex; align-items: center; gap: 6px; margin: 0 0 4px; padding-bottom: 8px; border-bottom: 1px solid var(--border); font-weight: 800; font-size: 0.9rem; }
+.beat-chat .chat-bubble { max-width: 85%; }
+.beat-chat-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 30px; }
+.beat-chat .line-voice { float: none; padding: 0; }

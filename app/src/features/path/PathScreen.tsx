@@ -32,9 +32,8 @@ export function PathScreen() {
 
   return (
     <div className="screen">
-      {prologueFirst ? (
-        <Button onClick={() => navigate({ name: 'prologue' })}>{prologueDone ? 'Дальше: вступительная проверка в кабинете 70' : 'Начать: пролог «Не тот кабинет»'}</Button>
-      ) : (
+      {/* Before the first unit the highlighted prologue card on the route is the one way in. */}
+      {!prologueFirst && (
         <Button onClick={() => next && navigate({ name: 'session', ...next })} disabled={!next}>
           {next ? `Продолжить: юнит ${next.unitId}, занятие ${next.index}` : 'Новые юниты скоро появятся'}
         </Button>

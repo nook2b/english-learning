@@ -267,3 +267,33 @@ test('speaking: the words the microphone hears show while speaking and stay afte
   expect(screen.getByText('Распознано:')).toBeInTheDocument()
   delete (window as unknown as { webkitSpeechRecognition?: unknown }).webkitSpeechRecognition
 })
+
+test('a session in the team chat shows its lines as messages and nobody on a stage', () => {
+  const unit = Unit.parse({
+    id: '996',
+    title: 'Chat',
+    goal: 'g',
+    focus: 'f',
+    outcome: 'o',
+    expressions: [],
+    sessions: [
+      {
+        kind: 'comprehension',
+        title: 'Voices',
+        view: 'chat',
+        frame: { setting: 'Evening', lines: [{ speaker: 'iris', text: 'Someone has to write.', expr: 'dry_smile' }, { speaker: 'mika', text: 'Only eleven!', expr: 'pout' }] },
+        exercises: [{ id: 'c-1', type: 'listening', speaker: 'rei', audio: 'Rei here.', questions: [{ prompt: 'Who?', options: ['Rei', 'Iris'], answer: 'Rei' }] }],
+      },
+      ...Array(7).fill(filler),
+    ],
+  })
+  const { container } = render(<SessionPlayer unit={unit} index={1} />)
+  expect(screen.getByText('Room 17')).toBeInTheDocument()
+  expect(container.querySelector('.stage')).toBeNull()
+  fireEvent.click(screen.getByRole('button', { name: 'Дальше' }))
+  // Earlier messages stay in the thread.
+  expect(screen.getByText(line('Someone has to write.'))).toBeInTheDocument()
+  expect(screen.getByText(line('Only eleven!'))).toBeInTheDocument()
+  fireEvent.click(screen.getByRole('button', { name: 'Начать' }))
+  expect(container.querySelector('.stage')).toBeNull()
+})

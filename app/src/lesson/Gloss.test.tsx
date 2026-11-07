@@ -22,3 +22,10 @@ test('only unit expressions are underlined and say so; any word translates', () 
   fireEvent.click(screen.getByRole('button', { name: "we're" }))
   expect(screen.getByRole('note')).toHaveTextContent("we're — we are")
 })
+
+test('a word and the punctuation after it stay together on a line', () => {
+  const { container } = render(<Gloss text="Write the message. Then stop!" />)
+  const tails = [...container.querySelectorAll('.word-tail')].map((e) => e.textContent)
+  expect(tails).toEqual(['message.', 'stop!'])
+  expect(container.textContent).toBe('Write the message. Then stop!')
+})

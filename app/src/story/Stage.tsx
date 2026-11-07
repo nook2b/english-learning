@@ -5,6 +5,7 @@ import { type Line, shownWith } from '../content/schema'
 import { useClub, alwaysTranslate } from '../data/store'
 import { Gloss, Translation } from '../lesson/Gloss'
 import { SPEAKER_NAMES } from '../lesson/model'
+import { Icon } from '../ui/Icon'
 import { Button, DialogueBox } from '../ui/kit'
 import { castAt } from './cast'
 import { PLACES, usePlace } from './places'
@@ -155,7 +156,7 @@ export function Stage({
 }
 
 /** A short story beat: tap through the lines, then continue. */
-export function Beat({ setting, lines: all, doneLabel, onDone }: { setting?: string; lines: readonly Line[]; doneLabel: string; onDone: () => void }) {
+export function Beat({ setting, lines: all, doneLabel, onDone, chat = false }: { setting?: string; lines: readonly Line[]; doneLabel: string; onDone: () => void; chat?: boolean }) {
   // Lines that depend on an earlier story choice show only when it was made.
   const flags = useClub((s) => s.flags)
   const lines = useMemo(() => all.filter((l) => shownWith(l, flags)), [all, flags])
@@ -172,6 +173,15 @@ export function Beat({ setting, lines: all, doneLabel, onDone }: { setting?: str
   useEffect(() => preload(lines), [lines])
   useEffect(() => () => stop(), [])
   const last = i === lines.length - 1
+  const next = <Button onClick={() => (last ? onDone() : setI(i + 1))}>{last ? doneLabel : 'Дальше'}</Button>
+  if (chat)
+    return (
+      <div className="beat">
+        {setting && <p className="muted">{setting}</p>}
+        <ChatThread lines={lines.slice(0, i + 1)} always={always} />
+        {next}
+      </div>
+    )
   return (
     <div className="beat">
       {setting && <p className="muted">{setting}</p>}
@@ -181,7 +191,42 @@ export function Beat({ setting, lines: all, doneLabel, onDone }: { setting?: str
         <Gloss key={i} text={line.text} />
         <Translation key={`t${i}`} ru={line.ru} always={always} />
       </DialogueBox>
-      <Button onClick={() => (last ? onDone() : setI(i + 1))}>{last ? doneLabel : 'Дальше'}</Button>
+      {next}
+    </div>
+  )
+}
+
+/** A story beat told in the team chat: the lines so far as messages, the newest one voiced. */
+function ChatThread({ lines, always }: { lines: readonly Line[]; always: boolean }) {
+  return (
+    <div className="beat-chat">
+      <p className="beat-chat-head">
+        <Icon name="phone" size={18} /> Room 17
+      </p>
+      <ol className="chat-feed">
+        {lines.map((l, k) => {
+          if (!isHeroine(l.speaker as HeroineId)) return <li key={k} className="chat-system">{l.text}</li>
+          const h = l.speaker as HeroineId
+          const first = k === 0 || lines[k - 1]!.speaker !== h
+          return (
+            <li key={k} className={`chat-row chat-${h}`}>
+              <span className="chat-face">{first && <Sprite heroine={h} expr="neutral" size="avatar" />}</span>
+              <div className="chat-bubble">
+                {(first || k === lines.length - 1) && (
+                  <span className="beat-chat-top">
+                    <span className="chat-name">{first ? SPEAKER_NAMES[h] : ''}</span>
+                    {k === lines.length - 1 && <LineVoice text={l.text} speaker={l.speaker} expr={l.expr} delivery={l.delivery} />}
+                  </span>
+                )}
+                <span>
+                  <Gloss text={l.text} />
+                </span>
+                <Translation ru={l.ru} always={always} />
+              </div>
+            </li>
+          )
+        })}
+      </ol>
     </div>
   )
 }

@@ -60,6 +60,7 @@ export function ExerciseRun({
   onExit,
   exam = false,
   finishLabel = 'Завершить занятие',
+  chat = false,
 }: {
   exercises: readonly Exercise[]
   heading: ReactNode
@@ -72,6 +73,8 @@ export function ExerciseRun({
   /** The placement check: no marking, no retries, no hints (lesson/exam.ts). */
   exam?: boolean
   finishLabel?: string
+  /** The session happens in the team chat: nobody stands on a stage. */
+  chat?: boolean
 }) {
   // Wrong answers come back at the end of the queue until answered right, as in Duolingo.
   const [steps, setSteps] = useState(() => toSteps(exercises))
@@ -157,7 +160,7 @@ export function ExerciseRun({
         {/* After a scene answer the heroine's reaction replaces the task, as a next screen. */}
         {!reaction && (
           <>
-            {step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} speaking={voice} />}
+            {!chat && step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} speaking={voice} />}
             {step.retry && <p className="context">Ещё раз: исправим ошибку</p>}
             <ExerciseView key={step.key} step={step} locked={!!outcome} onAnswer={answer} />
           </>

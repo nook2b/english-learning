@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { type ReactNode, useState } from 'react'
 import { logLookup } from '../data/db'
 import { keyOf, lookup, WORD } from './dictionary'
 import { useExam } from './exam'
@@ -15,23 +15,43 @@ interface Note {
 }
 
 /** Plain text with every word tappable. */
+/** Punctuation that sticks to the word before it ("message." "you?"). */
+const TAIL = /^[.,!?;:…)\]»”"'’]+/
+
+/** A button glued to the punctuation after it, so a line cannot break between them. */
+function withTail(button: ReactNode, tail: string, key: number) {
+  return tail ? (
+    <span key={key} className="word-tail">
+      {button}
+      {tail}
+    </span>
+  ) : (
+    button
+  )
+}
+
 function Words({ text, onTap }: { text: string; onTap: (word: string) => void }) {
-  const parts: (string | { word: string })[] = []
+  const parts: (string | { word: string; tail: string })[] = []
   let last = 0
   for (const m of text.matchAll(WORD)) {
+    if (m.index < last) continue
     if (m.index > last) parts.push(text.slice(last, m.index))
-    parts.push({ word: m[0] })
-    last = m.index + m[0].length
+    const end = m.index + m[0].length
+    const tail = text.slice(end).match(TAIL)?.[0] ?? ''
+    parts.push({ word: m[0], tail })
+    last = end + tail.length
   }
   if (last < text.length) parts.push(text.slice(last))
   return parts.map((p, i) =>
-    typeof p === 'string' ? (
-      p
-    ) : (
-      <button key={i} className="word" onClick={() => onTap(p.word)}>
-        {p.word}
-      </button>
-    ),
+    typeof p === 'string'
+      ? p
+      : withTail(
+          <button key={i} className="word" onClick={() => onTap(p.word)}>
+            {p.word}
+          </button>,
+          p.tail,
+          i,
+        ),
   )
 }
 
@@ -56,15 +76,21 @@ export function Gloss({ text }: { text: string }) {
   return (
     <>
       <span lang="en">
-        {parts.map((p, i) =>
-          typeof p === 'string' ? (
-            <Words key={i} text={p} onTap={tapWord} />
-          ) : (
+        {parts.map((p, i) => {
+          if (typeof p === 'string') {
+            // Punctuation right after a set phrase went with that phrase (below).
+            const rest = typeof parts[i - 1] === 'object' ? p.replace(TAIL, '') : p
+            return <Words key={i} text={rest} onTap={tapWord} />
+          }
+          const next = parts[i + 1]
+          return withTail(
             <button key={i} className={p.entry.target ? 'word gloss-target' : 'word'} onClick={() => show({ key: keyOf(p.entry.en), en: p.entry.en, ru: p.entry.ru, target: p.entry.target })}>
               {p.text}
-            </button>
-          ),
-        )}
+            </button>,
+            typeof next === 'string' ? (next.match(TAIL)?.[0] ?? '') : '',
+            i,
+          )
+        })}
       </span>
       {open && (
         <span className="gloss-note" role="note">

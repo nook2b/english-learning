@@ -5,6 +5,7 @@ import { Sprite } from '../../story/Stage'
 import { HEROINE_IDS } from '../../story/sprites'
 import { Icon } from '../../ui/Icon'
 import { Card } from '../../ui/kit'
+import { plural } from '../review/pairs'
 
 export function HeroinesScreen() {
   const { units, flags, settings } = useClub()
@@ -22,11 +23,11 @@ export function HeroinesScreen() {
               <p className="heroine-counts" aria-label={`Воспоминаний: ${memories}, квестов: ${quests} из ${c.quests.length}`}>
                 <span>
                   <Icon name="memory" size={18} />
-                  {memories}
+                  {memories} {plural(memories, 'воспоминание', 'воспоминания', 'воспоминаний')}
                 </span>
                 <span>
                   <Icon name="nav-quests" size={18} />
-                  {quests}/{c.quests.length}
+                  квесты {quests}/{c.quests.length}
                 </span>
               </p>
             </div>
