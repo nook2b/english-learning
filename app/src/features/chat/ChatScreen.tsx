@@ -1,13 +1,14 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { type CSSProperties, useEffect, useMemo, useRef, useState } from 'react'
 import { CHAT_PHOTOS, ROOM17, type ChatMessage, chatMessages } from '../../content/chats'
 import { useClub } from '../../data/store'
 import { navigate } from '../../app/router'
 import { Gloss } from '../../lesson/Gloss'
 import { SPEAKER_NAMES } from '../../lesson/model'
-import { canVoice, pause, play, preload, resume, stop, useVoice } from '../../speech/voice'
+import { canVoice, clipAudio, isCurrentClip, pause, play, preload, resume, stop, useVoice } from '../../speech/voice'
 import { Sprite } from '../../story/Stage'
 import type { HeroineId } from '../../story/sprites'
 import { Icon } from '../../ui/Icon'
+import { clock, voiceTime } from './voiceTime'
 
 /** The team chat "Room 17": what the team sent along the course, voice messages, photos. */
 export function ChatScreen() {
@@ -84,7 +85,25 @@ function Voice({ m }: { m: ChatMessage }) {
   const support = useClub((s) => s.settings.support)
   const [text, setText] = useState(false)
   useEffect(() => preload([{ text: m.text!, speaker, delivery: m.delivery }]), [m.text, speaker, m.delivery])
-  const seconds = Math.max(2, Math.round(m.text!.split(/\s+/).length / 2.6))
+  const audio = clipAudio(m.text!, speaker, { delivery: m.delivery })
+  const [, redraw] = useState(0)
+  // The clip's length arrives with its metadata.
+  useEffect(() => {
+    if (!audio) return
+    const on = () => redraw((n) => n + 1)
+    audio.addEventListener('durationchange', on)
+    return () => audio.removeEventListener('durationchange', on)
+  }, [audio])
+  // While it plays, the time and the wave follow the clip every frame.
+  useEffect(() => {
+    if (state !== 'playing' || !audio) return
+    let frame = requestAnimationFrame(function step() {
+      redraw((n) => n + 1)
+      frame = requestAnimationFrame(step)
+    })
+    return () => cancelAnimationFrame(frame)
+  }, [state, audio])
+  const { seconds, done } = voiceTime(m.text!, audio, state !== 'idle' && !!audio && isCurrentClip(m.text!, speaker, audio), support)
   return (
     <span className="chat-voice">
       <span className="chat-voice-row">
@@ -97,8 +116,12 @@ function Voice({ m }: { m: ChatMessage }) {
             {state === 'playing' ? '⏸' : '▶'}
           </button>
         )}
-        <span className={`chat-wave ${state === 'playing' ? 'on' : ''}`} aria-hidden />
-        <span className="chat-time">0:{String(seconds).padStart(2, '0')}</span>
+        <span
+          className={`chat-wave ${state === 'playing' && !audio ? 'on' : ''}`}
+          style={{ '--done': `${Math.round(done * 1000) / 10}%` } as CSSProperties}
+          aria-hidden
+        />
+        <span className="chat-time">{clock(seconds)}</span>
       </span>
       {text ? (
         <span className="chat-transcript">
@@ -139,3 +162,4 @@ function Photo({ m }: { m: ChatMessage }) {
     </>
   )
 }
+

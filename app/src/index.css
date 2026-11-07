@@ -601,6 +601,8 @@ input[type="checkbox"] { accent-color: var(--accent); width: 20px; height: 20px;
 .chat-play { width: 36px; height: 36px; flex: none; border: 0; border-radius: 50%; background: var(--accent, #5c5bd6); color: #fff; font-size: 0.95rem; cursor: pointer; }
 .chat-wave { flex: 1; height: 18px; background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--text) 35%, transparent) 0 3px, transparent 3px 6px); -webkit-mask: linear-gradient(90deg, #000 0 100%); mask: radial-gradient(ellipse 60% 100% at 50% 50%, #000 60%, transparent 100%); opacity: 0.7; }
 .chat-wave.on { background: repeating-linear-gradient(90deg, var(--accent, #5c5bd6) 0 3px, transparent 3px 6px); opacity: 1; }
+.chat-wave { position: relative; }
+.chat-wave::after { content: ''; position: absolute; inset: 0; width: var(--done, 0%); background: repeating-linear-gradient(90deg, var(--accent, #5c5bd6) 0 3px, transparent 3px 6px); }
 .chat-time { color: var(--muted); font-size: 0.78rem; font-variant-numeric: tabular-nums; }
 .chat-transcript { display: flex; flex-direction: column; gap: 2px; }
 .chat-photo { display: block; padding: 0; border: 0; border-radius: 12px; overflow: hidden; background: none; cursor: zoom-in; }

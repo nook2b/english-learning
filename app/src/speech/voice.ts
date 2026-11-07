@@ -155,6 +155,18 @@ export function resume() {
   set('playing')
 }
 
+/** The clip element of this line (fetched ahead of time), or undefined when it is read by browser speech. */
+export function clipAudio(text: string, speaker: Speaker, delivery: Delivery = {}): HTMLAudioElement | undefined {
+  if (typeof Audio === 'undefined') return undefined
+  const url = clipUrl(speaker, voicedText(text, delivery))
+  return url ? clip(url).audio : undefined
+}
+
+/** Whether this line is the one voiced now through its clip (playing or paused). */
+export function isCurrentClip(text: string, speaker: Speaker, audio: HTMLAudioElement): boolean {
+  return current?.id === `${speaker}|${text}` && current.audio === audio
+}
+
 /** Voice state for one text: other texts playing count as idle here. */
 export function useVoice(text: string, speaker: Speaker): VoiceState {
   return useSyncExternalStore(
