@@ -35,11 +35,11 @@ export const UNIT_FIGURES: Record<string, { heroine: HeroineId; pose: string; un
   '013': { heroine: 'rei', pose: 'recorder_crouch' }, // Привычное и текущее: десять секунд тишины
   '014': { heroine: 'mika', pose: 'phone_show' }, // Описать помеху: телефон зазвонил
   '015': { heroine: 'iris', pose: 'notebook_write' }, // Перенести встречу: правит план
-  '016': { heroine: 'mika', pose: 'peace' }, // Подтвердить договорённость
-  '017': { heroine: 'iris', pose: 'over_shoulder' }, // Объяснить маршрут: «за мной»
+  '016': { heroine: 'mika', pose: 'tea_thermos' }, // Подтвердить и записать: чай в термосе, «всё подтвердили» (бриф 53)
+  '017': { heroine: 'iris', pose: 'route_map' }, // Объяснить маршрут: карта с маршрутом (бриф 53)
   '018': { heroine: 'rei', pose: 'manual_read' }, // Проверить инструкцию
-  '019': { heroine: 'mika', pose: 'leaning' }, // Уточнить непонятное: наклонилась, переспрашивает
-  '020': { heroine: 'rei', pose: 'greeting' }, // Провести новичка: встречает
+  '019': { heroine: 'mika', pose: 'note_question' }, // Уточнить непонятное: записка-инструкция (бриф 53)
+  '020': { heroine: 'rei', pose: 'this_way' }, // Провести новичка: «сюда» (бриф 53)
 }
 
 /** The heroine who speaks most in a unit's story beats: for units without a row above. */
