@@ -22,7 +22,9 @@ export function ChatScreen() {
   useEffect(() => () => stop(), [])
   // Like a messenger, the chat opens at the newest message.
   const end = useRef<HTMLParagraphElement>(null)
-  useEffect(() => end.current?.scrollIntoView?.({ block: 'end' }), [])
+  useEffect(() => {
+    end.current?.scrollIntoView?.({ block: 'end' })
+  }, [])
   return (
     <div className="screen chat-screen">
       <header className="chat-head">
