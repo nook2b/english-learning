@@ -37,6 +37,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
   const finishSession = useClub((s) => s.finishSession)
   const remember = useClub((s) => s.remember)
   const noteMistake = useClub((s) => s.noteMistake)
+  const bump = useClub((s) => s.bump)
   const refreshReview = useClub((s) => s.refreshReview)
   const sounds = useClub((s) => s.settings.sounds)
   const glossary = useMemo(() => unitGlossary(unit), [unit])
@@ -51,6 +52,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       void remember(o.flag)
     }
     if (retry) return
+    if (exercise.type === 'speak' && o.correct !== null) void bump({ spoken: 1 })
     // "Can't speak now" is kept, so the task really comes back in review.
     if (o.correct === null) void addDeferred({ exerciseId: exercise.id, unitId: unit.id, index }).then(refreshReview, () => {})
     if (o.correct === false) void noteMistake({ exerciseId: exercise.id, tags: exercise.tags, given: o.given, expected: o.shown ?? o.expected, at: Date.now() }).catch(() => {})

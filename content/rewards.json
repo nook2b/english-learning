@@ -1,0 +1,8 @@
+{
+  "_about": "Heroine lines on the reward screens (docs/55, section 3). Each moment lists lines per heroine, shown in turn; an empty list shows no line. Texts come from the outside author.",
+  "quest": { "mika": [], "rei": [], "iris": [] },
+  "welcome": { "mika": [], "rei": [], "iris": [] },
+  "streak": { "mika": [], "rei": [], "iris": [] },
+  "challenge_win": { "rei": [] },
+  "challenge_next": { "rei": [] }
+}

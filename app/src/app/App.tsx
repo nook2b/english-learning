@@ -12,6 +12,7 @@ import { PlacementCheck } from '../features/story/PlacementCheck'
 import { PrologueScreen } from '../features/story/PrologueScreen'
 import { QuestsScreen } from '../features/quests/QuestsScreen'
 import { ChatScreen } from '../features/chat/ChatScreen'
+import { RewardScreen } from '../features/rewards/RewardScreen'
 import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
 import { type Route, navigate, useRoute } from './router'
@@ -89,6 +90,8 @@ export function App() {
         <Screen route={route} />
       </main>
       {!FULL_SCREEN.has(route.name) && <BottomNav current={route.name === 'heroine' ? 'heroines' : route.name} />}
+      {/* Rewards wait until a session or the prologue is over. */}
+      {!FULL_SCREEN.has(route.name) && <RewardScreen />}
     </div>
   )
 }

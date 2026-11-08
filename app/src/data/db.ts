@@ -23,6 +23,8 @@ export interface Settings {
   placements?: PlacementResult[]
   /** Team chat messages already seen (their ids), for the unread badge. */
   chatSeen?: string[]
+  /** Rei's weekly challenge (plan 3.9); on unless turned off. */
+  challenge?: boolean
 }
 
 export const SKILLS = ['reading', 'listening', 'speaking', 'writing'] as const
@@ -60,7 +62,37 @@ export interface ActivityDay {
   xp: number
   /** The daily goal in force that day, so a later change of goal does not rewrite past days. */
   goal?: number
+  /** For the daily quests (data/rewards.ts): sessions finished, of them without mistakes, review cards answered, phrases said aloud. */
+  sessions?: number
+  perfect?: number
+  cards?: number
+  spoken?: number
 }
+
+/**
+ * Crystals and what was already paid out or shown, so nothing is given twice
+ * (data/rewards.ts). One row.
+ */
+export interface Wallet {
+  id: 'wallet'
+  crystals: number
+  freezes: number
+  /** Days a freeze was spent on. */
+  frozen: string[]
+  /** Daily quests paid, "date:quest". */
+  quests: string[]
+  /** Days whose goal was paid. */
+  goals: string[]
+  /** Streak milestones shown, "milestone:streak start". */
+  milestones: string[]
+  /** Weeks (their Monday) of Rei's challenge: won, or its "next time" screen shown. */
+  challengeWon: string[]
+  challengeLost: string[]
+  /** The day "welcome back" was last shown. */
+  welcomed?: string
+}
+
+export const EMPTY_WALLET: Wallet = { id: 'wallet', crystals: 0, freezes: 0, frozen: [], quests: [], goals: [], milestones: [], challengeWon: [], challengeLost: [] }
 
 /** One finished session of a unit; id is `${unitId}-${index}`, index 1–8. */
 export interface SessionResult {
@@ -145,6 +177,7 @@ export class ClubDB extends Dexie {
   lookups!: Table<WordLookup, string>
   deferred!: Table<Deferred, string>
   topics!: Table<TopicReview, string>
+  wallet!: Table<Wallet, 'wallet'>
 
   constructor(name = 'english-club') {
     super(name)
@@ -161,6 +194,7 @@ export class ClubDB extends Dexie {
     this.version(4).stores({ lookups: 'word, lastAt' })
     this.version(5).stores({ deferred: 'exerciseId, at' })
     this.version(6).stores({ topics: 'tag, due' })
+    this.version(7).stores({ wallet: 'id' })
   }
 }
 
@@ -184,10 +218,29 @@ export async function setUnitStatus(unitId: string, status: UnitStatus, database
 export async function addActivity(date: string, minutes: number, xp: number, goal: number, database: ClubDB = db): Promise<ActivityDay> {
   return database.transaction('rw', database.days, async () => {
     const day = (await database.days.get(date)) ?? { date, minutes: 0, xp: 0 }
-    const next = { date, minutes: day.minutes + minutes, xp: day.xp + xp, goal }
+    const next = { ...day, date, minutes: day.minutes + minutes, xp: day.xp + xp, goal }
     await database.days.put(next)
     return next
   })
+}
+
+/** Adds to today's quest counters. */
+export async function bumpDay(date: string, counts: Partial<Record<'sessions' | 'perfect' | 'cards' | 'spoken', number>>, goal: number, database: ClubDB = db): Promise<ActivityDay> {
+  return database.transaction('rw', database.days, async () => {
+    const day: ActivityDay = (await database.days.get(date)) ?? { date, minutes: 0, xp: 0, goal }
+    const next = { ...day }
+    for (const [k, n] of Object.entries(counts) as [keyof typeof counts, number][]) next[k] = (day[k] ?? 0) + n
+    await database.days.put(next)
+    return next
+  })
+}
+
+export async function loadWallet(database: ClubDB = db): Promise<Wallet> {
+  return { ...EMPTY_WALLET, ...(await database.wallet.get('wallet')) }
+}
+
+export async function saveWallet(wallet: Wallet, database: ClubDB = db): Promise<void> {
+  await database.wallet.put(wallet)
 }
 
 export async function saveSessionResult(result: SessionResult, database: ClubDB = db): Promise<void> {
@@ -213,8 +266,8 @@ export async function addMistake(mistake: Omit<Mistake, 'id'>, database: ClubDB 
 
 /** Clears progress but keeps settings, so the name and goal survive a reset. */
 export async function resetProgress(database: ClubDB = db): Promise<void> {
-  await database.transaction('rw', [database.units, database.days, database.sessions, database.mistakes, database.flags, database.lookups, database.deferred, database.topics], async () => {
-    await Promise.all([database.units.clear(), database.days.clear(), database.sessions.clear(), database.mistakes.clear(), database.flags.clear(), database.lookups.clear(), database.deferred.clear(), database.topics.clear()])
+  await database.transaction('rw', [database.units, database.days, database.sessions, database.mistakes, database.flags, database.lookups, database.deferred, database.topics, database.wallet], async () => {
+    await Promise.all([database.units.clear(), database.days.clear(), database.sessions.clear(), database.mistakes.clear(), database.flags.clear(), database.lookups.clear(), database.deferred.clear(), database.topics.clear(), database.wallet.clear()])
   })
 }
 
