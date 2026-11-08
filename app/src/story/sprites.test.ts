@@ -1,4 +1,4 @@
-import { SPRITES, TALK, parseExpr, resolveSprite } from './sprites'
+import { SPRITES, TALK, parseExpr, resolveSprite, secondarySprite } from './sprites'
 
 const fake = {
   'rei/base/stand/neutral': 'n.webp',
@@ -32,4 +32,14 @@ test('an undrawn outfit falls back to base', () => {
 test('talk frames load as mouth patches and are not sprites of their own', () => {
   expect(TALK['mika/base/stand/neutral']).toMatchObject({ x: expect.any(Number), y: expect.any(Number), w: expect.any(Number) })
   expect(Object.keys(SPRITES).some((k) => k.includes('_talk'))).toBe(false)
+})
+
+test('a secondary character has a sprite only once drawn, with the closest face', () => {
+  const drawn = { 'nora/base/stand/neutral': 'n.webp', 'nora/base/stand/happy': 'h.webp' }
+  expect(secondarySprite('nora', 'happy', drawn)?.url).toBe('h.webp')
+  // listening → neutral (SIMILAR), any unknown face → neutral
+  expect(secondarySprite('nora', 'listening', drawn)?.url).toBe('n.webp')
+  expect(secondarySprite('nora', 'anything', drawn)?.url).toBe('n.webp')
+  expect(secondarySprite('sam', 'neutral', drawn)).toBeUndefined()
+  expect(secondarySprite('mika', 'neutral', { 'mika/base/stand/neutral': 'm.webp' })).toBeUndefined()
 })
