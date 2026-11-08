@@ -13,7 +13,7 @@ beforeEach(async () => {
 
 test('a newcomer starts with the prologue', async () => {
   render(<App />)
-  expect(await screen.findByRole('button', { name: /Начать: пролог «Не тот кабинет»/ })).toBeInTheDocument()
+  expect(await screen.findByRole('button', { name: /Пролог · начать.*Не тот кабинет/ })).toBeInTheDocument()
 })
 
 const afterPrologue = () => db.flags.bulkPut([{ id: 'prologue_completed', at: 1 }, { id: 'placement_completed', at: 1 }])
@@ -37,7 +37,7 @@ test('continue opens the session player', async () => {
 
 test('daily goal choice is saved', async () => {
   render(<App />)
-  await screen.findByRole('button', { name: /Начать: пролог/ })
+  await screen.findByRole('button', { name: /Пролог · начать/ })
   act(() => {
     window.location.hash = '/profile'
   })

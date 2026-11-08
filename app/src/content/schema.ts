@@ -219,6 +219,11 @@ export const Session = z.object({
   intro: z.string().optional(),
   /** Location background behind the heroines in this session (assets/backgrounds/{place}.webp). */
   place: z.string().optional(),
+  /**
+   * "chat": the story happens in the team chat, not in person: the frame and
+   * the wrap are shown as messages, and no heroine stands on a stage.
+   */
+  view: z.enum(['chat']).optional(),
   /** Story beat before the exercises: where we are and why this practice matters. */
   frame: z.object({ setting: z.string(), lines: z.array(Line).min(1) }).optional(),
   /** Story beat after the session: what changed. */

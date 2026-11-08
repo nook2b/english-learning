@@ -52,7 +52,7 @@ export function UnitScreen({ unitId }: { unitId: string }) {
             <MapFigure {...mapFigure(unit)} />
           </div>
           <div>
-            <p className="guide-kicker">Юнит {unit.id} · из тетради Айрис</p>
+            <p className="guide-kicker">Юнит {unit.id} · тетрадь с заметками</p>
             <h1 className="guide-title">{unit.title}</h1>
             <p>{unit.goal}</p>
           </div>
