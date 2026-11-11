@@ -7,7 +7,7 @@ const files = import.meta.glob<string>('../../../assets/reward/*.webp', { eager:
 const ART: Record<string, string> = Object.fromEntries(Object.entries(files).map(([path, url]) => [path.split('/').pop()!.replace('.webp', ''), url]))
 
 /** One heroine celebrates: a session, a daily quest, coming back after a break. */
-export type RewardMoment = 'session' | 'quest' | 'welcome'
+export type RewardMoment = 'session' | 'quest' | 'welcome' | 'challenge_win' | 'challenge_next'
 /** All three celebrate together: a unit mission, a module check, a streak milestone. */
 export type TrioMoment = 'mission' | 'module' | 'streak'
 

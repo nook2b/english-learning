@@ -93,3 +93,19 @@ export function resolveSprite(ref: SpriteRef, sprites: Record<string, string> = 
   }
   return undefined
 }
+
+/**
+ * Secondary characters (docs/57): plain sprites, no Rive, one standing pose,
+ * "{id}/base/stand/{expr}.webp" with a "_talk@" mouth patch. Until one is
+ * drawn they speak off screen.
+ */
+export function secondarySprite(id: string, expr = 'neutral', sprites: Record<string, string> = SPRITES): { key: string; url: string } | undefined {
+  if (isHeroine(id as Speaker)) return undefined
+  const chain = [expr]
+  for (let next = SIMILAR[expr]; next && !chain.includes(next); next = SIMILAR[next]) chain.push(next)
+  for (const e of [...chain, 'neutral']) {
+    const key = `${id}/base/stand/${e}`
+    if (sprites[key]) return { key, url: sprites[key]! }
+  }
+  return undefined
+}

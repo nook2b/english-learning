@@ -11,9 +11,9 @@ import { Icon } from '../../ui/Icon'
 import { Button, Card } from '../../ui/kit'
 
 export function ProfileScreen() {
-  const { settings, days, units, updateSettings, reset, resetAll } = useClub()
+  const { settings, days, units, wallet, updateSettings, reset, resetAll } = useClub()
   const totalMinutes = days.reduce((sum, d) => sum + d.minutes, 0)
-  const streak = currentStreak(days, settings.dailyGoalMinutes, dayKey())
+  const streak = currentStreak(days, settings.dailyGoalMinutes, dayKey(), wallet.frozen)
   const deferred = useDeferredCount()
   const [theme, setTheme] = useState<Theme>(loadTheme)
   const placements = settings.placements ?? []
@@ -132,6 +132,10 @@ export function ProfileScreen() {
             Вибрация: ответы, нажатия, конец занятия
           </label>
         )}
+        <label className="field-inline">
+          <input type="checkbox" checked={settings.challenge !== false} onChange={(e) => updateSettings({ challenge: e.target.checked })} />
+          Недельный челлендж с Рэй
+        </label>
         <label className="field-inline">
           <input
             type="checkbox"

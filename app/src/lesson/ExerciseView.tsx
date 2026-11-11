@@ -12,7 +12,7 @@ import { Options, TextAnswer, TileAnswer } from './inputs'
 import { Gloss, Translation } from './Gloss'
 import { Timeline } from './Timeline'
 import { useClub, alwaysTranslate } from '../data/store'
-import { castAt } from '../story/cast'
+import { castAt, extraAt } from '../story/cast'
 import { Stage } from '../story/Stage'
 
 interface ViewProps<T extends Exercise['type']> {
@@ -323,7 +323,7 @@ export function SceneLines({ lines: all }: { lines: readonly Line[] }) {
   const at = playing >= 0 ? playing : lines.length - 1
   return (
     <>
-      <Stage cast={castAt(lines, at)} speaking={lines[at]?.speaker} marks={lines[at]?.mark ? { [lines[at]!.speaker]: lines[at]!.mark } : undefined} />
+      <Stage cast={castAt(lines, at)} extra={extraAt(lines, at)} speaking={lines[at]?.speaker} marks={lines[at]?.mark ? { [lines[at]!.speaker]: lines[at]!.mark } : undefined} />
       {lines.map((l, i) => (
         <DialogueBox key={i} speaker={SPEAKER_NAMES[l.speaker] || undefined}>
           <LineVoice text={l.text} speaker={l.speaker} expr={l.expr} delivery={l.delivery} />

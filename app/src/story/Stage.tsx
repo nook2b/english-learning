@@ -7,12 +7,12 @@ import { Gloss, Translation } from '../lesson/Gloss'
 import { SPEAKER_NAMES } from '../lesson/model'
 import { Icon } from '../ui/Icon'
 import { Button, DialogueBox } from '../ui/kit'
-import { castAt } from './cast'
+import { castAt, extraAt } from './cast'
 import { PLACES, usePlace } from './places'
 import { hasFigure, riveCanTurn, riveHasFace, turnedPose } from './figures'
 import { RiveFigure } from './HeroineFigure'
 import { useMouth } from '../speech/mouth'
-import { type HeroineId, HEROINE_IDS, SIMILAR, SPRITE_H, SPRITE_W, TALK, isHeroine, parseExpr, resolveSprite } from './sprites'
+import { type HeroineId, HEROINE_IDS, SIMILAR, SPRITE_H, SPRITE_W, TALK, isHeroine, parseExpr, resolveSprite, secondarySprite } from './sprites'
 
 type SpriteSize = 'stage' | 'knee' | 'avatar'
 
@@ -65,7 +65,7 @@ export function Sprite({
   }, [talk])
   const label = `${heroine} ${ref.pose}/${ref.expr}`
   if (!found) return <div className={`sprite sprite-missing sprite-${size}`} aria-label={label} />
-  if (size === 'avatar') return <div className="sprite sprite-avatar" role="img" aria-label={label} style={{ backgroundImage: `url(${found.url})` }} />
+  if (size === 'avatar') return <div className={`sprite sprite-avatar sprite-avatar-${heroine}`} role="img" aria-label={label} style={{ backgroundImage: `url(${found.url})` }} />
   const frame = (
     <div className={`sprite-frame sprite-${size} ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''} ${live ? 'rive-on' : ''}`}>
       {rive && <RiveFigure heroine={heroine} pose={ref.pose} expression={face ? ref.expr : (FIRST_FACE[ref.pose] ?? 'neutral')} visible={face} lean={lean} look={turned ? undefined : look} mark={mark} onReady={() => setReadyPose(ref.pose)} onFail={() => setFailed(true)} />}
@@ -125,19 +125,24 @@ export function Stage({
   cast,
   speaking,
   marks = {},
+  extra,
 }: {
   cast: Partial<Record<HeroineId, string>>
   speaking?: string
   /** Manga marks of the current line's speaker. */
   marks?: Partial<Record<string, string>>
+  /** A secondary character standing with the heroines (Nora at the counter). */
+  extra?: { id: string; expr?: string }
 }) {
   const place = usePlace()
   const present = HEROINE_IDS.filter((h) => h in cast)
-  if (present.length === 0) return null
+  const other = extra && secondarySprite(extra.id, extra.expr) ? extra : undefined
+  if (present.length === 0 && !other) return null
   const order: HeroineId[] = ['rei', 'mika', 'iris']
   const bg = place ? PLACES[place] : undefined
+  const count = Math.min(3, present.length + (other ? 1 : 0))
   return (
-    <div className={`stage stage-${present.length} ${bg ? 'stage-bg' : ''}`} style={bg ? { backgroundImage: `url(${bg})` } : undefined}>
+    <div className={`stage stage-${count} ${bg ? 'stage-bg' : ''}`} style={bg ? { backgroundImage: `url(${bg})` } : undefined}>
       {order
         .filter((h) => present.includes(h))
         .map((h) => (
@@ -151,6 +156,31 @@ export function Stage({
             mark={marks[h]}
           />
         ))}
+      {other && <Extra id={other.id} expr={other.expr} dim={!!speaking && speaking !== other.id && speaking !== 'narrator'} />}
+    </div>
+  )
+}
+
+/** A secondary character: a plain sprite, the mouth patch while they speak. */
+function Extra({ id, expr, dim }: { id: string; expr?: string; dim: boolean }) {
+  const found = secondarySprite(id, expr)
+  const mouth = useMouth(id)
+  if (!found) return null
+  const talk = TALK[found.key]
+  return (
+    <div className={`sprite-knee sprite-extra ${dim ? 'dim' : ''}`}>
+      <div className={`sprite-frame sprite-knee ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''}`}>
+        <img className="sprite" src={found.url} alt={`${id} ${expr ?? 'neutral'}`} draggable={false} />
+        {talk && mouth === 'open' && (
+          <img
+            className="sprite-mouth"
+            src={talk.url}
+            alt=""
+            draggable={false}
+            style={{ left: `${(talk.x / SPRITE_W) * 100}%`, top: `${(talk.y / SPRITE_H) * 100}%`, width: `${(talk.w / SPRITE_W) * 100}%`, height: `${(talk.h / SPRITE_H) * 100}%` }}
+          />
+        )}
+      </div>
     </div>
   )
 }
@@ -185,7 +215,7 @@ export function Beat({ setting, lines: all, doneLabel, onDone, chat = false }: {
   return (
     <div className="beat">
       {setting && <p className="muted">{setting}</p>}
-      <Stage cast={castAt(lines, i)} speaking={line.speaker} marks={line.mark ? { [line.speaker]: line.mark } : undefined} />
+      <Stage cast={castAt(lines, i)} extra={extraAt(lines, i)} speaking={line.speaker} marks={line.mark ? { [line.speaker]: line.mark } : undefined} />
       <DialogueBox speaker={SPEAKER_NAMES[line.speaker] || undefined}>
         <LineVoice text={line.text} speaker={line.speaker} expr={line.expr} delivery={line.delivery} />
         <Gloss key={i} text={line.text} />

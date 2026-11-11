@@ -32,7 +32,7 @@ export function ReviewSession() {
 }
 
 function Round({ state }: { state: ReviewState }) {
-  const { sessions, settings, noteMistake, recordSession, refreshReview } = useClub()
+  const { sessions, settings, noteMistake, recordSession, refreshReview, bump, settle } = useClub()
   const today = dayKey()
   const early = !state.topics.some((t) => t.due <= today) && state.deferred.length === 0
   const items = useMemo(() => buildRound(state, today, { maxUnit: reachedUnit(sessions, settings.unlockAll), early }), [state, today, sessions, settings.unlockAll, early])
@@ -54,6 +54,7 @@ function Round({ state }: { state: ReviewState }) {
 
   const onAnswer = (exercise: Exercise, o: Outcome, retry: boolean) => {
     // A slip in review is a real mistake: it is kept and counts for its topic.
+    if (!retry && exercise.type === 'speak' && o.correct !== null) void bump({ spoken: 1 }).catch(() => {})
     if (!retry && o.correct === false) void noteMistake({ exerciseId: exercise.id, tags: exercise.tags, given: o.given, expected: o.shown ?? o.expected, at: Date.now() }).catch(() => {})
   }
 
@@ -67,6 +68,8 @@ function Round({ state }: { state: ReviewState }) {
     const correct = answered.filter((a) => a.outcome.correct).length
     const xp = SESSION_XP + (answered.length > 0 && correct === answered.length ? PERFECT_BONUS_XP : 0)
     await recordSession(Math.max(1, Math.round(Math.min(seconds, MAX_SESSION_SECONDS) / 60)), xp)
+    await bump({ cards: answered.length })
+    await settle()
     await refreshReview()
     if (settings.sounds) playSfx('done')
     haptic('done')

@@ -109,6 +109,8 @@ export function ExerciseRun({
   // Whoever speaks in a listening, dictation or read-aloud task joins the heroines on screen.
   const voice = step.exercise.type === 'listening' || step.exercise.type === 'dictation' ? step.exercise.speaker : step.exercise.type === 'speak' ? step.exercise.voice : undefined
   const stepCast = voice && isHeroine(voice) && !(voice in cast) ? { ...cast, [voice]: 'neutral' } : cast
+  // A secondary character who speaks in the task stands with the heroines once drawn.
+  const extra = voice && !isHeroine(voice) && voice !== 'narrator' ? { id: voice } : undefined
   const isLast = i === steps.length - 1
 
   const answer = (answered: Outcome) => {
@@ -160,7 +162,7 @@ export function ExerciseRun({
         {/* After a scene answer the heroine's reaction replaces the task, as a next screen. */}
         {!reaction && (
           <>
-            {!chat && step.exercise.type !== 'scene' && Object.keys(stepCast).length > 0 && <Stage cast={stepCast} speaking={voice} />}
+            {!chat && step.exercise.type !== 'scene' && (Object.keys(stepCast).length > 0 || extra) && <Stage cast={stepCast} extra={extra} speaking={voice} />}
             {step.retry && <p className="context">Ещё раз: исправим ошибку</p>}
             <ExerciseView key={step.key} step={step} locked={!!outcome} onAnswer={answer} />
           </>
