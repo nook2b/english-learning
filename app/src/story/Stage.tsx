@@ -65,7 +65,7 @@ export function Sprite({
   }, [talk])
   const label = `${heroine} ${ref.pose}/${ref.expr}`
   if (!found) return <div className={`sprite sprite-missing sprite-${size}`} aria-label={label} />
-  if (size === 'avatar') return <div className="sprite sprite-avatar" role="img" aria-label={label} style={{ backgroundImage: `url(${found.url})` }} />
+  if (size === 'avatar') return <div className={`sprite sprite-avatar sprite-avatar-${heroine}`} role="img" aria-label={label} style={{ backgroundImage: `url(${found.url})` }} />
   const frame = (
     <div className={`sprite-frame sprite-${size} ${dim ? 'dim' : ''} ${mouth ? 'talking' : ''} ${live ? 'rive-on' : ''}`}>
       {rive && <RiveFigure heroine={heroine} pose={ref.pose} expression={face ? ref.expr : (FIRST_FACE[ref.pose] ?? 'neutral')} visible={face} lean={lean} look={turned ? undefined : look} mark={mark} onReady={() => setReadyPose(ref.pose)} onFail={() => setFailed(true)} />}
