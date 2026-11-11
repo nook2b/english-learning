@@ -52,7 +52,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
       void remember(o.flag)
     }
     if (retry) return
-    if (exercise.type === 'speak' && o.correct !== null) void bump({ spoken: 1 })
+    if (exercise.type === 'speak' && o.correct !== null) void bump({ spoken: 1 }).catch(() => {})
     // "Can't speak now" is kept, so the task really comes back in review.
     if (o.correct === null) void addDeferred({ exerciseId: exercise.id, unitId: unit.id, index }).then(refreshReview, () => {})
     if (o.correct === false) void noteMistake({ exerciseId: exercise.id, tags: exercise.tags, given: o.given, expected: o.shown ?? o.expected, at: Date.now() }).catch(() => {})

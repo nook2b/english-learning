@@ -54,7 +54,7 @@ function Round({ state }: { state: ReviewState }) {
 
   const onAnswer = (exercise: Exercise, o: Outcome, retry: boolean) => {
     // A slip in review is a real mistake: it is kept and counts for its topic.
-    if (!retry && exercise.type === 'speak' && o.correct !== null) void bump({ spoken: 1 })
+    if (!retry && exercise.type === 'speak' && o.correct !== null) void bump({ spoken: 1 }).catch(() => {})
     if (!retry && o.correct === false) void noteMistake({ exerciseId: exercise.id, tags: exercise.tags, given: o.given, expected: o.shown ?? o.expected, at: Date.now() }).catch(() => {})
   }
 

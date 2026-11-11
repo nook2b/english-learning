@@ -115,7 +115,8 @@ export const useClub = create<ClubState>((set, get) => ({
       wallet,
       rewards: [],
     })
-    await startDay(get, set)
+    // Rewards are extras: a failed write (the database closing) must not break the start.
+    await startDay(get, set).catch(() => {})
     await get().refreshReview()
   },
 
