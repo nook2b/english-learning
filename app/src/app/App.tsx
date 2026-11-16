@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
 import { getUnit, isSessionOpen } from '../content/course'
 import { useClub } from '../data/store'
 import { HeroineScreen } from '../features/heroines/HeroineScreen'
@@ -15,7 +15,7 @@ import { ChatScreen } from '../features/chat/ChatScreen'
 import { RewardScreen } from '../features/rewards/RewardScreen'
 import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
-import { type Route, navigate, useRoute } from './router'
+import { type Route, href, navigate, useRoute } from './router'
 import { Button, Card } from '../ui/kit'
 import { setHapticsEnabled } from '../speech/haptics'
 import { TopBar } from './TopBar'
@@ -80,6 +80,14 @@ export function App() {
   useEffect(() => {
     void init()
   }, [init])
+
+  // A new screen starts at its top: the browser keeps the scroll position across hash routes,
+  // so a tab opened from the bottom of another one would show its own bottom. Screens that
+  // open elsewhere (the path at the current station, the chat at its end) scroll there after this.
+  const screen = href(route)
+  useLayoutEffect(() => {
+    if (!/jsdom/.test(navigator.userAgent)) window.scrollTo(0, 0)
+  }, [screen, ready])
 
   if (!ready) return <div className="loading">Загрузка…</div>
 

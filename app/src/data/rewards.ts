@@ -9,7 +9,7 @@ export const CRYSTALS = { session: 5, perfect: 5, goal: 10, challenge: 50 } as c
 export const FREEZE_PRICE = 50
 export const MAX_FREEZES = 2
 export const STREAK_MILESTONES = [3, 7, 14, 30, 100] as const
-/** Days away after which the app says "welcome back". */
+/** The app says "welcome back" after more days away than this. */
 export const AWAY_DAYS = 3
 
 /** What the day's quests count; kept on the day's record. */
@@ -97,15 +97,19 @@ export function daysToFreeze(days: readonly ActivityDay[], goal: number, today: 
   return missed.reverse()
 }
 
-/** The streak milestone reached today, if any; `shown` holds "milestone:streak start" marks. */
-export function newMilestone(streak: number, today: string, shown: readonly string[]): { milestone: number; mark: string } | undefined {
+/**
+ * The streak milestone reached, if any and not shown yet; `shown` holds
+ * "milestone:streak start" marks. `start` is the streak's first day, which
+ * stays the same whether or not today is done and when a freeze joins in.
+ */
+export function newMilestone(streak: number, start: string, shown: readonly string[]): { milestone: number; mark: string } | undefined {
   const milestone = [...STREAK_MILESTONES].reverse().find((m) => streak >= m)
   if (!milestone) return undefined
-  const mark = `${milestone}:${addDays(today, -(streak - 1))}`
+  const mark = `${milestone}:${start}`
   return shown.includes(mark) ? undefined : { milestone, mark }
 }
 
-/** Whether the player is back after a break: the last active day was `AWAY_DAYS` or more ago. */
+/** Whether the player is back after a break: the last active day was more than `AWAY_DAYS` days ago. */
 export function isBackAfterBreak(days: readonly ActivityDay[], today: string): boolean {
   const before = days.filter((d) => d.date < today && d.minutes > 0).map((d) => d.date).sort()
   const last = before[before.length - 1]

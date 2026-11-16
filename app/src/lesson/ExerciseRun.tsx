@@ -106,6 +106,12 @@ export function ExerciseRun({
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [outcome])
+  // A new task starts at its top; the next question about the same text stays where the reader is.
+  const taskId = step.exercise.id
+  useEffect(() => {
+    if (i > 0 && !/jsdom/.test(navigator.userAgent)) window.scrollTo({ top: 0 })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [taskId])
   // Whoever speaks in a listening, dictation or read-aloud task joins the heroines on screen.
   const voice = step.exercise.type === 'listening' || step.exercise.type === 'dictation' ? step.exercise.speaker : step.exercise.type === 'speak' ? step.exercise.voice : undefined
   const stepCast = voice && isHeroine(voice) && !(voice in cast) ? { ...cast, [voice]: 'neutral' } : cast

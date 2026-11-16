@@ -24,9 +24,9 @@ import {
   sessionId,
   setUnitStatus,
 } from './db'
-import { addDays, dayKey } from './dates'
+import { addDays, dayKey, daysBetween } from './dates'
 import { AWAY_DAYS, CRYSTALS, FREEZE_PRICE, MAX_FREEZES, type Quest, challengeProgress, challengeTarget, dailyQuests, daysToFreeze, isBackAfterBreak, newMilestone, questDone, questKey, weekStart } from './rewards'
-import { currentStreak } from './streak'
+import { streakRun } from './streak'
 import { HEROINES } from '../content/schema'
 import { dueCount, loadReview, noteTopics } from './review'
 import { SESSIONS_PER_UNIT } from '../content/schema'
@@ -142,8 +142,8 @@ export const useClub = create<ClubState>((set, get) => ({
       w.crystals += quest.crystals
       rewards.push({ kind: 'quest', heroine: HEROINES[k % HEROINES.length]!, quest })
     })
-    const streak = currentStreak(days, settings.dailyGoalMinutes, today, w.frozen)
-    const milestone = newMilestone(streak, today, w.milestones)
+    const streak = streakRun(days, settings.dailyGoalMinutes, today, w.frozen)
+    const milestone = streak.start ? newMilestone(streak.length, streak.start, w.milestones) : undefined
     if (milestone) {
       w.milestones.push(milestone.mark)
       rewards.push({ kind: 'streak', days: milestone.milestone })
@@ -226,6 +226,8 @@ export const useClub = create<ClubState>((set, get) => ({
 
   reset: async () => {
     await resetProgress()
+    // The team chat starts over with the story: its messages are unread again.
+    if (get().settings.chatSeen?.length) await get().updateSettings({ chatSeen: [] })
     set({ units: {}, sessions: {}, days: [], flags: {}, reviewDue: 0, wallet: EMPTY_WALLET, rewards: [] })
   },
 
@@ -257,7 +259,7 @@ async function startDay(get: () => ClubState, set: (p: Partial<ClubState>) => vo
   if (isBackAfterBreak(days, today) && w.welcomed !== today) {
     w.welcomed = today
     const last = days.filter((d) => d.date < today && d.minutes > 0).map((d) => d.date).sort().pop()!
-    const away = Math.round((Date.parse(today) - Date.parse(last)) / 86_400_000)
+    const away = daysBetween(last, today)
     rewards.push({ kind: 'welcome', heroine: HEROINES[today.charCodeAt(today.length - 1) % HEROINES.length]!, away: Math.max(away, AWAY_DAYS + 1) })
   }
   if (settings.challenge !== false) {

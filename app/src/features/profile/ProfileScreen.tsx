@@ -16,6 +16,8 @@ export function ProfileScreen() {
   const streak = currentStreak(days, settings.dailyGoalMinutes, dayKey(), wallet.frozen)
   const deferred = useDeferredCount()
   const [theme, setTheme] = useState<Theme>(loadTheme)
+  // The field keeps its own text: saving is asynchronous, and a value that arrives late would move the caret and drop letters.
+  const [name, setName] = useState(settings.name)
   const placements = settings.placements ?? []
   const last = placements.at(-1)
 
@@ -24,17 +26,20 @@ export function ProfileScreen() {
   }
 
   const onResetAll = async () => {
-    if (window.confirm('Сбросить всё: прогресс, имя и настройки? Приложение станет как при первом запуске.')) await resetAll()
+    if (window.confirm('Сбросить всё: прогресс, имя и настройки? Приложение станет как при первом запуске.')) {
+      await resetAll()
+      setName('')
+    }
   }
 
   return (
     <div className="screen">
       <div className="profile-head">
         <span className="profile-avatar" aria-hidden>
-          {(settings.name.trim()[0] ?? '?').toUpperCase()}
+          {(name.trim()[0] ?? '?').toUpperCase()}
         </span>
         <div>
-          <h1>{settings.name.trim() || 'Студент по обмену'}</h1>
+          <h1>{name.trim() || 'Студент по обмену'}</h1>
           <p className="muted">Комната 17 · стрик {streak}</p>
         </div>
       </div>
@@ -50,7 +55,7 @@ export function ProfileScreen() {
         <div className="stat-card">
           <Icon name="calendar" size={34} />
           <p>
-            <b>{days.length}</b>
+            <b>{days.filter((d) => d.minutes > 0).length}</b>
             Дней с занятиями
           </p>
         </div>
@@ -73,7 +78,14 @@ export function ProfileScreen() {
       <Card title="Профиль">
         <label className="field">
           Как к тебе обращаться
-          <input value={settings.name} onChange={(e) => updateSettings({ name: e.target.value })} placeholder="Имя" />
+          <input
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value)
+              void updateSettings({ name: e.target.value })
+            }}
+            placeholder="Имя"
+          />
         </label>
       </Card>
 

@@ -14,8 +14,10 @@ export function HeroineScreen({ id }: { id: HeroineId }) {
   const { units, flags, settings } = useClub()
   const c = CHARACTERS[id]!
   const open = <T extends { unlock: Parameters<typeof isOpen>[0] }>(items: T[]) => items.filter((x) => isOpen(x.unlock, units, flags, settings.unlockAll))
-  const facts = open(c.facts)
-  const memories = open(c.memories)
+  // The same fact or memory can open by either of two story choices; a replay with the other choice must not show it twice.
+  const once = <T,>(items: T[], text: (x: T) => string) => items.filter((x, i) => items.findIndex((y) => text(y) === text(x)) === i)
+  const facts = once(open(c.facts), (f) => f.ru)
+  const memories = once(open(c.memories), (m) => m.en)
   const lines = open(c.lines)
   const [said, setSaid] = useState<number>()
   const line = said === undefined ? undefined : lines[said]

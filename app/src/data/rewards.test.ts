@@ -1,6 +1,6 @@
 import type { ActivityDay } from './db'
 import { challengeTarget, dailyQuests, daysToFreeze, isBackAfterBreak, newMilestone, questDone, weekStart } from './rewards'
-import { currentStreak } from './streak'
+import { currentStreak, streakRun } from './streak'
 
 const day = (date: string, minutes: number, extra: Partial<ActivityDay> = {}): ActivityDay => ({ date, minutes, xp: 0, goal: 10, ...extra })
 
@@ -42,11 +42,23 @@ test('a freeze bridges a missed day and keeps the streak without adding to it', 
 })
 
 test('a streak milestone shows once per streak', () => {
-  expect(newMilestone(2, '2026-11-08', [])).toBeUndefined()
-  const m = newMilestone(7, '2026-11-08', [])!
+  expect(newMilestone(2, '2026-11-07', [])).toBeUndefined()
+  const m = newMilestone(7, '2026-11-02', [])!
   expect(m.milestone).toBe(7)
-  expect(newMilestone(7, '2026-11-08', [m.mark])).toBeUndefined()
-  expect(newMilestone(8, '2026-11-09', [m.mark])).toBeUndefined()
+  expect(newMilestone(7, '2026-11-02', [m.mark])).toBeUndefined()
+  expect(newMilestone(8, '2026-11-02', [m.mark])).toBeUndefined()
+  // a new streak reaches the same milestone again
+  expect(newMilestone(7, '2026-12-01', [m.mark])?.milestone).toBe(7)
+})
+
+test('the streak start does not move overnight or when a freeze joins in', () => {
+  const days = ['2026-11-02', '2026-11-03', '2026-11-04'].map((d) => day(d, 10))
+  // the evening of the third day, and the next morning before any study
+  expect(streakRun(days, 10, '2026-11-04')).toEqual({ length: 3, start: '2026-11-02' })
+  expect(streakRun(days, 10, '2026-11-05')).toEqual({ length: 3, start: '2026-11-02' })
+  // 05 missed and frozen, studying again on 06
+  expect(streakRun([...days, day('2026-11-06', 10)], 10, '2026-11-06', ['2026-11-05'])).toEqual({ length: 4, start: '2026-11-02' })
+  expect(streakRun([], 10, '2026-11-05')).toEqual({ length: 0, start: undefined })
 })
 
 test('welcome back after more than three days away', () => {

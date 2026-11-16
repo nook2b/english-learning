@@ -26,3 +26,10 @@ test('a finished unit and a scene choice open facts, a memory and chat', async (
   fireEvent.click(screen.getByRole('button', { name: 'Поболтать' }))
   expect(screen.getByText('Перевод')).toBeInTheDocument()
 })
+
+test('a memory that either of two choices opens shows once after a replay with the other choice', async () => {
+  await useClub.getState().remember('u016_take_students')
+  await useClub.getState().remember('u016_take_sound')
+  render(<HeroineScreen id="rei" />)
+  expect(screen.getAllByText(line(/You finally recorded ten seconds of the courtyard/))).toHaveLength(1)
+})

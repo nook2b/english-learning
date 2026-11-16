@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { navigate } from '../../app/router'
-import { getUnit, nextSession } from '../../content/course'
+import { getUnit, isSessionOpen, nextSession } from '../../content/course'
 import { ARC1_UNITS } from '../../content/outline'
 import { useClub } from '../../data/store'
 import { Gloss, Translation } from '../../lesson/Gloss'
@@ -20,7 +20,7 @@ const sameText = (a: string, b: string) => a.toLowerCase().replace(/[^a-z' ]/g, 
  * The sessions themselves live on the route, not here.
  */
 export function UnitScreen({ unitId }: { unitId: string }) {
-  const { units, sessions } = useClub()
+  const { units, sessions, settings, flags } = useClub()
   const unit = getUnit(unitId)
   const outline = ARC1_UNITS.find((u) => u.id === unitId)
   const phrases = useMemo(() => (unit ? keyPhrases(unit) : []), [unit])
@@ -107,7 +107,7 @@ export function UnitScreen({ unitId }: { unitId: string }) {
           </section>
         )}
 
-        {next?.unitId === unit.id && <Button onClick={() => navigate({ name: 'session', ...next })}>Продолжить: занятие {next.index}</Button>}
+        {next?.unitId === unit.id && isSessionOpen(next, sessions, units, settings.unlockAll, flags) && <Button onClick={() => navigate({ name: 'session', ...next })}>Продолжить: занятие {next.index}</Button>}
       </div>
     </GlossaryContext.Provider>
   )
