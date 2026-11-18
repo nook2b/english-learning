@@ -646,3 +646,7 @@ button.chat-photo > img { display: block; width: 100%; max-width: 260px; aspect-
 .shop-item p { margin: 2px 0 0; font-size: 0.86rem; }
 .challenge-line { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 8px 0 0; font-weight: 800; }
 .challenge-line .quest-pay { display: inline-flex; align-items: center; gap: 4px; font-weight: 900; }
+
+/* The player's reply in the team chat. */
+.chat-reply { display: flex; flex-direction: column; gap: 8px; margin: 8px 0 8px auto; width: min(100%, 420px); padding: 12px; border: 2px dashed var(--border); border-radius: 18px; }
+.chat-reply-ask { margin: 0; font-weight: 800; font-size: 0.9rem; }

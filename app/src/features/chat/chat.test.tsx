@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { act, fireEvent, render, screen } from '@testing-library/react'
 import { ROOM17, chatMessages } from '../../content/chats'
 import { sessionId } from '../../data/db'
 import type { SessionResult } from '../../data/db'
@@ -7,6 +7,7 @@ import { useClub } from '../../data/store'
 import { clipUrl } from '../../speech/clips'
 import { voicedText } from '../../speech/delivery'
 import { ChatScreen } from './ChatScreen'
+import { line } from '../../test/line'
 
 const done = (...ids: [string, number][]) =>
   Object.fromEntries(ids.map(([u, i]) => [sessionId(u, i), { id: sessionId(u, i), unitId: u, index: i, correct: 1, total: 1, seconds: 60, completedAt: 0 } as SessionResult]))
@@ -39,4 +40,27 @@ test('the chat shows what has arrived and marks it read', async () => {
   expect(screen.getAllByText('Показать текст').length).toBe(3)
   await new Promise((r) => setTimeout(r, 50))
   expect(useClub.getState().settings.chatSeen?.length).toBe(5)
+})
+
+test('the player answers in the chat: a slip brings a question, an accepted answer stays with its reaction', async () => {
+  await db.delete()
+  await db.open()
+  await useClub.getState().init()
+  useClub.setState({ sessions: done(['013', 2]) })
+  render(<ChatScreen />)
+  fireEvent.click(screen.getByRole('button', { name: 'Описать, как изменился двор' }))
+  const box = () => screen.getByRole('textbox')
+  fireEvent.change(box(), { target: { value: 'Courtyard good' } })
+  fireEvent.click(screen.getByRole('button', { name: 'Проверить' }))
+  expect(screen.getByText(line('Usually, or right now?'))).toBeInTheDocument()
+  fireEvent.change(box(), { target: { value: "It's usually quiet here, but they're drilling today." } })
+  await act(async () => fireEvent.click(screen.getByRole('button', { name: 'Проверить' })))
+  expect(await screen.findByText(line("That's the courtyard today. Save that line."))).toBeInTheDocument()
+  expect(await db.flags.get('room17-013-2-r1:1')).toBeTruthy()
+})
+
+test('the confirmation reply follows the recording time chosen in 015', () => {
+  const at = (flags: Record<string, true>) => chatMessages(done(['016', 2]), flags).filter((m) => m.type === 'reply')[0]!.intents![0]!.answers[0]
+  expect(at({})).toMatch(/Friday/)
+  expect(at({ u015_slot_sat11: true })).toMatch(/Saturday/)
 })

@@ -1,5 +1,7 @@
 import { type CSSProperties, useEffect, useMemo, useRef, useState } from 'react'
-import { CHAT_PHOTOS, ROOM17, type ChatMessage, chatMessages } from '../../content/chats'
+import { CHAT_PHOTOS, ROOM17, type ChatLine, type ChatMessage, chatMessages, replyFlag } from '../../content/chats'
+import { checkTyped } from '../../lesson/check'
+import { TextAnswer } from '../../lesson/inputs'
 import { useClub } from '../../data/store'
 import { navigate } from '../../app/router'
 import { Gloss } from '../../lesson/Gloss'
@@ -54,7 +56,7 @@ export function ChatScreen() {
         </ol>
       )}
       <p className="muted chat-foot" ref={end}>
-        Ответ не нужен: команда пишет по ходу сюжета.
+        Иногда можно ответить: кнопки появляются прямо в ленте.
       </p>
     </div>
   )
@@ -64,6 +66,7 @@ function Bubble({ m, first }: { m: ChatMessage; first: boolean }) {
   const always = useClub((s) => s.settings.translation === 'always' || s.settings.support)
   const [ru, setRu] = useState(false)
   if (m.type === 'system') return <p className="chat-system">{m.ru}</p>
+  if (m.type === 'reply') return <Reply m={m} />
   const mine = m.from === 'me'
   const heroine = mine ? undefined : (m.from as HeroineId)
   return (
@@ -165,3 +168,81 @@ function Photo({ m }: { m: ChatMessage }) {
   )
 }
 
+
+/** A heroine's chat line in reply to the player. */
+function LineBubble({ line, first }: { line: ChatLine; first: boolean }) {
+  const always = useClub((s) => s.settings.translation === 'always' || s.settings.support)
+  const [ru, setRu] = useState(false)
+  return (
+    <div className={`chat-row chat-${line.from}`}>
+      <span className="chat-face">{first && <Sprite heroine={line.from} expr="neutral" size="avatar" />}</span>
+      <div className="chat-bubble">
+        {first && <span className="chat-name">{SPEAKER_NAMES[line.from]}</span>}
+        <Gloss text={line.text} />
+        {always || ru ? <span className="chat-ru">{line.ru}</span> : <button className="chat-link" onClick={() => setRu(true)}>Перевод</button>}
+      </div>
+    </div>
+  )
+}
+
+/**
+ * The player answers in the team chat: pick what to say, write it in English.
+ * An answer that is not understood brings the heroine's question and another
+ * try; an accepted one is kept (a flag), so the chat shows it from then on.
+ */
+function Reply({ m }: { m: ChatMessage }) {
+  const flags = useClub((s) => s.flags)
+  const remember = useClub((s) => s.remember)
+  const intents = m.intents ?? []
+  const done = intents.findIndex((_, i) => flags[replyFlag(m.id, i)])
+  const [intent, setIntent] = useState<number>()
+  const [said, setSaid] = useState<string>()
+  const [missed, setMissed] = useState(false)
+  if (done >= 0) {
+    const chosen = intents[done]!
+    return (
+      <>
+        <div className="chat-row chat-mine">
+          <div className="chat-bubble">
+            <span lang="en">{said ?? chosen.answers[0]}</span>
+          </div>
+        </div>
+        {chosen.reaction.map((l, k) => (
+          <LineBubble key={k} line={l} first={k === 0 || chosen.reaction[k - 1]!.from !== l.from} />
+        ))}
+      </>
+    )
+  }
+  const chosen = intent === undefined ? undefined : intents[intent]
+  const submit = (text: string) => {
+    if (!chosen || intent === undefined) return
+    if (!checkTyped(text, chosen.answers).correct) return setMissed(true)
+    setSaid(text)
+    void remember(replyFlag(m.id, intent))
+  }
+  return (
+    <div className="chat-reply">
+      {missed && m.clarify && <LineBubble line={m.clarify} first />}
+      {!chosen ? (
+        <>
+          <p className="chat-reply-ask">Ответить в чат</p>
+          <div className="options">
+            {intents.map((it, i) => (
+              <button key={it.label} className="option" onClick={() => setIntent(i)}>
+                {it.label}
+              </button>
+            ))}
+          </div>
+        </>
+      ) : (
+        <>
+          <p className="chat-reply-ask">{chosen.label}. Напиши по-английски</p>
+          <TextAnswer key={missed ? 'again' : 'first'} locked={false} onSubmit={submit} placeholder="Сообщение по-английски" />
+          <button className="chat-link" onClick={() => (setIntent(undefined), setMissed(false))}>
+            Выбрать другое
+          </button>
+        </>
+      )}
+    </div>
+  )
+}
