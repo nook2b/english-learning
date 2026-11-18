@@ -285,7 +285,8 @@
           "speaker": "rei",
           "text": "Right building. Right floor. Progress.",
           "ru": "Нужный корпус. Нужный этаж. Уже хорошо.",
-          "expr": "deadpan"
+          "expr": "deadpan",
+          "mark": "sparkle"
         }
       ]
     },

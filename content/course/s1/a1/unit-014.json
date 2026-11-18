@@ -255,7 +255,8 @@
           "speaker": "rei",
           "text": "Three sounds. One microphone.",
           "ru": "Три звука. Один микрофон.",
-          "expr": "recorder/smirk"
+          "expr": "recorder/smirk",
+          "mark": "question"
         }
       ]
     },

@@ -179,7 +179,8 @@
           "speaker": "mika",
           "text": "Nobody has ordered four surprise lunches. Progress!",
           "ru": "Никто не заказал четыре обеда-сюрприза. Уже прогресс!",
-          "expr": "happy"
+          "expr": "happy",
+          "mark": "sweat"
         }
       ]
     },

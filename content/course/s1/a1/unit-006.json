@@ -599,7 +599,8 @@
           "speaker": "rei",
           "text": "Dust isn't a diagnosis.",
           "ru": "Пыль — не диагноз.",
-          "expr": "deadpan"
+          "expr": "deadpan",
+          "mark": "anger"
         }
       ]
     },
@@ -728,7 +729,8 @@
           "speaker": "iris",
           "text": "Both symptoms are in the request. Neither one says “the building is broken”.",
           "ru": "Оба признака в заявке. Ни один не говорит «здание сломалось».",
-          "expr": "notebook/dry_smile"
+          "expr": "notebook/dry_smile",
+          "mark": "sweat"
         }
       ]
     },

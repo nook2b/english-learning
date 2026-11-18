@@ -1263,7 +1263,8 @@
               "speaker": "rei",
               "text": "After the end. The academy is alive. Breaking news.",
               "ru": "После конца. Академия живая. Сенсация.",
-              "expr": "recorder/smirk"
+              "expr": "recorder/smirk",
+              "mark": "note"
             },
             {
               "speaker": "iris",
