@@ -54,7 +54,7 @@ export function RewardScreen() {
       )}
       {reward.kind === 'welcome' ? (
         <div className="actions">
-          <Button onClick={() => (close(), navigate({ name: 'review' }))}>Короткое повторение</Button>
+          <Button onClick={() => (close(), navigate({ name: 'practice' }))}>Короткое повторение</Button>
           <Button variant="secondary" onClick={close}>
             Продолжить путь
           </Button>

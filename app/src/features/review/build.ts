@@ -74,3 +74,39 @@ export function buildRound(
     })
   return [...variations, ...originals, ...deferred].flatMap(take)
 }
+
+/** A warm-up when nothing has piled up: topics from the recent units, from older ones, tasks per topic. */
+export const WARMUP = { recentUnits: 3, recentTopics: 2, olderTopics: 1, perTopic: 2 } as const
+
+/**
+ * A warm-up round when there are no mistakes to work through. With many units
+ * behind, it does not cover everything: two topics come from the last units
+ * the learner worked on (by when their sessions were finished), one from all
+ * that came before, a new choice each day. Two practice tasks per topic, only
+ * from units reached. Empty before the first finished session.
+ */
+export function warmupRound(finished: readonly { unitId: string; index: number; completedAt?: number }[], today: string, { maxUnit, bank = PRACTICE }: { maxUnit: string; bank?: Record<string, PracticeItem[]> }): RoundItem[] {
+  const tagsOf = (list: readonly { unitId: string; index: number }[]) => {
+    const tags = new Set<string>()
+    for (const f of list) for (const e of UNITS[f.unitId]?.sessions[f.index - 1]?.exercises ?? []) for (const t of e.tags) if (bank[t]?.length) tags.add(t)
+    return tags
+  }
+  // The units most recently worked on, newest first.
+  const units = [...new Map([...finished].sort((a, b) => (b.completedAt ?? 0) - (a.completedAt ?? 0)).map((f) => [f.unitId, f])).keys()]
+  const recentUnits = new Set(units.slice(0, WARMUP.recentUnits))
+  const recent = tagsOf(finished.filter((f) => recentUnits.has(f.unitId)))
+  const older = [...tagsOf(finished.filter((f) => !recentUnits.has(f.unitId)))].filter((t) => !recent.has(t))
+  const pickRecent = shuffled([...recent], `${today}|warmup`)
+  // Without older units, all three topics come from the recent ones.
+  const topics = older.length
+    ? [...pickRecent.slice(0, WARMUP.recentTopics), ...shuffled(older, `${today}|warmup-old`).slice(0, WARMUP.olderTopics)]
+    : pickRecent.slice(0, WARMUP.recentTopics + WARMUP.olderTopics)
+  return topics.flatMap((tag) =>
+    shuffled(
+      (bank[tag] ?? []).filter((p) => p.unit <= maxUnit),
+      `${today}|warmup|${tag}`,
+    )
+      .slice(0, WARMUP.perTopic)
+      .map((p) => ({ exercise: p.exercise, tag })),
+  )
+}

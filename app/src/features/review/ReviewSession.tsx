@@ -10,7 +10,7 @@ import { type Attempt, ExerciseRun } from '../../lesson/ExerciseRun'
 import type { Outcome } from '../../lesson/model'
 import { playSfx } from '../../speech/sfx'
 import { Button, Card } from '../../ui/kit'
-import { type RoundItem, buildRound } from './build'
+import { type RoundItem, buildRound, warmupRound } from './build'
 import { Classroom } from './Classroom'
 import { haptic } from '../../speech/haptics'
 import { plural, todaysPair } from './pairs'
@@ -35,15 +35,20 @@ function Round({ state }: { state: ReviewState }) {
   const { sessions, settings, noteMistake, recordSession, refreshReview, bump, settle } = useClub()
   const today = dayKey()
   const early = !state.topics.some((t) => t.due <= today) && state.deferred.length === 0
-  const items = useMemo(() => buildRound(state, today, { maxUnit: reachedUnit(sessions, settings.unlockAll), early }), [state, today, sessions, settings.unlockAll, early])
+  // Nothing piled up: a warm-up on the topics already passed, so a review is always there when wanted.
+  const { items, warmup } = useMemo(() => {
+    const maxUnit = reachedUnit(sessions, settings.unlockAll)
+    const round = buildRound(state, today, { maxUnit, early })
+    return round.length ? { items: round, warmup: false } : { items: warmupRound(Object.values(sessions), today, { maxUnit }), warmup: true }
+  }, [state, today, sessions, settings.unlockAll, early])
   const plan = useMemo(() => new Map(items.map((i) => [i.exercise.id, i])), [items])
   const [done, setDone] = useState<{ moved: TopicReview[]; correct: number; total: number; xp: number }>()
 
   if (items.length === 0) {
     return (
       <div className="screen">
-        <Card title="Разбирать нечего">
-          <p className="muted">Ошибки появятся здесь после занятий.</p>
+        <Card title="Повторять пока нечего">
+          <p className="muted">Пройди первое занятие: после него здесь будет разминка по пройденным темам, а ошибки соберутся для разбора.</p>
           <Button variant="secondary" onClick={() => navigate({ name: 'review' })}>
             Назад
           </Button>
@@ -80,11 +85,12 @@ function Round({ state }: { state: ReviewState }) {
     return (
       <div className="screen">
         <Classroom pair={todaysPair(today)} state="done" />
-        <Card title="Разбор окончен">
+        <Card title={warmup ? 'Разминка окончена' : 'Разбор окончен'}>
           <p>
             Верно с первого раза: {done.correct} из {done.total} · +{done.xp} XP
           </p>
-          {early && <p className="muted">Повтор раньше срока: темы остаются на своём шаге.</p>}
+          {early && !warmup && <p className="muted">Повтор раньше срока: темы остаются на своём шаге.</p>}
+          {warmup && <p className="muted">Ошибки из разминки попадут в разбор, как и ошибки из занятий.</p>}
           <ul className="list review-topics">
             {done.moved.map((t) => (
               <li key={t.tag}>
@@ -104,8 +110,8 @@ function Round({ state }: { state: ReviewState }) {
   return (
     <ExerciseRun
       exercises={items.map((i) => i.exercise)}
-      heading={`После уроков · ${topics.map((t) => TAGS[t]?.ru ?? t).join(', ')}${deferred ? ` · вслух: ${deferred} ${plural(deferred, 'задание', 'задания', 'заданий')}` : ''}`}
-      intro={early ? 'Повтор раньше срока: можно освежить темы, но шаги повторения сдвинутся, только когда придёт их день.' : undefined}
+      heading={`${warmup ? 'Разминка' : 'После уроков'} · ${topics.map((t) => TAGS[t]?.ru ?? t).join(', ')}${deferred ? ` · вслух: ${deferred} ${plural(deferred, 'задание', 'задания', 'заданий')}` : ''}`}
+      intro={warmup ? 'Ошибок для разбора нет — вот короткая разминка по темам, которые ты уже прошёл.' : early ? 'Повтор раньше срока: можно освежить темы, но шаги повторения сдвинутся, только когда придёт их день.' : undefined}
       onAnswer={onAnswer}
       onFinish={onFinish}
       onExit={() => navigate({ name: 'review' })}
