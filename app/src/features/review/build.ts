@@ -74,3 +74,27 @@ export function buildRound(
     })
   return [...variations, ...originals, ...deferred].flatMap(take)
 }
+
+/** A warm-up when nothing has piled up: topics, tasks per topic. */
+export const WARMUP = { topics: 3, perTopic: 2 } as const
+
+/**
+ * A warm-up round when there are no mistakes to work through: a few topics
+ * of the sessions already finished, a new choice each day, two practice
+ * tasks each, only from units the learner has reached. Empty before the
+ * first finished session.
+ */
+export function warmupRound(finished: readonly { unitId: string; index: number }[], today: string, { maxUnit, bank = PRACTICE }: { maxUnit: string; bank?: Record<string, PracticeItem[]> }): RoundItem[] {
+  const tags = new Set<string>()
+  for (const f of finished) for (const e of UNITS[f.unitId]?.sessions[f.index - 1]?.exercises ?? []) for (const t of e.tags) if (bank[t]?.length) tags.add(t)
+  return shuffled([...tags], `${today}|warmup`)
+    .slice(0, WARMUP.topics)
+    .flatMap((tag) =>
+      shuffled(
+        (bank[tag] ?? []).filter((p) => p.unit <= maxUnit),
+        `${today}|warmup|${tag}`,
+      )
+        .slice(0, WARMUP.perTopic)
+        .map((p) => ({ exercise: p.exercise, tag })),
+    )
+}

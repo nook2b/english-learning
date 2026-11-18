@@ -3,6 +3,7 @@ import { navigate } from '../../app/router'
 import { TAGS } from '../../content/tags'
 import { dayKey, daysBetween } from '../../data/dates'
 import { type ReviewState, loadReview } from '../../data/review'
+import { useClub } from '../../data/store'
 import { Icon } from '../../ui/Icon'
 import { Button, Card } from '../../ui/kit'
 import { Classroom } from './Classroom'
@@ -15,6 +16,7 @@ import { plural, todaysPair } from './pairs'
 export function ReviewScreen() {
   const [state, setState] = useState<ReviewState>()
   const today = dayKey()
+  const passed = useClub((s) => Object.keys(s.sessions).length > 0)
   useEffect(() => {
     void loadReview().then(setState)
   }, [])
@@ -66,6 +68,12 @@ export function ReviewScreen() {
         </Button>
       )}
       {mood === 'empty' && <p className="muted">Ошибки из занятий будут собираться здесь по темам, и к ним можно будет вернуться через день и через три дня.</p>}
+      {mood === 'empty' && passed && (
+        <Card title={<><Icon name="nav-review" />Разминка</>}>
+          <p className="muted">Ошибок для разбора нет. Можно освежить пройденное: шесть коротких заданий по темам прошлых занятий, каждый день новые.</p>
+          <Button onClick={() => navigate({ name: 'practice' })}>Начать разминку</Button>
+        </Card>
+      )}
     </div>
   )
 }
