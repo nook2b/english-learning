@@ -1,4 +1,5 @@
 import type { ReviewState } from '../../data/review'
+import { UNITS } from '../../content/course'
 import { buildRound, ROUND, WARMUP, warmupRound } from './build'
 
 const mistake = (exerciseId: string, tag: string, at: number) => ({ exerciseId, tags: [tag], given: '', expected: '', at })
@@ -41,9 +42,21 @@ test('with nothing piled up, a warm-up covers topics of finished sessions, only 
   const finished = [1, 2, 3, 4, 5].map((index) => ({ unitId: '001', index }))
   const round = warmupRound(finished, '2026-11-18', { maxUnit: '001' })
   expect(round.length).toBeGreaterThan(0)
-  expect(round.length).toBeLessThanOrEqual(WARMUP.topics * WARMUP.perTopic)
-  expect(new Set(round.map((i) => i.tag)).size).toBeLessThanOrEqual(WARMUP.topics)
+  expect(round.length).toBeLessThanOrEqual((WARMUP.recentTopics + WARMUP.olderTopics) * WARMUP.perTopic)
+  expect(new Set(round.map((i) => i.tag)).size).toBeLessThanOrEqual(WARMUP.recentTopics + WARMUP.olderTopics)
   // the same day gives the same round, another day may differ
   expect(warmupRound(finished, '2026-11-18', { maxUnit: '001' })).toEqual(round)
   expect(warmupRound([], '2026-11-18', { maxUnit: '001' })).toEqual([])
+})
+
+test('after many units, the warm-up keeps to the last units and adds one older topic', () => {
+  // sessions 1–6 of units 001–016, finished in order
+  const finished = Array.from({ length: 16 }, (_, u) => [1, 2, 3, 4, 5, 6].map((index) => ({ unitId: String(u + 1).padStart(3, '0'), index, completedAt: u * 10 + index }))).flat()
+  const recent = new Set(['014', '015', '016'])
+  const recentTags = new Set(finished.filter((f) => recent.has(f.unitId)).flatMap((f) => UNITS[f.unitId]!.sessions[f.index - 1]!.exercises.flatMap((e) => e.tags)))
+  for (const day of ['2026-11-18', '2026-11-19', '2026-11-20', '2026-11-21']) {
+    const tags = [...new Set(warmupRound(finished, day, { maxUnit: '016' }).map((i) => i.tag!))]
+    expect(tags.filter((t) => recentTags.has(t)).length).toBeGreaterThanOrEqual(WARMUP.recentTopics)
+    expect(tags.filter((t) => !recentTags.has(t))).toHaveLength(WARMUP.olderTopics)
+  }
 })
