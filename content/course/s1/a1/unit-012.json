@@ -1182,7 +1182,8 @@
               "speaker": "iris",
               "text": "Two mugs. Four people. We are halfway to a collection.",
               "ru": "Две чашки. Четыре человека. Мы на полпути к коллекции.",
-              "expr": "notebook/dry_smile"
+              "expr": "notebook/dry_smile",
+              "mark": "sparkle"
             },
             {
               "speaker": "rei",

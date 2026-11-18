@@ -631,7 +631,10 @@ button.chat-photo > img { display: block; width: 100%; max-width: 260px; aspect-
 .reward-screen > .btn, .reward-screen > .actions { width: min(100%, 420px); margin-top: auto; }
 .reward-screen .reward { margin-top: 24px; }
 .reward-crystals { display: inline-flex; align-items: center; gap: 6px; margin: 0; padding: 6px 14px; border-radius: 999px; background: var(--surface); font-weight: 900; font-size: 1.1rem; }
-.reward-line { display: flex; flex-direction: column; gap: 4px; max-width: 420px; padding: 12px 16px; border: 2px solid var(--border); border-radius: 18px; background: var(--surface); color: inherit; font: inherit; font-size: 1.05rem; cursor: pointer; }
+.reward-lines { display: flex; flex-direction: column; gap: 8px; width: min(100%, 420px); padding: 12px 16px; border: 2px solid var(--border); border-radius: 18px; background: var(--surface); color: inherit; font: inherit; font-size: 1.05rem; text-align: left; cursor: pointer; }
+.reward-line { display: flex; flex-direction: column; gap: 2px; }
+.reward-line-who { font-size: 0.78rem; font-weight: 800; color: var(--road-d, var(--muted)); }
+.reward-lines .chat-link { align-self: flex-start; }
 .topbar-crystals { border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
 .daily-quests li { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 6px 10px; padding: 8px 0; }
 .daily-quests .quest-title { display: flex; align-items: center; gap: 6px; font-weight: 800; }
@@ -643,3 +646,7 @@ button.chat-photo > img { display: block; width: 100%; max-width: 260px; aspect-
 .shop-item p { margin: 2px 0 0; font-size: 0.86rem; }
 .challenge-line { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 8px 0 0; font-weight: 800; }
 .challenge-line .quest-pay { display: inline-flex; align-items: center; gap: 4px; font-weight: 900; }
+
+/* The player's reply in the team chat. */
+.chat-reply { display: flex; flex-direction: column; gap: 8px; margin: 8px 0 8px auto; width: min(100%, 420px); padding: 12px; border: 2px dashed var(--border); border-radius: 18px; }
+.chat-reply-ask { margin: 0; font-weight: 800; font-size: 0.9rem; }

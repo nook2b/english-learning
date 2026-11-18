@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { navigate } from '../../app/router'
-import { rewardLine } from '../../content/rewards'
+import { rewardLine, streakLines } from '../../content/rewards'
+import { SPEAKER_NAMES } from '../../lesson/model'
 import { dayKey } from '../../data/dates'
 import { type Reward, useClub } from '../../data/store'
 import { plural } from '../review/pairs'
@@ -31,7 +32,12 @@ export function RewardScreen() {
   const [ru, setRu] = useState(false)
   if (!reward) return null
   const d = describe(reward)
-  const line = rewardLine(d.moment, d.heroine, dayKey().split('-').reduce((n, p) => n + Number(p), 0))
+  const pick = dayKey().split('-').reduce((n, p) => n + Number(p), 0)
+  // The streak screen: all three say something; the others: the screen's heroine.
+  const lines = reward.kind === 'streak' ? streakLines(reward.days, pick) : (() => {
+    const said = d.moment === 'streak' ? undefined : rewardLine(d.moment, d.heroine, pick)
+    return said ? [{ heroine: d.heroine, said }] : []
+  })()
   const close = () => {
     setRu(false)
     dismiss()
@@ -46,10 +52,16 @@ export function RewardScreen() {
           <Icon name="crystal" size={22} /> +{d.crystals}
         </p>
       ) : null}
-      {line && (
-        <button className="reward-line" onClick={() => setRu(!ru)}>
-          <span lang="en">{line.en}</span>
-          {ru ? <span className="muted">{line.ru}</span> : <span className="chat-link">Перевод</span>}
+      {lines.length > 0 && (
+        <button className="reward-lines" onClick={() => setRu(!ru)} aria-label={ru ? 'Скрыть перевод' : 'Показать перевод'}>
+          {lines.map(({ heroine, said }) => (
+            <span key={heroine} className={`reward-line route-${heroine}`}>
+              {lines.length > 1 && <span className="reward-line-who">{SPEAKER_NAMES[heroine]}</span>}
+              <span lang="en">{said.en}</span>
+              {ru && <span className="muted">{said.ru}</span>}
+            </span>
+          ))}
+          {!ru && <span className="chat-link">Перевод</span>}
         </button>
       )}
       {reward.kind === 'welcome' ? (

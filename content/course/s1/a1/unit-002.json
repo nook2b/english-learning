@@ -312,7 +312,8 @@
           "speaker": "mika",
           "text": "Perfect! Now I sound like I know what I'm doing.",
           "ru": "Идеально! Теперь звучу так, будто знаю, что делаю.",
-          "expr": "phone/happy"
+          "expr": "phone/happy",
+          "mark": "sparkle"
         }
       ],
       "exercises": [
@@ -1137,7 +1138,8 @@
                 "speaker": "mika",
                 "text": "Oops. Sorry! Okay. Where… are… you… from?",
                 "ru": "Ой. Прости! Так. Откуда… ты?",
-                "expr": "embarrassed"
+                "expr": "embarrassed",
+                "mark": "sweat"
               }
             },
             {

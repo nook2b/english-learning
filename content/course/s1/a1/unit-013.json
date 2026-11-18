@@ -1008,7 +1008,8 @@
             "speaker": "mika",
             "text": "Sorry. Again.",
             "ru": "Простите. Ещё раз.",
-            "expr": "phone/embarrassed"
+            "expr": "phone/embarrassed",
+            "mark": "sweat"
           },
           {
             "speaker": "narrator",
@@ -1018,7 +1019,8 @@
             "speaker": "iris",
             "text": "I'm starting to understand your job.",
             "ru": "Начинаю понимать, какая у тебя работа.",
-            "expr": "notebook/dry_smile"
+            "expr": "notebook/dry_smile",
+            "mark": "sweat"
           }
         ]
       },

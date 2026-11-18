@@ -176,7 +176,8 @@
           "speaker": "iris",
           "text": "Two possible desk positions. Neither is a personal insult.",
           "ru": "Два возможных места для стола. Ни одно не является личным оскорблением.",
-          "expr": "notebook/dry_smile"
+          "expr": "notebook/dry_smile",
+          "mark": "sweat"
         }
       ]
     },
@@ -284,7 +285,8 @@
           "speaker": "rei",
           "text": "Pretty can stay. Echo can't.",
           "ru": "Красоту оставим. Эхо — нет.",
-          "expr": "smirk"
+          "expr": "smirk",
+          "mark": "anger"
         }
       ]
     },

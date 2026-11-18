@@ -316,7 +316,8 @@
           "speaker": "iris",
           "text": "Every adverb in its place. This is my favourite kind of order.",
           "ru": "Каждое наречие на своём месте. Мой любимый вид порядка.",
-          "expr": "notebook/dry_smile"
+          "expr": "notebook/dry_smile",
+          "mark": "sparkle"
         }
       ],
       "exercises": [
@@ -1200,7 +1201,8 @@
           "speaker": "iris",
           "text": "She's already planning the order. Run.",
           "ru": "Она уже планирует заказ. Беги.",
-          "expr": "dry_smile"
+          "expr": "dry_smile",
+          "mark": "sweat"
         }
       ]
     }

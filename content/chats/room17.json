@@ -411,6 +411,58 @@
    "ru": "Послушайте. Вот наш тихий двор. Обычно слышно, как у скамеек разговаривают люди. Сейчас дрель громче всех. Я стою у стены, рекордер направлен в центр двора."
   },
   {
+   "id": "room17-013-2-r1",
+   "unlock": {
+    "unit": "013",
+    "session": 2
+   },
+   "day": "Среда, во дворе",
+   "from": "me",
+   "type": "reply",
+   "intents": [
+    {
+     "label": "Сравнить, что слышно обычно и сейчас",
+     "answers": [
+      "You usually hear people talking, but right now you hear the drill.",
+      "People usually talk near the benches, but the drill is louder today.",
+      "Usually you hear people talking, but right now you hear the drill.",
+      "People usually talk here, but right now the drill is louder."
+     ],
+     "reaction": [
+      {
+       "from": "rei",
+       "text": "Yep. The drill wins today.",
+       "ru": "Ага. Сегодня побеждает дрель.",
+       "expr": "recorder/smirk"
+      }
+     ]
+    },
+    {
+     "label": "Описать, как изменился двор",
+     "answers": [
+      "It's usually quiet here, but they're drilling today.",
+      "It's usually quiet, but the drill is making a lot of noise right now.",
+      "It is usually quiet here, but they are drilling today.",
+      "It's usually quiet here, but today it's noisy."
+     ],
+     "reaction": [
+      {
+       "from": "rei",
+       "text": "That's the courtyard today. Save that line.",
+       "ru": "Вот такой сегодня двор. Сохрани эту строчку.",
+       "expr": "recorder/neutral"
+      }
+     ]
+    }
+   ],
+   "clarify": {
+    "from": "rei",
+    "text": "Usually, or right now?",
+    "ru": "Обычно или прямо сейчас?",
+    "expr": "recorder/listening"
+   }
+  },
+  {
    "id": "room17-013-2-2",
    "unlock": {
     "unit": "013",
@@ -435,6 +487,58 @@
    "type": "voice",
    "text": "I'm near the door. They keep moving chairs behind me, and the fan is running above it. Someone is practising the trumpet upstairs too. Can you hear me? I'm coming back to the bench now.",
    "ru": "Я возле двери. За мной всё время двигают стулья, а над дверью работает вентилятор. Наверху ещё кто-то упражняется на трубе. Вы меня слышите? Сейчас вернусь к скамейке."
+  },
+  {
+   "id": "room17-014-2-r1",
+   "unlock": {
+    "unit": "014",
+    "session": 2
+   },
+   "day": "Пятница, перед второй попыткой",
+   "from": "me",
+   "type": "reply",
+   "intents": [
+    {
+     "label": "Назвать помеху и попросить повторить",
+     "answers": [
+      "The fan is too loud. Could you repeat the last part, please?",
+      "They're moving chairs behind you. Could you say that last bit again?",
+      "The fan is too loud. Could you repeat that, please?",
+      "It's too loud. Could you say that again, please?"
+     ],
+     "reaction": [
+      {
+       "from": "mika",
+       "text": "Sure! I'm coming back to the bench.",
+       "ru": "Конечно! Я возвращаюсь к скамейке.",
+       "expr": "phone/happy"
+      }
+     ]
+    },
+    {
+     "label": "Попросить записать следующее сообщение у скамейки",
+     "answers": [
+      "The fan is running above you. Could you send the next message from the bench?",
+      "The chairs are pretty loud. Could you record the next one by the bench, please?",
+      "It's too loud there. Could you record the next message by the bench?",
+      "Could you send the next message from the bench, please?"
+     ],
+     "reaction": [
+      {
+       "from": "mika",
+       "text": "Good idea. I'll wait until I get there.",
+       "ru": "Хорошая идея. Подожду, пока дойду.",
+       "expr": "phone/neutral"
+      }
+     ]
+    }
+   ],
+   "clarify": {
+    "from": "mika",
+    "text": "Sorry, what would you like me to do?",
+    "ru": "Прости, что ты хочешь, чтобы я сделала?",
+    "expr": "listening"
+   }
   },
   {
    "id": "room17-014-2-2",
@@ -497,6 +601,58 @@
    "type": "text",
    "text": "Friday after three thirty. Or Saturday morning. Both work.",
    "ru": "В пятницу после половины четвёртого. Или в субботу утром. Оба подходят."
+  },
+  {
+   "id": "room17-015-2-r1",
+   "unlock": {
+    "unit": "015",
+    "session": 2
+   },
+   "day": "Понедельник, сверка расписаний",
+   "from": "me",
+   "type": "reply",
+   "intents": [
+    {
+     "label": "Согласиться на пятницу",
+     "answers": [
+      "Friday at four works for me.",
+      "I can do Friday at four.",
+      "Friday at four is fine for me.",
+      "Friday works for me."
+     ],
+     "reaction": [
+      {
+       "from": "mika",
+       "text": "Got it. Friday at four stays on the list.",
+       "ru": "Поняла. Пятницу в четыре оставляю в списке.",
+       "expr": "phone/happy"
+      }
+     ]
+    },
+    {
+     "label": "Отклонить пятницу и предложить субботу",
+     "answers": [
+      "I'd rather not meet on Friday. How about Saturday at eleven?",
+      "Friday at four isn't ideal for me. Could we meet on Saturday at eleven?",
+      "I'm afraid Friday doesn't work for me. How about Saturday at eleven?",
+      "How about Saturday at eleven instead?"
+     ],
+     "reaction": [
+      {
+       "from": "mika",
+       "text": "Noted. Saturday at eleven is on the list too.",
+       "ru": "Записала. Суббота в одиннадцать тоже в списке.",
+       "expr": "phone/neutral"
+      }
+     ]
+    }
+   ],
+   "clarify": {
+    "from": "mika",
+    "text": "Which day and time work for you?",
+    "ru": "Какой день и время тебе подходят?",
+    "expr": "listening"
+   }
   },
   {
    "id": "room17-015-8-1",
@@ -591,6 +747,112 @@
    "type": "text",
    "text": "Confirmed. I'll check the recorder and bring the stand.",
    "ru": "Подтверждаю. Проверю рекордер и принесу подставку."
+  },
+  {
+   "id": "room17-016-2-r1",
+   "unlock": {
+    "unit": "016",
+    "session": 2
+   },
+   "day": "Четверг, подтверждения",
+   "from": "me",
+   "type": "reply",
+   "intents": [
+    {
+     "label": "Подтвердить встречу и выключить звук на своём телефоне",
+     "answers": [
+      "See you in the courtyard at four on Friday. I'll put my phone on silent.",
+      "We're meeting in the courtyard on Friday at four, right? I'll turn off my phone's sound.",
+      "See you in the courtyard on Friday at four. I'll put my phone on silent.",
+      "We're meeting in the courtyard on Friday at four, right? I'll put my phone on silent."
+     ],
+     "reaction": [
+      {
+       "from": "rei",
+       "text": "Right. I'll do the same.",
+       "ru": "Да. Я тоже отключу.",
+       "expr": "neutral"
+      }
+     ]
+    },
+    {
+     "label": "Подтвердить встречу и прислушаться к фону",
+     "answers": [
+      "Just to confirm, we're meeting in the courtyard on Friday at four. I'll listen for background noise.",
+      "Courtyard, Friday at four. I'll check how quiet it is.",
+      "Just to confirm, we're meeting in the courtyard on Friday at four. I'll check the background noise.",
+      "Courtyard, Friday at four. I'll listen for background noise."
+     ],
+     "reaction": [
+      {
+       "from": "rei",
+       "text": "Right. Tell me what you hear.",
+       "ru": "Да. Скажи, что услышишь.",
+       "expr": "neutral"
+      }
+     ]
+    }
+   ],
+   "clarify": {
+    "from": "rei",
+    "text": "Which time did we agree on?",
+    "ru": "На какое время мы договорились?",
+    "expr": "listening"
+   },
+   "ifNot": "u015_slot_sat11"
+  },
+  {
+   "id": "room17-016-2-r2",
+   "unlock": {
+    "unit": "016",
+    "session": 2
+   },
+   "day": "Четверг, подтверждения",
+   "from": "me",
+   "type": "reply",
+   "intents": [
+    {
+     "label": "Подтвердить встречу и выключить звук на своём телефоне",
+     "answers": [
+      "See you in the courtyard at eleven on Saturday. I'll put my phone on silent.",
+      "We're meeting in the courtyard on Saturday at eleven, right? I'll turn off my phone's sound.",
+      "See you in the courtyard on Saturday at eleven. I'll put my phone on silent.",
+      "We're meeting in the courtyard on Saturday at eleven, right? I'll put my phone on silent."
+     ],
+     "reaction": [
+      {
+       "from": "rei",
+       "text": "Right. I'll do the same.",
+       "ru": "Да. Я тоже отключу.",
+       "expr": "neutral"
+      }
+     ]
+    },
+    {
+     "label": "Подтвердить встречу и прислушаться к фону",
+     "answers": [
+      "Just to confirm, we're meeting in the courtyard on Saturday at eleven. I'll listen for background noise.",
+      "Courtyard, Saturday at eleven. I'll check how quiet it is.",
+      "Just to confirm, we're meeting in the courtyard on Saturday at eleven. I'll check the background noise.",
+      "Courtyard, Saturday at eleven. I'll listen for background noise."
+     ],
+     "reaction": [
+      {
+       "from": "rei",
+       "text": "Right. Tell me what you hear.",
+       "ru": "Да. Скажи, что услышишь.",
+       "expr": "neutral"
+      }
+     ]
+    }
+   ],
+   "clarify": {
+    "from": "rei",
+    "text": "Which time did we agree on?",
+    "ru": "На какое время мы договорились?",
+    "expr": "listening"
+   },
+   "if": "u015_slot_sat11"
   },
   {
    "id": "room17-016-8-1",

@@ -39,7 +39,8 @@
             "speaker": "mika",
             "text": "We have a reply! Wednesday at one. That is actually our time.",
             "ru": "Нам ответили! Среда, час. Как раз наше время.",
-            "expr": "phone/happy"
+            "expr": "phone/happy",
+            "mark": "sparkle"
           },
           {
             "speaker": "iris",

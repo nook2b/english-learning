@@ -371,7 +371,8 @@
           "speaker": "rei",
           "text": "You understood all three of us. That's more than the mic does.",
           "ru": "Ты понял нас всех троих. Это больше, чем удаётся микрофону.",
-          "expr": "recorder/smirk"
+          "expr": "recorder/smirk",
+          "mark": "question"
         }
       ]
     },
@@ -1462,7 +1463,8 @@
           "speaker": "iris",
           "text": "I'll put your name on the wall. Spelled correctly.",
           "ru": "Я напишу твоё имя на стене. Без ошибок.",
-          "expr": "dry_smile"
+          "expr": "dry_smile",
+          "mark": "sparkle"
         }
       ]
     }

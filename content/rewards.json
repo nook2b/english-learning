@@ -1,8 +1,445 @@
 {
-  "_about": "Heroine lines on the reward screens (docs/55, section 3). Each moment lists lines per heroine, shown in turn; an empty list shows no line. Texts come from the outside author.",
-  "quest": { "mika": [], "rei": [], "iris": [] },
-  "welcome": { "mika": [], "rei": [], "iris": [] },
-  "streak": { "mika": [], "rei": [], "iris": [] },
-  "challenge_win": { "rei": [] },
-  "challenge_next": { "rei": [] }
+ "_about": "Heroine lines on the reward screens (docs/55, section 3), from the outside author. Each moment lists lines per heroine, shown in turn; the streak screen shows one line from each heroine for its milestone.",
+ "quest": {
+  "mika": [
+   {
+    "en": "Done for today! See you tomorrow.",
+    "ru": "На сегодня всё! До завтра."
+   },
+   {
+    "en": "That's today's list. All checked off!",
+    "ru": "Весь список на сегодня. Везде галочки!"
+   },
+   {
+    "en": "Nice work! Go enjoy your evening.",
+    "ru": "Отлично! Иди отдыхай."
+   },
+   {
+    "en": "We did it! Tomorrow gets a fresh list.",
+    "ru": "Справились! Завтра будет новый список."
+   }
+  ],
+  "rei": [
+   {
+    "en": "Done. That was quick.",
+    "ru": "Готово. Быстро управился."
+   },
+   {
+    "en": "All done. You can go now.",
+    "ru": "Всё готово. Можешь идти."
+   },
+   {
+    "en": "Good work. Call it a day.",
+    "ru": "Хорошая работа. На сегодня хватит."
+   },
+   {
+    "en": "Done already? Nice work.",
+    "ru": "Уже всё? Хорошая работа."
+   }
+  ],
+  "iris": [
+   {
+    "en": "That takes care of today.",
+    "ru": "С делами на сегодня разобрались."
+   },
+   {
+    "en": "You finished everything you meant to.",
+    "ru": "Ты закончил всё, что собирался."
+   },
+   {
+    "en": "Everything's done. You can put it away.",
+    "ru": "Всё готово. Можно закрывать."
+   },
+   {
+    "en": "Well done. I'll close my notebook too.",
+    "ru": "Молодец. Я тоже закрою тетрадь."
+   }
+  ]
+ },
+ "welcome": {
+  "mika": [
+   {
+    "en": "You're back! Ready for a quick round?",
+    "ru": "Ты вернулся! Сыграем короткий раунд?"
+   },
+   {
+    "en": "Hey! Let's ease back in today.",
+    "ru": "Привет! Давай сегодня без спешки."
+   },
+   {
+    "en": "Good to see you! Where were we?",
+    "ru": "Рада тебя видеть! На чём мы остановились?"
+   },
+   {
+    "en": "Welcome back! One little task to start?",
+    "ru": "С возвращением! Начнём с маленького задания?"
+   }
+  ],
+  "rei": [
+   {
+    "en": "Hey. Ready when you are.",
+    "ru": "Привет. Я готова, когда будешь готов."
+   },
+   {
+    "en": "Welcome back. Want to start here?",
+    "ru": "С возвращением. Начнём отсюда?"
+   },
+   {
+    "en": "There you are. Take your time.",
+    "ru": "Вот и ты. Не спеши."
+   },
+   {
+    "en": "Hey again. One thing at a time.",
+    "ru": "Снова привет. Давай по одному делу за раз."
+   }
+  ],
+  "iris": [
+   {
+    "en": "You're back. Your place is saved.",
+    "ru": "Ты вернулся. Твоё место сохранено."
+   },
+   {
+    "en": "Welcome back. Shall we pick up here?",
+    "ru": "С возвращением. Продолжим отсюда?"
+   },
+   {
+    "en": "Good to see you again.",
+    "ru": "Рада снова тебя видеть."
+   },
+   {
+    "en": "We can start with something familiar.",
+    "ru": "Можем начать с чего-нибудь знакомого."
+   }
+  ]
+ },
+ "streak": {
+  "3": {
+   "mika": [
+    {
+     "en": "Three days! Shall we go for four?",
+     "ru": "Три дня! Попробуем четыре?"
+    },
+    {
+     "en": "Three in a row! That's a start!",
+     "ru": "Три подряд! Вот это начало!"
+    },
+    {
+     "en": "Day three! See you for day four.",
+     "ru": "Третий день! Увидимся на четвёртом."
+    },
+    {
+     "en": "You've done three days already!",
+     "ru": "У тебя уже три дня подряд!"
+    }
+   ],
+   "rei": [
+    {
+     "en": "Three days. Good start.",
+     "ru": "Три дня. Хорошее начало."
+    },
+    {
+     "en": "Day three. You kept going.",
+     "ru": "Третий день. Ты продолжаешь."
+    },
+    {
+     "en": "Three in a row. Nice.",
+     "ru": "Три подряд. Здорово."
+    },
+    {
+     "en": "Three days down. Looking good.",
+     "ru": "Три дня позади. Пока всё отлично."
+    }
+   ],
+   "iris": [
+    {
+     "en": "Three days. You're finding your rhythm.",
+     "ru": "Три дня. Ты входишь в ритм."
+    },
+    {
+     "en": "Three days in a row. Well done.",
+     "ru": "Три дня подряд. Молодец."
+    },
+    {
+     "en": "Day three already. You settled in quickly.",
+     "ru": "Уже третий день. Ты быстро освоился."
+    },
+    {
+     "en": "You made time for three days straight.",
+     "ru": "Ты находил время три дня подряд."
+    }
+   ]
+  },
+  "7": {
+   "mika": [
+    {
+     "en": "Seven days! A whole week!",
+     "ru": "Семь дней! Целая неделя!"
+    },
+    {
+     "en": "That's a week! Shall we start another?",
+     "ru": "Это уже неделя! Начнём следующую?"
+    },
+    {
+     "en": "Seven in a row! Look at you!",
+     "ru": "Семь подряд! Вот это да!"
+    },
+    {
+     "en": "One full week! See you tomorrow.",
+     "ru": "Целая неделя! До завтра."
+    }
+   ],
+   "rei": [
+    {
+     "en": "Seven days. That's a week.",
+     "ru": "Семь дней. Это неделя."
+    },
+    {
+     "en": "A full week. Nice work.",
+     "ru": "Целая неделя. Хорошая работа."
+    },
+    {
+     "en": "Seven straight. I like those numbers.",
+     "ru": "Семь подряд. Мне нравятся эти цифры."
+    },
+    {
+     "en": "Week one down. See you tomorrow.",
+     "ru": "Первая неделя позади. До завтра."
+    }
+   ],
+   "iris": [
+    {
+     "en": "Seven days. That's a week of practice.",
+     "ru": "Семь дней. Неделя практики."
+    },
+    {
+     "en": "A full week, one day at a time.",
+     "ru": "Целая неделя. День за днём."
+    },
+    {
+     "en": "A week already. You've made time every day.",
+     "ru": "Уже неделя. Ты находил время каждый день."
+    },
+    {
+     "en": "Seven days. I think you've found your pace.",
+     "ru": "Семь дней. Похоже, ты нашёл свой темп."
+    }
+   ]
+  },
+  "14": {
+   "mika": [
+    {
+     "en": "Two weeks! Shall we make it three?",
+     "ru": "Две недели! Попробуем три?"
+    },
+    {
+     "en": "Fourteen days! Look how far you've come.",
+     "ru": "Четырнадцать дней! Смотри, сколько ты уже прошёл."
+    },
+    {
+     "en": "Fourteen in a row! See you for fifteen.",
+     "ru": "Четырнадцать подряд! Увидимся на пятнадцатом."
+    },
+    {
+     "en": "That's two weeks! Put it on the calendar.",
+     "ru": "Это две недели! Отметь в календаре."
+    }
+   ],
+   "rei": [
+    {
+     "en": "Fourteen days. You're consistent.",
+     "ru": "Четырнадцать дней. Ты держишься."
+    },
+    {
+     "en": "Two weeks straight. Impressive.",
+     "ru": "Две недели подряд. Впечатляет."
+    },
+    {
+     "en": "Fourteen in a row. Good pace.",
+     "ru": "Четырнадцать подряд. Хороший темп."
+    },
+    {
+     "en": "Two weeks. You've kept it going.",
+     "ru": "Две недели. Ты продолжаешь в том же духе."
+    }
+   ],
+   "iris": [
+    {
+     "en": "Fourteen days. You've made a routine of it.",
+     "ru": "Четырнадцать дней. У тебя уже вошло в привычку."
+    },
+    {
+     "en": "Two weeks of practice. Nicely done.",
+     "ru": "Две недели практики. Молодец."
+    },
+    {
+     "en": "Two weeks already. I hope it feels easier.",
+     "ru": "Уже две недели. Надеюсь, стало легче."
+    },
+    {
+     "en": "Fourteen days. Take a moment to enjoy that.",
+     "ru": "Четырнадцать дней. Порадуйся этому."
+    }
+   ]
+  },
+  "30": {
+   "mika": [
+    {
+     "en": "Thirty days! I'm circling that one!",
+     "ru": "Тридцать дней! Обведу эту дату!"
+    },
+    {
+     "en": "Thirty in a row! We should celebrate.",
+     "ru": "Тридцать подряд! Надо отметить."
+    },
+    {
+     "en": "Day thirty! Ready for thirty-one tomorrow?",
+     "ru": "Тридцатый день! Завтра за тридцать первый?"
+    },
+    {
+     "en": "Thirty days straight! That deserves a cheer.",
+     "ru": "Тридцать дней подряд! Тут можно и поаплодировать."
+    }
+   ],
+   "rei": [
+    {
+     "en": "Thirty straight. That's solid.",
+     "ru": "Тридцать подряд. Серьёзно."
+    },
+    {
+     "en": "Day thirty. That's good work.",
+     "ru": "День тридцатый. Отличная работа."
+    },
+    {
+     "en": "Thirty days. I'd call that a habit.",
+     "ru": "Тридцать дней. Я бы назвала это привычкой."
+    },
+    {
+     "en": "Thirty in a row. You earned that.",
+     "ru": "Тридцать подряд. Ты это заслужил."
+    }
+   ],
+   "iris": [
+    {
+     "en": "Thirty days of showing up. Well done.",
+     "ru": "Тридцать дней ты находил время. Молодец."
+    },
+    {
+     "en": "Day thirty. You made it part of your day.",
+     "ru": "Тридцатый день. Это стало частью твоего дня."
+    },
+    {
+     "en": "Thirty days. That's a lot of small steps.",
+     "ru": "Тридцать дней. Набралось много маленьких шагов."
+    },
+    {
+     "en": "Thirty already. Think back to the first day.",
+     "ru": "Уже тридцать. Вспомни свой первый день."
+    }
+   ]
+  },
+  "100": {
+   "mika": [
+    {
+     "en": "A hundred days! That's going on the board!",
+     "ru": "Сто дней! Запишу на доске!"
+    },
+    {
+     "en": "One hundred! Okay, that gets a whole cheer.",
+     "ru": "Сто! Так, тут можно и поаплодировать."
+    },
+    {
+     "en": "Day one hundred! See you for one hundred-one.",
+     "ru": "Сотый день! Увидимся на сто первом."
+    },
+    {
+     "en": "A hundred in a row! This calls for cake.",
+     "ru": "Сто подряд! Это надо отметить тортом."
+    }
+   ],
+   "rei": [
+    {
+     "en": "A hundred days. Okay, I'm impressed.",
+     "ru": "Сто дней. Ладно, я впечатлена."
+    },
+    {
+     "en": "One hundred. I checked twice.",
+     "ru": "Сто. Я дважды проверила."
+    },
+    {
+     "en": "Day one hundred. Good work, seriously.",
+     "ru": "Сотый день. Отличная работа, серьёзно."
+    },
+    {
+     "en": "A hundred straight. That's staying power.",
+     "ru": "Сто подряд. Вот это выдержка."
+    }
+   ],
+   "iris": [
+    {
+     "en": "A hundred days. You built something steady.",
+     "ru": "Сто дней. Ты выработал устойчивую привычку."
+    },
+    {
+     "en": "Day one hundred. Take that in for a moment.",
+     "ru": "Сотый день. Дай себе секунду это осознать."
+    },
+    {
+     "en": "A hundred days. Think how much you've practised.",
+     "ru": "Сто дней. Подумай, сколько ты успел потренироваться."
+    },
+    {
+     "en": "One hundred days of practice. I'm glad you stayed.",
+     "ru": "Сто дней практики. Рада, что ты остался."
+    }
+   ]
+  }
+ },
+ "challenge_win": {
+  "rei": [
+   {
+    "en": "You did it. Nice work.",
+    "ru": "Ты справился. Хорошая работа."
+   },
+   {
+    "en": "Target hit. That's a good week.",
+    "ru": "Цель достигнута. Хорошая вышла неделя."
+   },
+   {
+    "en": "You met the goal. Respect.",
+    "ru": "Ты выполнил цель. Уважаю."
+   },
+   {
+    "en": "That's a win. Take it.",
+    "ru": "Это победа. Забирай."
+   },
+   {
+    "en": "You put in the work. It shows.",
+    "ru": "Ты поработал. Это заметно."
+   },
+   {
+    "en": "Goal reached. Even I'm smiling.",
+    "ru": "Цель достигнута. Даже я улыбаюсь."
+   }
+  ]
+ },
+ "challenge_next": {
+  "rei": [
+   {
+    "en": "Some practice still counts.",
+    "ru": "Даже немного практики считается."
+   },
+   {
+    "en": "It's okay. Give yourself a break.",
+    "ru": "Всё нормально. Дай себе передышку."
+   },
+   {
+    "en": "Rough week? We can try again.",
+    "ru": "Тяжёлая неделя? Можно попробовать ещё раз."
+   },
+   {
+    "en": "You can leave it here for now.",
+    "ru": "Пока можешь на этом остановиться."
+   }
+  ]
+ }
 }

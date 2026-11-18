@@ -660,7 +660,8 @@
             "speaker": "mika",
             "text": "Only eleven!",
             "ru": "Всего одиннадцать!",
-            "expr": "pout"
+            "expr": "pout",
+            "mark": "anger"
           }
         ]
       },
@@ -885,7 +886,8 @@
             "speaker": "rei",
             "text": "If you come at the wrong time, I record the silence without you. Quick check.",
             "ru": "Если придёшь не вовремя, я запишу тишину без тебя. Быстрая проверка.",
-            "expr": "deadpan"
+            "expr": "deadpan",
+            "mark": "sparkle"
           }
         ]
       },

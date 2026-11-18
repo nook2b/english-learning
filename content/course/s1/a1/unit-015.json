@@ -256,7 +256,8 @@
           "speaker": "iris",
           "text": "We have two options, not two bookings.",
           "ru": "У нас два варианта, а не две назначенные встречи.",
-          "expr": "notebook/dry_smile"
+          "expr": "notebook/dry_smile",
+          "mark": "question"
         }
       ]
     },

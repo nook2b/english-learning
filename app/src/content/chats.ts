@@ -7,6 +7,12 @@ import { HEROINES, shownWith } from './schema'
 // The team chat "Room 17" (docs/31-messenger-ui-brief.md): voice messages, texts and
 // photos the team sends along the course. Built by scripts/build_chat.py from the units.
 
+const ChatLine = z.object({ from: z.enum(HEROINES), text: z.string(), ru: z.string(), expr: z.string().optional() })
+export type ChatLine = z.infer<typeof ChatLine>
+
+/** The flag that keeps the player's chosen reply: "{message id}:{intent}". */
+export const replyFlag = (id: string, intent: number) => `${id}:${intent}`
+
 const Message = z.object({
   id: z.string(),
   /** Opens once this session is done. */
@@ -14,7 +20,7 @@ const Message = z.object({
   /** Day divider shown above the first message of a day. */
   day: z.string(),
   from: z.enum([...HEROINES, 'me', 'system']),
-  type: z.enum(['text', 'voice', 'photo', 'system']),
+  type: z.enum(['text', 'voice', 'photo', 'system', 'reply']),
   text: z.string().optional(),
   ru: z.string().optional(),
   delivery: z.string().optional(),
@@ -25,6 +31,9 @@ const Message = z.object({
   captionRu: z.string().optional(),
   if: z.string().optional(),
   ifNot: z.string().optional(),
+  /** Reply: the player picks an intent and writes it in English; the heroines react (docs/55). */
+  intents: z.array(z.object({ label: z.string(), answers: z.array(z.string()).min(1), reaction: z.array(ChatLine).min(1) })).optional(),
+  clarify: ChatLine.optional(),
 })
 export type ChatMessage = z.infer<typeof Message>
 

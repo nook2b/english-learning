@@ -45,7 +45,8 @@
             "speaker": "mika",
             "text": "The blue one looks great. Looking is still free, right?",
             "ru": "Синий выглядит классно. Смотреть ведь пока бесплатно?",
-            "expr": "happy"
+            "expr": "happy",
+            "mark": "heart"
           },
           {
             "speaker": "iris",
