@@ -73,6 +73,10 @@ def main() -> int:
     # The placement check (content/placement.json): the announcer's listening.
     placement = json.loads((ROOT / "content/placement.json").read_text())
     sources += [{"id": "placement", "sessions": [{"exercises": [i["exercise"] for part in placement["parts"] for i in part["items"]]}]}]
+    # End-of-arc checks (content/arc-checks): their listening and the heroine's closing line.
+    for f in sorted((ROOT / "content/arc-checks").glob("*.json")):
+        check = json.loads(f.read_text())
+        sources += [{"id": check["id"], "sessions": [{"frame": {"lines": [check["outro"]]}, "exercises": [e for b in check["blocks"] for e in b["exercises"]]}]}]
     for unit in sources:
         if args.unit and unit["id"] != args.unit:
             continue

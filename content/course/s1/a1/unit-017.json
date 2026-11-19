@@ -1,0 +1,1050 @@
+{
+  "id": "017",
+  "title": "Объяснить маршрут",
+  "goal": "Дать пошаговые указания от главного входа до комнаты 17.",
+  "focus": "Объяснить маршрут шаг за шагом: порядок действий (first, then, after that, finally) и движение (go along, go past, go through, turn left, at the end of, opposite).",
+  "outcome": "Рэй сохраняет пробную озвучку первого маршрута. Команда договаривается пройти его сразу после записи.",
+  "expressions": [
+    "first",
+    "then",
+    "after that",
+    "finally",
+    "go along",
+    "go past",
+    "go through",
+    "turn left",
+    "at the end of",
+    "opposite",
+    "main entrance"
+  ],
+  "glossary": [
+    "information desk",
+    "noticeboard",
+    "floor plan",
+    "narrow hall",
+    "passage"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Линия на плане",
+      "intro": "Черновик маршрута для гида: от главного входа до комнаты 17. Прочитай и найди ориентиры.",
+      "place": "room17",
+      "frame": {
+        "setting": "Среда, час дня. Рэй выключает запись двора. Айрис расстилает на столе план, а Мика прижимает его углы двумя чашками.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Courtyard's in. What's next?",
+            "ru": "Двор добавила. Что дальше?",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u017-s1-e1",
+          "type": "reading",
+          "title": "Room 17: draft directions",
+          "text": "Start at the main entrance of the New Building. First, walk past the information desk. Then turn left at the noticeboard and go along the narrow hall. At the end of the hall, go through the grey door. The passage joins the two buildings. After that, follow the corridor until you see another noticeboard. Room 17 is opposite it. The whole walk takes about three minutes, according to the floor plan. Keep the room number on the card so visitors can check the door.",
+          "ru": "Начни у главного входа в новый корпус. Сперва пройди мимо стойки информации. Затем поверни налево у доски объявлений и иди по узкому коридору. В конце коридора пройди через серую дверь. Переход соединяет два корпуса. После этого иди по коридору до второй доски объявлений. Комната 17 напротив неё. Судя по плану, весь путь занимает около трёх минут. Оставь номер комнаты на карточке, чтобы гости могли свериться с табличкой.",
+          "questions": [
+            {
+              "prompt": "What do you pass first?",
+              "options": [
+                "the desk",
+                "the grey door",
+                "Room 17"
+              ],
+              "answer": "the desk"
+            },
+            {
+              "prompt": "Where is the grey door?",
+              "options": [
+                "at the entrance",
+                "at the end of the hall",
+                "opposite Room 17"
+              ],
+              "answer": "at the end of the hall"
+            },
+            {
+              "prompt": "What is opposite Room 17?",
+              "options": [
+                "a noticeboard",
+                "a lift",
+                "a desk"
+              ],
+              "answer": "a noticeboard"
+            }
+          ],
+          "tags": [
+            "reading",
+            "directions"
+          ]
+        },
+        {
+          "id": "u017-s1-e2",
+          "type": "choice",
+          "prompt": "___, walk past the information desk.",
+          "options": [
+            "First",
+            "Finally",
+            "At last"
+          ],
+          "answer": "First",
+          "tags": [
+            "sequencing"
+          ],
+          "explain": "First — сперва, первый шаг."
+        },
+        {
+          "id": "u017-s1-e3",
+          "type": "choice",
+          "prompt": "Room 17 is ___ the noticeboard.",
+          "options": [
+            "opposite",
+            "through",
+            "along"
+          ],
+          "answer": "opposite",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "Opposite — напротив."
+        },
+        {
+          "id": "u017-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "go past",
+              "ru": "пройти мимо"
+            },
+            {
+              "en": "go along",
+              "ru": "идти вдоль"
+            },
+            {
+              "en": "go through",
+              "ru": "пройти через"
+            },
+            {
+              "en": "at the end of",
+              "ru": "в конце"
+            },
+            {
+              "en": "opposite",
+              "ru": "напротив"
+            },
+            {
+              "en": "main entrance",
+              "ru": "главный вход"
+            }
+          ],
+          "tags": [
+            "directions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Three minutes. Even I can fit that in.",
+          "ru": "Три минуты. Даже в моё расписание влезет.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Маршрут на слух",
+      "intro": "Маршрут на слух: Айрис и Мика проговаривают путь по плану. Слушай без текста.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u017-s2-e1",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "Start at the main entrance. Go past the information desk and turn left at the first noticeboard. Walk to the end of the narrow hall. The grey door should be right in front of you.",
+          "ru": "Начни у главного входа. Пройди мимо стойки информации и поверни налево у первой доски объявлений. Дойди до конца узкого коридора. Серая дверь должна быть прямо перед тобой.",
+          "questions": [
+            {
+              "prompt": "Which way do you turn?",
+              "options": [
+                "left",
+                "right",
+                "back"
+              ],
+              "answer": "left"
+            }
+          ],
+          "tags": [
+            "listening",
+            "directions"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Айрис в комнате 17"
+        },
+        {
+          "id": "u017-s2-e2",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "There are two noticeboards on the plan. The first one is near the desk. The second one is in the old building, opposite our room. I'll mark them with different colours.",
+          "ru": "На плане две доски объявлений. Первая возле стойки. Вторая в старом корпусе, напротив нашей комнаты. Я отмечу их разными цветами.",
+          "questions": [
+            {
+              "prompt": "Which board is near the desk?",
+              "options": [
+                "the first",
+                "the second",
+                "neither"
+              ],
+              "answer": "the first"
+            }
+          ],
+          "tags": [
+            "listening",
+            "directions"
+          ],
+          "delivery": "[thoughtfully]",
+          "context": "Голосовое Мики в чате «Room 17»"
+        },
+        {
+          "id": "u017-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "Go past the information desk.",
+          "answers": [
+            "Go past the information desk."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "directions"
+          ]
+        },
+        {
+          "id": "u017-s2-e4",
+          "type": "choice",
+          "prompt": "Iris: «Walk to the ___ of the narrow hall.»",
+          "options": [
+            "end",
+            "past",
+            "opposite"
+          ],
+          "answer": "end",
+          "tags": [
+            "directions"
+          ],
+          "explain": "At the end of — в конце."
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Two boards. Good catch.",
+          "ru": "Две доски. Хорошо заметила.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Сначала стойка",
+      "intro": "Порядок шагов: First, … Then, … After that, … Finally, … Каждый шаг — повелительное наклонение: find, go, turn, look. Запрет: Don't turn before the desk.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис нумерует строчки карандашом. Мика переставляет чашку, чтобы открыть первый шаг.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Put the first turn where it belongs.",
+            "ru": "Поставь первый поворот туда, где он нужен.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u017-s3-e1",
+          "type": "choice",
+          "prompt": "___, find the information desk.",
+          "options": [
+            "First",
+            "Finally",
+            "After that"
+          ],
+          "answer": "First",
+          "tags": [
+            "sequencing"
+          ],
+          "explain": "Первый шаг — First.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s3-e2",
+          "type": "choice",
+          "prompt": "___ go past the desk.",
+          "options": [
+            "Then",
+            "First",
+            "Finally"
+          ],
+          "answer": "Then",
+          "tags": [
+            "sequencing"
+          ],
+          "explain": "Then — затем, следующий шаг.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s3-e3",
+          "type": "fill",
+          "prompt": "Turn ___ at the first board.",
+          "answers": [
+            "left"
+          ],
+          "hint": "налево",
+          "tags": [
+            "directions"
+          ],
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s3-e4",
+          "type": "choice",
+          "prompt": "___ that, follow the narrow hall.",
+          "options": [
+            "After",
+            "Before",
+            "Then"
+          ],
+          "answer": "After",
+          "tags": [
+            "sequencing"
+          ],
+          "explain": "After that — после этого.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s3-e5",
+          "type": "choice",
+          "prompt": "___, look for number 17.",
+          "options": [
+            "Finally",
+            "First",
+            "Then"
+          ],
+          "answer": "Finally",
+          "tags": [
+            "sequencing"
+          ],
+          "explain": "Последний шаг — Finally.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s3-e6",
+          "type": "fill",
+          "prompt": "___ turn before the desk.",
+          "answers": [
+            "Don't",
+            "Do not"
+          ],
+          "tags": [
+            "directions"
+          ],
+          "explain": "Запрет: Don't + глагол.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s3-e7",
+          "type": "fix",
+          "sentence": "First you find the information desk.",
+          "answers": [
+            "First, find the information desk.",
+            "First find the information desk."
+          ],
+          "tags": [
+            "directions"
+          ],
+          "explain": "В указаниях — повелительное наклонение без you: First, find…",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s3-e8",
+          "type": "sort",
+          "instruction": "Это первый или последний шаг?",
+          "categories": [
+            {
+              "id": "start",
+              "label": "В начале пути"
+            },
+            {
+              "id": "end",
+              "label": "В конце пути"
+            }
+          ],
+          "items": [
+            {
+              "text": "Start at the main entrance.",
+              "category": "start"
+            },
+            {
+              "text": "First, find the information desk.",
+              "category": "start"
+            },
+            {
+              "text": "Go past the desk.",
+              "category": "start"
+            },
+            {
+              "text": "Finally, look for number 17.",
+              "category": "end"
+            },
+            {
+              "text": "Room 17 is opposite the board.",
+              "category": "end"
+            },
+            {
+              "text": "Go through the grey door.",
+              "category": "end"
+            }
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "That saves us a trip to the wrong end of the building.",
+          "ru": "Так мы хотя бы не отправим никого в другой конец корпуса.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Мимо и через",
+      "intro": "Как двигаться: go along (вдоль), go past (мимо), go through (через дверь), at the end of (в конце), opposite (напротив), start from (начни от).",
+      "place": "room17",
+      "frame": {
+        "setting": "Рэй ведёт пальцем по серой линии. Палец упирается в значок двери.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Past the desk. Through the door.",
+            "ru": "Мимо стойки. Через дверь.",
+            "expr": "focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u017-s4-e1",
+          "type": "choice",
+          "prompt": "Walk ___ the narrow hall.",
+          "options": [
+            "along",
+            "through",
+            "opposite"
+          ],
+          "answer": "along",
+          "tags": [
+            "directions"
+          ],
+          "explain": "Along — вдоль, по коридору.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s4-e2",
+          "type": "choice",
+          "prompt": "Go ___ the first noticeboard.",
+          "options": [
+            "past",
+            "through",
+            "at"
+          ],
+          "answer": "past",
+          "tags": [
+            "directions"
+          ],
+          "explain": "Go past — пройти мимо.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s4-e3",
+          "type": "choice",
+          "prompt": "Go ___ the grey door.",
+          "options": [
+            "through",
+            "past",
+            "along"
+          ],
+          "answer": "through",
+          "tags": [
+            "directions"
+          ],
+          "explain": "Через дверь — through.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s4-e4",
+          "type": "fill",
+          "prompt": "The door is at the ___ of the hall.",
+          "answers": [
+            "end"
+          ],
+          "hint": "в конце",
+          "tags": [
+            "directions"
+          ],
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s4-e5",
+          "type": "fill",
+          "prompt": "Room 17 is ___ the board.",
+          "answers": [
+            "opposite"
+          ],
+          "hint": "напротив",
+          "tags": [
+            "place_prepositions"
+          ],
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s4-e6",
+          "type": "choice",
+          "prompt": "Start ___ the main entrance.",
+          "options": [
+            "from",
+            "past",
+            "through"
+          ],
+          "answer": "from",
+          "tags": [
+            "directions"
+          ],
+          "explain": "Start from — начни от.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s4-e7",
+          "type": "fix",
+          "sentence": "Go across the grey door.",
+          "answers": [
+            "Go through the grey door."
+          ],
+          "tags": [
+            "directions"
+          ],
+          "explain": "В дверь проходят through.",
+          "context": "План этажа"
+        },
+        {
+          "id": "u017-s4-e8",
+          "type": "transform",
+          "instruction": "Сделай указание: начни с Go past",
+          "sentence": "the information desk",
+          "answers": [
+            "Go past the information desk."
+          ],
+          "tags": [
+            "directions"
+          ],
+          "context": "План этажа"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Easy with a finger.",
+          "ru": "Пальцем пройти несложно.",
+          "expr": "smirk"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голос на пробу",
+      "intro": "Рэй записывает пробную озвучку маршрута. Ответь, как хочешь.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u017-s5-e1",
+          "type": "scene",
+          "setting": "Рэй сдвигает рекордер на твою сторону стола.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Read that turn again. I like how you say it.",
+              "ru": "Повтори про поворот. Мне нравится, как ты это говоришь.",
+              "expr": "recorder/smirk"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I'll read it again if you stay and listen.",
+                "I like having you in the headphones."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "I'm still here.",
+                "ru": "Я пока здесь.",
+                "expr": "recorder/smirk"
+              },
+              "flag": "flirt_rei_017"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "Did the first turn get good reviews?",
+                "Does the turn need an encore?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "One encore. Then we move.",
+                "ru": "Один раз. Потом дальше.",
+                "expr": "recorder/smirk"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "I'll read the turn more slowly.",
+                "Let's do that line once more."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Ready when you are.",
+                "ru": "Я готова.",
+                "expr": "recorder/focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Say that again?",
+            "ru": "Повторишь?",
+            "expr": "recorder/listening"
+          },
+          "tags": [
+            "directions"
+          ],
+          "context": "Кому читать пробу"
+        },
+        {
+          "id": "u017-s5-e2",
+          "type": "translate",
+          "ru": "Сперва пройди мимо стойки информации.",
+          "answers": [
+            "First, go past the information desk.",
+            "First, walk past the information desk."
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u017-s5-e3",
+          "type": "translate",
+          "ru": "Затем поверни налево у первой доски.",
+          "answers": [
+            "Then turn left at the first board.",
+            "Then turn left at the first noticeboard."
+          ],
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u017-s5-e4",
+          "type": "translate",
+          "ru": "Пройди через серую дверь.",
+          "answers": [
+            "Go through the grey door.",
+            "Walk through the grey door."
+          ],
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u017-s5-e5",
+          "type": "translate",
+          "ru": "Комната 17 напротив доски объявлений.",
+          "answers": [
+            "Room 17 is opposite the noticeboard.",
+            "Room 17 is opposite the board."
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u017-s5-e6",
+          "type": "write",
+          "situation": "Объясни первые два шага от главного входа.",
+          "answers": [
+            "First, go past the information desk. Then turn left at the first noticeboard.",
+            "Start at the main entrance. Go past the desk and turn left at the board.",
+            "First, walk past the desk. Then turn left at the first board."
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "That's a usable take.",
+          "ru": "Этот дубль годится.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: путь по плану",
+      "intro": "Прочитай маршрут вслух: по шагу, с паузой после каждого поворота.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис показывает на четыре строчки. Рэй ждёт, пока ты найдёшь начало.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Give people time to picture each turn.",
+            "ru": "Дай слушателю секунду представить каждый поворот.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u017-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "First, go past the information desk.",
+          "answers": [
+            "First, go past the information desk."
+          ],
+          "tags": [
+            "speaking",
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u017-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Then turn left at the first noticeboard.",
+          "answers": [
+            "Then turn left at the first noticeboard."
+          ],
+          "tags": [
+            "speaking",
+            "directions"
+          ]
+        },
+        {
+          "id": "u017-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Go through the grey door at the end of the hall.",
+          "answers": [
+            "Go through the grey door at the end of the hall."
+          ],
+          "tags": [
+            "speaking",
+            "directions"
+          ]
+        },
+        {
+          "id": "u017-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Room 17 is opposite the second noticeboard.",
+          "answers": [
+            "Room 17 is opposite the second noticeboard."
+          ],
+          "tags": [
+            "speaking",
+            "place_prepositions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "I heard all four steps.",
+          "ru": "Все четыре шага слышно.",
+          "expr": "recorder/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: откуда и куда",
+      "intro": "Быстрый круг: от стойки до двери и последний ориентир.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика закрывает ладонью первую половину карты, затем вторую.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "From the desk. What's next?",
+            "ru": "От стойки. Что дальше?",
+            "expr": "happy"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u017-s7-e1",
+          "type": "write",
+          "situation": "От стойки до развилки: скажи, что сделать.",
+          "answers": [
+            "Go past the desk and turn left at the first board.",
+            "Go past the desk. Then turn left at the first noticeboard.",
+            "Walk past the desk and turn left at the first board."
+          ],
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u017-s7-e2",
+          "type": "write",
+          "situation": "От развилки до двери.",
+          "answers": [
+            "Walk to the end of the hall.",
+            "Go along the hall to the end.",
+            "Walk along the narrow hall to the end."
+          ],
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u017-s7-e3",
+          "type": "write",
+          "situation": "Последний ориентир.",
+          "answers": [
+            "Look for the board opposite Room 17.",
+            "Room 17 is opposite the noticeboard.",
+            "Look for the noticeboard opposite Room 17."
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u017-s7-e4",
+          "type": "choice",
+          "prompt": "Go ___ the hall to the grey door.",
+          "options": [
+            "along",
+            "opposite",
+            "past"
+          ],
+          "answer": "along",
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u017-s7-e5",
+          "type": "choice",
+          "prompt": "___, look for the room number.",
+          "options": [
+            "Finally",
+            "First",
+            "Before"
+          ],
+          "answer": "Finally",
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u017-s7-e6",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "Turn left at the first board.",
+          "answers": [
+            "Turn left at the first board."
+          ],
+          "tags": [
+            "dictation",
+            "directions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "I can follow that without the pencil line.",
+          "ru": "Теперь я и без линии на карте дойду.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Готово на бумаге",
+      "role": "mission",
+      "intro": "Миссия: начать карточку маршрута и выбрать, чем её закончить.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u017-s8-e1",
+          "type": "scene",
+          "setting": "Рэй включает пробную дорожку. Айрис держит палец на первом шаге.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "What should visitors look for first?",
+              "ru": "Что посетителю искать первым?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Начать от входа",
+              "answers": [
+                "Start at the main entrance.",
+                "Begin at the main doors."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll put the entrance in the first line.",
+                "ru": "Поставлю вход в первую строчку.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u017_open_entrance"
+            },
+            {
+              "label": "Начать со стойки у входа",
+              "answers": [
+                "Find the desk by the main entrance.",
+                "Look for the information desk inside the main doors."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "The desk is hard to miss. Good.",
+                "ru": "Стойку трудно пропустить. Хорошо.",
+                "expr": "notebook/dry_smile"
+              },
+              "flag": "u017_open_desk"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Which thing should they look for first?",
+            "ru": "Что им искать первым?",
+            "expr": "listening"
+          },
+          "tags": [
+            "sequencing"
+          ],
+          "context": "Как начать карточку"
+        },
+        {
+          "id": "u017-s8-e2",
+          "type": "scene",
+          "setting": "Мика слушает пробную запись ещё раз.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "I'd recognise your voice anywhere now. Even at the wrong door.",
+              "ru": "Теперь я твой голос где угодно узнаю. Даже не у той двери.",
+              "expr": "happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I'd know your voice anywhere too.",
+                "I'd stop and listen if I heard you."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Then I'd better give you the right directions.",
+                "ru": "Тогда мне лучше объяснить дорогу правильно.",
+                "expr": "happy"
+              },
+              "flag": "flirt_mika_017"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "My voice has a better sense of direction than I do.",
+                "Good. The doors all look the same."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll tell the doors you said that.",
+                "ru": "Я передам дверям.",
+                "expr": "laugh"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's end with the room number.",
+                "We should say seventeen at the end."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Good. Put the number in bold, too.",
+                "ru": "Хорошо. И номер выделим жирным.",
+                "expr": "happy"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Could you say that again?",
+            "ru": "Можешь повторить?",
+            "expr": "listening"
+          },
+          "tags": [
+            "directions"
+          ],
+          "after": [
+            {
+              "speaker": "iris",
+              "text": "I'll end with the number and the noticeboard.",
+              "ru": "Закончу номером комнаты и доской объявлений.",
+              "expr": "notebook/focused"
+            }
+          ],
+          "context": "Чей голос оставить"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Saved. Now let's walk it.",
+          "ru": "Сохранила. Теперь пройдём ногами.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    }
+  ]
+}

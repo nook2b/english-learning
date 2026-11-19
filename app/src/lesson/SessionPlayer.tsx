@@ -120,6 +120,7 @@ export function SessionPlayer({ unit, index }: { unit: Unit; index: number }) {
             intro={session.intro}
             cast={cast}
             chat={session.view === 'chat'}
+            resumeKey={`session-${unit.id}-${index}`}
             onAnswer={onAnswer}
             onFinish={onFinish}
             onExit={() => navigate({ name: 'path' })}

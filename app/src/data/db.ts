@@ -25,6 +25,8 @@ export interface Settings {
   chatSeen?: string[]
   /** Rei's weekly challenge (plan 3.9); on unless turned off. */
   challenge?: boolean
+  /** End-of-arc checks taken (content/arc-checks), oldest first: right answers per block. */
+  arcChecks?: Record<string, { at: number; blocks: Record<string, { correct: number; total: number }> }[]>
 }
 
 export const SKILLS = ['reading', 'listening', 'speaking', 'writing'] as const

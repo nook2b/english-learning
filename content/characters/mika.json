@@ -56,6 +56,18 @@
         "unit": "015"
       },
       "ru": "По четвергам у неё занятие до пяти."
+    },
+    {
+      "unlock": {
+        "unit": "017"
+      },
+      "ru": "Отмечает похожие ориентиры разными цветами."
+    },
+    {
+      "unlock": {
+        "unit": "020"
+      },
+      "ru": "Принесла из дома зелёную чашку для тебя."
     }
   ],
   "memories": [
@@ -163,6 +175,34 @@
       },
       "en": "You called seeing her a good part of the plan.",
       "ru": "Ты назвал встречу с ней хорошей частью плана."
+    },
+    {
+      "unlock": {
+        "unit": "017"
+      },
+      "en": "You drew the route on the plan and held the corners down with two mugs.",
+      "ru": "Вы рисовали маршрут на плане, прижав углы двумя чашками."
+    },
+    {
+      "unlock": {
+        "unit": "020"
+      },
+      "en": "You got your own mug and a seat at the table.",
+      "ru": "У тебя появилась своя чашка и место за столом."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_mika_017"
+      },
+      "en": "You joked that you would know each other's voices anywhere.",
+      "ru": "Вы пошутили, что узнали бы друг друга по голосу."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_mika_020"
+      },
+      "en": "You joked about where you would both sit at the next meeting.",
+      "ru": "Вы пошутили о том, где будете сидеть на следующей встрече."
     }
   ],
   "lines": [

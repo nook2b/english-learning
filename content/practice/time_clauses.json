@@ -1,0 +1,197 @@
+{
+ "tag": "time_clauses",
+ "items": [
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-01",
+    "type": "choice",
+    "prompt": "Wait here ___ the bus comes.",
+    "options": [
+     "until",
+     "as soon as",
+     "since"
+    ],
+    "answer": "until",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-02",
+    "type": "choice",
+    "prompt": "___ you get home, send me a message.",
+    "options": [
+     "As soon as",
+     "Until",
+     "While"
+    ],
+    "answer": "As soon as",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-03",
+    "type": "choice",
+    "prompt": "Keep going until you ___ the bridge.",
+    "options": [
+     "see",
+     "will see",
+     "saw"
+    ],
+    "answer": "see",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-04",
+    "type": "fill",
+    "prompt": "Read the instructions ___ you start.",
+    "answers": [
+     "before"
+    ],
+    "hint": "прежде чем",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-05",
+    "type": "choice",
+    "prompt": "___ you have the key, open the door.",
+    "options": [
+     "Once",
+     "Until",
+     "Since"
+    ],
+    "answer": "Once",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-06",
+    "type": "choice",
+    "prompt": "As soon as the film ___, we'll leave.",
+    "options": [
+     "ends",
+     "will end",
+     "ending"
+    ],
+    "answer": "ends",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-07",
+    "type": "fill",
+    "prompt": "Don't open the box ___ I say so.",
+    "answers": [
+     "until"
+    ],
+    "hint": "пока не",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-08",
+    "type": "fix",
+    "sentence": "I'll wait until you will come back.",
+    "answers": [
+     "I'll wait until you come back.",
+     "I will wait until you come back."
+    ],
+    "explain": "После until — настоящее время, без will.",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-09",
+    "type": "translate",
+    "ru": "Подожди, пока не загорится зелёный.",
+    "answers": [
+     "Wait until the light turns green.",
+     "Wait until the light is green."
+    ],
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "018",
+   "exercise": {
+    "id": "p-time_clauses-10",
+    "type": "translate",
+    "ru": "Как только увидишь стойку, остановись.",
+    "answers": [
+     "As soon as you see the desk, stop."
+    ],
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "020",
+   "exercise": {
+    "id": "p-time_clauses-11",
+    "type": "choice",
+    "prompt": "Check the number ___ you go in.",
+    "options": [
+     "before",
+     "until",
+     "once"
+    ],
+    "answer": "before",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  },
+  {
+   "unit": "020",
+   "exercise": {
+    "id": "p-time_clauses-12",
+    "type": "fill",
+    "prompt": "Stay on the bench ___ the room opens.",
+    "answers": [
+     "until"
+    ],
+    "hint": "пока не",
+    "tags": [
+     "time_clauses"
+    ]
+   }
+  }
+ ]
+}

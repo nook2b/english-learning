@@ -56,6 +56,18 @@
         "unit": "016"
       },
       "ru": "Приносит к записи короткий текст."
+    },
+    {
+      "unlock": {
+        "unit": "019"
+      },
+      "ru": "Заменяет старые названия ориентирами, которые видно."
+    },
+    {
+      "unlock": {
+        "unit": "020"
+      },
+      "ru": "Делает отдельные карточки для похожих номеров."
     }
   ],
   "memories": [
@@ -149,6 +161,34 @@
       },
       "en": "You asked her to stay and check your next sentence too.",
       "ru": "Ты предложил ей остаться и проверить следующую фразу."
+    },
+    {
+      "unlock": {
+        "unit": "019"
+      },
+      "en": "You chose together what to look for first in the courtyard.",
+      "ru": "Вы выбрали, что первым искать во дворе."
+    },
+    {
+      "unlock": {
+        "unit": "020"
+      },
+      "en": "She recognised the title from the sheet she gave you on your first day.",
+      "ru": "Она узнала название с листка, который дала тебе в первый день."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_iris_018"
+      },
+      "en": "You answered when she said it was nice to work next to you.",
+      "ru": "Ты ответил на её слова о том, что ей приятно работать рядом."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_iris_019"
+      },
+      "en": "You said you liked her company while you checked the route.",
+      "ru": "Ты сказал, что тебе нравится её компания, пока вы проверяли маршрут."
     }
   ],
   "lines": [

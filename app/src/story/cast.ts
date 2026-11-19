@@ -25,3 +25,12 @@ export function extraAt(lines: readonly Line[], upTo: number): { id: string; exp
   const mine = past.filter(({ l }) => l.speaker === who)
   return { id: who, expr: mine[mine.length - 1]?.l.expr ?? 'neutral' }
 }
+
+/** Where the stage is at line `upTo`: the last place a line so far moved to, if any. */
+export function placeAt(lines: readonly Line[], upTo: number): string | undefined {
+  let place: string | undefined
+  lines.forEach((l, i) => {
+    if (i <= upTo && l.place) place = l.place
+  })
+  return place
+}

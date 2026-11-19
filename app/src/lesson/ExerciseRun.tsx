@@ -10,6 +10,7 @@ import { Stage } from '../story/Stage'
 import { Icon } from '../ui/Icon'
 import { Button, LearnPanel, ProgressBar } from '../ui/kit'
 import { ExerciseView, SceneLines } from './ExerciseView'
+import { clearRun, loadRun, saveRun } from './resume'
 import { wordDiff } from './diff'
 import { ExamMode } from './exam'
 import { PlaceContext, usePlace } from '../story/places'
@@ -61,6 +62,7 @@ export function ExerciseRun({
   exam = false,
   finishLabel = 'Завершить занятие',
   chat = false,
+  resumeKey,
 }: {
   exercises: readonly Exercise[]
   heading: ReactNode
@@ -75,14 +77,23 @@ export function ExerciseRun({
   finishLabel?: string
   /** The session happens in the team chat: nobody stands on a stage. */
   chat?: boolean
+  /** Keeps the unfinished run across a page reload under this key (lesson/resume.ts). */
+  resumeKey?: string
 }) {
+  // A run left unfinished (the page was reloaded) picks up at the same task.
+  const [saved] = useState(() => (resumeKey ? loadRun(resumeKey) : undefined))
   // Wrong answers come back at the end of the queue until answered right, as in Duolingo.
-  const [steps, setSteps] = useState(() => toSteps(exercises))
-  const retries = useRef(0)
-  const startedAt = useRef(Date.now())
-  const [i, setI] = useState(0)
+  const [steps, setSteps] = useState(() => saved?.steps ?? toSteps(exercises))
+  const retries = useRef(saved?.retries ?? 0)
+  const startedAt = useRef(Date.now() - (saved?.seconds ?? 0) * 1000)
+  const [i, setI] = useState(saved?.at ?? 0)
   const [outcome, setOutcome] = useState<Outcome>()
-  const [attempts, setAttempts] = useState<Attempt[]>([])
+  const [attempts, setAttempts] = useState<Attempt[]>(saved?.attempts ?? [])
+  // Kept after each answer: the next task to do, the queue with its retries, first attempts.
+  useEffect(() => {
+    if (!resumeKey || (i === 0 && attempts.length === 0)) return
+    saveRun(resumeKey, { steps, at: outcome ? i + 1 : i, attempts, seconds: Math.round((Date.now() - startedAt.current) / 1000), retries: retries.current })
+  }, [resumeKey, steps, i, outcome, attempts])
   const [saving, setSaving] = useState(false)
   const sounds = useClub((s) => s.settings.sounds)
   const devMode = useClub((s) => s.settings.unlockAll)
@@ -140,6 +151,7 @@ export function ExerciseRun({
     }
     setSaving(true)
     await onFinish(attempts, Math.round((Date.now() - startedAt.current) / 1000))
+    if (resumeKey) clearRun(resumeKey)
     setSaving(false)
   }
 

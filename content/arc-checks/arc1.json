@@ -1,0 +1,417 @@
+{
+ "id": "arc1",
+ "title": "Итоговая проверка арки 1",
+ "setting": "Ты впервые приходишь в клуб «Harbour Film Club» в общественном центре Nook Hall. Сегодня там открытый показ. На экране письмо клуба, план здания и сообщения участников.",
+ "blocks": [
+  {
+   "id": "A",
+   "title": "Представление, вопросы, распорядок",
+   "exercises": [
+    {
+     "id": "arc1-A1",
+     "type": "choice",
+     "prompt": "Волонтёр спрашивает: “What's your name?”",
+     "options": [
+      "I'm Noah.",
+      "I live near the harbour.",
+      "At four."
+     ],
+     "answer": "I'm Noah.",
+     "tags": [
+      "function_greeting"
+     ],
+     "explain": "На вопрос об имени — I'm …"
+    },
+    {
+     "id": "arc1-A2",
+     "type": "choice",
+     "prompt": "What time ___ the club open on Thursdays?",
+     "options": [
+      "do",
+      "does",
+      "is"
+     ],
+     "answer": "does",
+     "tags": [
+      "questions_do"
+     ],
+     "explain": "The club — она/он: does."
+    },
+    {
+     "id": "arc1-A3",
+     "type": "translate",
+     "ru": "Я обычно прихожу после работы.",
+     "answers": [
+      "I usually come after work.",
+      "I normally come after work."
+     ],
+     "tags": [
+      "frequency"
+     ]
+    },
+    {
+     "id": "arc1-A4",
+     "type": "fix",
+     "sentence": "Where you usually meet?",
+     "answers": [
+      "Where do you usually meet?",
+      "Where do you normally meet?"
+     ],
+     "explain": "Вопрос в Present Simple: Where do you…?",
+     "tags": [
+      "questions_do"
+     ]
+    },
+    {
+     "id": "arc1-A5",
+     "type": "listening",
+     "speaker": "announcer",
+     "audio": "Hi, I'm Leon. I open the hall at four on Thursdays. The film starts at five, but we usually put the chairs out at half past four.",
+     "ru": "Привет, я Леон. По четвергам я открываю зал в четыре. Фильм начинается в пять, но стулья мы обычно расставляем в половине пятого.",
+     "questions": [
+      {
+       "prompt": "When do they put the chairs out?",
+       "options": [
+        "16:00",
+        "16:30",
+        "17:00"
+       ],
+       "answer": "16:30"
+      }
+     ],
+     "tags": [
+      "listening",
+      "timetable"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Пространство, неполадки, помощь, предпочтения",
+   "exercises": [
+    {
+     "id": "arc1-B1",
+     "type": "choice",
+     "prompt": "На плане склад прямо напротив стойки. The storage room is ___ the desk.",
+     "options": [
+      "behind",
+      "opposite",
+      "between"
+     ],
+     "answer": "opposite",
+     "tags": [
+      "place_prepositions"
+     ]
+    },
+    {
+     "id": "arc1-B2",
+     "type": "choice",
+     "prompt": "___ two chairs next to the lift.",
+     "options": [
+      "There is",
+      "There are",
+      "It is"
+     ],
+     "answer": "There are",
+     "tags": [
+      "there_is"
+     ],
+     "explain": "Два стула — there are."
+    },
+    {
+     "id": "arc1-B3",
+     "type": "translate",
+     "ru": "Кабель сейчас гудит.",
+     "answers": [
+      "The cable is buzzing right now.",
+      "The cable is buzzing at the moment.",
+      "The cable is buzzing now."
+     ],
+     "tags": [
+      "function_problem"
+     ]
+    },
+    {
+     "id": "arc1-B4",
+     "type": "write",
+     "situation": "Вежливо попроси волонтёра проверить лампу.",
+     "answers": [
+      "Could you check the lamp, please?",
+      "Would you mind checking the lamp?",
+      "Could you please check the lamp?"
+     ],
+     "tags": [
+      "function_requests"
+     ]
+    },
+    {
+     "id": "arc1-B5",
+     "type": "fix",
+     "sentence": "I'd rather to sit near the door.",
+     "answers": [
+      "I'd rather sit near the door.",
+      "I'd prefer to sit near the door."
+     ],
+     "explain": "После I'd rather — глагол без to.",
+     "tags": [
+      "preferences"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "Заказ, состав, сравнение, количества",
+   "exercises": [
+    {
+     "id": "arc1-C1",
+     "type": "choice",
+     "prompt": "Ты хочешь заказать одну порцию супа.",
+     "options": [
+      "A bowl of soup, please.",
+      "Is there a soup bowl?",
+      "We don't need any soup."
+     ],
+     "answer": "A bowl of soup, please.",
+     "tags": [
+      "partitives"
+     ]
+    },
+    {
+     "id": "arc1-C2",
+     "type": "write",
+     "situation": "Узнай, есть ли в супе сливки.",
+     "answers": [
+      "Does the soup contain cream?",
+      "Is there any cream in the soup?",
+      "Is there cream in the soup?"
+     ],
+     "tags": [
+      "function_ingredients"
+     ]
+    },
+    {
+     "id": "arc1-C3",
+     "type": "listening",
+     "speaker": "announcer",
+     "audio": "Tea is one pound. A bottle of water is two pounds, and apple juice is three. We already have four clean cups, so we don't need to buy any.",
+     "ru": "Чай стоит фунт. Бутылка воды — два, яблочный сок — три. У нас уже четыре чистые чашки, так что покупать их не нужно.",
+     "questions": [
+      {
+       "prompt": "Which drink is the cheapest?",
+       "options": [
+        "tea",
+        "water",
+        "juice"
+       ],
+       "answer": "tea"
+      }
+     ],
+     "tags": [
+      "listening",
+      "comparatives"
+     ]
+    },
+    {
+     "id": "arc1-C4",
+     "type": "translate",
+     "ru": "Чай дешевле яблочного сока.",
+     "answers": [
+      "Tea is cheaper than apple juice.",
+      "The tea costs less than the apple juice.",
+      "Tea is cheaper than the apple juice."
+     ],
+     "tags": [
+      "comparatives"
+     ]
+    },
+    {
+     "id": "arc1-C5",
+     "type": "write",
+     "situation": "На четверых есть четыре чашки, не хватает двух бутылок воды. Напиши, что купить и чего покупать не нужно.",
+     "answers": [
+      "We need two bottles of water. We don't need any cups.",
+      "Let's buy two bottles of water. We have enough cups.",
+      "We need two bottles of water, but we don't need any cups."
+     ],
+     "tags": [
+      "some_any"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "title": "Привычки, текущие помехи, планы и подтверждение",
+   "exercises": [
+    {
+     "id": "arc1-D1",
+     "type": "choice",
+     "prompt": "We usually ___ in the main hall, but today we ___ upstairs.",
+     "options": [
+      "meet / are meeting",
+      "meets / meet",
+      "are meeting / meets"
+     ],
+     "answer": "meet / are meeting",
+     "tags": [
+      "contrast_ps_pc"
+     ],
+     "explain": "Обычно — Present Simple, сегодня — Present Continuous."
+    },
+    {
+     "id": "arc1-D2",
+     "type": "translate",
+     "ru": "Они всё время двигают стулья возле двери.",
+     "answers": [
+      "They keep moving chairs near the door.",
+      "They keep moving the chairs by the door.",
+      "They keep moving the chairs near the door."
+     ],
+     "tags": [
+      "present_continuous"
+     ]
+    },
+    {
+     "id": "arc1-D3",
+     "type": "listening",
+     "speaker": "announcer",
+     "audio": "Can we move the sound check to Friday at three? The fan is too loud today, and the upstairs room is free on Friday. Let me know before you leave.",
+     "ru": "Можем перенести проверку звука на пятницу в три? Сегодня вентилятор слишком громкий, а в пятницу комната наверху свободна. Скажи мне до того, как уйдёшь.",
+     "questions": [
+      {
+       "prompt": "What time do they suggest?",
+       "options": [
+        "Thursday 3",
+        "Friday 3",
+        "Friday 4"
+       ],
+       "answer": "Friday 3"
+      }
+     ],
+     "tags": [
+      "listening",
+      "function_rescheduling"
+     ]
+    },
+    {
+     "id": "arc1-D4",
+     "type": "write",
+     "situation": "В пятницу в три ты занят. Предложи пятницу в четыре.",
+     "answers": [
+      "I'm busy at three. How about Friday at four?",
+      "I can't make it at three. Can we meet on Friday at four?",
+      "I'm afraid I can't at three. How about Friday at four?"
+     ],
+     "tags": [
+      "function_rescheduling"
+     ]
+    },
+    {
+     "id": "arc1-D5",
+     "type": "write",
+     "situation": "Подтверди время и место встречи: пятница в четыре, комната наверху. Пообещай принести кабель.",
+     "answers": [
+      "Just to confirm, we're meeting upstairs on Friday at four. I'll bring the cable.",
+      "Friday at four in the upstairs room, right? I'll bring the cable.",
+      "So we're meeting upstairs on Friday at four, right? I'll bring the cable."
+     ],
+     "tags": [
+      "function_confirming"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "title": "Последовательность, инструкции, переспрос",
+   "exercises": [
+    {
+     "id": "arc1-E1",
+     "type": "choice",
+     "prompt": "Разложи карточки по плану: от входа мимо кассы, затем через синюю дверь; клуб напротив стойки с программками. A “Go through the blue door.” B “Look opposite the programme stand.” C “Walk past the ticket desk.”",
+     "options": [
+      "C → A → B",
+      "A → C → B",
+      "B → A → C"
+     ],
+     "answer": "C → A → B",
+     "tags": [
+      "sequencing"
+     ]
+    },
+    {
+     "id": "arc1-E2",
+     "type": "choice",
+     "prompt": "Wait ___ the sign lights up. As soon as it lights up, go inside.",
+     "options": [
+      "before",
+      "until",
+      "across"
+     ],
+     "answer": "until",
+     "tags": [
+      "time_clauses"
+     ],
+     "explain": "Подожди, пока не — until."
+    },
+    {
+     "id": "arc1-E3",
+     "type": "choice",
+     "prompt": "Памятка говорит «use the usual door», а на плане две двери. Как уточнить?",
+     "options": [
+      "What time does it open?",
+      "Which door do you mean?",
+      "How much is it?"
+     ],
+     "answer": "Which door do you mean?",
+     "tags": [
+      "function_clarify"
+     ]
+    },
+    {
+     "id": "arc1-E4",
+     "type": "listening",
+     "speaker": "announcer",
+     "audio": "Go through the blue door and walk past the programme stand. The screening is in Room twenty-six, two six. If you reach the stairs, you've gone too far.",
+     "ru": "Пройди через синюю дверь и мимо стойки с программками. Показ в аудитории двадцать шесть, два-шесть. Если дошёл до лестницы, ты прошёл слишком далеко.",
+     "questions": [
+      {
+       "prompt": "Which room number do you hear?",
+       "options": [
+        "16",
+        "26",
+        "62"
+       ],
+       "answer": "26"
+      }
+     ],
+     "tags": [
+      "listening",
+      "directions"
+     ]
+    },
+    {
+     "id": "arc1-E5",
+     "type": "write",
+     "situation": "Гость ищет показ и услышал 62. Объясни коротко, что нужна 26, через синюю дверь.",
+     "answers": [
+      "It's Room twenty-six, two six. Go through the blue door.",
+      "You need Room 26. Take the blue door.",
+      "It's Room twenty-six. Go through the blue door."
+     ],
+     "tags": [
+      "function_clarify"
+     ]
+    }
+   ]
+  }
+ ],
+ "outro": {
+  "speaker": "iris",
+  "text": "Next time you're at a new door, read the number out loud. It helps.",
+  "ru": "В следующий раз у незнакомой двери прочитай номер вслух. Помогает.",
+  "expr": "dry_smile"
+ }
+}
