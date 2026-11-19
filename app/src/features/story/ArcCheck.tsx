@@ -95,6 +95,7 @@ export function ArcCheckScreen({ id }: { id: string }) {
       }}
       onFinish={finish}
       onExit={() => navigate({ name: 'path' })}
+      resumeKey={`arc-${id}`}
     />
   )
 }

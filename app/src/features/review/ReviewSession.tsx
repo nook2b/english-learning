@@ -13,6 +13,7 @@ import { Button, Card } from '../../ui/kit'
 import { type RoundItem, buildRound, warmupRound } from './build'
 import { Classroom } from './Classroom'
 import { haptic } from '../../speech/haptics'
+import { forgetWithRun, keepWithRun, keptWithRun } from '../../lesson/resume'
 import { plural, todaysPair } from './pairs'
 
 /** The furthest unit the learner has reached: variations only use words met so far. */
@@ -36,11 +37,19 @@ function Round({ state }: { state: ReviewState }) {
   const today = dayKey()
   const early = !state.topics.some((t) => t.due <= today) && state.deferred.length === 0
   // Nothing piled up: a warm-up on the topics already passed, so a review is always there when wanted.
+  const runKey = `review-${today}`
   const { items, warmup } = useMemo(() => {
+    // A round left unfinished today (the page was reloaded) goes on with the same tasks.
+    const kept = keptWithRun<{ items: RoundItem[]; warmup: boolean }>(runKey)
+    if (kept?.items.length) return kept
     const maxUnit = reachedUnit(sessions, settings.unlockAll)
     const round = buildRound(state, today, { maxUnit, early })
-    return round.length ? { items: round, warmup: false } : { items: warmupRound(Object.values(sessions), today, { maxUnit }), warmup: true }
-  }, [state, today, sessions, settings.unlockAll, early])
+    const built = round.length ? { items: round, warmup: false } : { items: warmupRound(Object.values(sessions), today, { maxUnit }), warmup: true }
+    if (built.items.length) keepWithRun(runKey, built)
+    return built
+    // Built once per round: mistakes noted during the round must not reshuffle it.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [runKey])
   const plan = useMemo(() => new Map(items.map((i) => [i.exercise.id, i])), [items])
   const [done, setDone] = useState<{ moved: TopicReview[]; correct: number; total: number; xp: number }>()
 
@@ -69,6 +78,7 @@ function Round({ state }: { state: ReviewState }) {
       return { exerciseId: a.exercise.id, tag: item?.tag, deferred: item?.deferred, correct: a.outcome.correct }
     })
     const moved = await saveRound(results, today, early)
+    forgetWithRun(runKey)
     const answered = attempts.filter((a) => a.outcome.correct !== null)
     const correct = answered.filter((a) => a.outcome.correct).length
     const xp = SESSION_XP + (answered.length > 0 && correct === answered.length ? PERFECT_BONUS_XP : 0)
@@ -115,6 +125,7 @@ function Round({ state }: { state: ReviewState }) {
       onAnswer={onAnswer}
       onFinish={onFinish}
       onExit={() => navigate({ name: 'review' })}
+      resumeKey={runKey}
     />
   )
 }
