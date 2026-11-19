@@ -13,6 +13,7 @@ import { PrologueScreen } from '../features/story/PrologueScreen'
 import { QuestsScreen } from '../features/quests/QuestsScreen'
 import { ChatScreen } from '../features/chat/ChatScreen'
 import { RewardScreen } from '../features/rewards/RewardScreen'
+import { ArcCheckScreen } from '../features/story/ArcCheck'
 import { SessionPlayer } from '../lesson/SessionPlayer'
 import { BottomNav } from './BottomNav'
 import { type Route, navigate, useRoute } from './router'
@@ -54,11 +55,13 @@ function Screen({ route }: { route: Route }) {
       return <ProfileScreen />
     case 'chat':
       return <ChatScreen />
+    case 'arc-check':
+      return <ArcCheckScreen key={route.id} id={route.id} />
   }
 }
 
 /** Sessions, review rounds, the prologue and the placement retake take the whole screen. */
-const FULL_SCREEN = new Set(['session', 'practice', 'prologue', 'placement'])
+const FULL_SCREEN = new Set(['session', 'practice', 'prologue', 'placement', 'arc-check'])
 
 function LockedSession({ unitId, index }: { unitId: string; index: number }) {
   return (

@@ -25,6 +25,8 @@ export type Route =
   | { name: 'placement' }
   /** The team chat "Room 17". */
   | { name: 'chat' }
+  /** The check at the end of an arc. */
+  | { name: 'arc-check'; id: string }
 
 // Hash routing keeps deep links working on GitHub Pages without server rewrites.
 export function parse(hash: string): Route {
@@ -39,6 +41,7 @@ export function parse(hash: string): Route {
   if (name === 'prologue') return { name: 'prologue' }
   if (name === 'placement') return { name: 'placement' }
   if (name === 'chat') return { name: 'chat' }
+  if (name === 'arc-check' && a) return { name: 'arc-check', id: a }
   const tab = TABS.find((t) => t.route === name)
   if (tab) return { name: tab.route }
   return { name: 'path' }
@@ -48,6 +51,7 @@ export function href(route: Route): string {
   if (route.name === 'unit') return `#/unit/${route.unitId}`
   if (route.name === 'heroine') return `#/heroine/${route.id}`
   if (route.name === 'session') return `#/session/${route.unitId}/${route.index}`
+  if (route.name === 'arc-check') return `#/arc-check/${route.id}`
   return `#/${route.name}`
 }
 

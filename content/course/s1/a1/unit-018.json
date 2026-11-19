@@ -1,0 +1,1044 @@
+{
+  "id": "018",
+  "title": "Проверить инструкцию",
+  "goal": "Найти пропущенный шаг и проверить, куда на самом деле ведёт инструкция.",
+  "focus": "Проверить инструкцию: до какого момента и что сразу после — until, as soon as, before you, once you; найти пропущенный шаг и спросить, какая именно дверь.",
+  "outcome": "Серая дверь заперта. Команда убирает маршрут из пилотной сборки и оставляет его в черновиках.",
+  "expressions": [
+    "until",
+    "as soon as",
+    "before you",
+    "once you",
+    "keep going",
+    "access card",
+    "wait until",
+    "pull the door",
+    "the light turns green",
+    "closed for repairs",
+    "try the handle"
+  ],
+  "glossary": [
+    "access card",
+    "card reader",
+    "link",
+    "staff door",
+    "office hours"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Какая именно дверь",
+      "intro": "Служебная памятка про проход между корпусами. Найди шаг, понятный только своим.",
+      "place": "new_corridor",
+      "frame": {
+        "setting": "У стойки лежит памятка для сотрудников. Айрис кладёт рядом ваш распечатанный маршрут.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "We wrote “the passage”. This calls it “the link”.",
+            "ru": "Мы написали «переход». Здесь он называется «соединительный коридор».",
+            "expr": "notebook/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u018-s1-e1",
+          "type": "reading",
+          "title": "Staff access note",
+          "text": "Collect an access card from the information desk before you use the link. Once you have the card, follow the corridor until you reach the grey door. Hold the card against the reader until the light turns green. As soon as the light changes, pull the door towards you. If the light stays red, go back to the desk. Use the usual entrance on your return. The card only works on staff doors during office hours.",
+          "ru": "Прежде чем пользоваться соединительным коридором, возьмите пропуск на стойке информации. Получив пропуск, идите по коридору до серой двери. Держите пропуск у считывателя, пока не загорится зелёный. Как только цвет сменится, потяните дверь на себя. Если индикатор остаётся красным, вернитесь к стойке. На обратном пути воспользуйтесь обычным входом. Пропуск действует на служебных дверях только в часы работы офиса.",
+          "questions": [
+            {
+              "prompt": "What do staff collect first?",
+              "options": [
+                "a card",
+                "a map",
+                "a key"
+              ],
+              "answer": "a card"
+            },
+            {
+              "prompt": "When do they pull the door?",
+              "options": [
+                "when the light turns green",
+                "before using the card",
+                "when they see the desk"
+              ],
+              "answer": "when the light turns green"
+            },
+            {
+              "prompt": "Which phrase assumes you already know the way?",
+              "options": [
+                "the usual entrance",
+                "the light turns green",
+                "during office hours"
+              ],
+              "answer": "the usual entrance"
+            }
+          ],
+          "tags": [
+            "reading",
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s1-e2",
+          "type": "choice",
+          "prompt": "Hold the card against the reader ___ the light turns green.",
+          "options": [
+            "until",
+            "after",
+            "since"
+          ],
+          "answer": "until",
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "Until — пока не."
+        },
+        {
+          "id": "u018-s1-e3",
+          "type": "choice",
+          "prompt": "___ the light changes, pull the door.",
+          "options": [
+            "As soon as",
+            "Until",
+            "Before"
+          ],
+          "answer": "As soon as",
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "As soon as — как только."
+        },
+        {
+          "id": "u018-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "until",
+              "ru": "пока не"
+            },
+            {
+              "en": "as soon as",
+              "ru": "как только"
+            },
+            {
+              "en": "before you",
+              "ru": "прежде чем"
+            },
+            {
+              "en": "once you",
+              "ru": "как только ты"
+            },
+            {
+              "en": "access card",
+              "ru": "пропуск"
+            },
+            {
+              "en": "closed for repairs",
+              "ru": "закрыто на ремонт"
+            }
+          ],
+          "tags": [
+            "time_clauses"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "“Usual” is doing a lot of work there.",
+          "ru": "«Обычный» тут многое должен объяснить.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "По привычке",
+      "intro": "Мика и Айрис объясняют, почему памятка не подходит гостю. Слушай без текста.",
+      "place": "new_corridor",
+      "frame": {
+        "setting": "Мика читает памятку через плечо Айрис. Рэй смотрит на две двери без номеров.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Which one would you try?",
+            "ru": "Какую бы ты попробовал?",
+            "expr": "thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u018-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "My timetable says to use the main lift. I know which one that means because I come here every day. There are two lifts on the map, though, and the timetable never says which building.",
+          "ru": "В расписании сказано пользоваться главным лифтом. Я знаю каким, потому что бываю здесь каждый день. Но на плане два лифта, а в расписании даже не указан корпус.",
+          "questions": [
+            {
+              "prompt": "How many lifts are on the map?",
+              "options": [
+                "one",
+                "two",
+                "three"
+              ],
+              "answer": "two"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_clarify"
+          ],
+          "delivery": "[thoughtfully]",
+          "context": "Мика у стойки"
+        },
+        {
+          "id": "u018-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "This note is for people with a staff card. It says to wait until the light turns green. It doesn't say where a visitor should go if they don't have a card.",
+          "ru": "Памятка для тех, у кого есть служебный пропуск. Сказано дождаться зелёного света. Куда идти посетителю без пропуска, здесь не написано.",
+          "questions": [
+            {
+              "prompt": "Who is the note for?",
+              "options": [
+                "staff with a card",
+                "new students",
+                "everyone"
+              ],
+              "answer": "staff with a card"
+            }
+          ],
+          "tags": [
+            "listening",
+            "time_clauses"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Айрис с памяткой"
+        },
+        {
+          "id": "u018-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "Wait until the light turns green.",
+          "answers": [
+            "Wait until the light turns green."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s2-e4",
+          "type": "choice",
+          "prompt": "Mika: «I know which one that means because I come here every ___.»",
+          "options": [
+            "day",
+            "time",
+            "door"
+          ],
+          "answer": "day",
+          "tags": [
+            "function_clarify"
+          ],
+          "explain": "Every day — каждый день: «для своих» это очевидно."
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Nice map. Missing a person.",
+          "ru": "Хорошая карта. Не хватает человека, который по ней идёт.",
+          "expr": "deadpan"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "До какого момента",
+      "intro": "До какого момента: until + то, что случится — Walk until you reach the grey door. Wait until the light changes. После until — настоящее время, не will.",
+      "place": "new_corridor",
+      "frame": {
+        "setting": "Айрис подчёркивает в памятке слова про зелёный свет.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Circle the point where each action stops.",
+            "ru": "Обведи слова, по которым понятно, когда заканчивается действие.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u018-s3-e1",
+          "type": "choice",
+          "prompt": "Walk ___ you reach the grey door.",
+          "options": [
+            "until",
+            "as soon as",
+            "before"
+          ],
+          "answer": "until",
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "Иди, пока не дойдёшь — until.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s3-e2",
+          "type": "choice",
+          "prompt": "Wait until the light ___.",
+          "options": [
+            "changes",
+            "will change",
+            "changed"
+          ],
+          "answer": "changes",
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "После until — настоящее время.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s3-e3",
+          "type": "fill",
+          "prompt": "Keep ___ until you see the noticeboard.",
+          "answers": [
+            "going"
+          ],
+          "hint": "идти дальше",
+          "tags": [
+            "directions"
+          ],
+          "explain": "Keep going — иди дальше.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s3-e4",
+          "type": "choice",
+          "prompt": "Stay by the desk until the office ___.",
+          "options": [
+            "opens",
+            "will open",
+            "open"
+          ],
+          "answer": "opens",
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "Офис откроется — opens (не will open).",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s3-e5",
+          "type": "fill",
+          "prompt": "Don't pull the door ___ the light is green.",
+          "answers": [
+            "until"
+          ],
+          "hint": "пока не",
+          "tags": [
+            "time_clauses"
+          ],
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s3-e6",
+          "type": "choice",
+          "prompt": "Follow the wall ___ you reach the lift.",
+          "options": [
+            "until",
+            "since",
+            "during"
+          ],
+          "answer": "until",
+          "tags": [
+            "time_clauses"
+          ],
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s3-e7",
+          "type": "fix",
+          "sentence": "Wait until the light will turn green.",
+          "answers": [
+            "Wait until the light turns green."
+          ],
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "После until не ставят will: until the light turns green.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s3-e8",
+          "type": "transform",
+          "instruction": "Соедини с until",
+          "sentence": "Walk. You reach the grey door.",
+          "answers": [
+            "Walk until you reach the grey door."
+          ],
+          "tags": [
+            "time_clauses"
+          ],
+          "context": "Служебная памятка"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Now we know when to stop.",
+          "ru": "Теперь понятно, когда остановиться.",
+          "expr": "notebook/thinking"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Что делать сразу после",
+      "intro": "Сразу после: As soon as the light changes, pull the door. Once you have the card, … Прежде чем: Read the sign before you try the handle.",
+      "place": "new_corridor",
+      "frame": {
+        "setting": "Айрис переворачивает лист и пишет каждый шаг на отдельной строке.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Put the signal before the action.",
+            "ru": "Поставь условие перед действием.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u018-s4-e1",
+          "type": "choice",
+          "prompt": "___ you see the desk, stop.",
+          "options": [
+            "As soon as",
+            "Until",
+            "While"
+          ],
+          "answer": "As soon as",
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "Как только увидишь — as soon as.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s4-e2",
+          "type": "choice",
+          "prompt": "As soon as the light ___, pull the door.",
+          "options": [
+            "changes",
+            "will change",
+            "is change"
+          ],
+          "answer": "changes",
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "После as soon as — настоящее время.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s4-e3",
+          "type": "fill",
+          "prompt": "Read the sign ___ you try the handle.",
+          "answers": [
+            "before"
+          ],
+          "hint": "прежде чем",
+          "tags": [
+            "time_clauses"
+          ],
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s4-e4",
+          "type": "choice",
+          "prompt": "___ you have the card, walk to the door.",
+          "options": [
+            "Once",
+            "Until",
+            "Before"
+          ],
+          "answer": "Once",
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "Once — когда, как только.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s4-e5",
+          "type": "fill",
+          "prompt": "Check the floor before you ___ the lift.",
+          "answers": [
+            "leave"
+          ],
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "Before you + глагол.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s4-e6",
+          "type": "choice",
+          "prompt": "As soon as you reach the board, ___ for the room number.",
+          "options": [
+            "look",
+            "looking",
+            "to look"
+          ],
+          "answer": "look",
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "Во второй части — само действие: look.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s4-e7",
+          "type": "fix",
+          "sentence": "As soon as you will see the sign, stop.",
+          "answers": [
+            "As soon as you see the sign, stop."
+          ],
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "После as soon as — без will.",
+          "context": "Служебная памятка"
+        },
+        {
+          "id": "u018-s4-e8",
+          "type": "sort",
+          "instruction": "Это сигнал или действие?",
+          "categories": [
+            {
+              "id": "signal",
+              "label": "Сигнал (когда)"
+            },
+            {
+              "id": "action",
+              "label": "Действие (что сделать)"
+            }
+          ],
+          "items": [
+            {
+              "text": "as soon as the light changes",
+              "category": "signal"
+            },
+            {
+              "text": "once you have the card",
+              "category": "signal"
+            },
+            {
+              "text": "before you try the handle",
+              "category": "signal"
+            },
+            {
+              "text": "pull the door",
+              "category": "action"
+            },
+            {
+              "text": "walk to the door",
+              "category": "action"
+            },
+            {
+              "text": "read the sign",
+              "category": "action"
+            }
+          ],
+          "tags": [
+            "time_clauses"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "One job per line.",
+          "ru": "По одному действию в строке.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Что ты заметил",
+      "intro": "Айрис замечает, что ты находишь пропуски в инструкции. Ответь, как хочешь.",
+      "place": "new_corridor",
+      "exercises": [
+        {
+          "id": "u018-s5-e1",
+          "type": "scene",
+          "setting": "Ты показываешь Айрис строчку про обычный вход. Она загибает угол листа.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "You keep finding things I miss. It's getting rather nice having you here.",
+              "ru": "Ты постоянно замечаешь то, что я пропускаю. Приятно, что ты здесь.",
+              "expr": "dry_smile"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I like being here with you too.",
+                "You make checking maps more fun."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Careful. I'll ask you to check the next one too.",
+                "ru": "Осторожнее. Я и следующую попрошу тебя проверить.",
+                "expr": "dry_smile"
+              },
+              "flag": "flirt_iris_018"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "Can I put “good at doors” on my CV?",
+                "The map did most of the work."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "We'll need a reference from the door.",
+                "ru": "Понадобится рекомендация от двери.",
+                "expr": "dry_smile"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Which entrance does this mean?",
+                "We should name the entrance on our card."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Yes. Let's name the building too.",
+                "ru": "Да. И корпус тоже.",
+                "expr": "thinking"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Редакторская пометка"
+        },
+        {
+          "id": "u018-s5-e2",
+          "type": "translate",
+          "ru": "Какой вход имеется в виду?",
+          "answers": [
+            "Which entrance does it mean?",
+            "Which entrance does this mean?",
+            "Which entrance do they mean?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u018-s5-e3",
+          "type": "translate",
+          "ru": "Иди, пока не дойдёшь до серой двери.",
+          "answers": [
+            "Walk until you reach the grey door.",
+            "Go until you reach the grey door."
+          ],
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s5-e4",
+          "type": "translate",
+          "ru": "Как только сменится цвет, потяни дверь.",
+          "answers": [
+            "As soon as the light changes, pull the door.",
+            "As soon as the colour changes, pull the door."
+          ],
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s5-e5",
+          "type": "translate",
+          "ru": "Прочти табличку, прежде чем пробовать ручку.",
+          "answers": [
+            "Read the sign before you try the handle.",
+            "Read the sign before trying the handle."
+          ],
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s5-e6",
+          "type": "write",
+          "situation": "Скажи, чего не хватает в памятке для гостя.",
+          "answers": [
+            "It doesn't say where to go without a card.",
+            "It doesn't say which entrance is the usual one.",
+            "The note doesn't say where visitors without a card should go."
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Let's see where the line actually ends.",
+          "ru": "Посмотрим, где эта линия на самом деле заканчивается.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: где пропущен шаг",
+      "intro": "Скажи вслух, чего не хватает в памятке.",
+      "place": "new_corridor",
+      "frame": {
+        "setting": "У первой доски Айрис держит карту так, чтобы ты видел и схему, и коридор.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Tell me what the note leaves out.",
+            "ru": "Скажи, чего не хватает в памятке.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u018-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Which entrance does the note mean?",
+          "answers": [
+            "Which entrance does the note mean?"
+          ],
+          "tags": [
+            "speaking",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u018-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "It doesn't say where to go without a card.",
+          "answers": [
+            "It doesn't say where to go without a card."
+          ],
+          "tags": [
+            "speaking",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u018-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Walk until you reach the grey door.",
+          "answers": [
+            "Walk until you reach the grey door."
+          ],
+          "tags": [
+            "speaking",
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "As soon as you see the sign, stop.",
+          "answers": [
+            "As soon as you see the sign, stop."
+          ],
+          "tags": [
+            "speaking",
+            "time_clauses"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Let's read the sign before we touch anything.",
+          "ru": "Сначала прочтём табличку.",
+          "expr": "thinking"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: сигнал и действие",
+      "intro": "Быстрый круг: сигнал и действие.",
+      "place": "new_corridor",
+      "frame": {
+        "setting": "Мика читает начало фразы. Ты заканчиваешь её по памятке.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Wait until…?",
+            "ru": "Подожди, пока…?",
+            "expr": "happy"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u018-s7-e1",
+          "type": "write",
+          "situation": "Индикатор: что делать?",
+          "answers": [
+            "Wait until the light turns green.",
+            "Wait until the light changes.",
+            "Wait until it turns green."
+          ],
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s7-e2",
+          "type": "write",
+          "situation": "Серая дверь: докуда идти?",
+          "answers": [
+            "Keep going until you reach the grey door.",
+            "Walk until you reach the grey door.",
+            "Go until you see the grey door."
+          ],
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s7-e3",
+          "type": "write",
+          "situation": "Цвет сменился: что сделать?",
+          "answers": [
+            "As soon as the light changes, pull the door.",
+            "As soon as the light turns green, pull the door.",
+            "Once the light changes, pull the door."
+          ],
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s7-e4",
+          "type": "choice",
+          "prompt": "Try the handle ___ the light is green.",
+          "options": [
+            "once",
+            "until",
+            "since"
+          ],
+          "answer": "once",
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s7-e5",
+          "type": "choice",
+          "prompt": "Read the note ___ you go.",
+          "options": [
+            "before",
+            "until",
+            "during"
+          ],
+          "answer": "before",
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u018-s7-e6",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "Keep going until you reach the grey door.",
+          "answers": [
+            "Keep going until you reach the grey door."
+          ],
+          "tags": [
+            "dictation",
+            "time_clauses"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "End of the hall. There.",
+          "ru": "Конец коридора. Вон она.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Серая дверь",
+      "role": "mission",
+      "intro": "Миссия: дойти до серой двери и решить, что делать с маршрутом.",
+      "place": "closed_passage",
+      "exercises": [
+        {
+          "id": "u018-s8-e1",
+          "type": "scene",
+          "setting": "Вы доходите до серой двери. На табличке написано «Closed for repairs». Ручка не поддаётся.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "That's the door on our map. What do we change?",
+              "ru": "Это та дверь с карты. Что меняем?",
+              "expr": "surprised"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Отметить закрытие",
+              "answers": [
+                "Mark the passage as closed.",
+                "Add a warning about this door."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll put a cross on the map.",
+                "ru": "Поставлю крест на карте.",
+                "expr": "phone/focused"
+              },
+              "flag": "u018_mark_closed"
+            },
+            {
+              "label": "Убрать старые указания",
+              "answers": [
+                "Take this route out of the guide.",
+                "Hide the old directions until we check a new route."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll move the recording back to drafts.",
+                "ru": "Верну запись в черновики.",
+                "expr": "phone/focused"
+              },
+              "flag": "u018_hide_route"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "What should we do with the route we recorded?",
+            "ru": "Что сделать с записанным маршрутом?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Где ошибка"
+        },
+        {
+          "id": "u018-s8-e2",
+          "type": "scene",
+          "setting": "Мика ставит на карте крест. Айрис открывает тетрадь на чистой странице.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "Do we check from here or from the entrance?",
+              "ru": "Проверяем отсюда или от входа?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Пройти от входа",
+              "answers": [
+                "Let's walk the whole route from the entrance.",
+                "We should start at the main doors and walk it ourselves."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Good. We'll see what a visitor sees.",
+                "ru": "Хорошо. Увидим то же, что видит посетитель.",
+                "expr": "notebook/focused"
+              }
+            },
+            {
+              "label": "Пройти и записать ориентиры",
+              "answers": [
+                "Let's walk from the entrance and note what we see.",
+                "Can we follow the route from the start and write down the signs?"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll bring the notebook. You call out the signs.",
+                "ru": "Я возьму тетрадь, а ты называй указатели.",
+                "expr": "notebook/focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Where would you start the walk?",
+            "ru": "Откуда ты бы начал?",
+            "expr": "listening"
+          },
+          "tags": [
+            "directions"
+          ],
+          "context": "Предложить проверку ногами"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Good take. Bad door.",
+          "ru": "Дубль хороший. Дверь подвела.",
+          "expr": "neutral"
+        },
+        {
+          "speaker": "mika",
+          "text": "Friday at four? I'll ask Alex where to go around.",
+          "ru": "В пятницу в четыре? Спрошу Алекса, где обойти.",
+          "expr": "phone/happy"
+        }
+      ]
+    }
+  ]
+}

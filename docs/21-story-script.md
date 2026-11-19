@@ -23,6 +23,10 @@
 - [Юнит 014. Что мешает записи](#юнит-014-что-мешает-записи)
 - [Юнит 015. Найти другое время](#юнит-015-найти-другое-время)
 - [Юнит 016. Подтвердить и записать](#юнит-016-подтвердить-и-записать)
+- [Юнит 017. Объяснить маршрут](#юнит-017-объяснить-маршрут)
+- [Юнит 018. Проверить инструкцию](#юнит-018-проверить-инструкцию)
+- [Юнит 019. Переспросить и пройти](#юнит-019-переспросить-и-пройти)
+- [Юнит 020. Провести новичка](#юнит-020-провести-новичка)
 - [Страницы героинь](#страницы-героинь)
 - [После уроков](#после-уроков)
 
@@ -2717,6 +2721,614 @@ _Итог занятия:_
 
 ---
 
+## Юнит 017. Объяснить маршрут
+
+**Цель:** Дать пошаговые указания от главного входа до комнаты 17.
+
+**Итог юнита:** Рэй сохраняет пробную озвучку первого маршрута. Команда договаривается пройти его сразу после записи.
+
+### Занятие 1. Линия на плане (понимание)
+
+_Среда, час дня. Рэй выключает запись двора. Айрис расстилает на столе план, а Мика прижимает его углы двумя чашками._
+
+- **Рэй:** Courtyard's in. What's next? — Двор добавила. Что дальше? _(recorder/neutral)_
+
+**Чтение [u017-s1-e1]: «Room 17: draft directions»** (текст)
+
+> Start at the main entrance of the New Building. First, walk past the information desk. Then turn left at the noticeboard and go along the narrow hall. At the end of the hall, go through the grey door. The passage joins the two buildings. After that, follow the corridor until you see another noticeboard. Room 17 is opposite it. The whole walk takes about three minutes, according to the floor plan. Keep the room number on the card so visitors can check the door.
+
+_Перевод:_ Начни у главного входа в новый корпус. Сперва пройди мимо стойки информации. Затем поверни налево у доски объявлений и иди по узкому коридору. В конце коридора пройди через серую дверь. Переход соединяет два корпуса. После этого иди по коридору до второй доски объявлений. Комната 17 напротив неё. Судя по плану, весь путь занимает около трёх минут. Оставь номер комнаты на карточке, чтобы гости могли свериться с табличкой.
+
+_Итог занятия:_
+
+- **Мика:** Three minutes. Even I can fit that in. — Три минуты. Даже в моё расписание влезет. _(phone/happy)_
+
+### Занятие 2. Маршрут на слух (понимание)
+
+**Аудирование [u017-s2-e1]** · Айрис в комнате 17
+
+- **Айрис:** Start at the main entrance. Go past the information desk and turn left at the first noticeboard. Walk to the end of the narrow hall. The grey door should be right in front of you. — Начни у главного входа. Пройди мимо стойки информации и поверни налево у первой доски объявлений. Дойди до конца узкого коридора. Серая дверь должна быть прямо перед тобой. _([quietly, focused])_
+
+**Аудирование [u017-s2-e2]** · Голосовое Мики в чате «Room 17»
+
+- **Мика:** There are two noticeboards on the plan. The first one is near the desk. The second one is in the old building, opposite our room. I'll mark them with different colours. — На плане две доски объявлений. Первая возле стойки. Вторая в старом корпусе, напротив нашей комнаты. Я отмечу их разными цветами. _([thoughtfully])_
+
+**Диктант [u017-s2-e3]**
+
+- **Айрис:** Go past the information desk. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Рэй:** Two boards. Good catch. — Две доски. Хорошо заметила. _(neutral)_
+
+### Занятие 3. Сначала стойка (форма)
+
+_Айрис нумерует строчки карандашом. Мика переставляет чашку, чтобы открыть первый шаг._
+
+- **Айрис:** Put the first turn where it belongs. — Поставь первый поворот туда, где он нужен. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** That saves us a trip to the wrong end of the building. — Так мы хотя бы не отправим никого в другой конец корпуса. _(notebook/dry_smile)_
+
+### Занятие 4. Мимо и через (форма)
+
+_Рэй ведёт пальцем по серой линии. Палец упирается в значок двери._
+
+- **Рэй:** Past the desk. Through the door. — Мимо стойки. Через дверь. _(focused)_
+
+_Итог занятия:_
+
+- **Рэй:** Easy with a finger. — Пальцем пройти несложно. _(smirk)_
+
+### Занятие 5. Голос на пробу (продукция)
+
+**Сцена [u017-s5-e1]** · Кому читать пробу
+
+_Рэй сдвигает рекордер на твою сторону стола._
+
+- **Рэй:** Read that turn again. I like how you say it. — Повтори про поворот. Мне нравится, как ты это говоришь. _(recorder/smirk)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I'll read it again if you stay and listen.» · флаг `flirt_rei_017`
+  - **Рэй:** I'm still here. — Я пока здесь. _(recorder/smirk)_
+- _Отшутиться_ → «Did the first turn get good reviews?»
+  - **Рэй:** One encore. Then we move. — Один раз. Потом дальше. _(recorder/smirk)_
+- _По делу_ → «I'll read the turn more slowly.»
+  - **Рэй:** Ready when you are. — Я готова. _(recorder/focused)_
+
+Если ответ непонятен:
+- **Рэй:** Say that again? — Повторишь? _(recorder/listening)_
+
+_Итог занятия:_
+
+- **Рэй:** That's a usable take. — Этот дубль годится. _(recorder/neutral)_
+
+### Занятие 6. Голосом: путь по плану (продукция)
+
+_Айрис показывает на четыре строчки. Рэй ждёт, пока ты найдёшь начало._
+
+- **Айрис:** Give people time to picture each turn. — Дай слушателю секунду представить каждый поворот. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Рэй:** I heard all four steps. — Все четыре шага слышно. _(recorder/happy)_
+
+### Занятие 7. Быстрый круг: откуда и куда (беглость)
+
+_Мика закрывает ладонью первую половину карты, затем вторую._
+
+- **Мика:** From the desk. What's next? — От стойки. Что дальше? _(happy)_
+
+**Диктант [u017-s7-e6]**
+
+- **Мика:** Turn left at the first board.
+
+_Итог занятия:_
+
+- **Мика:** I can follow that without the pencil line. — Теперь я и без линии на карте дойду. _(happy)_
+
+### Занятие 8. Готово на бумаге (беглость · миссия)
+
+**Сцена [u017-s8-e1]** · Как начать карточку
+
+_Рэй включает пробную дорожку. Айрис держит палец на первом шаге._
+
+- **Айрис:** What should visitors look for first? — Что посетителю искать первым? _(notebook/thinking)_
+
+Выбор намерения:
+- _Начать от входа_ → «Start at the main entrance.» · флаг `u017_open_entrance`
+  - **Айрис:** I'll put the entrance in the first line. — Поставлю вход в первую строчку. _(notebook/focused)_
+- _Начать со стойки у входа_ → «Find the desk by the main entrance.» · флаг `u017_open_desk`
+  - **Айрис:** The desk is hard to miss. Good. — Стойку трудно пропустить. Хорошо. _(notebook/dry_smile)_
+
+Если ответ непонятен:
+- **Айрис:** Which thing should they look for first? — Что им искать первым? _(listening)_
+
+**Сцена [u017-s8-e2]** · Чей голос оставить
+
+_Мика слушает пробную запись ещё раз._
+
+- **Мика:** I'd recognise your voice anywhere now. Even at the wrong door. — Теперь я твой голос где угодно узнаю. Даже не у той двери. _(happy)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I'd know your voice anywhere too.» · флаг `flirt_mika_017`
+  - **Мика:** Then I'd better give you the right directions. — Тогда мне лучше объяснить дорогу правильно. _(happy)_
+- _Отшутиться_ → «My voice has a better sense of direction than I do.»
+  - **Мика:** I'll tell the doors you said that. — Я передам дверям. _(laugh)_
+- _По делу_ → «Let's end with the room number.»
+  - **Мика:** Good. Put the number in bold, too. — Хорошо. И номер выделим жирным. _(happy)_
+
+Если ответ непонятен:
+- **Мика:** Could you say that again? — Можешь повторить? _(listening)_
+
+Общее продолжение:
+- **Айрис:** I'll end with the number and the noticeboard. — Закончу номером комнаты и доской объявлений. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Рэй:** Saved. Now let's walk it. — Сохранила. Теперь пройдём ногами. _(recorder/neutral)_
+
+---
+
+## Юнит 018. Проверить инструкцию
+
+**Цель:** Найти пропущенный шаг и проверить, куда на самом деле ведёт инструкция.
+
+**Итог юнита:** Серая дверь заперта. Команда убирает маршрут из пилотной сборки и оставляет его в черновиках.
+
+### Занятие 1. Какая именно дверь (понимание)
+
+_У стойки лежит памятка для сотрудников. Айрис кладёт рядом ваш распечатанный маршрут._
+
+- **Айрис:** We wrote “the passage”. This calls it “the link”. — Мы написали «переход». Здесь он называется «соединительный коридор». _(notebook/thinking)_
+
+**Чтение [u018-s1-e1]: «Staff access note»** (текст)
+
+> Collect an access card from the information desk before you use the link. Once you have the card, follow the corridor until you reach the grey door. Hold the card against the reader until the light turns green. As soon as the light changes, pull the door towards you. If the light stays red, go back to the desk. Use the usual entrance on your return. The card only works on staff doors during office hours.
+
+_Перевод:_ Прежде чем пользоваться соединительным коридором, возьмите пропуск на стойке информации. Получив пропуск, идите по коридору до серой двери. Держите пропуск у считывателя, пока не загорится зелёный. Как только цвет сменится, потяните дверь на себя. Если индикатор остаётся красным, вернитесь к стойке. На обратном пути воспользуйтесь обычным входом. Пропуск действует на служебных дверях только в часы работы офиса.
+
+_Итог занятия:_
+
+- **Айрис:** “Usual” is doing a lot of work there. — «Обычный» тут многое должен объяснить. _(notebook/dry_smile)_
+
+### Занятие 2. По привычке (понимание)
+
+_Мика читает памятку через плечо Айрис. Рэй смотрит на две двери без номеров._
+
+- **Мика:** Which one would you try? — Какую бы ты попробовал? _(thinking)_
+
+**Аудирование [u018-s2-e1]** · Мика у стойки
+
+- **Мика:** My timetable says to use the main lift. I know which one that means because I come here every day. There are two lifts on the map, though, and the timetable never says which building. — В расписании сказано пользоваться главным лифтом. Я знаю каким, потому что бываю здесь каждый день. Но на плане два лифта, а в расписании даже не указан корпус. _([thoughtfully])_
+
+**Аудирование [u018-s2-e2]** · Айрис с памяткой
+
+- **Айрис:** This note is for people with a staff card. It says to wait until the light turns green. It doesn't say where a visitor should go if they don't have a card. — Памятка для тех, у кого есть служебный пропуск. Сказано дождаться зелёного света. Куда идти посетителю без пропуска, здесь не написано. _([quietly, focused])_
+
+**Диктант [u018-s2-e3]**
+
+- **Айрис:** Wait until the light turns green. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Рэй:** Nice map. Missing a person. — Хорошая карта. Не хватает человека, который по ней идёт. _(deadpan)_
+
+### Занятие 3. До какого момента (форма)
+
+_Айрис подчёркивает в памятке слова про зелёный свет._
+
+- **Айрис:** Circle the point where each action stops. — Обведи слова, по которым понятно, когда заканчивается действие. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Now we know when to stop. — Теперь понятно, когда остановиться. _(notebook/thinking)_
+
+### Занятие 4. Что делать сразу после (форма)
+
+_Айрис переворачивает лист и пишет каждый шаг на отдельной строке._
+
+- **Айрис:** Put the signal before the action. — Поставь условие перед действием. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Рэй:** One job per line. — По одному действию в строке. _(neutral)_
+
+### Занятие 5. Что ты заметил (продукция)
+
+**Сцена [u018-s5-e1]** · Редакторская пометка
+
+_Ты показываешь Айрис строчку про обычный вход. Она загибает угол листа._
+
+- **Айрис:** You keep finding things I miss. It's getting rather nice having you here. — Ты постоянно замечаешь то, что я пропускаю. Приятно, что ты здесь. _(dry_smile)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I like being here with you too.» · флаг `flirt_iris_018`
+  - **Айрис:** Careful. I'll ask you to check the next one too. — Осторожнее. Я и следующую попрошу тебя проверить. _(dry_smile)_
+- _Отшутиться_ → «Can I put “good at doors” on my CV?»
+  - **Айрис:** We'll need a reference from the door. — Понадобится рекомендация от двери. _(dry_smile)_
+- _По делу_ → «Which entrance does this mean?»
+  - **Айрис:** Yes. Let's name the building too. — Да. И корпус тоже. _(thinking)_
+
+Если ответ непонятен:
+- **Айрис:** Could you say that another way? — Можешь сказать иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Айрис:** Let's see where the line actually ends. — Посмотрим, где эта линия на самом деле заканчивается. _(notebook/focused)_
+
+### Занятие 6. Голосом: где пропущен шаг (продукция)
+
+_У первой доски Айрис держит карту так, чтобы ты видел и схему, и коридор._
+
+- **Айрис:** Tell me what the note leaves out. — Скажи, чего не хватает в памятке. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Мика:** Let's read the sign before we touch anything. — Сначала прочтём табличку. _(thinking)_
+
+### Занятие 7. Быстрый круг: сигнал и действие (беглость)
+
+_Мика читает начало фразы. Ты заканчиваешь её по памятке._
+
+- **Мика:** Wait until…? — Подожди, пока…? _(happy)_
+
+**Диктант [u018-s7-e6]**
+
+- **Мика:** Keep going until you reach the grey door.
+
+_Итог занятия:_
+
+- **Рэй:** End of the hall. There. — Конец коридора. Вон она. _(neutral)_
+
+### Занятие 8. Серая дверь (беглость · миссия)
+
+**Сцена [u018-s8-e1]** · Где ошибка
+
+_Вы доходите до серой двери. На табличке написано «Closed for repairs». Ручка не поддаётся._
+
+- **Мика:** That's the door on our map. What do we change? — Это та дверь с карты. Что меняем? _(surprised)_
+
+Выбор намерения:
+- _Отметить закрытие_ → «Mark the passage as closed.» · флаг `u018_mark_closed`
+  - **Мика:** I'll put a cross on the map. — Поставлю крест на карте. _(phone/focused)_
+- _Убрать старые указания_ → «Take this route out of the guide.» · флаг `u018_hide_route`
+  - **Мика:** I'll move the recording back to drafts. — Верну запись в черновики. _(phone/focused)_
+
+Если ответ непонятен:
+- **Мика:** What should we do with the route we recorded? — Что сделать с записанным маршрутом? _(listening)_
+
+**Сцена [u018-s8-e2]** · Предложить проверку ногами
+
+_Мика ставит на карте крест. Айрис открывает тетрадь на чистой странице._
+
+- **Айрис:** Do we check from here or from the entrance? — Проверяем отсюда или от входа? _(notebook/thinking)_
+
+Выбор намерения:
+- _Пройти от входа_ → «Let's walk the whole route from the entrance.»
+  - **Айрис:** Good. We'll see what a visitor sees. — Хорошо. Увидим то же, что видит посетитель. _(notebook/focused)_
+- _Пройти и записать ориентиры_ → «Let's walk from the entrance and note what we see.»
+  - **Айрис:** I'll bring the notebook. You call out the signs. — Я возьму тетрадь, а ты называй указатели. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** Where would you start the walk? — Откуда ты бы начал? _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** Good take. Bad door. — Дубль хороший. Дверь подвела. _(neutral)_
+- **Мика:** Friday at four? I'll ask Alex where to go around. — В пятницу в четыре? Спрошу Алекса, где обойти. _(phone/happy)_
+
+---
+
+## Юнит 019. Переспросить и пройти
+
+**Цель:** Уточнить незнакомый ориентир, пересказать путь проще и пройти его.
+
+**Итог юнита:** Команда проверяет обход до комнаты 17, возвращается к стойке и сверяет путь до аудитории 70.
+
+### Занятие 1. Обход через двор (понимание)
+
+_Пятница, четыре часа. Алекс встречает вас у главного входа и даёт Мике короткую схему._
+
+- **Алекс:** Start here. Everyone can use the courtyard door. — Начинайте здесь. Через дверь во двор могут пройти все.
+
+**Чтение [u019-s1-e1]: «Alex's note»** (текст)
+
+> From the main entrance, walk to the information desk. Go through the glass door beside it and cross the courtyard. Look for the green door opposite the benches. That door leads into the Old Building. Follow the corridor until you reach the noticeboard. Room 17 is opposite the board. For Room 70, stay in the New Building. At the information desk, take the corridor on the right. Walk past the lift. Room 70 is the first door on your left after the lift.
+
+_Перевод:_ От главного входа дойди до стойки информации. Пройди через стеклянную дверь рядом с ней и пересекай двор. Ищи зелёную дверь напротив скамеек. Она ведёт в старый корпус. Иди по коридору до доски объявлений. Комната 17 напротив неё. Если ищешь аудиторию 70, оставайся в новом корпусе. У стойки сверни в правый коридор. Пройди мимо лифта. Аудитория 70 — первая дверь слева после лифта.
+
+_Итог занятия:_
+
+- **Мика:** Two routes from one desk. I'll draw them separately. — Два маршрута от одной стойки. Нарисую отдельно. _(phone/happy)_
+
+### Занятие 2. Стеклянная, потом зелёная (понимание)
+
+**Аудирование [u019-s2-e1]** · Голосовое Мики в чате «Room 17»
+
+- **Мика:** Start at the desk. Go through the glass door and walk across the courtyard. The green door is opposite the benches. Go inside and look for the noticeboard. Room 17 is right across from it. — Начни от стойки. Пройди через стеклянную дверь и пересекай двор. Зелёная дверь напротив скамеек. Войди и найди доску объявлений. Комната 17 прямо напротив.
+
+**Аудирование [u019-s2-e2]** · Голосовое Айрис в чате «Room 17»
+
+- **Айрис:** If you're looking for Room 70 instead, stay inside the New Building. At the desk, take the corridor on the right. Go past the lift and check the first door on your left. — Если ищешь аудиторию 70, оставайся в новом корпусе. У стойки сверни в правый коридор. Пройди мимо лифта и проверь первую дверь слева. _([quietly, focused])_
+
+**Диктант [u019-s2-e3]**
+
+- **Мика:** The green door is opposite the benches. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Рэй:** Glass from here. Checks out. — Отсюда видно стеклянную дверь. Совпадает. _(neutral)_
+
+### Занятие 3. Ты про эту дверь? (форма)
+
+_Алекс показывает на стеклянную дверь. На схеме две стрелки от одной стойки._
+
+- **Алекс:** Ask me if a step doesn't make sense. — Спроси, если какой-то шаг непонятен.
+
+_Итог занятия:_
+
+- **Айрис:** Good. Ask about one detail at a time. — Хорошо. Уточняй по одной детали за раз. _(notebook/focused)_
+
+### Занятие 4. Слова, которые видно (форма)
+
+_Вы выходите во двор. На двери нет слова «боковая», зато зелёную краску видно через весь двор._
+
+- **Айрис:** A colour is easier to spot than an old name. — Цвет заметить проще, чем вспомнить старое название. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Рэй:** Green door. No glossary. — Зелёная дверь. Словарь не нужен. _(smirk)_
+
+### Занятие 5. Автор на месте (продукция)
+
+**Сцена [u019-s5-e1]** · Пеший редактор
+
+_Айрис ждёт у скамейки, пока ты сверяешь последний ориентир. У зелёной двери она протягивает тебе тетрадь._
+
+- **Айрис:** You walked it. Most writers stop at the desk. I rather like your method. — Ты прошёл весь путь. Большинство авторов дальше стола не встают. Мне нравится твой метод. _(dry_smile)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I'd walk it again with you.» · флаг `flirt_iris_019`
+  - **Айрис:** I'll remember that for the next draft. — Вспомню об этом, когда будет следующий черновик. _(dry_smile)_
+- _Отшутиться_ → «My shoes did the editing.»
+  - **Айрис:** Only if they can sign the page. — Только если они смогут её подписать. _(dry_smile)_
+- _По делу_ → «Let's use the colour in the final text.»
+  - **Айрис:** Yes. It's the clearest clue here. — Да. Это самый понятный ориентир. _(thinking)_
+
+Если ответ непонятен:
+- **Айрис:** Could you say that again? — Можешь повторить? _(listening)_
+
+_Итог занятия:_
+
+- **Айрис:** Now check where this door leads. — Теперь проверим, куда ведёт дверь. _(notebook/focused)_
+
+### Занятие 6. Голосом: повтори своими словами (продукция)
+
+_Зелёная дверь открывается в старый коридор. Рэй оглядывается, пока ты сверяешь шаги._
+
+- **Рэй:** Tell me what we just did. — Скажи, как мы сюда пришли. _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** Yep. Door seventeen. — Да. Дверь семнадцать. _(happy)_
+
+### Занятие 7. Быстрый круг: два адреса (беглость)
+
+_Мика кладёт рядом две карточки с номерами. Ты по очереди называешь поворот от стойки._
+
+- **Мика:** Seventeen and seventy. Same start. Then what? — Семнадцать и семьдесят. Начало одинаковое. Что дальше? _(happy)_
+
+**Диктант [u019-s7-e6]**
+
+- **Айрис:** Take the corridor on the right.
+
+_Итог занятия:_
+
+- **Мика:** Let's check seventy before we call it done. — Прежде чем закончить, проверим семидесятую. _(phone/focused)_
+
+### Занятие 8. Последние ориентиры (беглость · миссия)
+
+**Сцена [u019-s8-e1]** · Ориентир для комнаты 17
+
+_Айрис держит чистую карточку у двери комнаты 17. Из коридора видна доска объявлений._
+
+- **Айрис:** Which landmark would you put on the card first? — Какой ориентир первым поставить на карточке? _(notebook/thinking)_
+
+Выбор намерения:
+- _Выделить зелёную дверь_ → «Look for the green door across the courtyard.» · флаг `u019_anchor_green`
+  - **Айрис:** I'll put the colour on the card. — Укажу цвет на карточке. _(notebook/focused)_
+- _Выделить скамейки_ → «Find the benches. The door is opposite them.» · флаг `u019_anchor_benches`
+  - **Айрис:** Then the benches go first. — Тогда сначала скамейки. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** What can someone look for in the courtyard? — Что можно искать во дворе? _(listening)_
+
+Общее продолжение:
+- **Диктор:** Вы возвращаетесь к стойке и идёте направо. Алекс ждёт у лифта. На первой двери слева после него виден номер 70.
+
+**Сцена [u019-s8-e2]** · Сверить последний шаг до 70
+
+_Вы возвращаетесь к стойке и идёте направо. Алекс ждёт у лифта. На первой двери слева после него виден номер 70._
+
+- **Алекс:** Here's seventy. How would you explain the last step? — Вот семидесятая. Как бы ты объяснил последний шаг?
+
+Выбор намерения:
+- _Уточнить ориентир_ → «So I go past the lift, right?»
+  - **Алекс:** Yes. The first door on your left. — Да. Первая дверь слева.
+- _Пересказать весь шаг_ → «Go past the lift. Room seventy is the first door on your left.»
+  - **Алекс:** That's it. You can see the number from here. — Именно. Номер уже отсюда видно.
+
+Если ответ непонятен:
+- **Алекс:** Which side is the door on? — С какой стороны дверь?
+
+_Итог занятия:_
+
+- **Айрис:** Both walks checked. I'll keep them on separate cards. — Оба пути проверили. Оставлю их на разных карточках. _(notebook/focused)_
+
+---
+
+## Юнит 020. Провести новичка
+
+**Цель:** Уточнить, куда человек идёт, дать простое указание и убедиться, что он его понял.
+
+**Итог юнита:** Лина находит аудиторию 70. Пилот гида готов к внутренней проверке. Команда находит старый архив, а у игрока появляется своё место за столом и обязанности по проверке маршрутов.
+
+### Занятие 1. Сообщение на экране (понимание)
+
+_Среда, час дня. Возле главного входа девушка поворачивает телефон к свету. На экране письмо о вводной встрече._
+
+- **Лина:** Sorry. Can you help me? I need this room. — Извини. Можешь помочь? Мне нужна эта аудитория. _([slowly])_
+
+**Чтение [u020-s1-e1]: «Welcome meeting: travel note»** (текст)
+
+> Your welcome meeting starts at half past one on Wednesday. Please come to Room 70 in the New Building. From the main entrance, walk to the information desk. Stay inside and take the corridor on the right. Walk past the lift and look for the first door on your left. The number is on the door. Bring your student card to the meeting. If you are early, wait on the bench near the information desk. Someone from the welcome team will open the room ten minutes before the meeting.
+
+_Перевод:_ Вводная встреча начнётся в среду в половине второго. Приходите в аудиторию 70 нового корпуса. От главного входа дойдите до стойки информации. Оставайтесь внутри и сверните в правый коридор. Пройдите мимо лифта и найдите первую дверь слева. Номер указан на двери. Возьмите студенческий билет. Если придёте раньше, подождите на скамейке у стойки информации. Кто-нибудь из организаторов откроет аудиторию за десять минут до встречи.
+
+_Итог занятия:_
+
+- **Лина:** Thank you. I only got here today. — Спасибо. Я только сегодня приехала. _([slowly])_
+
+### Занятие 2. Семнадцать или семьдесят (понимание)
+
+**Аудирование [u020-s2-e1]** · Сообщение для новых студентов
+
+- **Диктор:** This is a message for new students. Your welcome meeting is in Room seventy, that's seven zero, in the New Building. Please come at half past one and bring your student card. — Это сообщение для новых студентов. Вводная встреча пройдёт в аудитории семьдесят, семь-ноль, в новом корпусе. Приходите в половине второго и возьмите студенческий билет.
+
+**Аудирование [u020-s2-e2]** · Айрис у стойки
+
+- **Айрис:** Room seventeen is where we work. Room seventy is where the welcome meeting is. They sound close, but they're in different buildings. Ask for the number, then check the building too. — В комнате семнадцать мы работаем. В аудитории семьдесят вводная встреча. Номера звучат похоже, но корпуса разные. Уточни номер, а потом проверь корпус.
+
+**Диктант [u020-s2-e3]**
+
+- **Айрис:** Did you say seventeen or seventy? _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Лина:** Yes. Seven zero. — Да. Семь-ноль. _([slowly])_
+
+### Занятие 3. Один шаг за раз (форма)
+
+_У стойки Лина поглядывает то на стеклянную дверь, то на коридор справа._
+
+- **Мика:** Start with where she is now. — Начни с того места, где она сейчас. _(thinking)_
+
+_Итог занятия:_
+
+- **Айрис:** That gives her something to look for at every turn. — Теперь на каждом повороте есть что искать глазами. _(notebook/focused)_
+
+### Занятие 4. Перепроверить главное (форма)
+
+_Рэй показывает тебе две карточки. На одной 17, на другой 70._
+
+- **Рэй:** Number first. Then building. — Сначала номер. Потом корпус. _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** Good. Now ask her. — Хорошо. Теперь спроси её. _(neutral)_
+
+### Занятие 5. Слышно с первого раза (продукция)
+
+**Сцена [u020-s5-e1]** · Темп разговора
+
+_Лина убирает телефон и повторяет «seven zero». Рэй чуть отступает от стойки, освобождая проход._
+
+- **Рэй:** Good pace. I'd listen to you give directions. — Хороший темп. Я бы послушала, как ты объясняешь дорогу. _(smirk)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I'll give you the scenic route sometime.» · флаг `flirt_rei_020`
+  - **Рэй:** Might take you up on that. — Могу и воспользоваться. _(smirk)_
+- _Отшутиться_ → «My tours have exactly one lift.»
+  - **Рэй:** Five stars for the lift. — Пять звёзд лифту. _(smirk)_
+- _По делу_ → «I'll keep the next step short.»
+  - **Рэй:** Good. Right from the desk. — Хорошо. От стойки направо. _(focused)_
+
+Если ответ непонятен:
+- **Рэй:** Could you repeat that? — Можешь повторить? _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** She's ready when you are. — Она готова идти. _(neutral)_
+
+### Занятие 6. Голосом: показать дорогу (продукция)
+
+_Лина кладёт телефон на скамейку, чтобы достать студенческий билет. Ты у стойки, откуда видны правый коридор и стеклянная дверь._
+
+- **Айрис:** Point to the turn as you say it. — Покажи поворот, пока объясняешь. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Мика:** Easy to follow. I could put that on a card. — Понятно, куда идти. Можно записать на карточку. _(happy)_
+
+### Занятие 7. Проверка модуля: керамическая мастерская (беглость)
+
+_Айрис переворачивает карточку. На обороте нарисован незнакомый план с двумя входами._
+
+- **Айрис:** Try a different map before we go. — Перед выходом попробуй на другой карте. _(notebook/focused)_
+
+**Диктант [u020-s7-e8]**
+
+- **Айрис:** Room twenty-four is opposite the apron rack.
+
+_Итог занятия:_
+
+- **Айрис:** That'll get someone to the right room. — Так человек дойдёт до нужной двери. _(notebook/dry_smile)_
+
+### Занятие 8. Правильный кабинет (беглость · миссия)
+
+**Сцена [u020-s8-e1]** · Дойти с Линой до 70
+
+_Лина снова смотрит на две двери у стойки. Часы над входом показывают 13:20._
+
+- **Лина:** Do I go outside? — Мне на улицу? _([slowly])_
+
+Выбор намерения:
+- _Предложить показать путь_ → «Stay inside. Come with me. We'll go right at the desk.» · флаг `u020_lina_show`
+  - **Лина:** Thank you. I'll follow you. — Спасибо. Пойду за тобой. _([slowly])_
+- _Дать ориентир и пойти вместе_ → «Stay here inside. We go right and past the lift. Let's go together.» · флаг `u020_lina_landmark`
+  - **Лина:** Right, then past the lift. I got it. — Направо, потом мимо лифта. Поняла. _([slowly])_
+
+Если ответ непонятен:
+- **Лина:** Sorry. Right or left at the desk? — Прости. У стойки направо или налево? _([slowly])_
+
+Общее продолжение:
+- **Диктор:** Вы проходите лифт. Ты показываешь номер 70 слева. Лина сверяет его с сообщением. Дверь уже приоткрыта, внутри расставляют стулья.
+- **Лина:** Seventy. This is it. Thanks for coming with me. — Семьдесят. Это здесь. Спасибо, что проводил. _([slowly])_
+- **Диктор:** Вы возвращаетесь в старый корпус за планом, который оставили в комнате 17. У соседней кладовой Алекс меняет держатель таблички. Через стекло видны коробки с надписью «Before You Go».
+- **Алекс:** Boxes from the old radio team. I'll check who has the key. — Коробки старой радиоредакции. Узнаю, у кого ключ.
+- **Айрис:** I've seen that title on our old map. — Я видела это название на нашем старом плане. _(notebook/thinking)_
+
+**Сцена [u020-s8-e2]** · Место у стола
+
+_На столе четыре разные чашки. К жёлтой и серо-синей добавилась белая, которую Айрис принесла из дома. Мика подвигает к тебе тёмно-зелёную._
+
+- **Мика:** The green one's yours. I like knowing where you'll sit next Wednesday. — Зелёная твоя. Мне нравится знать, где ты будешь сидеть в следующую среду. _(happy)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «Save me the seat next to you.» · флаг `flirt_mika_020`
+  - **Мика:** Same table, same time. Easy to remember. — Тот же стол, то же время. Легко запомнить. _(happy)_
+- _Отшутиться_ → «Does the mug come with a map?»
+  - **Мика:** I'll add mugs to the next edition. — Добавлю чашки в следующее издание. _(laugh)_
+- _По делу_ → «Thanks. I'll be here on Wednesday at one.»
+  - **Мика:** I'll leave the new route cards right here. — Оставлю новые карточки прямо здесь. _(happy)_
+
+Если ответ непонятен:
+- **Мика:** Sorry, what did you say? — Прости, что ты сказал? _(listening)_
+
+Общее продолжение:
+- **Мика:** Will you walk our new routes before we record them? You know what to look for. — Будешь проходить новые маршруты перед записью? Ты знаешь, что проверять. _(happy)_
+- **Айрис:** I'll give you the cards before I write the final lines. — Буду давать тебе карточки до того, как допишу текст. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Мика:** Lina found seventy. Let's add that card to the pilot. — Лина нашла семидесятую. Добавим эту карточку в пилот. _(phone/happy)_
+- **Айрис:** And put the building before the number. — И укажем корпус перед номером. _(neutral)_
+- **Рэй:** Pilot saved. Nice work. — Пилот сохранён. Хорошая работа. _(recorder/happy)_
+
+---
+
 # Страницы героинь
 
 ## Мика
@@ -2734,6 +3346,8 @@ _Итог занятия:_
 - Замечает яркие красивые вещи, но умеет отказаться от покупки ради общей задачи и оставить резерв. _(после юнита 011)_
 - Приносит чай из дома на общие встречи. _(после юнита 013)_
 - По четвергам у неё занятие до пяти. _(после юнита 015)_
+- Отмечает похожие ориентиры разными цветами. _(после юнита 017)_
+- Принесла из дома зелёную чашку для тебя. _(после юнита 020)_
 
 **Общие воспоминания:**
 
@@ -2752,6 +3366,10 @@ _Итог занятия:_
 - You found another time together, and nobody had to miss a class. — Вы нашли другое время, и никто не пропустил занятия. _(после юнита 015)_
 - You told her that her voice was the best part of that noisy message. — Ты заметил, что её всё равно приятно слушать сквозь шум. _(флаг `flirt_mika_014`)_
 - You called seeing her a good part of the plan. — Ты назвал встречу с ней хорошей частью плана. _(флаг `flirt_mika_015`)_
+- You drew the route on the plan and held the corners down with two mugs. — Вы рисовали маршрут на плане, прижав углы двумя чашками. _(после юнита 017)_
+- You got your own mug and a seat at the table. — У тебя появилась своя чашка и место за столом. _(после юнита 020)_
+- You joked that you would know each other's voices anywhere. — Вы пошутили, что узнали бы друг друга по голосу. _(флаг `flirt_mika_017`)_
+- You joked about where you would both sit at the next meeting. — Вы пошутили о том, где будете сидеть на следующей встрече. _(флаг `flirt_mika_020`)_
 
 **Реплики «Поболтать»:**
 
@@ -2784,6 +3402,8 @@ _Итог занятия:_
 - Если старый микрофон исправен, предпочтёт подходящую подставку новому микрофону; смотрит на высоту и устойчивость. _(после юнита 011)_
 - Сначала записывает фон места, потом речь. _(после юнита 013)_
 - Отличает постоянный гул от шума, который то стихает, то возвращается. _(после юнита 014)_
+- Проверяет разборчивость каждого шага, прежде чем сохранить запись. _(после юнита 018)_
+- Подстраивает темп подсказки под того, кто слушает. _(после юнита 020)_
 
 **Общие воспоминания:**
 
@@ -2801,6 +3421,10 @@ _Итог занятия:_
 - You finally recorded ten seconds of the courtyard. The sneeze came after the stop. — Вы наконец записали десять секунд двора, а чих прозвучал уже после остановки. _(флаг `u016_take_sound`)_
 - You answered her joke about the other earphone. — Ты ответил на её шутку про второй наушник. _(флаг `flirt_rei_013`)_
 - She listened to your recording twice, and you offered to record another one for her. — Ты поддержал её желание ещё раз послушать твою запись. _(флаг `flirt_rei_016`)_
+- The first take sounded fine, but the route ended at a locked door. — По звуку первый дубль годился, а маршрут упёрся в закрытую дверь. _(после юнита 018)_
+- She heard you calmly check the room number with Lina. — Она слышала, как ты спокойно уточнил номер у Лины. _(после юнита 020)_
+- You offered to read the line again while she listened. — Ты предложил перечитать строчку, когда Рэй слушает. _(флаг `flirt_rei_017`)_
+- You answered her joke that your tour would be worth hearing. — Ты ответил на её шутку про то, что твою экскурсию стоило бы послушать. _(флаг `flirt_rei_020`)_
 
 **Реплики «Поболтать»:**
 
@@ -2833,6 +3457,8 @@ _Итог занятия:_
 - Хочет оставлять немного общих денег на будущие мелочи; личная еда не входит в бюджет студии. _(после юнита 012)_
 - В субботу после обеда занимается в библиотеке. _(после юнита 015)_
 - Приносит к записи короткий текст. _(после юнита 016)_
+- Заменяет старые названия ориентирами, которые видно. _(после юнита 019)_
+- Делает отдельные карточки для похожих номеров. _(после юнита 020)_
 
 **Общие воспоминания:**
 
@@ -2849,6 +3475,10 @@ _Итог занятия:_
 - You checked the reminder against her notebook: the day, the time and the courtyard all matched. — Вы сверили напоминание с тетрадью: день, время и двор совпали. _(после юнита 016)_
 - You joked that she is worth listening to without a microphone. — Вы пошутили о том, что её стоит слушать и без микрофона. _(флаг `flirt_iris_013`)_
 - You asked her to stay and check your next sentence too. — Ты предложил ей остаться и проверить следующую фразу. _(флаг `flirt_iris_014`)_
+- You chose together what to look for first in the courtyard. — Вы выбрали, что первым искать во дворе. _(после юнита 019)_
+- She recognised the title from the sheet she gave you on your first day. — Она узнала название с листка, который дала тебе в первый день. _(после юнита 020)_
+- You answered when she said it was nice to work next to you. — Ты ответил на её слова о том, что ей приятно работать рядом. _(флаг `flirt_iris_018`)_
+- You said you liked her company while you checked the route. — Ты сказал, что тебе нравится её компания, пока вы проверяли маршрут. _(флаг `flirt_iris_019`)_
 
 **Реплики «Поболтать»:**
 

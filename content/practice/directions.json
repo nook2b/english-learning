@@ -1,0 +1,197 @@
+{
+ "tag": "directions",
+ "items": [
+  {
+   "unit": "017",
+   "exercise": {
+    "id": "p-directions-01",
+    "type": "choice",
+    "prompt": "Go ___ the café and turn right.",
+    "options": [
+     "past",
+     "through",
+     "opposite"
+    ],
+    "answer": "past",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "017",
+   "exercise": {
+    "id": "p-directions-02",
+    "type": "choice",
+    "prompt": "Walk ___ the river until you see the bridge.",
+    "options": [
+     "along",
+     "through",
+     "opposite"
+    ],
+    "answer": "along",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "017",
+   "exercise": {
+    "id": "p-directions-03",
+    "type": "choice",
+    "prompt": "Go ___ the big glass doors.",
+    "options": [
+     "through",
+     "along",
+     "past"
+    ],
+    "answer": "through",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "017",
+   "exercise": {
+    "id": "p-directions-04",
+    "type": "fill",
+    "prompt": "The bank is ___ the station, on the other side of the road.",
+    "answers": [
+     "opposite"
+    ],
+    "hint": "напротив",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "017",
+   "exercise": {
+    "id": "p-directions-05",
+    "type": "fill",
+    "prompt": "The lift is at the ___ of the corridor.",
+    "answers": [
+     "end"
+    ],
+    "hint": "в конце",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "017",
+   "exercise": {
+    "id": "p-directions-06",
+    "type": "choice",
+    "prompt": "___ left at the second street.",
+    "options": [
+     "Turn",
+     "Go",
+     "Take"
+    ],
+    "answer": "Turn",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "017",
+   "exercise": {
+    "id": "p-directions-07",
+    "type": "translate",
+    "ru": "Пройди мимо стойки и поверни направо.",
+    "answers": [
+     "Go past the desk and turn right.",
+     "Walk past the desk and turn right."
+    ],
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "017",
+   "exercise": {
+    "id": "p-directions-08",
+    "type": "fix",
+    "sentence": "Go across the door on the left.",
+    "answers": [
+     "Go through the door on the left."
+    ],
+    "explain": "В дверь проходят through.",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "019",
+   "exercise": {
+    "id": "p-directions-09",
+    "type": "choice",
+    "prompt": "Walk ___ the square to the library.",
+    "options": [
+     "across",
+     "along",
+     "opposite"
+    ],
+    "answer": "across",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "019",
+   "exercise": {
+    "id": "p-directions-10",
+    "type": "fill",
+    "prompt": "Take the corridor on the ___.",
+    "answers": [
+     "right",
+     "left"
+    ],
+    "hint": "справа или слева",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "019",
+   "exercise": {
+    "id": "p-directions-11",
+    "type": "choice",
+    "prompt": "The toilets are ___ to the lift.",
+    "options": [
+     "next",
+     "near",
+     "opposite"
+    ],
+    "answer": "next",
+    "tags": [
+     "directions"
+    ]
+   }
+  },
+  {
+   "unit": "020",
+   "exercise": {
+    "id": "p-directions-12",
+    "type": "translate",
+    "ru": "Оставайся внутри и пойдём со мной.",
+    "answers": [
+     "Stay inside and come with me."
+    ],
+    "tags": [
+     "directions"
+    ]
+   }
+  }
+ ]
+}

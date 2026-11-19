@@ -650,3 +650,7 @@ button.chat-photo > img { display: block; width: 100%; max-width: 260px; aspect-
 /* The player's reply in the team chat. */
 .chat-reply { display: flex; flex-direction: column; gap: 8px; margin: 8px 0 8px auto; width: min(100%, 420px); padding: 12px; border: 2px dashed var(--border); border-radius: 18px; }
 .chat-reply-ask { margin: 0; font-weight: 800; font-size: 0.9rem; }
+
+/* The end-of-arc check on the path. */
+.route-arc-check { position: static; margin-top: 12px; background: var(--gold); box-shadow: 0 4px 0 #cd9a00; color: #3a2a00; }
+.route-arc-check.route-head-soon { background: var(--surface); box-shadow: 0 4px 0 var(--border); color: var(--muted); }

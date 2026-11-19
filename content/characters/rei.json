@@ -56,6 +56,18 @@
         "unit": "014"
       },
       "ru": "Отличает постоянный гул от шума, который то стихает, то возвращается."
+    },
+    {
+      "unlock": {
+        "unit": "018"
+      },
+      "ru": "Проверяет разборчивость каждого шага, прежде чем сохранить запись."
+    },
+    {
+      "unlock": {
+        "unit": "020"
+      },
+      "ru": "Подстраивает темп подсказки под того, кто слушает."
     }
   ],
   "memories": [
@@ -156,6 +168,34 @@
       },
       "en": "She listened to your recording twice, and you offered to record another one for her.",
       "ru": "Ты поддержал её желание ещё раз послушать твою запись."
+    },
+    {
+      "unlock": {
+        "unit": "018"
+      },
+      "en": "The first take sounded fine, but the route ended at a locked door.",
+      "ru": "По звуку первый дубль годился, а маршрут упёрся в закрытую дверь."
+    },
+    {
+      "unlock": {
+        "unit": "020"
+      },
+      "en": "She heard you calmly check the room number with Lina.",
+      "ru": "Она слышала, как ты спокойно уточнил номер у Лины."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_rei_017"
+      },
+      "en": "You offered to read the line again while she listened.",
+      "ru": "Ты предложил перечитать строчку, когда Рэй слушает."
+    },
+    {
+      "unlock": {
+        "flag": "flirt_rei_020"
+      },
+      "en": "You answered her joke that your tour would be worth hearing.",
+      "ru": "Ты ответил на её шутку про то, что твою экскурсию стоило бы послушать."
     }
   ],
   "lines": [

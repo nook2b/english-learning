@@ -130,6 +130,10 @@ FEED = [
         ('Подтвердить встречу и прислушаться к фону', ["Just to confirm, we're meeting in the courtyard on Saturday at eleven. I'll listen for background noise.", "Courtyard, Saturday at eleven. I'll check how quiet it is.", "Just to confirm, we're meeting in the courtyard on Saturday at eleven. I'll check the background noise.", "Courtyard, Saturday at eleven. I'll listen for background noise."], [say('rei', 'Right. Tell me what you hear.', 'Да. Скажи, что услышишь.', 'neutral')]),
     ], say('rei', 'Which time did we agree on?', 'На какое время мы договорились?', 'listening'), **{'if': 'u015_slot_sat11'})]),
     ('016', 8, 'После записи', [photo('rei', 'chat_016_recorder', 'Экран рекордера: длина фонового клипа 00:10', 'Ten seconds. Finally.', 'Десять секунд. Наконец-то.')]),
+    ('017', 2, 'Среда, маршрут по плану', [photo('mika', 'chat_017_floorplan', 'План этажа: карандашная линия от главного входа к комнате 17', 'Follow the pencil line.', 'Идите по линии карандашом.'), *voices('017', 2)]),
+    ('018', 8, 'Среда, у серой двери', [photo('mika', 'chat_018_door', 'Закрытая серая дверь с табличкой Closed for repairs', 'This is where the pencil line ends.', 'Вот где заканчивается линия карандашом.'), line('018', 8, 'rei', 'Good take')]),
+    ('019', 2, 'Пятница, проверка от стойки', voices('019', 2)),
+    ('020', 8, 'Среда, после встречи', [line('020', 8, 'mika', 'Lina found seventy'), line('020', 8, 'iris', 'And put the building'), photo('mika', 'chat_020_mugs', 'Четыре разные чашки на столе: жёлтая, серо-синяя, белая и тёмно-зелёная', 'Four mugs, finally.', 'Наконец-то четыре чашки.')]),
 ]
 
 messages = []

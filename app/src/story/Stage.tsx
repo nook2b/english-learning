@@ -7,8 +7,8 @@ import { Gloss, Translation } from '../lesson/Gloss'
 import { SPEAKER_NAMES } from '../lesson/model'
 import { Icon } from '../ui/Icon'
 import { Button, DialogueBox } from '../ui/kit'
-import { castAt, extraAt } from './cast'
-import { PLACES, usePlace } from './places'
+import { castAt, extraAt, placeAt } from './cast'
+import { PLACES, PlaceContext, usePlace } from './places'
 import { hasFigure, riveCanTurn, riveHasFace, turnedPose } from './figures'
 import { RiveFigure } from './HeroineFigure'
 import { useMouth } from '../speech/mouth'
@@ -204,6 +204,7 @@ export function Beat({ setting, lines: all, doneLabel, onDone, chat = false }: {
   useEffect(() => () => stop(), [])
   const last = i === lines.length - 1
   const next = <Button onClick={() => (last ? onDone() : setI(i + 1))}>{last ? doneLabel : 'Дальше'}</Button>
+  const sessionPlace = usePlace()
   if (chat)
     return (
       <div className="beat">
@@ -215,7 +216,9 @@ export function Beat({ setting, lines: all, doneLabel, onDone, chat = false }: {
   return (
     <div className="beat">
       {setting && <p className="muted">{setting}</p>}
-      <Stage cast={castAt(lines, i)} extra={extraAt(lines, i)} speaking={line.speaker} marks={line.mark ? { [line.speaker]: line.mark } : undefined} />
+      <PlaceContext.Provider value={placeAt(lines, i) ?? sessionPlace}>
+        <Stage cast={castAt(lines, i)} extra={extraAt(lines, i)} speaking={line.speaker} marks={line.mark ? { [line.speaker]: line.mark } : undefined} />
+      </PlaceContext.Provider>
       <DialogueBox speaker={SPEAKER_NAMES[line.speaker] || undefined}>
         <LineVoice text={line.text} speaker={line.speaker} expr={line.expr} delivery={line.delivery} />
         <Gloss key={i} text={line.text} />

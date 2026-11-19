@@ -1,0 +1,1024 @@
+{
+  "id": "019",
+  "title": "Переспросить и пройти",
+  "goal": "Уточнить незнакомый ориентир, пересказать путь проще и пройти его.",
+  "focus": "Переспросить и упростить: Do you mean…?, So I go…, right?, Could you say that again more slowly?, What does … mean?; заменить «слова для своих» тем, что видно: цвет, скамейки, лифт.",
+  "outcome": "Команда проверяет обход до комнаты 17, возвращается к стойке и сверяет путь до аудитории 70.",
+  "expressions": [
+    "Do you mean",
+    "So I go",
+    "Could you say that again more slowly",
+    "What does",
+    "on the right",
+    "just after",
+    "across the courtyard",
+    "take the right-hand hall",
+    "next to",
+    "in simpler words",
+    "look for"
+  ],
+  "glossary": [
+    "glass door",
+    "green door",
+    "benches",
+    "lift",
+    "side entrance"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Обход через двор",
+      "intro": "Записка Алекса: обход через двор до комнаты 17 и путь до аудитории 70. Найди, где маршруты расходятся.",
+      "place": "new_building",
+      "frame": {
+        "setting": "Пятница, четыре часа. Алекс встречает вас у главного входа и даёт Мике короткую схему.",
+        "lines": [
+          {
+            "speaker": "alex",
+            "text": "Start here. Everyone can use the courtyard door.",
+            "ru": "Начинайте здесь. Через дверь во двор могут пройти все."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u019-s1-e1",
+          "type": "reading",
+          "title": "Alex's note",
+          "text": "From the main entrance, walk to the information desk. Go through the glass door beside it and cross the courtyard. Look for the green door opposite the benches. That door leads into the Old Building. Follow the corridor until you reach the noticeboard. Room 17 is opposite the board. For Room 70, stay in the New Building. At the information desk, take the corridor on the right. Walk past the lift. Room 70 is the first door on your left after the lift.",
+          "ru": "От главного входа дойди до стойки информации. Пройди через стеклянную дверь рядом с ней и пересекай двор. Ищи зелёную дверь напротив скамеек. Она ведёт в старый корпус. Иди по коридору до доски объявлений. Комната 17 напротив неё. Если ищешь аудиторию 70, оставайся в новом корпусе. У стойки сверни в правый коридор. Пройди мимо лифта. Аудитория 70 — первая дверь слева после лифта.",
+          "questions": [
+            {
+              "prompt": "Which door leads outside?",
+              "options": [
+                "the grey door",
+                "the glass door",
+                "the green door"
+              ],
+              "answer": "the glass door"
+            },
+            {
+              "prompt": "What is opposite the benches?",
+              "options": [
+                "the green door",
+                "a lift",
+                "the desk"
+              ],
+              "answer": "the green door"
+            },
+            {
+              "prompt": "Where do the two walks split?",
+              "options": [
+                "at the desk",
+                "at Room 17",
+                "at the lift"
+              ],
+              "answer": "at the desk"
+            }
+          ],
+          "tags": [
+            "reading",
+            "directions"
+          ]
+        },
+        {
+          "id": "u019-s1-e2",
+          "type": "choice",
+          "prompt": "Go through the glass door and cross the ___.",
+          "options": [
+            "courtyard",
+            "lift",
+            "desk"
+          ],
+          "answer": "courtyard",
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u019-s1-e3",
+          "type": "choice",
+          "prompt": "Room 70 is the first door on your left ___ the lift.",
+          "options": [
+            "after",
+            "before",
+            "opposite"
+          ],
+          "answer": "after",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "After the lift — сразу за лифтом."
+        },
+        {
+          "id": "u019-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "Do you mean…?",
+              "ru": "ты имеешь в виду…?"
+            },
+            {
+              "en": "on the right",
+              "ru": "справа"
+            },
+            {
+              "en": "just after",
+              "ru": "сразу после"
+            },
+            {
+              "en": "across the courtyard",
+              "ru": "через двор"
+            },
+            {
+              "en": "next to",
+              "ru": "рядом с"
+            },
+            {
+              "en": "in simpler words",
+              "ru": "проще говоря"
+            }
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Two routes from one desk. I'll draw them separately.",
+          "ru": "Два маршрута от одной стойки. Нарисую отдельно.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Стеклянная, потом зелёная",
+      "intro": "Голосовые в общем чате: Мика ведёт к 17, Айрис — к 70. Слушай без текста.",
+      "place": "new_building",
+      "exercises": [
+        {
+          "id": "u019-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "Start at the desk. Go through the glass door and walk across the courtyard. The green door is opposite the benches. Go inside and look for the noticeboard. Room 17 is right across from it.",
+          "ru": "Начни от стойки. Пройди через стеклянную дверь и пересекай двор. Зелёная дверь напротив скамеек. Войди и найди доску объявлений. Комната 17 прямо напротив.",
+          "questions": [
+            {
+              "prompt": "Which door comes second?",
+              "options": [
+                "glass",
+                "green",
+                "grey"
+              ],
+              "answer": "green"
+            }
+          ],
+          "tags": [
+            "listening",
+            "directions"
+          ],
+          "context": "Голосовое Мики в чате «Room 17»"
+        },
+        {
+          "id": "u019-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "If you're looking for Room 70 instead, stay inside the New Building. At the desk, take the corridor on the right. Go past the lift and check the first door on your left.",
+          "ru": "Если ищешь аудиторию 70, оставайся в новом корпусе. У стойки сверни в правый коридор. Пройди мимо лифта и проверь первую дверь слева.",
+          "questions": [
+            {
+              "prompt": "What comes just before Room 70?",
+              "options": [
+                "the courtyard",
+                "the lift",
+                "the benches"
+              ],
+              "answer": "the lift"
+            }
+          ],
+          "tags": [
+            "listening",
+            "directions"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Голосовое Айрис в чате «Room 17»"
+        },
+        {
+          "id": "u019-s2-e3",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "The green door is opposite the benches.",
+          "answers": [
+            "The green door is opposite the benches."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u019-s2-e4",
+          "type": "choice",
+          "prompt": "Iris: «Go past the lift and check the first door on your ___.»",
+          "options": [
+            "left",
+            "right",
+            "back"
+          ],
+          "answer": "left",
+          "tags": [
+            "directions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Glass from here. Checks out.",
+          "ru": "Отсюда видно стеклянную дверь. Совпадает.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Ты про эту дверь?",
+      "intro": "Переспросить: Do you mean the glass door? So I go across the courtyard, right? Could you say that again more slowly? What does “link” mean here? Did you say right or left?",
+      "place": "new_building",
+      "frame": {
+        "setting": "Алекс показывает на стеклянную дверь. На схеме две стрелки от одной стойки.",
+        "lines": [
+          {
+            "speaker": "alex",
+            "text": "Ask me if a step doesn't make sense.",
+            "ru": "Спроси, если какой-то шаг непонятен."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u019-s3-e1",
+          "type": "choice",
+          "prompt": "Do you ___ the glass door next to the desk?",
+          "options": [
+            "mean",
+            "say",
+            "think"
+          ],
+          "answer": "mean",
+          "tags": [
+            "function_clarify"
+          ],
+          "explain": "Do you mean…? — ты имеешь в виду…?",
+          "context": "Схема Алекса"
+        },
+        {
+          "id": "u019-s3-e2",
+          "type": "choice",
+          "prompt": "So I go across the courtyard, ___?",
+          "options": [
+            "right",
+            "yes",
+            "OK"
+          ],
+          "answer": "right",
+          "tags": [
+            "function_clarify"
+          ],
+          "explain": "Хвостик right? — проверить, правильно ли понял.",
+          "context": "Схема Алекса"
+        },
+        {
+          "id": "u019-s3-e3",
+          "type": "fill",
+          "prompt": "Could you say the last step again more ___?",
+          "answers": [
+            "slowly"
+          ],
+          "hint": "помедленнее",
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Схема Алекса"
+        },
+        {
+          "id": "u019-s3-e4",
+          "type": "choice",
+          "prompt": "What ___ “link” mean here?",
+          "options": [
+            "does",
+            "is",
+            "do"
+          ],
+          "answer": "does",
+          "tags": [
+            "function_clarify"
+          ],
+          "explain": "What does … mean? — что значит…?",
+          "context": "Схема Алекса"
+        },
+        {
+          "id": "u019-s3-e5",
+          "type": "fill",
+          "prompt": "Is the green door ___ the benches?",
+          "answers": [
+            "opposite"
+          ],
+          "hint": "напротив",
+          "tags": [
+            "place_prepositions"
+          ],
+          "context": "Схема Алекса"
+        },
+        {
+          "id": "u019-s3-e6",
+          "type": "choice",
+          "prompt": "Did you say right ___ left?",
+          "options": [
+            "or",
+            "and",
+            "than"
+          ],
+          "answer": "or",
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Схема Алекса"
+        },
+        {
+          "id": "u019-s3-e7",
+          "type": "fix",
+          "sentence": "What means “link” here?",
+          "answers": [
+            "What does “link” mean here?",
+            "What does link mean here?"
+          ],
+          "tags": [
+            "function_clarify"
+          ],
+          "explain": "Вопрос о значении: What does … mean?",
+          "context": "Схема Алекса"
+        },
+        {
+          "id": "u019-s3-e8",
+          "type": "transform",
+          "instruction": "Переспроси с Do you mean",
+          "sentence": "the green door",
+          "answers": [
+            "Do you mean the green door?"
+          ],
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Схема Алекса"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Good. Ask about one detail at a time.",
+          "ru": "Хорошо. Уточняй по одной детали за раз.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Слова, которые видно",
+      "intro": "Проще говоря: вместо слов для своих — то, что видно. Use the side entrance → Go through the green door. The room faces the board → It is opposite the noticeboard.",
+      "place": "courtyard",
+      "frame": {
+        "setting": "Вы выходите во двор. На двери нет слова «боковая», зато зелёную краску видно через весь двор.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "A colour is easier to spot than an old name.",
+            "ru": "Цвет заметить проще, чем вспомнить старое название.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u019-s4-e1",
+          "type": "choice",
+          "prompt": "Use the side entrance. → Go through the ___ door.",
+          "options": [
+            "green",
+            "grey",
+            "staff"
+          ],
+          "answer": "green",
+          "tags": [
+            "directions"
+          ],
+          "explain": "Видно глазами — цвет двери.",
+          "context": "Проще говоря"
+        },
+        {
+          "id": "u019-s4-e2",
+          "type": "choice",
+          "prompt": "Proceed via the courtyard. → Walk ___ the courtyard.",
+          "options": [
+            "across",
+            "along",
+            "past"
+          ],
+          "answer": "across",
+          "tags": [
+            "directions"
+          ],
+          "explain": "Across — через (двор).",
+          "context": "Проще говоря"
+        },
+        {
+          "id": "u019-s4-e3",
+          "type": "fill",
+          "prompt": "Take the east corridor. → At the desk, go ___.",
+          "answers": [
+            "right"
+          ],
+          "hint": "направо",
+          "tags": [
+            "directions"
+          ],
+          "context": "Проще говоря"
+        },
+        {
+          "id": "u019-s4-e4",
+          "type": "choice",
+          "prompt": "The room is beyond the lift. → Go ___ the lift.",
+          "options": [
+            "past",
+            "through",
+            "opposite"
+          ],
+          "answer": "past",
+          "tags": [
+            "directions"
+          ],
+          "context": "Проще говоря"
+        },
+        {
+          "id": "u019-s4-e5",
+          "type": "fill",
+          "prompt": "The room faces the board. → It is ___ the noticeboard.",
+          "answers": [
+            "opposite"
+          ],
+          "hint": "напротив",
+          "tags": [
+            "place_prepositions"
+          ],
+          "context": "Проще говоря"
+        },
+        {
+          "id": "u019-s4-e6",
+          "type": "choice",
+          "prompt": "Use the local door. → Look for the glass door ___ the desk.",
+          "options": [
+            "by",
+            "until",
+            "since"
+          ],
+          "answer": "by",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "By the desk — у стойки.",
+          "context": "Проще говоря"
+        },
+        {
+          "id": "u019-s4-e7",
+          "type": "sort",
+          "instruction": "Слово для своих или то, что видно?",
+          "categories": [
+            {
+              "id": "insider",
+              "label": "Понятно только своим"
+            },
+            {
+              "id": "visible",
+              "label": "Видно глазами"
+            }
+          ],
+          "items": [
+            {
+              "text": "the side entrance",
+              "category": "insider"
+            },
+            {
+              "text": "the east corridor",
+              "category": "insider"
+            },
+            {
+              "text": "the usual door",
+              "category": "insider"
+            },
+            {
+              "text": "the green door",
+              "category": "visible"
+            },
+            {
+              "text": "the glass door by the desk",
+              "category": "visible"
+            },
+            {
+              "text": "the door opposite the benches",
+              "category": "visible"
+            }
+          ],
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u019-s4-e8",
+          "type": "transform",
+          "instruction": "Скажи проще, через то, что видно",
+          "sentence": "Proceed via the courtyard.",
+          "answers": [
+            "Walk across the courtyard.",
+            "Go across the courtyard."
+          ],
+          "tags": [
+            "directions"
+          ],
+          "context": "Проще говоря"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Green door. No glossary.",
+          "ru": "Зелёная дверь. Словарь не нужен.",
+          "expr": "smirk"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Автор на месте",
+      "intro": "Айрис замечает, что ты прошёл весь путь сам. Ответь, как хочешь.",
+      "place": "courtyard",
+      "exercises": [
+        {
+          "id": "u019-s5-e1",
+          "type": "scene",
+          "setting": "Айрис ждёт у скамейки, пока ты сверяешь последний ориентир. У зелёной двери она протягивает тебе тетрадь.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "You walked it. Most writers stop at the desk. I rather like your method.",
+              "ru": "Ты прошёл весь путь. Большинство авторов дальше стола не встают. Мне нравится твой метод.",
+              "expr": "dry_smile"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I'd walk it again with you.",
+                "I like your company on these walks."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll remember that for the next draft.",
+                "ru": "Вспомню об этом, когда будет следующий черновик.",
+                "expr": "dry_smile"
+              },
+              "flag": "flirt_iris_019"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "My shoes did the editing.",
+                "Should my shoes get a credit?"
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Only if they can sign the page.",
+                "ru": "Только если они смогут её подписать.",
+                "expr": "dry_smile"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's use the colour in the final text.",
+                "We should name the green door."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Yes. It's the clearest clue here.",
+                "ru": "Да. Это самый понятный ориентир.",
+                "expr": "thinking"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Could you say that again?",
+            "ru": "Можешь повторить?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Пеший редактор"
+        },
+        {
+          "id": "u019-s5-e2",
+          "type": "translate",
+          "ru": "Ты имеешь в виду стеклянную дверь?",
+          "answers": [
+            "Do you mean the glass door?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u019-s5-e3",
+          "type": "translate",
+          "ru": "Значит, я иду через двор, верно?",
+          "answers": [
+            "So I go across the courtyard, right?",
+            "So I walk across the courtyard, right?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u019-s5-e4",
+          "type": "translate",
+          "ru": "Можешь повторить помедленнее?",
+          "answers": [
+            "Could you say that again more slowly?",
+            "Can you say that again more slowly?",
+            "Could you repeat that more slowly?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u019-s5-e5",
+          "type": "translate",
+          "ru": "Зелёная дверь напротив скамеек.",
+          "answers": [
+            "The green door is opposite the benches."
+          ],
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u019-s5-e6",
+          "type": "write",
+          "situation": "Объясни путь через двор проще, через то, что видно.",
+          "answers": [
+            "Go through the glass door and cross the courtyard. The green door is opposite the benches.",
+            "Walk across the courtyard to the green door.",
+            "Go through the glass door by the desk. Then look for the green door opposite the benches."
+          ],
+          "tags": [
+            "directions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Now check where this door leads.",
+          "ru": "Теперь проверим, куда ведёт дверь.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: повтори своими словами",
+      "intro": "Повтори своими словами, как вы пришли к двери 17.",
+      "place": "old_corridor",
+      "frame": {
+        "setting": "Зелёная дверь открывается в старый коридор. Рэй оглядывается, пока ты сверяешь шаги.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Tell me what we just did.",
+            "ru": "Скажи, как мы сюда пришли.",
+            "expr": "listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u019-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Do you mean the door opposite the benches?",
+          "answers": [
+            "Do you mean the door opposite the benches?"
+          ],
+          "tags": [
+            "speaking",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u019-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "So we go through the green door, right?",
+          "answers": [
+            "So we go through the green door, right?"
+          ],
+          "tags": [
+            "speaking",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u019-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Keep going until you see the noticeboard.",
+          "answers": [
+            "Keep going until you see the noticeboard."
+          ],
+          "tags": [
+            "speaking",
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u019-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Room 17 is opposite the noticeboard.",
+          "answers": [
+            "Room 17 is opposite the noticeboard."
+          ],
+          "tags": [
+            "speaking",
+            "place_prepositions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Yep. Door seventeen.",
+          "ru": "Да. Дверь семнадцать.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: два адреса",
+      "intro": "Быстрый круг: два адреса от одной стойки.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика кладёт рядом две карточки с номерами. Ты по очереди называешь поворот от стойки.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Seventeen and seventy. Same start. Then what?",
+            "ru": "Семнадцать и семьдесят. Начало одинаковое. Что дальше?",
+            "expr": "happy"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u019-s7-e1",
+          "type": "write",
+          "situation": "К комнате 17: первый шаг от стойки.",
+          "answers": [
+            "Go through the glass door and cross the courtyard.",
+            "Go through the glass door and walk across the courtyard."
+          ],
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u019-s7-e2",
+          "type": "write",
+          "situation": "К аудитории 70: первый шаг от стойки.",
+          "answers": [
+            "Stay inside and take the corridor on the right.",
+            "Stay inside and take the right-hand hall.",
+            "At the desk, take the corridor on the right."
+          ],
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u019-s7-e3",
+          "type": "write",
+          "situation": "Не расслышал номер — переспроси.",
+          "answers": [
+            "Could you say the number again more slowly?",
+            "Could you say that number again more slowly?",
+            "Did you say seventeen or seventy?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u019-s7-e4",
+          "type": "choice",
+          "prompt": "Room 70 is ___ past the lift.",
+          "options": [
+            "just",
+            "only",
+            "until"
+          ],
+          "answer": "just",
+          "tags": [
+            "place_prepositions"
+          ],
+          "explain": "Just past the lift — сразу за лифтом."
+        },
+        {
+          "id": "u019-s7-e5",
+          "type": "choice",
+          "prompt": "Look ___ the green door.",
+          "options": [
+            "for",
+            "at the end",
+            "past"
+          ],
+          "answer": "for",
+          "tags": [
+            "directions"
+          ],
+          "explain": "Look for — ищи."
+        },
+        {
+          "id": "u019-s7-e6",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "Take the corridor on the right.",
+          "answers": [
+            "Take the corridor on the right."
+          ],
+          "tags": [
+            "dictation",
+            "directions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Let's check seventy before we call it done.",
+          "ru": "Прежде чем закончить, проверим семидесятую.",
+          "expr": "phone/focused"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Последние ориентиры",
+      "role": "mission",
+      "intro": "Миссия: выбрать ориентир для карточки 17 и сверить последний шаг до 70.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u019-s8-e1",
+          "type": "scene",
+          "setting": "Айрис держит чистую карточку у двери комнаты 17. Из коридора видна доска объявлений.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "Which landmark would you put on the card first?",
+              "ru": "Какой ориентир первым поставить на карточке?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Выделить зелёную дверь",
+              "answers": [
+                "Look for the green door across the courtyard.",
+                "Cross the courtyard to the green door."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll put the colour on the card.",
+                "ru": "Укажу цвет на карточке.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u019_anchor_green"
+            },
+            {
+              "label": "Выделить скамейки",
+              "answers": [
+                "Find the benches. The door is opposite them.",
+                "The door is across from the benches."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Then the benches go first.",
+                "ru": "Тогда сначала скамейки.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u019_anchor_benches"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "What can someone look for in the courtyard?",
+            "ru": "Что можно искать во дворе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "directions"
+          ],
+          "after": [
+            {
+              "speaker": "narrator",
+              "text": "Вы возвращаетесь к стойке и идёте направо. Алекс ждёт у лифта. На первой двери слева после него виден номер 70."
+            }
+          ],
+          "place": "new_corridor",
+          "context": "Ориентир для комнаты 17"
+        },
+        {
+          "id": "u019-s8-e2",
+          "type": "scene",
+          "setting": "Вы возвращаетесь к стойке и идёте направо. Алекс ждёт у лифта. На первой двери слева после него виден номер 70.",
+          "lines": [
+            {
+              "speaker": "alex",
+              "text": "Here's seventy. How would you explain the last step?",
+              "ru": "Вот семидесятая. Как бы ты объяснил последний шаг?"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Уточнить ориентир",
+              "answers": [
+                "So I go past the lift, right?",
+                "Do you mean the door just after the lift?"
+              ],
+              "reaction": {
+                "speaker": "alex",
+                "text": "Yes. The first door on your left.",
+                "ru": "Да. Первая дверь слева."
+              }
+            },
+            {
+              "label": "Пересказать весь шаг",
+              "answers": [
+                "Go past the lift. Room seventy is the first door on your left.",
+                "After the lift, look for seventy on the left."
+              ],
+              "reaction": {
+                "speaker": "alex",
+                "text": "That's it. You can see the number from here.",
+                "ru": "Именно. Номер уже отсюда видно."
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "alex",
+            "text": "Which side is the door on?",
+            "ru": "С какой стороны дверь?"
+          },
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Сверить последний шаг до 70"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Both walks checked. I'll keep them on separate cards.",
+          "ru": "Оба пути проверили. Оставлю их на разных карточках.",
+          "expr": "notebook/focused"
+        }
+      ]
+    }
+  ]
+}

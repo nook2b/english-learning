@@ -867,6 +867,122 @@
    "about": "Экран рекордера: длина фонового клипа 00:10",
    "caption": "Ten seconds. Finally.",
    "captionRu": "Десять секунд. Наконец-то."
+  },
+  {
+   "id": "room17-017-2-1",
+   "unlock": {
+    "unit": "017",
+    "session": 2
+   },
+   "day": "Среда, маршрут по плану",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_017_floorplan",
+   "about": "План этажа: карандашная линия от главного входа к комнате 17",
+   "caption": "Follow the pencil line.",
+   "captionRu": "Идите по линии карандашом."
+  },
+  {
+   "id": "room17-017-2-2",
+   "unlock": {
+    "unit": "017",
+    "session": 2
+   },
+   "day": "Среда, маршрут по плану",
+   "from": "mika",
+   "type": "voice",
+   "text": "There are two noticeboards on the plan. The first one is near the desk. The second one is in the old building, opposite our room. I'll mark them with different colours.",
+   "ru": "На плане две доски объявлений. Первая возле стойки. Вторая в старом корпусе, напротив нашей комнаты. Я отмечу их разными цветами.",
+   "delivery": "[thoughtfully]"
+  },
+  {
+   "id": "room17-018-8-1",
+   "unlock": {
+    "unit": "018",
+    "session": 8
+   },
+   "day": "Среда, у серой двери",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_018_door",
+   "about": "Закрытая серая дверь с табличкой Closed for repairs",
+   "caption": "This is where the pencil line ends.",
+   "captionRu": "Вот где заканчивается линия карандашом."
+  },
+  {
+   "id": "room17-018-8-2",
+   "unlock": {
+    "unit": "018",
+    "session": 8
+   },
+   "day": "Среда, у серой двери",
+   "from": "rei",
+   "type": "text",
+   "text": "Good take. Bad door.",
+   "ru": "Дубль хороший. Дверь подвела."
+  },
+  {
+   "id": "room17-019-2-1",
+   "unlock": {
+    "unit": "019",
+    "session": 2
+   },
+   "day": "Пятница, проверка от стойки",
+   "from": "mika",
+   "type": "voice",
+   "text": "Start at the desk. Go through the glass door and walk across the courtyard. The green door is opposite the benches. Go inside and look for the noticeboard. Room 17 is right across from it.",
+   "ru": "Начни от стойки. Пройди через стеклянную дверь и пересекай двор. Зелёная дверь напротив скамеек. Войди и найди доску объявлений. Комната 17 прямо напротив."
+  },
+  {
+   "id": "room17-019-2-2",
+   "unlock": {
+    "unit": "019",
+    "session": 2
+   },
+   "day": "Пятница, проверка от стойки",
+   "from": "iris",
+   "type": "voice",
+   "text": "If you're looking for Room 70 instead, stay inside the New Building. At the desk, take the corridor on the right. Go past the lift and check the first door on your left.",
+   "ru": "Если ищешь аудиторию 70, оставайся в новом корпусе. У стойки сверни в правый коридор. Пройди мимо лифта и проверь первую дверь слева.",
+   "delivery": "[quietly, focused]"
+  },
+  {
+   "id": "room17-020-8-1",
+   "unlock": {
+    "unit": "020",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "mika",
+   "type": "text",
+   "text": "Lina found seventy. Let's add that card to the pilot.",
+   "ru": "Лина нашла семидесятую. Добавим эту карточку в пилот."
+  },
+  {
+   "id": "room17-020-8-2",
+   "unlock": {
+    "unit": "020",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "iris",
+   "type": "text",
+   "text": "And put the building before the number.",
+   "ru": "И укажем корпус перед номером."
+  },
+  {
+   "id": "room17-020-8-3",
+   "unlock": {
+    "unit": "020",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_020_mugs",
+   "about": "Четыре разные чашки на столе: жёлтая, серо-синяя, белая и тёмно-зелёная",
+   "caption": "Four mugs, finally.",
+   "captionRu": "Наконец-то четыре чашки."
   }
  ]
 }

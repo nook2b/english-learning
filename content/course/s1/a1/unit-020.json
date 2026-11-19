@@ -1,0 +1,1114 @@
+{
+  "id": "020",
+  "title": "Провести новичка",
+  "goal": "Уточнить, куда человек идёт, дать простое указание и убедиться, что он его понял.",
+  "focus": "Провести новичка: уточнить, куда человек идёт (номер и корпус), дать по одному простому шагу и проверить, что он понял. В занятии 7 — проверка модуля 017–020.",
+  "outcome": "Лина находит аудиторию 70. Пилот гида готов к внутренней проверке. Команда находит старый архив, а у игрока появляется своё место за столом и обязанности по проверке маршрутов.",
+  "expressions": [
+    "Are you looking for",
+    "Did you say seventeen or seventy",
+    "Which building",
+    "Could you show me the message",
+    "I'll show you",
+    "come with me",
+    "stay inside",
+    "just past the lift",
+    "on your left",
+    "So I turn right, correct",
+    "you're here"
+  ],
+  "glossary": [
+    "welcome meeting",
+    "student card",
+    "welcome team",
+    "storeroom",
+    "pilot"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Сообщение на экране",
+      "intro": "Письмо о вводной встрече на телефоне Лины. Найди аудиторию, время и что взять с собой.",
+      "place": "new_building",
+      "frame": {
+        "setting": "Среда, час дня. Возле главного входа девушка поворачивает телефон к свету. На экране письмо о вводной встрече.",
+        "lines": [
+          {
+            "speaker": "lina",
+            "text": "Sorry. Can you help me? I need this room.",
+            "ru": "Извини. Можешь помочь? Мне нужна эта аудитория.",
+            "delivery": "[slowly]"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u020-s1-e1",
+          "type": "reading",
+          "title": "Welcome meeting: travel note",
+          "text": "Your welcome meeting starts at half past one on Wednesday. Please come to Room 70 in the New Building. From the main entrance, walk to the information desk. Stay inside and take the corridor on the right. Walk past the lift and look for the first door on your left. The number is on the door. Bring your student card to the meeting. If you are early, wait on the bench near the information desk. Someone from the welcome team will open the room ten minutes before the meeting.",
+          "ru": "Вводная встреча начнётся в среду в половине второго. Приходите в аудиторию 70 нового корпуса. От главного входа дойдите до стойки информации. Оставайтесь внутри и сверните в правый коридор. Пройдите мимо лифта и найдите первую дверь слева. Номер указан на двери. Возьмите студенческий билет. Если придёте раньше, подождите на скамейке у стойки информации. Кто-нибудь из организаторов откроет аудиторию за десять минут до встречи.",
+          "questions": [
+            {
+              "prompt": "Where is the meeting?",
+              "options": [
+                "Room 17",
+                "Room 70",
+                "outside"
+              ],
+              "answer": "Room 70"
+            },
+            {
+              "prompt": "When does it start?",
+              "options": [
+                "1:00",
+                "1:20",
+                "1:30"
+              ],
+              "answer": "1:30"
+            },
+            {
+              "prompt": "What should Lina bring?",
+              "options": [
+                "a mug",
+                "a student card",
+                "a notebook"
+              ],
+              "answer": "a student card"
+            }
+          ],
+          "tags": [
+            "reading",
+            "directions"
+          ]
+        },
+        {
+          "id": "u020-s1-e2",
+          "type": "choice",
+          "prompt": "Stay inside and take the corridor ___ the right.",
+          "options": [
+            "on",
+            "in",
+            "at"
+          ],
+          "answer": "on",
+          "tags": [
+            "directions"
+          ],
+          "explain": "On the right — справа."
+        },
+        {
+          "id": "u020-s1-e3",
+          "type": "choice",
+          "prompt": "Bring your student card ___ the meeting.",
+          "options": [
+            "to",
+            "at",
+            "for"
+          ],
+          "answer": "to",
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u020-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "Are you looking for…?",
+              "ru": "ты ищешь…?"
+            },
+            {
+              "en": "Which building?",
+              "ru": "какой корпус?"
+            },
+            {
+              "en": "I'll show you",
+              "ru": "я покажу"
+            },
+            {
+              "en": "come with me",
+              "ru": "пойдём со мной"
+            },
+            {
+              "en": "just past the lift",
+              "ru": "сразу за лифтом"
+            },
+            {
+              "en": "on your left",
+              "ru": "слева от тебя"
+            }
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "lina",
+          "text": "Thank you. I only got here today.",
+          "ru": "Спасибо. Я только сегодня приехала.",
+          "delivery": "[slowly]"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Семнадцать или семьдесят",
+      "intro": "Сообщение для новых студентов и подсказка Айрис. Слушай: какой номер и что проверить после него.",
+      "place": "new_building",
+      "exercises": [
+        {
+          "id": "u020-s2-e1",
+          "type": "listening",
+          "speaker": "announcer",
+          "audio": "This is a message for new students. Your welcome meeting is in Room seventy, that's seven zero, in the New Building. Please come at half past one and bring your student card.",
+          "ru": "Это сообщение для новых студентов. Вводная встреча пройдёт в аудитории семьдесят, семь-ноль, в новом корпусе. Приходите в половине второго и возьмите студенческий билет.",
+          "questions": [
+            {
+              "prompt": "What number do you hear?",
+              "options": [
+                "17",
+                "70",
+                "77"
+              ],
+              "answer": "70"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_clarify"
+          ],
+          "context": "Сообщение для новых студентов"
+        },
+        {
+          "id": "u020-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "Room seventeen is where we work. Room seventy is where the welcome meeting is. They sound close, but they're in different buildings. Ask for the number, then check the building too.",
+          "ru": "В комнате семнадцать мы работаем. В аудитории семьдесят вводная встреча. Номера звучат похоже, но корпуса разные. Уточни номер, а потом проверь корпус.",
+          "questions": [
+            {
+              "prompt": "What should you check after the number?",
+              "options": [
+                "the time",
+                "the building",
+                "the colour"
+              ],
+              "answer": "the building"
+            }
+          ],
+          "tags": [
+            "listening",
+            "function_clarify"
+          ],
+          "context": "Айрис у стойки"
+        },
+        {
+          "id": "u020-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "Did you say seventeen or seventy?",
+          "answers": [
+            "Did you say seventeen or seventy?"
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u020-s2-e4",
+          "type": "choice",
+          "prompt": "Iris: «Ask for the number, then check the ___ too.»",
+          "options": [
+            "building",
+            "time",
+            "colour"
+          ],
+          "answer": "building",
+          "tags": [
+            "function_clarify"
+          ],
+          "explain": "Сначала номер, потом корпус."
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "lina",
+          "text": "Yes. Seven zero.",
+          "ru": "Да. Семь-ноль.",
+          "delivery": "[slowly]"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Один шаг за раз",
+      "intro": "По одному шагу: First, walk to the information desk. Stay inside. Then take the corridor on the right. Keep going until you see the lift. Finally, check the number on the door.",
+      "place": "new_building",
+      "frame": {
+        "setting": "У стойки Лина поглядывает то на стеклянную дверь, то на коридор справа.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Start with where she is now.",
+            "ru": "Начни с того места, где она сейчас.",
+            "expr": "thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u020-s3-e1",
+          "type": "choice",
+          "prompt": "___, walk to the information desk.",
+          "options": [
+            "First",
+            "Finally",
+            "Until"
+          ],
+          "answer": "First",
+          "tags": [
+            "sequencing"
+          ],
+          "context": "Шаги для Лины"
+        },
+        {
+          "id": "u020-s3-e2",
+          "type": "fill",
+          "prompt": "Stay ___ the New Building.",
+          "answers": [
+            "inside",
+            "in"
+          ],
+          "hint": "внутри",
+          "tags": [
+            "directions"
+          ],
+          "context": "Шаги для Лины"
+        },
+        {
+          "id": "u020-s3-e3",
+          "type": "choice",
+          "prompt": "Then take the corridor ___ the right.",
+          "options": [
+            "on",
+            "at",
+            "to"
+          ],
+          "answer": "on",
+          "tags": [
+            "directions"
+          ],
+          "context": "Шаги для Лины"
+        },
+        {
+          "id": "u020-s3-e4",
+          "type": "choice",
+          "prompt": "Keep going ___ you see the lift.",
+          "options": [
+            "until",
+            "as soon as",
+            "since"
+          ],
+          "answer": "until",
+          "tags": [
+            "time_clauses"
+          ],
+          "context": "Шаги для Лины"
+        },
+        {
+          "id": "u020-s3-e5",
+          "type": "fill",
+          "prompt": "Go ___ it and look left.",
+          "answers": [
+            "past"
+          ],
+          "hint": "мимо",
+          "tags": [
+            "directions"
+          ],
+          "context": "Шаги для Лины"
+        },
+        {
+          "id": "u020-s3-e6",
+          "type": "choice",
+          "prompt": "___, check the number on the door.",
+          "options": [
+            "Finally",
+            "Then",
+            "First"
+          ],
+          "answer": "Finally",
+          "tags": [
+            "sequencing"
+          ],
+          "context": "Шаги для Лины"
+        },
+        {
+          "id": "u020-s3-e7",
+          "type": "fix",
+          "sentence": "Keep going until you will see the lift.",
+          "answers": [
+            "Keep going until you see the lift."
+          ],
+          "tags": [
+            "time_clauses"
+          ],
+          "explain": "После until — без will.",
+          "context": "Шаги для Лины"
+        },
+        {
+          "id": "u020-s3-e8",
+          "type": "sort",
+          "instruction": "Расставь шаги по порядку: это начало или конец пути?",
+          "categories": [
+            {
+              "id": "start",
+              "label": "Начало"
+            },
+            {
+              "id": "end",
+              "label": "Конец"
+            }
+          ],
+          "items": [
+            {
+              "text": "Walk to the information desk.",
+              "category": "start"
+            },
+            {
+              "text": "Stay inside the New Building.",
+              "category": "start"
+            },
+            {
+              "text": "Take the corridor on the right.",
+              "category": "start"
+            },
+            {
+              "text": "Go past the lift.",
+              "category": "end"
+            },
+            {
+              "text": "Look left.",
+              "category": "end"
+            },
+            {
+              "text": "Check the number on the door.",
+              "category": "end"
+            }
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "That gives her something to look for at every turn.",
+          "ru": "Теперь на каждом повороте есть что искать глазами.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Перепроверить главное",
+      "intro": "Перепроверить главное: Are you looking for Room 70? Did you say seventeen or seventy? Do you mean the New Building? So I turn right at the desk, correct?",
+      "place": "new_building",
+      "frame": {
+        "setting": "Рэй показывает тебе две карточки. На одной 17, на другой 70.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Number first. Then building.",
+            "ru": "Сначала номер. Потом корпус.",
+            "expr": "listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u020-s4-e1",
+          "type": "choice",
+          "prompt": "Are you looking ___ Room 70?",
+          "options": [
+            "for",
+            "at",
+            "to"
+          ],
+          "answer": "for",
+          "tags": [
+            "function_clarify"
+          ],
+          "explain": "Look for — искать.",
+          "context": "Карточки 17 и 70"
+        },
+        {
+          "id": "u020-s4-e2",
+          "type": "fill",
+          "prompt": "Could you ___ me the number?",
+          "answers": [
+            "show"
+          ],
+          "hint": "показать",
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Карточки 17 и 70"
+        },
+        {
+          "id": "u020-s4-e3",
+          "type": "choice",
+          "prompt": "Do you ___ the New Building?",
+          "options": [
+            "mean",
+            "say",
+            "think"
+          ],
+          "answer": "mean",
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Карточки 17 и 70"
+        },
+        {
+          "id": "u020-s4-e4",
+          "type": "fill",
+          "prompt": "Could you say the number more ___?",
+          "answers": [
+            "slowly"
+          ],
+          "hint": "помедленнее",
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Карточки 17 и 70"
+        },
+        {
+          "id": "u020-s4-e5",
+          "type": "choice",
+          "prompt": "So I turn right at the desk, ___?",
+          "options": [
+            "correct",
+            "yes",
+            "true"
+          ],
+          "answer": "correct",
+          "tags": [
+            "function_clarify"
+          ],
+          "explain": "Хвостик correct? — «верно?»",
+          "context": "Карточки 17 и 70"
+        },
+        {
+          "id": "u020-s4-e6",
+          "type": "choice",
+          "prompt": "___ you see the lift from here?",
+          "options": [
+            "Can",
+            "Do",
+            "Are"
+          ],
+          "answer": "Can",
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Карточки 17 и 70"
+        },
+        {
+          "id": "u020-s4-e7",
+          "type": "fix",
+          "sentence": "Did you said seventeen or seventy?",
+          "answers": [
+            "Did you say seventeen or seventy?"
+          ],
+          "tags": [
+            "function_clarify"
+          ],
+          "explain": "После did — глагол без -ed: did you say.",
+          "context": "Карточки 17 и 70"
+        },
+        {
+          "id": "u020-s4-e8",
+          "type": "transform",
+          "instruction": "Переспроси о номере: начни с Did you say",
+          "sentence": "seventeen or seventy",
+          "answers": [
+            "Did you say seventeen or seventy?"
+          ],
+          "tags": [
+            "function_clarify"
+          ],
+          "context": "Карточки 17 и 70"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Good. Now ask her.",
+          "ru": "Хорошо. Теперь спроси её.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Слышно с первого раза",
+      "intro": "Рэй слушает, как ты объясняешь дорогу Лине. Ответь, как хочешь.",
+      "place": "new_building",
+      "exercises": [
+        {
+          "id": "u020-s5-e1",
+          "type": "scene",
+          "setting": "Лина убирает телефон и повторяет «seven zero». Рэй чуть отступает от стойки, освобождая проход.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "Good pace. I'd listen to you give directions.",
+              "ru": "Хороший темп. Я бы послушала, как ты объясняешь дорогу.",
+              "expr": "smirk"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I'll give you the scenic route sometime.",
+                "You can listen any time."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Might take you up on that.",
+                "ru": "Могу и воспользоваться.",
+                "expr": "smirk"
+              },
+              "flag": "flirt_rei_020"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "My tours have exactly one lift.",
+                "The lift is the main attraction."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Five stars for the lift.",
+                "ru": "Пять звёзд лифту.",
+                "expr": "smirk"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "I'll keep the next step short.",
+                "Let's give her one turn at a time."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Good. Right from the desk.",
+                "ru": "Хорошо. От стойки направо.",
+                "expr": "focused"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Could you repeat that?",
+            "ru": "Можешь повторить?",
+            "expr": "listening"
+          },
+          "tags": [
+            "directions"
+          ],
+          "context": "Темп разговора"
+        },
+        {
+          "id": "u020-s5-e2",
+          "type": "translate",
+          "ru": "Ты ищешь аудиторию 70?",
+          "answers": [
+            "Are you looking for Room 70?",
+            "Are you looking for room seventy?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u020-s5-e3",
+          "type": "translate",
+          "ru": "Оставайся внутри и пойдём со мной.",
+          "answers": [
+            "Stay inside and come with me."
+          ],
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u020-s5-e4",
+          "type": "translate",
+          "ru": "Семидесятая сразу за лифтом, слева.",
+          "answers": [
+            "Room 70 is just past the lift, on your left.",
+            "Room seventy is just past the lift, on your left."
+          ],
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "u020-s5-e5",
+          "type": "translate",
+          "ru": "Ты сказала «семнадцать» или «семьдесят»?",
+          "answers": [
+            "Did you say seventeen or seventy?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u020-s5-e6",
+          "type": "write",
+          "situation": "Уточни у новичка номер и корпус и предложи показать дорогу.",
+          "answers": [
+            "Did you say seventeen or seventy? Is it in the New Building? I'll show you.",
+            "Are you looking for Room 70 in the New Building? Come with me.",
+            "Is it Room seventy, seven zero? Stay inside and come with me."
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "She's ready when you are.",
+          "ru": "Она готова идти.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: показать дорогу",
+      "intro": "Скажи вслух, как дойти до аудитории 70: коротко, с жестом на каждый поворот.",
+      "place": "new_building",
+      "frame": {
+        "setting": "Лина кладёт телефон на скамейку, чтобы достать студенческий билет. Ты у стойки, откуда видны правый коридор и стеклянная дверь.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Point to the turn as you say it.",
+            "ru": "Покажи поворот, пока объясняешь.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u020-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Do you mean Room seventy, seven zero?",
+          "answers": [
+            "Do you mean Room seventy, seven zero?"
+          ],
+          "tags": [
+            "speaking",
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u020-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Stay inside and come with me.",
+          "answers": [
+            "Stay inside and come with me."
+          ],
+          "tags": [
+            "speaking",
+            "directions"
+          ]
+        },
+        {
+          "id": "u020-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "At the desk, take the corridor on the right.",
+          "answers": [
+            "At the desk, take the corridor on the right."
+          ],
+          "tags": [
+            "speaking",
+            "directions"
+          ]
+        },
+        {
+          "id": "u020-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "iris",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Room seventy is just past the lift, on your left.",
+          "answers": [
+            "Room seventy is just past the lift, on your left."
+          ],
+          "tags": [
+            "speaking",
+            "directions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Easy to follow. I could put that on a card.",
+          "ru": "Понятно, куда идти. Можно записать на карточку.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Проверка модуля: керамическая мастерская",
+      "intro": "Проверка модуля на новом материале: маршрут, сигнал «до какого момента», пропущенный шаг и переспрос номера.",
+      "place": "new_building",
+      "frame": {
+        "setting": "Айрис переворачивает карточку. На обороте нарисован незнакомый план с двумя входами.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Try a different map before we go.",
+            "ru": "Перед выходом попробуй на другой карте.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u020-s7-e1",
+          "type": "write",
+          "situation": "Другой центр, другой план. Вымышленный центр керамики: мастерская 24. От входа с синим навесом идти мимо кассы, затем направо. В конце коридора — стойка с фартуками, мастерская напротив неё. Служебная памятка отсылает к «обычной лестнице». Гость расслышал 42. Дай гостю первые два шага.",
+          "answers": [
+            "First, go past the ticket desk. Then turn right.",
+            "Go past the ticket desk and take the corridor on the right.",
+            "First, go past the ticket desk. Then take the corridor on the right."
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u020-s7-e2",
+          "type": "write",
+          "situation": "Скажи, когда остановиться.",
+          "answers": [
+            "Keep going until you see the aprons.",
+            "Walk to the end of the corridor, where the aprons are.",
+            "Keep going until you reach the aprons."
+          ],
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u020-s7-e3",
+          "type": "write",
+          "situation": "Уточни пропущенный шаг в памятке.",
+          "answers": [
+            "Which stairs does “the usual stairs” mean?",
+            "Which stairs are “the usual stairs”?",
+            "Where are the stairs in the note?"
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u020-s7-e4",
+          "type": "write",
+          "situation": "Переспроси номер и назови последний ориентир.",
+          "answers": [
+            "Did you say twenty-four or forty-two? Room twenty-four is opposite the apron rack.",
+            "It is two four, right? The room is across from the aprons.",
+            "Did you say twenty-four or forty-two? It's opposite the aprons."
+          ],
+          "tags": [
+            "function_clarify"
+          ]
+        },
+        {
+          "id": "u020-s7-e5",
+          "type": "choice",
+          "prompt": "The workshop is ___ the apron rack.",
+          "options": [
+            "opposite",
+            "through",
+            "along"
+          ],
+          "answer": "opposite",
+          "tags": [
+            "place_prepositions"
+          ]
+        },
+        {
+          "id": "u020-s7-e6",
+          "type": "choice",
+          "prompt": "Wait at the desk ___ the class starts.",
+          "options": [
+            "until",
+            "as soon as",
+            "since"
+          ],
+          "answer": "until",
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u020-s7-e7",
+          "type": "choice",
+          "prompt": "___ you see the aprons, stop.",
+          "options": [
+            "As soon as",
+            "Until",
+            "During"
+          ],
+          "answer": "As soon as",
+          "tags": [
+            "time_clauses"
+          ]
+        },
+        {
+          "id": "u020-s7-e8",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "Room twenty-four is opposite the apron rack.",
+          "answers": [
+            "Room twenty-four is opposite the apron rack."
+          ],
+          "tags": [
+            "dictation",
+            "place_prepositions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "That'll get someone to the right room.",
+          "ru": "Так человек дойдёт до нужной двери.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Правильный кабинет",
+      "role": "mission",
+      "intro": "Миссия: проводить Лину до аудитории 70 — и вернуться в комнату 17.",
+      "place": "new_building",
+      "exercises": [
+        {
+          "id": "u020-s8-e1",
+          "type": "scene",
+          "setting": "Лина снова смотрит на две двери у стойки. Часы над входом показывают 13:20.",
+          "lines": [
+            {
+              "speaker": "lina",
+              "text": "Do I go outside?",
+              "ru": "Мне на улицу?",
+              "delivery": "[slowly]"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Предложить показать путь",
+              "answers": [
+                "Stay inside. Come with me. We'll go right at the desk.",
+                "I'll show you. First, take the hall on the right."
+              ],
+              "reaction": {
+                "speaker": "lina",
+                "text": "Thank you. I'll follow you.",
+                "ru": "Спасибо. Пойду за тобой.",
+                "delivery": "[slowly]"
+              },
+              "flag": "u020_lina_show"
+            },
+            {
+              "label": "Дать ориентир и пойти вместе",
+              "answers": [
+                "Stay here inside. We go right and past the lift. Let's go together.",
+                "Take the right-hand hall and go past the lift. I'll walk with you."
+              ],
+              "reaction": {
+                "speaker": "lina",
+                "text": "Right, then past the lift. I got it.",
+                "ru": "Направо, потом мимо лифта. Поняла.",
+                "delivery": "[slowly]"
+              },
+              "flag": "u020_lina_landmark"
+            }
+          ],
+          "clarify": {
+            "speaker": "lina",
+            "text": "Sorry. Right or left at the desk?",
+            "ru": "Прости. У стойки направо или налево?",
+            "delivery": "[slowly]"
+          },
+          "tags": [
+            "directions"
+          ],
+          "after": [
+            {
+              "speaker": "narrator",
+              "text": "Вы проходите лифт. Ты показываешь номер 70 слева. Лина сверяет его с сообщением. Дверь уже приоткрыта, внутри расставляют стулья.",
+              "place": "new_corridor"
+            },
+            {
+              "speaker": "lina",
+              "text": "Seventy. This is it. Thanks for coming with me.",
+              "ru": "Семьдесят. Это здесь. Спасибо, что проводил.",
+              "delivery": "[slowly]"
+            },
+            {
+              "speaker": "narrator",
+              "text": "Вы возвращаетесь в старый корпус за планом, который оставили в комнате 17. У соседней кладовой Алекс меняет держатель таблички. Через стекло видны коробки с надписью «Before You Go».",
+              "place": "archive"
+            },
+            {
+              "speaker": "alex",
+              "text": "Boxes from the old radio team. I'll check who has the key.",
+              "ru": "Коробки старой радиоредакции. Узнаю, у кого ключ."
+            },
+            {
+              "speaker": "iris",
+              "text": "I've seen that title on our old map.",
+              "ru": "Я видела это название на нашем старом плане.",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "place": "new_building",
+          "context": "Дойти с Линой до 70"
+        },
+        {
+          "id": "u020-s8-e2",
+          "type": "scene",
+          "setting": "На столе четыре разные чашки. К жёлтой и серо-синей добавилась белая, которую Айрис принесла из дома. Мика подвигает к тебе тёмно-зелёную.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "The green one's yours. I like knowing where you'll sit next Wednesday.",
+              "ru": "Зелёная твоя. Мне нравится знать, где ты будешь сидеть в следующую среду.",
+              "expr": "happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "Save me the seat next to you.",
+                "Then I'll know where to find you too."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Same table, same time. Easy to remember.",
+                "ru": "Тот же стол, то же время. Легко запомнить.",
+                "expr": "happy"
+              },
+              "flag": "flirt_mika_020"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "Does the mug come with a map?",
+                "Good. I can find green doors and green mugs now."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll add mugs to the next edition.",
+                "ru": "Добавлю чашки в следующее издание.",
+                "expr": "laugh"
+              }
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Thanks. I'll be here on Wednesday at one.",
+                "Thanks. Show me what needs checking next."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll leave the new route cards right here.",
+                "ru": "Оставлю новые карточки прямо здесь.",
+                "expr": "happy"
+              }
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Sorry, what did you say?",
+            "ru": "Прости, что ты сказал?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_offers"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "Will you walk our new routes before we record them? You know what to look for.",
+              "ru": "Будешь проходить новые маршруты перед записью? Ты знаешь, что проверять.",
+              "expr": "happy"
+            },
+            {
+              "speaker": "iris",
+              "text": "I'll give you the cards before I write the final lines.",
+              "ru": "Буду давать тебе карточки до того, как допишу текст.",
+              "expr": "notebook/focused"
+            }
+          ],
+          "place": "room17",
+          "context": "Место у стола"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Lina found seventy. Let's add that card to the pilot.",
+          "ru": "Лина нашла семидесятую. Добавим эту карточку в пилот.",
+          "expr": "phone/happy"
+        },
+        {
+          "speaker": "iris",
+          "text": "And put the building before the number.",
+          "ru": "И укажем корпус перед номером.",
+          "expr": "neutral"
+        },
+        {
+          "speaker": "rei",
+          "text": "Pilot saved. Nice work.",
+          "ru": "Пилот сохранён. Хорошая работа.",
+          "expr": "recorder/happy"
+        }
+      ]
+    }
+  ]
+}

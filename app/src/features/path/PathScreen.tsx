@@ -10,6 +10,7 @@ import { KIND_LABELS } from '../../lesson/model'
 import { Icon } from '../../ui/Icon'
 import { Button, ProgressBar } from '../../ui/kit'
 import { MapFigure } from './MapFigure'
+import { ARC_CHECKS, ARC_CHECK_AFTER } from '../../content/arcChecks'
 import { mapFigure, stopIcon } from './roadmap'
 
 
@@ -68,6 +69,7 @@ export function PathScreen() {
             })}
           </section>
         ))}
+        <ArcCheckCard />
       </div>
       {away && (
         <button className="route-back" onClick={() => document.querySelector('.route-stop-next')?.scrollIntoView({ block: 'center', behavior: 'smooth' })}>
@@ -159,5 +161,19 @@ function UnitRoute({ unit, next, scroll }: { unit: Unit; next?: number; scroll: 
         </div>
       </div>
     </div>
+  )
+}
+
+/** The end-of-arc check after the last unit: open once its mission is done (or in developer mode). */
+function ArcCheckCard() {
+  const { units, settings } = useClub()
+  const open = !!units[ARC_CHECK_AFTER.arc1!] || settings.unlockAll
+  const last = settings.arcChecks?.arc1?.at(-1)
+  const score = last && Object.values(last.blocks).reduce((a, b) => ({ correct: a.correct + b.correct, total: a.total + b.total }), { correct: 0, total: 0 })
+  return (
+    <button className={`route-head route-arc-check ${open ? '' : 'route-head-soon'}`} disabled={!open} onClick={() => navigate({ name: 'arc-check', id: 'arc1' })}>
+      <span className="route-head-kicker">{open ? (score ? `Пройдена: ${score.correct}/${score.total} · пройти снова ›` : 'Итог арки · начать ›') : 'Откроется после юнита 020'}</span>
+      <span className="route-head-title">{ARC_CHECKS.arc1!.title}</span>
+    </button>
   )
 }

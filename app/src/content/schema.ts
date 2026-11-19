@@ -168,7 +168,7 @@ const Speak = z.object({
 })
 
 /** A spoken line; `ru` is the translation behind the "Перевод" button. */
-const Line = z.object({
+export const Line = z.object({
   speaker: Speaker,
   text: z.string(),
   ru: z.string().optional(),
@@ -177,6 +177,8 @@ const Line = z.object({
   delivery: z.string().optional(),
   /** A manga mark by the speaker's head while the line is on screen (Rive figures, docs/26). */
   mark: z.enum(['blush', 'sweat', 'sparkle', 'heart', 'anger', 'question', 'note']).optional(),
+  /** The scene moves: from this line on, the stage shows this place (until another line names one). */
+  place: z.string().optional(),
   ...choiceCondition,
 })
 

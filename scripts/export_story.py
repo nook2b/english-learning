@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-NAMES = {"mika": "Мика", "rei": "Рэй", "iris": "Айрис", "newcomer": "Новичок", "narrator": "Диктор", "alex": "Алекс", "nora": "Нора", "sam": "Сэм", "worker": "Рабочий"}
+NAMES = {"mika": "Мика", "rei": "Рэй", "iris": "Айрис", "newcomer": "Новичок", "narrator": "Диктор", "alex": "Алекс", "nora": "Нора", "sam": "Сэм", "worker": "Рабочий", "lina": "Лина", "announcer": "Диктор"}
 KINDS = {"comprehension": "понимание", "form": "форма", "production": "продукция", "fluency": "беглость"}
 
 

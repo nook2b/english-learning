@@ -238,5 +238,15 @@
   "kind": "topic",
   "ru": "Подтвердить: Just to confirm…, right?",
   "cheatsheet": "cheatsheets/function_confirming.json"
+ },
+ "directions": {
+  "kind": "topic",
+  "ru": "Как объяснить дорогу: along, past, through, opposite",
+  "cheatsheet": "cheatsheets/directions.json"
+ },
+ "time_clauses": {
+  "kind": "topic",
+  "ru": "Until, as soon as, before: когда остановиться и что сразу после",
+  "cheatsheet": "cheatsheets/time_clauses.json"
  }
 }
