@@ -989,6 +989,20 @@
               "delivery": "[slowly]"
             },
             {
+              "speaker": "mika",
+              "text": "You offered to show her the way. She got here with time to spare.",
+              "ru": "Ты предложил показать ей дорогу. Она пришла с запасом времени.",
+              "if": "u020_lina_show",
+              "expr": "happy"
+            },
+            {
+              "speaker": "mika",
+              "text": "You told her to look for the lift. She knew where to go.",
+              "ru": "Ты подсказал ей искать лифт. Она поняла, куда идти.",
+              "if": "u020_lina_landmark",
+              "expr": "happy"
+            },
+            {
               "speaker": "narrator",
               "text": "Вы возвращаетесь в старый корпус за планом, который оставили в комнате 17. У соседней кладовой Алекс меняет держатель таблички. Через стекло видны коробки с надписью «Before You Go».",
               "place": "archive"
@@ -1082,6 +1096,20 @@
               "speaker": "iris",
               "text": "I'll give you the cards before I write the final lines.",
               "ru": "Буду давать тебе карточки до того, как допишу текст.",
+              "expr": "notebook/focused"
+            },
+            {
+              "speaker": "iris",
+              "text": "Your Room 17 card starts with the green door. That is easy to find.",
+              "ru": "На твоей карточке до комнаты 17 сначала зелёная дверь. Её легко найти.",
+              "if": "u019_anchor_green",
+              "expr": "notebook/focused"
+            },
+            {
+              "speaker": "iris",
+              "text": "Your Room 17 card starts with the benches. The door is opposite them.",
+              "ru": "На твоей карточке до комнаты 17 сначала скамейки. Дверь напротив них.",
+              "if": "u019_anchor_benches",
               "expr": "notebook/focused"
             }
           ],

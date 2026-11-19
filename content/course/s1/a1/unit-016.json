@@ -349,6 +349,20 @@
             "text": "Confirm what we agreed. Don’t invent a new time.",
             "ru": "Подтверди, о чём договорились. Новое время придумывать не надо.",
             "expr": "notebook/focused"
+          },
+          {
+            "speaker": "iris",
+            "text": "You checked our usual time too. Wednesday at one is still in my notebook.",
+            "ru": "Ты проверил и наш обычный час. Среда, час дня, по-прежнему записана у меня в тетради.",
+            "if": "u015_regular_confirmed",
+            "expr": "notebook/dry_smile"
+          },
+          {
+            "speaker": "iris",
+            "text": "You said this change was just for one recording. I wrote that down too.",
+            "ru": "Ты сказал, что перенос только для одной записи. Это я тоже записала.",
+            "if": "u015_one_off_confirmed",
+            "expr": "notebook/dry_smile"
           }
         ]
       },

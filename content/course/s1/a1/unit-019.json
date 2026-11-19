@@ -37,6 +37,20 @@
             "speaker": "alex",
             "text": "Start here. Everyone can use the courtyard door.",
             "ru": "Начинайте здесь. Через дверь во двор могут пройти все."
+          },
+          {
+            "speaker": "mika",
+            "text": "You marked the old passage as closed. Now we can draw the new route.",
+            "ru": "Ты отметил, что старый проход закрыт. Теперь можем нарисовать новый маршрут.",
+            "if": "u018_mark_closed",
+            "expr": "phone/neutral"
+          },
+          {
+            "speaker": "mika",
+            "text": "You took the old directions out. Now we can add the new route.",
+            "ru": "Ты убрал старые указания. Теперь можем добавить новый маршрут.",
+            "if": "u018_hide_route",
+            "expr": "phone/neutral"
           }
         ]
       },

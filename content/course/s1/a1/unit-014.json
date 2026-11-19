@@ -39,6 +39,20 @@
             "text": "There is a finish time. Let’s read that first.",
             "ru": "Тут есть время окончания. Начнём с него.",
             "expr": "notebook/focused"
+          },
+          {
+            "speaker": "iris",
+            "text": "You described the students. Now we can check when they can return.",
+            "ru": "Ты рассказал, что здесь делают студенты. Теперь проверим, когда они смогут вернуться.",
+            "if": "u013_description_students",
+            "expr": "notebook/focused"
+          },
+          {
+            "speaker": "iris",
+            "text": "You described the noise. Now we can check when the work ends.",
+            "ru": "Ты рассказал о шуме. Теперь проверим, когда закончатся работы.",
+            "if": "u013_description_sound",
+            "expr": "notebook/focused"
           }
         ]
       },
