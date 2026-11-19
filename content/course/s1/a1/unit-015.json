@@ -39,6 +39,20 @@
             "text": "Two options. Both after the work finishes.",
             "ru": "Два варианта. Оба после окончания работ.",
             "expr": "phone/focused"
+          },
+          {
+            "speaker": "mika",
+            "text": "You asked when the work ends. Both days are after that.",
+            "ru": "Ты спросил, когда закончатся работы. Оба дня подходят по срокам.",
+            "if": "u014_ask_finish",
+            "expr": "phone/happy"
+          },
+          {
+            "speaker": "mika",
+            "text": "You asked about a break. A different day gives us more time.",
+            "ru": "Ты спросил про перерыв. В другой день у нас будет больше времени.",
+            "if": "u014_ask_break",
+            "expr": "phone/happy"
           }
         ]
       },

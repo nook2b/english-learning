@@ -203,6 +203,34 @@
       },
       "en": "You joked about where you would both sit at the next meeting.",
       "ru": "Вы пошутили о том, где будете сидеть на следующей встрече."
+    },
+    {
+      "unlock": {
+        "flag": "u018_mark_closed"
+      },
+      "en": "You marked the old passage as closed. We then checked another way.",
+      "ru": "Ты отметил, что старый проход закрыт. Потом мы проверили другой путь."
+    },
+    {
+      "unlock": {
+        "flag": "u018_hide_route"
+      },
+      "en": "You took the old route out of the guide. We then checked another way.",
+      "ru": "Ты убрал старый маршрут из гида. Потом мы проверили другой путь."
+    },
+    {
+      "unlock": {
+        "flag": "u020_lina_show"
+      },
+      "en": "You offered to show Lina the way and walked with her to Room 70.",
+      "ru": "Ты предложил показать Лине дорогу и проводил её до аудитории 70."
+    },
+    {
+      "unlock": {
+        "flag": "u020_lina_landmark"
+      },
+      "en": "You named the lift and walked with Lina to Room 70.",
+      "ru": "Ты подсказал Лине искать лифт и проводил её до аудитории 70."
     }
   ],
   "lines": [

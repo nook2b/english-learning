@@ -38,6 +38,20 @@
             "text": "We wrote “the passage”. This calls it “the link”.",
             "ru": "Мы написали «переход». Здесь он называется «соединительный коридор».",
             "expr": "notebook/thinking"
+          },
+          {
+            "speaker": "iris",
+            "text": "Your card starts at the main entrance. We can check from there.",
+            "ru": "Твоя карточка начинается у главного входа. Оттуда и проверим шаги.",
+            "if": "u017_open_entrance",
+            "expr": "notebook/thinking"
+          },
+          {
+            "speaker": "iris",
+            "text": "Your card starts at the desk. We can check from there.",
+            "ru": "Твоя карточка начинается у стойки возле входа. Оттуда и проверим.",
+            "if": "u017_open_desk",
+            "expr": "notebook/thinking"
           }
         ]
       },

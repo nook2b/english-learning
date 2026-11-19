@@ -38,6 +38,20 @@
             "text": "Courtyard's in. What's next?",
             "ru": "Двор добавила. Что дальше?",
             "expr": "recorder/neutral"
+          },
+          {
+            "speaker": "rei",
+            "text": "You checked the phones last time. No calls in that recording.",
+            "ru": "Ты в прошлый раз проверил телефоны. Звонки в запись не попали.",
+            "if": "u016_check_phones",
+            "expr": "recorder/neutral"
+          },
+          {
+            "speaker": "rei",
+            "text": "You checked the background last time. We could hear your words.",
+            "ru": "Ты в прошлый раз проверил фон. Твои слова были слышны.",
+            "if": "u016_check_background",
+            "expr": "recorder/neutral"
           }
         ]
       },

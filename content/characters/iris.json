@@ -189,6 +189,34 @@
       },
       "en": "You said you liked her company while you checked the route.",
       "ru": "Ты сказал, что тебе нравится её компания, пока вы проверяли маршрут."
+    },
+    {
+      "unlock": {
+        "flag": "u017_open_entrance"
+      },
+      "en": "You started our first route card at the main entrance.",
+      "ru": "Ты начал первую карточку маршрута с главного входа."
+    },
+    {
+      "unlock": {
+        "flag": "u017_open_desk"
+      },
+      "en": "You started our first route card at the desk by the entrance.",
+      "ru": "Ты начал первую карточку маршрута со стойки у входа."
+    },
+    {
+      "unlock": {
+        "flag": "u019_anchor_green"
+      },
+      "en": "You put the green door first on our Room 17 card.",
+      "ru": "На нашей карточке до комнаты 17 ты сначала указал зелёную дверь."
+    },
+    {
+      "unlock": {
+        "flag": "u019_anchor_benches"
+      },
+      "en": "Your Room 17 card started with the benches, opposite the door.",
+      "ru": "На нашей карточке до комнаты 17 ты сначала указал скамейки. Дверь была напротив."
     }
   ],
   "lines": [
