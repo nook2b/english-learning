@@ -1,5 +1,5 @@
 import { act, fireEvent, render, screen } from '@testing-library/react'
-import { ROOM17, chatMessages } from '../../content/chats'
+import { CHAT_PHOTOS, ROOM17, chatMessages } from '../../content/chats'
 import { sessionId } from '../../data/db'
 import type { SessionResult } from '../../data/db'
 import { db } from '../../data/db'
@@ -63,4 +63,9 @@ test('the confirmation reply follows the recording time chosen in 015', () => {
   const at = (flags: Record<string, true>) => chatMessages(done(['016', 2]), flags).filter((m) => m.type === 'reply')[0]!.intents![0]!.answers[0]
   expect(at({})).toMatch(/Friday/)
   expect(at({ u015_slot_sat11: true })).toMatch(/Saturday/)
+})
+
+test('every photo in the chat has its picture', () => {
+  const missing = ROOM17.messages.filter((m) => m.type === 'photo' && !(m.image && CHAT_PHOTOS[m.image])).map((m) => m.image)
+  expect(missing).toEqual([])
 })
