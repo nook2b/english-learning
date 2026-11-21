@@ -983,6 +983,222 @@
    "about": "Четыре разные чашки на столе: жёлтая, серо-синяя, белая и тёмно-зелёная",
    "caption": "Four mugs, finally.",
    "captionRu": "Наконец-то четыре чашки."
+  },
+  {
+   "id": "room17-021-8-1",
+   "unlock": {
+    "unit": "021",
+    "session": 8
+   },
+   "day": "Среда, после общего часа",
+   "from": "mika",
+   "type": "text",
+   "text": "Saturday, eleven, river steps. Our title is ready for its first interview.",
+   "ru": "Суббота, одиннадцать, ступеньки к реке. Название готово к первому интервью."
+  },
+  {
+   "id": "room17-021-8-2",
+   "unlock": {
+    "unit": "021",
+    "session": 8
+   },
+   "day": "Среда, после общего часа",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_021_title",
+   "about": "Вид сверху: четыре чашки и карточка с надписью «Last Weekend»",
+   "caption": "We have the title. The cups are ready.",
+   "captionRu": "Название есть. Чашки готовы."
+  },
+  {
+   "id": "room17-021-8-3",
+   "unlock": {
+    "unit": "021",
+    "session": 8
+   },
+   "day": "Среда, после общего часа",
+   "from": "rei",
+   "type": "text",
+   "text": "The sound would like to come too.",
+   "ru": "Звук тоже хотел бы прийти."
+  },
+  {
+   "id": "room17-022-8-1",
+   "unlock": {
+    "unit": "022",
+    "session": 8
+   },
+   "day": "Среда, конец встречи",
+   "from": "mika",
+   "type": "text",
+   "text": "Three questions, one card. Saturday at eleven by the river steps.",
+   "ru": "Три вопроса, одна карточка. В субботу в одиннадцать у ступенек к реке."
+  },
+  {
+   "id": "room17-022-8-2",
+   "unlock": {
+    "unit": "022",
+    "session": 8
+   },
+   "day": "Среда, конец встречи",
+   "from": "iris",
+   "type": "text",
+   "text": "I'll send the clean copy tonight.",
+   "ru": "Вечером отправлю чистовой вариант."
+  },
+  {
+   "id": "room17-023-8-1",
+   "unlock": {
+    "unit": "023",
+    "session": 8
+   },
+   "day": "Суббота, у реки",
+   "from": "mika",
+   "type": "photo",
+   "image": "chat_023_steps",
+   "about": "Ступеньки к реке и пустая скамейка, без людей",
+   "caption": "Our first interview spot. The bench answered no questions.",
+   "captionRu": "Наша первая точка интервью. Скамейка не ответила ни на один вопрос."
+  },
+  {
+   "id": "room17-023-8-2",
+   "unlock": {
+    "unit": "023",
+    "session": 8
+   },
+   "day": "Суббота, у реки",
+   "from": "rei",
+   "type": "voice",
+   "text": "The bench gave us nothing. The gull had a lot to say.",
+   "ru": "От скамейки ни слова. У чайки нашлось много чего сказать."
+  },
+  {
+   "id": "room17-024-8-1",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "mika",
+   "type": "text",
+   "text": "Forty-two seconds ready. Small Pier next. I'll check bus six on Friday.",
+   "ru": "Сорок две секунды готовы. Дальше Small Pier. В пятницу проверю шестой автобус."
+  },
+  {
+   "id": "room17-024-8-2",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "iris",
+   "type": "text",
+   "text": "Our next question is how Ivo got home.",
+   "ru": "Наш следующий вопрос — как Иво добрался домой.",
+   "if": "u024_next_bus"
+  },
+  {
+   "id": "room17-024-8-3",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "iris",
+   "type": "text",
+   "text": "Our next question is what they talked about over tea.",
+   "ru": "Наш следующий вопрос — о чём они говорили за чаем.",
+   "if": "u024_next_tea"
+  },
+  {
+   "id": "room17-024-8-4",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "mika",
+   "type": "text",
+   "text": "I did save a question for you. It can wait until the next break.",
+   "ru": "Я всё-таки приберегла вопрос для тебя. Подождёт до следующего перерыва.",
+   "if": "flirt_mika_024"
+  },
+  {
+   "id": "room17-024-8-5",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "mika",
+   "type": "text",
+   "text": "The chair's interview is still waiting. It never answers my messages.",
+   "ru": "Интервью со стулом всё ещё ждёт. Он не отвечает на сообщения.",
+   "if": "u024_mika_joke"
+  },
+  {
+   "id": "room17-024-8-6",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "mika",
+   "type": "text",
+   "text": "You asked for more city stories. Small Pier goes on the list.",
+   "ru": "Ты предложил собрать больше городских историй. Добавляю Small Pier в список.",
+   "if": "u024_mika_work"
+  },
+  {
+   "id": "room17-024-8-7",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "iris",
+   "type": "text",
+   "text": "I'll keep the next page for our second reading.",
+   "ru": "Оставлю следующую страницу для нашего второго чтения.",
+   "if": "flirt_iris_024"
+  },
+  {
+   "id": "room17-024-8-8",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "iris",
+   "type": "text",
+   "text": "The second edition is one card long. Even the bread can wait.",
+   "ru": "Второе издание длиной в одну карточку. Даже хлеб может подождать.",
+   "if": "u024_iris_joke"
+  },
+  {
+   "id": "room17-024-8-9",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "iris",
+   "type": "text",
+   "text": "Your next-question card is ready. I'll bring it.",
+   "ru": "Карточка с твоим следующим вопросом готова. Принесу её.",
+   "if": "u024_iris_work"
+  },
+  {
+   "id": "room17-024-8-10",
+   "unlock": {
+    "unit": "024",
+    "session": 8
+   },
+   "day": "Среда, после встречи",
+   "from": "mika",
+   "type": "text",
+   "text": "Alex says he's still checking who has the archive key.",
+   "ru": "Алекс говорит, что всё ещё выясняет, у кого ключ от архива."
   }
  ]
 }

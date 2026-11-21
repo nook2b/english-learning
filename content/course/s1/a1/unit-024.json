@@ -1,0 +1,1238 @@
+{
+  "id": "024",
+  "title": "Что у нас есть",
+  "goal": "Коротко пересказать услышанное, назвать порядок событий и выбрать следующий вопрос.",
+  "focus": "Пересказать услышанное: he / she + Past Simple, порядок событий first, then, after that, in the end; простой пересказ Ivo said he went…; выбрать следующий вопрос. В занятии 7 — проверка модуля 021–024.",
+  "outcome": "В черновик идут два отрывка общей длиной 42 секунды. Команда выбирает следующий вопрос и собирается к Small Pier.",
+  "expressions": [
+    "first",
+    "then",
+    "after that",
+    "in the end",
+    "he said",
+    "she bought",
+    "he took",
+    "he gave it back",
+    "keep this part",
+    "a clear answer",
+    "not enough yet",
+    "what happened next?"
+  ],
+  "glossary": [
+    "first edit",
+    "clip",
+    "full recording",
+    "draft",
+    "Small Pier"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Сорок две секунды",
+      "intro": "Среда, комната 17. Заметки после прослушивания: кто попал в запись и сколько секунд получилось.",
+      "place": "room17",
+      "frame": {
+        "setting": "В среду Рэй кладёт рекордер на стол. Рядом с зелёной чашкой лежит карточка с цифрами 27 и 15.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "We wanted three minutes. How much have we got?",
+            "ru": "Хотели три минуты. Сколько получилось?",
+            "expr": "phone/thinking"
+          },
+          {
+            "speaker": "rei",
+            "text": "Forty-two seconds we can use.",
+            "ru": "Сорок две пригодные секунды.",
+            "expr": "recorder/neutral"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u024-s1-e1",
+          "type": "reading",
+          "title": "First listening notes",
+          "text": "We spoke to four people by the river on Saturday. Dana was late for work and did not stop. Kit talked to us, but he did not want a recording. Jo let us record her answer. We chose fifteen clear seconds about the market and her plants. Ivo also agreed to a recording. We chose twenty-seven seconds about the bread and the tea. That gives us forty-two seconds for the first edit. We still need more stories for our three-minute report. Keep the full recordings too, so we can check the words later.",
+          "ru": "В субботу у реки мы поговорили с четырьмя людьми. Дана опаздывала на работу и не остановилась. Кит поговорил, но не захотел записываться. Джо разрешила записать ответ. Мы выбрали пятнадцать понятных секунд про рынок и её растения. Иво тоже согласился на запись. Мы выбрали двадцать семь секунд про хлеб и чай. Для первого монтажа получается сорок две секунды. Для трёхминутного выпуска нужно больше историй. Полные записи тоже сохраняем, чтобы потом можно было сверить слова.",
+          "questions": [
+            {
+              "prompt": "Whose answer stays out of the recording?",
+              "options": [
+                "Kit's",
+                "Jo's",
+                "Ivo's"
+              ],
+              "answer": "Kit's"
+            },
+            {
+              "prompt": "How long are the two chosen parts together?",
+              "options": [
+                "27 seconds",
+                "42 seconds",
+                "three minutes"
+              ],
+              "answer": "42 seconds"
+            },
+            {
+              "prompt": "Why keep the full recordings?",
+              "options": [
+                "to check the words",
+                "to buy plants",
+                "to change the café name"
+              ],
+              "answer": "to check the words"
+            }
+          ],
+          "tags": [
+            "reading",
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u024-s1-e2",
+          "type": "choice",
+          "prompt": "Kit talked to us, but he ___ want a recording.",
+          "options": [
+            "didn't",
+            "doesn't",
+            "wasn't"
+          ],
+          "answer": "didn't",
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "Прошлое отрицание: didn't want."
+        },
+        {
+          "id": "u024-s1-e3",
+          "type": "choice",
+          "prompt": "We still need ___ stories for our report.",
+          "options": [
+            "more",
+            "much",
+            "a few time"
+          ],
+          "answer": "more",
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u024-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "first",
+              "ru": "сначала"
+            },
+            {
+              "en": "in the end",
+              "ru": "в итоге"
+            },
+            {
+              "en": "keep this part",
+              "ru": "оставь эту часть"
+            },
+            {
+              "en": "a clear answer",
+              "ru": "понятный ответ"
+            },
+            {
+              "en": "not enough yet",
+              "ru": "пока недостаточно"
+            },
+            {
+              "en": "what happened next?",
+              "ru": "что было дальше?"
+            }
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "That's a beginning. The title still has plenty of space.",
+          "ru": "Это начало. Под названием ещё много свободного места.",
+          "expr": "notebook/thinking"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Сначала хлеб, потом чай",
+      "intro": "Два выбранных отрывка: Иво про хлеб и Джо про рынок. Слушай без текста, следи за порядком.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u024-s2-e1",
+          "type": "listening",
+          "speaker": "ivo",
+          "audio": "I took the wrong bag of bread at the café. Then I saw a woman looking for it. I gave it back, and she invited me for tea. In the end, I missed my bus.",
+          "ru": "Я взял в кафе не тот пакет с хлебом. Потом увидел женщину, которая его искала. Вернул, и она пригласила меня на чай. В итоге пропустил автобус.",
+          "questions": [
+            {
+              "prompt": "What happened after Ivo gave the bread back?",
+              "options": [
+                "tea",
+                "work",
+                "a film"
+              ],
+              "answer": "tea"
+            }
+          ],
+          "tags": [
+            "listening",
+            "sequencing"
+          ],
+          "context": "Отрывок Иво"
+        },
+        {
+          "id": "u024-s2-e2",
+          "type": "listening",
+          "speaker": "jo",
+          "audio": "First, I went to the market. Then I visited my sister, and we had lunch. After that, we went to the shops. I bought two plants. My sister bought a hat.",
+          "ru": "Сначала я сходила на рынок. Потом к сестре, мы пообедали. После этого пошли по магазинам. Я купила два растения. Сестра купила шляпу.",
+          "questions": [
+            {
+              "prompt": "What did Jo do before visiting her sister?",
+              "options": [
+                "went to the market",
+                "bought a hat",
+                "saw the lift"
+              ],
+              "answer": "went to the market"
+            }
+          ],
+          "tags": [
+            "listening",
+            "sequencing"
+          ],
+          "context": "Отрывок Джо"
+        },
+        {
+          "id": "u024-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "First, he took the bag. Then he gave it back.",
+          "answers": [
+            "First, he took the bag. Then he gave it back."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s2-e4",
+          "type": "choice",
+          "prompt": "Ivo gave the bread back, and then she invited him for ___.",
+          "options": [
+            "tea",
+            "lunch",
+            "a walk"
+          ],
+          "answer": "tea",
+          "tags": [
+            "past_simple"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "You said you'd keep talking. I saved the clear words.",
+          "ru": "Ты сказал, что продолжишь говорить. Я сохранила понятные слова.",
+          "expr": "recorder/smirk",
+          "if": "flirt_rei_023"
+        },
+        {
+          "speaker": "rei",
+          "text": "Your wind effects are on a separate track.",
+          "ru": "Твои эффекты ветра на отдельной дорожке.",
+          "expr": "recorder/smirk",
+          "if": "u023_rei_joke"
+        },
+        {
+          "speaker": "rei",
+          "text": "You checked the microphone angle. The voice came through clearly.",
+          "ru": "Ты проверил положение микрофона. Голос записался понятно.",
+          "expr": "recorder/focused",
+          "if": "u023_rei_work"
+        },
+        {
+          "speaker": "rei",
+          "text": "You asked to hear the gull. Here. Its only line.",
+          "ru": "Ты попросил послушать чайку. Вот. Её единственная реплика.",
+          "expr": "recorder/smirk",
+          "if": "u023_dm_gull"
+        },
+        {
+          "speaker": "rei",
+          "text": "You asked for the clear voice. This version has no gull.",
+          "ru": "Ты попросил чистый голос. В этой версии чайки нет.",
+          "expr": "recorder/neutral",
+          "if": "u023_dm_clear"
+        },
+        {
+          "speaker": "rei",
+          "text": "Same story. Two sound options.",
+          "ru": "История та же. Два варианта звука.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Кто что сделал",
+      "intro": "Кто что сделал: имя один раз, потом he / she. Ivo went to the café. He took the wrong bag. Jo visited her sister. She bought two plants.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис пишет имена над двумя колонками. Между ними оставляет место для краткого пересказа.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Use his name once. Then he can be “he”.",
+            "ru": "Один раз назови имя. Потом можно «он».",
+            "expr": "notebook/focused"
+          },
+          {
+            "speaker": "iris",
+            "text": "You wanted the seat by my notebook. Here's the page we're checking.",
+            "ru": "Ты хотел место у тетради. Вот страница, которую проверяем.",
+            "expr": "dry_smile",
+            "if": "flirt_iris_023"
+          },
+          {
+            "speaker": "iris",
+            "text": "The notebook has room for your name. The stories need the rest.",
+            "ru": "В тетради есть место для твоего имени. Остальное нужно историям.",
+            "expr": "notebook/dry_smile",
+            "if": "u023_iris_joke"
+          },
+          {
+            "speaker": "iris",
+            "text": "You marked the café name. I can find that part straight away.",
+            "ru": "Ты отметил название кафе. Сразу могу найти этот отрывок.",
+            "expr": "notebook/focused",
+            "if": "u023_iris_work"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u024-s3-e1",
+          "type": "choice",
+          "prompt": "Ivo ___ to the Small Pier café.",
+          "options": [
+            "went",
+            "go",
+            "goes"
+          ],
+          "answer": "went",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Две колонки: Иво и Джо"
+        },
+        {
+          "id": "u024-s3-e2",
+          "type": "fill",
+          "prompt": "He ___ the wrong bag.",
+          "answers": [
+            "took"
+          ],
+          "hint": "взял",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Take → took.",
+          "context": "Две колонки: Иво и Джо"
+        },
+        {
+          "id": "u024-s3-e3",
+          "type": "choice",
+          "prompt": "He gave the bread ___.",
+          "options": [
+            "back",
+            "again",
+            "off"
+          ],
+          "answer": "back",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Give back — вернуть.",
+          "context": "Две колонки: Иво и Джо"
+        },
+        {
+          "id": "u024-s3-e4",
+          "type": "fill",
+          "prompt": "Jo ___ her sister.",
+          "answers": [
+            "visited"
+          ],
+          "hint": "навестила",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Две колонки: Иво и Джо"
+        },
+        {
+          "id": "u024-s3-e5",
+          "type": "choice",
+          "prompt": "___ bought two plants.",
+          "options": [
+            "She",
+            "He",
+            "They"
+          ],
+          "answer": "She",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Джо — she.",
+          "context": "Две колонки: Иво и Джо"
+        },
+        {
+          "id": "u024-s3-e6",
+          "type": "choice",
+          "prompt": "Her sister bought a ___.",
+          "options": [
+            "hat",
+            "plant",
+            "bag"
+          ],
+          "answer": "hat",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Две колонки: Иво и Джо"
+        },
+        {
+          "id": "u024-s3-e7",
+          "type": "fix",
+          "sentence": "Ivo taked the wrong bag.",
+          "answers": [
+            "Ivo took the wrong bag."
+          ],
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Take — неправильный глагол: took.",
+          "context": "Две колонки: Иво и Джо"
+        },
+        {
+          "id": "u024-s3-e8",
+          "type": "transform",
+          "instruction": "Перескажи про Иво: начни с He",
+          "sentence": "I gave it back.",
+          "answers": [
+            "He gave it back."
+          ],
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "I → he.",
+          "context": "Две колонки: Иво и Джо"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "I can follow that without the long shopping list.",
+          "ru": "Могу понять и без длинного списка покупок.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Первое, следующее, последнее",
+      "intro": "Порядок истории: First, … Then, … After that, … In the end, … Пересказ: Ivo said he went to Small Pier.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис двигает три карточки по столу. Рэй показывает границы двух отрывков.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Keep the order of the story.",
+            "ru": "Сохрани порядок событий истории.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u024-s4-e1",
+          "type": "choice",
+          "prompt": "___, Ivo went to the café.",
+          "options": [
+            "First",
+            "In the end",
+            "After that"
+          ],
+          "answer": "First",
+          "tags": [
+            "sequencing"
+          ],
+          "context": "Три карточки событий"
+        },
+        {
+          "id": "u024-s4-e2",
+          "type": "choice",
+          "prompt": "___ he took a bag of bread.",
+          "options": [
+            "Then",
+            "First",
+            "In the end"
+          ],
+          "answer": "Then",
+          "tags": [
+            "sequencing"
+          ],
+          "context": "Три карточки событий"
+        },
+        {
+          "id": "u024-s4-e3",
+          "type": "fill",
+          "prompt": "After ___, he gave it back.",
+          "answers": [
+            "that"
+          ],
+          "tags": [
+            "sequencing"
+          ],
+          "explain": "After that — после этого.",
+          "context": "Три карточки событий"
+        },
+        {
+          "id": "u024-s4-e4",
+          "type": "choice",
+          "prompt": "In the ___, he missed the bus.",
+          "options": [
+            "end",
+            "last",
+            "finish"
+          ],
+          "answer": "end",
+          "tags": [
+            "sequencing"
+          ],
+          "explain": "In the end — в итоге.",
+          "context": "Три карточки событий"
+        },
+        {
+          "id": "u024-s4-e5",
+          "type": "fill",
+          "prompt": "Ivo ___ he went to Small Pier.",
+          "answers": [
+            "said"
+          ],
+          "hint": "сказал",
+          "tags": [
+            "sequencing"
+          ],
+          "context": "Три карточки событий"
+        },
+        {
+          "id": "u024-s4-e6",
+          "type": "choice",
+          "prompt": "Jo said she ___ two plants.",
+          "options": [
+            "bought",
+            "buys",
+            "buy"
+          ],
+          "answer": "bought",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Три карточки событий"
+        },
+        {
+          "id": "u024-s4-e7",
+          "type": "sort",
+          "instruction": "Начало или конец истории Иво?",
+          "categories": [
+            {
+              "id": "start",
+              "label": "Начало"
+            },
+            {
+              "id": "end",
+              "label": "Конец"
+            }
+          ],
+          "items": [
+            {
+              "text": "He went to the café.",
+              "category": "start"
+            },
+            {
+              "text": "He took the wrong bag.",
+              "category": "start"
+            },
+            {
+              "text": "He saw a woman looking for it.",
+              "category": "start"
+            },
+            {
+              "text": "He gave it back.",
+              "category": "end"
+            },
+            {
+              "text": "They had tea outside.",
+              "category": "end"
+            },
+            {
+              "text": "He missed the bus.",
+              "category": "end"
+            }
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s4-e8",
+          "type": "fix",
+          "sentence": "In the end he miss the bus.",
+          "answers": [
+            "In the end, he missed the bus.",
+            "In the end he missed the bus."
+          ],
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Прошлое: missed.",
+          "context": "Три карточки событий"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Now the bread gets back to its owner before the tea.",
+          "ru": "Теперь хлеб возвращается к хозяйке до чая.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Выпуск на двоих не помещается",
+      "intro": "Мика слушает твою пробную подводку. Ответь, как хочешь.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u024-s5-e1",
+          "type": "scene",
+          "setting": "Мика слушает твою пробную подводку и не сразу тянется к телефону.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "We could make a whole report just talking to you. I'd listen to that one.",
+              "ru": "Можно целый выпуск сделать, просто с тобой разговаривая. Я бы послушала.",
+              "expr": "happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "Only if you're asking the questions.",
+                "I'd listen to a whole report with you too."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Then I'll save some questions for later.",
+                "ru": "Тогда приберегу вопросы на потом.",
+                "expr": "happy"
+              },
+              "flag": "flirt_mika_024"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "The chair will want half the time.",
+                "The gull already booked the last minute."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Fine. The chair gets a very short answer.",
+                "ru": "Ладно. Стулу достанется очень короткий ответ.",
+                "expr": "laugh"
+              },
+              "flag": "u024_mika_joke"
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's finish this report first.",
+                "We still need more city stories."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "True. One more trip in the plan.",
+                "ru": "Верно. Добавим в план ещё поездку.",
+                "expr": "phone/focused"
+              },
+              "flag": "u024_mika_work"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "sequencing"
+          ],
+          "context": "Продолжить подводку"
+        },
+        {
+          "id": "u024-s5-e2",
+          "type": "translate",
+          "ru": "Сначала Иво пошёл в кафе.",
+          "answers": [
+            "First, Ivo went to the café.",
+            "First Ivo went to the café.",
+            "First, Ivo went to the cafe."
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s5-e3",
+          "type": "translate",
+          "ru": "Потом он вернул хлеб.",
+          "answers": [
+            "Then he gave the bread back.",
+            "Then he gave back the bread.",
+            "Then he gave it back."
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s5-e4",
+          "type": "translate",
+          "ru": "В итоге он пропустил автобус.",
+          "answers": [
+            "In the end, he missed the bus.",
+            "In the end he missed the bus.",
+            "In the end, he missed his bus."
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s5-e5",
+          "type": "translate",
+          "ru": "Что было дальше?",
+          "answers": [
+            "What happened next?",
+            "What happened then?"
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s5-e6",
+          "type": "write",
+          "situation": "Перескажи историю Джо в двух предложениях.",
+          "answers": [
+            "First, Jo went to the market. Then she visited her sister.",
+            "Jo visited her sister. She bought two plants, and her sister bought a hat.",
+            "Jo went to the market and visited her sister. In the end, she bought two plants."
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Forty-two seconds. Still forty-two.",
+          "ru": "Сорок две секунды. Всё ещё сорок две.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: история в трёх строках",
+      "intro": "Расскажи историю Иво вслух в четырёх строках.",
+      "place": "room17",
+      "frame": {
+        "setting": "Рэй включает отдельную дорожку. На карточке Айрис только имя, хлеб и автобус.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Tell the short version.",
+            "ru": "Расскажи короткую версию.",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u024-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Ivo went to a café last Saturday.",
+          "answers": [
+            "Ivo went to a café last Saturday."
+          ],
+          "tags": [
+            "speaking",
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "He took the wrong bag of bread.",
+          "answers": [
+            "He took the wrong bag of bread."
+          ],
+          "tags": [
+            "speaking",
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Then he gave it back and had tea.",
+          "answers": [
+            "Then he gave it back and had tea."
+          ],
+          "tags": [
+            "speaking",
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "In the end, he missed his bus.",
+          "answers": [
+            "In the end, he missed his bus."
+          ],
+          "tags": [
+            "speaking",
+            "sequencing"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "The story still makes sense.",
+          "ru": "История осталась понятной.",
+          "expr": "recorder/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Проверка модуля: выходные клуба рисования",
+      "role": "check",
+      "intro": "Проверка модуля на новом материале: вымышленный клуб рисования — вопросы о выходных, короткие ответы, просьба о записи и пересказ.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис кладёт рядом карточку вымышленного клуба рисования. На ней парк, дождь и остановка.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "New people, new weekend. Same kind of questions.",
+            "ru": "Другие люди, другие выходные. Похожие вопросы.",
+            "expr": "notebook/focused"
+          },
+          {
+            "speaker": "iris",
+            "text": "Who are you talking about: Mark or Lea?",
+            "ru": "Ты о ком говоришь — о Марке или Лее?",
+            "expr": "listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u024-s7-e1",
+          "type": "write",
+          "situation": "Другой клуб, другие выходные. Вымышленный клуб рисования: Марк в субботу ходил в парк, увидел собаку и сделал три рисунка. Лея была дома, готовила и слушала музыку. Спроси Марка про субботу.",
+          "answers": [
+            "What did you do on Saturday?",
+            "How was your Saturday?",
+            "What did you do last Saturday?"
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u024-s7-e2",
+          "type": "write",
+          "situation": "Спроси, ходил ли он в парк.",
+          "answers": [
+            "Did you go to the park?",
+            "Did you visit the park?"
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u024-s7-e3",
+          "type": "write",
+          "situation": "Ответь за Лею, была ли она в парке.",
+          "answers": [
+            "No, I didn't go to the park. I stayed at home.",
+            "No, I didn't. I was at home.",
+            "No, I didn't. I stayed at home."
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u024-s7-e4",
+          "type": "write",
+          "situation": "Попроси разрешение на запись ответа.",
+          "answers": [
+            "May we record your answer?",
+            "Could we record this for our club report?",
+            "May we record this?"
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u024-s7-e5",
+          "type": "write",
+          "situation": "Перескажи день Марка.",
+          "answers": [
+            "First, Mark went to the park. Then he saw a dog and drew three pictures.",
+            "Mark went to the park on Saturday. He saw a dog and made three drawings.",
+            "Mark went to the park. He saw a dog and made three pictures."
+          ],
+          "tags": [
+            "sequencing"
+          ]
+        },
+        {
+          "id": "u024-s7-e6",
+          "type": "choice",
+          "prompt": "Lea ___ at home on Saturday.",
+          "options": [
+            "was",
+            "were",
+            "did"
+          ],
+          "answer": "was",
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u024-s7-e7",
+          "type": "choice",
+          "prompt": "Did Mark ___ a dog?",
+          "options": [
+            "see",
+            "saw",
+            "seen"
+          ],
+          "answer": "see",
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u024-s7-e8",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "In the end, Mark made three drawings.",
+          "answers": [
+            "In the end, Mark made three drawings."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "sequencing"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "That was clear enough for someone who wasn't there.",
+          "ru": "Понятно даже тому, кого там не было.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Следующий вопрос",
+      "role": "mission",
+      "intro": "Миссия: выбрать следующий вопрос и собраться к Small Pier.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика открывает карту города. На ней Small Pier у старой пристани. Рэй сохраняет оба выбранных отрывка в черновик.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "You asked for a minute. Ivo had one, and we got the bread story.",
+            "ru": "Ты попросил минутку. У Иво она нашлась, и мы услышали историю про хлеб.",
+            "expr": "phone/happy",
+            "if": "u023_ask_minute"
+          },
+          {
+            "speaker": "mika",
+            "text": "You told Ivo our topic first. He knew which story to tell.",
+            "ru": "Ты сразу назвал Иво тему. Он понял, какую историю рассказать.",
+            "expr": "phone/happy",
+            "if": "u023_ask_topic"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u024-s8-e1",
+          "type": "scene",
+          "setting": "Мика открывает карту города: Small Pier у старой пристани.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "We can go to Small Pier next. What should our next question be?",
+              "ru": "Следующим можно съездить в Small Pier. О чём спросим?",
+              "expr": "phone/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Узнать, что было после пропущенного автобуса",
+              "answers": [
+                "Let's ask what happened after he missed the bus.",
+                "We should ask how he got home."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll put “What happened next?” on the card.",
+                "ru": "Запишу на карточке «Что было дальше?».",
+                "expr": "phone/focused"
+              },
+              "flag": "u024_next_bus"
+            },
+            {
+              "label": "Узнать, что привело к разговору",
+              "answers": [
+                "Let's ask how the conversation started.",
+                "We should ask what they talked about over tea."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll put “What did you talk about?” on the card.",
+                "ru": "Запишу «О чём вы говорили?».",
+                "expr": "phone/focused"
+              },
+              "flag": "u024_next_tea"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "The bus home, or the talk over tea?",
+            "ru": "Автобус домой или разговор за чаем?",
+            "expr": "listening"
+          },
+          "tags": [
+            "sequencing"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "The map shows bus six. I'll check the times before we go.",
+              "ru": "На карте шестой автобус. До поездки проверю расписание.",
+              "expr": "phone/neutral"
+            },
+            {
+              "speaker": "rei",
+              "text": "Both clips saved. Originals too.",
+              "ru": "Оба отрывка сохранены. Исходники тоже.",
+              "expr": "recorder/neutral"
+            }
+          ],
+          "context": "О чём спросить у пристани"
+        },
+        {
+          "id": "u024-s8-e2",
+          "type": "scene",
+          "setting": "Айрис кладёт рядом чистую карточку и карандаш.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "You always find the part I want to read twice. Keep doing that.",
+              "ru": "Ты всё время находишь то, что мне хочется прочитать дважды. Продолжай.",
+              "expr": "dry_smile"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I'll keep a good line for you.",
+                "Then I'll stay for the second reading."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Good. I might have a comment by then.",
+                "ru": "Хорошо. К тому времени, возможно, придумаю комментарий.",
+                "expr": "dry_smile"
+              },
+              "flag": "flirt_iris_024"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "Should I add “read twice” to the card?",
+                "The bread story has a second edition."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Only if we keep both editions short.",
+                "ru": "Только если оба издания будут короткими.",
+                "expr": "dry_smile"
+              },
+              "flag": "u024_iris_joke"
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's keep the order clear in the next draft.",
+                "We should write the next question down now."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I've got a clean card ready.",
+                "ru": "Чистая карточка уже готова.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u024_iris_work"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "What would you like me to write?",
+            "ru": "Что ты хочешь, чтобы я записала?",
+            "expr": "listening"
+          },
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Рядом с последней строчкой"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Forty-two seconds ready. Small Pier next. I'll check bus six on Friday.",
+          "ru": "Сорок две секунды готовы. Дальше Small Pier. В пятницу проверю шестой автобус.",
+          "expr": "phone/happy"
+        },
+        {
+          "speaker": "iris",
+          "text": "Our next question is how Ivo got home.",
+          "ru": "Наш следующий вопрос — как Иво добрался домой.",
+          "expr": "neutral",
+          "if": "u024_next_bus"
+        },
+        {
+          "speaker": "iris",
+          "text": "Our next question is what they talked about over tea.",
+          "ru": "Наш следующий вопрос — о чём они говорили за чаем.",
+          "expr": "neutral",
+          "if": "u024_next_tea"
+        },
+        {
+          "speaker": "mika",
+          "text": "I did save a question for you. It can wait until the next break.",
+          "ru": "Я всё-таки приберегла вопрос для тебя. Подождёт до следующего перерыва.",
+          "expr": "phone/happy",
+          "if": "flirt_mika_024"
+        },
+        {
+          "speaker": "mika",
+          "text": "The chair's interview is still waiting. It never answers my messages.",
+          "ru": "Интервью со стулом всё ещё ждёт. Он не отвечает на сообщения.",
+          "expr": "phone/happy",
+          "if": "u024_mika_joke"
+        },
+        {
+          "speaker": "mika",
+          "text": "You asked for more city stories. Small Pier goes on the list.",
+          "ru": "Ты предложил собрать больше городских историй. Добавляю Small Pier в список.",
+          "expr": "phone/focused",
+          "if": "u024_mika_work"
+        },
+        {
+          "speaker": "iris",
+          "text": "I'll keep the next page for our second reading.",
+          "ru": "Оставлю следующую страницу для нашего второго чтения.",
+          "expr": "neutral",
+          "if": "flirt_iris_024"
+        },
+        {
+          "speaker": "iris",
+          "text": "The second edition is one card long. Even the bread can wait.",
+          "ru": "Второе издание длиной в одну карточку. Даже хлеб может подождать.",
+          "expr": "neutral",
+          "if": "u024_iris_joke"
+        },
+        {
+          "speaker": "iris",
+          "text": "Your next-question card is ready. I'll bring it.",
+          "ru": "Карточка с твоим следующим вопросом готова. Принесу её.",
+          "expr": "neutral",
+          "if": "u024_iris_work"
+        },
+        {
+          "speaker": "mika",
+          "text": "Alex says he's still checking who has the archive key.",
+          "ru": "Алекс говорит, что всё ещё выясняет, у кого ключ от архива.",
+          "expr": "phone/neutral"
+        },
+        {
+          "speaker": "rei",
+          "text": "Next trip. Same headphones.",
+          "ru": "Следующая поездка. Те же наушники.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    }
+  ]
+}

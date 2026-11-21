@@ -1,6 +1,6 @@
 import type { SessionResult } from '../data/db'
 import { sessionId } from '../data/db'
-import { ARC1_UNITS } from './outline'
+import { COURSE_UNITS } from './outline'
 import { Unit } from './schema'
 import { PLACEMENT_FLAG, PROLOGUE_FLAG } from './story'
 
@@ -30,7 +30,7 @@ export interface SessionRef {
 
 /** The first unfinished session, in course order, among units that have content. */
 export function nextSession(sessions: Record<string, SessionResult>, done: Record<string, unknown>): SessionRef | undefined {
-  for (const outline of ARC1_UNITS) {
+  for (const outline of COURSE_UNITS) {
     const unit = UNITS[outline.id]
     if (!unit || done[unit.id]) continue
     for (let i = 1; i <= unit.sessions.length; i++) {

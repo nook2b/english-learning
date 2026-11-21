@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Builds content/chats/room17.json: the team chat "Room 17" as it grows along the course.
+"""Builds the chats: content/chats/room17.json, the team chat "Room 17" as it grows along the
+course, and from unit 021 the personal chats content/chats/dm-{heroine}.json.
 
 Voice messages come from the units (listening tasks whose context says they were sent to
 the chat, and the timetable voices of 003); texts, photos and the player's own messages
@@ -69,6 +70,19 @@ def reply(intents, clarify, **cond):
     return {'from': 'me', 'type': 'reply', 'intents': [{'label': l, 'answers': a, 'reaction': r} for l, a, r in intents], 'clarify': clarify, **cond}
 
 
+def tap(intents, **cond):
+    """A ready reply in a personal chat (docs/30): the player taps an English answer; it keeps a story flag."""
+    return {'from': 'me', 'type': 'reply', 'tap': True, 'intents': [{'label': l, 'answers': a, 'reaction': r, 'flag': f} for l, a, r, f in intents], **cond}
+
+
+def text(who, en, ru):
+    return {'from': who, 'type': 'text', 'text': en, 'ru': ru}
+
+
+def voice(who, en, ru, delivery=None):
+    return {'from': who, 'type': 'voice', 'text': en, 'ru': ru, **({'delivery': delivery} if delivery else {})}
+
+
 def say(who, text, ru, expr=None):
     return {'from': who, 'text': text, 'ru': ru, **({'expr': expr} if expr else {})}
 
@@ -134,20 +148,55 @@ FEED = [
     ('018', 8, 'Среда, у серой двери', [photo('mika', 'chat_018_door', 'Закрытая серая дверь с табличкой Closed for repairs', 'This is where the pencil line ends.', 'Вот где заканчивается линия карандашом.'), line('018', 8, 'rei', 'Good take')]),
     ('019', 2, 'Пятница, проверка от стойки', voices('019', 2)),
     ('020', 8, 'Среда, после встречи', [line('020', 8, 'mika', 'Lina found seventy'), line('020', 8, 'iris', 'And put the building'), photo('mika', 'chat_020_mugs', 'Четыре разные чашки на столе: жёлтая, серо-синяя, белая и тёмно-зелёная', 'Four mugs, finally.', 'Наконец-то четыре чашки.')]),
+    ('021', 8, 'Среда, после общего часа', [line('021', 8, 'mika', 'Saturday, eleven'), photo('mika', 'chat_021_title', 'Вид сверху: четыре чашки и карточка с надписью «Last Weekend»', 'We have the title. The cups are ready.', 'Название есть. Чашки готовы.'), line('021', 8, 'rei', 'The sound would like')]),
+    ('022', 8, 'Среда, конец встречи', [line('022', 8, 'mika', 'Three questions, one card'), line('022', 8, 'iris', "I'll send the clean copy")]),
+    ('023', 8, 'Суббота, у реки', [photo('mika', 'chat_023_steps', 'Ступеньки к реке и пустая скамейка, без людей', 'Our first interview spot. The bench answered no questions.', 'Наша первая точка интервью. Скамейка не ответила ни на один вопрос.'), voice('rei', 'The bench gave us nothing. The gull had a lot to say.', 'От скамейки ни слова. У чайки нашлось много чего сказать.')]),
+    ('024', 8, 'Среда, после встречи', [line('024', 8, 'mika', 'Forty-two seconds ready'), *lines('024', 8, 'iris', 'Our next question'), *lines('024', 8, 'mika', 'I did save'), *lines('024', 8, 'mika', "The chair's interview"), *lines('024', 8, 'mika', 'You asked for more city'), *lines('024', 8, 'iris', "I'll keep the next page"), *lines('024', 8, 'iris', 'The second edition'), *lines('024', 8, 'iris', 'Your next-question card'), line('024', 8, 'mika', 'Alex says')]),
 ]
 
-messages = []
-for uid, n, day, items in FEED:
-    # Player replies have their own numbers, so the ids of the other messages (kept as "seen") stay put.
-    k = r = 0
-    for m in items:
-        if m['type'] == 'reply':
-            r += 1
-            mid = f'room17-{uid}-{n}-r{r}'
-        else:
-            k += 1
-            mid = f'room17-{uid}-{n}-{k}'
-        messages.append({'id': mid, 'unlock': {'unit': uid, 'session': n}, 'day': day, **m})
-out = {'id': 'room17', 'title': 'Room 17', 'members': ['mika', 'rei', 'iris'], 'messages': messages}
-(ROOT / 'content/chats/room17.json').write_text(json.dumps(out, ensure_ascii=False, indent=1) + '\n')
-print(len(messages), 'messages')
+# Personal chats (docs/30-messenger-story.md, stage 021–040): short messages about the work, with a joke; ready replies.
+DMS = {
+    'iris': ('Iris', [
+        ('022', 8, 'Среда, вечер', [
+            text('iris', "Here's the short card. The other page is staying home. It took that quite well.", 'Вот короткая карточка. Второй лист остаётся дома. Он воспринял это спокойно.'),
+            tap([
+                ('Похвалить короткую версию', ['The short one works. I can read it in one look.', 'This is easy to use. Thanks for cutting it down.'], [say('iris', "Good. I'll bring just that one.", 'Хорошо. Возьму только её.')], 'u022_dm_short'),
+                ('Поддержать шутку про запас', ['Keep the long one. It can guard the room.', 'The other page can rest while we work.'], [say('iris', "I'll leave it somewhere quiet.", 'Оставлю его в тихом месте.', 'dry_smile')], 'u022_dm_spare'),
+            ]),
+        ]),
+    ]),
+    'rei': ('Rei', [
+        ('023', 8, 'Суббота, вечер', [
+            text('rei', "I found a gull between two words. Didn't ask it for an interview.", 'Между двумя словами нашлась чайка. Интервью у неё не просила.'),
+            tap([
+                ('Предложить послушать чайку', ["Keep that bit. I'd like to hear it.", 'Save it. The gull can have one line.'], [say('rei', 'One line. No questions.', 'Одна реплика. Без вопросов.', 'smirk')], 'u023_dm_gull'),
+                ('Предложить оставить чистую речь', ["Let's keep the clear words for the report.", 'Save the voice without the gull too.'], [say('rei', 'Already have both.', 'Уже есть обе версии.')], 'u023_dm_clear'),
+            ]),
+        ]),
+    ]),
+}
+
+def numbered(prefix, feed):
+    out = []
+    for uid, n, day, items in feed:
+        # Player replies have their own numbers, so the ids of the other messages (kept as "seen") stay put.
+        k = r = 0
+        for m in items:
+            if m['type'] == 'reply':
+                r += 1
+                mid = f'{prefix}-{uid}-{n}-r{r}'
+            else:
+                k += 1
+                mid = f'{prefix}-{uid}-{n}-{k}'
+            out.append({'id': mid, 'unlock': {'unit': uid, 'session': n}, 'day': day, **m})
+    return out
+
+
+def write(chat):
+    (ROOT / f"content/chats/{chat['id']}.json").write_text(json.dumps(chat, ensure_ascii=False, indent=1) + '\n')
+    print(chat['id'], len(chat['messages']), 'messages')
+
+
+write({'id': 'room17', 'title': 'Room 17', 'members': ['mika', 'rei', 'iris'], 'messages': numbered('room17', FEED)})
+for heroine, (title, feed) in DMS.items():
+    write({'id': f'dm-{heroine}', 'title': title, 'members': [heroine], 'with': heroine, 'messages': numbered(f'dm-{heroine}', feed)})

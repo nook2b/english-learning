@@ -1,0 +1,159 @@
+{
+ "tag": "past_questions",
+ "items": [
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-01",
+    "type": "choice",
+    "prompt": "___ you see the news yesterday?",
+    "options": [
+     "Did",
+     "Were",
+     "Do"
+    ],
+    "answer": "Did",
+    "tags": [
+     "past_questions"
+    ]
+   }
+  },
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-02",
+    "type": "choice",
+    "prompt": "What did she ___ for lunch?",
+    "options": [
+     "have",
+     "had",
+     "has"
+    ],
+    "answer": "have",
+    "tags": [
+     "past_questions"
+    ]
+   }
+  },
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-03",
+    "type": "choice",
+    "prompt": "— Did they call you? — No, they ___.",
+    "options": [
+     "didn't",
+     "don't",
+     "weren't"
+    ],
+    "answer": "didn't",
+    "tags": [
+     "past_questions"
+    ]
+   }
+  },
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-04",
+    "type": "choice",
+    "prompt": "Where ___ you go after class?",
+    "options": [
+     "did",
+     "were",
+     "do"
+    ],
+    "answer": "did",
+    "tags": [
+     "past_questions"
+    ]
+   }
+  },
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-05",
+    "type": "fill",
+    "prompt": "Did you ___ the bus or walk?",
+    "answers": [
+     "take"
+    ],
+    "tags": [
+     "past_questions"
+    ]
+   }
+  },
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-06",
+    "type": "fill",
+    "prompt": "— Did you like the film? — Yes, I ___.",
+    "answers": [
+     "did"
+    ],
+    "tags": [
+     "past_questions"
+    ]
+   }
+  },
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-07",
+    "type": "fill",
+    "prompt": "Who did you ___ at the party?",
+    "answers": [
+     "see",
+     "meet"
+    ],
+    "tags": [
+     "past_questions"
+    ]
+   }
+  },
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-08",
+    "type": "transform",
+    "instruction": "Сделай вопрос с did",
+    "sentence": "He bought a ticket.",
+    "answers": [
+     "Did he buy a ticket?"
+    ],
+    "tags": [
+     "past_questions"
+    ]
+   }
+  },
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-09",
+    "type": "fix",
+    "sentence": "Did you went to the concert?",
+    "answers": [
+     "Did you go to the concert?"
+    ],
+    "tags": [
+     "past_questions"
+    ]
+   }
+  },
+  {
+   "unit": "022",
+   "exercise": {
+    "id": "p-past_questions-10",
+    "type": "fix",
+    "sentence": "What you did on Sunday?",
+    "answers": [
+     "What did you do on Sunday?"
+    ],
+    "tags": [
+     "past_questions"
+    ]
+   }
+  }
+ ]
+}

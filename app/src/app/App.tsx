@@ -11,7 +11,7 @@ import { ReviewSession } from '../features/review/ReviewSession'
 import { PlacementCheck } from '../features/story/PlacementCheck'
 import { PrologueScreen } from '../features/story/PrologueScreen'
 import { QuestsScreen } from '../features/quests/QuestsScreen'
-import { ChatScreen } from '../features/chat/ChatScreen'
+import { ChatHome } from '../features/chat/ChatScreen'
 import { RewardScreen } from '../features/rewards/RewardScreen'
 import { ArcCheckScreen } from '../features/story/ArcCheck'
 import { SessionPlayer } from '../lesson/SessionPlayer'
@@ -54,7 +54,7 @@ function Screen({ route }: { route: Route }) {
     case 'profile':
       return <ProfileScreen />
     case 'chat':
-      return <ChatScreen />
+      return <ChatHome key={route.id ?? ''} id={route.id} />
     case 'arc-check':
       return <ArcCheckScreen key={route.id} id={route.id} />
   }

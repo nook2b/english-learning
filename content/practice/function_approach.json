@@ -1,0 +1,161 @@
+{
+ "tag": "function_approach",
+ "items": [
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-01",
+    "type": "choice",
+    "prompt": "Excuse me, do you have a ___?",
+    "options": [
+     "minute",
+     "hour ago",
+     "time"
+    ],
+    "answer": "minute",
+    "tags": [
+     "function_approach"
+    ]
+   }
+  },
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-02",
+    "type": "choice",
+    "prompt": "___ I ask you a quick question?",
+    "options": [
+     "Could",
+     "Did",
+     "Am"
+    ],
+    "answer": "Could",
+    "tags": [
+     "function_approach"
+    ]
+   }
+  },
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-03",
+    "type": "choice",
+    "prompt": "We're ___ a short film about the park.",
+    "options": [
+     "making",
+     "doing a",
+     "make"
+    ],
+    "answer": "making",
+    "tags": [
+     "function_approach"
+    ]
+   }
+  },
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-04",
+    "type": "choice",
+    "prompt": "— Sorry, I'm in a hurry. — No ___. Have a nice day.",
+    "options": [
+     "problem",
+     "matter",
+     "worry"
+    ],
+    "answer": "problem",
+    "tags": [
+     "function_approach"
+    ]
+   }
+  },
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-05",
+    "type": "fill",
+    "prompt": "May we ___ your answer?",
+    "answers": [
+     "record"
+    ],
+    "tags": [
+     "function_approach"
+    ]
+   }
+  },
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-06",
+    "type": "fill",
+    "prompt": "Thanks for your ___!",
+    "answers": [
+     "time",
+     "help"
+    ],
+    "tags": [
+     "function_approach"
+    ]
+   }
+  },
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-07",
+    "type": "fill",
+    "prompt": "That's ___. Thanks anyway.",
+    "answers": [
+     "fine",
+     "OK",
+     "okay"
+    ],
+    "tags": [
+     "function_approach"
+    ]
+   }
+  },
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-08",
+    "type": "transform",
+    "instruction": "Спроси вежливее: начни с Excuse me",
+    "sentence": "Do you have a minute?",
+    "answers": [
+     "Excuse me, do you have a minute?"
+    ],
+    "tags": [
+     "function_approach"
+    ]
+   }
+  },
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-09",
+    "type": "fix",
+    "sentence": "Excuse me, you have a minute?",
+    "answers": [
+     "Excuse me, do you have a minute?"
+    ],
+    "tags": [
+     "function_approach"
+    ]
+   }
+  },
+  {
+   "unit": "023",
+   "exercise": {
+    "id": "p-function_approach-10",
+    "type": "fix",
+    "sentence": "Thanks for you time.",
+    "answers": [
+     "Thanks for your time."
+    ],
+    "tags": [
+     "function_approach"
+    ]
+   }
+  }
+ ]
+}

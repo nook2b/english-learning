@@ -1,0 +1,66 @@
+{
+ "id": "dm-iris",
+ "title": "Iris",
+ "members": [
+  "iris"
+ ],
+ "with": "iris",
+ "messages": [
+  {
+   "id": "dm-iris-022-8-1",
+   "unlock": {
+    "unit": "022",
+    "session": 8
+   },
+   "day": "Среда, вечер",
+   "from": "iris",
+   "type": "text",
+   "text": "Here's the short card. The other page is staying home. It took that quite well.",
+   "ru": "Вот короткая карточка. Второй лист остаётся дома. Он воспринял это спокойно."
+  },
+  {
+   "id": "dm-iris-022-8-r1",
+   "unlock": {
+    "unit": "022",
+    "session": 8
+   },
+   "day": "Среда, вечер",
+   "from": "me",
+   "type": "reply",
+   "tap": true,
+   "intents": [
+    {
+     "label": "Похвалить короткую версию",
+     "answers": [
+      "The short one works. I can read it in one look.",
+      "This is easy to use. Thanks for cutting it down."
+     ],
+     "reaction": [
+      {
+       "from": "iris",
+       "text": "Good. I'll bring just that one.",
+       "ru": "Хорошо. Возьму только её."
+      }
+     ],
+     "flag": "u022_dm_short"
+    },
+    {
+     "label": "Поддержать шутку про запас",
+     "answers": [
+      "Keep the long one. It can guard the room.",
+      "The other page can rest while we work."
+     ],
+     "reaction": [
+      {
+       "from": "iris",
+       "text": "I'll leave it somewhere quiet.",
+       "ru": "Оставлю его в тихом месте.",
+       "expr": "dry_smile"
+      }
+     ],
+     "flag": "u022_dm_spare"
+    }
+   ]
+  }
+ ]
+}

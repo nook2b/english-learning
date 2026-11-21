@@ -8,7 +8,7 @@ import data from '../../../content/dictionary.json'
 export const DICTIONARY: Readonly<Record<string, string>> = data
 
 /** Words in a text; "a.m." and contractions like "I'm" stay whole. */
-export const WORD = /[ap]\.m\.|[A-Za-z]+(?:['’][A-Za-z]+)*/gi
+export const WORD = /[ap]\.m\.|[A-Za-zÀ-ÿ]+(?:['’][A-Za-zÀ-ÿ]+)*/gi
 
 export const keyOf = (word: string) => word.toLowerCase().replace(/’/g, "'")
 

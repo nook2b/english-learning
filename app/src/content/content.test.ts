@@ -1,5 +1,5 @@
 import { UNITS } from './course'
-import { ARC1_UNITS } from './outline'
+import { COURSE_UNITS } from './outline'
 import { type HeroineId, isHeroine, parseExpr, resolveSprite } from '../story/sprites'
 import type { Exercise } from './schema'
 import { TAGS } from './tags'
@@ -34,7 +34,7 @@ function buildable(tiles: readonly string[], answers: readonly string[]): boolea
 
 test('every unit file parses and belongs to the outline', () => {
   expect(units.length).toBeGreaterThan(0)
-  for (const u of units) expect(ARC1_UNITS.some((o) => o.id === u.id)).toBe(true)
+  for (const u of units) expect(COURSE_UNITS.some((o) => o.id === u.id)).toBe(true)
 })
 
 test('each unit ends with its mission, a special stop on the path map', () => {

@@ -1,0 +1,1093 @@
+{
+  "id": "022",
+  "title": "Что ты делал?",
+  "goal": "Задать вопрос с did и ответить коротко, используя прошедшую форму.",
+  "focus": "Спросить о прошлом: did-вопросы (What did you do? Did you go…?), короткие ответы Yes, I did / No, I didn't; частые неправильные глаголы: went, saw, bought, ate, took, had.",
+  "outcome": "У команды три вопроса и короткая репетиция. Айрис отправляет игроку сокращённый список вечером.",
+  "expressions": [
+    "What did you do?",
+    "Did you go",
+    "Yes, I did",
+    "No, I didn't",
+    "went",
+    "saw",
+    "bought",
+    "ate",
+    "took",
+    "had",
+    "one question at a time",
+    "tell me more"
+  ],
+  "glossary": [
+    "question card",
+    "follow-up question",
+    "rehearsal",
+    "market",
+    "clean copy"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Список на полях",
+      "intro": "Айрис сократила список до одной карточки. Прочитай, сколько вопросов на ней и что делать после короткого ответа.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика наливает оставшийся чай. Айрис закрывает второй лист и кладёт перед тобой одну карточку.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "I cut the list. There are still a few things to choose.",
+            "ru": "Сократила список. Ещё кое-что нужно выбрать.",
+            "expr": "notebook/focused"
+          },
+          {
+            "speaker": "mika",
+            "text": "You called this a good Wednesday. Let's keep it that way.",
+            "ru": "Ты сказал, что среда удалась. Продолжим в том же духе.",
+            "expr": "happy",
+            "if": "flirt_mika_021"
+          },
+          {
+            "speaker": "mika",
+            "text": "Your chair can rest. We're doing the talking now.",
+            "ru": "Твой стул может отдохнуть. Сейчас разговаривать будем мы.",
+            "expr": "happy",
+            "if": "u021_mika_joke"
+          },
+          {
+            "speaker": "mika",
+            "text": "You said one thing was enough. Let's keep the questions short.",
+            "ru": "Ты сказал, что одного дела хватит. Оставим вопросы короткими.",
+            "expr": "phone/focused",
+            "if": "u021_mika_work"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u022-s1-e1",
+          "type": "reading",
+          "title": "The question card",
+          "text": "We have room for three questions on the card. Start with the question we chose together. Then ask where the person went or who they spent time with. If an answer is very short, ask one small follow-up question. A yes or no answer can still help us. Did you go out? Yes, I did. Did you buy anything? No, I didn't. Leave a little space at the bottom for a place name. We can write it down instead of asking the person to spell it twice.",
+          "ru": "На карточке хватит места для трёх вопросов. Начни с вопроса, который мы выбрали вместе. Затем спроси, куда человек ходил или с кем проводил время. Если ответ очень короткий, задай один небольшой дополнительный вопрос. Даже ответ «да» или «нет» может помочь. Ты выходил? Да. Что-нибудь покупал? Нет. Оставь внизу немного места для названия места. Мы можем его записать, чтобы не просить человека дважды повторять по буквам.",
+          "questions": [
+            {
+              "prompt": "How many questions fit on the card?",
+              "options": [
+                "three",
+                "five",
+                "ten"
+              ],
+              "answer": "three"
+            },
+            {
+              "prompt": "What can we ask after a short answer?",
+              "options": [
+                "one follow-up",
+                "all questions",
+                "nothing ever"
+              ],
+              "answer": "one follow-up"
+            },
+            {
+              "prompt": "Why leave space at the bottom?",
+              "options": [
+                "for a place name",
+                "for a price",
+                "for a drawing only"
+              ],
+              "answer": "for a place name"
+            }
+          ],
+          "tags": [
+            "reading",
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s1-e2",
+          "type": "choice",
+          "prompt": "___ you go out last weekend?",
+          "options": [
+            "Did",
+            "Were",
+            "Do"
+          ],
+          "answer": "Did",
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "Вопрос о действии в прошлом — Did."
+        },
+        {
+          "id": "u022-s1-e3",
+          "type": "choice",
+          "prompt": "— Did you buy anything? — No, I ___.",
+          "options": [
+            "didn't",
+            "don't",
+            "wasn't"
+          ],
+          "answer": "didn't",
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "Короткий ответ: No, I didn't."
+        },
+        {
+          "id": "u022-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "What did you do?",
+              "ru": "что ты делал?"
+            },
+            {
+              "en": "Yes, I did",
+              "ru": "да"
+            },
+            {
+              "en": "No, I didn't",
+              "ru": "нет"
+            },
+            {
+              "en": "tell me more",
+              "ru": "расскажи ещё"
+            },
+            {
+              "en": "one question at a time",
+              "ru": "по одному вопросу"
+            },
+            {
+              "en": "bought",
+              "ru": "купил"
+            }
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "The second page can stay here.",
+          "ru": "Второй лист можно оставить здесь.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Что было на рынке",
+      "intro": "Репетиция: Мика и Айрис отвечают, как прохожие. Слушай без текста.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u022-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "I went to the market on Saturday. I saw a yellow cup, but I didn't buy it. We already have a yellow one here. I bought bread instead and took it to my friend's flat.",
+          "ru": "В субботу я ходила на рынок. Увидела жёлтую чашку, но не купила. У нас здесь уже есть жёлтая. Вместо неё купила хлеб и отнесла другу.",
+          "questions": [
+            {
+              "prompt": "What did Mika buy?",
+              "options": [
+                "bread",
+                "a cup",
+                "a phone"
+              ],
+              "answer": "bread"
+            }
+          ],
+          "tags": [
+            "listening",
+            "past_simple"
+          ],
+          "context": "Мика играет прохожую"
+        },
+        {
+          "id": "u022-s2-e2",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "I went to the library on Sunday. I saw a book about old houses, and I took it home. Then I ate lunch by the window. I had a quiet afternoon, which suited me very well.",
+          "ru": "В воскресенье я сходила в библиотеку. Увидела книгу о старых домах и взяла её домой. Потом пообедала у окна. День прошёл спокойно, мне как раз этого хотелось.",
+          "questions": [
+            {
+              "prompt": "What did Iris take home?",
+              "options": [
+                "a book",
+                "a cup",
+                "a map"
+              ],
+              "answer": "a book"
+            }
+          ],
+          "tags": [
+            "listening",
+            "past_simple"
+          ],
+          "delivery": "[thoughtfully]",
+          "context": "Айрис отвечает на репетиции"
+        },
+        {
+          "id": "u022-s2-e3",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "Did you buy anything? No, I didn't.",
+          "answers": [
+            "Did you buy anything? No, I didn't."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s2-e4",
+          "type": "choice",
+          "prompt": "Mika saw a yellow cup, but she ___ it.",
+          "options": [
+            "didn't buy",
+            "didn't bought",
+            "not buy"
+          ],
+          "answer": "didn't buy",
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "После didn't — глагол без прошедшей формы."
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Bread. Book. Different answers.",
+          "ru": "Хлеб. Книга. Разные ответы.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "После did",
+      "intro": "Вопрос о прошлом: Did you go…? — после did глагол без -ed: Did you buy…? Ответ: Yes, I did. / No, I didn't. В полном ответе — прошедшая форма: I went, I saw, I bought.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис зачёркивает went после did и пишет go. Рядом оставляет ответ с went.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "The question has did. The answer can have went.",
+            "ru": "В вопросе есть did. В ответе может быть went.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u022-s3-e1",
+          "type": "choice",
+          "prompt": "Did you ___ to the market?",
+          "options": [
+            "go",
+            "went",
+            "going"
+          ],
+          "answer": "go",
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "После did — go, не went.",
+          "context": "После did"
+        },
+        {
+          "id": "u022-s3-e2",
+          "type": "choice",
+          "prompt": "Yes, I did. I ___ on Saturday.",
+          "options": [
+            "went",
+            "go",
+            "did go"
+          ],
+          "answer": "went",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "В ответе — прошедшая форма: went.",
+          "context": "После did"
+        },
+        {
+          "id": "u022-s3-e3",
+          "type": "fill",
+          "prompt": "Did you ___ a yellow cup?",
+          "answers": [
+            "see"
+          ],
+          "hint": "видел",
+          "tags": [
+            "past_questions"
+          ],
+          "context": "После did"
+        },
+        {
+          "id": "u022-s3-e4",
+          "type": "choice",
+          "prompt": "Yes, I did. I ___ one at the market.",
+          "options": [
+            "saw",
+            "see",
+            "seen"
+          ],
+          "answer": "saw",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "See → saw.",
+          "context": "После did"
+        },
+        {
+          "id": "u022-s3-e5",
+          "type": "fill",
+          "prompt": "No, I didn't. I ___ bread.",
+          "answers": [
+            "bought"
+          ],
+          "hint": "купил",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Buy → bought.",
+          "context": "После did"
+        },
+        {
+          "id": "u022-s3-e6",
+          "type": "choice",
+          "prompt": "___ she take a bus home?",
+          "options": [
+            "Did",
+            "Was",
+            "Does"
+          ],
+          "answer": "Did",
+          "tags": [
+            "past_questions"
+          ],
+          "context": "После did"
+        },
+        {
+          "id": "u022-s3-e7",
+          "type": "fix",
+          "sentence": "Did you bought the cup?",
+          "answers": [
+            "Did you buy the cup?"
+          ],
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "После did — buy.",
+          "context": "После did"
+        },
+        {
+          "id": "u022-s3-e8",
+          "type": "transform",
+          "instruction": "Сделай вопрос с did",
+          "sentence": "You went to the library.",
+          "answers": [
+            "Did you go to the library?"
+          ],
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "Went → did you go.",
+          "context": "После did"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "The cup stayed at the market. Our budget can relax.",
+          "ru": "Чашка осталась на рынке. Бюджет может расслабиться.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Один уточняющий вопрос",
+      "intro": "Одна новая деталь: Where did you go? What did you see? What did you buy? Who did you have lunch with? Неправильные: go → went, see → saw, buy → bought, eat → ate, take → took, have → had.",
+      "place": "room17",
+      "frame": {
+        "setting": "На карточке уже есть начало. Айрис оставляет ниже две свободные строки.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Ask for one new detail each time.",
+            "ru": "Каждый раз спрашивай об одной новой детали.",
+            "expr": "notebook/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u022-s4-e1",
+          "type": "fill",
+          "prompt": "Where ___ you go on Sunday?",
+          "answers": [
+            "did"
+          ],
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "Where did you go?",
+          "context": "Уточняющий вопрос"
+        },
+        {
+          "id": "u022-s4-e2",
+          "type": "choice",
+          "prompt": "What did you ___ there?",
+          "options": [
+            "see",
+            "saw",
+            "seeing"
+          ],
+          "answer": "see",
+          "tags": [
+            "past_questions"
+          ],
+          "context": "Уточняющий вопрос"
+        },
+        {
+          "id": "u022-s4-e3",
+          "type": "choice",
+          "prompt": "Who did you have lunch ___?",
+          "options": [
+            "with",
+            "to",
+            "at"
+          ],
+          "answer": "with",
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "Have lunch with — обедать с.",
+          "context": "Уточняющий вопрос"
+        },
+        {
+          "id": "u022-s4-e4",
+          "type": "fill",
+          "prompt": "What did you ___? — I ate soup.",
+          "answers": [
+            "eat"
+          ],
+          "hint": "ел",
+          "tags": [
+            "past_questions"
+          ],
+          "context": "Уточняющий вопрос"
+        },
+        {
+          "id": "u022-s4-e5",
+          "type": "choice",
+          "prompt": "Did you ___ a bus home?",
+          "options": [
+            "take",
+            "took",
+            "taken"
+          ],
+          "answer": "take",
+          "tags": [
+            "past_questions"
+          ],
+          "context": "Уточняющий вопрос"
+        },
+        {
+          "id": "u022-s4-e6",
+          "type": "sort",
+          "instruction": "Обычная форма или прошлая?",
+          "categories": [
+            {
+              "id": "base",
+              "label": "После did"
+            },
+            {
+              "id": "past",
+              "label": "В ответе"
+            }
+          ],
+          "items": [
+            {
+              "text": "go",
+              "category": "base"
+            },
+            {
+              "text": "buy",
+              "category": "base"
+            },
+            {
+              "text": "eat",
+              "category": "base"
+            },
+            {
+              "text": "went",
+              "category": "past"
+            },
+            {
+              "text": "bought",
+              "category": "past"
+            },
+            {
+              "text": "ate",
+              "category": "past"
+            }
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s4-e7",
+          "type": "fix",
+          "sentence": "Where you went on Saturday?",
+          "answers": [
+            "Where did you go on Saturday?"
+          ],
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "Вопрос: Where did you go…?",
+          "context": "Уточняющий вопрос"
+        },
+        {
+          "id": "u022-s4-e8",
+          "type": "transform",
+          "instruction": "Спроси о детали: начни с What did",
+          "sentence": "you buy",
+          "answers": [
+            "What did you buy?"
+          ],
+          "tags": [
+            "past_questions"
+          ],
+          "context": "Уточняющий вопрос"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "That fits on one card.",
+          "ru": "На одну карточку помещается.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Читаешь внимательно",
+      "intro": "Айрис замечает, что ты прочитал её записку целиком. Ответь, как хочешь.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u022-s5-e1",
+          "type": "scene",
+          "setting": "Ты возвращаешь Айрис карточку с одной пометкой.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "You read the whole thing. I may start writing better notes just for you.",
+              "ru": "Ты всё прочёл. Пожалуй, начну писать записки получше специально для тебя.",
+              "expr": "dry_smile"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I'd read your notes even without the questions.",
+                "I like having something from you to read."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Then I'll make the next one worth reading.",
+                "ru": "Тогда постараюсь со следующей.",
+                "expr": "dry_smile"
+              },
+              "flag": "flirt_iris_022"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "Does the back of the card have a sequel?",
+                "I'm waiting for the book version."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "That one still has too many pages.",
+                "ru": "В ней пока слишком много страниц.",
+                "expr": "dry_smile"
+              },
+              "flag": "u022_iris_joke"
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's leave space for the answers too.",
+                "The short version is easy to use."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll leave the bottom half clear.",
+                "ru": "Оставлю нижнюю половину пустой.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u022_iris_work"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Could you say that again?",
+            "ru": "Можешь повторить?",
+            "expr": "listening"
+          },
+          "tags": [
+            "past_questions"
+          ],
+          "context": "Комментарий на полях"
+        },
+        {
+          "id": "u022-s5-e2",
+          "type": "translate",
+          "ru": "Что ты делал в субботу?",
+          "answers": [
+            "What did you do on Saturday?"
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s5-e3",
+          "type": "translate",
+          "ru": "Ты ходил на рынок?",
+          "answers": [
+            "Did you go to the market?"
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s5-e4",
+          "type": "translate",
+          "ru": "Нет. Я остался дома.",
+          "answers": [
+            "No, I didn't. I stayed at home.",
+            "No, I didn't. I stayed home."
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s5-e5",
+          "type": "translate",
+          "ru": "Расскажи ещё.",
+          "answers": [
+            "Tell me more.",
+            "Tell me more, please."
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s5-e6",
+          "type": "write",
+          "situation": "Задай прохожему вопрос о прошлых выходных и один уточняющий.",
+          "answers": [
+            "What did you do last weekend? Where did you go?",
+            "Did you go out last weekend? What did you see?",
+            "How was your weekend? What did you do on Saturday?"
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Let's try asking without reading every word.",
+          "ru": "Попробуем спросить, не читая каждое слово.",
+          "expr": "phone/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: вопрос и короткий ответ",
+      "intro": "Вопрос и короткий ответ вслух — по очереди с Микой.",
+      "place": "room17",
+      "frame": {
+        "setting": "Рэй поворачивает к тебе карточку. Мика отвечает на первый вопрос, затем вы меняетесь ролями.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Question first. Then one answer.",
+            "ru": "Сначала вопрос. Потом один ответ.",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u022-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Did you go out last weekend?",
+          "answers": [
+            "Did you go out last weekend?"
+          ],
+          "tags": [
+            "speaking",
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Yes, I did. I went to the market.",
+          "answers": [
+            "Yes, I did. I went to the market."
+          ],
+          "tags": [
+            "speaking",
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Did you buy anything there?",
+          "answers": [
+            "Did you buy anything there?"
+          ],
+          "tags": [
+            "speaking",
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "No, I didn't. I just walked around.",
+          "answers": [
+            "No, I didn't. I just walked around."
+          ],
+          "tags": [
+            "speaking",
+            "past_questions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Short enough to remember.",
+          "ru": "Достаточно коротко, чтобы запомнить.",
+          "expr": "recorder/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: три детали",
+      "intro": "Быстрый круг: глагол и деталь — задай вопрос.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис показывает на карточке вопрос, место и одну деталь. Рэй выключает запись репетиции.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Ask about the place, then one thing the person did.",
+            "ru": "Спроси о месте, затем об одном деле.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u022-s7-e1",
+          "type": "write",
+          "situation": "go / market — задай вопрос.",
+          "answers": [
+            "Did you go to the market?"
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s7-e2",
+          "type": "write",
+          "situation": "buy — спроси, что купили.",
+          "answers": [
+            "What did you buy?",
+            "What did you buy there?"
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s7-e3",
+          "type": "write",
+          "situation": "see — спроси, что видели.",
+          "answers": [
+            "What did you see?",
+            "What did you see there?"
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s7-e4",
+          "type": "write",
+          "situation": "eat lunch — спроси где.",
+          "answers": [
+            "Where did you eat lunch?",
+            "Where did you have lunch?"
+          ],
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s7-e5",
+          "type": "choice",
+          "prompt": "— Did you see Rei? — Yes, I ___.",
+          "options": [
+            "did",
+            "saw",
+            "do"
+          ],
+          "answer": "did",
+          "tags": [
+            "past_questions"
+          ]
+        },
+        {
+          "id": "u022-s7-e6",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "What did you do on Saturday?",
+          "answers": [
+            "What did you do on Saturday?"
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "past_questions"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Now choose what goes on the street card.",
+          "ru": "Теперь выбери, что оставить на уличной карточке.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Три вопроса",
+      "role": "mission",
+      "intro": "Миссия: собрать три вопроса на карточку и решить, кто спрашивает первым.",
+      "place": "room17",
+      "frame": {
+        "setting": "На карточке осталось три пронумерованные строки. На первом месте — ваш выбранный вопрос.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "You chose “How was your weekend?” That's our first line.",
+            "ru": "Ты выбрал «Как прошли выходные?». Это первая строчка.",
+            "expr": "notebook/focused",
+            "if": "u021_open_weekend"
+          },
+          {
+            "speaker": "iris",
+            "text": "You chose Saturday. That's where our first question starts.",
+            "ru": "Ты выбрал субботу. С неё и начнём.",
+            "expr": "notebook/focused",
+            "if": "u021_open_day"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u022-s8-e1",
+          "type": "scene",
+          "setting": "На карточке три пронумерованные строки.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "What should we ask after that?",
+              "ru": "О чём спросить после этого?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Узнать место",
+              "answers": [
+                "Let's ask “Where did you go?”",
+                "Ask about the place next."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Place second. One last detail after that.",
+                "ru": "Вторым — место. Потом одна последняя деталь.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u022_follow_place"
+            },
+            {
+              "label": "Узнать компанию",
+              "answers": [
+                "Let's ask “Who did you spend time with?”",
+                "Ask who was there with them."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "People second. One last detail after that.",
+                "ru": "Вторым — люди. Потом одна последняя деталь.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u022_follow_people"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "The place, or the people?",
+            "ru": "Место или люди?",
+            "expr": "listening"
+          },
+          "tags": [
+            "past_questions"
+          ],
+          "after": [
+            {
+              "speaker": "iris",
+              "text": "The last question can be “What did you do there?”",
+              "ru": "Последний вопрос — «Что ты там делал?».",
+              "expr": "notebook/focused"
+            }
+          ],
+          "context": "Второй вопрос карточки"
+        },
+        {
+          "id": "u022-s8-e2",
+          "type": "scene",
+          "setting": "Мика садится напротив и кладёт телефон экраном вниз.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "You ask, I'll listen. I like how you make even my weekend sound interesting.",
+              "ru": "Ты спрашиваешь, я слушаю. С тобой даже мои выходные звучат интересно.",
+              "expr": "happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I'd ask about your next weekend too.",
+                "You're easy to listen to."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll try to bring back a good story.",
+                "ru": "Постараюсь принести хорошую историю.",
+                "expr": "happy"
+              },
+              "flag": "flirt_mika_022"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "The bread did most of the work.",
+                "Even the yellow cup had a story."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "The cup is still waiting for its interview.",
+                "ru": "Чашка пока ждёт интервью.",
+                "expr": "laugh"
+              },
+              "flag": "u022_mika_joke"
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's take turns asking on Saturday.",
+                "We should both get a turn with the questions."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Agreed. You get the first one.",
+                "ru": "Договорились. Первый за тобой.",
+                "expr": "phone/happy"
+              },
+              "flag": "u022_mika_work"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Do you mean on Saturday?",
+            "ru": "Ты про субботу?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_suggest"
+          ],
+          "context": "Кто кого спрашивает"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Three questions, one card. Saturday at eleven by the river steps.",
+          "ru": "Три вопроса, одна карточка. В субботу в одиннадцать у ступенек к реке.",
+          "expr": "phone/happy"
+        },
+        {
+          "speaker": "iris",
+          "text": "I'll send the clean copy tonight.",
+          "ru": "Вечером отправлю чистовой вариант.",
+          "expr": "neutral"
+        },
+        {
+          "speaker": "rei",
+          "text": "Microphone checked. Bring the card.",
+          "ru": "Микрофон проверен. Возьми карточку.",
+          "expr": "recorder/focused"
+        }
+      ]
+    }
+  ]
+}

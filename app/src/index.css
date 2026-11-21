@@ -584,6 +584,13 @@ input[type="checkbox"] { accent-color: var(--accent); width: 20px; height: 20px;
 .chat-avatars .sprite-avatar { width: 34px; height: 34px; margin-right: -10px; border: 2px solid var(--bg); }
 .chat-title { display: flex; flex-direction: column; margin-left: 12px; line-height: 1.2; }
 .chat-title .muted { font-size: 0.8rem; }
+.chat-list { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; }
+.chat-list-item { display: flex; align-items: center; gap: 10px; width: 100%; padding: 12px 4px; border: 0; border-bottom: 1px solid var(--border); background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.chat-list-item .chat-title { flex: 1; min-width: 0; }
+.chat-preview { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.chat-list-badge { position: static; flex: none; }
+.chat-tap { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; }
+.chat-tap .muted { font-size: 0.78rem; }
 .chat-feed { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .chat-day { margin: 14px auto 6px; padding: 3px 12px; width: fit-content; border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 0.78rem; font-weight: 700; }
 .chat-system { margin: 6px auto; max-width: 80%; color: var(--muted); font-size: 0.8rem; text-align: center; }
