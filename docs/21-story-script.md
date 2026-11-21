@@ -2230,6 +2230,8 @@ _Итог занятия:_
 _Пятница, четыре часа. Рядом со стеной появилось объявление. Из открытой двери доносится скрежет стульев._
 
 - **Айрис:** There is a finish time. Let’s read that first. — Тут есть время окончания. Начнём с него. _(notebook/focused)_
+- **Айрис:** You described the students. Now we can check when they can return. — Ты рассказал, что здесь делают студенты. Теперь проверим, когда они смогут вернуться. _(notebook/focused, если `u013_description_students`)_
+- **Айрис:** You described the noise. Now we can check when the work ends. — Ты рассказал о шуме. Теперь проверим, когда закончатся работы. _(notebook/focused, если `u013_description_sound`)_
 
 **Чтение [u014-s1-e1]: «Courtyard work»** (текст)
 
@@ -2397,6 +2399,8 @@ _Итог занятия:_
 _Понедельник, четыре часа. Мика рисует на доске пятницу и субботу. Айрис сверяет время окончания ремонта._
 
 - **Мика:** Two options. Both after the work finishes. — Два варианта. Оба после окончания работ. _(phone/focused)_
+- **Мика:** You asked when the work ends. Both days are after that. — Ты спросил, когда закончатся работы. Оба дня подходят по срокам. _(phone/happy, если `u014_ask_finish`)_
+- **Мика:** You asked about a break. A different day gives us more time. — Ты спросил про перерыв. В другой день у нас будет больше времени. _(phone/happy, если `u014_ask_break`)_
 
 **Чтение [u015-s1-e1]: «One recording, another day»** (текст)
 
@@ -2604,6 +2608,8 @@ _Итог занятия:_
 _Айрис сверяет напоминание с записью в тетради._
 
 - **Айрис:** Confirm what we agreed. Don’t invent a new time. — Подтверди, о чём договорились. Новое время придумывать не надо. _(notebook/focused)_
+- **Айрис:** You checked our usual time too. Wednesday at one is still in my notebook. — Ты проверил и наш обычный час. Среда, час дня, по-прежнему записана у меня в тетради. _(notebook/dry_smile, если `u015_regular_confirmed`)_
+- **Айрис:** You said this change was just for one recording. I wrote that down too. — Ты сказал, что перенос только для одной записи. Это я тоже записала. _(notebook/dry_smile, если `u015_one_off_confirmed`)_
 
 _Итог занятия:_
 
@@ -2732,6 +2738,8 @@ _Итог занятия:_
 _Среда, час дня. Рэй выключает запись двора. Айрис расстилает на столе план, а Мика прижимает его углы двумя чашками._
 
 - **Рэй:** Courtyard's in. What's next? — Двор добавила. Что дальше? _(recorder/neutral)_
+- **Рэй:** You checked the phones last time. No calls in that recording. — Ты в прошлый раз проверил телефоны. Звонки в запись не попали. _(recorder/neutral, если `u016_check_phones`)_
+- **Рэй:** You checked the background last time. We could hear your words. — Ты в прошлый раз проверил фон. Твои слова были слышны. _(recorder/neutral, если `u016_check_background`)_
 
 **Чтение [u017-s1-e1]: «Room 17: draft directions»** (текст)
 
@@ -2882,6 +2890,8 @@ _Итог занятия:_
 _У стойки лежит памятка для сотрудников. Айрис кладёт рядом ваш распечатанный маршрут._
 
 - **Айрис:** We wrote “the passage”. This calls it “the link”. — Мы написали «переход». Здесь он называется «соединительный коридор». _(notebook/thinking)_
+- **Айрис:** Your card starts at the main entrance. We can check from there. — Твоя карточка начинается у главного входа. Оттуда и проверим шаги. _(notebook/thinking, если `u017_open_entrance`)_
+- **Айрис:** Your card starts at the desk. We can check from there. — Твоя карточка начинается у стойки возле входа. Оттуда и проверим. _(notebook/thinking, если `u017_open_desk`)_
 
 **Чтение [u018-s1-e1]: «Staff access note»** (текст)
 
@@ -3032,6 +3042,8 @@ _Итог занятия:_
 _Пятница, четыре часа. Алекс встречает вас у главного входа и даёт Мике короткую схему._
 
 - **Алекс:** Start here. Everyone can use the courtyard door. — Начинайте здесь. Через дверь во двор могут пройти все.
+- **Мика:** You marked the old passage as closed. Now we can draw the new route. — Ты отметил, что старый проход закрыт. Теперь можем нарисовать новый маршрут. _(phone/neutral, если `u018_mark_closed`)_
+- **Мика:** You took the old directions out. Now we can add the new route. — Ты убрал старые указания. Теперь можем добавить новый маршрут. _(phone/neutral, если `u018_hide_route`)_
 
 **Чтение [u019-s1-e1]: «Alex's note»** (текст)
 
@@ -3296,6 +3308,8 @@ _Лина снова смотрит на две двери у стойки. Ча
 Общее продолжение:
 - **Диктор:** Вы проходите лифт. Ты показываешь номер 70 слева. Лина сверяет его с сообщением. Дверь уже приоткрыта, внутри расставляют стулья.
 - **Лина:** Seventy. This is it. Thanks for coming with me. — Семьдесят. Это здесь. Спасибо, что проводил. _([slowly])_
+- **Мика:** You offered to show her the way. She got here with time to spare. — Ты предложил показать ей дорогу. Она пришла с запасом времени. _(happy, если `u020_lina_show`)_
+- **Мика:** You told her to look for the lift. She knew where to go. — Ты подсказал ей искать лифт. Она поняла, куда идти. _(happy, если `u020_lina_landmark`)_
 - **Диктор:** Вы возвращаетесь в старый корпус за планом, который оставили в комнате 17. У соседней кладовой Алекс меняет держатель таблички. Через стекло видны коробки с надписью «Before You Go».
 - **Алекс:** Boxes from the old radio team. I'll check who has the key. — Коробки старой радиоредакции. Узнаю, у кого ключ.
 - **Айрис:** I've seen that title on our old map. — Я видела это название на нашем старом плане. _(notebook/thinking)_
@@ -3320,6 +3334,8 @@ _На столе четыре разные чашки. К жёлтой и сер
 Общее продолжение:
 - **Мика:** Will you walk our new routes before we record them? You know what to look for. — Будешь проходить новые маршруты перед записью? Ты знаешь, что проверять. _(happy)_
 - **Айрис:** I'll give you the cards before I write the final lines. — Буду давать тебе карточки до того, как допишу текст. _(notebook/focused)_
+- **Айрис:** Your Room 17 card starts with the green door. That is easy to find. — На твоей карточке до комнаты 17 сначала зелёная дверь. Её легко найти. _(notebook/focused, если `u019_anchor_green`)_
+- **Айрис:** Your Room 17 card starts with the benches. The door is opposite them. — На твоей карточке до комнаты 17 сначала скамейки. Дверь напротив них. _(notebook/focused, если `u019_anchor_benches`)_
 
 _Итог занятия:_
 
@@ -3370,6 +3386,10 @@ _Итог занятия:_
 - You got your own mug and a seat at the table. — У тебя появилась своя чашка и место за столом. _(после юнита 020)_
 - You joked that you would know each other's voices anywhere. — Вы пошутили, что узнали бы друг друга по голосу. _(флаг `flirt_mika_017`)_
 - You joked about where you would both sit at the next meeting. — Вы пошутили о том, где будете сидеть на следующей встрече. _(флаг `flirt_mika_020`)_
+- You marked the old passage as closed. We then checked another way. — Ты отметил, что старый проход закрыт. Потом мы проверили другой путь. _(флаг `u018_mark_closed`)_
+- You took the old route out of the guide. We then checked another way. — Ты убрал старый маршрут из гида. Потом мы проверили другой путь. _(флаг `u018_hide_route`)_
+- You offered to show Lina the way and walked with her to Room 70. — Ты предложил показать Лине дорогу и проводил её до аудитории 70. _(флаг `u020_lina_show`)_
+- You named the lift and walked with Lina to Room 70. — Ты подсказал Лине искать лифт и проводил её до аудитории 70. _(флаг `u020_lina_landmark`)_
 
 **Реплики «Поболтать»:**
 
@@ -3479,6 +3499,10 @@ _Итог занятия:_
 - She recognised the title from the sheet she gave you on your first day. — Она узнала название с листка, который дала тебе в первый день. _(после юнита 020)_
 - You answered when she said it was nice to work next to you. — Ты ответил на её слова о том, что ей приятно работать рядом. _(флаг `flirt_iris_018`)_
 - You said you liked her company while you checked the route. — Ты сказал, что тебе нравится её компания, пока вы проверяли маршрут. _(флаг `flirt_iris_019`)_
+- You started our first route card at the main entrance. — Ты начал первую карточку маршрута с главного входа. _(флаг `u017_open_entrance`)_
+- You started our first route card at the desk by the entrance. — Ты начал первую карточку маршрута со стойки у входа. _(флаг `u017_open_desk`)_
+- You put the green door first on our Room 17 card. — На нашей карточке до комнаты 17 ты сначала указал зелёную дверь. _(флаг `u019_anchor_green`)_
+- Your Room 17 card started with the benches, opposite the door. — На нашей карточке до комнаты 17 ты сначала указал скамейки. Дверь была напротив. _(флаг `u019_anchor_benches`)_
 
 **Реплики «Поболтать»:**
 
