@@ -27,6 +27,10 @@
 - [Юнит 018. Проверить инструкцию](#юнит-018-проверить-инструкцию)
 - [Юнит 019. Переспросить и пройти](#юнит-019-переспросить-и-пройти)
 - [Юнит 020. Провести новичка](#юнит-020-провести-новичка)
+- [Юнит 021. Как прошли выходные](#юнит-021-как-прошли-выходные)
+- [Юнит 022. Что ты делал?](#юнит-022-что-ты-делал?)
+- [Юнит 023. Спросить незнакомца](#юнит-023-спросить-незнакомца)
+- [Юнит 024. Что у нас есть](#юнит-024-что-у-нас-есть)
 - [Страницы героинь](#страницы-героинь)
 - [После уроков](#после-уроков)
 
@@ -3345,6 +3349,685 @@ _Итог занятия:_
 
 ---
 
+## Юнит 021. Как прошли выходные
+
+**Цель:** Рассказать о выходных через Past Simple и спросить другого.
+
+**Итог юнита:** Команда согласует тему и первый выход на субботу. Игрок выбирает, с какого простого вопроса начать.
+
+### Занятие 1. Три минуты города (понимание)
+
+_Мика ставит телефон между четырьмя чашками. На экране заголовок «Last Weekend». Рэй снимает наушники._
+
+- **Мика:** New idea! Three minutes of people's weekends. I already have the title. — Новая идея! Три минуты о том, как люди провели выходные. Название уже есть. _(phone/excited)_
+- **Рэй:** We have a title. No sound yet. — Название есть. Звука пока нет. _(deadpan)_
+- **Айрис:** I started a list of questions. It's on two pages. — Я начала список вопросов. Там две страницы. _(notebook/thinking)_
+
+**Чтение [u021-s1-e1]: «Last Weekend: first note»** (текст)
+
+> We want to make a short city report called Last Weekend. The final report will be three minutes long. We can ask people what they did on Saturday and Sunday. We need time to listen, too. One person stayed at home. Another visited a friend or walked by the water. A quiet weekend can still make a good story. First, we will try the questions here. Then we will choose a place for our first interviews. We can all meet on Saturday morning after breakfast.
+
+_Перевод:_ Мы хотим сделать короткий городской репортаж «Last Weekend». Готовый выпуск будет длиться три минуты. Можно спросить людей, что они делали в субботу и воскресенье. Нам ещё нужно время слушать ответы. Один человек остался дома. Другой навестил друга или гулял у воды. Даже тихие выходные могут стать хорошей историей. Сначала попробуем вопросы здесь. Затем выберем место для первых интервью. В субботу утром после завтрака мы все можем встретиться.
+
+_Итог занятия:_
+
+- **Айрис:** Two pages may be enough for a very long weekend. — На очень длинные выходные двух страниц, наверное, хватит. _(notebook/dry_smile)_
+
+### Занятие 2. Три разных субботы (понимание)
+
+**Аудирование [u021-s2-e1]** · Мика о субботе
+
+- **Мика:** Last Saturday, I visited a small market with a friend. We talked for an hour, and I missed lunch. On Sunday, I stayed at home and planned this report. So now you know why I have a title. — В прошлую субботу я сходила с другом на небольшой рынок. Мы проговорили час, и я пропустила обед. В воскресенье я сидела дома и планировала этот репортаж. Теперь понятно, откуда название. _([warmly])_
+
+**Аудирование [u021-s2-e2]** · Рэй о выходных
+
+- **Рэй:** I stayed at home last weekend. I cleaned my headphones and listened to the rain. It was quiet inside. Then someone upstairs started moving a table. That was the end of the quiet part. — В прошлые выходные я осталась дома. Почистила наушники и слушала дождь. Внутри было тихо. Потом наверху кто-то начал двигать стол. На этом тихая часть закончилась.
+
+**Аудирование [u021-s2-e3]** · Айрис о выходных
+
+- **Айрис:** I visited the library, then walked home. A good day for a short answer. — Я сходила в библиотеку, потом пешком домой. Подходящий день для короткого ответа. _([quietly, focused])_
+
+**Диктант [u021-s2-e4]**
+
+- **Рэй:** I stayed at home last weekend. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Рэй:** Three weekends. Already different. — Три истории выходных. Уже разные. _(smirk)_
+
+### Занятие 3. Было, были (форма)
+
+_Айрис обводит was и were на карточках. Мика подписывает дни._
+
+- **Айрис:** Start with where people were and how it was. — Начни с того, где люди были и как всё прошло. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Now the place and the day match. — Теперь место и день совпадают. _(notebook/focused)_
+
+### Занятие 4. Гулял, навестил, слушал (форма)
+
+_На столе две карточки с субботой и воскресеньем. Айрис раскладывает под ними глаголы._
+
+- **Айрис:** These actions are finished. Put them on the right day. — Эти действия завершились. Поставь их под нужным днём. _(notebook/thinking)_
+
+_Итог занятия:_
+
+- **Мика:** Two days ago. I've been waiting to use that title. — Два дня назад. Уже не терпится использовать название. _(phone/happy)_
+
+### Занятие 5. Место в выходных (продукция)
+
+**Сцена [u021-s5-e1]** · Вопрос Мики
+
+_Мика закрывает календарь и поворачивает телефон экраном вниз._
+
+- **Мика:** How was your weekend? Give me the version without the timetable. — Как прошли твои выходные? Можно версию без расписания. _(happy)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «It was good. This part of the week is better.» · флаг `flirt_mika_021`
+  - **Мика:** I'll count that as a good Wednesday. — Буду считать, что среда удалась. _(happy)_
+- _Отшутиться_ → «I stayed at home. My chair had a busy weekend.» · флаг `u021_mika_joke`
+  - **Мика:** The chair deserves a day off. — Стул заслужил выходной. _(laugh)_
+- _По делу_ → «It was quiet. Let's ask about one thing people did.» · флаг `u021_mika_work`
+  - **Мика:** Good. One thing is enough to start. — Хорошо. Для начала одного дела хватит. _(phone/thinking)_
+
+Если ответ непонятен:
+- **Мика:** Could you say that another way? — Можешь сказать иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Айрис:** I'll put one simple question at the top. — Поставлю наверх один простой вопрос. _(notebook/focused)_
+
+### Занятие 6. Голосом: короткий рассказ (продукция)
+
+_Рэй включает пробную дорожку. На карточке только два дня и три глагола._
+
+- **Рэй:** Two sentences. Take your time. — Два предложения. Не спеши. _(recorder/listening)_
+
+_Итог занятия:_
+
+- **Рэй:** Clear. Plenty of room between the words. — Понятно. Между словами достаточно места. _(recorder/happy)_
+
+### Занятие 7. Быстрый круг: день и действие (беглость)
+
+_Айрис называет день, а ты выбираешь одно законченное действие._
+
+- **Айрис:** One day, one thing you did. — Один день, одно дело. _(notebook/focused)_
+
+**Диктант [u021-s7-e6]**
+
+- **Айрис:** My weekend was quiet. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Мика:** That could work on the street too. — На улице такое тоже сработает. _(happy)_
+
+### Занятие 8. Первый вопрос выпуска (беглость · миссия)
+
+_Айрис переворачивает список. Обратная сторона тоже исписана. Рэй смотрит на неё поверх рекордера._
+
+- **Рэй:** The back has questions too. — Сзади тоже вопросы. _(deadpan)_
+
+**Сцена [u021-s8-e1]** · С чего начать
+
+_Айрис переворачивает список: обратная сторона тоже исписана._
+
+- **Айрис:** Which question should come first? — Какой вопрос поставить первым? _(notebook/thinking)_
+
+Выбор намерения:
+- _Начать с общего_ → «Let's start with “How was your weekend?”» · флаг `u021_open_weekend`
+  - **Айрис:** I'll start with the whole weekend. — Начну с выходных целиком. _(notebook/focused)_
+- _Начать с одного дня_ → «Let's start with “What did you do on Saturday?”» · флаг `u021_open_day`
+  - **Айрис:** I'll start with one day. — Начну с одного дня. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** The whole weekend, or one day? — Все выходные или один день? _(listening)_
+
+Общее продолжение:
+- **Мика:** Saturday at eleven, by the river steps? We're all free then. — В субботу в одиннадцать, у ступенек к реке? Мы все свободны. _(phone/happy)_
+- **Айрис:** That works. Before lunch. — Подходит. До обеда. _(neutral)_
+- **Рэй:** Eleven works. — В одиннадцать подходит. _(neutral)_
+
+**Сцена [u021-s8-e2]** · Прослушивание пробы
+
+_Рэй снимает наушники и ставит рекордер рядом с твоей чашкой._
+
+- **Рэй:** I saved your voice test. It's a good reason to keep my headphones on. — Сохранила пробу твоего голоса. Хороший повод не снимать наушники. _(recorder/smirk)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I like knowing you're listening.» · флаг `flirt_rei_021`
+  - **Рэй:** Then give me a clear first line. — Тогда прочти первую строчку понятно. _(recorder/smirk)_
+- _Отшутиться_ → «The rain wants its headphones back.» · флаг `u021_rei_joke`
+  - **Рэй:** Only if it stays quiet. — Только если будет тихо. _(recorder/smirk)_
+- _По делу_ → «Let's check the sound before Saturday.» · флаг `u021_rei_work`
+  - **Рэй:** Battery first. Then the microphone. — Сначала батарея. Потом микрофон. _(recorder/focused)_
+
+Если ответ непонятен:
+- **Рэй:** One more time? — Ещё раз? _(recorder/listening)_
+
+_Итог занятия:_
+
+- **Мика:** Saturday, eleven, river steps. Our title is ready for its first interview. — Суббота, одиннадцать, ступеньки к реке. Название готово к первому интервью. _(phone/happy)_
+- **Рэй:** The sound would like to come too. — Звук тоже хотел бы прийти. _(neutral)_
+- **Айрис:** Three short questions. I'll cut the list now. — Три коротких вопроса. Сейчас сокращу список. _(notebook/focused)_
+
+---
+
+## Юнит 022. Что ты делал?
+
+**Цель:** Задать вопрос с did и ответить коротко, используя прошедшую форму.
+
+**Итог юнита:** У команды три вопроса и короткая репетиция. Айрис отправляет игроку сокращённый список вечером.
+
+### Занятие 1. Список на полях (понимание)
+
+_Мика наливает оставшийся чай. Айрис закрывает второй лист и кладёт перед тобой одну карточку._
+
+- **Айрис:** I cut the list. There are still a few things to choose. — Сократила список. Ещё кое-что нужно выбрать. _(notebook/focused)_
+- **Мика:** You called this a good Wednesday. Let's keep it that way. — Ты сказал, что среда удалась. Продолжим в том же духе. _(happy, если `flirt_mika_021`)_
+- **Мика:** Your chair can rest. We're doing the talking now. — Твой стул может отдохнуть. Сейчас разговаривать будем мы. _(happy, если `u021_mika_joke`)_
+- **Мика:** You said one thing was enough. Let's keep the questions short. — Ты сказал, что одного дела хватит. Оставим вопросы короткими. _(phone/focused, если `u021_mika_work`)_
+
+**Чтение [u022-s1-e1]: «The question card»** (текст)
+
+> We have room for three questions on the card. Start with the question we chose together. Then ask where the person went or who they spent time with. If an answer is very short, ask one small follow-up question. A yes or no answer can still help us. Did you go out? Yes, I did. Did you buy anything? No, I didn't. Leave a little space at the bottom for a place name. We can write it down instead of asking the person to spell it twice.
+
+_Перевод:_ На карточке хватит места для трёх вопросов. Начни с вопроса, который мы выбрали вместе. Затем спроси, куда человек ходил или с кем проводил время. Если ответ очень короткий, задай один небольшой дополнительный вопрос. Даже ответ «да» или «нет» может помочь. Ты выходил? Да. Что-нибудь покупал? Нет. Оставь внизу немного места для названия места. Мы можем его записать, чтобы не просить человека дважды повторять по буквам.
+
+_Итог занятия:_
+
+- **Айрис:** The second page can stay here. — Второй лист можно оставить здесь. _(notebook/dry_smile)_
+
+### Занятие 2. Что было на рынке (понимание)
+
+**Аудирование [u022-s2-e1]** · Мика играет прохожую
+
+- **Мика:** I went to the market on Saturday. I saw a yellow cup, but I didn't buy it. We already have a yellow one here. I bought bread instead and took it to my friend's flat. — В субботу я ходила на рынок. Увидела жёлтую чашку, но не купила. У нас здесь уже есть жёлтая. Вместо неё купила хлеб и отнесла другу.
+
+**Аудирование [u022-s2-e2]** · Айрис отвечает на репетиции
+
+- **Айрис:** I went to the library on Sunday. I saw a book about old houses, and I took it home. Then I ate lunch by the window. I had a quiet afternoon, which suited me very well. — В воскресенье я сходила в библиотеку. Увидела книгу о старых домах и взяла её домой. Потом пообедала у окна. День прошёл спокойно, мне как раз этого хотелось. _([thoughtfully])_
+
+**Диктант [u022-s2-e3]**
+
+- **Айрис:** Did you buy anything? No, I didn't. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Рэй:** Bread. Book. Different answers. — Хлеб. Книга. Разные ответы. _(recorder/neutral)_
+
+### Занятие 3. После did (форма)
+
+_Айрис зачёркивает went после did и пишет go. Рядом оставляет ответ с went._
+
+- **Айрис:** The question has did. The answer can have went. — В вопросе есть did. В ответе может быть went. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Мика:** The cup stayed at the market. Our budget can relax. — Чашка осталась на рынке. Бюджет может расслабиться. _(phone/happy)_
+
+### Занятие 4. Один уточняющий вопрос (форма)
+
+_На карточке уже есть начало. Айрис оставляет ниже две свободные строки._
+
+- **Айрис:** Ask for one new detail each time. — Каждый раз спрашивай об одной новой детали. _(notebook/thinking)_
+
+_Итог занятия:_
+
+- **Рэй:** That fits on one card. — На одну карточку помещается. _(neutral)_
+
+### Занятие 5. Читаешь внимательно (продукция)
+
+**Сцена [u022-s5-e1]** · Комментарий на полях
+
+_Ты возвращаешь Айрис карточку с одной пометкой._
+
+- **Айрис:** You read the whole thing. I may start writing better notes just for you. — Ты всё прочёл. Пожалуй, начну писать записки получше специально для тебя. _(dry_smile)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I'd read your notes even without the questions.» · флаг `flirt_iris_022`
+  - **Айрис:** Then I'll make the next one worth reading. — Тогда постараюсь со следующей. _(dry_smile)_
+- _Отшутиться_ → «Does the back of the card have a sequel?» · флаг `u022_iris_joke`
+  - **Айрис:** That one still has too many pages. — В ней пока слишком много страниц. _(dry_smile)_
+- _По делу_ → «Let's leave space for the answers too.» · флаг `u022_iris_work`
+  - **Айрис:** I'll leave the bottom half clear. — Оставлю нижнюю половину пустой. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** Could you say that again? — Можешь повторить? _(listening)_
+
+_Итог занятия:_
+
+- **Мика:** Let's try asking without reading every word. — Попробуем спросить, не читая каждое слово. _(phone/focused)_
+
+### Занятие 6. Голосом: вопрос и короткий ответ (продукция)
+
+_Рэй поворачивает к тебе карточку. Мика отвечает на первый вопрос, затем вы меняетесь ролями._
+
+- **Рэй:** Question first. Then one answer. — Сначала вопрос. Потом один ответ. _(recorder/listening)_
+
+_Итог занятия:_
+
+- **Рэй:** Short enough to remember. — Достаточно коротко, чтобы запомнить. _(recorder/happy)_
+
+### Занятие 7. Быстрый круг: три детали (беглость)
+
+_Айрис показывает на карточке вопрос, место и одну деталь. Рэй выключает запись репетиции._
+
+- **Айрис:** Ask about the place, then one thing the person did. — Спроси о месте, затем об одном деле. _(notebook/focused)_
+
+**Диктант [u022-s7-e6]**
+
+- **Мика:** What did you do on Saturday? _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Айрис:** Now choose what goes on the street card. — Теперь выбери, что оставить на уличной карточке. _(notebook/focused)_
+
+### Занятие 8. Три вопроса (беглость · миссия)
+
+_На карточке осталось три пронумерованные строки. На первом месте — ваш выбранный вопрос._
+
+- **Айрис:** You chose “How was your weekend?” That's our first line. — Ты выбрал «Как прошли выходные?». Это первая строчка. _(notebook/focused, если `u021_open_weekend`)_
+- **Айрис:** You chose Saturday. That's where our first question starts. — Ты выбрал субботу. С неё и начнём. _(notebook/focused, если `u021_open_day`)_
+
+**Сцена [u022-s8-e1]** · Второй вопрос карточки
+
+_На карточке три пронумерованные строки._
+
+- **Айрис:** What should we ask after that? — О чём спросить после этого? _(notebook/thinking)_
+
+Выбор намерения:
+- _Узнать место_ → «Let's ask “Where did you go?”» · флаг `u022_follow_place`
+  - **Айрис:** Place second. One last detail after that. — Вторым — место. Потом одна последняя деталь. _(notebook/focused)_
+- _Узнать компанию_ → «Let's ask “Who did you spend time with?”» · флаг `u022_follow_people`
+  - **Айрис:** People second. One last detail after that. — Вторым — люди. Потом одна последняя деталь. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** The place, or the people? — Место или люди? _(listening)_
+
+Общее продолжение:
+- **Айрис:** The last question can be “What did you do there?” — Последний вопрос — «Что ты там делал?». _(notebook/focused)_
+
+**Сцена [u022-s8-e2]** · Кто кого спрашивает
+
+_Мика садится напротив и кладёт телефон экраном вниз._
+
+- **Мика:** You ask, I'll listen. I like how you make even my weekend sound interesting. — Ты спрашиваешь, я слушаю. С тобой даже мои выходные звучат интересно. _(happy)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I'd ask about your next weekend too.» · флаг `flirt_mika_022`
+  - **Мика:** I'll try to bring back a good story. — Постараюсь принести хорошую историю. _(happy)_
+- _Отшутиться_ → «The bread did most of the work.» · флаг `u022_mika_joke`
+  - **Мика:** The cup is still waiting for its interview. — Чашка пока ждёт интервью. _(laugh)_
+- _По делу_ → «Let's take turns asking on Saturday.» · флаг `u022_mika_work`
+  - **Мика:** Agreed. You get the first one. — Договорились. Первый за тобой. _(phone/happy)_
+
+Если ответ непонятен:
+- **Мика:** Do you mean on Saturday? — Ты про субботу? _(listening)_
+
+_Итог занятия:_
+
+- **Мика:** Three questions, one card. Saturday at eleven by the river steps. — Три вопроса, одна карточка. В субботу в одиннадцать у ступенек к реке. _(phone/happy)_
+- **Айрис:** I'll send the clean copy tonight. — Вечером отправлю чистовой вариант. _(neutral)_
+- **Рэй:** Microphone checked. Bring the card. — Микрофон проверен. Возьми карточку. _(recorder/focused)_
+
+---
+
+## Юнит 023. Спросить незнакомца
+
+**Цель:** Начать короткий разговор, попросить разрешение на запись и поблагодарить.
+
+**Итог юнита:** Команда разговаривает с четырьмя прохожими. Иво даёт короткую историю для выпуска, Джо разрешает оставить один отрывок.
+
+### Занятие 1. Люди проходят мимо (понимание)
+
+_В субботу у ступенек к реке прохожая смотрит на часы. Рэй держит рекордер выключенным, Мика — карточку с тремя вопросами._
+
+- **Мика:** Excuse me, do you have a minute? — Извините, у вас есть минутка? _(phone/happy)_
+- **dana:** Sorry. I'm late for work. — Простите. Я опаздываю на работу.
+- **Мика:** No problem. Have a good day. — Ничего страшного. Хорошего дня. _(neutral)_
+- **Мика:** You asked for another weekend story. Mine will have to wait for these interviews. — Ты хотел ещё историю моих выходных. Моя подождёт, пока мы спрашиваем прохожих. _(happy, если `flirt_mika_022`)_
+- **Мика:** That yellow cup would be easier to interview. It stays in one place. — Жёлтую чашку было бы проще опросить. Она стоит на месте. _(happy, если `u022_mika_joke`)_
+- **Мика:** We agreed to take turns. The next question is yours. — Мы договорились спрашивать по очереди. Следующий вопрос твой. _(phone/focused, если `u022_mika_work`)_
+
+**Чтение [u023-s1-e1]: «Before you ask»** (текст)
+
+> People on a walk may stop to talk, but some are in a hurry. Say what you are making and ask if they have a minute. Keep the recorder off while you ask. If someone says no, thank them and let them go. If they agree to talk, ask whether you can record their answer for the student report. Some people are happy to chat without being recorded. Listen to the answer and ask one short follow-up question. Thank them at the end, even if you only got a few words.
+
+_Перевод:_ Люди на прогулке могут остановиться поговорить, но некоторые спешат. Скажи, что вы делаете, и спроси, есть ли минутка. Пока спрашиваешь, рекордер выключен. Если человек отказался, поблагодари и дай ему уйти. Если согласился поговорить, спроси, можно ли записать ответ для студенческого репортажа. Некоторым приятно поговорить без записи. Выслушай ответ и задай один короткий дополнительный вопрос. В конце поблагодари, даже если услышал всего несколько слов.
+
+_Итог занятия:_
+
+- **Рэй:** She had somewhere to be. — Ей нужно было успеть. _(neutral)_
+
+### Занятие 2. Коротко и подробно (понимание)
+
+_Следующий прохожий останавливается, а чуть позже к вам обращается женщина со складной сумкой. Рэй ждёт разрешения, прежде чем поднять рекордер._
+
+- **kit:** I can talk. Please don't record me. — Поговорить могу. Только не записывайте.
+- **Мика:** Sure. We'll leave it off. — Конечно. Выключим. _(neutral)_
+- **jo:** You can record me for your student report. — Можете записать меня для своего студенческого репортажа.
+
+**Аудирование [u023-s2-e1]** · Кит у ступенек к реке
+
+- **kit:** I stayed at home on Saturday. I watched a film and ate noodles, then I went to bed early because I had work the next morning. That was my weekend. — В субботу я сидел дома. Посмотрел фильм, поел лапши и рано лёг, потому что утром на работу. Вот и все выходные.
+
+**Аудирование [u023-s2-e2]** · Джо со складной сумкой
+
+- **jo:** I went to the market, then I visited my sister, then we had lunch, then we walked to the shops. I bought two plants, and she bought a hat. Then we saw our old neighbour, and I forgot what we were looking for. — Я сходила на рынок, потом к сестре, потом мы пообедали, потом пошли по магазинам. Я купила два растения, а она шляпу. Потом мы встретили старую соседку, и я забыла, что мы искали.
+
+**Диктант [u023-s2-e3]**
+
+- **Мика:** Thanks for your time. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Айрис:** We have some plants and a hat. I need a shorter sentence. — У нас есть растения и шляпа. Мне нужно предложение покороче. _(notebook/thinking)_
+
+### Занятие 3. Начало разговора (форма)
+
+_Айрис пишет вступление крупнее остальных строк. Мика пробует прочитать его, глядя поверх карточки._
+
+- **Айрис:** Give them a reason to stop before the first question. — Сначала скажи, зачем остановиться, потом задавай вопрос. _(notebook/focused)_
+- **Айрис:** You said you'd read my notes. Here's the one we need outside. — Ты сказал, что читал бы мои записки. Вот та, которая нужна на улице. _(dry_smile, если `flirt_iris_022`)_
+- **Айрис:** The book version can wait. This one has three questions. — Книжная версия подождёт. В этой три вопроса. _(notebook/dry_smile, если `u022_iris_joke`)_
+- **Айрис:** You asked for space for answers. We have it here. — Ты предложил оставить место для ответов. Вот оно. _(notebook/focused, если `u022_iris_work`)_
+- **Айрис:** You liked the short card. That's the one I brought. — Тебе подошла короткая карточка. Её я и принесла. _(notebook/focused, если `u022_dm_short`)_
+- **Айрис:** The long page is resting at home, as you suggested. — Длинный лист отдыхает дома, как ты предложил. _(notebook/dry_smile, если `u022_dm_spare`)_
+
+_Итог занятия:_
+
+- **Мика:** That sounds like a person asking, which helps. — Звучит как обычная просьба. Уже хорошо. _(phone/happy)_
+
+### Занятие 4. Один ответ, одна деталь (форма)
+
+_Айрис записывает под ответом Джо «two plants». Рэй смотрит на длительность файла._
+
+- **Рэй:** One clear detail. Keep that. — Одна понятная деталь. Её оставим. _(recorder/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** The plants can stay. I'll mark where that answer starts. — Растения оставим. Отмечу, где начинается ответ. _(notebook/focused)_
+
+### Занятие 5. Твой голос на улице (продукция)
+
+_Рэй поднимает наушник, пропускает звук волн и возвращает его на место._
+
+- **Рэй:** You said you liked knowing I was listening. Still listening. — Ты сказал, что тебе нравится знать, что я слушаю. Всё ещё слушаю. _(recorder/smirk, если `flirt_rei_021`)_
+- **Рэй:** Your chair stayed home. One less voice test. — Твой стул остался дома. На одну пробу голоса меньше. _(recorder/smirk, если `u021_rei_joke`)_
+- **Рэй:** You asked for a sound check. The microphone's ready. — Ты предложил проверить звук. Микрофон готов. _(recorder/focused, если `u021_rei_work`)_
+
+**Сцена [u023-s5-e1]** · Слышно поверх города
+
+_Рэй поднимает наушник, пропускает звук волн и возвращает его на место._
+
+- **Рэй:** You sound different outside. I could get used to this version. — На улице у тебя другой голос. К этой версии я могла бы привыкнуть. _(smirk)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «Then I'll keep talking to you.» · флаг `flirt_rei_023`
+  - **Рэй:** Keep it clear. I want to hear. — Говори понятно. Хочу расслышать. _(smirk)_
+- _Отшутиться_ → «The wind is my new voice coach.» · флаг `u023_rei_joke`
+  - **Рэй:** Expensive effects. Free today. — Дорогие эффекты. Сегодня бесплатно. _(smirk)_
+- _По делу_ → «Let's move the microphone away from the wind.» · флаг `u023_rei_work`
+  - **Рэй:** This angle works. Stay here. — Так подходит. Оставайся здесь. _(recorder/focused)_
+
+Если ответ непонятен:
+- **Рэй:** Could you say that once more? — Можешь сказать ещё раз? _(listening)_
+
+_Итог занятия:_
+
+- **Мика:** One more person, then we listen to what we have. — Ещё один человек, потом послушаем, что набралось. _(phone/thinking)_
+
+### Занятие 6. Голосом: попросить минутку (продукция)
+
+_Мужчина у скамейки заканчивает складывать пустой бумажный пакет. Ты подходишь с карточкой, Рэй опускает рекордер._
+
+- **Мика:** Go ahead. I'll hold the card if you need it. — Давай. Если нужно, я подержу карточку. _(listening)_
+
+_Итог занятия:_
+
+- **Айрис:** He finished with the bag. You can ask now. — С пакетом он закончил. Теперь можно спросить. _(notebook/focused)_
+
+### Занятие 7. Быстрый круг: услышать отказ (беглость)
+
+_Мика тихо произносит три возможных ответа. Рэй держит рекордер у пояса._
+
+- **Мика:** What do you say if someone is busy? — Что скажешь, если человек занят? _(phone/thinking)_
+
+**Диктант [u023-s7-e6]**
+
+- **Рэй:** May we record your answer? _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Рэй:** Ready. Recorder still off. — Готова. Рекордер пока выключен. _(neutral)_
+
+### Занятие 8. Чужой пакет (беглость · миссия)
+
+**Сцена [u023-s8-e1]** · Обратиться к Иво
+
+_Мужчина у скамейки убирает пакет в карман и смотрит на тебя._
+
+- **ivo:** Hello. Did you want to ask something? — Здравствуйте. Вы хотели что-то спросить?
+
+Выбор намерения:
+- _Сначала попросить минутку_ → «Do you have a minute? We're making a student report. May we record your answer?» · флаг `u023_ask_minute`
+  - **ivo:** Yes. I have a minute, and you can record me. — Да. Минутка есть, можете записывать.
+- _Сначала назвать тему_ → «We're making a report about last weekend. Could I ask you a question and record your answer?» · флаг `u023_ask_topic`
+  - **ivo:** A weekend story? Yes. You can record it. — Историю выходных? Да. Можете записать.
+
+Если ответ непонятен:
+- **ivo:** Is this about my weekend? — Это про мои выходные?
+
+Общее продолжение:
+- **Диктор:** Рэй поднимает рекордер и нажимает запись.
+- **Мика:** Your first question was about the whole weekend. Go ahead. — Ты выбрал начать с выходных целиком. Спрашивай. _(phone/neutral, если `u021_open_weekend`)_
+- **Мика:** Your first question was about Saturday. Go ahead. — Ты выбрал начать с субботы. Спрашивай. _(phone/neutral, если `u021_open_day`)_
+- **ivo:** Last Saturday, I went to the Small Pier café and took the wrong bag of bread. I saw a woman looking for it, so I gave it back, and she invited me to have tea. We sat outside for an hour, and I missed the bus home. — В прошлую субботу я зашёл в кафе Small Pier и взял не тот пакет с хлебом. Увидел женщину, которая его искала, вернул, и она пригласила меня на чай. Мы час просидели снаружи, а я пропустил автобус домой.
+- **Айрис:** Your second question was about the place. We have a name: Small Pier. — Твой второй вопрос был о месте. Название есть — Small Pier. _(notebook/focused, если `u022_follow_place`)_
+- **Айрис:** Your second question was about the people. We have the woman who shared her tea. — Твой второй вопрос был о людях. У нас есть женщина, которая угостила его чаем. _(notebook/focused, если `u022_follow_people`)_
+- **Мика:** Thank you. That's a lovely story. — Спасибо. Хорошая история. _(happy)_
+- **ivo:** The bread was good too. — Хлеб тоже был хороший.
+
+**Сцена [u023-s8-e2]** · Что стало с вопросами
+
+_Иво уходит к остановке. Айрис открывает тетрадь на чистой странице._
+
+- **Айрис:** You got a whole story out of three questions. I may keep you near my notebook. — Ты добыл целую историю тремя вопросами. Пожалуй, буду держать тебя поближе к тетради. _(dry_smile)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I'd be happy to stay near you.» · флаг `flirt_iris_023`
+  - **Айрис:** Then you can help me find the best line. — Тогда поможешь найти лучшую строчку. _(dry_smile)_
+- _Отшутиться_ → «Does the notebook have a spare chair?» · флаг `u023_iris_joke`
+  - **Айрис:** I'll use small letters. We need space for notes. — Напишу мелко. Нужно место для заметок. _(dry_smile)_
+- _По делу_ → «Let's write the café name before we forget.» · флаг `u023_iris_work`
+  - **Айрис:** Small Pier. I'll put the time beside it. — Small Pier. Рядом поставлю время. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** Could you say that another way? — Можешь сказать иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** Two recorded answers. Let's hear them on Wednesday. — Два записанных ответа. Послушаем в среду. _(recorder/neutral)_
+
+---
+
+## Юнит 024. Что у нас есть
+
+**Цель:** Коротко пересказать услышанное, назвать порядок событий и выбрать следующий вопрос.
+
+**Итог юнита:** В черновик идут два отрывка общей длиной 42 секунды. Команда выбирает следующий вопрос и собирается к Small Pier.
+
+### Занятие 1. Сорок две секунды (понимание)
+
+_В среду Рэй кладёт рекордер на стол. Рядом с зелёной чашкой лежит карточка с цифрами 27 и 15._
+
+- **Мика:** We wanted three minutes. How much have we got? — Хотели три минуты. Сколько получилось? _(phone/thinking)_
+- **Рэй:** Forty-two seconds we can use. — Сорок две пригодные секунды. _(recorder/neutral)_
+
+**Чтение [u024-s1-e1]: «First listening notes»** (текст)
+
+> We spoke to four people by the river on Saturday. Dana was late for work and did not stop. Kit talked to us, but he did not want a recording. Jo let us record her answer. We chose fifteen clear seconds about the market and her plants. Ivo also agreed to a recording. We chose twenty-seven seconds about the bread and the tea. That gives us forty-two seconds for the first edit. We still need more stories for our three-minute report. Keep the full recordings too, so we can check the words later.
+
+_Перевод:_ В субботу у реки мы поговорили с четырьмя людьми. Дана опаздывала на работу и не остановилась. Кит поговорил, но не захотел записываться. Джо разрешила записать ответ. Мы выбрали пятнадцать понятных секунд про рынок и её растения. Иво тоже согласился на запись. Мы выбрали двадцать семь секунд про хлеб и чай. Для первого монтажа получается сорок две секунды. Для трёхминутного выпуска нужно больше историй. Полные записи тоже сохраняем, чтобы потом можно было сверить слова.
+
+_Итог занятия:_
+
+- **Айрис:** That's a beginning. The title still has plenty of space. — Это начало. Под названием ещё много свободного места. _(notebook/thinking)_
+
+### Занятие 2. Сначала хлеб, потом чай (понимание)
+
+**Аудирование [u024-s2-e1]** · Отрывок Иво
+
+- **ivo:** I took the wrong bag of bread at the café. Then I saw a woman looking for it. I gave it back, and she invited me for tea. In the end, I missed my bus. — Я взял в кафе не тот пакет с хлебом. Потом увидел женщину, которая его искала. Вернул, и она пригласила меня на чай. В итоге пропустил автобус.
+
+**Аудирование [u024-s2-e2]** · Отрывок Джо
+
+- **jo:** First, I went to the market. Then I visited my sister, and we had lunch. After that, we went to the shops. I bought two plants. My sister bought a hat. — Сначала я сходила на рынок. Потом к сестре, мы пообедали. После этого пошли по магазинам. Я купила два растения. Сестра купила шляпу.
+
+**Диктант [u024-s2-e3]**
+
+- **Айрис:** First, he took the bag. Then he gave it back. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Рэй:** You said you'd keep talking. I saved the clear words. — Ты сказал, что продолжишь говорить. Я сохранила понятные слова. _(recorder/smirk, если `flirt_rei_023`)_
+- **Рэй:** Your wind effects are on a separate track. — Твои эффекты ветра на отдельной дорожке. _(recorder/smirk, если `u023_rei_joke`)_
+- **Рэй:** You checked the microphone angle. The voice came through clearly. — Ты проверил положение микрофона. Голос записался понятно. _(recorder/focused, если `u023_rei_work`)_
+- **Рэй:** You asked to hear the gull. Here. Its only line. — Ты попросил послушать чайку. Вот. Её единственная реплика. _(recorder/smirk, если `u023_dm_gull`)_
+- **Рэй:** You asked for the clear voice. This version has no gull. — Ты попросил чистый голос. В этой версии чайки нет. _(recorder/neutral, если `u023_dm_clear`)_
+- **Рэй:** Same story. Two sound options. — История та же. Два варианта звука. _(recorder/neutral)_
+
+### Занятие 3. Кто что сделал (форма)
+
+_Айрис пишет имена над двумя колонками. Между ними оставляет место для краткого пересказа._
+
+- **Айрис:** Use his name once. Then he can be “he”. — Один раз назови имя. Потом можно «он». _(notebook/focused)_
+- **Айрис:** You wanted the seat by my notebook. Here's the page we're checking. — Ты хотел место у тетради. Вот страница, которую проверяем. _(dry_smile, если `flirt_iris_023`)_
+- **Айрис:** The notebook has room for your name. The stories need the rest. — В тетради есть место для твоего имени. Остальное нужно историям. _(notebook/dry_smile, если `u023_iris_joke`)_
+- **Айрис:** You marked the café name. I can find that part straight away. — Ты отметил название кафе. Сразу могу найти этот отрывок. _(notebook/focused, если `u023_iris_work`)_
+
+_Итог занятия:_
+
+- **Мика:** I can follow that without the long shopping list. — Могу понять и без длинного списка покупок. _(phone/happy)_
+
+### Занятие 4. Первое, следующее, последнее (форма)
+
+_Айрис двигает три карточки по столу. Рэй показывает границы двух отрывков._
+
+- **Айрис:** Keep the order of the story. — Сохрани порядок событий истории. _(notebook/focused)_
+
+_Итог занятия:_
+
+- **Айрис:** Now the bread gets back to its owner before the tea. — Теперь хлеб возвращается к хозяйке до чая. _(notebook/dry_smile)_
+
+### Занятие 5. Выпуск на двоих не помещается (продукция)
+
+**Сцена [u024-s5-e1]** · Продолжить подводку
+
+_Мика слушает твою пробную подводку и не сразу тянется к телефону._
+
+- **Мика:** We could make a whole report just talking to you. I'd listen to that one. — Можно целый выпуск сделать, просто с тобой разговаривая. Я бы послушала. _(happy)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «Only if you're asking the questions.» · флаг `flirt_mika_024`
+  - **Мика:** Then I'll save some questions for later. — Тогда приберегу вопросы на потом. _(happy)_
+- _Отшутиться_ → «The chair will want half the time.» · флаг `u024_mika_joke`
+  - **Мика:** Fine. The chair gets a very short answer. — Ладно. Стулу достанется очень короткий ответ. _(laugh)_
+- _По делу_ → «Let's finish this report first.» · флаг `u024_mika_work`
+  - **Мика:** True. One more trip in the plan. — Верно. Добавим в план ещё поездку. _(phone/focused)_
+
+Если ответ непонятен:
+- **Мика:** Could you say that another way? — Можешь сказать иначе? _(listening)_
+
+_Итог занятия:_
+
+- **Рэй:** Forty-two seconds. Still forty-two. — Сорок две секунды. Всё ещё сорок две. _(recorder/neutral)_
+
+### Занятие 6. Голосом: история в трёх строках (продукция)
+
+_Рэй включает отдельную дорожку. На карточке Айрис только имя, хлеб и автобус._
+
+- **Рэй:** Tell the short version. — Расскажи короткую версию. _(recorder/listening)_
+
+_Итог занятия:_
+
+- **Рэй:** The story still makes sense. — История осталась понятной. _(recorder/happy)_
+
+### Занятие 7. Проверка модуля: выходные клуба рисования (беглость · проверка модуля)
+
+_Айрис кладёт рядом карточку вымышленного клуба рисования. На ней парк, дождь и остановка._
+
+- **Айрис:** New people, new weekend. Same kind of questions. — Другие люди, другие выходные. Похожие вопросы. _(notebook/focused)_
+- **Айрис:** Who are you talking about: Mark or Lea? — Ты о ком говоришь — о Марке или Лее? _(listening)_
+
+**Диктант [u024-s7-e8]**
+
+- **Айрис:** In the end, Mark made three drawings. _([clearly, at a moderate pace])_
+
+_Итог занятия:_
+
+- **Айрис:** That was clear enough for someone who wasn't there. — Понятно даже тому, кого там не было. _(notebook/focused)_
+
+### Занятие 8. Следующий вопрос (беглость · миссия)
+
+_Мика открывает карту города. На ней Small Pier у старой пристани. Рэй сохраняет оба выбранных отрывка в черновик._
+
+- **Мика:** You asked for a minute. Ivo had one, and we got the bread story. — Ты попросил минутку. У Иво она нашлась, и мы услышали историю про хлеб. _(phone/happy, если `u023_ask_minute`)_
+- **Мика:** You told Ivo our topic first. He knew which story to tell. — Ты сразу назвал Иво тему. Он понял, какую историю рассказать. _(phone/happy, если `u023_ask_topic`)_
+
+**Сцена [u024-s8-e1]** · О чём спросить у пристани
+
+_Мика открывает карту города: Small Pier у старой пристани._
+
+- **Мика:** We can go to Small Pier next. What should our next question be? — Следующим можно съездить в Small Pier. О чём спросим? _(phone/thinking)_
+
+Выбор намерения:
+- _Узнать, что было после пропущенного автобуса_ → «Let's ask what happened after he missed the bus.» · флаг `u024_next_bus`
+  - **Мика:** I'll put “What happened next?” on the card. — Запишу на карточке «Что было дальше?». _(phone/focused)_
+- _Узнать, что привело к разговору_ → «Let's ask how the conversation started.» · флаг `u024_next_tea`
+  - **Мика:** I'll put “What did you talk about?” on the card. — Запишу «О чём вы говорили?». _(phone/focused)_
+
+Если ответ непонятен:
+- **Мика:** The bus home, or the talk over tea? — Автобус домой или разговор за чаем? _(listening)_
+
+Общее продолжение:
+- **Мика:** The map shows bus six. I'll check the times before we go. — На карте шестой автобус. До поездки проверю расписание. _(phone/neutral)_
+- **Рэй:** Both clips saved. Originals too. — Оба отрывка сохранены. Исходники тоже. _(recorder/neutral)_
+
+**Сцена [u024-s8-e2]** · Рядом с последней строчкой
+
+_Айрис кладёт рядом чистую карточку и карандаш._
+
+- **Айрис:** You always find the part I want to read twice. Keep doing that. — Ты всё время находишь то, что мне хочется прочитать дважды. Продолжай. _(dry_smile)_
+
+Выбор намерения:
+- _Ответить флиртом_ → «I'll keep a good line for you.» · флаг `flirt_iris_024`
+  - **Айрис:** Good. I might have a comment by then. — Хорошо. К тому времени, возможно, придумаю комментарий. _(dry_smile)_
+- _Отшутиться_ → «Should I add “read twice” to the card?» · флаг `u024_iris_joke`
+  - **Айрис:** Only if we keep both editions short. — Только если оба издания будут короткими. _(dry_smile)_
+- _По делу_ → «Let's keep the order clear in the next draft.» · флаг `u024_iris_work`
+  - **Айрис:** I've got a clean card ready. — Чистая карточка уже готова. _(notebook/focused)_
+
+Если ответ непонятен:
+- **Айрис:** What would you like me to write? — Что ты хочешь, чтобы я записала? _(listening)_
+
+_Итог занятия:_
+
+- **Мика:** Forty-two seconds ready. Small Pier next. I'll check bus six on Friday. — Сорок две секунды готовы. Дальше Small Pier. В пятницу проверю шестой автобус. _(phone/happy)_
+- **Айрис:** Our next question is how Ivo got home. — Наш следующий вопрос — как Иво добрался домой. _(neutral, если `u024_next_bus`)_
+- **Айрис:** Our next question is what they talked about over tea. — Наш следующий вопрос — о чём они говорили за чаем. _(neutral, если `u024_next_tea`)_
+- **Мика:** I did save a question for you. It can wait until the next break. — Я всё-таки приберегла вопрос для тебя. Подождёт до следующего перерыва. _(phone/happy, если `flirt_mika_024`)_
+- **Мика:** The chair's interview is still waiting. It never answers my messages. — Интервью со стулом всё ещё ждёт. Он не отвечает на сообщения. _(phone/happy, если `u024_mika_joke`)_
+- **Мика:** You asked for more city stories. Small Pier goes on the list. — Ты предложил собрать больше городских историй. Добавляю Small Pier в список. _(phone/focused, если `u024_mika_work`)_
+- **Айрис:** I'll keep the next page for our second reading. — Оставлю следующую страницу для нашего второго чтения. _(neutral, если `flirt_iris_024`)_
+- **Айрис:** The second edition is one card long. Even the bread can wait. — Второе издание длиной в одну карточку. Даже хлеб может подождать. _(neutral, если `u024_iris_joke`)_
+- **Айрис:** Your next-question card is ready. I'll bring it. — Карточка с твоим следующим вопросом готова. Принесу её. _(neutral, если `u024_iris_work`)_
+- **Мика:** Alex says he's still checking who has the archive key. — Алекс говорит, что всё ещё выясняет, у кого ключ от архива. _(phone/neutral)_
+- **Рэй:** Next trip. Same headphones. — Следующая поездка. Те же наушники. _(recorder/neutral)_
+
+---
+
 # Страницы героинь
 
 ## Мика
@@ -3364,6 +4047,8 @@ _Итог занятия:_
 - По четвергам у неё занятие до пяти. _(после юнита 015)_
 - Отмечает похожие ориентиры разными цветами. _(после юнита 017)_
 - Принесла из дома зелёную чашку для тебя. _(после юнита 020)_
+- Сначала придумывает название выпуска, потом собирает материал. _(после юнита 021)_
+- В прошлые выходные увидела на рынке жёлтую чашку, вспомнила общую и купила хлеб. _(после юнита 022)_
 
 **Общие воспоминания:**
 
@@ -3390,6 +4075,8 @@ _Итог занятия:_
 - You took the old route out of the guide. We then checked another way. — Ты убрал старый маршрут из гида. Потом мы проверили другой путь. _(флаг `u018_hide_route`)_
 - You offered to show Lina the way and walked with her to Room 70. — Ты предложил показать Лине дорогу и проводил её до аудитории 70. _(флаг `u020_lina_show`)_
 - You named the lift and walked with Lina to Room 70. — Ты подсказал Лине искать лифт и проводил её до аудитории 70. _(флаг `u020_lina_landmark`)_
+- You tested the weekend questions together before going out. — Вы вместе попробовали вопросы о выходных перед первым выходом. _(после юнита 022)_
+- Your first city report started with forty-two seconds and a bag of bread. — Ваш первый городской репортаж начался с сорока двух секунд и пакета хлеба. _(после юнита 024)_
 
 **Реплики «Поболтать»:**
 
@@ -3424,6 +4111,8 @@ _Итог занятия:_
 - Отличает постоянный гул от шума, который то стихает, то возвращается. _(после юнита 014)_
 - Проверяет разборчивость каждого шага, прежде чем сохранить запись. _(после юнита 018)_
 - Подстраивает темп подсказки под того, кто слушает. _(после юнита 020)_
+- Для городского репортажа проверяет направление ветра перед интервью. _(после юнита 023)_
+- Сохраняет чистую речь и версию с городским фоном отдельно. _(после юнита 024)_
 
 **Общие воспоминания:**
 
@@ -3445,6 +4134,8 @@ _Итог занятия:_
 - She heard you calmly check the room number with Lina. — Она слышала, как ты спокойно уточнил номер у Лины. _(после юнита 020)_
 - You offered to read the line again while she listened. — Ты предложил перечитать строчку, когда Рэй слушает. _(флаг `flirt_rei_017`)_
 - You answered her joke that your tour would be worth hearing. — Ты ответил на её шутку про то, что твою экскурсию стоило бы послушать. _(флаг `flirt_rei_020`)_
+- You waited for Ivo to agree before she turned the recorder on. — Ты дождался согласия Иво, прежде чем она включила запись. _(после юнита 023)_
+- You listened to two answers and helped choose the next question. — Ты послушал два ответа и помог выбрать следующий вопрос. _(после юнита 024)_
 
 **Реплики «Поболтать»:**
 
@@ -3479,6 +4170,8 @@ _Итог занятия:_
 - Приносит к записи короткий текст. _(после юнита 016)_
 - Заменяет старые названия ориентирами, которые видно. _(после юнита 019)_
 - Делает отдельные карточки для похожих номеров. _(после юнита 020)_
+- Для первых интервью сократила двухстраничный список до трёх вопросов. _(после юнита 022)_
+- После записи отмечает не только слова, но и точку начала нужного отрывка. _(после юнита 024)_
 
 **Общие воспоминания:**
 
@@ -3503,6 +4196,8 @@ _Итог занятия:_
 - You started our first route card at the desk by the entrance. — Ты начал первую карточку маршрута со стойки у входа. _(флаг `u017_open_desk`)_
 - You put the green door first on our Room 17 card. — На нашей карточке до комнаты 17 ты сначала указал зелёную дверь. _(флаг `u019_anchor_green`)_
 - Your Room 17 card started with the benches, opposite the door. — На нашей карточке до комнаты 17 ты сначала указал скамейки. Дверь была напротив. _(флаг `u019_anchor_benches`)_
+- You used a three-question card by the river. — Ты пользовался карточкой с тремя вопросами у реки. _(после юнита 023)_
+- You kept the order of Ivo's story clear, from the bread to the missed bus. — Ты сохранил понятный порядок истории Иво, от хлеба до пропущенного автобуса. _(после юнита 024)_
 
 **Реплики «Поболтать»:**
 

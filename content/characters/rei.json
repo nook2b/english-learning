@@ -68,6 +68,18 @@
         "unit": "020"
       },
       "ru": "Подстраивает темп подсказки под того, кто слушает."
+    },
+    {
+      "unlock": {
+        "unit": "023"
+      },
+      "ru": "Для городского репортажа проверяет направление ветра перед интервью."
+    },
+    {
+      "unlock": {
+        "unit": "024"
+      },
+      "ru": "Сохраняет чистую речь и версию с городским фоном отдельно."
     }
   ],
   "memories": [
@@ -196,6 +208,20 @@
       },
       "en": "You answered her joke that your tour would be worth hearing.",
       "ru": "Ты ответил на её шутку про то, что твою экскурсию стоило бы послушать."
+    },
+    {
+      "unlock": {
+        "unit": "023"
+      },
+      "en": "You waited for Ivo to agree before she turned the recorder on.",
+      "ru": "Ты дождался согласия Иво, прежде чем она включила запись."
+    },
+    {
+      "unlock": {
+        "unit": "024"
+      },
+      "en": "You listened to two answers and helped choose the next question.",
+      "ru": "Ты послушал два ответа и помог выбрать следующий вопрос."
     }
   ],
   "lines": [

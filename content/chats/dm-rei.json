@@ -1,0 +1,66 @@
+{
+ "id": "dm-rei",
+ "title": "Rei",
+ "members": [
+  "rei"
+ ],
+ "with": "rei",
+ "messages": [
+  {
+   "id": "dm-rei-023-8-1",
+   "unlock": {
+    "unit": "023",
+    "session": 8
+   },
+   "day": "Суббота, вечер",
+   "from": "rei",
+   "type": "text",
+   "text": "I found a gull between two words. Didn't ask it for an interview.",
+   "ru": "Между двумя словами нашлась чайка. Интервью у неё не просила."
+  },
+  {
+   "id": "dm-rei-023-8-r1",
+   "unlock": {
+    "unit": "023",
+    "session": 8
+   },
+   "day": "Суббота, вечер",
+   "from": "me",
+   "type": "reply",
+   "tap": true,
+   "intents": [
+    {
+     "label": "Предложить послушать чайку",
+     "answers": [
+      "Keep that bit. I'd like to hear it.",
+      "Save it. The gull can have one line."
+     ],
+     "reaction": [
+      {
+       "from": "rei",
+       "text": "One line. No questions.",
+       "ru": "Одна реплика. Без вопросов.",
+       "expr": "smirk"
+      }
+     ],
+     "flag": "u023_dm_gull"
+    },
+    {
+     "label": "Предложить оставить чистую речь",
+     "answers": [
+      "Let's keep the clear words for the report.",
+      "Save the voice without the gull too."
+     ],
+     "reaction": [
+      {
+       "from": "rei",
+       "text": "Already have both.",
+       "ru": "Уже есть обе версии."
+      }
+     ],
+     "flag": "u023_dm_clear"
+    }
+   ]
+  }
+ ]
+}

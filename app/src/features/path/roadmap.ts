@@ -1,5 +1,5 @@
 import { UNITS } from '../../content/course'
-import { ARC1_UNITS } from '../../content/outline'
+import { COURSE_UNITS } from '../../content/outline'
 import type { Session, Unit } from '../../content/schema'
 import { HEROINE_IDS, type HeroineId } from '../../story/sprites'
 import type { IconName } from '../../ui/Icon'
@@ -73,8 +73,8 @@ export function mapFigure(unit: Unit): { heroine: HeroineId; pose: string; fallb
   const row = UNIT_FIGURES[unit.id]
   if (row) return { heroine: row.heroine, pose: row.pose, fallback: row.until }
   const heroine = unitHeroine(unit)
-  const before = ARC1_UNITS.findIndex((u) => u.id === unit.id)
-  const turn = ARC1_UNITS.slice(0, Math.max(before, 0)).filter((u) => UNITS[u.id] && unitHeroine(UNITS[u.id]!) === heroine).length
+  const before = COURSE_UNITS.findIndex((u) => u.id === unit.id)
+  const turn = COURSE_UNITS.slice(0, Math.max(before, 0)).filter((u) => UNITS[u.id] && unitHeroine(UNITS[u.id]!) === heroine).length
   const poses = MAP_POSES[heroine]
   return { heroine, pose: poses[turn % poses.length]! }
 }

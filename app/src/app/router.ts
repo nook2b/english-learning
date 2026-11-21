@@ -23,8 +23,8 @@ export type Route =
   | { name: 'prologue' }
   /** The placement check taken again from the profile. */
   | { name: 'placement' }
-  /** The team chat "Room 17". */
-  | { name: 'chat' }
+  /** The chats: the list (or "Room 17" while it is the only one), or one chat by id. */
+  | { name: 'chat'; id?: string }
   /** The check at the end of an arc. */
   | { name: 'arc-check'; id: string }
 
@@ -40,7 +40,7 @@ export function parse(hash: string): Route {
   if (name === 'practice') return { name: 'practice' }
   if (name === 'prologue') return { name: 'prologue' }
   if (name === 'placement') return { name: 'placement' }
-  if (name === 'chat') return { name: 'chat' }
+  if (name === 'chat') return a ? { name: 'chat', id: a } : { name: 'chat' }
   if (name === 'arc-check' && a) return { name: 'arc-check', id: a }
   const tab = TABS.find((t) => t.route === name)
   if (tab) return { name: tab.route }
@@ -52,6 +52,7 @@ export function href(route: Route): string {
   if (route.name === 'heroine') return `#/heroine/${route.id}`
   if (route.name === 'session') return `#/session/${route.unitId}/${route.index}`
   if (route.name === 'arc-check') return `#/arc-check/${route.id}`
+  if (route.name === 'chat' && route.id) return `#/chat/${route.id}`
   return `#/${route.name}`
 }
 

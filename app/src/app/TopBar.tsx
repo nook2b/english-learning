@@ -26,8 +26,8 @@ export function TopBar() {
         <Icon name="crystal" />
         {wallet.crystals}
       </button>
-      {/* The phone opens the team chat. */}
-      <button className="topbar-phone" onClick={() => navigate({ name: 'chat' })} aria-label={unread ? `Чат «Room 17», новых: ${unread}` : 'Чат «Room 17»'}>
+      {/* The phone opens the chats. */}
+      <button className="topbar-phone" onClick={() => navigate({ name: 'chat' })} aria-label={unread ? `Чаты, новых: ${unread}` : 'Чаты'}>
         <Icon name="phone" size={28} />
         {unread > 0 && <span className="topbar-badge">{unread}</span>}
       </button>
