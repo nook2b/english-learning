@@ -100,6 +100,18 @@ def main() -> int:
                     todo[out] = (ch["id"], voiced)
 
     if not args.unit:
+        # Voice messages written only for a chat (content/chats/*.json); those taken from a unit are voiced with it.
+        for path in sorted((ROOT / "content/chats").glob("*.json")):
+            for m in json.loads(path.read_text())["messages"]:
+                if m["type"] != "voice":
+                    continue
+                voiced = voiced_text(m["text"], None, m.get("delivery"), by_expr)
+                out = ROOT / "assets/audio" / m["from"] / f"{clip_key(m['from'], voiced)}.mp3"
+                needed.add(out)
+                if not out.exists():
+                    todo[out] = (m["from"], voiced)
+
+    if not args.unit:
         # After-class review lines (content/after-class.json): heroine -> state -> line.
         for hid, states in json.loads((ROOT / "content/after-class.json").read_text()).items():
             for line in states.values():

@@ -1,0 +1,1195 @@
+{
+  "id": "023",
+  "title": "Спросить незнакомца",
+  "goal": "Начать короткий разговор, попросить разрешение на запись и поблагодарить.",
+  "focus": "Заговорить с незнакомцем: Excuse me, do you have a minute?, Could I ask you…?, May we record this?; принять отказ и поблагодарить; понять ответ в прошедшем времени.",
+  "outcome": "Команда разговаривает с четырьмя прохожими. Иво даёт короткую историю для выпуска, Джо разрешает оставить один отрывок.",
+  "expressions": [
+    "Excuse me",
+    "do you have a minute?",
+    "Could I ask you",
+    "we're making",
+    "May we record",
+    "that's fine",
+    "thanks for your time",
+    "have a good day",
+    "no problem",
+    "I gave it back",
+    "thanks anyway",
+    "we're in a hurry"
+  ],
+  "glossary": [
+    "passer-by",
+    "river steps",
+    "recording",
+    "follow-up question",
+    "student report"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Люди проходят мимо",
+      "intro": "Суббота, набережная. Памятка перед интервью: когда рекордер выключен и что делать после отказа.",
+      "place": "town_street",
+      "frame": {
+        "setting": "В субботу у ступенек к реке прохожая смотрит на часы. Рэй держит рекордер выключенным, Мика — карточку с тремя вопросами.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Excuse me, do you have a minute?",
+            "ru": "Извините, у вас есть минутка?",
+            "expr": "phone/happy"
+          },
+          {
+            "speaker": "dana",
+            "text": "Sorry. I'm late for work.",
+            "ru": "Простите. Я опаздываю на работу."
+          },
+          {
+            "speaker": "mika",
+            "text": "No problem. Have a good day.",
+            "ru": "Ничего страшного. Хорошего дня.",
+            "expr": "neutral"
+          },
+          {
+            "speaker": "mika",
+            "text": "You asked for another weekend story. Mine will have to wait for these interviews.",
+            "ru": "Ты хотел ещё историю моих выходных. Моя подождёт, пока мы спрашиваем прохожих.",
+            "expr": "happy",
+            "if": "flirt_mika_022"
+          },
+          {
+            "speaker": "mika",
+            "text": "That yellow cup would be easier to interview. It stays in one place.",
+            "ru": "Жёлтую чашку было бы проще опросить. Она стоит на месте.",
+            "expr": "happy",
+            "if": "u022_mika_joke"
+          },
+          {
+            "speaker": "mika",
+            "text": "We agreed to take turns. The next question is yours.",
+            "ru": "Мы договорились спрашивать по очереди. Следующий вопрос твой.",
+            "expr": "phone/focused",
+            "if": "u022_mika_work"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u023-s1-e1",
+          "type": "reading",
+          "title": "Before you ask",
+          "text": "People on a walk may stop to talk, but some are in a hurry. Say what you are making and ask if they have a minute. Keep the recorder off while you ask. If someone says no, thank them and let them go. If they agree to talk, ask whether you can record their answer for the student report. Some people are happy to chat without being recorded. Listen to the answer and ask one short follow-up question. Thank them at the end, even if you only got a few words.",
+          "ru": "Люди на прогулке могут остановиться поговорить, но некоторые спешат. Скажи, что вы делаете, и спроси, есть ли минутка. Пока спрашиваешь, рекордер выключен. Если человек отказался, поблагодари и дай ему уйти. Если согласился поговорить, спроси, можно ли записать ответ для студенческого репортажа. Некоторым приятно поговорить без записи. Выслушай ответ и задай один короткий дополнительный вопрос. В конце поблагодари, даже если услышал всего несколько слов.",
+          "questions": [
+            {
+              "prompt": "When is the recorder off?",
+              "options": [
+                "during the first request",
+                "never",
+                "after every word"
+              ],
+              "answer": "during the first request"
+            },
+            {
+              "prompt": "What do we do after a refusal?",
+              "options": [
+                "thank them",
+                "ask ten more times",
+                "record anyway"
+              ],
+              "answer": "thank them"
+            },
+            {
+              "prompt": "Can someone talk without being recorded?",
+              "options": [
+                "yes",
+                "no",
+                "only after lunch"
+              ],
+              "answer": "yes"
+            }
+          ],
+          "tags": [
+            "reading",
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s1-e2",
+          "type": "choice",
+          "prompt": "Excuse me, do you have a ___?",
+          "options": [
+            "minute",
+            "time ago",
+            "moment ago"
+          ],
+          "answer": "minute",
+          "tags": [
+            "function_approach"
+          ],
+          "explain": "Do you have a minute? — у вас есть минутка?"
+        },
+        {
+          "id": "u023-s1-e3",
+          "type": "choice",
+          "prompt": "— Sorry, I'm late. — No problem. Have a good ___.",
+          "options": [
+            "day",
+            "time",
+            "minute"
+          ],
+          "answer": "day",
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "Excuse me",
+              "ru": "извините"
+            },
+            {
+              "en": "do you have a minute?",
+              "ru": "у вас есть минутка?"
+            },
+            {
+              "en": "May we record this?",
+              "ru": "можно это записать?"
+            },
+            {
+              "en": "thanks for your time",
+              "ru": "спасибо за ваше время"
+            },
+            {
+              "en": "we're in a hurry",
+              "ru": "мы торопимся"
+            },
+            {
+              "en": "I gave it back",
+              "ru": "я вернул это"
+            }
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "She had somewhere to be.",
+          "ru": "Ей нужно было успеть.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Коротко и подробно",
+      "intro": "Двое прохожих: Кит говорит без записи, Джо разрешает записать. Слушай без текста.",
+      "place": "embankment",
+      "frame": {
+        "setting": "Следующий прохожий останавливается, а чуть позже к вам обращается женщина со складной сумкой. Рэй ждёт разрешения, прежде чем поднять рекордер.",
+        "lines": [
+          {
+            "speaker": "kit",
+            "text": "I can talk. Please don't record me.",
+            "ru": "Поговорить могу. Только не записывайте."
+          },
+          {
+            "speaker": "mika",
+            "text": "Sure. We'll leave it off.",
+            "ru": "Конечно. Выключим.",
+            "expr": "neutral"
+          },
+          {
+            "speaker": "jo",
+            "text": "You can record me for your student report.",
+            "ru": "Можете записать меня для своего студенческого репортажа."
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u023-s2-e1",
+          "type": "listening",
+          "speaker": "kit",
+          "audio": "I stayed at home on Saturday. I watched a film and ate noodles, then I went to bed early because I had work the next morning. That was my weekend.",
+          "ru": "В субботу я сидел дома. Посмотрел фильм, поел лапши и рано лёг, потому что утром на работу. Вот и все выходные.",
+          "questions": [
+            {
+              "prompt": "Can this answer go into the recording?",
+              "options": [
+                "no",
+                "yes",
+                "only the noodles"
+              ],
+              "answer": "no"
+            }
+          ],
+          "tags": [
+            "listening",
+            "past_simple"
+          ],
+          "context": "Кит у ступенек к реке"
+        },
+        {
+          "id": "u023-s2-e2",
+          "type": "listening",
+          "speaker": "jo",
+          "audio": "I went to the market, then I visited my sister, then we had lunch, then we walked to the shops. I bought two plants, and she bought a hat. Then we saw our old neighbour, and I forgot what we were looking for.",
+          "ru": "Я сходила на рынок, потом к сестре, потом мы пообедали, потом пошли по магазинам. Я купила два растения, а она шляпу. Потом мы встретили старую соседку, и я забыла, что мы искали.",
+          "questions": [
+            {
+              "prompt": "What did Jo buy?",
+              "options": [
+                "two plants",
+                "a hat",
+                "noodles"
+              ],
+              "answer": "two plants"
+            }
+          ],
+          "tags": [
+            "listening",
+            "past_simple"
+          ],
+          "context": "Джо со складной сумкой"
+        },
+        {
+          "id": "u023-s2-e3",
+          "type": "dictation",
+          "speaker": "mika",
+          "audio": "Thanks for your time.",
+          "answers": [
+            "Thanks for your time."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s2-e4",
+          "type": "choice",
+          "prompt": "Jo: «I bought two plants, and she bought a ___.»",
+          "options": [
+            "hat",
+            "bag",
+            "cup"
+          ],
+          "answer": "hat",
+          "tags": [
+            "past_simple"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "We have some plants and a hat. I need a shorter sentence.",
+          "ru": "У нас есть растения и шляпа. Мне нужно предложение покороче.",
+          "expr": "notebook/thinking"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Начало разговора",
+      "intro": "Начать разговор: Excuse me, do you have a minute? — объясни, что делаете: We're making a student report about last weekend. — спроси: Could I ask you three short questions? May we record your answer?",
+      "place": "embankment",
+      "frame": {
+        "setting": "Айрис пишет вступление крупнее остальных строк. Мика пробует прочитать его, глядя поверх карточки.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Give them a reason to stop before the first question.",
+            "ru": "Сначала скажи, зачем остановиться, потом задавай вопрос.",
+            "expr": "notebook/focused"
+          },
+          {
+            "speaker": "iris",
+            "text": "You said you'd read my notes. Here's the one we need outside.",
+            "ru": "Ты сказал, что читал бы мои записки. Вот та, которая нужна на улице.",
+            "expr": "dry_smile",
+            "if": "flirt_iris_022"
+          },
+          {
+            "speaker": "iris",
+            "text": "The book version can wait. This one has three questions.",
+            "ru": "Книжная версия подождёт. В этой три вопроса.",
+            "expr": "notebook/dry_smile",
+            "if": "u022_iris_joke"
+          },
+          {
+            "speaker": "iris",
+            "text": "You asked for space for answers. We have it here.",
+            "ru": "Ты предложил оставить место для ответов. Вот оно.",
+            "expr": "notebook/focused",
+            "if": "u022_iris_work"
+          },
+          {
+            "speaker": "iris",
+            "text": "You liked the short card. That's the one I brought.",
+            "ru": "Тебе подошла короткая карточка. Её я и принесла.",
+            "expr": "notebook/focused",
+            "if": "u022_dm_short"
+          },
+          {
+            "speaker": "iris",
+            "text": "The long page is resting at home, as you suggested.",
+            "ru": "Длинный лист отдыхает дома, как ты предложил.",
+            "expr": "notebook/dry_smile",
+            "if": "u022_dm_spare"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u023-s3-e1",
+          "type": "choice",
+          "prompt": "Excuse me, do you ___ a minute?",
+          "options": [
+            "have",
+            "has",
+            "had"
+          ],
+          "answer": "have",
+          "tags": [
+            "function_approach"
+          ],
+          "context": "Вступление на карточке"
+        },
+        {
+          "id": "u023-s3-e2",
+          "type": "fill",
+          "prompt": "We're ___ a student report about last weekend.",
+          "answers": [
+            "making"
+          ],
+          "hint": "делаем",
+          "tags": [
+            "function_approach"
+          ],
+          "context": "Вступление на карточке"
+        },
+        {
+          "id": "u023-s3-e3",
+          "type": "choice",
+          "prompt": "___ I ask you three short questions?",
+          "options": [
+            "Could",
+            "Did",
+            "Was"
+          ],
+          "answer": "Could",
+          "tags": [
+            "function_approach"
+          ],
+          "explain": "Could I ask…? — можно спросить?",
+          "context": "Вступление на карточке"
+        },
+        {
+          "id": "u023-s3-e4",
+          "type": "choice",
+          "prompt": "May we ___ your answer for the report?",
+          "options": [
+            "record",
+            "recorded",
+            "recording"
+          ],
+          "answer": "record",
+          "tags": [
+            "function_approach"
+          ],
+          "context": "Вступление на карточке"
+        },
+        {
+          "id": "u023-s3-e5",
+          "type": "fill",
+          "prompt": "That's fine. Thanks ___.",
+          "answers": [
+            "anyway"
+          ],
+          "hint": "всё равно",
+          "tags": [
+            "function_approach"
+          ],
+          "context": "Вступление на карточке"
+        },
+        {
+          "id": "u023-s3-e6",
+          "type": "choice",
+          "prompt": "Thanks for your ___. Have a good day.",
+          "options": [
+            "time",
+            "minute ago",
+            "report"
+          ],
+          "answer": "time",
+          "tags": [
+            "function_approach"
+          ],
+          "context": "Вступление на карточке"
+        },
+        {
+          "id": "u023-s3-e7",
+          "type": "fix",
+          "sentence": "Excuse me, you have a minute?",
+          "answers": [
+            "Excuse me, do you have a minute?"
+          ],
+          "tags": [
+            "function_approach"
+          ],
+          "explain": "Вопрос: do you have…?",
+          "context": "Вступление на карточке"
+        },
+        {
+          "id": "u023-s3-e8",
+          "type": "transform",
+          "instruction": "Спроси вежливо: начни с Could I",
+          "sentence": "ask you a question",
+          "answers": [
+            "Could I ask you a question?"
+          ],
+          "tags": [
+            "function_approach"
+          ],
+          "context": "Вступление на карточке"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "That sounds like a person asking, which helps.",
+          "ru": "Звучит как обычная просьба. Уже хорошо.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Один ответ, одна деталь",
+      "intro": "Одна деталь в ответе: Did you go to the market? — Yes, I did. I bought two plants. Did your sister buy plants too? — No, she didn't. She bought a hat.",
+      "place": "embankment",
+      "frame": {
+        "setting": "Айрис записывает под ответом Джо «two plants». Рэй смотрит на длительность файла.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "One clear detail. Keep that.",
+            "ru": "Одна понятная деталь. Её оставим.",
+            "expr": "recorder/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u023-s4-e1",
+          "type": "choice",
+          "prompt": "Did you go to the market? — Yes, I ___.",
+          "options": [
+            "did",
+            "went",
+            "do"
+          ],
+          "answer": "did",
+          "tags": [
+            "past_questions"
+          ],
+          "context": "Ответ Джо"
+        },
+        {
+          "id": "u023-s4-e2",
+          "type": "fill",
+          "prompt": "I ___ two plants.",
+          "answers": [
+            "bought"
+          ],
+          "hint": "купила",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Ответ Джо"
+        },
+        {
+          "id": "u023-s4-e3",
+          "type": "choice",
+          "prompt": "Did your sister ___ plants too?",
+          "options": [
+            "buy",
+            "bought",
+            "buys"
+          ],
+          "answer": "buy",
+          "tags": [
+            "past_questions"
+          ],
+          "context": "Ответ Джо"
+        },
+        {
+          "id": "u023-s4-e4",
+          "type": "fill",
+          "prompt": "No, she ___. She bought a hat.",
+          "answers": [
+            "didn't",
+            "did not"
+          ],
+          "tags": [
+            "past_questions"
+          ],
+          "context": "Ответ Джо"
+        },
+        {
+          "id": "u023-s4-e5",
+          "type": "choice",
+          "prompt": "Who did you ___ after lunch?",
+          "options": [
+            "see",
+            "saw",
+            "seen"
+          ],
+          "answer": "see",
+          "tags": [
+            "past_questions"
+          ],
+          "context": "Ответ Джо"
+        },
+        {
+          "id": "u023-s4-e6",
+          "type": "fill",
+          "prompt": "We ___ an old neighbour.",
+          "answers": [
+            "saw",
+            "met"
+          ],
+          "hint": "встретили",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "See → saw.",
+          "context": "Ответ Джо"
+        },
+        {
+          "id": "u023-s4-e7",
+          "type": "fix",
+          "sentence": "Did she bought a hat?",
+          "answers": [
+            "Did she buy a hat?"
+          ],
+          "tags": [
+            "past_questions"
+          ],
+          "explain": "После did — buy.",
+          "context": "Ответ Джо"
+        },
+        {
+          "id": "u023-s4-e8",
+          "type": "sort",
+          "instruction": "Это вопрос прохожему или его ответ?",
+          "categories": [
+            {
+              "id": "ask",
+              "label": "Ты спрашиваешь"
+            },
+            {
+              "id": "answer",
+              "label": "Отвечает прохожий"
+            }
+          ],
+          "items": [
+            {
+              "text": "Did you go to the market?",
+              "category": "ask"
+            },
+            {
+              "text": "Who did you see?",
+              "category": "ask"
+            },
+            {
+              "text": "May we record your answer?",
+              "category": "ask"
+            },
+            {
+              "text": "I bought two plants.",
+              "category": "answer"
+            },
+            {
+              "text": "We saw an old neighbour.",
+              "category": "answer"
+            },
+            {
+              "text": "That's fine.",
+              "category": "answer"
+            }
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "The plants can stay. I'll mark where that answer starts.",
+          "ru": "Растения оставим. Отмечу, где начинается ответ.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Твой голос на улице",
+      "intro": "Рэй слушает твой голос на ветру. Ответь, как хочешь.",
+      "place": "embankment",
+      "frame": {
+        "setting": "Рэй поднимает наушник, пропускает звук волн и возвращает его на место.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "You said you liked knowing I was listening. Still listening.",
+            "ru": "Ты сказал, что тебе нравится знать, что я слушаю. Всё ещё слушаю.",
+            "expr": "recorder/smirk",
+            "if": "flirt_rei_021"
+          },
+          {
+            "speaker": "rei",
+            "text": "Your chair stayed home. One less voice test.",
+            "ru": "Твой стул остался дома. На одну пробу голоса меньше.",
+            "expr": "recorder/smirk",
+            "if": "u021_rei_joke"
+          },
+          {
+            "speaker": "rei",
+            "text": "You asked for a sound check. The microphone's ready.",
+            "ru": "Ты предложил проверить звук. Микрофон готов.",
+            "expr": "recorder/focused",
+            "if": "u021_rei_work"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u023-s5-e1",
+          "type": "scene",
+          "setting": "Рэй поднимает наушник, пропускает звук волн и возвращает его на место.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "You sound different outside. I could get used to this version.",
+              "ru": "На улице у тебя другой голос. К этой версии я могла бы привыкнуть.",
+              "expr": "smirk"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "Then I'll keep talking to you.",
+                "I like this version of us working together."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Keep it clear. I want to hear.",
+                "ru": "Говори понятно. Хочу расслышать.",
+                "expr": "smirk"
+              },
+              "flag": "flirt_rei_023"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "The wind is my new voice coach.",
+                "The city adds the special effects."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Expensive effects. Free today.",
+                "ru": "Дорогие эффекты. Сегодня бесплатно.",
+                "expr": "smirk"
+              },
+              "flag": "u023_rei_joke"
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's move the microphone away from the wind.",
+                "Is the sound clear enough here?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "This angle works. Stay here.",
+                "ru": "Так подходит. Оставайся здесь.",
+                "expr": "recorder/focused"
+              },
+              "flag": "u023_rei_work"
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "Could you say that once more?",
+            "ru": "Можешь сказать ещё раз?",
+            "expr": "listening"
+          },
+          "tags": [
+            "function_approach"
+          ],
+          "context": "Слышно поверх города"
+        },
+        {
+          "id": "u023-s5-e2",
+          "type": "translate",
+          "ru": "Извините, у вас есть минутка?",
+          "answers": [
+            "Excuse me, do you have a minute?"
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s5-e3",
+          "type": "translate",
+          "ru": "Мы делаем студенческий репортаж.",
+          "answers": [
+            "We're making a student report.",
+            "We are making a student report."
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s5-e4",
+          "type": "translate",
+          "ru": "Можно записать ваш ответ?",
+          "answers": [
+            "May we record your answer?",
+            "Can we record your answer?",
+            "Could we record your answer?"
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s5-e5",
+          "type": "translate",
+          "ru": "Спасибо за ваше время.",
+          "answers": [
+            "Thanks for your time.",
+            "Thank you for your time."
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s5-e6",
+          "type": "write",
+          "situation": "Прохожий спешит и отказывается. Ответь вежливо.",
+          "answers": [
+            "No problem. Have a good day.",
+            "That's fine. Thanks anyway.",
+            "No problem. Thanks anyway. Have a good day."
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "One more person, then we listen to what we have.",
+          "ru": "Ещё один человек, потом послушаем, что набралось.",
+          "expr": "phone/thinking"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: попросить минутку",
+      "intro": "Попроси прохожего о минутке вслух: вежливо и коротко.",
+      "place": "embankment",
+      "frame": {
+        "setting": "Мужчина у скамейки заканчивает складывать пустой бумажный пакет. Ты подходишь с карточкой, Рэй опускает рекордер.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "Go ahead. I'll hold the card if you need it.",
+            "ru": "Давай. Если нужно, я подержу карточку.",
+            "expr": "listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u023-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Excuse me, do you have a minute?",
+          "answers": [
+            "Excuse me, do you have a minute?"
+          ],
+          "tags": [
+            "speaking",
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Could I ask what you did last weekend?",
+          "answers": [
+            "Could I ask what you did last weekend?"
+          ],
+          "tags": [
+            "speaking",
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "May we record your answer for our student report?",
+          "answers": [
+            "May we record your answer for our student report?"
+          ],
+          "tags": [
+            "speaking",
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "mika",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Thanks for your time.",
+          "answers": [
+            "Thanks for your time."
+          ],
+          "tags": [
+            "speaking",
+            "function_approach"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "He finished with the bag. You can ask now.",
+          "ru": "С пакетом он закончил. Теперь можно спросить.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: услышать отказ",
+      "intro": "Быстрый круг: прохожий отвечает — что ты скажешь.",
+      "place": "embankment",
+      "frame": {
+        "setting": "Мика тихо произносит три возможных ответа. Рэй держит рекордер у пояса.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "What do you say if someone is busy?",
+            "ru": "Что скажешь, если человек занят?",
+            "expr": "phone/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u023-s7-e1",
+          "type": "write",
+          "situation": "«Sorry, I'm late.» — что ты скажешь?",
+          "answers": [
+            "No problem. Have a good day.",
+            "That's fine. Have a good day.",
+            "No problem. Thanks anyway."
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s7-e2",
+          "type": "write",
+          "situation": "«You can ask, but don't record.» — что ты скажешь?",
+          "answers": [
+            "Of course. We'll leave it off.",
+            "Sure. We won't record.",
+            "Of course. We'll leave the recorder off."
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s7-e3",
+          "type": "write",
+          "situation": "«Yes, you can record.» — поблагодари и задай первый вопрос.",
+          "answers": [
+            "Thank you. What did you do last weekend?",
+            "Thanks. How was your weekend?",
+            "Thank you. What did you do on Saturday?"
+          ],
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s7-e4",
+          "type": "choice",
+          "prompt": "— May we record this? — Yes, that's ___.",
+          "options": [
+            "fine",
+            "good day",
+            "late"
+          ],
+          "answer": "fine",
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s7-e5",
+          "type": "choice",
+          "prompt": "Thanks ___ your time.",
+          "options": [
+            "for",
+            "to",
+            "of"
+          ],
+          "answer": "for",
+          "tags": [
+            "function_approach"
+          ]
+        },
+        {
+          "id": "u023-s7-e6",
+          "type": "dictation",
+          "speaker": "rei",
+          "audio": "May we record your answer?",
+          "answers": [
+            "May we record your answer?"
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "function_approach"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Ready. Recorder still off.",
+          "ru": "Готова. Рекордер пока выключен.",
+          "expr": "neutral"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Чужой пакет",
+      "role": "mission",
+      "intro": "Миссия: заговорить с Иво и записать его историю.",
+      "place": "embankment",
+      "exercises": [
+        {
+          "id": "u023-s8-e1",
+          "type": "scene",
+          "setting": "Мужчина у скамейки убирает пакет в карман и смотрит на тебя.",
+          "lines": [
+            {
+              "speaker": "ivo",
+              "text": "Hello. Did you want to ask something?",
+              "ru": "Здравствуйте. Вы хотели что-то спросить?"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Сначала попросить минутку",
+              "answers": [
+                "Do you have a minute? We're making a student report. May we record your answer?",
+                "Could we ask about your weekend and record your answer?"
+              ],
+              "reaction": {
+                "speaker": "ivo",
+                "text": "Yes. I have a minute, and you can record me.",
+                "ru": "Да. Минутка есть, можете записывать."
+              },
+              "flag": "u023_ask_minute"
+            },
+            {
+              "label": "Сначала назвать тему",
+              "answers": [
+                "We're making a report about last weekend. Could I ask you a question and record your answer?",
+                "May we record a short answer about your weekend for our student report?"
+              ],
+              "reaction": {
+                "speaker": "ivo",
+                "text": "A weekend story? Yes. You can record it.",
+                "ru": "Историю выходных? Да. Можете записать."
+              },
+              "flag": "u023_ask_topic"
+            }
+          ],
+          "clarify": {
+            "speaker": "ivo",
+            "text": "Is this about my weekend?",
+            "ru": "Это про мои выходные?"
+          },
+          "tags": [
+            "function_approach"
+          ],
+          "after": [
+            {
+              "speaker": "narrator",
+              "text": "Рэй поднимает рекордер и нажимает запись."
+            },
+            {
+              "speaker": "mika",
+              "text": "Your first question was about the whole weekend. Go ahead.",
+              "ru": "Ты выбрал начать с выходных целиком. Спрашивай.",
+              "expr": "phone/neutral",
+              "if": "u021_open_weekend"
+            },
+            {
+              "speaker": "mika",
+              "text": "Your first question was about Saturday. Go ahead.",
+              "ru": "Ты выбрал начать с субботы. Спрашивай.",
+              "expr": "phone/neutral",
+              "if": "u021_open_day"
+            },
+            {
+              "speaker": "ivo",
+              "text": "Last Saturday, I went to the Small Pier café and took the wrong bag of bread. I saw a woman looking for it, so I gave it back, and she invited me to have tea. We sat outside for an hour, and I missed the bus home.",
+              "ru": "В прошлую субботу я зашёл в кафе Small Pier и взял не тот пакет с хлебом. Увидел женщину, которая его искала, вернул, и она пригласила меня на чай. Мы час просидели снаружи, а я пропустил автобус домой."
+            },
+            {
+              "speaker": "iris",
+              "text": "Your second question was about the place. We have a name: Small Pier.",
+              "ru": "Твой второй вопрос был о месте. Название есть — Small Pier.",
+              "expr": "notebook/focused",
+              "if": "u022_follow_place"
+            },
+            {
+              "speaker": "iris",
+              "text": "Your second question was about the people. We have the woman who shared her tea.",
+              "ru": "Твой второй вопрос был о людях. У нас есть женщина, которая угостила его чаем.",
+              "expr": "notebook/focused",
+              "if": "u022_follow_people"
+            },
+            {
+              "speaker": "mika",
+              "text": "Thank you. That's a lovely story.",
+              "ru": "Спасибо. Хорошая история.",
+              "expr": "happy"
+            },
+            {
+              "speaker": "ivo",
+              "text": "The bread was good too.",
+              "ru": "Хлеб тоже был хороший."
+            }
+          ],
+          "context": "Обратиться к Иво"
+        },
+        {
+          "id": "u023-s8-e2",
+          "type": "scene",
+          "setting": "Иво уходит к остановке. Айрис открывает тетрадь на чистой странице.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "You got a whole story out of three questions. I may keep you near my notebook.",
+              "ru": "Ты добыл целую историю тремя вопросами. Пожалуй, буду держать тебя поближе к тетради.",
+              "expr": "dry_smile"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I'd be happy to stay near you.",
+                "I like that place next to your notebook."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Then you can help me find the best line.",
+                "ru": "Тогда поможешь найти лучшую строчку.",
+                "expr": "dry_smile"
+              },
+              "flag": "flirt_iris_023"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "Does the notebook have a spare chair?",
+                "I'll need a name on that seat."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll use small letters. We need space for notes.",
+                "ru": "Напишу мелко. Нужно место для заметок.",
+                "expr": "dry_smile"
+              },
+              "flag": "u023_iris_joke"
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's write the café name before we forget.",
+                "We should mark the best part of his answer."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "Small Pier. I'll put the time beside it.",
+                "ru": "Small Pier. Рядом поставлю время.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u023_iris_work"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Что стало с вопросами"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Two recorded answers. Let's hear them on Wednesday.",
+          "ru": "Два записанных ответа. Послушаем в среду.",
+          "expr": "recorder/neutral"
+        }
+      ]
+    }
+  ]
+}

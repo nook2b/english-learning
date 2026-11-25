@@ -1,0 +1,161 @@
+{
+ "tag": "past_simple",
+ "items": [
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-01",
+    "type": "choice",
+    "prompt": "Yesterday it ___ very cold.",
+    "options": [
+     "was",
+     "were",
+     "is"
+    ],
+    "answer": "was",
+    "tags": [
+     "past_simple"
+    ]
+   }
+  },
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-02",
+    "type": "choice",
+    "prompt": "We ___ at the cinema on Friday.",
+    "options": [
+     "were",
+     "was",
+     "are"
+    ],
+    "answer": "were",
+    "tags": [
+     "past_simple"
+    ]
+   }
+  },
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-03",
+    "type": "choice",
+    "prompt": "Last summer, my brother ___ Paris.",
+    "options": [
+     "visited",
+     "visits",
+     "visit"
+    ],
+    "answer": "visited",
+    "tags": [
+     "past_simple"
+    ]
+   }
+  },
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-04",
+    "type": "choice",
+    "prompt": "I ___ my keys at home this morning.",
+    "options": [
+     "left",
+     "leaved",
+     "leave"
+    ],
+    "answer": "left",
+    "tags": [
+     "past_simple"
+    ]
+   }
+  },
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-05",
+    "type": "fill",
+    "prompt": "She ___ a new coat two days ago.",
+    "answers": [
+     "bought"
+    ],
+    "tags": [
+     "past_simple"
+    ]
+   }
+  },
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-06",
+    "type": "fill",
+    "prompt": "They ___ to the beach last weekend.",
+    "answers": [
+     "went"
+    ],
+    "tags": [
+     "past_simple"
+    ]
+   }
+  },
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-07",
+    "type": "fill",
+    "prompt": "I ___ my friend at the station yesterday.",
+    "answers": [
+     "met",
+     "saw"
+    ],
+    "tags": [
+     "past_simple"
+    ]
+   }
+  },
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-08",
+    "type": "transform",
+    "instruction": "Расскажи в прошлом: начни с Yesterday",
+    "sentence": "I walk to work.",
+    "answers": [
+     "Yesterday I walked to work.",
+     "Yesterday, I walked to work."
+    ],
+    "tags": [
+     "past_simple"
+    ]
+   }
+  },
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-09",
+    "type": "fix",
+    "sentence": "Last night I watch a film.",
+    "answers": [
+     "Last night I watched a film.",
+     "Last night, I watched a film."
+    ],
+    "tags": [
+     "past_simple"
+    ]
+   }
+  },
+  {
+   "unit": "021",
+   "exercise": {
+    "id": "p-past_simple-10",
+    "type": "fix",
+    "sentence": "The shop were closed on Sunday.",
+    "answers": [
+     "The shop was closed on Sunday."
+    ],
+    "tags": [
+     "past_simple"
+    ]
+   }
+  }
+ ]
+}

@@ -97,7 +97,7 @@
  },
  "past_simple": {
   "kind": "topic",
-  "ru": "Past Simple: что было",
+  "ru": "Past Simple: was / were, visited, went — что было и что сделал",
   "cheatsheet": "cheatsheets/past_simple.json"
  },
  "past_continuous": {
@@ -248,5 +248,15 @@
   "kind": "topic",
   "ru": "Until, as soon as, before: когда остановиться и что сразу после",
   "cheatsheet": "cheatsheets/time_clauses.json"
+ },
+ "past_questions": {
+  "kind": "topic",
+  "ru": "Вопросы о прошлом: Did you…? — Yes, I did / No, I didn't",
+  "cheatsheet": "cheatsheets/past_questions.json"
+ },
+ "function_approach": {
+  "kind": "topic",
+  "ru": "Заговорить с незнакомцем: Excuse me, do you have a minute? May we record this?",
+  "cheatsheet": "cheatsheets/function_approach.json"
  }
 }

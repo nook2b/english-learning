@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { navigate } from '../../app/router'
 import { UNITS, isSessionOpen, nextSession } from '../../content/course'
 import { PLACEMENT_FLAG, PROLOGUE_FLAG } from '../../content/story'
-import { ARC1, ARC1_UNITS } from '../../content/outline'
+import { ARCS } from '../../content/outline'
 import type { Unit } from '../../content/schema'
 import { sessionId } from '../../data/db'
 import { useClub } from '../../data/store'
@@ -21,7 +21,6 @@ export function PathScreen() {
   const prologueDone = !!flags[PROLOGUE_FLAG]
   const placementDone = !!flags[PLACEMENT_FLAG]
   const prologueFirst = !(prologueDone && placementDone) && Object.keys(sessions).length === 0
-  const doneCount = ARC1_UNITS.filter((u) => units[u.id]).length
   const route = useRef<HTMLDivElement>(null)
   const away = useAwayFromCurrent()
 
@@ -40,36 +39,44 @@ export function PathScreen() {
         </Button>
       )}
 
-      <div className="arc-head">
-        <h2>{ARC1.title}</h2>
-        <ProgressBar value={doneCount} max={ARC1_UNITS.length} label="Прогресс арки" />
-      </div>
-
       <div className="route" ref={route}>
-        <button className={`route-head route-prologue ${prologueFirst ? 'route-prologue-new' : ''}`} onClick={() => navigate({ name: 'prologue' })}>
-          <span className="route-head-kicker">Пролог · {!prologueDone ? 'начать ›' : prologueFirst ? 'дальше: кабинет 70 ›' : 'пройден ✓'}</span>
-          <span className="route-head-title">Не тот кабинет</span>
-        </button>
-        {ARC1.modules.map((m) => (
-          <section key={m.id} className="route-module">
-            <p className="route-module-title">
-              Модуль {m.id} · {m.focus}
-            </p>
-            {m.units.map((u) => {
-              const unit = UNITS[u.id]
-              return unit ? (
-                // Until the prologue and the check are over, no session is current: unit 001 is still closed.
-                <UnitRoute key={u.id} unit={unit} next={!prologueFirst && next?.unitId === u.id ? next.index : undefined} scroll={!prologueFirst} />
-              ) : (
-                <div key={u.id} className="route-head route-head-soon">
-                  <span className="route-head-kicker">Юнит {u.id} · скоро</span>
-                  <span className="route-head-title">{u.title}</span>
-                </div>
-              )
-            })}
-          </section>
-        ))}
-        <ArcCheckCard />
+        {ARCS.map((arc, k) => {
+          const arcUnits = arc.modules.flatMap((m) => m.units)
+          return (
+            <section key={arc.id} className="route-arc">
+              <div className="arc-head">
+                <h2>{arc.title}</h2>
+                <ProgressBar value={arcUnits.filter((u) => units[u.id]).length} max={arcUnits.length} label="Прогресс арки" />
+              </div>
+              {k === 0 && (
+                <button className={`route-head route-prologue ${prologueFirst ? 'route-prologue-new' : ''}`} onClick={() => navigate({ name: 'prologue' })}>
+                  <span className="route-head-kicker">Пролог · {!prologueDone ? 'начать ›' : prologueFirst ? 'дальше: кабинет 70 ›' : 'пройден ✓'}</span>
+                  <span className="route-head-title">Не тот кабинет</span>
+                </button>
+              )}
+              {arc.modules.map((m) => (
+                <section key={m.id} className="route-module">
+                  <p className="route-module-title">
+                    Модуль {m.id} · {m.focus}
+                  </p>
+                  {m.units.map((u) => {
+                    const unit = UNITS[u.id]
+                    return unit ? (
+                      // Until the prologue and the check are over, no session is current: unit 001 is still closed.
+                      <UnitRoute key={u.id} unit={unit} next={!prologueFirst && next?.unitId === u.id ? next.index : undefined} scroll={!prologueFirst} />
+                    ) : (
+                      <div key={u.id} className="route-head route-head-soon">
+                        <span className="route-head-kicker">Юнит {u.id} · скоро</span>
+                        <span className="route-head-title">{u.title}</span>
+                      </div>
+                    )
+                  })}
+                </section>
+              ))}
+              {arc.check && ARC_CHECKS[arc.check] && <ArcCheckCard id={arc.check} />}
+            </section>
+          )
+        })}
       </div>
       {away && (
         <button className="route-back" onClick={() => document.querySelector('.route-stop-next')?.scrollIntoView({ block: 'center', behavior: 'smooth' })}>
@@ -164,16 +171,17 @@ function UnitRoute({ unit, next, scroll }: { unit: Unit; next?: number; scroll: 
   )
 }
 
-/** The end-of-arc check after the last unit: open once its mission is done (or in developer mode). */
-function ArcCheckCard() {
+/** The end-of-arc check after the arc's last unit: open once its mission is done (or in developer mode). */
+function ArcCheckCard({ id }: { id: string }) {
   const { units, settings } = useClub()
-  const open = !!units[ARC_CHECK_AFTER.arc1!] || settings.unlockAll
-  const last = settings.arcChecks?.arc1?.at(-1)
+  const after = ARC_CHECK_AFTER[id]!
+  const open = !!units[after] || settings.unlockAll
+  const last = settings.arcChecks?.[id]?.at(-1)
   const score = last && Object.values(last.blocks).reduce((a, b) => ({ correct: a.correct + b.correct, total: a.total + b.total }), { correct: 0, total: 0 })
   return (
-    <button className={`route-head route-arc-check ${open ? '' : 'route-head-soon'}`} disabled={!open} onClick={() => navigate({ name: 'arc-check', id: 'arc1' })}>
-      <span className="route-head-kicker">{open ? (score ? `Пройдена: ${score.correct}/${score.total} · пройти снова ›` : 'Итог арки · начать ›') : 'Откроется после юнита 020'}</span>
-      <span className="route-head-title">{ARC_CHECKS.arc1!.title}</span>
+    <button className={`route-head route-arc-check ${open ? '' : 'route-head-soon'}`} disabled={!open} onClick={() => navigate({ name: 'arc-check', id })}>
+      <span className="route-head-kicker">{open ? (score ? `Пройдена: ${score.correct}/${score.total} · пройти снова ›` : 'Итог арки · начать ›') : `Откроется после юнита ${after}`}</span>
+      <span className="route-head-title">{ARC_CHECKS[id]!.title}</span>
     </button>
   )
 }

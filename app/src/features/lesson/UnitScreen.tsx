@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { navigate } from '../../app/router'
 import { getUnit, nextSession } from '../../content/course'
-import { ARC1_UNITS } from '../../content/outline'
+import { COURSE_UNITS } from '../../content/outline'
 import { useClub } from '../../data/store'
 import { Gloss, Translation } from '../../lesson/Gloss'
 import { GlossaryContext, unitGlossary } from '../../lesson/glossary'
@@ -22,7 +22,7 @@ const sameText = (a: string, b: string) => a.toLowerCase().replace(/[^a-z' ]/g, 
 export function UnitScreen({ unitId }: { unitId: string }) {
   const { units, sessions } = useClub()
   const unit = getUnit(unitId)
-  const outline = ARC1_UNITS.find((u) => u.id === unitId)
+  const outline = COURSE_UNITS.find((u) => u.id === unitId)
   const phrases = useMemo(() => (unit ? keyPhrases(unit) : []), [unit])
   const glossary = useMemo(() => (unit ? unitGlossary(unit) : []), [unit])
 

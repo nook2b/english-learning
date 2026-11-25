@@ -17,7 +17,11 @@
     "nora": "wWrHVnjD18H2SoxUUhcx",
     "sam": "uBV5WqIAQ26pkCC1iyID",
     "worker": "1Hg0jPFgraVlrs9WeDwn",
-    "lina": "ar7NawegR2eZJjBscjyg"
+    "lina": "ar7NawegR2eZJjBscjyg",
+    "dana": "Co57jayXjAZf67xEYpDc",
+    "kit": "ikt4rF5Ls6ZoNuhEGmzQ",
+    "jo": "9TtWLUgBK7hbDGJUaGPd",
+    "ivo": "2AuQUxo7MN1TD0JdO5GM"
   },
   "_deliveryByExpr": "Audio tags added to a line by the sprite emotion when the line has no explicit delivery. Only for heroine lines; see docs/14-voice.md.",
   "deliveryByExpr": {
@@ -45,5 +49,5 @@
     "teary": "[emotional, voice trembling]",
     "playful": "[playfully]"
   },
-  "_voices": "Heroines; the announcer: the International Office voice in the placement check (no heroine runs the check). Secondary characters (docs/56), voices designed from a description: nora — soft Dublin Irish, sam — light Manchester, alex — soft Edinburgh Scottish, worker — light London Estuary, lina — the newcomer of 020, soft Spanish accent."
+  "_voices": "Heroines; the announcer: the International Office voice in the placement check (no heroine runs the check). Secondary characters (docs/56), voices designed from a description: nora — soft Dublin Irish, sam — light Manchester, alex — soft Edinburgh Scottish, worker — light London Estuary, lina — the newcomer of 020, soft Spanish accent. Passers-by of 023 (docs/62): dana — soft London, slightly hurried; kit — light Polish accent; jo — soft Yorkshire, chatty; ivo — light Italian accent, unhurried."
 }

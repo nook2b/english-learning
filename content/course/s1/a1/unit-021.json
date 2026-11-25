@@ -1,0 +1,1109 @@
+{
+  "id": "021",
+  "title": "Как прошли выходные",
+  "goal": "Рассказать о выходных через Past Simple и спросить другого.",
+  "focus": "Рассказать о выходных: Past Simple правильных глаголов (visited, stayed, walked, talked), was / were, last weekend, on Saturday, two days ago; спросить How was your weekend?",
+  "outcome": "Команда согласует тему и первый выход на субботу. Игрок выбирает, с какого простого вопроса начать.",
+  "expressions": [
+    "last weekend",
+    "on Saturday",
+    "two days ago",
+    "I visited",
+    "I stayed at home",
+    "I walked",
+    "it was",
+    "we were",
+    "How was your weekend?",
+    "nothing special",
+    "a short report",
+    "three minutes"
+  ],
+  "glossary": [
+    "city report",
+    "interview",
+    "title",
+    "voice test",
+    "river steps"
+  ],
+  "sessions": [
+    {
+      "kind": "comprehension",
+      "title": "Три минуты города",
+      "intro": "Мика придумала новый выпуск — «Last Weekend». Прочитай первую заметку: сколько минут и с чего начать.",
+      "place": "room17",
+      "frame": {
+        "setting": "Мика ставит телефон между четырьмя чашками. На экране заголовок «Last Weekend». Рэй снимает наушники.",
+        "lines": [
+          {
+            "speaker": "mika",
+            "text": "New idea! Three minutes of people's weekends. I already have the title.",
+            "ru": "Новая идея! Три минуты о том, как люди провели выходные. Название уже есть.",
+            "expr": "phone/excited"
+          },
+          {
+            "speaker": "rei",
+            "text": "We have a title. No sound yet.",
+            "ru": "Название есть. Звука пока нет.",
+            "expr": "deadpan"
+          },
+          {
+            "speaker": "iris",
+            "text": "I started a list of questions. It's on two pages.",
+            "ru": "Я начала список вопросов. Там две страницы.",
+            "expr": "notebook/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u021-s1-e1",
+          "type": "reading",
+          "title": "Last Weekend: first note",
+          "text": "We want to make a short city report called Last Weekend. The final report will be three minutes long. We can ask people what they did on Saturday and Sunday. We need time to listen, too. One person stayed at home. Another visited a friend or walked by the water. A quiet weekend can still make a good story. First, we will try the questions here. Then we will choose a place for our first interviews. We can all meet on Saturday morning after breakfast.",
+          "ru": "Мы хотим сделать короткий городской репортаж «Last Weekend». Готовый выпуск будет длиться три минуты. Можно спросить людей, что они делали в субботу и воскресенье. Нам ещё нужно время слушать ответы. Один человек остался дома. Другой навестил друга или гулял у воды. Даже тихие выходные могут стать хорошей историей. Сначала попробуем вопросы здесь. Затем выберем место для первых интервью. В субботу утром после завтрака мы все можем встретиться.",
+          "questions": [
+            {
+              "prompt": "How long will the final report be?",
+              "options": [
+                "one minute",
+                "three minutes",
+                "ten minutes"
+              ],
+              "answer": "three minutes"
+            },
+            {
+              "prompt": "Where will the team try the questions first?",
+              "options": [
+                "in Room 17",
+                "on a bus",
+                "in a shop"
+              ],
+              "answer": "in Room 17"
+            },
+            {
+              "prompt": "Can a quiet weekend make a story?",
+              "options": [
+                "yes",
+                "no",
+                "only in summer"
+              ],
+              "answer": "yes"
+            }
+          ],
+          "tags": [
+            "reading",
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s1-e2",
+          "type": "choice",
+          "prompt": "Last weekend, I ___ at home.",
+          "options": [
+            "stayed",
+            "stay",
+            "staying"
+          ],
+          "answer": "stayed",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Законченное действие в прошлом: stay → stayed."
+        },
+        {
+          "id": "u021-s1-e3",
+          "type": "choice",
+          "prompt": "The final report will be three minutes ___.",
+          "options": [
+            "long",
+            "ago",
+            "last"
+          ],
+          "answer": "long",
+          "tags": [
+            "function_suggest"
+          ],
+          "explain": "Three minutes long — длиной три минуты."
+        },
+        {
+          "id": "u021-s1-e4",
+          "type": "pairs",
+          "pairs": [
+            {
+              "en": "last weekend",
+              "ru": "в прошлые выходные"
+            },
+            {
+              "en": "two days ago",
+              "ru": "два дня назад"
+            },
+            {
+              "en": "I stayed at home",
+              "ru": "я остался дома"
+            },
+            {
+              "en": "nothing special",
+              "ru": "ничего особенного"
+            },
+            {
+              "en": "a short report",
+              "ru": "короткий репортаж"
+            },
+            {
+              "en": "How was your weekend?",
+              "ru": "как прошли выходные?"
+            }
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Two pages may be enough for a very long weekend.",
+          "ru": "На очень длинные выходные двух страниц, наверное, хватит.",
+          "expr": "notebook/dry_smile"
+        }
+      ]
+    },
+    {
+      "kind": "comprehension",
+      "title": "Три разных субботы",
+      "intro": "Три разных субботы: Мика, Рэй и Айрис рассказывают о выходных. Слушай без текста.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u021-s2-e1",
+          "type": "listening",
+          "speaker": "mika",
+          "audio": "Last Saturday, I visited a small market with a friend. We talked for an hour, and I missed lunch. On Sunday, I stayed at home and planned this report. So now you know why I have a title.",
+          "ru": "В прошлую субботу я сходила с другом на небольшой рынок. Мы проговорили час, и я пропустила обед. В воскресенье я сидела дома и планировала этот репортаж. Теперь понятно, откуда название.",
+          "questions": [
+            {
+              "prompt": "What did Mika plan on Sunday?",
+              "options": [
+                "a report",
+                "a market",
+                "a lunch"
+              ],
+              "answer": "a report"
+            }
+          ],
+          "tags": [
+            "listening",
+            "past_simple"
+          ],
+          "delivery": "[warmly]",
+          "context": "Мика о субботе"
+        },
+        {
+          "id": "u021-s2-e2",
+          "type": "listening",
+          "speaker": "rei",
+          "audio": "I stayed at home last weekend. I cleaned my headphones and listened to the rain. It was quiet inside. Then someone upstairs started moving a table. That was the end of the quiet part.",
+          "ru": "В прошлые выходные я осталась дома. Почистила наушники и слушала дождь. Внутри было тихо. Потом наверху кто-то начал двигать стол. На этом тихая часть закончилась.",
+          "questions": [
+            {
+              "prompt": "What ended the quiet part?",
+              "options": [
+                "a table moving",
+                "a phone",
+                "a bus"
+              ],
+              "answer": "a table moving"
+            }
+          ],
+          "tags": [
+            "listening",
+            "past_simple"
+          ],
+          "context": "Рэй о выходных"
+        },
+        {
+          "id": "u021-s2-e3",
+          "type": "listening",
+          "speaker": "iris",
+          "audio": "I visited the library, then walked home. A good day for a short answer.",
+          "ru": "Я сходила в библиотеку, потом пешком домой. Подходящий день для короткого ответа.",
+          "questions": [
+            {
+              "prompt": "Where did Iris go?",
+              "options": [
+                "to the library",
+                "to the market",
+                "to a café"
+              ],
+              "answer": "to the library"
+            }
+          ],
+          "tags": [
+            "listening",
+            "past_simple"
+          ],
+          "delivery": "[quietly, focused]",
+          "context": "Айрис о выходных"
+        },
+        {
+          "id": "u021-s2-e4",
+          "type": "dictation",
+          "speaker": "rei",
+          "audio": "I stayed at home last weekend.",
+          "answers": [
+            "I stayed at home last weekend."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "past_simple"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Three weekends. Already different.",
+          "ru": "Три истории выходных. Уже разные.",
+          "expr": "smirk"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Было, были",
+      "intro": "Где были и как было: was / were. I was, she was, it was — we were, they were. Отрицание: wasn't, weren't. Вопрос: Were you at home?",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис обводит was и were на карточках. Мика подписывает дни.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "Start with where people were and how it was.",
+            "ru": "Начни с того, где люди были и как всё прошло.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u021-s3-e1",
+          "type": "choice",
+          "prompt": "It ___ quiet at home.",
+          "options": [
+            "was",
+            "were",
+            "is"
+          ],
+          "answer": "was",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "It → was.",
+          "context": "Карточки was / were"
+        },
+        {
+          "id": "u021-s3-e2",
+          "type": "choice",
+          "prompt": "We ___ at the market on Saturday.",
+          "options": [
+            "were",
+            "was",
+            "are"
+          ],
+          "answer": "were",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "We → were.",
+          "context": "Карточки was / were"
+        },
+        {
+          "id": "u021-s3-e3",
+          "type": "fill",
+          "prompt": "The library ___ open on Sunday.",
+          "answers": [
+            "was"
+          ],
+          "hint": "была",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Карточки was / were"
+        },
+        {
+          "id": "u021-s3-e4",
+          "type": "choice",
+          "prompt": "My friends ___ busy last weekend.",
+          "options": [
+            "were",
+            "was",
+            "been"
+          ],
+          "answer": "were",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Карточки was / were"
+        },
+        {
+          "id": "u021-s3-e5",
+          "type": "fill",
+          "prompt": "I ___ at the academy. I was at home.",
+          "answers": [
+            "wasn't",
+            "was not"
+          ],
+          "hint": "не был",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Отрицание: wasn't.",
+          "context": "Карточки was / were"
+        },
+        {
+          "id": "u021-s3-e6",
+          "type": "choice",
+          "prompt": "___ you at home last Sunday?",
+          "options": [
+            "Were",
+            "Was",
+            "Did"
+          ],
+          "answer": "Were",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Вопрос с you: Were you…?",
+          "context": "Карточки was / were"
+        },
+        {
+          "id": "u021-s3-e7",
+          "type": "fix",
+          "sentence": "We was at the market.",
+          "answers": [
+            "We were at the market."
+          ],
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "We — were.",
+          "context": "Карточки was / were"
+        },
+        {
+          "id": "u021-s3-e8",
+          "type": "transform",
+          "instruction": "Сделай вопрос",
+          "sentence": "You were at the library.",
+          "answers": [
+            "Were you at the library?"
+          ],
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Карточки was / were"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "Now the place and the day match.",
+          "ru": "Теперь место и день совпадают.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "form",
+      "title": "Гулял, навестил, слушал",
+      "intro": "Законченные действия: visit → visited, stay → stayed, walk → walked, talk → talked, listen → listened, clean → cleaned. Когда: last weekend, on Saturday, two days ago.",
+      "place": "room17",
+      "frame": {
+        "setting": "На столе две карточки с субботой и воскресеньем. Айрис раскладывает под ними глаголы.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "These actions are finished. Put them on the right day.",
+            "ru": "Эти действия завершились. Поставь их под нужным днём.",
+            "expr": "notebook/thinking"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u021-s4-e1",
+          "type": "choice",
+          "prompt": "Mika ___ a market on Saturday.",
+          "options": [
+            "visited",
+            "visit",
+            "visits"
+          ],
+          "answer": "visited",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Прошлое: visit → visited.",
+          "context": "Суббота и воскресенье"
+        },
+        {
+          "id": "u021-s4-e2",
+          "type": "fill",
+          "prompt": "Rei ___ her headphones.",
+          "answers": [
+            "cleaned"
+          ],
+          "hint": "почистила",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Суббота и воскресенье"
+        },
+        {
+          "id": "u021-s4-e3",
+          "type": "choice",
+          "prompt": "Iris ___ home after the library.",
+          "options": [
+            "walked",
+            "walks",
+            "walking"
+          ],
+          "answer": "walked",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Суббота и воскресенье"
+        },
+        {
+          "id": "u021-s4-e4",
+          "type": "fill",
+          "prompt": "We ___ for an hour.",
+          "answers": [
+            "talked"
+          ],
+          "hint": "проговорили",
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Суббота и воскресенье"
+        },
+        {
+          "id": "u021-s4-e5",
+          "type": "choice",
+          "prompt": "I ___ to the rain.",
+          "options": [
+            "listened",
+            "listen",
+            "listening"
+          ],
+          "answer": "listened",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Listen to → listened to.",
+          "context": "Суббота и воскресенье"
+        },
+        {
+          "id": "u021-s4-e6",
+          "type": "choice",
+          "prompt": "I cleaned the room two days ___.",
+          "options": [
+            "ago",
+            "last",
+            "before"
+          ],
+          "answer": "ago",
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Two days ago — два дня назад.",
+          "context": "Суббота и воскресенье"
+        },
+        {
+          "id": "u021-s4-e7",
+          "type": "fix",
+          "sentence": "I visit a friend last Saturday.",
+          "answers": [
+            "I visited a friend last Saturday."
+          ],
+          "tags": [
+            "past_simple"
+          ],
+          "explain": "Last Saturday — прошлое: visited.",
+          "context": "Суббота и воскресенье"
+        },
+        {
+          "id": "u021-s4-e8",
+          "type": "sort",
+          "instruction": "Прошлое или настоящее?",
+          "categories": [
+            {
+              "id": "past",
+              "label": "Уже было"
+            },
+            {
+              "id": "now",
+              "label": "Обычно / сейчас"
+            }
+          ],
+          "items": [
+            {
+              "text": "I stayed at home.",
+              "category": "past"
+            },
+            {
+              "text": "We talked for an hour.",
+              "category": "past"
+            },
+            {
+              "text": "Mika visited a market.",
+              "category": "past"
+            },
+            {
+              "text": "I stay at home on Sundays.",
+              "category": "now"
+            },
+            {
+              "text": "We talk every Wednesday.",
+              "category": "now"
+            },
+            {
+              "text": "Rei listens to the rain.",
+              "category": "now"
+            }
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Two days ago. I've been waiting to use that title.",
+          "ru": "Два дня назад. Уже не терпится использовать название.",
+          "expr": "phone/happy"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Место в выходных",
+      "intro": "Мика спрашивает, как прошли твои выходные. Ответь, как хочешь.",
+      "place": "room17",
+      "exercises": [
+        {
+          "id": "u021-s5-e1",
+          "type": "scene",
+          "setting": "Мика закрывает календарь и поворачивает телефон экраном вниз.",
+          "lines": [
+            {
+              "speaker": "mika",
+              "text": "How was your weekend? Give me the version without the timetable.",
+              "ru": "Как прошли твои выходные? Можно версию без расписания.",
+              "expr": "happy"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "It was good. This part of the week is better.",
+                "It was quiet. I like your company today."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "I'll count that as a good Wednesday.",
+                "ru": "Буду считать, что среда удалась.",
+                "expr": "happy"
+              },
+              "flag": "flirt_mika_021"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "I stayed at home. My chair had a busy weekend.",
+                "I rested. The chair did all the work."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "The chair deserves a day off.",
+                "ru": "Стул заслужил выходной.",
+                "expr": "laugh"
+              },
+              "flag": "u021_mika_joke"
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "It was quiet. Let's ask about one thing people did.",
+                "I stayed at home. That can be a short answer too."
+              ],
+              "reaction": {
+                "speaker": "mika",
+                "text": "Good. One thing is enough to start.",
+                "ru": "Хорошо. Для начала одного дела хватит.",
+                "expr": "phone/thinking"
+              },
+              "flag": "u021_mika_work"
+            }
+          ],
+          "clarify": {
+            "speaker": "mika",
+            "text": "Could you say that another way?",
+            "ru": "Можешь сказать иначе?",
+            "expr": "listening"
+          },
+          "tags": [
+            "past_simple"
+          ],
+          "context": "Вопрос Мики"
+        },
+        {
+          "id": "u021-s5-e2",
+          "type": "translate",
+          "ru": "Как прошли твои выходные?",
+          "answers": [
+            "How was your weekend?"
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s5-e3",
+          "type": "translate",
+          "ru": "Я остался дома и слушал музыку.",
+          "answers": [
+            "I stayed at home and listened to music.",
+            "I stayed home and listened to music."
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s5-e4",
+          "type": "translate",
+          "ru": "В субботу я навестил друга.",
+          "answers": [
+            "I visited a friend on Saturday.",
+            "On Saturday, I visited a friend.",
+            "On Saturday I visited a friend."
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s5-e5",
+          "type": "translate",
+          "ru": "Два дня назад я убрал комнату.",
+          "answers": [
+            "I cleaned the room two days ago.",
+            "I cleaned my room two days ago.",
+            "Two days ago, I cleaned the room."
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s5-e6",
+          "type": "write",
+          "situation": "Расскажи, как прошли твои выходные: где был и что сделал.",
+          "answers": [
+            "It was quiet. I stayed at home and cleaned my room.",
+            "I visited a friend on Saturday. We walked by the river.",
+            "Last weekend I stayed at home. On Sunday I walked in the park."
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "iris",
+          "text": "I'll put one simple question at the top.",
+          "ru": "Поставлю наверх один простой вопрос.",
+          "expr": "notebook/focused"
+        }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Голосом: короткий рассказ",
+      "intro": "Расскажи о выходных вслух: два коротких предложения.",
+      "place": "room17",
+      "frame": {
+        "setting": "Рэй включает пробную дорожку. На карточке только два дня и три глагола.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "Two sentences. Take your time.",
+            "ru": "Два предложения. Не спеши.",
+            "expr": "recorder/listening"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u021-s6-e1",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "Last Saturday, I stayed at home.",
+          "answers": [
+            "Last Saturday, I stayed at home."
+          ],
+          "tags": [
+            "speaking",
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s6-e2",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "I visited a friend on Sunday.",
+          "answers": [
+            "I visited a friend on Sunday."
+          ],
+          "tags": [
+            "speaking",
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s6-e3",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "We talked and listened to music.",
+          "answers": [
+            "We talked and listened to music."
+          ],
+          "tags": [
+            "speaking",
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s6-e4",
+          "type": "speak",
+          "show": "en",
+          "voice": "rei",
+          "delivery": "[clearly, at a moderate pace]",
+          "text": "It was a quiet weekend.",
+          "answers": [
+            "It was a quiet weekend."
+          ],
+          "tags": [
+            "speaking",
+            "past_simple"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "rei",
+          "text": "Clear. Plenty of room between the words.",
+          "ru": "Понятно. Между словами достаточно места.",
+          "expr": "recorder/happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Быстрый круг: день и действие",
+      "intro": "Быстрый круг: день и одно законченное действие.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис называет день, а ты выбираешь одно законченное действие.",
+        "lines": [
+          {
+            "speaker": "iris",
+            "text": "One day, one thing you did.",
+            "ru": "Один день, одно дело.",
+            "expr": "notebook/focused"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u021-s7-e1",
+          "type": "write",
+          "situation": "Суббота: навестил друга.",
+          "answers": [
+            "I visited a friend on Saturday.",
+            "On Saturday, I visited a friend.",
+            "On Saturday I visited a friend."
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s7-e2",
+          "type": "write",
+          "situation": "Воскресенье: остался дома.",
+          "answers": [
+            "I stayed at home on Sunday.",
+            "On Sunday, I stayed at home.",
+            "I stayed home on Sunday."
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s7-e3",
+          "type": "write",
+          "situation": "Два дня назад: убрал комнату.",
+          "answers": [
+            "I cleaned the room two days ago.",
+            "I cleaned my room two days ago.",
+            "Two days ago, I cleaned the room."
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s7-e4",
+          "type": "write",
+          "situation": "Прошлые выходные: было спокойно.",
+          "answers": [
+            "My weekend was quiet.",
+            "Last weekend was quiet.",
+            "It was a quiet weekend."
+          ],
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s7-e5",
+          "type": "choice",
+          "prompt": "We ___ at home on Sunday.",
+          "options": [
+            "were",
+            "was",
+            "did"
+          ],
+          "answer": "were",
+          "tags": [
+            "past_simple"
+          ]
+        },
+        {
+          "id": "u021-s7-e6",
+          "type": "dictation",
+          "speaker": "iris",
+          "audio": "My weekend was quiet.",
+          "answers": [
+            "My weekend was quiet."
+          ],
+          "delivery": "[clearly, at a moderate pace]",
+          "tags": [
+            "dictation",
+            "past_simple"
+          ]
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "That could work on the street too.",
+          "ru": "На улице такое тоже сработает.",
+          "expr": "happy"
+        }
+      ]
+    },
+    {
+      "kind": "fluency",
+      "title": "Первый вопрос выпуска",
+      "role": "mission",
+      "intro": "Миссия: выбрать первый вопрос выпуска и договориться о субботе.",
+      "place": "room17",
+      "frame": {
+        "setting": "Айрис переворачивает список. Обратная сторона тоже исписана. Рэй смотрит на неё поверх рекордера.",
+        "lines": [
+          {
+            "speaker": "rei",
+            "text": "The back has questions too.",
+            "ru": "Сзади тоже вопросы.",
+            "expr": "deadpan"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "u021-s8-e1",
+          "type": "scene",
+          "setting": "Айрис переворачивает список: обратная сторона тоже исписана.",
+          "lines": [
+            {
+              "speaker": "iris",
+              "text": "Which question should come first?",
+              "ru": "Какой вопрос поставить первым?",
+              "expr": "notebook/thinking"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Начать с общего",
+              "answers": [
+                "Let's start with “How was your weekend?”",
+                "Ask “How was your weekend?” first."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll start with the whole weekend.",
+                "ru": "Начну с выходных целиком.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u021_open_weekend"
+            },
+            {
+              "label": "Начать с одного дня",
+              "answers": [
+                "Let's start with “What did you do on Saturday?”",
+                "Ask about Saturday first."
+              ],
+              "reaction": {
+                "speaker": "iris",
+                "text": "I'll start with one day.",
+                "ru": "Начну с одного дня.",
+                "expr": "notebook/focused"
+              },
+              "flag": "u021_open_day"
+            }
+          ],
+          "clarify": {
+            "speaker": "iris",
+            "text": "The whole weekend, or one day?",
+            "ru": "Все выходные или один день?",
+            "expr": "listening"
+          },
+          "tags": [
+            "past_simple"
+          ],
+          "after": [
+            {
+              "speaker": "mika",
+              "text": "Saturday at eleven, by the river steps? We're all free then.",
+              "ru": "В субботу в одиннадцать, у ступенек к реке? Мы все свободны.",
+              "expr": "phone/happy"
+            },
+            {
+              "speaker": "iris",
+              "text": "That works. Before lunch.",
+              "ru": "Подходит. До обеда.",
+              "expr": "neutral"
+            },
+            {
+              "speaker": "rei",
+              "text": "Eleven works.",
+              "ru": "В одиннадцать подходит.",
+              "expr": "neutral"
+            }
+          ],
+          "context": "С чего начать"
+        },
+        {
+          "id": "u021-s8-e2",
+          "type": "scene",
+          "setting": "Рэй снимает наушники и ставит рекордер рядом с твоей чашкой.",
+          "lines": [
+            {
+              "speaker": "rei",
+              "text": "I saved your voice test. It's a good reason to keep my headphones on.",
+              "ru": "Сохранила пробу твоего голоса. Хороший повод не снимать наушники.",
+              "expr": "recorder/smirk"
+            }
+          ],
+          "intents": [
+            {
+              "label": "Ответить флиртом",
+              "answers": [
+                "I like knowing you're listening.",
+                "I'll record another one if you're listening."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Then give me a clear first line.",
+                "ru": "Тогда прочти первую строчку понятно.",
+                "expr": "recorder/smirk"
+              },
+              "flag": "flirt_rei_021"
+            },
+            {
+              "label": "Отшутиться",
+              "answers": [
+                "The rain wants its headphones back.",
+                "Does the chair get a voice test too?"
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Only if it stays quiet.",
+                "ru": "Только если будет тихо.",
+                "expr": "recorder/smirk"
+              },
+              "flag": "u021_rei_joke"
+            },
+            {
+              "label": "По делу",
+              "answers": [
+                "Let's check the sound before Saturday.",
+                "We should test the microphone too."
+              ],
+              "reaction": {
+                "speaker": "rei",
+                "text": "Battery first. Then the microphone.",
+                "ru": "Сначала батарея. Потом микрофон.",
+                "expr": "recorder/focused"
+              },
+              "flag": "u021_rei_work"
+            }
+          ],
+          "clarify": {
+            "speaker": "rei",
+            "text": "One more time?",
+            "ru": "Ещё раз?",
+            "expr": "recorder/listening"
+          },
+          "tags": [
+            "function_suggest"
+          ],
+          "context": "Прослушивание пробы"
+        }
+      ],
+      "wrap": [
+        {
+          "speaker": "mika",
+          "text": "Saturday, eleven, river steps. Our title is ready for its first interview.",
+          "ru": "Суббота, одиннадцать, ступеньки к реке. Название готово к первому интервью.",
+          "expr": "phone/happy"
+        },
+        {
+          "speaker": "rei",
+          "text": "The sound would like to come too.",
+          "ru": "Звук тоже хотел бы прийти.",
+          "expr": "neutral"
+        },
+        {
+          "speaker": "iris",
+          "text": "Three short questions. I'll cut the list now.",
+          "ru": "Три коротких вопроса. Сейчас сокращу список.",
+          "expr": "notebook/focused"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { type CSSProperties, useEffect, useMemo, useRef, useState } from 'react'
-import { CHAT_PHOTOS, ROOM17, type ChatLine, type ChatMessage, chatMessages, replyFlag } from '../../content/chats'
+import { CHATS, CHAT_PHOTOS, type Chat, ROOM17, type ChatLine, type ChatMessage, chatMessages, openChats, replyFlag } from '../../content/chats'
 import { checkTyped } from '../../lesson/check'
 import { TextAnswer } from '../../lesson/inputs'
 import { useClub } from '../../data/store'
@@ -11,15 +11,65 @@ import { Sprite } from '../../story/Stage'
 import type { HeroineId } from '../../story/sprites'
 import { Icon } from '../../ui/Icon'
 import { clock, voiceTime } from './voiceTime'
+import { useChatUnread } from './unread'
 
-/** The team chat "Room 17": what the team sent along the course, voice messages, photos. */
-export function ChatScreen() {
+/** The phone: the list of chats, or "Room 17" straight away while it is the only one. */
+export function ChatHome({ id }: { id?: string }) {
+  const { sessions, flags, settings } = useClub()
+  const chats = openChats(sessions, flags, settings.unlockAll)
+  const chat = id ? CHATS[id] : undefined
+  if (chat) return <ChatScreen chat={chat} />
+  if (chats.length <= 1) return <ChatScreen chat={ROOM17} />
+  return (
+    <div className="screen chat-screen">
+      <header className="chat-head">
+        <button className="close" aria-label="Назад" onClick={() => (history.length > 1 ? history.back() : navigate({ name: 'path' }))}>
+          ‹
+        </button>
+        <span className="chat-title">
+          <strong>Чаты</strong>
+        </span>
+      </header>
+      <ul className="chat-list">
+        {chats.map((c) => (
+          <li key={c.id}>
+            <ChatListItem chat={c} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+function ChatListItem({ chat }: { chat: Chat }) {
+  const { sessions, flags, settings } = useClub()
+  const unread = useChatUnread(chat)
+  const last = chatMessages(sessions, flags, settings.unlockAll, chat).filter((m) => m.type !== 'reply' && m.type !== 'system').at(-1)
+  const preview = !last ? '' : last.type === 'voice' ? 'Голосовое сообщение' : last.type === 'photo' ? 'Фото' : last.text ?? ''
+  return (
+    <button className="chat-list-item" onClick={() => navigate({ name: 'chat', id: chat.id })} aria-label={unread ? `${chat.title}, новых: ${unread}` : chat.title}>
+      <span className="chat-avatars" aria-hidden>
+        {(chat.with ? [chat.with] : chat.members).map((h) => (
+          <Sprite key={h} heroine={h} expr="neutral" size="avatar" />
+        ))}
+      </span>
+      <span className="chat-title">
+        <strong>{chat.title}</strong>
+        <span className="muted chat-preview">{preview}</span>
+      </span>
+      {unread > 0 && <span className="topbar-badge chat-list-badge">{unread}</span>}
+    </button>
+  )
+}
+
+/** One chat: what the team (or one heroine) sent along the course, voice messages, photos, replies. */
+export function ChatScreen({ chat = ROOM17 }: { chat?: Chat }) {
   const { sessions, flags, settings, updateSettings } = useClub()
-  const messages = useMemo(() => chatMessages(sessions, flags, settings.unlockAll), [sessions, flags, settings.unlockAll])
-  // Opening the chat reads everything that has arrived.
+  const messages = useMemo(() => chatMessages(sessions, flags, settings.unlockAll, chat), [sessions, flags, settings.unlockAll, chat])
+  // Opening a chat reads everything that has arrived in it.
   useEffect(() => {
     const seen = new Set(settings.chatSeen ?? [])
-    if (messages.some((m) => !seen.has(m.id))) void updateSettings({ chatSeen: messages.map((m) => m.id) })
+    if (messages.some((m) => !seen.has(m.id))) void updateSettings({ chatSeen: [...seen, ...messages.map((m) => m.id).filter((id) => !seen.has(id))] })
   }, [messages, settings.chatSeen, updateSettings])
   useEffect(() => () => stop(), [])
   // Like a messenger, the chat opens at the newest message.
@@ -34,13 +84,13 @@ export function ChatScreen() {
           ‹
         </button>
         <span className="chat-avatars" aria-hidden>
-          {ROOM17.members.map((h) => (
+          {(chat.with ? [chat.with] : chat.members).map((h) => (
             <Sprite key={h} heroine={h} expr="neutral" size="avatar" />
           ))}
         </span>
         <span className="chat-title">
-          <strong>{ROOM17.title}</strong>
-          <span className="muted">Мика, Рэй, Айрис и ты</span>
+          <strong>{chat.title}</strong>
+          <span className="muted">{chat.with ? 'Личный чат' : 'Мика, Рэй, Айрис и ты'}</span>
         </span>
       </header>
       {messages.length === 0 ? (
@@ -56,7 +106,7 @@ export function ChatScreen() {
         </ol>
       )}
       <p className="muted chat-foot" ref={end}>
-        Иногда можно ответить: кнопки появляются прямо в ленте.
+        {chat.with ? 'Ответы — кнопками прямо в ленте.' : 'Иногда можно ответить: кнопки появляются прямо в ленте.'}
       </p>
     </div>
   )
@@ -213,11 +263,35 @@ function Reply({ m }: { m: ChatMessage }) {
       </>
     )
   }
+  if (m.tap) {
+    // A personal chat: the player taps a written answer; it is kept, with the story flag it carries.
+    return (
+      <div className="chat-reply">
+        <p className="chat-reply-ask">Ответить</p>
+        <div className="options">
+          {intents.map((it, i) => (
+            <button
+              key={it.label}
+              className="option chat-tap"
+              onClick={() => {
+                if (it.flag) void remember(it.flag)
+                void remember(replyFlag(m.id, i))
+              }}
+            >
+              <span lang="en">{it.answers[0]}</span>
+              <span className="muted">{it.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    )
+  }
   const chosen = intent === undefined ? undefined : intents[intent]
   const submit = (text: string) => {
     if (!chosen || intent === undefined) return
     if (!checkTyped(text, chosen.answers).correct) return setMissed(true)
     setSaid(text)
+    if (chosen.flag) void remember(chosen.flag)
     void remember(replyFlag(m.id, intent))
   }
   return (
